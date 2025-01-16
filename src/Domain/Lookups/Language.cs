@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.Translation.Lookup
+﻿namespace Domain.Lookups
 {
     public class Language
     {

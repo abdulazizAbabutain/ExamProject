@@ -1,8 +1,10 @@
-﻿using Domain.Enums;
+﻿using Domain.Entities.Audit;
+using Domain.Entities.History;
+using Domain.Enums;
 
-namespace Domain.Entities
+namespace Domain.Entities.Examiner
 {
-    public class Question
+    public class Question : EntityAudit
     {
         public Guid Id { get; set; }
         public required string QuestionText { get; set; }
@@ -12,5 +14,7 @@ namespace Domain.Entities
         public MultipleChoiseQuestion? MultipleChoiseQuestion { get; set; }
         public TrueFalseQuestion? TrueFalseQuestion { get; set; }
         public ShortAnswerQuestion? ShortAnswerQuestion { get; set; }
+        public List<QuestionHistory>? Histories { get; set; }
+        //public List<QuestionTranslation> Translations  { get; set; }
     }
 }
