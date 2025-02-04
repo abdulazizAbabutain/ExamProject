@@ -1,5 +1,6 @@
 ﻿using Domain.Entities.Audit;
 using Domain.Entities.History;
+using Domain.Entities.Translation;
 using Domain.Enums;
 
 namespace Domain.Entities.Examiner
@@ -15,6 +16,6 @@ namespace Domain.Entities.Examiner
         public TrueFalseQuestion? TrueFalseQuestion { get; set; }
         public ShortAnswerQuestion? ShortAnswerQuestion { get; set; }
         public List<QuestionHistory>? Histories { get; set; }
-        //public List<QuestionTranslation> Translations  { get; set; }
+        public List<QuestionTranslation> Translations  { get; set; }
     }
 }
