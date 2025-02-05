@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentValidation;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace Application
@@ -7,18 +8,14 @@ namespace Application
     {
         public static IServiceCollection RegisterApplication(this IServiceCollection services)
         {
-            services.RegisterMediatR();
-            return services;
-        }
-
-
-
-        public static void RegisterMediatR(this IServiceCollection services)
-        {
             services.AddMediatR(config =>
             {
                 config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
             });
+
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            
+            return services;
         }
     }
 }

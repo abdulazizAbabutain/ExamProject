@@ -1,28 +1,48 @@
 ﻿using Application.Commons.Managers;
 using Domain.Entities.Examiner;
+using Domain.Enums;
 using MediatR;
 
-namespace Application.Questions.Commands.AddQuestion
+namespace Application.Questions.Commands.AddQuestion;
+
+internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequestHandler<AddQuestionCommand, AddQuestionCommandResult>
 {
-    internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequestHandler<AddQuestionCommand, AddQuestionCommandResult>
+    private readonly IServiceManager _serviceManager = serviceManager;
+
+    public async Task<AddQuestionCommandResult> Handle(AddQuestionCommand request, CancellationToken cancellationToken)
     {
-        private readonly IServiceManager _serviceManager = serviceManager;
+        _serviceManager.QuestionService.InsertQuestion(BuildQuestion(request));
+        return new AddQuestionCommandResult();
+    }
 
-        public async Task<AddQuestionCommandResult> Handle(AddQuestionCommand request, CancellationToken cancellationToken)
+
+    private Question BuildMultipleChoiseQuestion(AddQuestionCommand request)
+    {
+        var options = new List<MultipleChoiseQuestionOption>(); 
+        foreach(var item in request.Options)
         {
-            var queastion = new Question
-            {
-                Id = new Guid(),
-                QuestionText = request.QuestionText,
-                CreataionDate = DateTime.Now,
-                Mark = request.Mark,
-                QuestionType = request.QuestionType,
-                RequireManulReview = request.RequireManulReview,
-                VerstionNumber = 1,
-            };
-
-            _serviceManager.QuestionService.InsertQuestion(queastion);
-            return new AddQuestionCommandResult();
+            options.Add(MultipleChoiseQuestion.CreateOption(item.OptionText,item.IsCorrect,item.Weight,item.FeedBack));
         }
+        return Question.CreateMultipleChoiseQuestion(request.QuestionText, request.QuestionType, request.Mark, request.RequireManulReview, MultipleChoiseQuestion.CreateMultipleChoiseQuestion(options));
+    }
+
+    private Question BuildTrueAndAnswer(AddQuestionCommand request)
+    {
+        var model = request.TrueAndAnswer;
+        var TrueAndFalse = new TrueFalseQuestion(model.IsCorrect, model.WrongFeedBack, model.AnswerFeedBack);
+        return Question.CreateTrueAndFalse(request.QuestionText, request.QuestionType, request.Mark, request.RequireManulReview, TrueAndFalse);
+    }
+
+    private Question BuildQuestion(AddQuestionCommand request)
+    {
+        switch (request.QuestionType)
+        {
+            case QuestionType.MultipleChoise:
+                return BuildMultipleChoiseQuestion(request);
+            case QuestionType.TrueAndFalse:
+                return BuildTrueAndAnswer(request);
+
+        }
+        return null;
     }
 }

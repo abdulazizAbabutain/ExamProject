@@ -1,6 +1,8 @@
 using Scalar.AspNetCore;
 using Infrastructure;
 using Application;
+using Swashbuckle.AspNetCore.Annotations;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

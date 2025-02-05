@@ -1,4 +1,5 @@
-﻿using Application.Questions.Commands.AddQuestion;
+﻿using Application.Histories.Queries.GetQuestionHistory;
+using Application.Questions.Commands.AddQuestion;
 using Application.Questions.Queries.GetAllQuestions;
 using Application.Questions.Queries.GetQuestionsById;
 using MediatR;
@@ -24,7 +25,7 @@ public class QuestionsController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllQuestions(GetAllQuestionsQuery query)
+    public async Task<IActionResult> GetAllQuestions([FromQuery]GetAllQuestionsQuery query)
     {
         return Ok(await mediator.Send(query));
     }
@@ -34,5 +35,13 @@ public class QuestionsController : ControllerBase
     public async Task<IActionResult> GetAllQuestions([FromRoute] Guid id)
     {
         return Ok(await mediator.Send(new GetQuestionsByIdQuery { Id = id}));
+    }
+
+
+    [HttpGet("{id}/History")]
+    public async Task<IActionResult> GetAllQuestionHistory([FromRoute] Guid id, [FromQuery] GetQuestionHistoryQuery query)
+    {
+        query.QuestionId = id;
+        return Ok(await mediator.Send(query));
     }
 }

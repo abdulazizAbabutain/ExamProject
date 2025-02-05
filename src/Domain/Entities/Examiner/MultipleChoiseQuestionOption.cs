@@ -7,6 +7,5 @@
         public required bool IsCorrect { get; set; }
         public required float Weight { get; set; }
         public string? FeedBack { get; set; }
-        public Guid QuestionId { get; set; }
     }
 }

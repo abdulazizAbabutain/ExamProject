@@ -1,5 +1,5 @@
-﻿using LiteDB;
-using Domain.Repositories.RepositoryBase;
+﻿using Domain.Repositories.RepositoryBase;
+using LiteDB;
 
 namespace Infrastructure.Repositories.BaseRepository
 {
@@ -49,6 +49,40 @@ namespace Infrastructure.Repositories.BaseRepository
             using var db = GetDatabase();
             var collection = db.GetCollection<T>(_collectionName);
             return collection.FindAll().ToList();
+        }
+
+        public IQueryable<T> GetAll(Func<T , bool> func, int pageNumber, int pageSize)
+        {
+            using var db = GetDatabase();
+            var collection = db.GetCollection<T>(_collectionName);
+            return collection.FindAll()
+                .Where(func)
+                .Skip(pageNumber)
+                .Take(pageSize)
+                .AsQueryable();
+        }
+        public IEnumerable<T> GetAll(int pageNumber, int pageSize)
+        {
+            using var db = GetDatabase();
+            var collection = db.GetCollection<T>(_collectionName);
+            return collection.FindAll()
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+        }
+
+
+        public ILiteCollection<T> GetCollection()
+        {
+            using var db = GetDatabase();
+            return db.GetCollection<T>(_collectionName);
+        }
+
+        public int Count()
+        {
+            using var db = GetDatabase();
+            var collection = db.GetCollection<T>(_collectionName);
+            return collection.Count();
         }
     }
 }
