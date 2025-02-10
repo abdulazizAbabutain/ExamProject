@@ -1,5 +1,6 @@
 ﻿using Domain.Repositories.RepositoryBase;
 using LiteDB;
+using System.Linq.Expressions;
 
 namespace Infrastructure.Repositories.BaseRepository
 {
@@ -30,11 +31,18 @@ namespace Infrastructure.Repositories.BaseRepository
             collection.Update(entity);
         }
 
-        public void Delete(int id)
+        public void DeleteById(Guid id)
         {
             using var db = GetDatabase();
             var collection = db.GetCollection<T>(_collectionName);
             collection.Delete(id);
+        }
+
+        public void DeleteAll()
+        {
+            using var db = GetDatabase();
+            var collection = db.GetCollection<T>(_collectionName);
+            collection.DeleteAll();
         }
 
         public T GetById(Guid id)
@@ -51,7 +59,7 @@ namespace Infrastructure.Repositories.BaseRepository
             return collection.FindAll().ToList();
         }
 
-        public IQueryable<T> GetAll(Func<T , bool> func, int pageNumber, int pageSize)
+        public IEnumerable<T> GetAll(Func<T , bool> func, int pageNumber, int pageSize)
         {
             using var db = GetDatabase();
             var collection = db.GetCollection<T>(_collectionName);
@@ -59,7 +67,7 @@ namespace Infrastructure.Repositories.BaseRepository
                 .Where(func)
                 .Skip(pageNumber)
                 .Take(pageSize)
-                .AsQueryable();
+                .ToList();
         }
         public IEnumerable<T> GetAll(int pageNumber, int pageSize)
         {
@@ -84,5 +92,14 @@ namespace Infrastructure.Repositories.BaseRepository
             var collection = db.GetCollection<T>(_collectionName);
             return collection.Count();
         }
+
+
+        public IQueryable<T> Query()
+        {
+            using var db = GetDatabase();
+            return db.GetCollection<T>(_collectionName).FindAll().AsQueryable<T>();
+        }
+
+       
     }
 }

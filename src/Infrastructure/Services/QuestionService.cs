@@ -40,4 +40,14 @@ public class QuestionService(IQuestionRepository questionRepository) : IQuestion
            .Take(pageSize)
            .ToList();
     }
+
+    public void DeleteQuestion(Guid id)
+    {
+        _questionRepository.DeleteById(id);
+    }
+
+    public void DeleteAllQuestions()
+    {
+       _questionRepository.DeleteAll();
+    }
 }

@@ -23,14 +23,17 @@ internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequ
         {
             options.Add(MultipleChoiseQuestion.CreateOption(item.OptionText,item.IsCorrect,item.Weight,item.FeedBack));
         }
-        return Question.CreateMultipleChoiseQuestion(request.QuestionText, request.QuestionType, request.Mark, request.RequireManulReview, MultipleChoiseQuestion.CreateMultipleChoiseQuestion(options));
+        return Question.CreateMultipleChoiseQuestion(request.QuestionText, request.QuestionType, request.Mark, 
+            request.RequireManulReview,request.Tags, request.Difficulty,
+            MultipleChoiseQuestion.CreateMultipleChoiseQuestion(options));
     }
 
     private Question BuildTrueAndAnswer(AddQuestionCommand request)
     {
         var model = request.TrueAndAnswer;
         var TrueAndFalse = new TrueFalseQuestion(model.IsCorrect, model.WrongFeedBack, model.AnswerFeedBack);
-        return Question.CreateTrueAndFalse(request.QuestionText, request.QuestionType, request.Mark, request.RequireManulReview, TrueAndFalse);
+        return Question.CreateTrueAndFalse(request.QuestionText, request.QuestionType, request.Mark, request.RequireManulReview,request.Tags,request.Difficulty
+            ,TrueAndFalse);
     }
 
     private Question BuildQuestion(AddQuestionCommand request)

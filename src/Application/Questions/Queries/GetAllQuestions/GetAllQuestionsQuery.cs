@@ -5,6 +5,6 @@ namespace Application.Questions.Queries.GetAllQuestions
 {
     public class GetAllQuestionsQuery : PageRequest, IRequest<PageResponse<GetAllQuestionsQueryResult>>
     {
-
+        public string? Tag { get; set; }
     }
 }

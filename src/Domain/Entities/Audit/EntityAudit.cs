@@ -2,10 +2,10 @@
 {
     public class EntityAudit
     {
-        public DateTimeOffset? LastModifiyedDate { get; set; }
-        public DateTimeOffset? LastDeletedDate { get; set; }
-        public DateTimeOffset CreataionDate { get; set; }
-        public int VerstionNumber { get; set; }
+        public DateTimeOffset? LastModifiyedDate { get; private set; }
+        public DateTimeOffset? LastDeletedDate { get; private set; }
+        public DateTimeOffset CreataionDate { get; private set; }
+        public int VerstionNumber { get; private set; }
 
         protected void Created()
         {

@@ -7,9 +7,12 @@ namespace Domain.Repositories.RepositoryBase
         void Insert(T entity);
         T GetById(Guid id);
         IEnumerable<T> GetAll();
-        IQueryable<T> GetAll(Func<T, bool> func, int pageNumber, int pageSize);
+        IEnumerable<T> GetAll(Func<T, bool> func, int pageNumber, int pageSize);
         IEnumerable<T> GetAll(int pageNumber, int pageSize);
         ILiteCollection<T> GetCollection();
         int Count();
+        void DeleteById(Guid id);
+        void DeleteAll();
+        IQueryable<T> Query();
     }
 }

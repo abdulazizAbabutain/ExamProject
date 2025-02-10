@@ -11,6 +11,7 @@ namespace Application
             services.AddMediatR(config =>
             {
                 config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+                //config.AddBehavior<>();
             });
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());

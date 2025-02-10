@@ -1,5 +1,7 @@
 ﻿using Application.Histories.Queries.GetQuestionHistory;
 using Application.Questions.Commands.AddQuestion;
+using Application.Questions.Commands.DeleteAllQuestion;
+using Application.Questions.Commands.DeleteQuestion;
 using Application.Questions.Queries.GetAllQuestions;
 using Application.Questions.Queries.GetQuestionsById;
 using MediatR;
@@ -38,10 +40,25 @@ public class QuestionsController : ControllerBase
     }
 
 
-    [HttpGet("{id}/History")]
+    [HttpGet("{id}/history")]
     public async Task<IActionResult> GetAllQuestionHistory([FromRoute] Guid id, [FromQuery] GetQuestionHistoryQuery query)
     {
         query.QuestionId = id;
         return Ok(await mediator.Send(query));
+    }
+
+    [HttpDelete(Name = nameof(DeleteAllQuestion))]
+    public async Task<IActionResult> DeleteAllQuestion() 
+    {
+        await mediator.Send(new DeleteAllQuestionCommand());
+        return NoContent();
+    }
+
+
+    [HttpDelete("{id}",Name = nameof(DeleteQuestion))]
+    public async Task<IActionResult> DeleteQuestion([FromRoute] Guid id)
+    {
+        await mediator.Send(new DeleteQuestionCommand {  Id = id });
+        return NoContent();
     }
 }

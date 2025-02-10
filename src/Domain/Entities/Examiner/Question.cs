@@ -1,55 +1,66 @@
-﻿using Domain.Entities.Audit;
+﻿using Application.Commons.Extentions;
+using Domain.Entities.Audit;
 using Domain.Entities.History;
-using Domain.Entities.Translation;
 using Domain.Enums;
 
 namespace Domain.Entities.Examiner
 {
     public class Question : EntityAudit
     {
-        
-        public Guid Id { get; set; }
-        public required string QuestionText { get; set; }
-        public required QuestionType QuestionType { get; set; }
-        public required int Mark { get; set; }
-        public required bool RequireManulReview { get; set; }
-        public MultipleChoiseQuestion? MultipleChoiseQuestion { get; set; }
-        public TrueFalseQuestion? TrueFalseQuestion { get; set; }
-        public ShortAnswerQuestion? ShortAnswerQuestion { get; set; }
-        public List<QuestionHistory>? Histories { get; set; }
-        public List<QuestionTranslation> Translations  { get; set; }
+        public Guid Id { get; private set; }
+        public string QuestionText { get; private set; }
+        public List<string> Variants { get; private set; }
+        public QuestionType QuestionType { get; private set; }
+        public int Mark { get; private set; }
+        public bool RequireManulReview { get; private set; }
+        /// <summary>
+        /// an index start from 0 to 100, that will detrmain the overall difficulty of the queastion. 
+        /// </summary>
+        public short DifficultyIndex { get; private set; } 
+        public List<string>? Tags { get; private set; }
+        public MultipleChoiseQuestion? MultipleChoiseQuestion { get; private set; }
+        public TrueFalseQuestion? TrueFalseQuestion { get; private set; }
+        public ShortAnswerQuestion? ShortAnswerQuestion { get; private set; }
+        public List<QuestionHistory>? Histories { get; private set; }
+
+        private Question(string questionText, QuestionType questionType, int mark, bool requireManulReview,
+            List<string>? tags, QuestionDifficulty difficulty)
+        {
+            Id = Guid.NewGuid();
+            QuestionText = questionText;
+            Mark = mark;
+            QuestionType = questionType;
+            RequireManulReview = requireManulReview;
+            Tags = tags;
+            DifficultyIndex = difficulty.GetMattrix();
+        }
+
+        private Question()
+        {
+
+        }
 
 
-        public static Question CreateMultipleChoiseQuestion(string questionText, QuestionType questionType, int mark, bool requireManulReview, 
+        public static Question CreateMultipleChoiseQuestion(string questionText, QuestionType questionType, int mark, bool requireManulReview,
+            List<string>? tags, QuestionDifficulty difficulty,
             MultipleChoiseQuestion multipleChoiseQuestion)
         {
-            var question = new Question
-            {
-                Id = Guid.NewGuid(),
-                QuestionText = questionText,
-                Mark = mark,
-                QuestionType = questionType,
-                RequireManulReview = requireManulReview,
-                MultipleChoiseQuestion = multipleChoiseQuestion
-            };
+            var question = new Question(questionText, questionType, mark, requireManulReview, tags, difficulty);
+            
+            question.MultipleChoiseQuestion = multipleChoiseQuestion;
+
             question.Created();
             question.History(Enums.EntityHistoryType.Added);
-            
-            return question;    
+
+            return question;
         }
 
         public static Question CreateTrueAndFalse(string questionText, QuestionType questionType, int mark, bool requireManulReview,
+           List<string>? tags, QuestionDifficulty difficulty,
            TrueFalseQuestion trueFalseQuestion)
         {
-            var question = new Question
-            {
-                Id = Guid.NewGuid(),
-                QuestionText = questionText,
-                Mark = mark,
-                QuestionType = questionType,
-                RequireManulReview = requireManulReview,
-                TrueFalseQuestion = trueFalseQuestion
-            };
+            var question = new Question(questionText, questionType, mark, requireManulReview, tags, difficulty);
+
             question.Created();
             question.History(Enums.EntityHistoryType.Added);
 
@@ -59,7 +70,7 @@ namespace Domain.Entities.Examiner
         public void History(Enums.EntityHistoryType type)
         {
             Histories ??= new List<QuestionHistory>();
-            Histories.Add(QuestionHistory.History(this,VerstionNumber, type));
+            Histories.Add(QuestionHistory.History(this, VerstionNumber, type));
         }
     }
 }

@@ -13,6 +13,10 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.RegisterInfrastructure();
 builder.Services.RegisterApplication();
+builder.Services.AddSwaggerGen();
+
+
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowElectron", policy =>

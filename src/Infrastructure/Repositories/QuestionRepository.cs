@@ -11,14 +11,5 @@ namespace Infrastructure.Repositories
             : base(databasePath, nameof(Question))
         {
         }
-
-        public IEnumerable<QuestionHistory> GetQuestionHistories(Guid queastionId, int pageNumber, int pageSize)
-        {
-            var collection = GetCollection();
-            return collection.FindById(queastionId)
-                .Histories
-                .Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize).ToList();
-        }
     }
 }

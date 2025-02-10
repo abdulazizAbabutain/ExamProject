@@ -10,5 +10,7 @@ namespace Application.Commons.Services
         Question GetQuestion(Guid id);
         int Count();
         IEnumerable<QuestionHistory> GetHistories(Guid questionId, int pageNumber, int pageSize);
+        void DeleteQuestion(Guid id);
+        void DeleteAllQuestions();
     }
 }

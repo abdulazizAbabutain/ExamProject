@@ -1,12 +1,15 @@
-﻿using Domain.Enums;
+﻿using Application.Questions.Queries.GetQuestionsById.ResultModel;
+using Domain.Enums;
 
 namespace Application.Questions.Queries.GetQuestionsById;
 
 public class GetQuestionsByIdQueryResult
 {
-    public required Guid Id { get; set; }
-    public required string QuestionText { get; set; }
-    public required QuestionType QuestionType { get; set; }
-    public required int Mark { get; set; }
-    public required bool RequireManulReview { get; set; }
+    public Guid Id { get; set; }
+    public string QuestionText { get; set; }
+    public QuestionType QuestionType { get; set; }
+    public int Mark { get; set; }
+    public bool RequireManulReview { get; set; }
+    public List<string> Tags { get; set; }
+    public MultipleChoiseQuestionResult? MultipleChoiseQuestion { get; set; }
 }
