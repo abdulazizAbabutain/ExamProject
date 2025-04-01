@@ -3,14 +3,14 @@ using Domain.Entities.History;
 
 namespace Application.Commons.Services
 {
-    public interface IQuestionService
+    public interface IQuestionService : IDisposable
     {
         Question InsertQuestion(Question question);
         IEnumerable<Question> GetQuestions(int pageNumber, int pageSize);
         Question GetQuestion(Guid id);
         int Count();
-        IEnumerable<QuestionHistory> GetHistories(Guid questionId, int pageNumber, int pageSize);
         void DeleteQuestion(Guid id);
+        void UpdateQuestion(Question question);
         void DeleteAllQuestions();
     }
 }

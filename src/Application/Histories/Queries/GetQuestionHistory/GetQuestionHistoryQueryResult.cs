@@ -1,17 +1,16 @@
-﻿using Domain.Enums;
+﻿using Application.Histories.Queries.GetQuestionHistory.Models;
+using Domain.Enums;
+using Domain.Lookups;
+using Microsoft.AspNetCore.Identity;
 
 namespace Application.Histories.Queries.GetQuestionHistory
 {
     internal class GetQuestionHistoryQueryResult
     {
         public Guid Id { get; set; }
-        public required string QuestionText { get; set; }
-        public required QuestionType QuestionType { get; set; }
-        public required int Mark { get; set; }
-        public required bool RequireManulReview { get; set; }
-        public Guid QuestionId { get; set; }
-        public DateTime ActionDate { get; set; }
-        public EntityHistoryType ActionType { get; set; }
-        public int VerstionNumber { get; set; }
+        public EntityHistoryTypeLookup Type { get; set; }
+        public int VersionNumber { get; set; }
+        public DateTimeOffset ActionDate { get; set; }
+        public List<PropertyChangesQueryResult> PropertyChanges { get; set; }
     }
 }

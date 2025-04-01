@@ -2,7 +2,9 @@
 
 namespace Application.Commons.Managers;
 
-public interface IServiceManager
+public interface IServiceManager : IDisposable
 {
     IQuestionService QuestionService { get; }
+    ILookupService LookupService { get; }
+
 }

@@ -2,6 +2,7 @@
 using Application.Questions.Commands.AddQuestion;
 using Application.Questions.Commands.DeleteAllQuestion;
 using Application.Questions.Commands.DeleteQuestion;
+using Application.Questions.Commands.UpdateQuestion;
 using Application.Questions.Queries.GetAllQuestions;
 using Application.Questions.Queries.GetQuestionsById;
 using MediatR;
@@ -22,8 +23,7 @@ public class QuestionsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> AddQuestion(AddQuestionCommand command)
     {
-        await mediator.Send(command);
-        return Ok();
+        return Ok(await mediator.Send(command));
     }
 
     [HttpGet]
@@ -37,14 +37,6 @@ public class QuestionsController : ControllerBase
     public async Task<IActionResult> GetAllQuestions([FromRoute] Guid id)
     {
         return Ok(await mediator.Send(new GetQuestionsByIdQuery { Id = id}));
-    }
-
-
-    [HttpGet("{id}/history")]
-    public async Task<IActionResult> GetAllQuestionHistory([FromRoute] Guid id, [FromQuery] GetQuestionHistoryQuery query)
-    {
-        query.QuestionId = id;
-        return Ok(await mediator.Send(query));
     }
 
     [HttpDelete(Name = nameof(DeleteAllQuestion))]
@@ -61,4 +53,12 @@ public class QuestionsController : ControllerBase
         await mediator.Send(new DeleteQuestionCommand {  Id = id });
         return NoContent();
     }
+
+    [HttpPut( Name = nameof(UpdateQuestion))]
+    public async Task<IActionResult> UpdateQuestion([FromBody] UpdateQuestionCommand command)
+    {
+        await mediator.Send(command);
+        return NoContent();
+    }
+
 }

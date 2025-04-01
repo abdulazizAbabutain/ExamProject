@@ -1,105 +1,62 @@
 ﻿using Domain.Repositories.RepositoryBase;
 using LiteDB;
-using System.Linq.Expressions;
 
 namespace Infrastructure.Repositories.BaseRepository
 {
-    internal class BaseRepository<T> : IBaseRepository<T> where T : class
+    public class BaseRepository<T> :  IBaseRepository<T> where T : class
     {
-        private readonly string _databasePath;
-        private readonly string _collectionName;
+        protected readonly LiteDatabase _db;          
+        protected readonly ILiteCollection<T> _collection;
+        protected readonly string _collectionName;
 
         public BaseRepository(string databasePath, string collectionName)
         {
-            _databasePath = databasePath;
-            _collectionName = collectionName;
+           _db = new LiteDatabase(databasePath);
+           _collectionName = collectionName;
+           _collection = _db.GetCollection<T>(_collectionName);
         }
 
-        private LiteDatabase GetDatabase() => new LiteDatabase(_databasePath);
+        public virtual void Insert(T entity)
+            => _collection.Insert(entity);
 
-        public void Insert(T entity)
-        {
-            using var db = GetDatabase();
-            var collection = db.GetCollection<T>(_collectionName);
-            collection.Insert(entity);
-        }
+        public virtual void Insert(IEnumerable<T> entity)
+         => _collection.Insert(entity);
 
-        public void Update(T entity)
-        {
-            using var db = GetDatabase();
-            var collection = db.GetCollection<T>(_collectionName);
-            collection.Update(entity);
-        }
+        public virtual void Update(T entity)
+            => _collection.Update(entity);
 
-        public void DeleteById(Guid id)
-        {
-            using var db = GetDatabase();
-            var collection = db.GetCollection<T>(_collectionName);
-            collection.Delete(id);
-        }
-
-        public void DeleteAll()
-        {
-            using var db = GetDatabase();
-            var collection = db.GetCollection<T>(_collectionName);
-            collection.DeleteAll();
-        }
-
-        public T GetById(Guid id)
-        {
-            using var db = GetDatabase();
-            var collection = db.GetCollection<T>(_collectionName);
-            return collection.FindById(id);
-        }
-
-        public IEnumerable<T> GetAll()
-        {
-            using var db = GetDatabase();
-            var collection = db.GetCollection<T>(_collectionName);
-            return collection.FindAll().ToList();
-        }
-
+        public virtual void DeleteById(Guid id)
+            => _collection.Delete(id);
+        
+        public virtual void DeleteAll()
+            => _collection.DeleteAll(); 
+        
+        public virtual T GetById(Guid id)
+            => _collection.FindById(id);
+        
+        public virtual IEnumerable<T> GetAll()
+            => _collection.FindAll();
+        
         public IEnumerable<T> GetAll(Func<T , bool> func, int pageNumber, int pageSize)
-        {
-            using var db = GetDatabase();
-            var collection = db.GetCollection<T>(_collectionName);
-            return collection.FindAll()
+            => _collection.FindAll()
                 .Where(func)
-                .Skip(pageNumber)
-                .Take(pageSize)
-                .ToList();
-        }
-        public IEnumerable<T> GetAll(int pageNumber, int pageSize)
-        {
-            using var db = GetDatabase();
-            var collection = db.GetCollection<T>(_collectionName);
-            return collection.FindAll()
                 .Skip((pageNumber - 1) * pageSize)
-                .Take(pageSize)
-                .ToList();
-        }
+                .Take(pageSize);
 
+        public IEnumerable<T> GetAll(int pageNumber, int pageSize)
+            => _collection.FindAll()
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize);
 
-        public ILiteCollection<T> GetCollection()
+        public virtual ILiteCollection<T> GetCollection() 
+            => _collection;
+
+        public virtual int Count()
+            => _collection.Count();
+
+        public void Dispose()
         {
-            using var db = GetDatabase();
-            return db.GetCollection<T>(_collectionName);
+            _db?.Dispose();
         }
-
-        public int Count()
-        {
-            using var db = GetDatabase();
-            var collection = db.GetCollection<T>(_collectionName);
-            return collection.Count();
-        }
-
-
-        public IQueryable<T> Query()
-        {
-            using var db = GetDatabase();
-            return db.GetCollection<T>(_collectionName).FindAll().AsQueryable<T>();
-        }
-
-       
     }
 }

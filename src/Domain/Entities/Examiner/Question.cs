@@ -1,7 +1,8 @@
 ﻿using Application.Commons.Extentions;
 using Domain.Entities.Audit;
-using Domain.Entities.History;
 using Domain.Enums;
+using Domain.Extentions;
+using LiteDB;
 
 namespace Domain.Entities.Examiner
 {
@@ -9,68 +10,85 @@ namespace Domain.Entities.Examiner
     {
         public Guid Id { get; private set; }
         public string QuestionText { get; private set; }
-        public List<string> Variants { get; private set; }
+        public List<string>? Variants { get; private set; }
         public QuestionType QuestionType { get; private set; }
         public int Mark { get; private set; }
         public bool RequireManulReview { get; private set; }
+        public Guid Language { get; set; }
         /// <summary>
         /// an index start from 0 to 100, that will detrmain the overall difficulty of the queastion. 
         /// </summary>
         public short DifficultyIndex { get; private set; } 
-        public List<string>? Tags { get; private set; }
+        public List<Guid>? Tags { get; private set; }
         public MultipleChoiseQuestion? MultipleChoiseQuestion { get; private set; }
         public TrueFalseQuestion? TrueFalseQuestion { get; private set; }
         public ShortAnswerQuestion? ShortAnswerQuestion { get; private set; }
-        public List<QuestionHistory>? Histories { get; private set; }
+        public List<Guid>? Sources { get; set; }
 
-        private Question(string questionText, QuestionType questionType, int mark, bool requireManulReview,
-            List<string>? tags, QuestionDifficulty difficulty)
+        public Question(string questionText, List<string>? variants, Guid language, QuestionType questionType, int mark, bool requireManulReview,
+            List<Guid>? tags,List<Guid>? sources ,QuestionDifficulty difficulty)
         {
-            Id = Guid.NewGuid();
             QuestionText = questionText;
+            Variants = variants;
             Mark = mark;
+            Language = language;
             QuestionType = questionType;
             RequireManulReview = requireManulReview;
             Tags = tags;
+            Sources = sources;
             DifficultyIndex = difficulty.GetMattrix();
         }
 
-        private Question()
-        {
+        private Question() { }
 
+
+        public void CreateMultipleChoiseQuestion(MultipleChoiseQuestion multipleChoiseQuestion)
+        {
+            MultipleChoiseQuestion = multipleChoiseQuestion;
+            Created();
         }
 
-
-        public static Question CreateMultipleChoiseQuestion(string questionText, QuestionType questionType, int mark, bool requireManulReview,
-            List<string>? tags, QuestionDifficulty difficulty,
-            MultipleChoiseQuestion multipleChoiseQuestion)
+        public void CreateTrueAndFalse(TrueFalseQuestion trueFalseQuestion)
         {
-            var question = new Question(questionText, questionType, mark, requireManulReview, tags, difficulty);
+            TrueFalseQuestion = trueFalseQuestion;
+            Created();
+        }
+
+        public void UpdateBasicQueastion(string questionText, List<string>? variants, int mark, bool requireManulReview, List<string> tags, short difficultyIndex)
+        {
+            Updated();
+            if (!QuestionText.Equals(questionText))
+            {
+                QuestionText = questionText;
+            }
             
-            question.MultipleChoiseQuestion = multipleChoiseQuestion;
+            if(Variants.IsNotNull() && !Variants.Equals(variants) && (Variants.IsNotNull() && variants.IsNull()))
+            {
+                Variants = variants;
+            }
+            
+            if(Mark != mark)
+            {
+                Mark = mark;
+            }
 
-            question.Created();
-            question.History(Enums.EntityHistoryType.Added);
+            if(RequireManulReview != requireManulReview)
+            {
+                RequireManulReview = requireManulReview;
 
-            return question;
-        }
+            }
 
-        public static Question CreateTrueAndFalse(string questionText, QuestionType questionType, int mark, bool requireManulReview,
-           List<string>? tags, QuestionDifficulty difficulty,
-           TrueFalseQuestion trueFalseQuestion)
-        {
-            var question = new Question(questionText, questionType, mark, requireManulReview, tags, difficulty);
+            if(!Tags.Equals(tags))
+            {
+                //TODO: Fix
+                Tags = null;
 
-            question.Created();
-            question.History(Enums.EntityHistoryType.Added);
+            }
 
-            return question;
-        }
-
-        public void History(Enums.EntityHistoryType type)
-        {
-            Histories ??= new List<QuestionHistory>();
-            Histories.Add(QuestionHistory.History(this, VerstionNumber, type));
+            if(DifficultyIndex != difficultyIndex)
+            {
+                DifficultyIndex = difficultyIndex;
+            }
         }
     }
 }

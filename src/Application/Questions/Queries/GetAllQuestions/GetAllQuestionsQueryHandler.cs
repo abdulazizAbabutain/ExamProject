@@ -1,7 +1,13 @@
-﻿using Application.Commons.Models.Pageination;
+﻿using Application.Commons.Extentions;
+using Application.Commons.Models.Pageination;
+using Domain.Entities.Examiner;
+using Domain.Extentions;
+using Domain.Lookups;
 using Domain.Managers;
+using LinqKit;
 using LiteDB;
 using MediatR;
+using System.Linq;
 
 namespace Application.Questions.Queries.GetAllQuestions;
 
@@ -11,25 +17,37 @@ public class GetAllQuestionsQueryHandler(IRepositoryManager repositoryManager) :
 
     public async Task<PageResponse<GetAllQuestionsQueryResult>> Handle(GetAllQuestionsQuery request, CancellationToken cancellationToken)
     {
-        
-        var data = _repositoryManager.QuestionRepository.Query();
+        var query = PredicateBuilder.New<Question>();
 
-        if (!string.IsNullOrEmpty(request.Tag))
-            data = data.Where(e => e.Tags.Contains(request.Tag));
+        Guid? tagId = null;
 
-        var result = data.Select(e => new GetAllQuestionsQueryResult 
+        if (!string.IsNullOrWhiteSpace(request.Tags))
+            tagId = _repositoryManager.TagRepository.GetTagReference(request.Tags);
+
+        if (tagId.HasValue)
+            query = query.Or(q => q.Tags.Contains(tagId.Value));
+
+        if (request.QuestionType.HasValue)
+            query = query.Or(q => q.QuestionType == request.QuestionType);
+
+        if (request.RequireManualReview.HasValue)
+            query = query.Or(q => q.RequireManulReview == request.RequireManualReview.Value);
+
+        var questions = _repositoryManager.QuestionRepository.GetAll(query, request.PageNumber, request.PageSize).ToList();
+
+        var data = questions.Select(q => new GetAllQuestionsQueryResult
         {
-            Id = e.Id,
-            Mark = e.Mark,
-            QuestionText = e.QuestionText,
-            QuestionType = e.QuestionType,
-            RequireManulReview = e.RequireManulReview
-        }).Skip((request.PageNumber - 1) * request.PageSize)
-        .Take(request.PageNumber)
-        .ToList();
+            Id = q.Id,
+            Mark = q.Mark,
+            QuestionText = q.QuestionText,
+            QuestionType = new QuestionTypeLookup { Id = q.QuestionType },
+            RequireManulReview = q.RequireManulReview,
+            Difficulty = new QuestionDifficultyLookup { Id = q.DifficultyIndex.GetDifficultyCategory() },
+            Tags = q.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => q.Tags.Contains(t.Id)).Select(e => e.Name).ToList() : null,
+        }).ToList();
 
         var totalCount = _repositoryManager.QuestionRepository.Count();
-        
-        return new PageResponse<GetAllQuestionsQueryResult>(result, request.PageNumber, request.PageSize, totalCount);
+
+        return new PageResponse<GetAllQuestionsQueryResult>(data, request.PageNumber, request.PageSize, totalCount);
     }
 }

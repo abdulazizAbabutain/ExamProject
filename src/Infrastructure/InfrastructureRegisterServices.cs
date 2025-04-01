@@ -17,7 +17,7 @@ namespace Infrastructure
             services.RegisterServices();
 
 
-            services.AddSingleton<LiteDatabase>(new LiteDatabase("Filename= database.db"));
+            //services.AddSingleton<LiteDatabase>(new LiteDatabase("Filename= database.db"));
 
 
             return services;

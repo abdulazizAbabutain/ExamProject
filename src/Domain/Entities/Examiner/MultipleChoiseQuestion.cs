@@ -1,4 +1,5 @@
 ﻿using Domain.Enums;
+using System.Drawing;
 
 namespace Domain.Entities.Examiner
 {
@@ -7,6 +8,14 @@ namespace Domain.Entities.Examiner
         public Guid Id { get; set; }
         public List<MultipleChoiseQuestionOption> Options { get; set; }
         public MultipleChoiseQuestionType Type { get; set; }
+
+
+        public MultipleChoiseQuestion(List<MultipleChoiseQuestionOption> options)
+        {
+            Id = Guid.NewGuid();
+            Type = options.Where(e => e.IsCorrect).Count() > 1 ? MultipleChoiseQuestionType.MuktipleChoise : MultipleChoiseQuestionType.SingleChoise;
+            Options = options;
+        }
 
         public static MultipleChoiseQuestionOption CreateOption(string optionText, bool isCorrect,float weight, string? feedback)
         {
@@ -17,16 +26,6 @@ namespace Domain.Entities.Examiner
                 OptionText = optionText,
                 Weight = weight,
                 FeedBack = feedback
-            };
-        }
-
-        public static MultipleChoiseQuestion CreateMultipleChoiseQuestion(List<MultipleChoiseQuestionOption> options)
-        {
-            return new MultipleChoiseQuestion()
-            {
-                Type = options.Where(e => e.IsCorrect).Count() > 1 ? MultipleChoiseQuestionType.MuktipleChoise : MultipleChoiseQuestionType.SingleChoise,
-                Id = Guid.NewGuid(),
-                Options = options
             };
         }
     }
