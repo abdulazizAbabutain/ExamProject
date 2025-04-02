@@ -32,7 +32,11 @@ namespace Application.Lookups.Queries.Sources.GetAllSources
             {
                 Id = e.Id,
                 Description = e.Description,
-                Tags = e.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => e.Tags.Contains(t.Id)).Select(e => e.Name).ToList() : null,
+                Tags = e.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => e.Tags.Contains(t.Id)).Select(e => new TagDto
+                {
+                    Name = e.Name,
+                    ColorCode = e.ColorHexCode
+                }).ToList() : null,
                 Title = e.Title,
                 Type = new SourceTypeLookup()
                 {

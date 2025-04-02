@@ -1,5 +1,4 @@
 ﻿using Application.Commons.Managers;
-using Domain.Entities.EntityLookup;
 using MediatR;
 
 namespace Application.Lookups.Commands.Tags.AddTag
@@ -10,7 +9,7 @@ namespace Application.Lookups.Commands.Tags.AddTag
 
         public async Task Handle(AddTagCommand request, CancellationToken cancellationToken)
         {
-            _serviceManager.LookupService.AddTag(new Tag(request.Name));
+            _serviceManager.LookupService.AddTag(request.Name,request.ColorCode);
             _serviceManager.Dispose();
         }
     }

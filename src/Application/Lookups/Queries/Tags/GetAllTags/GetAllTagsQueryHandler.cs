@@ -1,4 +1,5 @@
 ﻿using Application.Commons.Managers;
+using Domain.Lookups;
 using MediatR;
 
 namespace Application.Lookups.Queries.Tags.GetAllTags;
@@ -12,7 +13,10 @@ public class GetAllTagsQueryHandler(IServiceManager serviceManager) : IRequestHa
         var tags = _serviceManager.LookupService.GetAllTags().Select(t => new GetAllTagsQueryResult
         {
             Id = t.Id,
-            Name = t.Name
+            Name = t.Name,
+            ColorCode = t.ColorHexCode,
+            ColorCategory = new ColorCategoryLookup(t.ColorGroup)
+            
         }).ToList();
 
         _serviceManager.Dispose();

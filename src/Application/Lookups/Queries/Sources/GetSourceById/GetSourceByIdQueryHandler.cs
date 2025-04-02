@@ -1,4 +1,5 @@
-﻿using Domain.Extentions;
+﻿using Application.Lookups.Queries.Sources.GetAllSources;
+using Domain.Extentions;
 using Domain.Lookups;
 using Domain.Managers;
 using MediatR;
@@ -21,7 +22,11 @@ namespace Application.Lookups.Queries.Sources.GetSourceById
                 CreationDate = source.CreationDate,
                 Description = source.Description,
                 LastModifiedDate = source.LastModifiedDate,
-                Tags = source.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => source.Tags.Contains(t.Id)).Select(e => e.Name).ToList() : null,
+                Tags = source.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => source.Tags.Contains(t.Id)).Select(e => new TagDto
+                {
+                    Name = e.Name,
+                    ColorCode = e.ColorHexCode, 
+                }).ToList() : null,
                 Title = source.Title,
                 Type = new SourceTypeLookup()
                 {

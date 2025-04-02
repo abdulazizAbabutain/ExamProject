@@ -38,12 +38,15 @@ namespace Infrastructure.Services
 
         #region Tag services
 
-        public void AddTag(Tag tag)
+        public void AddTag(string name, string? colorCode = null)
         {
-            if (_repositoryManager.TagRepository.IsExist(tag.Name))
+            if (_repositoryManager.TagRepository.IsExist(name))
                 return;
 
-            _repositoryManager.TagRepository.Insert(tag);
+            if (colorCode.IsNull())
+                colorCode = ColorExtension.GenerateRandomHexColor();
+
+            _repositoryManager.TagRepository.Insert(new Tag(name,colorCode));
         }
 
         public IEnumerable<Tag> GetAllTags()
@@ -60,7 +63,7 @@ namespace Infrastructure.Services
             var existsTags = _repositoryManager.TagRepository.GetAllAvailableTags(tags);
             var newTags = tags.Except(existsTags);
             if (newTags.Any())
-                _repositoryManager.TagRepository.Insert(newTags.Select(t => new Tag(t)).ToList());
+                _repositoryManager.TagRepository.Insert(newTags.Select(t => new Tag(t, "#FF5733")).ToList());
 
             return _repositoryManager.TagRepository.GetTagsRefrence(tags);
         }

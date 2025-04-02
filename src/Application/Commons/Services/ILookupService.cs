@@ -10,7 +10,7 @@ namespace Application.Commons.Services
         Guid GetLanguageReference(string code);
         #endregion
 
-        void AddTag(Tag tag);
+        void AddTag(string name, string? colorCode = null);
         IEnumerable<Tag> GetAllTags();
         IEnumerable<Guid> GetTagsReference(IEnumerable<string> tags);
 
