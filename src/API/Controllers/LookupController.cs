@@ -1,5 +1,4 @@
-﻿using Application.Commons.Models.Pageination;
-using Application.Lookups.Commands.Categories.AddCategory;
+﻿using Application.Lookups.Commands.Categories.AddCategory;
 using Application.Lookups.Commands.Languages;
 using Application.Lookups.Commands.Sources.AddSource;
 using Application.Lookups.Commands.Sources.UpdateSource;
@@ -14,7 +13,6 @@ using Application.Lookups.Queries.Sources.GetSourceById;
 using Application.Lookups.Queries.Tags.GetAllTags;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace API.Controllers
 {
@@ -28,6 +26,7 @@ namespace API.Controllers
             this.mediator = mediator;
         }
 
+        #region language
         [HttpPost("language", Name = nameof(AddLangugue))]
         public async Task<IActionResult> AddLangugue([FromBody] AddLanguageCommand command)
         {
@@ -42,7 +41,7 @@ namespace API.Controllers
         {
             return Ok(await mediator.Send(new GetLanguagesQuery()));
         }
-
+        #endregion
 
         #region tags
         [HttpPost("tag", Name = nameof(AddTag))]
@@ -77,6 +76,7 @@ namespace API.Controllers
         }
         #endregion
 
+        #region source 
         [HttpPost("source", Name = nameof(AddSource))]
         public async Task<IActionResult> AddSource([FromBody] AddSourceCommand command)
         {
@@ -106,6 +106,8 @@ namespace API.Controllers
             return NoContent();
 
         }
+        #endregion
+
         #region categories
         [HttpPost("category", Name = nameof(AddCateogry))]
         public async Task<IActionResult> AddCateogry([FromBody] AddCategoryCommand command)
@@ -120,14 +122,11 @@ namespace API.Controllers
             return Ok(await mediator.Send(query));
         }
 
-
         [HttpGet("category/{id:guid}", Name = nameof(GetCategoryById))]
         public async Task<IActionResult> GetCategoryById([FromRoute] GetCategoryByIdQuery query)
         {
             return Ok(await mediator.Send(query));
         }
-
         #endregion
-
     }
 }

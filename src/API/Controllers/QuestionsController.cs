@@ -1,5 +1,4 @@
-﻿using Application.Histories.Queries.GetQuestionHistory;
-using Application.Questions.Commands.AddQuestion;
+﻿using Application.Questions.Commands.AddQuestion;
 using Application.Questions.Commands.DeleteAllQuestion;
 using Application.Questions.Commands.DeleteQuestion;
 using Application.Questions.Commands.UpdateQuestion;
