@@ -1,0 +1,12 @@
+{
+  "name": "examiner",
+  "version": "1.0.0",
+  "description": "The idea of the examiner is to help students or in profistionFiled to create an exam for testing their knowledge base, or contuse review.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
