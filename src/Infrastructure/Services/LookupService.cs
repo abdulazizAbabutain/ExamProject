@@ -46,7 +46,7 @@ namespace Infrastructure.Services
             if (colorCode.IsNull())
                 colorCode = ColorExtension.GenerateRandomHexColor();
 
-            _repositoryManager.TagRepository.Insert(new Tag(name,colorCode));
+            _repositoryManager.TagRepository.Insert(new Tag(name, colorCode));
         }
 
         public IEnumerable<Tag> GetAllTags()
@@ -67,6 +67,46 @@ namespace Infrastructure.Services
 
             return _repositoryManager.TagRepository.GetTagsRefrence(tags);
         }
+
+
+        public void UpdateTag(Guid id, string name, string? colorCode = null)
+        {
+            if (_repositoryManager.TagRepository.IsExist(name))
+                return;
+
+            var tag = _repositoryManager.TagRepository.GetById(id);
+
+            if (tag.IsNull())
+                return;
+            if (colorCode.IsNull())
+                colorCode = ColorExtension.GenerateRandomHexColor();
+
+            tag.UpdateTag(name, colorCode);
+
+            _repositoryManager.TagRepository.Update(tag);
+        }
+
+        public void DeleteTag(Guid id)
+        {
+            if(_repositoryManager.TagRepository.IsNotExist(id))
+                return;
+            
+            var sources = _repositoryManager.SourceRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
+            if(sources.Any() && sources.IsNotNull())
+            {
+                foreach(var source in sources)
+                {
+                    source.RemoveTag(id);
+                }
+                _repositoryManager.SourceRepository.Update(sources);
+            }
+            //TODO: remove all tags from questions 
+
+
+            _repositoryManager.TagRepository.DeleteById(id);
+
+        }
+
         #endregion
 
         #region Source services
@@ -95,8 +135,8 @@ namespace Infrastructure.Services
                 var category = _repositoryManager.CategoryRepository.GetById(parentId.Value);
                 if (category.IsNull())
                     return;
-                
-                _repositoryManager.CategoryRepository.Insert(new Category(name,parentId.Value,category.Level));
+
+                _repositoryManager.CategoryRepository.Insert(new Category(name, parentId.Value, category.Level));
             }
             else
             {
@@ -124,6 +164,7 @@ namespace Infrastructure.Services
                 _disposed = true;
             }
         }
+
         #endregion
     }
 }

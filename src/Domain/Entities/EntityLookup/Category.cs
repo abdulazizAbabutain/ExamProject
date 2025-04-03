@@ -9,7 +9,7 @@ namespace Domain.Entities.EntityLookup
             Id = Guid.CreateVersion7();
             Name = name;
             ParentId = parentId;
-            Level = level++;
+            Level = level+1;
         }
 
         public Category(string name)
@@ -23,7 +23,7 @@ namespace Domain.Entities.EntityLookup
 
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public Guid ParentId { get; set; }
+        public Guid? ParentId { get; set; }
         public int Level {  get; set; }
 
 

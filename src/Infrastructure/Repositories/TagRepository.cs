@@ -15,12 +15,19 @@ namespace Infrastructure.Repositories
         public bool IsExist(string name)
             => GetCollection().Exists(e => e.Name.Equals(name));
 
+        public bool IsExist(Guid id)
+          => GetCollection().Exists(e => e.Id.Equals(id));
+
+        public bool IsNotExist(Guid id)
+        => !GetCollection().Exists(e => e.Id.Equals(id));
+
         public IEnumerable<Guid> GetTagsRefrence(IEnumerable<string> tags)
           => GetCollection().Find(t => tags.Contains(t.Name)).Select(e => e.Id);
 
 
         public Guid GetTagReference(string tag)
           => GetCollection().FindOne(t => t.Name.Equals(tag)).Id;
+
 
         public IEnumerable<string> GetAllAvailableTags(IEnumerable<string> tags)
         {

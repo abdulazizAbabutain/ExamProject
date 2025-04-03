@@ -31,7 +31,7 @@ public class GetAllQuestionsQueryHandler(IRepositoryManager repositoryManager) :
             query = query.Or(q => q.QuestionType == request.QuestionType);
 
         if (request.RequireManualReview.HasValue)
-            query = query.Or(q => q.RequireManulReview == request.RequireManualReview.Value);
+            query = query.Or(q => q.RequireManualReview == request.RequireManualReview.Value);
 
         var questions = _repositoryManager.QuestionRepository.GetAll(query, request.PageNumber, request.PageSize).ToList();
 
@@ -41,7 +41,7 @@ public class GetAllQuestionsQueryHandler(IRepositoryManager repositoryManager) :
             Mark = q.Mark,
             QuestionText = q.QuestionText,
             QuestionType = new QuestionTypeLookup { Id = q.QuestionType },
-            RequireManulReview = q.RequireManulReview,
+            RequireManulReview = q.RequireManualReview,
             Difficulty = new QuestionDifficultyLookup { Id = q.DifficultyIndex.GetDifficultyCategory() },
             Tags = q.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => q.Tags.Contains(t.Id)).Select(e => e.Name).ToList() : null,
         }).ToList();

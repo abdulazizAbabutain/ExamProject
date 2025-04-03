@@ -38,7 +38,7 @@ internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequ
                 Id = question.DifficultyIndex.GetDifficultyCategory()
             },
             Sources =  null,
-            RequireManulReview = question.RequireManulReview,
+            RequireManulReview = question.RequireManualReview,
             //TODO: Fix
             Tags = null,
             MultipleChoiseOptions = question.MultipleChoiseQuestion is not null ? question.MultipleChoiseQuestion.Options.Select(e => new MultipleChoiseQuestionResult
@@ -69,7 +69,7 @@ internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequ
         {
             options.Add(MultipleChoiseQuestion.CreateOption(item.OptionText,item.IsCorrect,item.Weight,item.FeedBack));
         }
-        question.CreateMultipleChoiseQuestion(new MultipleChoiseQuestion(options));
+        question.CreateMultipleChoiceQuestion(new MultipleChoiseQuestion(options));
         
         return question;
     }

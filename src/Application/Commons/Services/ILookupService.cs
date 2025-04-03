@@ -13,7 +13,8 @@ namespace Application.Commons.Services
         void AddTag(string name, string? colorCode = null);
         IEnumerable<Tag> GetAllTags();
         IEnumerable<Guid> GetTagsReference(IEnumerable<string> tags);
-
+        public void UpdateTag(Guid id,string name, string? colorCode = null);
+        void DeleteTag(Guid id);
         #region Source services
         void AddSource(Source source);
         Source GetSource(Guid id);

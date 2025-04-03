@@ -4,6 +4,10 @@ using Application.Lookups.Commands.Languages;
 using Application.Lookups.Commands.Sources.AddSource;
 using Application.Lookups.Commands.Sources.UpdateSource;
 using Application.Lookups.Commands.Tags.AddTag;
+using Application.Lookups.Commands.Tags.DeleteTag;
+using Application.Lookups.Commands.Tags.UpdateTag;
+using Application.Lookups.Queries.Categories.GetAllCategory;
+using Application.Lookups.Queries.Categories.GetCategoryById;
 using Application.Lookups.Queries.Languages.GetLanguages;
 using Application.Lookups.Queries.Sources.GetAllSources;
 using Application.Lookups.Queries.Sources.GetSourceById;
@@ -40,7 +44,7 @@ namespace API.Controllers
         }
 
 
-
+        #region tags
         [HttpPost("tag", Name = nameof(AddTag))]
         public async Task<IActionResult> AddTag([FromBody] AddTagCommand command)
         {
@@ -50,11 +54,28 @@ namespace API.Controllers
 
 
         [HttpGet("tag", Name = nameof(GetAllTags))]
-        public async Task<IActionResult> GetAllTags()
+        public async Task<IActionResult> GetAllTags([FromQuery] GetAllTagsQuery query)
         {
-            return Ok(await mediator.Send(new GetAllTagsQuery()));
+            return Ok(await mediator.Send(query));
 
         }
+
+        [HttpPut("tag", Name = nameof(UpdateTag))]
+        public async Task<IActionResult> UpdateTag([FromBody] UpdateTagCommand command)
+        {
+            await mediator.Send(command);
+            return NoContent();
+
+        }
+
+        [HttpDelete("tag/{id:guid}", Name = nameof(DeleteTag))]
+        public async Task<IActionResult> DeleteTag([FromRoute] DeleteTagCommand command)
+        {
+            await mediator.Send(command);
+            return NoContent();
+
+        }
+        #endregion
 
         [HttpPost("source", Name = nameof(AddSource))]
         public async Task<IActionResult> AddSource([FromBody] AddSourceCommand command)
@@ -85,7 +106,7 @@ namespace API.Controllers
             return NoContent();
 
         }
-
+        #region categories
         [HttpPost("category", Name = nameof(AddCateogry))]
         public async Task<IActionResult> AddCateogry([FromBody] AddCategoryCommand command)
         {
@@ -93,7 +114,20 @@ namespace API.Controllers
             return NoContent();
         }
 
+        [HttpGet("category", Name = nameof(GetAllCategpry))]
+        public async Task<IActionResult> GetAllCategpry([FromQuery] GetAllCategoryQuery query)
+        {
+            return Ok(await mediator.Send(query));
+        }
 
+
+        [HttpGet("category/{id:guid}", Name = nameof(GetCategoryById))]
+        public async Task<IActionResult> GetCategoryById([FromRoute] GetCategoryByIdQuery query)
+        {
+            return Ok(await mediator.Send(query));
+        }
+
+        #endregion
 
     }
 }

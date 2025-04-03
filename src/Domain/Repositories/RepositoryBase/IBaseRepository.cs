@@ -15,5 +15,6 @@ namespace Domain.Repositories.RepositoryBase
         void DeleteById(Guid id);
         void DeleteAll();
         void Update(T entity);
+        void Update(IEnumerable<T> entity);
     }
 }

@@ -2,6 +2,7 @@
 {
     public class EntityAudit
     {
+
         public DateTimeOffset? LastModifiedDate { get; protected set; }
         public DateTimeOffset? LastDeletedDate { get; protected set; }
         public DateTimeOffset CreationDate { get; protected set; }

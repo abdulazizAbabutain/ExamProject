@@ -1,9 +1,10 @@
-﻿using Domain.Repositories.RepositoryBase;
+﻿using Domain.Entities.Audit;
+using Domain.Repositories.RepositoryBase;
 using LiteDB;
 
 namespace Infrastructure.Repositories.BaseRepository
 {
-    public class BaseRepository<T> :  IBaseRepository<T> where T : class
+    public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
         protected readonly LiteDatabase _db;          
         protected readonly ILiteCollection<T> _collection;
@@ -54,9 +55,14 @@ namespace Infrastructure.Repositories.BaseRepository
         public virtual int Count()
             => _collection.Count();
 
+        public void Update(IEnumerable<T> entity)
+            => _collection.Update(entity);
+
         public void Dispose()
         {
             _db?.Dispose();
         }
+
+       
     }
 }

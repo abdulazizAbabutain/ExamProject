@@ -40,7 +40,7 @@ namespace Application.Questions.Queries.GetQuestionsById
                     Id = question.DifficultyIndex.GetDifficultyCategory()
                 },
                 Sources = null,
-                RequireManulReview = question.RequireManulReview,
+                RequireManulReview = question.RequireManualReview,
                 Tags = tags,
                 MultipleChoiseOptions = question.MultipleChoiseQuestion is not null ? question.MultipleChoiseQuestion.Options.Select(e => new MultipleChoiseQuestionResult
                 {

@@ -28,6 +28,14 @@ namespace Domain.Entities.EntityLookup
             Tags = tags.IsNotNull() ? tags.ToList() : null;
         }
 
+        public void RemoveTag(Guid id)
+        {
+            Tags.Remove(id);
+            
+            if (Tags.Count == 0)
+                Tags = null;
+        }
+
         public Guid Id { get; private set; }
         public SourceType Type { get; private set; }
         public string Title { get; private set; }
