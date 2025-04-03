@@ -1,4 +1,5 @@
-﻿using Application.Questions.Queries.GetQuestionsById.ResultModel;
+﻿using Application.Commons.SharedModelResult;
+using Application.Questions.Queries.GetQuestionsById.ResultModel;
 using Domain.Lookups;
 using LiteDB;
 
@@ -13,9 +14,11 @@ public class GetQuestionsByIdQueryResult
     public QuestionDifficultyLookup Difficulty { get; set; }
     public int VersionNumber { get; set; }
     public int Mark { get; set; }
-    public bool RequireManulReview { get; set; }
-    public List<string> Tags { get; set; }
+    public bool RequireManualReview { get; set; }
+    public List<TagResult>? Tags { get; set; }
     public List<QuestionSourceResult>? Sources {  get; set; }
-    public IEnumerable<MultipleChoiseQuestionResult>? MultipleChoiseOptions { get; set; }
+    public LanguageResult? Language { get; set; }
+    public string? Category { get; set; }
+    public IEnumerable<MultipleChoiseQuestionResult>? MultipleChoiceOptions { get; set; }
     public TrueFalseQuestionQueryResult? TrueAndFalse { get; set; }
 }

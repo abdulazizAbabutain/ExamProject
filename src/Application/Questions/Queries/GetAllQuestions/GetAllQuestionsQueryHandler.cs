@@ -1,5 +1,6 @@
 ﻿using Application.Commons.Extentions;
 using Application.Commons.Models.Pageination;
+using Application.Commons.SharedModelResult;
 using Domain.Entities.Examiner;
 using Domain.Extentions;
 using Domain.Lookups;
@@ -17,23 +18,39 @@ public class GetAllQuestionsQueryHandler(IRepositoryManager repositoryManager) :
 
     public async Task<PageResponse<GetAllQuestionsQueryResult>> Handle(GetAllQuestionsQuery request, CancellationToken cancellationToken)
     {
-        var query = PredicateBuilder.New<Question>();
+        var query = PredicateBuilder.New<Question>(true);
 
         Guid? tagId = null;
+        Guid? categoryId = null;
 
         if (!string.IsNullOrWhiteSpace(request.Tags))
             tagId = _repositoryManager.TagRepository.GetTagReference(request.Tags);
+        if (request.Category.IsNotNullOrEmpty())
+            categoryId = _repositoryManager.CategoryRepository.GetCollection().Find(e => e.Id == categoryId).Select(e => e.Id).FirstOrDefault();
 
         if (tagId.HasValue)
-            query = query.Or(q => q.Tags.Contains(tagId.Value));
+            query = query.And(q => q.Tags.Contains(tagId.Value));
 
         if (request.QuestionType.HasValue)
-            query = query.Or(q => q.QuestionType == request.QuestionType);
+            query = query.And(q => q.QuestionType == request.QuestionType);
 
         if (request.RequireManualReview.HasValue)
-            query = query.Or(q => q.RequireManualReview == request.RequireManualReview.Value);
+            query = query.And(q => q.RequireManualReview == request.RequireManualReview.Value);
+
+        if (categoryId.HasValue)
+            query = query.And(q => q.Category == categoryId);
+
+        if (request.Search.IsNotNullOrEmpty())
+            query = query.And(q => q.QuestionText.Contains(request.Search));
 
         var questions = _repositoryManager.QuestionRepository.GetAll(query, request.PageNumber, request.PageSize).ToList();
+        
+        var questionTags = questions.SelectMany(e => e.Tags).Distinct();
+        var questionCategories = questions.Select(e => e.Category).Distinct();
+
+        var tags = _repositoryManager.TagRepository.GetCollection().Find(t => questionTags.Contains(t.Id)).ToList();
+
+        var categories = _repositoryManager.CategoryRepository.GetCollection().Find(e => questionCategories.Contains(e.Id)).ToList();
 
         var data = questions.Select(q => new GetAllQuestionsQueryResult
         {
@@ -41,9 +58,14 @@ public class GetAllQuestionsQueryHandler(IRepositoryManager repositoryManager) :
             Mark = q.Mark,
             QuestionText = q.QuestionText,
             QuestionType = new QuestionTypeLookup { Id = q.QuestionType },
-            RequireManulReview = q.RequireManualReview,
+            RequireManualReview = q.RequireManualReview,
             Difficulty = new QuestionDifficultyLookup { Id = q.DifficultyIndex.GetDifficultyCategory() },
-            Tags = q.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => q.Tags.Contains(t.Id)).Select(e => e.Name).ToList() : null,
+            Tags = q.Tags.IsNotNull() ? tags.Where(e => q.Tags.Contains(e.Id)).Select(e => new TagResult
+            {
+                Name = e.Name,
+                ColorCode = e.ColorHexCode,
+            }) : null,
+            Category = categories.Where(cat => cat.Id == q.Category).Select(e => e.Name).FirstOrDefault(),
         }).ToList();
 
         var totalCount = _repositoryManager.QuestionRepository.Count();

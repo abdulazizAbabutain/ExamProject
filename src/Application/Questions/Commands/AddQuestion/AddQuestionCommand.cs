@@ -22,13 +22,15 @@ public class AddQuestionCommand : IRequest<GetQuestionsByIdQueryResult>
     /// List of the same question but different style 
     /// </summary>
     public List<string>? Variants { get; set; }
-    public string LanguageCode { get; set; }
     public required int Mark { get; set; }
     public required bool RequireManulReview { get; set; }
-    public List<Guid>? Tags { get; set; }
     public QuestionDifficulty Difficulty { get; set; }
-    public List<QuestionSourceCommand> Sources { get; set; }
     public IEnumerable<MultipleChoiseQuestionCommand>? Options { get; set; }
     public TrueFalseQuestionCommand? TrueAndAnswer { get; set; }
-
+    #region refrence 
+    public Guid? Language { get; set; }
+    public List<Guid>? Tags { get; set; }
+    public List<Guid>? Sources { get; set; }
+    public Guid? Category { get; set; }
+    #endregion
 }

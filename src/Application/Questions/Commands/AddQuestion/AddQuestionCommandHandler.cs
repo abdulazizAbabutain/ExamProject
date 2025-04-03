@@ -19,9 +19,6 @@ internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequ
     {
         var question = BuildQuestion(request);
         _serviceManager.QuestionService.InsertQuestion(question);
-        //TODO: add mapping lib
-
-        _serviceManager.Dispose();
 
         return new GetQuestionsByIdQueryResult
         {
@@ -38,10 +35,9 @@ internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequ
                 Id = question.DifficultyIndex.GetDifficultyCategory()
             },
             Sources =  null,
-            RequireManulReview = question.RequireManualReview,
-            //TODO: Fix
+            RequireManualReview = question.RequireManualReview,
             Tags = null,
-            MultipleChoiseOptions = question.MultipleChoiseQuestion is not null ? question.MultipleChoiseQuestion.Options.Select(e => new MultipleChoiseQuestionResult
+            MultipleChoiceOptions = question.MultipleChoiseQuestion is not null ? question.MultipleChoiseQuestion.Options.Select(e => new MultipleChoiseQuestionResult
             {
                 Id = e.Id,
                 IsCorrect = e.IsCorrect,
@@ -87,12 +83,8 @@ internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequ
 
     private Question CreateQuestion(AddQuestionCommand request)
     {
-        List<Guid>? tags = null;
-        List<Guid>? source = null;
-        
-        var lang = _serviceManager.LookupService.GetLanguageReference(request.LanguageCode);
-
-        return new Question(request.QuestionText, request.Variants, lang, request.QuestionType, request.Mark, request.RequireManulReview, request.Tags, source, request.Difficulty);
+        return new Question(request.QuestionText, request.Variants,request.QuestionType, request.Mark, request.RequireManulReview,request.Difficulty,
+            request.Language,request.Tags,request.Sources,request.Category);
     }
 
     private Question BuildQuestion(AddQuestionCommand request)

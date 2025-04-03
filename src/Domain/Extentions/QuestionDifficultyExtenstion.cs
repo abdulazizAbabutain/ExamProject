@@ -15,28 +15,28 @@ namespace Application.Commons.Extentions
             switch(difficulty)
             {
                 case QuestionDifficulty.Basic:
-                    return QuestionDifficultyMattrixes.Basic;
+                    return QuestionDifficultyMatrixes.Basic;
              
                 case QuestionDifficulty.Simple:
-                    return QuestionDifficultyMattrixes.Simple;
+                    return QuestionDifficultyMatrixes.Simple;
 
                 case QuestionDifficulty.Manageable:
-                    return QuestionDifficultyMattrixes.Manageable;
+                    return QuestionDifficultyMatrixes.Manageable;
 
                 case QuestionDifficulty.Average:
-                    return QuestionDifficultyMattrixes.Average;
+                    return QuestionDifficultyMatrixes.Average;
 
                 case QuestionDifficulty.Challenging:
-                    return QuestionDifficultyMattrixes.Challenging;
+                    return QuestionDifficultyMatrixes.Challenging;
 
                 case QuestionDifficulty.Tough:
-                    return QuestionDifficultyMattrixes.Tough; 
+                    return QuestionDifficultyMatrixes.Tough; 
 
                 case QuestionDifficulty.Extreme:
-                    return QuestionDifficultyMattrixes.Extreme;
+                    return QuestionDifficultyMatrixes.Extreme;
 
                 default:
-                    return QuestionDifficultyMattrixes.Average;
+                    return QuestionDifficultyMatrixes.Average;
             }
         }
 
@@ -48,22 +48,22 @@ namespace Application.Commons.Extentions
         /// <returns>float </returns>
         public static QuestionDifficulty GetDifficultyCategory(this short mattrix)
         {
-            if (mattrix >= QuestionDifficultyMattrixes.Basic && mattrix < QuestionDifficultyMattrixes.Simple)
+            if (mattrix >= QuestionDifficultyMatrixes.Basic && mattrix < QuestionDifficultyMatrixes.Simple)
                 return QuestionDifficulty.Basic;
 
-            if (mattrix >= QuestionDifficultyMattrixes.Simple && mattrix < QuestionDifficultyMattrixes.Manageable)
+            if (mattrix >= QuestionDifficultyMatrixes.Simple && mattrix < QuestionDifficultyMatrixes.Manageable)
                 return QuestionDifficulty.Simple;
 
-            if (mattrix >= QuestionDifficultyMattrixes.Manageable && mattrix < QuestionDifficultyMattrixes.Average)
+            if (mattrix >= QuestionDifficultyMatrixes.Manageable && mattrix < QuestionDifficultyMatrixes.Average)
                 return QuestionDifficulty.Manageable;
 
-            if (mattrix >= QuestionDifficultyMattrixes.Average && mattrix < QuestionDifficultyMattrixes.Challenging)
+            if (mattrix >= QuestionDifficultyMatrixes.Average && mattrix < QuestionDifficultyMatrixes.Challenging)
                 return QuestionDifficulty.Average;
 
-            if (mattrix >= QuestionDifficultyMattrixes.Challenging && mattrix < QuestionDifficultyMattrixes.Tough)
+            if (mattrix >= QuestionDifficultyMatrixes.Challenging && mattrix < QuestionDifficultyMatrixes.Tough)
                 return QuestionDifficulty.Challenging;
 
-            if (mattrix >= QuestionDifficultyMattrixes.Tough && mattrix < QuestionDifficultyMattrixes.Extreme)
+            if (mattrix >= QuestionDifficultyMatrixes.Tough && mattrix < QuestionDifficultyMatrixes.Extreme)
                 return QuestionDifficulty.Tough;
 
                 return QuestionDifficulty.Extreme;

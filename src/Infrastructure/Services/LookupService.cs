@@ -100,8 +100,17 @@ namespace Infrastructure.Services
                 }
                 _repositoryManager.SourceRepository.Update(sources);
             }
-            //TODO: remove all tags from questions 
 
+            var questions = _repositoryManager.QuestionRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
+
+            if (questions.Any() && questions.IsNotNull())
+            {
+                foreach (var question in questions)
+                {
+                    question.RemoveTag(id);
+                }
+                _repositoryManager.SourceRepository.Update(sources);
+            }
 
             _repositoryManager.TagRepository.DeleteById(id);
 

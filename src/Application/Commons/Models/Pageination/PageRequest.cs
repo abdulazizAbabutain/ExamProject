@@ -2,7 +2,7 @@
 
 public class PageRequest
 {
-    private const int MaxPageSize = 50;
+    private const int MaxPageSize = 100;
 
     public int PageNumber { get; set; } = 1;
     private int _pageSize = 10;

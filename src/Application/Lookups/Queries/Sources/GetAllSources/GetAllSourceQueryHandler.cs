@@ -38,10 +38,7 @@ namespace Application.Lookups.Queries.Sources.GetAllSources
                     ColorCode = e.ColorHexCode
                 }).ToList() : null,
                 Title = e.Title,
-                Type = new SourceTypeLookup()
-                {
-                    Id = e.Type
-                },
+                Type = new SourceTypeLookup(e.Type),
                 URL = e.URL
             }).ToList();
 

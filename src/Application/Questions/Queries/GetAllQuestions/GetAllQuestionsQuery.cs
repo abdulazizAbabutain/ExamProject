@@ -9,5 +9,7 @@ namespace Application.Questions.Queries.GetAllQuestions
         public string? Tags { get; set; }
         public QuestionType? QuestionType { get; set; }
         public bool? RequireManualReview { get; set; }
+        public string? Category { get; set; }
+        public string? Search { get; set; }
     }
 }

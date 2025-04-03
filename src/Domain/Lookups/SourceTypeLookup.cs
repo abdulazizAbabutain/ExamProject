@@ -4,6 +4,10 @@ namespace Domain.Lookups
 {
     public class SourceTypeLookup
     {
+        public SourceTypeLookup(SourceType id)
+        {
+            Id = id;
+        }
         public SourceType Id { get; set; }
         public string Value
         {

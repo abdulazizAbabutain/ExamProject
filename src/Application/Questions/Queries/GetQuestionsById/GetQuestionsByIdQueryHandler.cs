@@ -1,5 +1,6 @@
 ﻿using Application.Commons.Extentions;
 using Application.Commons.Managers;
+using Application.Commons.SharedModelResult;
 using Application.Questions.Queries.GetQuestionsById.ResultModel;
 using Domain.Extentions;
 using Domain.Lookups;
@@ -14,15 +15,40 @@ namespace Application.Questions.Queries.GetQuestionsById
 
         public async Task<GetQuestionsByIdQueryResult> Handle(GetQuestionsByIdQuery request, CancellationToken cancellationToken)
         {
-            List<string>? tags = null;
+            List<TagResult>? tags = null;
+            List<QuestionSourceResult>? sources = null;
+            string? category = null;
+
 
             var question = _repositoryManager.QuestionRepository.GetById(request.Id);
-            
+
             if (question.IsNull())
                 return null;
 
-            if(question.Tags.IsNotNull())
-                tags = _repositoryManager.TagRepository.GetCollection().Find(t => question.Tags.Contains(t.Id)).Select(e => e.Name).ToList();
+            if (question.Tags.IsNotNull())
+                tags = _repositoryManager.TagRepository.GetCollection().Find(t => question.Tags.Contains(t.Id)).Select(e => new TagResult
+                {
+                    ColorCode = e.ColorHexCode,
+                    Name = e.Name,
+                }).ToList();
+            if (question.Sources.IsNotNull())
+                sources = _repositoryManager.SourceRepository.GetCollection().Find(s => question.Sources.Contains(s.Id)).Select(s => new QuestionSourceResult
+                {
+                    Id = s.Id,
+                    Description = s.Description,
+                    Title = s.Title,
+                    Type = new SourceTypeLookup(s.Type),
+                    URL = s.URL,
+                }).ToList();
+
+
+            var language = _repositoryManager.LanguageRepository.GetCollection().Find(s => s.Id == question.Language).Select(lan => new LanguageResult
+            {
+                Code = lan.Code,
+                Name = lan.DisplayName
+            }).FirstOrDefault();
+
+            category = _repositoryManager.CategoryRepository.GetCollection().Find(c => c.Id == question.Category).Select(e => e.Name).FirstOrDefault();
 
             return new GetQuestionsByIdQueryResult
             {
@@ -39,10 +65,12 @@ namespace Application.Questions.Queries.GetQuestionsById
                 {
                     Id = question.DifficultyIndex.GetDifficultyCategory()
                 },
-                Sources = null,
-                RequireManulReview = question.RequireManualReview,
+                Sources = sources,
+                RequireManualReview = question.RequireManualReview,
                 Tags = tags,
-                MultipleChoiseOptions = question.MultipleChoiseQuestion is not null ? question.MultipleChoiseQuestion.Options.Select(e => new MultipleChoiseQuestionResult
+                Category = category,
+                Language = language,
+                MultipleChoiceOptions = question.MultipleChoiseQuestion is not null ? question.MultipleChoiseQuestion.Options.Select(e => new MultipleChoiseQuestionResult
                 {
                     Id = e.Id,
                     IsCorrect = e.IsCorrect,

@@ -52,7 +52,7 @@ namespace Domain.Entities.Examiner
         /// <summary>
         /// The language in which the question is written.
         /// </summary
-        public Guid Language { get; set; }
+        public Guid? Language { get; set; }
         /// <summary>
         /// Optional list of tags used to categorize the question.
         /// </summary
@@ -69,8 +69,8 @@ namespace Domain.Entities.Examiner
         #endregion
 
 
-        public Question(string questionText, List<string>? variants, Guid language, QuestionType questionType, int mark, bool requireManualReview,
-            List<Guid>? tags,List<Guid>? sources ,QuestionDifficulty difficulty)
+        public Question(string questionText, List<string>? variants, QuestionType questionType, int mark, bool requireManualReview,QuestionDifficulty difficulty, 
+            Guid? language = null, List<Guid>? tags = null, List<Guid>? sources = null, Guid? category = null)
         {
             QuestionText = questionText;
             Variants = variants;
@@ -80,6 +80,7 @@ namespace Domain.Entities.Examiner
             RequireManualReview = requireManualReview;
             Tags = tags;
             Sources = sources;
+            Category = category;
             DifficultyIndex = difficulty.GetMattrix();
         }
 
@@ -122,17 +123,19 @@ namespace Domain.Entities.Examiner
 
             }
 
-            if(!Tags.Equals(tags))
-            {
-                //TODO: Fix
-                Tags = null;
-
-            }
-
             if(DifficultyIndex != difficultyIndex)
             {
                 DifficultyIndex = difficultyIndex;
             }
         }
+
+        public void RemoveTag(Guid tagId)
+        {
+            Tags.Remove(tagId);
+
+            if (Tags.Count == 0)
+                Tags = null;
+        }
+        
     }
 }

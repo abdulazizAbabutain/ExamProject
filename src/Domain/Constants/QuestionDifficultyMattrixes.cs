@@ -1,6 +1,6 @@
 ﻿namespace Domain.Constants
 {
-    public static class QuestionDifficultyMattrixes
+    public static class QuestionDifficultyMatrixes
     {
         public const short Basic = 0;
         public const short Simple = 15;
