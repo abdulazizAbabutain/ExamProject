@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commons\Extentions\" />
     <Folder Include="Lookups\Commands\Tags\NewFolder\" />
     <Folder Include="Lookups\BulkCommands\" />
   </ItemGroup>

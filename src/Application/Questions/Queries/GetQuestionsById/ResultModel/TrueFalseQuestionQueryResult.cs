@@ -4,7 +4,6 @@
     {
         public Guid Id { get; set; }
         public bool IsCorrect { get; set; }
-        public string? WrongFeedBack { get; set; }
-        public string? AnswerFeedBack { get; set; }
+        public FeedbackQueryResult? Feedback { get; set; }
     }
 }

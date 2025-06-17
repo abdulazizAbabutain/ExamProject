@@ -1,6 +1,7 @@
 ﻿using Application.Commons.Extentions;
 using Application.Commons.Models.Pageination;
 using Application.Commons.SharedModelResult;
+using Domain.Entities.EntityLookup;
 using Domain.Entities.Examiner;
 using Domain.Extentions;
 using Domain.Lookups;
@@ -22,6 +23,8 @@ public class GetAllQuestionsQueryHandler(IRepositoryManager repositoryManager) :
 
         Guid? tagId = null;
         Guid? categoryId = null;
+        List<Tag> tags = null;
+        List<Category> categories = null;
 
         if (!string.IsNullOrWhiteSpace(request.Tags))
             tagId = _repositoryManager.TagRepository.GetTagReference(request.Tags);
@@ -45,12 +48,14 @@ public class GetAllQuestionsQueryHandler(IRepositoryManager repositoryManager) :
 
         var questions = _repositoryManager.QuestionRepository.GetAll(query, request.PageNumber, request.PageSize).ToList();
         
-        var questionTags = questions.SelectMany(e => e.Tags).Distinct();
-        var questionCategories = questions.Select(e => e.Category).Distinct();
+        var questionTags = questions.Where(e => e.Tags.IsNotNull()).SelectMany(e => e.Tags).ToList();
+        var questionCategories = questions.Where(e => e.Category.IsNotNull()).Select(e => e.Category).ToList();
 
-        var tags = _repositoryManager.TagRepository.GetCollection().Find(t => questionTags.Contains(t.Id)).ToList();
-
-        var categories = _repositoryManager.CategoryRepository.GetCollection().Find(e => questionCategories.Contains(e.Id)).ToList();
+        if(questionTags.IsNotNull() && questionTags.Any())
+            tags = _repositoryManager.TagRepository.GetCollection().Find(t => questionTags.Contains(t.Id)).ToList();
+        
+        if(questionCategories.IsNotNull() && questionCategories.Any())
+            categories = _repositoryManager.CategoryRepository.GetCollection().Find(e => questionCategories.Contains(e.Id)).ToList();
 
         var data = questions.Select(q => new GetAllQuestionsQueryResult
         {

@@ -1,19 +1,50 @@
-using Scalar.AspNetCore;
-using Infrastructure;
+using API.ApiDoc.Tags.Requests;
+using API.Filters;
 using Application;
-using Swashbuckle.AspNetCore.Annotations;
+using Infrastructure;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Scalar.AspNetCore;
+using Swashbuckle.AspNetCore.Filters;
+using System.Reflection;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services
+    .AddControllers()
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+    });
+
+
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.RegisterInfrastructure();
 builder.Services.RegisterApplication();
-builder.Services.AddSwaggerGen();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.EnableAnnotations();
+    c.SchemaFilter<ExampleSchemaFilter>();
+    c.ExampleFilters(); 
+});
+
+
+
+builder.Services.AddSwaggerExamplesFromAssemblyOf<AddTagCommandRequestExample>();
+
+
+builder.Services
+    .AddControllersWithViews()
+    .AddXmlSerializerFormatters()
+    .AddNewtonsoftJson(options =>
+        options.SerializerSettings.Converters.Add(new StringEnumConverter()));
+// order is vital, this *must* be called *after* addnewtonsoftjson()
+builder.Services.AddSwaggerGenNewtonsoftSupport();
 
 
 
@@ -28,12 +59,25 @@ builder.Services.AddCors(options =>
 });
 
 
+builder.Services.AddSwaggerGen(options =>
+{
+    // using System.Reflection;
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "API.xml"));
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "Application.xml"));
+
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.UseSwagger(options =>
+    {
+       options.RouteTemplate = "/openapi/{documentName}.json";
+    });
     app.MapScalarApiReference();
 }
 
@@ -44,20 +88,20 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     // During development, proxy to Angular's development server
-    app.UseSpa(spa =>
-    {
-        spa.Options.SourcePath = "ClientApp";
-        //spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
-    });
+    //app.UseSpa(spa =>
+    //{
+    //    spa.Options.SourcePath = "ClientApp";
+    //    //spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
+    //});
 }
-else
-{
-    app.UseSpa(spa =>
-    {
-        spa.Options.SourcePath = "ClientApp/dist";
-        // Add additional configurations for production if needed
-    });
-}
+//else
+//{
+//    app.UseSpa(spa =>
+//    {
+//        spa.Options.SourcePath = "ClientApp/dist";
+//        // Add additional configurations for production if needed
+//    });
+//}
 app.UseCors("AllowAngularDevClient");
 
 app.UseAuthorization();

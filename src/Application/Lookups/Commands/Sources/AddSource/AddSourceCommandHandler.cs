@@ -1,5 +1,5 @@
 ﻿using Application.Commons.Managers;
-using Domain.Entities.EntityLookup;
+using Domain.Entities.Sources;
 using MediatR;
 
 namespace Application.Lookups.Commands.Sources.AddSource
@@ -10,7 +10,7 @@ namespace Application.Lookups.Commands.Sources.AddSource
 
         public async Task Handle(AddSourceCommand request, CancellationToken cancellationToken)
         {
-            var source = new Source(request.Type,request.Title,request.Description,request.URL,request.Tags);
+            var source = new Source(request.Type, request.Title, request.Description, request.Tags);
             _serviceManager.LookupService.AddSource(source);
         }
     }

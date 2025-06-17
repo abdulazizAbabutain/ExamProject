@@ -29,7 +29,6 @@ namespace Application.Lookups.Queries.Sources.GetSourceById
                 }).ToList() : null,
                 Title = source.Title,
                 Type = new SourceTypeLookup(source.Type),
-                URL = source.URL,
                 VersionNumber = source.VersionNumber
             };
 

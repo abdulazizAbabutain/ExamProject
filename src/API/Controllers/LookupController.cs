@@ -43,90 +43,40 @@ namespace API.Controllers
         }
         #endregion
 
-        #region tags
-        [HttpPost("tag", Name = nameof(AddTag))]
-        public async Task<IActionResult> AddTag([FromBody] AddTagCommand command)
-        {
-            await mediator.Send(command);
-            return NoContent();
-        }
+        //#region source 
+        //[HttpPost("source", Name = nameof(AddSource))]
+        //public async Task<IActionResult> AddSource([FromBody] AddSourceCommand command)
+        //{
+        //    await mediator.Send(command);
+        //    return NoContent();
+        //}
+
+        //[HttpGet("source", Name = nameof(GetAllSources))]
+        //public async Task<IActionResult> GetAllSources([FromQuery] GetAllSourceQuery query)
+        //{
+        //    return Ok(await mediator.Send(query));
+
+        //}
+
+        //[HttpGet("source/{id}", Name = nameof(GetSourceById))]
+        //public async Task<IActionResult> GetSourceById([FromRoute] GetSourceByIdQuery query)
+        //{
+        //    return Ok(await mediator.Send(query));
+
+        //}
 
 
-        [HttpGet("tag", Name = nameof(GetAllTags))]
-        public async Task<IActionResult> GetAllTags([FromQuery] GetAllTagsQuery query)
-        {
-            return Ok(await mediator.Send(query));
+        //[HttpPut("source", Name = nameof(UpdateSource))]
+        //public async Task<IActionResult> UpdateSource([FromBody] UpdateSourceCommand command)
+        //{
+        //    await mediator.Send(command);
+        //    return NoContent();
 
-        }
-
-        [HttpPut("tag", Name = nameof(UpdateTag))]
-        public async Task<IActionResult> UpdateTag([FromBody] UpdateTagCommand command)
-        {
-            await mediator.Send(command);
-            return NoContent();
-
-        }
-
-        [HttpDelete("tag/{id:guid}", Name = nameof(DeleteTag))]
-        public async Task<IActionResult> DeleteTag([FromRoute] DeleteTagCommand command)
-        {
-            await mediator.Send(command);
-            return NoContent();
-
-        }
-        #endregion
-
-        #region source 
-        [HttpPost("source", Name = nameof(AddSource))]
-        public async Task<IActionResult> AddSource([FromBody] AddSourceCommand command)
-        {
-            await mediator.Send(command);
-            return NoContent();
-        }
-
-        [HttpGet("source", Name = nameof(GetAllSources))]
-        public async Task<IActionResult> GetAllSources([FromQuery] GetAllSourceQuery query)
-        {
-            return Ok(await mediator.Send(query));
-
-        }
-
-        [HttpGet("source/{id}", Name = nameof(GetSourceById))]
-        public async Task<IActionResult> GetSourceById([FromRoute] GetSourceByIdQuery query)
-        {
-            return Ok(await mediator.Send(query));
-
-        }
-
-
-        [HttpPut("source", Name = nameof(UpdateSource))]
-        public async Task<IActionResult> UpdateSource([FromBody] UpdateSourceCommand command)
-        {
-            await mediator.Send(command);
-            return NoContent();
-
-        }
-        #endregion
+        //}
+        //#endregion
 
         #region categories
-        [HttpPost("category", Name = nameof(AddCateogry))]
-        public async Task<IActionResult> AddCateogry([FromBody] AddCategoryCommand command)
-        {
-            await mediator.Send(command);
-            return NoContent();
-        }
-
-        [HttpGet("category", Name = nameof(GetAllCategpry))]
-        public async Task<IActionResult> GetAllCategpry([FromQuery] GetAllCategoryQuery query)
-        {
-            return Ok(await mediator.Send(query));
-        }
-
-        [HttpGet("category/{id:guid}", Name = nameof(GetCategoryById))]
-        public async Task<IActionResult> GetCategoryById([FromRoute] GetCategoryByIdQuery query)
-        {
-            return Ok(await mediator.Send(query));
-        }
+      
         #endregion
     }
 }

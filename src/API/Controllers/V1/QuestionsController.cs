@@ -7,7 +7,7 @@ using Application.Questions.Queries.GetQuestionsById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Controllers;
+namespace API.Controllers.V1;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -26,38 +26,35 @@ public class QuestionsController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllQuestions([FromQuery]GetAllQuestionsQuery query)
+    public async Task<IActionResult> GetAllQuestions([FromQuery] GetAllQuestionsQuery query)
     {
         return Ok(await mediator.Send(query));
     }
 
-
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetAllQuestions([FromRoute] Guid id)
+    public async Task<IActionResult> GetQuestionById([FromRoute] Guid id)
     {
-        return Ok(await mediator.Send(new GetQuestionsByIdQuery { Id = id}));
+        return Ok(await mediator.Send(new GetQuestionsByIdQuery { Id = id }));
     }
 
     [HttpDelete(Name = nameof(DeleteAllQuestion))]
-    public async Task<IActionResult> DeleteAllQuestion() 
+    public async Task<IActionResult> DeleteAllQuestion()
     {
         await mediator.Send(new DeleteAllQuestionCommand());
         return NoContent();
     }
 
-
-    [HttpDelete("{id}",Name = nameof(DeleteQuestion))]
+    [HttpDelete("{id}", Name = nameof(DeleteQuestion))]
     public async Task<IActionResult> DeleteQuestion([FromRoute] Guid id)
     {
-        await mediator.Send(new DeleteQuestionCommand {  Id = id });
+        await mediator.Send(new DeleteQuestionCommand { Id = id });
         return NoContent();
     }
 
-    [HttpPut( Name = nameof(UpdateQuestion))]
+    [HttpPut(Name = nameof(UpdateQuestion))]
     public async Task<IActionResult> UpdateQuestion([FromBody] UpdateQuestionCommand command)
     {
         await mediator.Send(command);
         return NoContent();
     }
-
 }

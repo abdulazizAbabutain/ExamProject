@@ -2,7 +2,10 @@
 {
     public enum QuestionType
     {
-        MultipleChoise = 1,
+        MultipleChoice = 1,
         TrueAndFalse = 2,
+        ShortAnswer = 3,
+        LongAnswer = 4,
+        Reordering = 5
     }
 }

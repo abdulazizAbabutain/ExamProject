@@ -13,10 +13,16 @@ namespace Domain.Lookups
             {
                 switch (Id)
                 {
-                    case QuestionType.MultipleChoise:
+                    case QuestionType.MultipleChoice:
                         return EnumValues.MultipleChoise;
                     case QuestionType.TrueAndFalse:
                         return EnumValues.TrueAndFalse;
+                    case QuestionType.ShortAnswer: 
+                        return EnumValues.ShortAnswer;
+                    case QuestionType.LongAnswer:
+                        return EnumValues.LongAnswer;
+                    case QuestionType.Reordering:
+                        return EnumValues.Reordering;
                     default:
                         throw new NotImplementedException();
                 }

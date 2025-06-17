@@ -1,4 +1,4 @@
-﻿using Domain.Entities.EntityLookup;
+﻿using Domain.Entities.Sources;
 using Domain.Repositories.RepositoryBase;
 
 namespace Domain.Repositories

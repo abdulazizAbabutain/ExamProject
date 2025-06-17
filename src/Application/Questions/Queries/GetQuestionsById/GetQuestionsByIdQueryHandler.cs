@@ -1,5 +1,4 @@
 ﻿using Application.Commons.Extentions;
-using Application.Commons.Managers;
 using Application.Commons.SharedModelResult;
 using Application.Questions.Queries.GetQuestionsById.ResultModel;
 using Domain.Extentions;
@@ -38,7 +37,6 @@ namespace Application.Questions.Queries.GetQuestionsById
                     Description = s.Description,
                     Title = s.Title,
                     Type = new SourceTypeLookup(s.Type),
-                    URL = s.URL,
                 }).ToList();
 
 
@@ -70,7 +68,7 @@ namespace Application.Questions.Queries.GetQuestionsById
                 Tags = tags,
                 Category = category,
                 Language = language,
-                MultipleChoiceOptions = question.MultipleChoiseQuestion is not null ? question.MultipleChoiseQuestion.Options.Select(e => new MultipleChoiseQuestionResult
+                MultipleChoiceOptions = question.MultipleChoiceQuestion is not null ? question.MultipleChoiceQuestion.Options.Select(e => new MultipleChoiseQuestionResult
                 {
                     Id = e.Id,
                     IsCorrect = e.IsCorrect,
@@ -81,11 +79,44 @@ namespace Application.Questions.Queries.GetQuestionsById
                 TrueAndFalse = question.TrueFalseQuestion is not null ? new TrueFalseQuestionQueryResult
                 {
                     Id = question.TrueFalseQuestion.Id,
-                    AnswerFeedBack = question.TrueFalseQuestion.AnswerFeedBack,
                     IsCorrect = question.TrueFalseQuestion.IsCorrect,
-                    WrongFeedBack = question.TrueFalseQuestion.WrongAnswerFeedBack,
-                } : null
+                    Feedback = GetFeedback(question.TrueFalseQuestion.AnswerFeedBack,question.TrueFalseQuestion.WrongAnswerFeedBack)
+                } : null,
+                ShortAnswer = question.ShortAnswerQuestion.IsNotNull() ? new ShortAnswerQuestionQueryResult 
+                {
+                    CorrectAnswer = question.ShortAnswerQuestion.CorrectAnswer,
+                    PossibleAnswers = question.ShortAnswerQuestion.PossibleAnswers,
+                    Feedback = GetFeedback(question.ShortAnswerQuestion.CorrectAnswerFeedBack, question.ShortAnswerQuestion.WrongAnswerFeedBack)
+                } : null,
+                LongAnswer = question.LongAnswerQuestion.IsNotNull() ? new LongAnswerQuestionQueryResult
+                {
+                    Answer = question.LongAnswerQuestion.Answer,
+                    GeneralFeedback = question.LongAnswerQuestion.Feedback,
+                    MaximinWords = question.LongAnswerQuestion.MaximinWords,
+                    MinimanWords = question.LongAnswerQuestion.MinimanWords,
+                    
+                }: null, 
+                Reordering = question.ReorderingQuestions.IsNotNull() ? question.ReorderingQuestions.Select(re => new ReorderingQuestionQueryResult
+                {
+                    Feedback = GetFeedback(re.CorrectAnswerFeedBack,re.WrongAnswerFeedBack),
+                    Id = re.Id,
+                    Order = re.Order,
+                    Value = re.Value
+                }) : null
             };
         }
+
+        public FeedbackQueryResult? GetFeedback(string? correctAnswerFeedback, string? WrongAnswerFeedback)
+        {
+            if (string.IsNullOrWhiteSpace(correctAnswerFeedback) && string.IsNullOrWhiteSpace(WrongAnswerFeedback))
+                return null;
+
+            return new FeedbackQueryResult
+            {
+                CorrectAnswerFeedback = correctAnswerFeedback,
+                WrongAnswerFeedback = WrongAnswerFeedback
+            };
+        }
+
     }
 }

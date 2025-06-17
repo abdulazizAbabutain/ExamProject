@@ -3,7 +3,6 @@
     public class TrueFalseQuestionCommand
     {
         public bool IsCorrect { get; set; }
-        public string? WrongFeedBack { get; set; }
-        public string? AnswerFeedBack { get; set; }
+        public FeedbackCommand? Feedback { get; set; }
     }
 }

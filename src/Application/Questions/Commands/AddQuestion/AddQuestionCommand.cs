@@ -1,12 +1,10 @@
 ﻿using Application.Questions.Commands.AddQuestion.CommandModels;
 using Domain.Enums;
-using Swashbuckle.AspNetCore.Annotations;
 using MediatR;
-using Application.Questions.Queries.GetQuestionsById;
 
 namespace Application.Questions.Commands.AddQuestion;
 
-public class AddQuestionCommand : IRequest<GetQuestionsByIdQueryResult>
+public class AddQuestionCommand : IRequest<AddQuestionCommandResult>
 {
     /// <summary>
     /// Question text.
@@ -23,10 +21,13 @@ public class AddQuestionCommand : IRequest<GetQuestionsByIdQueryResult>
     /// </summary>
     public List<string>? Variants { get; set; }
     public required int Mark { get; set; }
-    public required bool RequireManulReview { get; set; }
+    public required bool RequireManualReview { get; set; }
     public QuestionDifficulty Difficulty { get; set; }
     public IEnumerable<MultipleChoiseQuestionCommand>? Options { get; set; }
-    public TrueFalseQuestionCommand? TrueAndAnswer { get; set; }
+    public TrueFalseQuestionCommand? TrueAndFalseAnswer { get; set; }
+    public ShortAnswerQuestionCommand? ShortAnswer { get; set; }
+    public LongAnswerQuestionCommand? LongAnswer { get; set; }
+    public IEnumerable<ReorderingQuestionCommand>? Reordering { get; set; }
     #region refrence 
     public Guid? Language { get; set; }
     public List<Guid>? Tags { get; set; }

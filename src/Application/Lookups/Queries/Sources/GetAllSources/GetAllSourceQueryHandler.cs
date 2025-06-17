@@ -1,5 +1,5 @@
 ﻿using Application.Commons.Models.Pageination;
-using Domain.Entities.EntityLookup;
+using Domain.Entities.Sources;
 using Domain.Extentions;
 using Domain.Lookups;
 using Domain.Managers;
@@ -39,7 +39,6 @@ namespace Application.Lookups.Queries.Sources.GetAllSources
                 }).ToList() : null,
                 Title = e.Title,
                 Type = new SourceTypeLookup(e.Type),
-                URL = e.URL
             }).ToList();
 
             var count = _repositoryManager.SourceRepository.Count();

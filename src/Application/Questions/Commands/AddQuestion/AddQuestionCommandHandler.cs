@@ -8,59 +8,44 @@ using Domain.Enums;
 using Domain.Extentions;
 using Domain.Lookups;
 using MediatR;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace Application.Questions.Commands.AddQuestion;
 
-internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequestHandler<AddQuestionCommand, GetQuestionsByIdQueryResult>
+internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequestHandler<AddQuestionCommand, AddQuestionCommandResult>
 {
     private readonly IServiceManager _serviceManager = serviceManager;
 
-    public async Task<GetQuestionsByIdQueryResult> Handle(AddQuestionCommand request, CancellationToken cancellationToken)
+    public async Task<AddQuestionCommandResult> Handle(AddQuestionCommand request, CancellationToken cancellationToken)
     {
         var question = BuildQuestion(request);
         _serviceManager.QuestionService.InsertQuestion(question);
 
-        return new GetQuestionsByIdQueryResult
+
+        return new AddQuestionCommandResult
         {
-            Id = question.Id,
-            Mark = question.Mark,
-            QuestionText = question.QuestionText,
-            Variants = question.Variants,
-            QuestionType = new QuestionTypeLookup
-            {
-                Id = question.QuestionType
-            },
-            Difficulty = new QuestionDifficultyLookup
-            {
-                Id = question.DifficultyIndex.GetDifficultyCategory()
-            },
-            Sources =  null,
-            RequireManualReview = question.RequireManualReview,
-            Tags = null,
-            MultipleChoiceOptions = question.MultipleChoiseQuestion is not null ? question.MultipleChoiseQuestion.Options.Select(e => new MultipleChoiseQuestionResult
-            {
-                Id = e.Id,
-                IsCorrect = e.IsCorrect,
-                OptionText = e.OptionText,
-                FeedBack = e.FeedBack,
-                Weight = e.Weight
-            }) : null,
-            TrueAndFalse = question.TrueFalseQuestion is not null ? new TrueFalseQuestionQueryResult
-            {
-                Id = question.TrueFalseQuestion.Id,
-                AnswerFeedBack = question.TrueFalseQuestion.AnswerFeedBack,
-                IsCorrect = question.TrueFalseQuestion.IsCorrect,
-                WrongFeedBack = question.TrueFalseQuestion.WrongAnswerFeedBack,
-            } : null
+            Id = question.Id
         };
     }
+
+    public FeedbackQueryResult? GetFeedback(string? correctAnswerFeedback, string? WrongAnswerFeedback)
+        {
+            if (string.IsNullOrWhiteSpace(correctAnswerFeedback) && string.IsNullOrWhiteSpace(WrongAnswerFeedback))
+                return null;
+
+            return new FeedbackQueryResult
+            {
+                CorrectAnswerFeedback = correctAnswerFeedback,
+                WrongAnswerFeedback = WrongAnswerFeedback
+            };
+        }
 
 
     private Question BuildMultipleChoiseQuestion(AddQuestionCommand request)
     {
         var question = CreateQuestion(request);
 
-        var options = new List<MultipleChoiseQuestionOption>(); 
+        var options = new List<MultipleChoiceQuestionOption>(); 
         foreach(var item in request.Options!)
         {
             options.Add(MultipleChoiseQuestion.CreateOption(item.OptionText,item.IsCorrect,item.Weight,item.FeedBack));
@@ -70,20 +55,63 @@ internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequ
         return question;
     }
 
-    private Question BuildTrueAndAnswer(AddQuestionCommand request)
+    private Question BuildTrueAndFalseAnswer(AddQuestionCommand request)
     {
         var question = CreateQuestion(request);
-        var model = request.TrueAndAnswer;
-        var trueAndFalse = new TrueFalseQuestion(model!.IsCorrect, model.WrongFeedBack, model.AnswerFeedBack);
+        var model = request.TrueAndFalseAnswer;
+
+        var feedbackCorrect = model.Feedback.IsNotNull() ? model.Feedback.CorrectAnswerFeedback : null;
+        var feedbackWronge = model.Feedback.IsNotNull() ? model.Feedback.WrongAnswerFeedback : null;
+
+        var trueAndFalse = new TrueFalseQuestion(model!.IsCorrect, feedbackCorrect, feedbackWronge);
         question.CreateTrueAndFalse(trueAndFalse);
         return question;
 
+    }
+    private Question BuildShortAnswer(AddQuestionCommand request)
+    {
+        var question = CreateQuestion(request);
+        var model = request.ShortAnswer;
+
+        var correctFeedback = model.Feedback.IsNotNull() ? model.Feedback.CorrectAnswerFeedback : null;
+        var wrongFeedback = model.Feedback.IsNotNull() ? model.Feedback.WrongAnswerFeedback : null;
+
+        question.CreateShortAnswer(model.CorrectAnswer, model.PossibleAnswers, wrongFeedback, correctFeedback);
+        return question;
+    }
+
+
+    private Question BuildLongAnswer(AddQuestionCommand request)
+    {
+        var question = CreateQuestion(request);
+        var model = request.LongAnswer;
+
+        question.CreateLongAnswer(model.MaximinWords,model.MinimanWords,model.Answer,model.GeneralFeedback);
+        return question;
+    }
+
+    private Question BuildReoderingQuestion(AddQuestionCommand request)
+    {
+        var question = CreateQuestion(request);
+        var model = request.Reordering;
+
+        var reorderingItems = new List<ReorderingQuestion>();
+        foreach (var item in model)
+        {
+            var correctFeedback = item.Feedback.IsNotNull() ? item.Feedback.CorrectAnswerFeedback : null;
+            var wrongFeedback = item.Feedback.IsNotNull() ? item.Feedback.WrongAnswerFeedback : null;
+
+            reorderingItems.Add(new ReorderingQuestion(item.Value,item.Order, wrongFeedback, correctFeedback));
+        }
+
+        question.CreateReordering(reorderingItems);
+        return question;
     }
 
 
     private Question CreateQuestion(AddQuestionCommand request)
     {
-        return new Question(request.QuestionText, request.Variants,request.QuestionType, request.Mark, request.RequireManulReview,request.Difficulty,
+        return new Question(request.QuestionText, request.Variants,request.QuestionType, request.Mark, request.RequireManualReview,request.Difficulty,
             request.Language,request.Tags,request.Sources,request.Category);
     }
 
@@ -91,11 +119,16 @@ internal class AddQuestionCommandHandler(IServiceManager serviceManager) : IRequ
     {
         switch (request.QuestionType)
         {
-            case QuestionType.MultipleChoise:
+            case QuestionType.MultipleChoice:
                 return BuildMultipleChoiseQuestion(request);
             case QuestionType.TrueAndFalse:
-                return BuildTrueAndAnswer(request);
-
+                return BuildTrueAndFalseAnswer(request);
+            case QuestionType.ShortAnswer:
+                return BuildShortAnswer(request);
+            case QuestionType.LongAnswer:
+                return BuildLongAnswer(request);
+            case QuestionType.Reordering:
+                return BuildReoderingQuestion(request);
         }
         return null;
     }

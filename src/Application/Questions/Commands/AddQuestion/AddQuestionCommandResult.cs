@@ -2,4 +2,5 @@
 
 public class AddQuestionCommandResult
 {
+    public Guid Id { get; set; }
 }

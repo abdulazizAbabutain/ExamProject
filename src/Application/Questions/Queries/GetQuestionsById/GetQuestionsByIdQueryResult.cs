@@ -1,7 +1,7 @@
 ﻿using Application.Commons.SharedModelResult;
+using Application.Questions.Commands.AddQuestion.CommandModels;
 using Application.Questions.Queries.GetQuestionsById.ResultModel;
 using Domain.Lookups;
-using LiteDB;
 
 namespace Application.Questions.Queries.GetQuestionsById;
 
@@ -21,4 +21,7 @@ public class GetQuestionsByIdQueryResult
     public string? Category { get; set; }
     public IEnumerable<MultipleChoiseQuestionResult>? MultipleChoiceOptions { get; set; }
     public TrueFalseQuestionQueryResult? TrueAndFalse { get; set; }
+    public ShortAnswerQuestionQueryResult? ShortAnswer { get; set; }
+    public LongAnswerQuestionQueryResult? LongAnswer { get; set; }
+    public IEnumerable<ReorderingQuestionQueryResult>? Reordering { get; set; }
 }

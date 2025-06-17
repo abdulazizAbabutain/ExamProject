@@ -1,11 +1,26 @@
-﻿namespace Domain.Entities.Examiner
+﻿using Ardalis.GuardClauses;
+
+namespace Domain.Entities.Examiner
 {
-    public class MultipleChoiseQuestionOption
+    public class MultipleChoiceQuestionOption
     {
-        public required Guid Id { get; set; }
-        public required string OptionText { get; set; }
-        public required bool IsCorrect { get; set; }
-        public required float Weight { get; set; }
-        public string? FeedBack { get; set; }
+        public MultipleChoiceQuestionOption(string optionText, bool isCorrect, float weight, string? feedback = null)
+        {
+            Guard.Against.Null(weight);
+            Guard.Against.Negative(weight);
+
+            Id = Guid.NewGuid();
+            OptionText = Guard.Against.NullOrEmpty(optionText);
+            IsCorrect = Guard.Against.Null(isCorrect);
+            Weight = weight;
+            FeedBack = feedback;
+        }
+        #region propity 
+        public Guid Id { get; private set; }
+        public string OptionText { get; private set; }
+        public bool IsCorrect { get; private set; }
+        public float Weight { get; private set; }
+        public string? FeedBack { get; private set; }
+        #endregion
     }
 }
