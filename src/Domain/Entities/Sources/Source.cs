@@ -33,11 +33,19 @@ namespace Domain.Entities.Sources
             if (Tags.Count == 0)
                 Tags = null;
         }
+
+        public void AddMetadata(string filedName, string value, bool isRequired, FiledType filedType)
+        {
+            Metadata ??= new List<SourceMetadata>();
+            var metadata = new SourceMetadata(filedName, value, isRequired, filedType);
+            Metadata.Add(metadata);
+        }
+
         public Guid Id { get; private set; }
         public SourceType Type { get; private set; }
         public string Title { get; private set; }
         public string? Description { get; private set; }
         public List<Guid>? Tags { get; private set; }
-        public List<SourceMetadata> Metadata { get; set; }
+        public List<SourceMetadata> Metadata { get; private set; }
     }
 }

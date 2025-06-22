@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Lookups\Commands\Tags\NewFolder\" />
+    <Folder Include="Lookups\Commands\Tags\" />
     <Folder Include="Lookups\BulkCommands\" />
   </ItemGroup>
 

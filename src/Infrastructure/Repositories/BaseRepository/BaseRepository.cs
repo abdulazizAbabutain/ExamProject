@@ -1,5 +1,4 @@
-﻿using Domain.Entities.Audit;
-using Domain.Repositories.RepositoryBase;
+﻿using Domain.Repositories.RepositoryBase;
 using LiteDB;
 
 namespace Infrastructure.Repositories.BaseRepository
@@ -34,10 +33,10 @@ namespace Infrastructure.Repositories.BaseRepository
         
         public virtual T GetById(Guid id)
             => _collection.FindById(id);
-        
+
         public virtual IEnumerable<T> GetAll()
             => _collection.FindAll();
-        
+
         public IEnumerable<T> GetAll(Func<T , bool> func, int pageNumber, int pageSize)
             => _collection.FindAll()
                 .Where(func)

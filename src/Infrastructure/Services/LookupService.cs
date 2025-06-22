@@ -66,10 +66,8 @@ namespace Infrastructure.Services
             if (newTags.Any())
                 _repositoryManager.TagRepository.Insert(newTags.Select(t => new Tag(t, "#FF5733")).ToList());
 
-            return _repositoryManager.TagRepository.GetTagsRefrence(tags);
+            return _repositoryManager.TagRepository.GetTagsReference(tags);
         }
-
-
         public void UpdateTag(Guid id, string name, string? colorCode = null)
         {
             if (_repositoryManager.TagRepository.IsExist(name))
@@ -86,10 +84,14 @@ namespace Infrastructure.Services
 
             _repositoryManager.TagRepository.Update(tag);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
         public void DeleteTag(Guid id)
         {
-            if(_repositoryManager.TagRepository.IsNotExist(id))
+            //TODO: add exception handling
+            if (_repositoryManager.TagRepository.IsNotExist(id))
                 return;
             
             var sources = _repositoryManager.SourceRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
@@ -114,7 +116,15 @@ namespace Infrastructure.Services
             }
 
             _repositoryManager.TagRepository.DeleteById(id);
+        }
+        public void ArchiveTag(Guid id)
+        {
+            _repositoryManager.TagRepository.ArchiveTag(id);
+        }
 
+        public void UnArchiveTag(Guid id)
+        {
+            _repositoryManager.TagRepository.UnArchiveTag(id);
         }
 
         #endregion

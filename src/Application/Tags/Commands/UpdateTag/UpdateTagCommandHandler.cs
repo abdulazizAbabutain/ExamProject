@@ -1,7 +1,7 @@
 ﻿using Application.Commons.Managers;
 using MediatR;
 
-namespace Application.Lookups.Commands.Tags.UpdateTag
+namespace Application.Tags.Commands.UpdateTag
 {
     public class UpdateTagCommandHandler(IServiceManager serviceManager) : IRequestHandler<UpdateTagCommand>
     {

@@ -1,16 +1,17 @@
 ﻿using API.ApiDoc.Tags.Requests;
-using Application.Lookups.Commands.Tags.AddTag;
-using Application.Lookups.Commands.Tags.DeleteTag;
-using Application.Lookups.Commands.Tags.UpdateTag;
 using Application.Lookups.Queries.Tags.GetAllTags;
+using Application.Tags.Commands.AddTag;
+using Application.Tags.Commands.ArchiveTag;
+using Application.Tags.Commands.DeleteTag;
+using Application.Tags.Commands.UnArchiveTag;
+using Application.Tags.Commands.UpdateTag;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Swashbuckle.AspNetCore.Annotations;
 using Swashbuckle.AspNetCore.Filters;
 
 namespace API.Controllers.V1
 {
-    [Route("api/[controller]")]
+    [Route("api/tag")]
     public class TagController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -46,6 +47,29 @@ namespace API.Controllers.V1
 
         [HttpDelete("{id:guid}", Name = nameof(DeleteTag))]
         public async Task<IActionResult> DeleteTag([FromRoute] DeleteTagCommand command)
+        {
+            await _mediator.Send(command);
+            return NoContent();
+
+        }
+
+        [HttpPost("{id:guid}/archive", Name = nameof(ArchiveTag))]
+        [EndpointName(nameof(ArchiveTag))]
+        [EndpointSummary("Tag Archive")]
+        [EndpointDescription("Description")]
+        public async Task<IActionResult> ArchiveTag([FromRoute] ArchiveTagCommand command)
+        {
+            await _mediator.Send(command);
+            return NoContent();
+
+        }
+
+
+        [HttpPost("{id:guid}/unarchive", Name = nameof(UnarchiveTag))]
+        [EndpointName(nameof(UnarchiveTag))]
+        [EndpointSummary("Tag Archive")]
+        [EndpointDescription("Description")]
+        public async Task<IActionResult> UnarchiveTag([FromRoute] UnarchiveTagCommand command)
         {
             await _mediator.Send(command);
             return NoContent();

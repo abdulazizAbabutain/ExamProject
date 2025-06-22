@@ -1,4 +1,4 @@
-﻿using Application.Lookups.Commands.Tags.AddTag;
+﻿using Application.Tags.Commands.AddTag;
 using Swashbuckle.AspNetCore.Filters;
 
 namespace API.ApiDoc.Tags.Requests

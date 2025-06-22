@@ -1,8 +1,9 @@
-﻿using Domain.Extentions;
+﻿using Domain.Entities.Audit;
+using Domain.Extentions;
 
 namespace Domain.Entities.EntityLookup
 {
-    public class Category
+    public class Category 
     {
         public Category(string name, Guid parentId, int level)
         {

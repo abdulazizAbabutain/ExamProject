@@ -1,4 +1,4 @@
-﻿namespace API.Attributes
+﻿namespace Application.Commons.Attributes
 {
     [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]
     public class SwaggerExampleAttribute : Attribute

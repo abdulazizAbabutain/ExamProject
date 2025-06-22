@@ -1,16 +1,5 @@
-﻿using Application.Lookups.Commands.Categories.AddCategory;
-using Application.Lookups.Commands.Languages;
-using Application.Lookups.Commands.Sources.AddSource;
-using Application.Lookups.Commands.Sources.UpdateSource;
-using Application.Lookups.Commands.Tags.AddTag;
-using Application.Lookups.Commands.Tags.DeleteTag;
-using Application.Lookups.Commands.Tags.UpdateTag;
-using Application.Lookups.Queries.Categories.GetAllCategory;
-using Application.Lookups.Queries.Categories.GetCategoryById;
+﻿using Application.Lookups.Commands.Languages;
 using Application.Lookups.Queries.Languages.GetLanguages;
-using Application.Lookups.Queries.Sources.GetAllSources;
-using Application.Lookups.Queries.Sources.GetSourceById;
-using Application.Lookups.Queries.Tags.GetAllTags;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

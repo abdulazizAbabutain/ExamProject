@@ -1,4 +1,4 @@
-﻿using API.Attributes;
+﻿using Application.Commons.Attributes;
 using Application.Commons.Extensions;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;

@@ -16,6 +16,8 @@ namespace Application.Commons.Services
         IEnumerable<Guid> GetTagsReference(IEnumerable<string> tags);
         public void UpdateTag(Guid id,string name, string? colorCode = null);
         void DeleteTag(Guid id);
+        public void ArchiveTag(Guid id);
+        public void UnArchiveTag(Guid id);
         #region Source services
         void AddSource(Source source);
         Source GetSource(Guid id);

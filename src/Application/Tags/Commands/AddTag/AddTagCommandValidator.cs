@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Application.Lookups.Commands.Tags.AddTag
+namespace Application.Tags.Commands.AddTag
 {
     public class AddTagCommandValidator : AbstractValidator<AddTagCommand>
     {

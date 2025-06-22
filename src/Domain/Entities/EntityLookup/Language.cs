@@ -1,6 +1,11 @@
-﻿namespace Domain.Entities.EntityLookup
+﻿using Domain.Entities.Audit;
+
+namespace Domain.Entities.EntityLookup
 {
-    public class Language
+    /// <summary>
+    /// translate 
+    /// </summary>
+    public class Language 
     {
         #region constractor
         public Language(string code, string displayName)

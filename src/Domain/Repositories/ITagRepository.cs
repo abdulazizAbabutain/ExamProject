@@ -8,7 +8,9 @@ namespace Domain.Repositories
         bool IsExist(string name);
         bool IsExist(Guid id);
         bool IsNotExist(Guid id);
-        IEnumerable<Guid> GetTagsRefrence(IEnumerable<string> tags);
+        public void ArchiveTag(Guid id);
+        public void UnArchiveTag(Guid id);
+        IEnumerable<Guid> GetTagsReference(IEnumerable<string> tags);
         Guid GetTagReference(string tag);
         IEnumerable<string> GetAllAvailableTags(IEnumerable<string> tags);
     }

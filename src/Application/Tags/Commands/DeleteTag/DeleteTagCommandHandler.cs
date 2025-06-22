@@ -1,7 +1,7 @@
 ﻿using Application.Commons.Managers;
 using MediatR;
 
-namespace Application.Lookups.Commands.Tags.DeleteTag
+namespace Application.Tags.Commands.DeleteTag
 {
     public class DeleteTagCommandHandler(IServiceManager serviceManager) : IRequestHandler<DeleteTagCommand>
     {

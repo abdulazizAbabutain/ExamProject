@@ -1,9 +1,10 @@
-﻿using Domain.Enums;
+﻿using Domain.Entities.Audit;
+using Domain.Enums;
 using Domain.Extentions;
 
 namespace Domain.Entities.EntityLookup
 {
-    public class Tag 
+    public class Tag : EntityAudit
     {          
         public Tag(string name, string colorHexCode) 
         {
@@ -20,6 +21,9 @@ namespace Domain.Entities.EntityLookup
             ColorHexCode = colorHexCode;
             ColorGroup = colorHexCode.GetColorGroup();
         }
+        public void ArchiveTag() => Archive();
+
+        public void UnArchiveTag() => UnArchive();
 
         public Guid Id { get; private set; }
         public string Name { get; private set; }

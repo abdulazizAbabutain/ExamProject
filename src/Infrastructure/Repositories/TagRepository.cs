@@ -21,14 +21,32 @@ namespace Infrastructure.Repositories
         public bool IsNotExist(Guid id)
         => !GetCollection().Exists(e => e.Id.Equals(id));
 
-        public IEnumerable<Guid> GetTagsRefrence(IEnumerable<string> tags)
+        public IEnumerable<Guid> GetTagsReference(IEnumerable<string> tags)
           => GetCollection().Find(t => tags.Contains(t.Name)).Select(e => e.Id);
 
 
         public Guid GetTagReference(string tag)
           => GetCollection().FindOne(t => t.Name.Equals(tag)).Id;
 
+        public void ArchiveTag(Guid id)
+        {
+            if (IsNotExist(id))
+                return;
+            
+            var tag = GetCollection().FindById(id);
+            tag.ArchiveTag();
+            Update(tag);
+        }
 
+        public void UnArchiveTag(Guid id)
+        {
+            if (IsNotExist(id))
+                return;
+
+            var tag = GetCollection().FindById(id);
+            tag.UnArchiveTag();
+            Update(tag);
+        }
         public IEnumerable<string> GetAllAvailableTags(IEnumerable<string> tags)
         {
             return _collection.Find(e => tags.Contains(e.Name)).Select(t => t.Name).ToList();
