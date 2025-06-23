@@ -6,7 +6,7 @@ using Domain.Managers;
 using LinqKit;
 using MediatR;
 
-namespace Application.Lookups.Queries.Sources.GetAllSources
+namespace Application.Sources.Queries.GetAllSources
 {
     public class GetAllSourceQueryHandler(IRepositoryManager repositoryManager) : IRequestHandler<GetAllSourceQuery, PageResponse<GetAllSourceQueryResult>>
     {
@@ -25,8 +25,8 @@ namespace Application.Lookups.Queries.Sources.GetAllSources
             if (!string.IsNullOrEmpty(request.Title))
                 query = query.And(q => q.Title.ToLower().Contains(request.Title.ToLower()));
 
-            
-            var sources = _repositoryManager.SourceRepository.GetAll(query, request.PageNumber,request.PageSize).ToList();
+
+            var sources = _repositoryManager.SourceRepository.GetAll(query, request.PageNumber, request.PageSize).ToList();
 
             var result = sources.Select(e => new GetAllSourceQueryResult
             {
@@ -44,7 +44,7 @@ namespace Application.Lookups.Queries.Sources.GetAllSources
             var count = _repositoryManager.SourceRepository.Count();
 
 
-            return new PageResponse<GetAllSourceQueryResult>(result,request.PageNumber,request.PageSize, count);
+            return new PageResponse<GetAllSourceQueryResult>(result, request.PageNumber, request.PageSize, count);
         }
     }
 }

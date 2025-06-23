@@ -1,11 +1,11 @@
-﻿using Application.Lookups.Queries.Sources.GetAllSources;
+﻿using Application.Sources.Queries.GetAllSources;
 using Domain.Lookups;
 
-namespace Application.Lookups.Queries.Sources.GetSourceById
+namespace Application.Sources.Queries.GetSourceById
 {
     public class GetSourceByIdQueryResult
     {
-        public Guid Id { get;set; }
+        public Guid Id { get; set; }
         public SourceTypeLookup Type { get; set; }
         public string Title { get; set; }
         public string? Description { get; set; }

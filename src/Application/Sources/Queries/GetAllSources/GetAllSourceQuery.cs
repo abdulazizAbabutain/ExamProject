@@ -2,7 +2,7 @@
 using Domain.Enums;
 using MediatR;
 
-namespace Application.Lookups.Queries.Sources.GetAllSources
+namespace Application.Sources.Queries.GetAllSources
 {
     public class GetAllSourceQuery : PageRequest, IRequest<PageResponse<GetAllSourceQueryResult>>
     {

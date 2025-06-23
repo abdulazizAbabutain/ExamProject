@@ -1,4 +1,4 @@
-﻿using Application.Lookups.Commands.Sources.AddSource;
+﻿using Application.Sources.Commands.AddSource.Requests;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

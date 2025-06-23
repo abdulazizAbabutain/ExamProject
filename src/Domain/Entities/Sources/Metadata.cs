@@ -2,9 +2,9 @@
 
 namespace Domain.Entities.Sources
 {
-    public class SourceMetadata
+    public class Metadata
     {
-        public SourceMetadata(string filedName, string value, bool isRequired, FiledType filedType)
+        public Metadata(string filedName, string value, bool isRequired, FiledType filedType)
         {
             Id = Guid.CreateVersion7();
             FiledName = filedName;
@@ -12,7 +12,6 @@ namespace Domain.Entities.Sources
             IsRequired = isRequired;
             FiledType = filedType;
         }
-
         public Guid Id { get; set; }
         public string FiledName { get; set; }
         public string Value { get; set; }

@@ -4,7 +4,7 @@ using Domain.Lookups;
 using Domain.Managers;
 using MediatR;
 
-namespace Application.Lookups.Queries.Sources.GetSourceById
+namespace Application.Sources.Queries.GetSourceById
 {
     public class GetSourceByIdQueryHandler(IRepositoryManager repositoryManager) : IRequestHandler<GetSourceByIdQuery, GetSourceByIdQueryResult>
     {
@@ -25,7 +25,7 @@ namespace Application.Lookups.Queries.Sources.GetSourceById
                 Tags = source.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => source.Tags.Contains(t.Id)).Select(e => new TagDto
                 {
                     Name = e.Name,
-                    ColorCode = e.ColorHexCode, 
+                    ColorCode = e.ColorHexCode,
                 }).ToList() : null,
                 Title = source.Title,
                 Type = new SourceTypeLookup(source.Type),

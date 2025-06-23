@@ -1,7 +1,7 @@
 ﻿using Domain.Enums;
 using Domain.Lookups;
 
-namespace Application.Lookups.Queries.Sources.GetAllSources
+namespace Application.Sources.Queries.GetAllSources
 {
     public class GetAllSourceQueryResult
     {
@@ -18,5 +18,5 @@ namespace Application.Lookups.Queries.Sources.GetAllSources
         public string Name { get; set; }
         public string ColorCode { get; set; }
     }
-    
+
 }
