@@ -1,4 +1,6 @@
-﻿namespace Application.Sources.Commands.AddSource.Requests
+﻿using Application.Commons.Models.Commands;
+
+namespace Application.Sources.Commands.AddSource.Requests
 {
     public class AddSourceReferenceCommand
     {

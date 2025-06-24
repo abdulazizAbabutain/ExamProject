@@ -1,7 +1,7 @@
 ﻿using Application.Commons.Models.Pageination;
+using Application.Commons.SharedModelResult;
 using Domain.Entities.Sources;
 using Domain.Extentions;
-using Domain.Lookups;
 using Domain.Managers;
 using LinqKit;
 using MediatR;
@@ -32,13 +32,13 @@ namespace Application.Sources.Queries.GetAllSources
             {
                 Id = e.Id,
                 Description = e.Description,
-                Tags = e.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => e.Tags.Contains(t.Id)).Select(e => new TagDto
+                Tags = e.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => e.Tags.Contains(t.Id)).Select(e => new TagResult
                 {
                     Name = e.Name,
                     ColorCode = e.ColorHexCode
                 }).ToList() : null,
                 Title = e.Title,
-                Type = new SourceTypeLookup(e.Type),
+                Type = e.Type,
             }).ToList();
 
             var count = _repositoryManager.SourceRepository.Count();

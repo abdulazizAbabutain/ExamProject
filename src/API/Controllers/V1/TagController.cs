@@ -15,10 +15,12 @@ namespace API.Controllers.V1
     public class TagController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly ILogger<TagController> _logger;
 
-        public TagController(IMediator mediator)
+        public TagController(IMediator mediator, ILogger<TagController> logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
         [HttpPost(Name = nameof(AddTag))]
@@ -33,6 +35,8 @@ namespace API.Controllers.V1
         [HttpGet(Name = nameof(GetAllTags))]
         public async Task<IActionResult> GetAllTags([FromQuery] GetAllTagsQuery query)
         {
+            _logger
+                .LogInformation("test log");
             return Ok(await _mediator.Send(query));
 
         }

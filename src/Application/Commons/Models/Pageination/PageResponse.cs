@@ -1,8 +1,13 @@
-﻿namespace Application.Commons.Models.Pageination
+﻿using Swashbuckle.AspNetCore.Annotations;
+
+namespace Application.Commons.Models.Pageination
 {
+    [SwaggerSchema("")]
     public class PageResponse<T> where T : class
     {
+        [SwaggerSchema()]
         public List<T> Data { get; set; }
+        [SwaggerSchema("a meta data for pagination object")]
         public PageMetaData MetaData { get; set; }
 
         public PageResponse(List<T> data, int pageNumber, int pageSize, int totalRecords)

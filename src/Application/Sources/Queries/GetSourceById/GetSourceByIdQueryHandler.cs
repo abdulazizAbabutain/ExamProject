@@ -1,4 +1,7 @@
-﻿using Application.Lookups.Queries.Sources.GetAllSources;
+﻿using Application.Commons.SharedModelResult;
+using Application.Sources.Queries.GetAllSources;
+using Application.Sources.Queries.GetSourceById.ResultModels;
+using Domain.Enums;
 using Domain.Extentions;
 using Domain.Lookups;
 using Domain.Managers;
@@ -16,20 +19,41 @@ namespace Application.Sources.Queries.GetSourceById
             // check if not send return 404 
             // should be exception or flow?
 
+
+            var tags = repositoryManager.TagRepository.GetCollection().Find(t => source.Tags.Contains(t.Id));
+
             return new GetSourceByIdQueryResult
             {
                 Id = source.Id,
-                CreationDate = source.CreationDate,
                 Description = source.Description,
-                LastModifiedDate = source.LastModifiedDate,
-                Tags = source.Tags.IsNotNull() ? _repositoryManager.TagRepository.GetCollection().Find(t => source.Tags.Contains(t.Id)).Select(e => new TagDto
+                Tags = tags.IsNotNull() ? tags.Select(e => new TagResult
                 {
                     Name = e.Name,
                     ColorCode = e.ColorHexCode,
                 }).ToList() : null,
                 Title = source.Title,
-                Type = new SourceTypeLookup(source.Type),
-                VersionNumber = source.VersionNumber
+                Type = source.Type,
+                Metadata = source.Metadata.IsNotNull() ? source.Metadata.Select(e => new MetadataResult
+                {
+                    Id = e.Id,
+                    FiledName = e.FiledName,
+                    FiledType = e.FiledType,
+                    IsRequired = e.IsRequired,
+                    Value = e.Value,
+                }).ToList() : null,
+                References = source.References.Select(e => new SourceReferenceResult
+                {
+                    Id = e.Id,
+                    Metadata = e.Metadata.Select(mt => new MetadataResult
+                    {
+                        Id = mt.Id,
+                        FiledName = mt.FiledName,
+                        FiledType = mt.FiledType,
+                        IsRequired = mt.IsRequired,
+                        Value = mt.Value,
+                    }).ToList(),
+                    Notes = e.Notes
+                }).ToList()
             };
 
         }

@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Sources.Queries.GetSourceById.ResultModels;
+using MediatR;
 
 namespace Application.Sources.Queries.GetSourceById
 {

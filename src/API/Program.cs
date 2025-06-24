@@ -1,15 +1,19 @@
 using API.ApiDoc.Tags.Requests;
 using API.Filters;
+using API.Middelware;
 using Application;
 using Infrastructure;
+using Infrastructure.Logs;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Scalar.AspNetCore;
+using Serilog;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
 
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 
@@ -47,6 +51,16 @@ builder.Services
 builder.Services.AddSwaggerGenNewtonsoftSupport();
 
 
+var log = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.Sink(new LoggingService(configuration.GetConnectionString("ExaminerLoggs")))
+    .CreateLogger();
+
+Log.Logger = log;
+Log.Information("This should go to LiteDB and console");
+
+
 
 builder.Services.AddCors(options =>
 {
@@ -58,7 +72,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-
+builder.Host.UseSerilog();
 builder.Services.AddSwaggerGen(options =>
 {
     // using System.Reflection;
@@ -80,6 +94,7 @@ if (app.Environment.IsDevelopment())
     });
     app.MapScalarApiReference();
 }
+//app.UseMiddleware<CorrelationIdMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

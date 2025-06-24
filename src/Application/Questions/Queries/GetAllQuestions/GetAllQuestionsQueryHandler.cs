@@ -62,9 +62,9 @@ public class GetAllQuestionsQueryHandler(IRepositoryManager repositoryManager) :
             Id = q.Id,
             Mark = q.Mark,
             QuestionText = q.QuestionText,
-            QuestionType = new QuestionTypeLookup { Id = q.QuestionType },
+            QuestionType =  q.QuestionType ,
             RequireManualReview = q.RequireManualReview,
-            Difficulty = new QuestionDifficultyLookup { Id = q.DifficultyIndex.GetDifficultyCategory() },
+            Difficulty = q.DifficultyIndex.GetDifficultyCategory(),
             Tags = q.Tags.IsNotNull() ? tags.Where(e => q.Tags.Contains(e.Id)).Select(e => new TagResult
             {
                 Name = e.Name,

@@ -1,11 +1,8 @@
 ﻿using Application.Commons.Managers;
 using Application.Commons.Services;
 using Domain.Managers;
-using Domain.Repositories.RepositoryBase;
+using Infrastructure.Logs;
 using Infrastructure.Managers;
-using Infrastructure.Repositories.BaseRepository;
-using Infrastructure.Services;
-using LiteDB;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure
@@ -20,11 +17,15 @@ namespace Infrastructure
             //services.AddSingleton<LiteDatabase>(new LiteDatabase("Filename= database.db"));
 
 
+
+
+
             return services;
         }
 
         private static void RegisterServices(this IServiceCollection services)
         {
+            services.AddTransient<ILoggingService, LoggingService2>();
             services.AddScoped<IRepositoryManager, RepositoryManager>();
             services.AddScoped<IServiceManager, ServiceMangaer>();
         }

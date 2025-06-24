@@ -1,6 +1,6 @@
 ﻿using Domain.Enums;
 
-namespace Application.Sources.Commands.AddSource.Requests
+namespace Application.Commons.Models.Commands
 {
     public class AddMetadataCommand
     {
