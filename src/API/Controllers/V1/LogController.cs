@@ -1,23 +1,18 @@
-﻿using Application.Commons.Services;
+﻿using Application.Auditing.ApplicationLogs.Queries.LogSearchQuery;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers.V1
 {
     [Route("api/log")]
-    public class LogController : ControllerBase
+    public class LogController(IMediator mediator) : ControllerBase
     {
-        private readonly ILoggingService _loggingService;
+        private readonly IMediator _mediator = mediator;
 
-        public LogController(ILoggingService loggingService)
+        [HttpGet]
+        public async Task<IActionResult> GetLogs([FromQuery] LogSearchQuery query)
         {
-            _loggingService = loggingService;
-        }
-
-        [HttpGet()]
-        public IActionResult GetLogs()
-        {
-            var logs = _loggingService.GetAllLogs();
-            return Ok(logs);
+            return Ok(await _mediator.Send(query));
         }
     }
 }

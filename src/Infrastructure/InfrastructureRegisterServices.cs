@@ -1,8 +1,8 @@
 ﻿using Application.Commons.Managers;
 using Application.Commons.Services;
 using Domain.Managers;
-using Infrastructure.Logs;
 using Infrastructure.Managers;
+using Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure
@@ -25,7 +25,6 @@ namespace Infrastructure
 
         private static void RegisterServices(this IServiceCollection services)
         {
-            services.AddTransient<ILoggingService, LoggingService2>();
             services.AddScoped<IRepositoryManager, RepositoryManager>();
             services.AddScoped<IServiceManager, ServiceMangaer>();
         }

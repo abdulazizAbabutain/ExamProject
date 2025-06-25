@@ -1,4 +1,4 @@
-﻿using Domain.Entities.Audit;
+﻿using Domain.Auditing;
 using Domain.Enums;
 using Domain.Extentions;
 
@@ -12,6 +12,7 @@ namespace Domain.Entities.EntityLookup
             Name = name;
             ColorHexCode = colorHexCode;
             ColorGroup = colorHexCode.GetColorGroup();
+            Created();
         }
 
 

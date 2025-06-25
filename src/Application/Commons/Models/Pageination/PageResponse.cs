@@ -6,11 +6,11 @@ namespace Application.Commons.Models.Pageination
     public class PageResponse<T> where T : class
     {
         [SwaggerSchema()]
-        public List<T> Data { get; set; }
+        public IEnumerable<T> Data { get; set; }
         [SwaggerSchema("a meta data for pagination object")]
         public PageMetaData MetaData { get; set; }
 
-        public PageResponse(List<T> data, int pageNumber, int pageSize, int totalRecords)
+        public PageResponse(IEnumerable<T> data, int pageNumber, int pageSize, int totalRecords)
         {
             Data = data;
             MetaData = new PageMetaData

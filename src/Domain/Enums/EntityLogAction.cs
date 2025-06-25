@@ -1,6 +1,6 @@
 ﻿namespace Domain.Enums
 {
-    public enum EntityHistoryType
+    public enum EntityLogAction
     {
         Added = 1,
         Modifyed= 2,

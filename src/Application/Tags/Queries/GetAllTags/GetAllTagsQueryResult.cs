@@ -1,4 +1,5 @@
-﻿using Domain.Lookups;
+﻿using Domain.Enums;
+using Domain.Lookups;
 
 namespace Application.Lookups.Queries.Tags.GetAllTags
 {
@@ -7,6 +8,6 @@ namespace Application.Lookups.Queries.Tags.GetAllTags
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string ColorCode { get; set; }
-        public ColorCategoryLookup ColorCategory { get; set; }
+        public ColorCategory ColorCategory { get; set; }
     }
 }

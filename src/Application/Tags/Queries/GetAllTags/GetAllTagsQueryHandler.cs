@@ -1,8 +1,6 @@
-﻿using Application.Commons.Managers;
-using Application.Commons.Models.Pageination;
+﻿using Application.Commons.Models.Pageination;
 using Domain.Entities.EntityLookup;
 using Domain.Extentions;
-using Domain.Lookups;
 using Domain.Managers;
 using LinqKit;
 using MediatR;
@@ -24,8 +22,7 @@ public class GetAllTagsQueryHandler(IRepositoryManager repositoryManager) : IReq
             query = query.And(e => e.Name.ToLower().Contains(request.Search.ToLower()));
 
 
-        var tags = _repositoryManager.TagRepository.GetAll(query, request.PageNumber,request.PageSize).ToList();
-
+        var tags = _repositoryManager.TagRepository.GetAll(query, request.PageNumber,request.PageSize).Where(t => t.IsArchived == request.IsArchived).ToList();
 
         if (tags.IsNull())
             return null;
@@ -36,7 +33,7 @@ public class GetAllTagsQueryHandler(IRepositoryManager repositoryManager) : IReq
             Id = t.Id,
             Name = t.Name,
             ColorCode  = t.ColorHexCode,
-            ColorCategory = new ColorCategoryLookup(t.ColorGroup)
+            ColorCategory = t.ColorGroup
         }).ToList();
 
         var count = _repositoryManager.TagRepository.Count();

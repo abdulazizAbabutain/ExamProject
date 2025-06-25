@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.Audit
+﻿namespace Domain.Auditing
 {
     public class EntityAudit
     {

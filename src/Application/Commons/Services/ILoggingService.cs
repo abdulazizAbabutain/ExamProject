@@ -1,4 +1,4 @@
-﻿using Domain.Logs;
+﻿using Domain.Auditing;
 
 namespace Application.Commons.Services
 {

@@ -37,13 +37,13 @@ namespace Infrastructure.Repositories.BaseRepository
         public virtual IEnumerable<T> GetAll()
             => _collection.FindAll();
 
-        public IEnumerable<T> GetAll(Func<T , bool> func, int pageNumber, int pageSize)
+        public virtual IEnumerable<T> GetAll(Func<T , bool> func, int pageNumber, int pageSize)
             => _collection.FindAll()
                 .Where(func)
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize);
 
-        public IEnumerable<T> GetAll(int pageNumber, int pageSize)
+        public virtual IEnumerable<T> GetAll(int pageNumber, int pageSize)
             => _collection.FindAll()
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize);

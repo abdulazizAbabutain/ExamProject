@@ -1,4 +1,4 @@
-﻿using Domain.Entities.Audit;
+﻿using Domain.Auditing;
 using Domain.Enums;
 using Domain.Extentions;
 

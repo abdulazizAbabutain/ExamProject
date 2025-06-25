@@ -14,6 +14,7 @@ namespace Infrastructure.Managers
         private readonly Lazy<ITagRepository> _TagRepository;
         private readonly Lazy<ISourceRepository> _SourceRepository;
         private readonly Lazy<ICategoryRepository> _CategoryRepository;
+        private readonly Lazy<IApplicationLogRepository> _ApplicationLogRepository;
 
 
         public RepositoryManager(IConfiguration configuration)
@@ -30,6 +31,7 @@ namespace Infrastructure.Managers
         public ITagRepository TagRepository => _TagRepository.Value;
         public ISourceRepository SourceRepository => _SourceRepository.Value;
         public ICategoryRepository CategoryRepository => _CategoryRepository.Value;
+        public IApplicationLogRepository ApplicationLogRepository => _ApplicationLogRepository.Value;
 
 
         public void Dispose()

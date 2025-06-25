@@ -1,15 +1,13 @@
 using API.ApiDoc.Tags.Requests;
 using API.Filters;
-using API.Middelware;
 using Application;
 using Infrastructure;
-using Infrastructure.Logs;
+using Infrastructure.Services;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Scalar.AspNetCore;
 using Serilog;
 using Swashbuckle.AspNetCore.Filters;
-using System.Reflection;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -54,7 +52,7 @@ builder.Services.AddSwaggerGenNewtonsoftSupport();
 var log = new LoggerConfiguration()
     .MinimumLevel.Information()
     .WriteTo.Console()
-    .WriteTo.Sink(new LoggingService(configuration.GetConnectionString("ExaminerLoggs")))
+    .WriteTo.Sink(new LoggingService(configuration.GetConnectionString("Examiner")))
     .CreateLogger();
 
 Log.Logger = log;
