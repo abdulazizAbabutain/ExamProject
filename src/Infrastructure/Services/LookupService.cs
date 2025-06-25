@@ -49,7 +49,7 @@ namespace Infrastructure.Services
             _repositoryManager.TagRepository.Insert(tag);
             _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Tag, tag.Id, ActionBy.User, tag.VersionNumber);
         }
-
+        
         public IEnumerable<Tag> GetAllTags()
         {
             return _repositoryManager.TagRepository.GetAll();

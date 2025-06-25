@@ -1,4 +1,6 @@
-﻿using FluentValidation;
+﻿using Domain.Constants;
+using Domain.Extentions;
+using FluentValidation;
 
 namespace Application.Tags.Commands.AddTag
 {
@@ -9,9 +11,12 @@ namespace Application.Tags.Commands.AddTag
             RuleFor(e => e.Name)
                 .NotNull();
 
-            RuleFor(e => e.ColorCode)
-                .Must(e => e.StartsWith("#"))
-                .Length(7);
+            When(e => e.ColorCode.IsNotNull(), () =>
+            {
+                RuleFor(e => e.ColorCode)
+                    .Matches(RegexPattern.MatchHexCode)
+                    .Length(6);
+            });
         }
     }
 }

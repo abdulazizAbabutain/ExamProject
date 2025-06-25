@@ -5,6 +5,7 @@ using Application.Tags.Commands.ArchiveTag;
 using Application.Tags.Commands.DeleteTag;
 using Application.Tags.Commands.UnArchiveTag;
 using Application.Tags.Commands.UpdateTag;
+using Application.Tags.Queries.GetTagDetails;
 using Application.Tags.Queries.GetTagTimeline;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -37,12 +38,18 @@ namespace API.Controllers.V1
         [HttpGet(Name = nameof(GetAllTags))]
         public async Task<IActionResult> GetAllTags([FromQuery] GetAllTagsQuery query)
         {
-            _logger
-                .LogInformation("test log");
             return Ok(await _mediator.Send(query));
-
         }
-
+        
+        [HttpGet("{id:guid}",Name = nameof(TagDetails))]
+        [EndpointName(nameof(TagDetails))]
+        [EndpointSummary("Tag Details")]
+        [EndpointDescription("Tag Details")]
+        public async Task<IActionResult> TagDetails([FromRoute] Guid id)
+        {
+            return Ok(await _mediator.Send(new GetTagDetailsQuery(){ Id = id} ));
+        }
+        
         [HttpPut(Name = nameof(UpdateTag))]
         public async Task<IActionResult> UpdateTag([FromBody] UpdateTagCommand command)
         {
@@ -73,7 +80,7 @@ namespace API.Controllers.V1
 
         [HttpPost("{id:guid}/unarchive", Name = nameof(UnarchiveTag))]
         [EndpointName(nameof(UnarchiveTag))]
-        [EndpointSummary("Tag Archive")]
+        [EndpointSummary("Tag Unarchive")]
         [EndpointDescription("Description")]
         public async Task<IActionResult> UnarchiveTag([FromRoute] UnarchiveTagCommand command)
         {
