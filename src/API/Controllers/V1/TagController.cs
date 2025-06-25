@@ -5,9 +5,11 @@ using Application.Tags.Commands.ArchiveTag;
 using Application.Tags.Commands.DeleteTag;
 using Application.Tags.Commands.UnArchiveTag;
 using Application.Tags.Commands.UpdateTag;
+using Application.Tags.Queries.GetTagTimeline;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace API.Controllers.V1
 {
@@ -78,6 +80,15 @@ namespace API.Controllers.V1
             await _mediator.Send(command);
             return NoContent();
 
+        }
+        [HttpGet("{id:guid}/timeline", Name = nameof(GetTagTimeline))]
+        [EndpointName(nameof(GetTagTimeline))]
+        [EndpointSummary("Tag Timeline")]
+        [EndpointDescription("get the timeline for tag")]
+        public async Task<IActionResult> GetTagTimeline([FromRoute] Guid id, [FromQuery] GetTagTimelineQuery query)
+        {
+            query.Id = id;
+            return Ok(await _mediator.Send(query));
         }
     }
 }

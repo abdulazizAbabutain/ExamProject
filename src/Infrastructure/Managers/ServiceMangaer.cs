@@ -5,12 +5,12 @@ using Infrastructure.Services;
 
 namespace Infrastructure.Managers;
 
-public class ServiceManager(IRepositoryManager repositoryManager) : IServiceManager
+public class ServiceManager(IRepositoryManager repositoryManager, IAuditManager auditManager) : IServiceManager
 {
     private bool _disposed = false;
 
     private readonly Lazy<IQuestionService> _QuestionService = new(() => new QuestionService(repositoryManager.QuestionRepository));
-    private readonly Lazy<ILookupService> _LookupService = new(() => new LookupService(repositoryManager));
+    private readonly Lazy<ILookupService> _LookupService = new(() => new LookupService(repositoryManager, auditManager));
 
     public IQuestionService QuestionService => _QuestionService.Value;
     public ILookupService LookupService => _LookupService.Value;

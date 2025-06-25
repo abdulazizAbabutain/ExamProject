@@ -1,5 +1,4 @@
 ﻿using Domain.Entities.Examiner;
-using Domain.Entities.History;
 
 namespace Application.Commons.Services
 {

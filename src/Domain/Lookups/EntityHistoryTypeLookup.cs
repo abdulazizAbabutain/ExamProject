@@ -4,21 +4,21 @@ namespace Domain.Lookups
 {
     public class EntityHistoryTypeLookup
     {
-        public EntityLogAction Id { get; set; }
+        public ActionType Id { get; set; }
         public string Value
         {
             get
             {
                 switch (Id)
                 {
-                    case EntityLogAction.Added:
-                        return nameof(EntityLogAction.Added);
+                    case ActionType.Added:
+                        return nameof(ActionType.Added);
 
-                    case EntityLogAction.Modifyed:
-                        return nameof(EntityLogAction.Modifyed);
+                    case ActionType.Modified:
+                        return nameof(ActionType.Modified);
 
-                    case EntityLogAction.Deleted:
-                        return nameof(EntityLogAction.Deleted);
+                    case ActionType.Deleted:
+                        return nameof(ActionType.Deleted);
 
                     default:
                         throw new NotImplementedException("no EntityHistoryType has been added");

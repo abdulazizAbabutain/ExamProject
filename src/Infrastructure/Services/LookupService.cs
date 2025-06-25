@@ -1,20 +1,19 @@
-﻿using Application.Commons.Services;
+﻿using Application.Commons.Extensions;
+using Application.Commons.Managers;
+using Application.Commons.Services;
 using Domain.Entities.EntityLookup;
 using Domain.Entities.Sources;
+using Domain.Enums;
 using Domain.Extentions;
 using Domain.Managers;
 
 namespace Infrastructure.Services
 {
-    public class LookupService : ILookupService
+    public class LookupService(IRepositoryManager repositoryManager, IAuditManager auditManager) : ILookupService
     {
         private bool _disposed = false;
-        private readonly IRepositoryManager _repositoryManager;
-
-        public LookupService(IRepositoryManager repositoryManager)
-        {
-            _repositoryManager = repositoryManager;
-        }
+        private readonly IRepositoryManager _repositoryManager = repositoryManager;
+        private readonly IAuditManager _auditManager = auditManager;
 
         #region Language services
         public void AddLanguage(Language language)
@@ -46,8 +45,9 @@ namespace Infrastructure.Services
 
             if (colorCode.IsNull())
                 colorCode = ColorExtension.GenerateRandomHexColor();
-
-            _repositoryManager.TagRepository.Insert(new Tag(name, colorCode));
+            var tag = new Tag(name, colorCode);
+            _repositoryManager.TagRepository.Insert(tag);
+            _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Tag, tag.Id, ActionBy.User, tag.VersionNumber);
         }
 
         public IEnumerable<Tag> GetAllTags()
@@ -68,6 +68,12 @@ namespace Infrastructure.Services
 
             return _repositoryManager.TagRepository.GetTagsReference(tags);
         }
+        /// <summary>
+        /// the service will check if there different tag with same name.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name">the new Name</param>
+        /// <param name="colorCode">the color in hex code</param>
         public void UpdateTag(Guid id, string name, string? colorCode = null)
         {
             if (_repositoryManager.TagRepository.IsExist(name))
@@ -77,12 +83,16 @@ namespace Infrastructure.Services
 
             if (tag.IsNull())
                 return;
+
+            var tagClone = CloneExtension.DeepClone(tag);
+
             if (colorCode.IsNull())
                 colorCode = ColorExtension.GenerateRandomHexColor();
 
             tag.UpdateTag(name, colorCode);
 
             _repositoryManager.TagRepository.Update(tag);
+            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Modified, ActionBy.User, tagClone, tag, tag.VersionNumber);
         }
         /// <summary>
         /// 
@@ -93,11 +103,11 @@ namespace Infrastructure.Services
             //TODO: add exception handling
             if (_repositoryManager.TagRepository.IsNotExist(id))
                 return;
-            
+
             var sources = _repositoryManager.SourceRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
-            if(sources.Any() && sources.IsNotNull())
+            if (sources.Any() && sources.IsNotNull())
             {
-                foreach(var source in sources)
+                foreach (var source in sources)
                 {
                     source.RemoveTag(id);
                 }
@@ -119,12 +129,29 @@ namespace Infrastructure.Services
         }
         public void ArchiveTag(Guid id)
         {
-            _repositoryManager.TagRepository.ArchiveTag(id);
+            var tag = _repositoryManager.TagRepository.GetById(id);
+            var tagClone = CloneExtension.DeepClone(tag);
+
+            if (tag.IsNull())
+                return;
+
+            tag.ArchiveTag();
+            _repositoryManager.TagRepository.Update(tag);
+            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
         }
 
         public void UnArchiveTag(Guid id)
         {
-            _repositoryManager.TagRepository.UnArchiveTag(id);
+            var tag = _repositoryManager.TagRepository.GetById(id);
+            var tagClone = CloneExtension.DeepClone(tag);
+
+            if (tag.IsNull())
+                return;
+
+            tag.UnArchiveTag();
+            _repositoryManager.TagRepository.Update(tag);
+            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag,id,ActionType.UnArchived,ActionBy.User,tagClone,tag,tag.VersionNumber);
+
         }
 
         #endregion

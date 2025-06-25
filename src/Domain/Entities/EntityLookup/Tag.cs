@@ -5,7 +5,8 @@ using Domain.Extentions;
 namespace Domain.Entities.EntityLookup
 {
     public class Tag : EntityAudit
-    {          
+    {
+        private Tag() {}
         public Tag(string name, string colorHexCode) 
         {
             Id = Guid.CreateVersion7();
