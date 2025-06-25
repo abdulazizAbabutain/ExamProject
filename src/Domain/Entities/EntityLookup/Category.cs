@@ -1,5 +1,4 @@
-﻿using Domain.Entities.Audit;
-using Domain.Extentions;
+﻿using Domain.Extentions;
 
 namespace Domain.Entities.EntityLookup
 {

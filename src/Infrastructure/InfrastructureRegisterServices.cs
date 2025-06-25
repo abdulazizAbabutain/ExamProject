@@ -12,21 +12,14 @@ namespace Infrastructure
         public static IServiceCollection RegisterInfrastructure(this IServiceCollection services)
         {
             services.RegisterServices();
-
-
-            //services.AddSingleton<LiteDatabase>(new LiteDatabase("Filename= database.db"));
-
-
-
-
-
             return services;
         }
 
         private static void RegisterServices(this IServiceCollection services)
         {
+            services.AddScoped<IAuditManager, AuditManager>();
             services.AddScoped<IRepositoryManager, RepositoryManager>();
-            services.AddScoped<IServiceManager, ServiceMangaer>();
+            services.AddScoped<IServiceManager, ServiceManager>();
         }
     }
 }

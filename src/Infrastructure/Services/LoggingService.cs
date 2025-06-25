@@ -18,7 +18,7 @@ namespace Infrastructure.Services
         public LoggingService(string databasePath)
         {
             var db = new LiteDatabase(databasePath);
-            _collection = db.GetCollection<ApplicationLog>("logs");
+            _collection = db.GetCollection<ApplicationLog>(nameof(ApplicationLog));
 
             // Indexes for better search
             _collection.EnsureIndex(x => x.Timestamp);
@@ -53,18 +53,14 @@ namespace Infrastructure.Services
         private void ProcessQueue()
         {
             try
-
             {
-                foreach (var logEvent in _logQueue.GetConsumingEnumerable(_cts.Token))
-                {
-                    var appLog = ConvertToApplicationLog(logEvent);
-                    _collection.Insert(appLog);
-                }
+                _collection.InsertBulk(_logQueue.GetConsumingEnumerable(_cts.Token).Select(MapIntoLogs()).ToList());
             }
             catch (OperationCanceledException) { /* Graceful shutdown */ }
         }
 
-        private static ApplicationLog ConvertToApplicationLog(LogEvent logEvent)
+
+        private Func<LogEvent, ApplicationLog> MapIntoLogs() => (LogEvent logEvent) =>
         {
             return new ApplicationLog
             {
@@ -74,11 +70,11 @@ namespace Infrastructure.Services
                 Exception = logEvent.Exception.IsNotNull() ? ExceptionInfo.FromException(logEvent.Exception) : null,
                 Level = logEvent.Level,
                 Properties = logEvent.Properties.ToDictionary(
-                          p => p.Key,
-                          p => p.Value.ToString()
-                      )
+                         p => p.Key,
+                         p => p.Value.ToString()
+                     )
             };
-        }
+        };
 
         public void Dispose()
         {

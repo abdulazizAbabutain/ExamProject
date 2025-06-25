@@ -1,6 +1,5 @@
 ﻿using Application.Commons.Services;
 using Domain.Entities.Examiner;
-using Domain.Entities.History;
 using Domain.Repositories;
 
 namespace Infrastructure.Services;

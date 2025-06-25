@@ -1,23 +1,16 @@
 ﻿using Application.Commons.Managers;
 using Application.Commons.Services;
-using Domain.Extentions;
 using Domain.Managers;
-using Infrastructure.Repositories;
 using Infrastructure.Services;
 
 namespace Infrastructure.Managers;
 
-public class ServiceMangaer : IServiceManager
+public class ServiceManager(IRepositoryManager repositoryManager) : IServiceManager
 {
     private bool _disposed = false;
 
-    private readonly Lazy<IQuestionService> _QuestionService;
-    private readonly Lazy<ILookupService> _LookupService;
-    public ServiceMangaer(IRepositoryManager repositoryManager)
-    {
-        _QuestionService = new Lazy<IQuestionService>(() => new QuestionService(repositoryManager.QuestionRepository));
-        _LookupService= new Lazy<ILookupService>(() => new LookupService(repositoryManager));
-    }
+    private readonly Lazy<IQuestionService> _QuestionService = new(() => new QuestionService(repositoryManager.QuestionRepository));
+    private readonly Lazy<ILookupService> _LookupService = new(() => new LookupService(repositoryManager));
 
     public IQuestionService QuestionService => _QuestionService.Value;
     public ILookupService LookupService => _LookupService.Value;

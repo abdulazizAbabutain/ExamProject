@@ -9,6 +9,5 @@ namespace Domain.Managers
         public ITagRepository TagRepository { get;}
         public ISourceRepository SourceRepository { get;}
         public ICategoryRepository CategoryRepository { get; }
-        public IApplicationLogRepository ApplicationLogRepository {  get; }
     }
 }

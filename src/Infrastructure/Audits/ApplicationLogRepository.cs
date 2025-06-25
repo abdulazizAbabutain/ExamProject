@@ -8,7 +8,7 @@ namespace Infrastructure.Audits
     internal class ApplicationLogRepository : BaseRepository<ApplicationLog>, IApplicationLogRepository
     {
         public ApplicationLogRepository(string databasePath)
-            : base(databasePath, "logs")
+            : base(databasePath, nameof(ApplicationLog))
         {
         }
     }

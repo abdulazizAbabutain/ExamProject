@@ -5,33 +5,21 @@ using Microsoft.Extensions.Configuration;
 
 namespace Infrastructure.Managers
 {
-    public class RepositoryManager : IRepositoryManager
+    public class RepositoryManager(IConfiguration configuration) : IRepositoryManager
     {
         private bool _disposed = false;
 
-        private readonly Lazy<IQuestionRepository> _QuestionRepository;
-        private readonly Lazy<ILanguageRepository> _LanguageRepository;
-        private readonly Lazy<ITagRepository> _TagRepository;
-        private readonly Lazy<ISourceRepository> _SourceRepository;
-        private readonly Lazy<ICategoryRepository> _CategoryRepository;
-        private readonly Lazy<IApplicationLogRepository> _ApplicationLogRepository;
-
-
-        public RepositoryManager(IConfiguration configuration)
-        {
-            _QuestionRepository = new Lazy<IQuestionRepository>(() => new QuestionRepository(configuration.GetConnectionString("Examiner")));
-            _LanguageRepository = new Lazy<ILanguageRepository>(() => new LanguageRepository(configuration.GetConnectionString("Examiner")));
-            _TagRepository = new Lazy<ITagRepository>(() => new TagRepository(configuration.GetConnectionString("Examiner")));
-            _SourceRepository = new Lazy<ISourceRepository>(() => new SourceRepository(configuration.GetConnectionString("Examiner")));
-            _CategoryRepository = new Lazy<ICategoryRepository>(() => new CategoryRepository(configuration.GetConnectionString("Examiner")));
-        }
+        private readonly Lazy<IQuestionRepository> _QuestionRepository = new(() => new QuestionRepository(configuration.GetConnectionString("Examiner")));
+        private readonly Lazy<ILanguageRepository> _LanguageRepository = new(() => new LanguageRepository(configuration.GetConnectionString("Examiner")));
+        private readonly Lazy<ITagRepository> _TagRepository = new(() => new TagRepository(configuration.GetConnectionString("Examiner")));
+        private readonly Lazy<ISourceRepository> _SourceRepository = new(() => new SourceRepository(configuration.GetConnectionString("Examiner")));
+        private readonly Lazy<ICategoryRepository> _CategoryRepository = new(() => new CategoryRepository(configuration.GetConnectionString("Examiner")));
 
         public IQuestionRepository QuestionRepository => _QuestionRepository.Value;
         public ILanguageRepository LanguageRepository => _LanguageRepository.Value;
         public ITagRepository TagRepository => _TagRepository.Value;
         public ISourceRepository SourceRepository => _SourceRepository.Value;
         public ICategoryRepository CategoryRepository => _CategoryRepository.Value;
-        public IApplicationLogRepository ApplicationLogRepository => _ApplicationLogRepository.Value;
 
 
         public void Dispose()

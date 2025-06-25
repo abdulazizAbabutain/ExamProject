@@ -1,6 +1,4 @@
-﻿using Domain.Entities.Audit;
-
-namespace Domain.Entities.EntityLookup
+﻿namespace Domain.Entities.EntityLookup
 {
     /// <summary>
     /// translate 
@@ -15,8 +13,6 @@ namespace Domain.Entities.EntityLookup
             DisplayName = displayName;
         }
         #endregion
-
-
         public Guid Id { get; private set; }
         public string Code { get; private set; }
         public string DisplayName { get; private set; }
