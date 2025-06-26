@@ -67,6 +67,14 @@ namespace API.Controllers.V1
 
         }
 
+        [HttpDelete("{id:guid}", Name = nameof(DeleteAllTag))]
+        public async Task<IActionResult> DeleteAllTag([FromRoute] DeleteTagCommand command)
+        {
+            await _mediator.Send(command);
+            return NoContent();
+
+        }
+
         [HttpPost("{id:guid}/archive", Name = nameof(ArchiveTag))]
         [EndpointName(nameof(ArchiveTag))]
         [EndpointSummary("Tag Archive")]

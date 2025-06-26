@@ -12,13 +12,7 @@ namespace Application.Commons.Services
         Guid GetLanguageReference(string code);
         #endregion
 
-        public Result<Tag> AddTag(string name, string? colorCode = null);
-        IEnumerable<Tag> GetAllTags();
-        IEnumerable<Guid> GetTagsReference(IEnumerable<string> tags);
-        public void UpdateTag(Guid id,string name, string? colorCode = null);
-        void DeleteTag(Guid id);
-        public void ArchiveTag(Guid id);
-        public void UnArchiveTag(Guid id);
+      
         #region Source services
         void AddSource(Source source);
         Source GetSource(Guid id);

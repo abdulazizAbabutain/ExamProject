@@ -11,6 +11,7 @@ public class ServiceManager(IRepositoryManager repositoryManager, IAuditManager 
 
     private readonly Lazy<IQuestionService> _QuestionService = new(() => new QuestionService(repositoryManager.QuestionRepository));
     private readonly Lazy<ILookupService> _LookupService = new(() => new LookupService(repositoryManager, auditManager));
+    private readonly Lazy<ITagService> _TagService = new(() => new TagService(repositoryManager, auditManager));
 
     public IQuestionService QuestionService => _QuestionService.Value;
     public ILookupService LookupService => _LookupService.Value;
