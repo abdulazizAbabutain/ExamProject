@@ -20,7 +20,7 @@ namespace Infrastructure.Services
         public Result<Tag> AddTag(string name, string? colorCode = null)
         {
             if (_repositoryManager.TagRepository.IsExist(name))
-                return Result<Tag>.Failure($"Tag with name {name} already exists.");
+                return Result<Tag>.ConflictFailure($"Tag with name {name} already exists.");
 
             if (colorCode.IsNull())
                 colorCode = ColorExtension.GenerateRandomHexColor();
@@ -34,35 +34,22 @@ namespace Infrastructure.Services
         {
             return _repositoryManager.TagRepository.GetAll();
         }
-        /// <summary>
-        /// get all tags that refrence, if the data is not found it will be created.
-        /// </summary>
-        /// <param name="tags"></param>
-        /// <returns></returns>
-        public IEnumerable<Guid> GetTagsReference(IEnumerable<string> tags)
-        {
-            var existsTags = _repositoryManager.TagRepository.GetAllAvailableTags(tags);
-            var newTags = tags.Except(existsTags);
-            if (newTags.Any())
-                _repositoryManager.TagRepository.Insert(newTags.Select(t => new Tag(t, "#FF5733")).ToList());
-
-            return _repositoryManager.TagRepository.GetTagsReference(tags);
-        }
+      
         /// <summary>
         /// the service will check if there different tag with same name.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="name">the new Name</param>
         /// <param name="colorCode">the color in hex code</param>
-        public void UpdateTag(Guid id, string name, string? colorCode = null)
+        public Result UpdateTag(Guid id, string name, string? colorCode = null)
         {
             if (_repositoryManager.TagRepository.IsExist(name))
-                return;
+                return Result.ConflictFailure($"Tag with name {name} is already exists");
 
             var tag = _repositoryManager.TagRepository.GetById(id);
 
             if (tag.IsNull())
-                return;
+                return Result.NotFoundFailure($"tag with id {id} was not found") ;
 
             var tagClone = CloneExtension.DeepClone(tag);
 
@@ -73,9 +60,10 @@ namespace Infrastructure.Services
 
             _repositoryManager.TagRepository.Update(tag);
             _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Modified, ActionBy.User, tagClone, tag, tag.VersionNumber);
+            return Result.NoContentSuccess();
         }
         /// <summary>
-        /// 
+        /// delete a tag and all related entities with a tag.
         /// </summary>
         /// <param name="id"></param>
         public void DeleteTag(Guid id)
@@ -107,18 +95,61 @@ namespace Infrastructure.Services
 
             _repositoryManager.TagRepository.DeleteById(id);
         }
-        public void ArchiveTag(Guid id)
+        public Result ArchiveTag(Guid id)
         {
             var tag = _repositoryManager.TagRepository.GetById(id);
-            var tagClone = CloneExtension.DeepClone(tag);
-
             if (tag.IsNull())
-                return;
+                return Result.NotFoundFailure($"Tag with id {id} were not found");
+
+            if(tag.IsArchived)
+                return Result.ConflictFailure($"Tag with id {id} is already archived");
+
+            var tagClone = CloneExtension.DeepClone(tag);
 
             tag.ArchiveTag();
             _repositoryManager.TagRepository.Update(tag);
             _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
+            return Result.Success();
         }
+
+
+        public Result ArchiveAllTag()
+        {
+            var tags = _repositoryManager.TagRepository.GetCollection()
+                .Find(t => !t.IsArchived) 
+                .ToList();
+
+            if (!tags.Any())
+                return Result.UnprocessableEntityFailure("There is no tag to be archive");
+
+            var updatedTags = new List<Tag>();
+            var audits = new List<(Guid Id, Tag Old, Tag New, int Version)>();
+
+            foreach (var tag in tags)
+            {
+                var tagClone = CloneExtension.DeepClone(tag);
+                tag.ArchiveTag();
+                updatedTags.Add(tag);
+                audits.Add((tag.Id, tagClone, tag, tag.VersionNumber));
+            }
+
+            _repositoryManager.TagRepository.Update(updatedTags);
+
+            foreach (var (id, oldTag, newTag, version) in audits)
+            {
+                _auditManager.AuditTrailService.UpdateEntity(
+                    EntitiesName.Tag,
+                    id,
+                    ActionType.Archived,
+                    ActionBy.User,
+                    oldTag,
+                    newTag,
+                    version
+                );
+            }
+            return Result.NoContentSuccess();
+        }
+
 
         public void UnArchiveTag(Guid id)
         {

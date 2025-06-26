@@ -9,9 +9,11 @@ namespace Domain.Repositories.RepositoryBase
         T GetById(Guid id);
         IEnumerable<T> GetAll();
         IEnumerable<T> GetAll(Func<T, bool> func, int pageNumber, int pageSize);
+        Task<IEnumerable<T>> GetAllAsync(Func<T, bool> func, int pageNumber, int pageSize);
         IEnumerable<T> GetAll(int pageNumber, int pageSize);
         ILiteCollection<T> GetCollection();
         int Count();
+        Task<int> CountAsync();
         void DeleteById(Guid id);
         void DeleteAll();
         void Update(T entity);

@@ -1,15 +1,16 @@
 ﻿using Application.Commons.Managers;
+using Application.Commons.Models.Results;
 using MediatR;
 
 namespace Application.Tags.Commands.UpdateTag
 {
-    public class UpdateTagCommandHandler(IServiceManager serviceManager) : IRequestHandler<UpdateTagCommand>
+    public class UpdateTagCommandHandler(IServiceManager serviceManager) : IRequestHandler<UpdateTagCommand, Result>
     {
         private readonly IServiceManager _serviceManager = serviceManager;
 
-        public async Task Handle(UpdateTagCommand request, CancellationToken cancellationToken)
+        public async Task<Result> Handle(UpdateTagCommand request, CancellationToken cancellationToken)
         {
-            _serviceManager.LookupService.UpdateTag(request.Id, request.Name, request.ColorHexCode);
+            return _serviceManager.TagService.UpdateTag(request.Id, request.Name, request.ColorHexCode);
         }
     }
 }

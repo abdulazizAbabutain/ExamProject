@@ -16,6 +16,8 @@ public class ServiceManager(IRepositoryManager repositoryManager, IAuditManager 
     public IQuestionService QuestionService => _QuestionService.Value;
     public ILookupService LookupService => _LookupService.Value;
 
+    public ITagService TagService => _TagService.Value;
+
     public void Dispose()
     {
         Dispose(true);

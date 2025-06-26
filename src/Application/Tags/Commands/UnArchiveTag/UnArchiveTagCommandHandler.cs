@@ -9,7 +9,7 @@ namespace Application.Tags.Commands.UnArchiveTag
 
         public async Task Handle(UnarchiveTagCommand request, CancellationToken cancellationToken)
         {
-            _serviceManager.LookupService.UnArchiveTag(request.Id);
+            _serviceManager.TagService.UnArchiveTag(request.Id);
         }
     }
 }

@@ -14,10 +14,10 @@ namespace Application.Tags.Commands.AddTag
 
         public async Task<Result<AddTagCommandResult>> Handle(AddTagCommand request, CancellationToken cancellationToken)
         {
-            var serviceResult = _serviceManager.LookupService.AddTag(request.Name, request.ColorCode);
+            var serviceResult = _serviceManager.TagService.AddTag(request.Name, request.ColorCode);
 
             if (serviceResult.IsSuccess)
-                return Result<AddTagCommandResult>.Success(_mapper.Map<AddTagCommandResult>(serviceResult.Value));
+                return Result<AddTagCommandResult>.CreatedSuccess(_mapper.Map<AddTagCommandResult>(serviceResult.Value));
             else
                 return Result<AddTagCommandResult>.Failure(serviceResult.Errors);
         }

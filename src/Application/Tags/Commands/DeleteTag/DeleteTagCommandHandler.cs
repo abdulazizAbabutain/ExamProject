@@ -9,7 +9,7 @@ namespace Application.Tags.Commands.DeleteTag
 
         public async Task Handle(DeleteTagCommand request, CancellationToken cancellationToken)
         {
-            _serviceManager.LookupService.DeleteTag(request.Id);
+            _serviceManager.TagService.DeleteTag(request.Id);
         }
     }
 }

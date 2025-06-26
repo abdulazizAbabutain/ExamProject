@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using Application.Commons.Models.Results;
+using MediatR;
 
 namespace Application.Tags.Commands.UpdateTag
 {
-    public class UpdateTagCommand : IRequest
+    public class UpdateTagCommand : IRequest<Result>
     {
         public Guid Id { get; set; }
         public string Name { get; set; }

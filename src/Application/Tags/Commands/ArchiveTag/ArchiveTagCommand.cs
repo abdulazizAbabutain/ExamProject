@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using Application.Commons.Models.Results;
+using MediatR;
 
 namespace Application.Tags.Commands.ArchiveTag
 {
-    public class ArchiveTagCommand : IRequest
+    public class ArchiveTagCommand : IRequest<Result>
     {
         public Guid Id { get; set; }
     }

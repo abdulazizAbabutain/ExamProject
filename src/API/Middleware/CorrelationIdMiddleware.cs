@@ -1,4 +1,4 @@
-﻿namespace API.Middelware
+﻿namespace API.Middleware
 {
     public class CorrelationIdMiddleware
     {

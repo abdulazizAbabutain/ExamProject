@@ -1,6 +1,9 @@
 ﻿using API.ApiDoc.Tags.Requests;
+using API.Interfaces;
+using Application.Commons.Models.Results;
 using Application.Lookups.Queries.Tags.GetAllTags;
 using Application.Tags.Commands.AddTag;
+using Application.Tags.Commands.ArchiveAllTags;
 using Application.Tags.Commands.ArchiveTag;
 using Application.Tags.Commands.DeleteTag;
 using Application.Tags.Commands.UnArchiveTag;
@@ -14,48 +17,40 @@ using Swashbuckle.AspNetCore.Filters;
 namespace API.Controllers.V1
 {
     [Route("api/tag")]
-    public class TagController : ControllerBase
+    public class TagController(IMediator mediator, IHttpResultResponder resultResponder) : ControllerBase
     {
-        private readonly IMediator _mediator;
-        private readonly ILogger<TagController> _logger;
-
-        public TagController(IMediator mediator, ILogger<TagController> logger)
-        {
-            _mediator = mediator;
-            _logger = logger;
-        }
+        private readonly IMediator _mediator = mediator;
+        private readonly IHttpResultResponder _resultResponder = resultResponder;
 
         [HttpPost(Name = nameof(AddTag))]
         [SwaggerRequestExample(typeof(AddTagCommand), typeof(AddTagCommandRequestExample))]
         public async Task<IActionResult> AddTag([FromBody] AddTagCommand command)
         {
             var result = await _mediator.Send(command);
-            if (result.IsSuccess)
-                return Ok(result);
-            else
-                return BadRequest(result);
+            return _resultResponder.FromResult(HttpContext, result);
         }
+
 
         [HttpGet(Name = nameof(GetAllTags))]
         public async Task<IActionResult> GetAllTags([FromQuery] GetAllTagsQuery query)
         {
             return Ok(await _mediator.Send(query));
         }
-        
-        [HttpGet("{id:guid}",Name = nameof(TagDetails))]
+
+        [HttpGet("{id:guid}", Name = nameof(TagDetails))]
         [EndpointName(nameof(TagDetails))]
         [EndpointSummary("Tag Details")]
         [EndpointDescription("Tag Details")]
         public async Task<IActionResult> TagDetails([FromRoute] Guid id)
         {
-            return Ok(await _mediator.Send(new GetTagDetailsQuery(){ Id = id} ));
+            return Ok(await _mediator.Send(new GetTagDetailsQuery() { Id = id }));
         }
-        
+
         [HttpPut(Name = nameof(UpdateTag))]
         public async Task<IActionResult> UpdateTag([FromBody] UpdateTagCommand command)
         {
-            await _mediator.Send(command);
-            return NoContent();
+            var result = await _mediator.Send(command);
+            return _resultResponder.FromResult(HttpContext, result);
 
         }
 
@@ -67,11 +62,14 @@ namespace API.Controllers.V1
 
         }
 
-        [HttpDelete("{id:guid}", Name = nameof(DeleteAllTag))]
-        public async Task<IActionResult> DeleteAllTag([FromRoute] DeleteTagCommand command)
+        [HttpPost("archive", Name = nameof(ArchiveAllTag))]
+        [EndpointName(nameof(ArchiveAllTag))]
+        [EndpointSummary("Archive all tags")]
+        [EndpointDescription("Archive all tags")]
+        public async Task<IActionResult> ArchiveAllTag([FromRoute] ArchiveAllTagsCommand command)
         {
-            await _mediator.Send(command);
-            return NoContent();
+            var result = await _mediator.Send(command);
+            return _resultResponder.FromResult(HttpContext, result);
 
         }
 
@@ -79,13 +77,8 @@ namespace API.Controllers.V1
         [EndpointName(nameof(ArchiveTag))]
         [EndpointSummary("Tag Archive")]
         [EndpointDescription("Description")]
-        public async Task<IActionResult> ArchiveTag([FromRoute] ArchiveTagCommand command)
-        {
-            await _mediator.Send(command);
-            return NoContent();
-
-        }
-
+        public async Task ArchiveTag([FromRoute] ArchiveTagCommand command)
+            => _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
 
         [HttpPost("{id:guid}/unarchive", Name = nameof(UnarchiveTag))]
         [EndpointName(nameof(UnarchiveTag))]

@@ -6,5 +6,6 @@ public interface IServiceManager : IDisposable
 {
     IQuestionService QuestionService { get; }
     ILookupService LookupService { get; }
+    ITagService TagService { get; }
 
 }

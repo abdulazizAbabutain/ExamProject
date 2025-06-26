@@ -12,7 +12,6 @@ namespace Application.Commons.Services
         Guid GetLanguageReference(string code);
         #endregion
 
-      
         #region Source services
         void AddSource(Source source);
         Source GetSource(Guid id);

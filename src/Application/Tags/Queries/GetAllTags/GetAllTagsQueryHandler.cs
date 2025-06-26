@@ -23,8 +23,8 @@ public class GetAllTagsQueryHandler(IRepositoryManager repositoryManager) : IReq
             query = query.And(e => e.Name.ToLower().Contains(request.Search.ToLower()));
 
 
-        var tags = _repositoryManager.TagRepository.GetAll(query, request.PageNumber,request.PageSize).Where(t => t.IsArchived == request.IsArchived).ToList();
-        var count = _repositoryManager.TagRepository.Count();
+        var tags = (await _repositoryManager.TagRepository.GetAllAsync(query, request.PageNumber,request.PageSize)).Where(t => t.IsArchived == request.IsArchived).ToList();
+        var count = await _repositoryManager.TagRepository.CountAsync();
 
         if (tags.IsNull())
             return Result<PageResponse<GetAllTagsQueryResult>>.Success(new PageResponse<GetAllTagsQueryResult>(request.PageNumber, request.PageSize, count));

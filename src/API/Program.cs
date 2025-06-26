@@ -1,5 +1,8 @@
 using API.ApiDoc.Tags.Requests;
 using API.Filters;
+using API.Interfaces;
+using API.Middleware;
+using API.Services;
 using Application;
 using Application.Commons.Extensions;
 using Infrastructure;
@@ -57,6 +60,7 @@ Log.Logger = new LoggerConfiguration()
     .CreateLogger();
 
 
+builder.Services.AddScoped<IHttpResultResponder, HttpResultResponder>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularDevClient", policy =>
@@ -89,7 +93,7 @@ if (app.Environment.IsDevelopment())
     });
     app.MapScalarApiReference();
 }
-//app.UseMiddleware<CorrelationIdMiddleware>();
+app.UseMiddleware<ResultMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
