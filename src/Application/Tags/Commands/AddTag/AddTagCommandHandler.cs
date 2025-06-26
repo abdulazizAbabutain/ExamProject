@@ -1,16 +1,25 @@
 ﻿using Application.Commons.Managers;
+using Application.Commons.Models.Results;
+using Mapster;
+using MapsterMapper;
 using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Tags.Commands.AddTag
 {
-    public class AddTagCommandHandler(IServiceManager serviceManager) : IRequestHandler<AddTagCommand>
+    public class AddTagCommandHandler(IServiceManager serviceManager, IMapper mapper) : IRequestHandler<AddTagCommand, Result<AddTagCommandResult>>
     {
         private readonly IServiceManager _serviceManager = serviceManager;
+        private readonly IMapper _mapper = mapper;
 
-        public async Task Handle(AddTagCommand request, CancellationToken cancellationToken)
+        public async Task<Result<AddTagCommandResult>> Handle(AddTagCommand request, CancellationToken cancellationToken)
         {
-            _serviceManager.LookupService.AddTag(request.Name, request.ColorCode);
-            _serviceManager.Dispose();
+            var serviceResult = _serviceManager.LookupService.AddTag(request.Name, request.ColorCode);
+
+            if (serviceResult.IsSuccess)
+                return Result<AddTagCommandResult>.Success(_mapper.Map<AddTagCommandResult>(serviceResult.Value));
+            else
+                return Result<AddTagCommandResult>.Failure(serviceResult.Errors);
         }
     }
 }

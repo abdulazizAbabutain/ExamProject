@@ -21,5 +21,17 @@ namespace Application.Commons.Models.Pageination
                 TotalPages = (int)Math.Ceiling(totalRecords / (double)pageSize),                
             };
         }
+
+        public PageResponse(int pageNumber, int pageSize, int totalRecords)
+        {
+            Data = new List<T>();
+            MetaData = new PageMetaData
+            {
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalRecords = totalRecords,
+                TotalPages = (int)Math.Ceiling(totalRecords / (double)pageSize),
+            };
+        }
     }
 }

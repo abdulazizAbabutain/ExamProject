@@ -1,5 +1,6 @@
 ﻿using Application.Commons.Extensions;
 using Application.Commons.Managers;
+using Application.Commons.Models.Results;
 using Application.Commons.Services;
 using Domain.Entities.EntityLookup;
 using Domain.Entities.Sources;
@@ -38,16 +39,17 @@ namespace Infrastructure.Services
 
         #region Tag services
 
-        public void AddTag(string name, string? colorCode = null)
+        public Result<Tag> AddTag(string name, string? colorCode = null)
         {
             if (_repositoryManager.TagRepository.IsExist(name))
-                return;
+                return Result<Tag>.Failure($"Tag with name {name} already exists.");
 
             if (colorCode.IsNull())
                 colorCode = ColorExtension.GenerateRandomHexColor();
             var tag = new Tag(name, colorCode);
             _repositoryManager.TagRepository.Insert(tag);
             _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Tag, tag.Id, ActionBy.User, tag.VersionNumber);
+            return Result<Tag>.Success(tag);
         }
         
         public IEnumerable<Tag> GetAllTags()

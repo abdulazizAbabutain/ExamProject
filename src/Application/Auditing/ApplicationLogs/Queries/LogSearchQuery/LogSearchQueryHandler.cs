@@ -14,7 +14,6 @@ namespace Application.Auditing.ApplicationLogs.Queries.LogSearchQuery
         {
             var query = PredicateBuilder.New<ApplicationLog>(true);
 
-
             if (request.StartDate.HasValue)
                 query = query.And(e => request.StartDate >= e.Timestamp);
 
@@ -27,7 +26,7 @@ namespace Application.Auditing.ApplicationLogs.Queries.LogSearchQuery
             if (!string.IsNullOrWhiteSpace(request.Message))
                 query = query.And(e => e.Message.ToLower().Contains(request.Message.ToLower()));
 
-            var logs = _auditManager.ApplicationLogRepository.GetAll(query, request.PageNumber, request.PageSize);
+            var logs = _auditManager.ApplicationLogRepository.GetAll(query, request.PageNumber, request.PageSize).OrderBy(t => t.Timestamp);
             var count = _auditManager.ApplicationLogRepository.Count();
 
             return new PageResponse<ApplicationLog>(logs, request.PageNumber, request.PageSize, count);

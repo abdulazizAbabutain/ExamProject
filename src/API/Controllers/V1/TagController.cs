@@ -10,7 +10,6 @@ using Application.Tags.Queries.GetTagTimeline;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace API.Controllers.V1
 {
@@ -30,10 +29,12 @@ namespace API.Controllers.V1
         [SwaggerRequestExample(typeof(AddTagCommand), typeof(AddTagCommandRequestExample))]
         public async Task<IActionResult> AddTag([FromBody] AddTagCommand command)
         {
-            await _mediator.Send(command);
-            return NoContent();
+            var result = await _mediator.Send(command);
+            if (result.IsSuccess)
+                return Ok(result);
+            else
+                return BadRequest(result);
         }
-
 
         [HttpGet(Name = nameof(GetAllTags))]
         public async Task<IActionResult> GetAllTags([FromQuery] GetAllTagsQuery query)

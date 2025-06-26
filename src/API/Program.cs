@@ -1,6 +1,7 @@
 using API.ApiDoc.Tags.Requests;
 using API.Filters;
 using Application;
+using Application.Commons.Extensions;
 using Infrastructure;
 using Infrastructure.Services;
 using Newtonsoft.Json;
@@ -49,15 +50,11 @@ builder.Services
 builder.Services.AddSwaggerGenNewtonsoftSupport();
 
 
-var log = new LoggerConfiguration()
-    .MinimumLevel.Information()
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.ControlledBy(LoggingLevelController.LevelSwitch) 
     .WriteTo.Console()
     .WriteTo.Sink(new LoggingService(configuration.GetConnectionString("Examiner")))
     .CreateLogger();
-
-Log.Logger = log;
-Log.Information("This should go to LiteDB and console");
-
 
 
 builder.Services.AddCors(options =>

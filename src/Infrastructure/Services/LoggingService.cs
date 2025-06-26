@@ -60,22 +60,6 @@ namespace Infrastructure.Services
         }
 
 
-        private static Func<LogEvent, ApplicationLog> MapIntoLogs() => (LogEvent logEvent) =>
-        {
-            return new ApplicationLog
-            {
-                Id = Guid.CreateVersion7(),
-                Timestamp = logEvent.Timestamp,
-                Message = logEvent.RenderMessage(),
-                Exception = logEvent.Exception.IsNotNull() ? ExceptionInfo.FromException(logEvent.Exception) : null,
-                Level = logEvent.Level,
-                Properties = logEvent.Properties.ToDictionary(
-                         p => p.Key,
-                         p => p.Value.ToString()
-                     )
-            };
-        };
-
         private static ApplicationLog BuildLog(LogEvent logEvent)
         {
             return new ApplicationLog

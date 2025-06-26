@@ -1,4 +1,5 @@
 using Application.Commons.Managers;
+using Domain.Extentions;
 using Domain.Managers;
 using MediatR;
 
@@ -11,6 +12,8 @@ public class GetTagDetailsQueryHandler(IRepositoryManager repositoryManager) : I
     public async Task<GetTagDetailsQueryResult> Handle(GetTagDetailsQuery request, CancellationToken cancellationToken)
     {
         var tag = _repositoryManager.TagRepository.GetById(request.Id);
+        if (tag.IsNull())
+            return new GetTagDetailsQueryResult();
         return new GetTagDetailsQueryResult()
         {
             Id = tag.Id,

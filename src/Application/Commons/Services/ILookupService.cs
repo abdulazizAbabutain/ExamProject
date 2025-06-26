@@ -1,4 +1,5 @@
-﻿using Domain.Entities.EntityLookup;
+﻿using Application.Commons.Models.Results;
+using Domain.Entities.EntityLookup;
 using Domain.Entities.Sources;
 
 namespace Application.Commons.Services
@@ -11,7 +12,7 @@ namespace Application.Commons.Services
         Guid GetLanguageReference(string code);
         #endregion
 
-        void AddTag(string name, string? colorCode = null);
+        public Result<Tag> AddTag(string name, string? colorCode = null);
         IEnumerable<Tag> GetAllTags();
         IEnumerable<Guid> GetTagsReference(IEnumerable<string> tags);
         public void UpdateTag(Guid id,string name, string? colorCode = null);

@@ -1,10 +1,11 @@
 ﻿using Application.Commons.Models.Pageination;
+using Application.Commons.Models.Results;
 using Domain.Enums;
 using MediatR;
 
 namespace Application.Lookups.Queries.Tags.GetAllTags
 {
-    public class GetAllTagsQuery : PageRequest, IRequest<PageResponse<GetAllTagsQueryResult>>
+    public class GetAllTagsQuery : PageRequest, IRequest<Result<PageResponse<GetAllTagsQueryResult>>>
     {
         public ColorCategory? ColorCategory { get; set; }
         public string? Search { get; set; }
