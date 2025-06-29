@@ -109,7 +109,7 @@ namespace Infrastructure.Services
             tag.ArchiveTag();
             _repositoryManager.TagRepository.Update(tag);
             _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
-            return Result.Success();
+            return Result.NoContentSuccess();
         }
 
 
@@ -151,18 +151,21 @@ namespace Infrastructure.Services
         }
 
 
-        public void UnArchiveTag(Guid id)
+        public Result UnArchiveTag(Guid id)
         {
             var tag = _repositoryManager.TagRepository.GetById(id);
+            if (tag.IsNull())
+                return Result.NotFoundFailure($"Tag with id {id} were not found");
+
+            if (tag.IsArchived)
+                return Result.ConflictFailure($"Tag with id {id} is already unarchived");
+
             var tagClone = CloneExtension.DeepClone(tag);
 
-            if (tag.IsNull())
-                return;
-
-            tag.UnArchiveTag();
+            tag.ArchiveTag();
             _repositoryManager.TagRepository.Update(tag);
-            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.UnArchived, ActionBy.User, tagClone, tag, tag.VersionNumber);
-
+            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
+            return Result.NoContentSuccess();
         }
         #endregion
 

@@ -12,7 +12,7 @@ namespace API.Services
             if (!result.IsSuccess)
             {
                 context.Items["Result"] = result;
-                context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                context.Response.StatusCode = (int)result.StatusCode;
                 return new EmptyResult();
             }
 
@@ -29,7 +29,7 @@ namespace API.Services
             if (!result.IsSuccess)
             {
                 context.Items["Result"] = result;
-                context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                context.Response.StatusCode = (int)result.StatusCode;
                 return new EmptyResult();
             }
 

@@ -1,11 +1,12 @@
 ﻿using Application.Commons.Models.Pageination;
+using Application.Commons.Models.Results;
 using Domain.Enums;
 using MediatR;
 using System.Text.Json.Serialization;
 
 namespace Application.Tags.Queries.GetTagTimeline
 {
-    public class GetTagTimelineQuery : PageRequest,IRequest<PageResponse<GetTagTimelineQueryResult>>
+    public class GetTagTimelineQuery : PageRequest,IRequest<Result<PageResponse<GetTagTimelineQueryResult>>>
     {
         [JsonIgnore]
         public Guid Id { get; set; }

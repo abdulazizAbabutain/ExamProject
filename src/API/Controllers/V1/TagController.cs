@@ -1,6 +1,5 @@
 ﻿using API.ApiDoc.Tags.Requests;
 using API.Interfaces;
-using Application.Commons.Models.Results;
 using Application.Lookups.Queries.Tags.GetAllTags;
 using Application.Tags.Commands.AddTag;
 using Application.Tags.Commands.ArchiveAllTags;
@@ -66,6 +65,7 @@ namespace API.Controllers.V1
         [EndpointName(nameof(ArchiveAllTag))]
         [EndpointSummary("Archive all tags")]
         [EndpointDescription("Archive all tags")]
+        [Obsolete("will be removed")]
         public async Task<IActionResult> ArchiveAllTag([FromRoute] ArchiveAllTagsCommand command)
         {
             var result = await _mediator.Send(command);
@@ -85,11 +85,8 @@ namespace API.Controllers.V1
         [EndpointSummary("Tag Unarchive")]
         [EndpointDescription("Description")]
         public async Task<IActionResult> UnarchiveTag([FromRoute] UnarchiveTagCommand command)
-        {
-            await _mediator.Send(command);
-            return NoContent();
-
-        }
+            => _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
+        
         [HttpGet("{id:guid}/timeline", Name = nameof(GetTagTimeline))]
         [EndpointName(nameof(GetTagTimeline))]
         [EndpointSummary("Tag Timeline")]

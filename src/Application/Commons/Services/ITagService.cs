@@ -11,6 +11,6 @@ namespace Application.Commons.Services
         void DeleteTag(Guid id);
         Result ArchiveTag(Guid id);
         Result ArchiveAllTag();
-        void UnArchiveTag(Guid id);
+        Result UnArchiveTag(Guid id);
     }
 }

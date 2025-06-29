@@ -19,7 +19,7 @@ namespace Application.Tags.Commands.AddTag
             if (serviceResult.IsSuccess)
                 return Result<AddTagCommandResult>.CreatedSuccess(_mapper.Map<AddTagCommandResult>(serviceResult.Value));
             else
-                return Result<AddTagCommandResult>.Failure(serviceResult.Errors);
+                return Result<AddTagCommandResult>.Failure(serviceResult.Errors,serviceResult.StatusCode);
         }
     }
 }

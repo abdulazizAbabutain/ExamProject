@@ -21,12 +21,17 @@ public class GetAllTagsQueryHandler(IRepositoryManager repositoryManager) : IReq
 
         if(!string.IsNullOrEmpty(request.Search))
             query = query.And(e => e.Name.ToLower().Contains(request.Search.ToLower()));
+        
+        if(request.IsArchived.HasValue)
+            query = query.And(e => e.IsArchived == request.IsArchived.Value);
+        else
+            query = query.And(e => !e.IsArchived );
 
 
-        var tags = (await _repositoryManager.TagRepository.GetAllAsync(query, request.PageNumber,request.PageSize)).Where(t => t.IsArchived == request.IsArchived).ToList();
+        var tags = (await _repositoryManager.TagRepository.GetAllAsync(query, request.PageNumber,request.PageSize)).ToList();
         var count = await _repositoryManager.TagRepository.CountAsync();
 
-        if (tags.IsNull())
+        if (tags.IsNull() || !tags.Any())
             return Result<PageResponse<GetAllTagsQueryResult>>.Success(new PageResponse<GetAllTagsQueryResult>(request.PageNumber, request.PageSize, count));
 
 

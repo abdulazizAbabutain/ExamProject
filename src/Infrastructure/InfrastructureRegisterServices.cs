@@ -1,8 +1,6 @@
 ﻿using Application.Commons.Managers;
-using Application.Commons.Services;
 using Domain.Managers;
 using Infrastructure.Managers;
-using Infrastructure.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure
@@ -20,6 +18,7 @@ namespace Infrastructure
             services.AddScoped<IAuditManager, AuditManager>();
             services.AddScoped<IRepositoryManager, RepositoryManager>();
             services.AddScoped<IServiceManager, ServiceManager>();
+            services.AddScoped<ISystemManager, SystemManager>();
         }
     }
 }

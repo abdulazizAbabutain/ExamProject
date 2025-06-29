@@ -1,5 +1,6 @@
 ﻿using Application.Commons.Managers;
 using Application.Commons.Models.Pageination;
+using Application.Commons.Models.Results;
 using Domain.Auditing;
 using Domain.Entities.EntityLookup;
 using LinqKit;
@@ -7,11 +8,11 @@ using MediatR;
 
 namespace Application.Tags.Queries.GetTagTimeline
 {
-    public class GetTagTimelineQueryHandler(IAuditManager auditManager) : IRequestHandler<GetTagTimelineQuery, PageResponse<GetTagTimelineQueryResult>>
+    public class GetTagTimelineQueryHandler(IAuditManager auditManager) : IRequestHandler<GetTagTimelineQuery, Result<PageResponse<GetTagTimelineQueryResult>>>
     {
         private readonly IAuditManager _auditManager = auditManager;
 
-        public async Task<PageResponse<GetTagTimelineQueryResult>> Handle(GetTagTimelineQuery request, CancellationToken cancellationToken)
+        public async Task<Result<PageResponse<GetTagTimelineQueryResult>>> Handle(GetTagTimelineQuery request, CancellationToken cancellationToken)
         {
             var query = PredicateBuilder.New<AuditTrail>(true);
 
@@ -43,7 +44,7 @@ namespace Application.Tags.Queries.GetTagTimeline
             });
             var count = _auditManager.AuditTrailService.Count(request.Id);
 
-            return new PageResponse<GetTagTimelineQueryResult>(result, request.PageNumber, request.PageSize, count);
+            return Result<PageResponse<GetTagTimelineQueryResult>>.Success(new PageResponse<GetTagTimelineQueryResult>(result, request.PageNumber, request.PageSize, count));
         }
     }
 }

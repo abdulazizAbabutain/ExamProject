@@ -6,7 +6,7 @@ using Serilog.Events;
 
 namespace API.Controllers.V1
 {
-    [Route("api/log")]
+    [Route("api/system/log")]
     public class LogController(IMediator mediator) : ControllerBase
     {
         private readonly IMediator _mediator = mediator;

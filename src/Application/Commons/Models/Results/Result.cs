@@ -39,7 +39,6 @@ public class Result<T>
 
     public static Result<T> CreatedSuccess(T value) =>
        Success(value, HttpStatusCode.Created);
-
 }
 
 

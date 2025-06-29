@@ -9,6 +9,6 @@ namespace Application.Lookups.Queries.Tags.GetAllTags
     {
         public ColorCategory? ColorCategory { get; set; }
         public string? Search { get; set; }
-        public bool IsArchived { get; set; } = false;
+        public bool? IsArchived { get; set; }
     }
 }

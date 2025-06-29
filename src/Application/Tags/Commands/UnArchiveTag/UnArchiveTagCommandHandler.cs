@@ -1,15 +1,16 @@
 ﻿using Application.Commons.Managers;
+using Application.Commons.Models.Results;
 using MediatR;
 
 namespace Application.Tags.Commands.UnArchiveTag
 {
-    public class UnArchiveTagCommandHandler(IServiceManager serviceManager) : IRequestHandler<UnarchiveTagCommand>
+    public class UnArchiveTagCommandHandler(IServiceManager serviceManager) : IRequestHandler<UnarchiveTagCommand, Result>
     {
         private readonly IServiceManager _serviceManager = serviceManager;
 
-        public async Task Handle(UnarchiveTagCommand request, CancellationToken cancellationToken)
+        public async Task<Result> Handle(UnarchiveTagCommand request, CancellationToken cancellationToken)
         {
-            _serviceManager.TagService.UnArchiveTag(request.Id);
+            return _serviceManager.TagService.UnArchiveTag(request.Id);
         }
     }
 }
