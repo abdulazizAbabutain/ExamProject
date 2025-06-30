@@ -1,9 +1,9 @@
-﻿using Application.Sources.Queries.GetSourceById.ResultModels;
+﻿using Application.Commons.Models.Results;
 using MediatR;
 
 namespace Application.Sources.Queries.GetSourceById
 {
-    public class GetSourceByIdQuery : IRequest<GetSourceByIdQueryResult>
+    public class GetSourceByIdQuery : IRequest<Result<GetSourceByIdQueryResult>>
     {
         public Guid Id { get; set; }
     }

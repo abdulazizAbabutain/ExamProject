@@ -2,6 +2,7 @@
 using Application.Commons.SharedModelResult.Source;
 using Application.Sources.Commands.AddSource.Requests;
 using Application.Sources.Commands.AddSource.Results;
+using Application.Sources.Queries.GetSourceById;
 using Domain.Entities.Sources;
 using Mapster;
 
@@ -20,6 +21,7 @@ namespace Application.Commons.MappingConfig
             config.NewConfig<Source,AddSourceCommandResult>();
             config.NewConfig<SourceReference, AddSourceReferenceCommand>();
             config.NewConfig<Metadata, MetadataResult>();
+            config.NewConfig<Metadata, GetSourceByIdQueryResult>();
 
 
 

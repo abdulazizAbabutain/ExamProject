@@ -1,46 +1,31 @@
-﻿using Application.Commons.SharedModelResult;
-using Application.Sources.Queries.GetAllSources;
-using Application.Sources.Queries.GetSourceById.ResultModels;
-using Domain.Enums;
+﻿using Application.Commons.Models.Results;
+using Application.Commons.SharedModelResult;
 using Domain.Extentions;
-using Domain.Lookups;
 using Domain.Managers;
+using MapsterMapper;
 using MediatR;
 
 namespace Application.Sources.Queries.GetSourceById
 {
-    public class GetSourceByIdQueryHandler(IRepositoryManager repositoryManager) : IRequestHandler<GetSourceByIdQuery, GetSourceByIdQueryResult>
+    public class GetSourceByIdQueryHandler(IRepositoryManager repositoryManager, IMapper mapper) : IRequestHandler<GetSourceByIdQuery, Result<GetSourceByIdQueryResult>>
     {
         private readonly IRepositoryManager _repositoryManager = repositoryManager;
+        private readonly IMapper _mapper = mapper;
 
-        public async Task<GetSourceByIdQueryResult> Handle(GetSourceByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Result<GetSourceByIdQueryResult>> Handle(GetSourceByIdQuery request, CancellationToken cancellationToken)
         {
             var source = _repositoryManager.SourceRepository.GetById(request.Id);
-            // check if not send return 404 
-            // should be exception or flow?
 
+            if (source.IsNull())
+                return Result<GetSourceByIdQueryResult>.NotFoundFailure($"the source with id {request.Id} was not found");
 
             var tags = repositoryManager.TagRepository.GetCollection().Find(t => source.Tags.Contains(t.Id));
 
-            return new GetSourceByIdQueryResult
-            {
-                Id = source.Id,
-                Description = source.Description,
-                Tags = tags.IsNotNull() ? tags.Select(e => new TagResult
-                {
-                    Name = e.Name,
-                    ColorCode = e.ColorHexCode,
-                }).ToList() : null,
-                Title = source.Title,
-                Type = source.Type,
-                Metadata = source.Metadata.IsNotNull() ? source.Metadata.Select(e => new MetadataResult
-                {
-                    Id = e.Id,
-                    FiledName = e.FiledName,
-                    FiledType = e.FiledType,
-                    Value = e.Value,
-                }).ToList() : null
-            };
+            var sourceResult = _mapper.Map<GetSourceByIdQueryResult>(source);
+            sourceResult.Tags = _mapper.Map<IEnumerable<TagResult>>(tags.Where(t => !t.IsArchived));
+            sourceResult.ArchivedTags = _mapper.Map<IEnumerable<TagResult>>(tags.Where(t => t.IsArchived));
+
+            return Result<GetSourceByIdQueryResult>.Success(sourceResult);
 
         }
     }

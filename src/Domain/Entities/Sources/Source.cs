@@ -61,7 +61,6 @@ namespace Domain.Entities.Sources
             Metadata.AddRange(metadata);
         }
 
-        public Guid Id { get; private set; }
         public SourceType Type { get; private set; }
         public string Title { get; private set; }
         public string? Description { get; private set; }
