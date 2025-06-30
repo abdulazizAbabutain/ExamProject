@@ -107,4 +107,9 @@ public class AuditTrailService : BaseRepository<AuditTrail>, IAuditTrailService
     {
         _auditQueue.Writer.TryWrite(audit);
     }
+
+    public AuditTrail GetEntityTrailDetails(Guid trailId, EntitiesName entityName, Guid entityId)
+    {
+        return GetCollection().Find(e => e.Id == trailId && e.EntityName == entityName && e.EntityId == entityId).FirstOrDefault();
+    }
 }

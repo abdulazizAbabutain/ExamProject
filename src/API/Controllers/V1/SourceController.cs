@@ -1,8 +1,11 @@
 ﻿using API.Interfaces;
 using Application.Commons.Models.Pageination;
+using Application.EntitlesTimeline.Queries.EntityTimeline;
+using Application.EntitlesTimeline.Queries.EntityTimelineDetails;
 using Application.Sources.Commands.AddSource.Requests;
 using Application.Sources.Queries.GetAllSources;
 using Application.Sources.Queries.GetSourceById;
+using Domain.Enums;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,7 +15,7 @@ namespace API.Controllers.V1;
 /// 
 /// </summary>
 /// <param name="mediator"></param>
-[Route("api/Source")]
+[Route("api/source")]
 public class SourceController(IMediator mediator, IHttpResultResponder resultResponder) : ControllerBase
 {
     private readonly IMediator _mediator = mediator;
@@ -25,13 +28,13 @@ public class SourceController(IMediator mediator, IHttpResultResponder resultRes
     /// <returns></returns>
     [HttpPost(Name = nameof(AddSource))]
     public async Task<IActionResult> AddSource([FromBody] AddSourceCommand command)
-        => _resultResponder.FromResult(HttpContext,await _mediator.Send(command));
+        => _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
     /// <summary>
     /// 
     /// </summary>
     /// <param name="command"></param>
     /// <returns></returns>
-    [HttpPost("{id:guid}/reference",Name = nameof(AddReference))]
+    [HttpPost("{id:guid}/reference", Name = nameof(AddReference))]
     public async Task<IActionResult> AddReference([FromBody] AddSourceCommand command)
     {
         await _mediator.Send(command);
@@ -58,6 +61,29 @@ public class SourceController(IMediator mediator, IHttpResultResponder resultRes
     public async Task<IActionResult> GetSourceById([FromRoute] Guid id)
     {
 
-        return Ok(await _mediator.Send(new GetSourceByIdQuery { Id = id}));
+        return Ok(await _mediator.Send(new GetSourceByIdQuery { Id = id }));
+    }
+
+    [HttpGet("{id:guid}/timeline", Name = nameof(GetSourceTimeline))]
+    [EndpointName(nameof(GetSourceTimeline))]
+    [EndpointSummary("Tag Timeline")]
+    [EndpointDescription("get the timeline for tag")]
+    public async Task<IActionResult> GetSourceTimeline([FromRoute] Guid id, [FromQuery] GetEntityTimelineQuery query)
+    {
+        query.Id = id;
+        query.EntityName = EntitiesName.Source;
+        return Ok(await _mediator.Send(query));
+    }
+
+    [HttpGet("{id:guid}/timeline/{timelineId:guid}", Name = nameof(GetSourceTimelineDetails))]
+    [EndpointName(nameof(GetSourceTimelineDetails))]
+    [EndpointSummary("Tag Timeline details")]
+    [EndpointDescription("get the timeline for tag")]
+    public async Task<IActionResult> GetSourceTimelineDetails([FromRoute] Guid id, [FromRoute] Guid timelineId, [FromQuery] EntityTimelineDetailsQuery query)
+    {
+        query.Id = timelineId;
+        query.EntityName = EntitiesName.Source;
+        query.EntityId = id;
+        return Ok(await _mediator.Send(query));
     }
 }

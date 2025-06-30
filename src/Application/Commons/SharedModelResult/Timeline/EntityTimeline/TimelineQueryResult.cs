@@ -1,13 +1,13 @@
 ﻿using Domain.Enums;
 
-namespace Application.Tags.Queries.GetTagTimeline
+namespace Application.Commons.SharedModelResult.Timeline.EntityTimeline
 {
-    public class GetTagTimelineQueryResult
+    public class TimelineQueryResult
     {
+        public Guid Id { get; set; }
         public DateTimeOffset Timestamp { get; set; }
         public ActionType ActionType { get; set; }
         public ActionBy ActionBy { get; set; }
-        public IEnumerable<PropertyChangeResult>? ModifiedProperties { get; set; }
         public string? Comment { get; set; }
         public int VersionNumber { get; set; }
     }

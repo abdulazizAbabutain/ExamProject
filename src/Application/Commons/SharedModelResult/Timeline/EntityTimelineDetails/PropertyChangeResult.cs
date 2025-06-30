@@ -1,4 +1,4 @@
-﻿namespace Application.Tags.Queries.GetTagTimeline
+﻿namespace Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails
 {
     public class PropertyChangeResult
     {
