@@ -1,38 +1,47 @@
 ﻿using Application.Commons.Managers;
-using Application.Commons.Models.Commands;
+using Application.Commons.Models.Results;
+using Application.Commons.Models.ServicesModel.Source;
 using Application.Sources.Commands.AddSource.Requests;
+using Application.Sources.Commands.AddSource.Results;
 using Domain.Entities.Sources;
-using Domain.Enums;
+using Domain.Extentions;
+using MapsterMapper;
 using MediatR;
 
 namespace Application.Sources.Commands.AddSource
 {
-    public class AddSourceCommandHandler(IServiceManager serviceManager) : IRequestHandler<AddSourceCommand>
+    public class AddSourceCommandHandler(IServiceManager serviceManager, IMapper mapper) : IRequestHandler<AddSourceCommand, Result<AddSourceCommandResult>>
     {
         private readonly IServiceManager _serviceManager = serviceManager;
+        private readonly IMapper _mapper = mapper;
 
-        public async Task Handle(AddSourceCommand request, CancellationToken cancellationToken)
+        public async Task<Result<AddSourceCommandResult>> Handle(AddSourceCommand request, CancellationToken cancellationToken)
         {
-            var source = new Source(request.Type, request.Title, request.Description, request.HasAttachment, request.FileExtension, request.FilePath, request.Tags);
+            var sourceServiceModel = _mapper.Map<AddSourceServiceModel>(request);
+            var sourceResult = _serviceManager.SourceService.AddSource(sourceServiceModel);
 
-            if(request.Metadata.Any())
-                source.AddMetadata(request.Metadata.Select(BuildMetadata()));
+            if (!sourceResult.IsSuccess)
+                return Result<AddSourceCommandResult>.Failure(sourceResult.Errors, sourceResult.StatusCode);
 
+            List<SourceReference> references = new(); 
 
-            foreach (var reference in request.References)
+            if (request.References.IsNotNull())
             {
-                var sourceReference = new SourceReference(reference.Notes);
-                sourceReference.AddMetadata(reference.Metadata.Select(BuildMetadata()));
-                source.AddReference(sourceReference);
+                var referenceServiceModel = _mapper.Map<IEnumerable<AddSourceReferenceServiceModel>>(request.References);
+                var referenceResult = _serviceManager.SourceService.AddReference(referenceServiceModel, sourceResult.Value.Id);
+
+                if (!referenceResult.IsSuccess)
+                {
+                    return Result<AddSourceCommandResult>.Failure(referenceResult.Errors, referenceResult.StatusCode);
+                }
+
+                references = referenceResult.Value?.ToList() ?? new();
             }
 
-            _serviceManager.LookupService.AddSource(source);
+            var sourceToReturn = _mapper.Map<AddSourceCommandResult>(sourceResult.Value);
+            sourceToReturn.References = request.References.IsNotNull() ? _mapper.Map<IEnumerable<AddSourceReferenceCommand>>(references) : null;
+
+            return Result<AddSourceCommandResult>.CreatedSuccess(sourceToReturn);
         }
-
-
-        private Func<AddMetadataCommand, Metadata> BuildMetadata() => (command) =>
-        {
-            return new Metadata(command.FiledName, command.Value, command.IsRequired, command.FiledType);
-        };
     }
 }

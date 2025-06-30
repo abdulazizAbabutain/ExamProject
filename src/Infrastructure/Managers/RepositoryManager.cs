@@ -14,13 +14,14 @@ namespace Infrastructure.Managers
         private readonly Lazy<ITagRepository> _TagRepository = new(() => new TagRepository(configuration.GetConnectionString("Examiner")));
         private readonly Lazy<ISourceRepository> _SourceRepository = new(() => new SourceRepository(configuration.GetConnectionString("Examiner")));
         private readonly Lazy<ICategoryRepository> _CategoryRepository = new(() => new CategoryRepository(configuration.GetConnectionString("Examiner")));
+        private readonly Lazy<IReferenceRepository> _ReferenceRepository = new(() => new ReferenceRepository(configuration.GetConnectionString("Examiner")));
 
         public IQuestionRepository QuestionRepository => _QuestionRepository.Value;
         public ILanguageRepository LanguageRepository => _LanguageRepository.Value;
         public ITagRepository TagRepository => _TagRepository.Value;
         public ISourceRepository SourceRepository => _SourceRepository.Value;
         public ICategoryRepository CategoryRepository => _CategoryRepository.Value;
-
+        public IReferenceRepository ReferenceRepository => _ReferenceRepository.Value;
 
         public void Dispose()
         {

@@ -1,4 +1,5 @@
-﻿using Domain.Repositories.RepositoryBase;
+﻿using Domain.Auditing;
+using Domain.Repositories.RepositoryBase;
 using LiteDB;
 
 namespace Infrastructure.Repositories.BaseRepository
@@ -80,6 +81,7 @@ namespace Infrastructure.Repositories.BaseRepository
             _db?.Dispose();
         }
 
-       
+
+
     }
 }

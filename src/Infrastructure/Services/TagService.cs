@@ -3,9 +3,11 @@ using Application.Commons.Managers;
 using Application.Commons.Models.Results;
 using Application.Commons.Services;
 using Domain.Entities.EntityLookup;
+using Domain.Entities.Sources;
 using Domain.Enums;
 using Domain.Extentions;
 using Domain.Managers;
+using System.Security.Principal;
 
 namespace Infrastructure.Services
 {
@@ -26,7 +28,7 @@ namespace Infrastructure.Services
                 colorCode = ColorExtension.GenerateRandomHexColor();
             var tag = new Tag(name, colorCode);
             _repositoryManager.TagRepository.Insert(tag);
-            _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Tag, tag.Id, ActionBy.User, tag.VersionNumber);
+            _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Tag, tag.Id, ActionBy.User, tag, tag.VersionNumber);
             return Result<Tag>.Success(tag);
         }
 
@@ -43,7 +45,7 @@ namespace Infrastructure.Services
         /// <param name="colorCode">the color in hex code</param>
         public Result UpdateTag(Guid id, string name, string? colorCode = null)
         {
-            if (_repositoryManager.TagRepository.IsExist(name))
+            if (_repositoryManager.TagRepository.IsExist(name,id))
                 return Result.ConflictFailure($"Tag with name {name} is already exists");
 
             var tag = _repositoryManager.TagRepository.GetById(id);
@@ -51,49 +53,65 @@ namespace Infrastructure.Services
             if (tag.IsNull())
                 return Result.NotFoundFailure($"tag with id {id} was not found") ;
 
-            var tagClone = CloneExtension.DeepClone(tag);
+            var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 
             if (colorCode.IsNull())
                 colorCode = ColorExtension.GenerateRandomHexColor();
 
             tag.UpdateTag(name, colorCode);
-
             _repositoryManager.TagRepository.Update(tag);
-            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Modified, ActionBy.User, tagClone, tag, tag.VersionNumber);
+
+            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Modified, ActionBy.User,tagClone, tag, tag.VersionNumber);
             return Result.NoContentSuccess();
         }
         /// <summary>
         /// delete a tag and all related entities with a tag.
         /// </summary>
         /// <param name="id"></param>
-        public void DeleteTag(Guid id)
+        public Result DeleteTag(Guid id)
         {
-            //TODO: add exception handling
             if (_repositoryManager.TagRepository.IsNotExist(id))
-                return;
+                return Result.NotFoundFailure($"tag with id {id} was not found");
 
-            var sources = _repositoryManager.SourceRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
-            if (sources.Any() && sources.IsNotNull())
-            {
-                foreach (var source in sources)
-                {
-                    source.RemoveTag(id);
-                }
-                _repositoryManager.SourceRepository.Update(sources);
-            }
 
-            var questions = _repositoryManager.QuestionRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
+            //TODO: link to tags after compate it.
+            //var sources = _repositoryManager.SourceRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
+            //if (sources.Any() && sources.IsNotNull())
+            //{
+            //    var auditTrailSources = new List<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, Source OldEntity, Source NewEntity, int Version, string? Comment)>();
+            //    foreach (var source in sources)
+            //    {
+            //        var sourceClone = FastDeepCloner.DeepCloner.Clone(source);
+            //        source.RemoveTag(id);
+            //        auditTrailSources.Add((
+            //            entityId: Guid.NewGuid(),
+            //            actionType: ActionType.Modified,
+            //            actionBy: ActionBy.System,
+            //            oldEntity: sourceClone,
+            //            newEntity: source,
+            //            version: source.VersionNumber,
+            //            comment: "update the source to remove tag"
+            //        ));
+            //    }
+            //    _repositoryManager.SourceRepository.Update(sources);
+            //    _auditManager.AuditTrailService.UpdateEntitiesBulk(EntitiesName.Source, auditTrailSources);
+            //}
 
-            if (questions.Any() && questions.IsNotNull())
-            {
-                foreach (var question in questions)
-                {
-                    question.RemoveTag(id);
-                }
-                _repositoryManager.SourceRepository.Update(sources);
-            }
+            //var questions = _repositoryManager.QuestionRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
 
+            //if (questions.Any() && questions.IsNotNull())
+            //{
+            //    foreach (var question in questions)
+            //    {
+            //        question.RemoveTag(id);
+            //    }
+            //    _repositoryManager.SourceRepository.Update(sources);
+            //}
+
+            var tag = _repositoryManager.TagRepository.GetById(id);
             _repositoryManager.TagRepository.DeleteById(id);
+            _auditManager.AuditTrailService.DeleteEntity(EntitiesName.Tag,id,ActionType.Deleted,ActionBy.User, tag, tag.VersionNumber, "Delete teg");
+            return Result.Success();
         }
         public Result ArchiveTag(Guid id)
         {
@@ -104,7 +122,7 @@ namespace Infrastructure.Services
             if(tag.IsArchived)
                 return Result.ConflictFailure($"Tag with id {id} is already archived");
 
-            var tagClone = CloneExtension.DeepClone(tag);
+            var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 
             tag.ArchiveTag();
             _repositoryManager.TagRepository.Update(tag);
@@ -160,7 +178,7 @@ namespace Infrastructure.Services
             if (tag.IsArchived)
                 return Result.ConflictFailure($"Tag with id {id} is already unarchived");
 
-            var tagClone = CloneExtension.DeepClone(tag);
+            var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 
             tag.ArchiveTag();
             _repositoryManager.TagRepository.Update(tag);

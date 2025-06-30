@@ -2,7 +2,7 @@
 using Application.Commons.Models.Pageination;
 using Application.Commons.Models.Results;
 using Domain.Auditing;
-using Domain.Entities.EntityLookup;
+using Domain.Extentions;
 using LinqKit;
 using MediatR;
 
@@ -38,7 +38,13 @@ namespace Application.Tags.Queries.GetTagTimeline
                 ActionBy = e.ChangedBy,
                 ActionType = e.Operation,
                 Comment = e.Comment,
-                ModifiedProperties = e.Changes,
+                ModifiedProperties = e.Changes.IsNotNull()? e.Changes.Select(p => new PropertyChangeResult
+                {
+                    NewValue = p.NewValue,
+                    OldValue = p.OldValue,
+                    PropertyName = p.PropertyName,
+                    PropertyType = p.PropertyType
+                }) : null,
                 Timestamp = e.Timestamp,
                 VersionNumber = e.VersionNumber
             });

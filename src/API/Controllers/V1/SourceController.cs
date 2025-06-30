@@ -1,4 +1,5 @@
-﻿using Application.Commons.Models.Pageination;
+﻿using API.Interfaces;
+using Application.Commons.Models.Pageination;
 using Application.Sources.Commands.AddSource.Requests;
 using Application.Sources.Queries.GetAllSources;
 using Application.Sources.Queries.GetSourceById;
@@ -8,18 +9,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers.V1;
 ///
+/// <summary>
+/// 
+/// </summary>
+/// <param name="mediator"></param>
 [Route("api/Source")]
-public class SourceController : ControllerBase
+public class SourceController(IMediator mediator, IHttpResultResponder resultResponder) : ControllerBase
 {
-    private readonly IMediator _mediator;
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="mediator"></param>
-    public SourceController(IMediator mediator)
-    {
-        _mediator = mediator;
-    }
+    private readonly IMediator _mediator = mediator;
+    private readonly IHttpResultResponder _resultResponder = resultResponder;
+
     /// <summary>
     /// 
     /// </summary>
@@ -27,10 +26,7 @@ public class SourceController : ControllerBase
     /// <returns></returns>
     [HttpPost(Name = nameof(AddSource))]
     public async Task<IActionResult> AddSource([FromBody] AddSourceCommand command)
-    {
-        await _mediator.Send(command);
-        return NoContent();
-    }
+        => _resultResponder.FromResult(HttpContext,await _mediator.Send(command));
     /// <summary>
     /// 
     /// </summary>

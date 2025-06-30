@@ -7,7 +7,7 @@ namespace Application.Tags.Queries.GetTagTimeline
         public DateTimeOffset Timestamp { get; set; }
         public ActionType ActionType { get; set; }
         public ActionBy ActionBy { get; set; }
-        public Dictionary<string, object>? ModifiedProperties { get; set; }
+        public IEnumerable<PropertyChangeResult>? ModifiedProperties { get; set; }
         public string? Comment { get; set; }
         public int VersionNumber { get; set; }
     }

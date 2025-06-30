@@ -1,11 +1,11 @@
 ﻿using Domain.Enums;
-using System.Threading.Channels;
+using System.Reflection;
 
 namespace Domain.Auditing
 {
     public class AuditTrail
     {
-        public AuditTrail(EntitiesName entityName, Guid entityId, ActionType operation, ActionBy changedBy,int versionNumber, string? comment = null)
+        public AuditTrail(EntitiesName entityName, Guid entityId, ActionType operation, ActionBy changedBy, int versionNumber, string? comment = null)
         {
             EntityName = entityName;
             EntityId = entityId;
@@ -24,21 +24,70 @@ namespace Domain.Auditing
         public ActionType Operation { get; set; }
         public ActionBy ChangedBy { get; set; }
         public int VersionNumber { get; set; }
-        public Dictionary<string, object>? Changes { get; set; }
+        public List<PropertyChange> Changes { get; set; }
         public string? Comment { get; set; }
 
         public void GetChanges<T>(T oldObj, T newObj)
         {
-            var changes = new Dictionary<string, object>();
-            foreach (var prop in typeof(T).GetProperties())
+            var changes = new List<PropertyChange>();
+
+            foreach (var prop in typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance))
             {
                 var oldVal = prop.GetValue(oldObj);
                 var newVal = prop.GetValue(newObj);
-                if (!Equals(oldVal, newVal))
+
+                bool valuesDiffer = oldVal is null
+                    ? newVal is not null
+                    : !oldVal.Equals(newVal);
+
+                if (valuesDiffer)
                 {
-                    changes[prop.Name] = new { Old = oldVal, New = newVal };
+                    changes.Add(new PropertyChange
+                    {
+                        PropertyName = prop.Name,
+                        OldValue = oldVal,
+                        NewValue = newVal,
+                        PropertyType = prop.PropertyType.Name 
+                    });
                 }
             }
+
+            Changes = changes;
+        }
+
+        public void GetChanges<T>(T obj, bool isDelete)
+        {
+            var changes = new List<PropertyChange>();
+
+            foreach (var prop in typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance))
+            {
+                var val = prop.GetValue(obj);
+                var type = prop.PropertyType;
+
+
+                if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
+                {
+                    type = Nullable.GetUnderlyingType(type)!;
+                }
+
+                if(isDelete)
+                    changes.Add(new PropertyChange
+                    {
+                        PropertyName = prop.Name,
+                        OldValue = val, 
+                        NewValue = null,
+                        PropertyType = type.Name
+                    });
+                else
+                    changes.Add(new PropertyChange
+                    {
+                        PropertyName = prop.Name,
+                        OldValue = null, 
+                        NewValue = val,
+                        PropertyType = type.Name
+                    });
+            }
+
             Changes = changes;
         }
     }

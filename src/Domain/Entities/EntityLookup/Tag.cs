@@ -22,6 +22,7 @@ namespace Domain.Entities.EntityLookup
             Name = name;
             ColorHexCode = colorHexCode;
             ColorGroup = colorHexCode.GetColorGroup();
+            Updated();
         }
         public void ArchiveTag() => Archive();
 

@@ -2,20 +2,23 @@
 using Application.Commons.Services;
 using Domain.Managers;
 using Infrastructure.Services;
+using MapsterMapper;
 
 namespace Infrastructure.Managers;
 
-public class ServiceManager(IRepositoryManager repositoryManager, IAuditManager auditManager) : IServiceManager
+public class ServiceManager(IRepositoryManager repositoryManager, IAuditManager auditManager, IMapper mapper) : IServiceManager
 {
     private bool _disposed = false;
 
     private readonly Lazy<IQuestionService> _QuestionService = new(() => new QuestionService(repositoryManager.QuestionRepository));
     private readonly Lazy<ILookupService> _LookupService = new(() => new LookupService(repositoryManager, auditManager));
     private readonly Lazy<ITagService> _TagService = new(() => new TagService(repositoryManager, auditManager));
+    private readonly Lazy<ISourceService> _SourceService = new(() => new SourceService(repositoryManager, auditManager, mapper));
 
     public IQuestionService QuestionService => _QuestionService.Value;
     public ILookupService LookupService => _LookupService.Value;
     public ITagService TagService => _TagService.Value;
+    public ISourceService SourceService => _SourceService.Value;
 
     public void Dispose()
     {

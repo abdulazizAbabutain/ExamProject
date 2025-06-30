@@ -2,6 +2,7 @@
 {
     public class EntityAudit
     {
+        public Guid Id { get; set; }
         public DateTimeOffset? LastModifiedDate { get; protected set; }
         public DateTimeOffset? LastArchiveDate { get; protected set; }
         public DateTimeOffset CreationDate { get; protected set; }

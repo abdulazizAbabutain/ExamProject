@@ -6,7 +6,7 @@ namespace Domain.Entities.Sources
 {
     public class Source : EntityAudit
     {
-        public Source(SourceType type, string title, string? description,bool hasAttachment,string fileExtension,string filePath, IEnumerable<Guid>? tags)
+        public Source(SourceType type, string title, string? description, bool hasAttachment, string fileExtension, string filePath, IEnumerable<Guid>? tags)
         {
             Id = Guid.CreateVersion7();
             Type = type;
@@ -31,16 +31,20 @@ namespace Domain.Entities.Sources
 
         public void RemoveTag(Guid id)
         {
-            Tags.Remove(id);
+            if (Tags.IsNotNull())
+            {
+                Tags.Remove(id);
+                if (Tags.Count == 0)
+                    Tags = null;
 
-            if (Tags.Count == 0)
-                Tags = null;
+                Updated();
+            }
         }
 
-        public void AddMetadata(string filedName, string value, bool isRequired, FiledType filedType)
+        public void AddMetadata(string filedName, string value, FiledType filedType)
         {
             Metadata ??= new List<Metadata>();
-            var metadata = new Metadata(filedName, value, isRequired, filedType);
+            var metadata = new Metadata(filedName, value, filedType);
             Metadata.Add(metadata);
         }
 
@@ -57,22 +61,14 @@ namespace Domain.Entities.Sources
             Metadata.AddRange(metadata);
         }
 
-
-        public void AddReference(SourceReference reference)
-        {
-            References ??= new List<SourceReference>();
-            References.Add(reference);
-        }
-
         public Guid Id { get; private set; }
         public SourceType Type { get; private set; }
         public string Title { get; private set; }
         public string? Description { get; private set; }
-        public List<Guid>? Tags { get; private set; }
+        public List<Guid>? Tags { get; private set; }   
         public bool HasAttachment { get; private set; }
         public string? FileExtension { get; private set; }
         public string? FilePath { get; private set; }
         public List<Metadata>? Metadata { get; private set; }
-        public List<SourceReference>? References { get; private set; }
     }
 }

@@ -37,6 +37,10 @@ public class Result<T>
     public static Result<T> UnprocessableEntityFailure(string error) =>
         Failure(error, HttpStatusCode.UnprocessableEntity);
 
+    public static Result<T> UnprocessableEntityFailure(IEnumerable<string> errors) =>
+      Failure(errors, HttpStatusCode.UnprocessableEntity);
+
+
     public static Result<T> CreatedSuccess(T value) =>
        Success(value, HttpStatusCode.Created);
 }
@@ -71,6 +75,9 @@ public class Result
 
     public static Result UnprocessableEntityFailure(string error) =>
         Failure(error, HttpStatusCode.UnprocessableEntity);
+
+    public static Result UnprocessableEntityFailure(List<string> errors) =>
+       Failure(errors, HttpStatusCode.UnprocessableEntity);
 
     public static Result NoContentSuccess() =>
        Success(HttpStatusCode.NoContent);

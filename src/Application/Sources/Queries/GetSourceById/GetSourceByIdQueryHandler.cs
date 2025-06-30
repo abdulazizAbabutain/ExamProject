@@ -38,22 +38,8 @@ namespace Application.Sources.Queries.GetSourceById
                     Id = e.Id,
                     FiledName = e.FiledName,
                     FiledType = e.FiledType,
-                    IsRequired = e.IsRequired,
                     Value = e.Value,
-                }).ToList() : null,
-                References = source.References.Select(e => new SourceReferenceResult
-                {
-                    Id = e.Id,
-                    Metadata = e.Metadata.Select(mt => new MetadataResult
-                    {
-                        Id = mt.Id,
-                        FiledName = mt.FiledName,
-                        FiledType = mt.FiledType,
-                        IsRequired = mt.IsRequired,
-                        Value = mt.Value,
-                    }).ToList(),
-                    Notes = e.Notes
-                }).ToList()
+                }).ToList() : null
             };
 
         }

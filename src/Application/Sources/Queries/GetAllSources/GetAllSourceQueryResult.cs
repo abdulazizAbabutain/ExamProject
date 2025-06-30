@@ -28,11 +28,4 @@ namespace Application.Sources.Queries.GetAllSources
         [Range(1,50)]
         public List<TagResult>? Tags { get; set; }
     }
-    public class TagDto
-    {
-
-        public string Name { get; set; }
-        public string ColorCode { get; set; }
-    }
-
 }

@@ -1,12 +1,11 @@
 ﻿using Application.Commons.Models.Commands;
-using Application.Commons.Models.Results;
-using Application.Sources.Commands.AddSource.Results;
+using Application.Commons.SharedModelResult.Source;
+using Application.Sources.Commands.AddSource.Requests;
 using Domain.Enums;
-using MediatR;
 
-namespace Application.Sources.Commands.AddSource.Requests
+namespace Application.Sources.Commands.AddSource.Results
 {
-    public class AddSourceCommand : IRequest<Result<AddSourceCommandResult>>
+    public class SourceReferenceResult
     {
         public SourceType Type { get; set; }
         public string Title { get; set; }
@@ -15,7 +14,7 @@ namespace Application.Sources.Commands.AddSource.Requests
         public bool HasAttachment { get; set; }
         public string? FileExtension { get; set; }
         public List<Guid>? Tags { get; set; }
-        public List<AddMetadataCommand>? Metadata { get; set; }
+        public List<MetadataResult>? Metadata { get; set; }
         public List<AddSourceReferenceCommand>? References { get; set; }
     }
 }

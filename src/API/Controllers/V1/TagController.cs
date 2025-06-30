@@ -1,5 +1,6 @@
 ﻿using API.ApiDoc.Tags.Requests;
 using API.Interfaces;
+using Application.Commons.Models.Results;
 using Application.Lookups.Queries.Tags.GetAllTags;
 using Application.Tags.Commands.AddTag;
 using Application.Tags.Commands.ArchiveAllTags;
@@ -56,8 +57,7 @@ namespace API.Controllers.V1
         [HttpDelete("{id:guid}", Name = nameof(DeleteTag))]
         public async Task<IActionResult> DeleteTag([FromRoute] DeleteTagCommand command)
         {
-            await _mediator.Send(command);
-            return NoContent();
+            return _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
 
         }
 

@@ -23,12 +23,9 @@ namespace Application
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
 
-            services.AddMapster(); 
-            services.Scan(scan => scan
-                .FromAssembliesOf(typeof(TagMapper))
-                .AddClasses(classes => classes.AssignableTo<IRegister>())
-                .AsImplementedInterfaces()
-                .WithSingletonLifetime());
+            services.AddMapster();
+            TypeAdapterConfig.GlobalSettings.Scan(Assembly.GetExecutingAssembly());
+
 
             return services;
         }
