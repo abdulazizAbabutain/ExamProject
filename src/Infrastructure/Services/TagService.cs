@@ -175,12 +175,12 @@ namespace Infrastructure.Services
             if (tag.IsNull())
                 return Result.NotFoundFailure($"Tag with id {id} were not found");
 
-            if (tag.IsArchived)
+            if (!tag.IsArchived)
                 return Result.ConflictFailure($"Tag with id {id} is already unarchived");
 
             var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 
-            tag.ArchiveTag();
+            tag.UnArchiveTag();
             _repositoryManager.TagRepository.Update(tag);
             _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
             return Result.NoContentSuccess();

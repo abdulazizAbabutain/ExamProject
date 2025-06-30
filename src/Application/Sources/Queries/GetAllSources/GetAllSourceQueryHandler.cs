@@ -1,6 +1,8 @@
 ﻿using Application.Commons.Models.Pageination;
+using Application.Commons.Models.Results;
 using Application.Commons.SharedModelResult;
 using Domain.Entities.Sources;
+using Domain.Extentions;
 using Domain.Managers;
 using LinqKit;
 using Mapster;
@@ -9,17 +11,21 @@ using MediatR;
 
 namespace Application.Sources.Queries.GetAllSources
 {
-    public class GetAllSourceQueryHandler(IRepositoryManager repositoryManager, IMapper mapper) : IRequestHandler<GetAllSourceQuery, PageResponse<GetAllSourceQueryResult>>
+    public class GetAllSourceQueryHandler(IRepositoryManager repositoryManager, IMapper mapper) : IRequestHandler<GetAllSourceQuery, Result<PageResponse<GetAllSourceQueryResult>>>
     {
         private readonly IRepositoryManager _repositoryManager = repositoryManager;
         private readonly IMapper _mapper = mapper;
 
-        public async Task<PageResponse<GetAllSourceQueryResult>> Handle(GetAllSourceQuery request, CancellationToken cancellationToken)
+        public async Task<Result<PageResponse<GetAllSourceQueryResult>>> Handle(GetAllSourceQuery request, CancellationToken cancellationToken)
         {
             var query = PredicateBuilder.New<Source>(true);
 
             if (request.Tags.HasValue)
-                query = query.And(q => q.Tags.Contains(request.Tags.Value));
+            {
+                var isArchived = _repositoryManager.TagRepository.GetCollection().FindOne(t => t.Id == request.Tags.Value)?.IsArchived ?? true;
+                if(!isArchived)
+                    query = query.And(q => q.Tags.IsNotNull() && q.Tags.Contains(request.Tags.Value));
+            }
 
             if (request.TypeId.HasValue)
                 query = query.And(q => q.Type == request.TypeId);
@@ -27,7 +33,13 @@ namespace Application.Sources.Queries.GetAllSources
             if (!string.IsNullOrEmpty(request.Title))
                 query = query.And(q => q.Title.ToLower().Contains(request.Title.ToLower()));
 
+            
+
             var sources = _repositoryManager.SourceRepository.GetAll(query, request.PageNumber, request.PageSize).ToList();
+            var count = _repositoryManager.SourceRepository.Count();
+
+            if (sources.IsNull())
+                return Result<PageResponse<GetAllSourceQueryResult>>.Success(new PageResponse<GetAllSourceQueryResult>(request.PageNumber,request.PageSize, count));
 
             var allTagIds = sources.SelectMany(s => s.Tags ?? Enumerable.Empty<Guid>()).Distinct().ToList();
 
@@ -42,10 +54,9 @@ namespace Application.Sources.Queries.GetAllSources
                 Type = source.Type,
             }).ToList();
 
-            var count = _repositoryManager.SourceRepository.Count();
 
 
-            return new PageResponse<GetAllSourceQueryResult>(result, request.PageNumber, request.PageSize, count);
+            return Result<PageResponse<GetAllSourceQueryResult>>.Success(new PageResponse<GetAllSourceQueryResult>(result, request.PageNumber, request.PageSize, count));
         }
     }
 }
