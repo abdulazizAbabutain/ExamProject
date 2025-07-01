@@ -43,6 +43,13 @@ namespace Domain.Entities.Sources
             }
         }
 
+        public void AddNewTag(Guid tagId)
+        {
+            Tags ??= new List<Guid>();
+            Tags.Add(tagId);
+            Updated();
+        }
+
         public void AddMetadata(string filedName, string value, FiledType filedType)
         {
             Metadata ??= new List<Metadata>();

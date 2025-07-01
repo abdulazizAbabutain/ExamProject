@@ -6,6 +6,7 @@ using Domain.Entities.Sources;
 using Domain.Enums;
 using Domain.Extentions;
 using Domain.Managers;
+using FastDeepCloner;
 using MapsterMapper;
 
 namespace Infrastructure.Services;
@@ -72,7 +73,31 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
             _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Reference, item.Id, ActionBy.User, item, item.VersionNumber);
 
         return Result<IEnumerable<SourceReference>>.Success(referencesEntity);
+    }
 
+    public Result AddTag(Guid sourceId, Guid tagId)
+    {
+        var tag = _repositoryManager.TagRepository.GetById(tagId);
+
+        if (tag.IsNull())
+            return Result.NotFoundFailure($"tag id {tagId} were not found");
+        if (tag.IsArchived)
+            return Result.UnprocessableEntityFailure("can not add archived tag unarchive the tag so you can add it");
+
+        var source = _repositoryManager.SourceRepository.GetById(sourceId);
+
+        if (source.IsNull())
+            return Result.NotFoundFailure($"The source id {sourceId} was was not found");
+        if (source.IsNotNull() && source.Tags.Contains(tagId))
+            return Result.ConflictFailure($"tag with id {tagId} is already exists source");
+
+        var sourceClone = DeepCloner.Clone(source);
+        source.AddNewTag(tagId);
+
+        _repositoryManager.SourceRepository.Update(source);
+        _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Source,sourceId,ActionType.AddNewTag,ActionBy.User, sourceClone, source,source.VersionNumber);
+
+        return Result.NoContentSuccess();
     }
 
 }

@@ -8,5 +8,6 @@ namespace Application.Commons.Services
     {
         Result<Source> AddSource(AddSourceServiceModel model);
         public Result<IEnumerable<SourceReference>> AddReference(IEnumerable<AddSourceReferenceServiceModel> sourceReferences, Guid sourceId);
+        Result AddTag(Guid sourceId, Guid tagId);
     }
 }
