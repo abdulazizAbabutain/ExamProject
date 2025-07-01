@@ -1,14 +1,17 @@
 using Application.Commons.Managers;
 using Application.Commons.Models.Results;
+using Application.Commons.SharedModelResult.Source;
 using Domain.Extentions;
 using Domain.Managers;
+using MapsterMapper;
 using MediatR;
 
 namespace Application.Tags.Queries.GetTagDetails;
 
-public class GetTagDetailsQueryHandler(IRepositoryManager repositoryManager) : IRequestHandler<GetTagDetailsQuery, Result<GetTagDetailsQueryResult>>
+public class GetTagDetailsQueryHandler(IRepositoryManager repositoryManager, IMapper mapper) : IRequestHandler<GetTagDetailsQuery, Result<GetTagDetailsQueryResult>>
 {
     private readonly IRepositoryManager _repositoryManager = repositoryManager;
+    private readonly IMapper _mapper = mapper;
 
     public async Task<Result<GetTagDetailsQueryResult>> Handle(GetTagDetailsQuery request, CancellationToken cancellationToken)
     {
@@ -16,19 +19,11 @@ public class GetTagDetailsQueryHandler(IRepositoryManager repositoryManager) : I
         if (tag.IsNull())
             return Result<GetTagDetailsQueryResult>.NotFoundFailure($"tag with an {request.Id} was not found");
 
-        var tagRess =  new GetTagDetailsQueryResult()
-        {
-            Id = tag.Id,
-            Name = tag.Name,
-            ColorGroup = tag.ColorGroup,
-            ColorHexCode = tag.ColorHexCode,
-            CreationDate = tag.CreationDate,
-            IsArchived = tag.IsArchived,
-            LastArchiveDate = tag.LastArchiveDate,
-            LastModifiedDate = tag.LastModifiedDate,
-            VersionNumber = tag.VersionNumber
-        };
+        var relatedSources = _repositoryManager.SourceRepository.GetCollection().Find(e => e.Tags.Contains(request.Id));
 
-        return Result<GetTagDetailsQueryResult>.Success(tagRess);
+        var tagDetails = _mapper.Map<GetTagDetailsQueryResult>(tag);
+        tagDetails.RelatedSources = _mapper.Map<IEnumerable<SourceResult>>(relatedSources);
+
+        return Result<GetTagDetailsQueryResult>.Success(tagDetails);
     }
 }

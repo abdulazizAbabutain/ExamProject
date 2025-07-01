@@ -13,12 +13,15 @@ public class ServiceManager(IRepositoryManager repositoryManager, IAuditManager 
     private readonly Lazy<IQuestionService> _QuestionService = new(() => new QuestionService(repositoryManager.QuestionRepository));
     private readonly Lazy<ILookupService> _LookupService = new(() => new LookupService(repositoryManager, auditManager));
     private readonly Lazy<ITagService> _TagService = new(() => new TagService(repositoryManager, auditManager));
-    private readonly Lazy<ISourceService> _SourceService = new(() => new SourceService(repositoryManager, auditManager, mapper));
+    private readonly Lazy<ISourceService> _sourceService = new(() => new SourceService(repositoryManager, auditManager, mapper));
+    private readonly Lazy<ICategoryService> _categoryService = new(() => new CategoryService(repositoryManager, auditManager, mapper));
 
     public IQuestionService QuestionService => _QuestionService.Value;
     public ILookupService LookupService => _LookupService.Value;
     public ITagService TagService => _TagService.Value;
-    public ISourceService SourceService => _SourceService.Value;
+    public ISourceService SourceService => _sourceService.Value;
+    public ICategoryService CategoryService => _categoryService.Value;
+
 
     public void Dispose()
     {

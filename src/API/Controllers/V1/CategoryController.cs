@@ -1,4 +1,5 @@
-﻿using Application.Lookups.Commands.Categories.AddCategory;
+﻿using API.Interfaces;
+using Application.Categories.AddCategory;
 using Application.Lookups.Queries.Categories.GetAllCategory;
 using Application.Lookups.Queries.Categories.GetCategoryById;
 using MediatR;
@@ -7,19 +8,15 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers.V1
 {
     [Route("api/category")]
-    public class CategoryController : ControllerBase
+    public class CategoryController(IMediator mediator, IHttpResultResponder httpResultResponder) : ControllerBase
     {
-        private readonly IMediator _mediator;
+        private readonly IMediator _mediator = mediator;
+        private readonly IHttpResultResponder _httpResultResponder = httpResultResponder;
 
-        public CategoryController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
         [HttpPost(Name = nameof(AddCateogry))]
         public async Task<IActionResult> AddCateogry([FromBody] AddCategoryCommand command)
         {
-            await _mediator.Send(command);
-            return NoContent();
+            return _httpResultResponder.FromResult(HttpContext,await _mediator.Send(command));
         }
 
         [HttpGet(Name = nameof(GetAllCategory))]

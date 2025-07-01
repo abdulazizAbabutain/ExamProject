@@ -1,3 +1,4 @@
+using Application.Commons.SharedModelResult.Source;
 using Domain.Enums;
 
 namespace Application.Tags.Queries.GetTagDetails;
@@ -13,4 +14,5 @@ public class GetTagDetailsQueryResult
     public DateTimeOffset CreationDate { get; set; }
     public bool IsArchived { get; set; }
     public int VersionNumber { get; set; }
+    public IEnumerable<SourceResult> RelatedSources { get; set; }
 }

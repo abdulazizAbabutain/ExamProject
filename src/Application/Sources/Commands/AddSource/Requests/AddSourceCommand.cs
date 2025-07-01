@@ -15,6 +15,7 @@ namespace Application.Sources.Commands.AddSource.Requests
         public bool HasAttachment { get; set; }
         public string? FileExtension { get; set; }
         public List<Guid>? Tags { get; set; }
+        public Guid? CategoryId { get; set; }
         public List<AddMetadataCommand>? Metadata { get; set; }
         public List<AddSourceReferenceCommand>? References { get; set; }
     }

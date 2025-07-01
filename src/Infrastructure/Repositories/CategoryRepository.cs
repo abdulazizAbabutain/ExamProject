@@ -10,5 +10,10 @@ namespace Infrastructure.Repositories
             : base(databasePath, nameof(Category))
         {
         }
+
+        public bool IsNotExists(Guid id)
+        {
+            return !_collection.Exists(e => e.Id == id);
+        }
     }
 }

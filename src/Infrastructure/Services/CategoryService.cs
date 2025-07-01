@@ -1,0 +1,40 @@
+﻿using Application.Commons.Managers;
+using Application.Commons.Models.Results;
+using Application.Commons.Services;
+using Domain.Entities.EntityLookup;
+using Domain.Enums;
+using Domain.Extentions;
+using Domain.Managers;
+using MapsterMapper;
+
+namespace Infrastructure.Services
+{
+    public class CategoryService(IRepositoryManager repositoryManager, IAuditManager auditManager, IMapper mapper) : ICategoryService
+    {
+        private readonly IRepositoryManager _repositoryManager = repositoryManager;
+        private readonly IAuditManager _auditManager = auditManager;
+        private readonly IMapper _mapper = mapper;
+
+        public Result<Category> AddCategory(string name, string description, Guid? parentId)
+        {
+            Category category;
+
+            if (parentId.HasValue)
+            {
+                var parentCategory = _repositoryManager.CategoryRepository.GetById(parentId.Value);
+                if (parentCategory.IsNull())
+                    return Result<Category>.UnprocessableEntityFailure($"The parent id {parentId} was not found");
+
+                category = new Category(name, description, parentId.Value, parentCategory.Level);
+            }
+            else
+            {
+                category = new Category(name, description);
+            } 
+
+            _repositoryManager.CategoryRepository.Insert(category);
+            _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Category, category.Id, ActionBy.User, category, category.VersionNumber);
+            return Result<Category>.CreatedSuccess(category);
+        }
+    }
+}

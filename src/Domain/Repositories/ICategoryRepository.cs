@@ -5,5 +5,6 @@ namespace Domain.Repositories
 {
     public interface ICategoryRepository : IBaseRepository<Category>
     {
+        public bool IsNotExists(Guid id);
     }
 }

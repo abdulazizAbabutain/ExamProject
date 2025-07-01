@@ -14,6 +14,7 @@ namespace Application.Commons.MappingConfig
         {
             config.NewConfig<AddSourceReferenceCommand, AddSourceReferenceServiceModel>();
             config.NewConfig<AddSourceCommand, AddSourceServiceModel>();
+            config.NewConfig<Source, SourceResult>();
 
 
 
@@ -22,6 +23,7 @@ namespace Application.Commons.MappingConfig
             config.NewConfig<SourceReference, AddSourceReferenceCommand>();
             config.NewConfig<Metadata, MetadataResult>();
             config.NewConfig<Metadata, GetSourceByIdQueryResult>();
+
 
 
 

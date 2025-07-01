@@ -1,5 +1,4 @@
-﻿using Application.Commons.Models.Results;
-using Domain.Entities.EntityLookup;
+﻿using Domain.Entities.EntityLookup;
 using Domain.Entities.Sources;
 
 namespace Application.Commons.Services
@@ -16,10 +15,6 @@ namespace Application.Commons.Services
         void AddSource(Source source);
         Source GetSource(Guid id);
         void UpdateSource(Source source);
-        #endregion
-
-        #region category service 
-        void AddCategory(string name, Guid? parentId);
         #endregion
     }
 }

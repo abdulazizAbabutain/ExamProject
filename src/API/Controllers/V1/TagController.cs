@@ -99,15 +99,24 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
         return Ok(await _mediator.Send(query));
     }
 
-    [HttpGet("{id:guid}/timeline/{timelineId:guid}", Name = nameof(GetTagTimelineDetails))]
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="timelineId"></param>
+    /// <param name="query"></param>
+    /// <returns></returns>
+    [HttpGet("{tagId:guid}/timeline/{timelineId:guid}", Name = nameof(GetTagTimelineDetails))]
     [EndpointName(nameof(GetTagTimelineDetails))]
     [EndpointSummary("Tag Timeline details")]
     [EndpointDescription("get the timeline for tag")]
-    public async Task<IActionResult> GetTagTimelineDetails([FromRoute] Guid id, [FromRoute] Guid timelineId,[FromQuery] EntityTimelineDetailsQuery query)
+    public async Task<IActionResult> GetTagTimelineDetails([FromRoute(Name = "TagId")] Guid tagId, [FromRoute(Name = "TimelineId")] Guid timelineId)
     {
-        query.Id = timelineId;
-        query.EntityName = EntitiesName.Tag;
-        query.EntityId = id;
+        var query = new EntityTimelineDetailsQuery()
+        {
+            Id = timelineId,
+            EntityName = EntitiesName.Tag,
+            EntityId = tagId
+        };
         return Ok(await _mediator.Send(query));
     }
 }

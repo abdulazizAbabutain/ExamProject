@@ -8,5 +8,5 @@ public interface IServiceManager : IDisposable
     ILookupService LookupService { get; }
     ITagService TagService { get; }
     ISourceService SourceService { get; }
-
+    ICategoryService CategoryService { get; }
 }

@@ -1,4 +1,5 @@
 ﻿using Domain.Auditing;
+using Domain.Entities.EntityLookup;
 using Domain.Enums;
 using Domain.Extentions;
 
@@ -6,7 +7,7 @@ namespace Domain.Entities.Sources
 {
     public class Source : EntityAudit
     {
-        public Source(SourceType type, string title, string? description, bool hasAttachment, string fileExtension, string filePath, IEnumerable<Guid>? tags)
+        public Source(SourceType type, string title, string? description, bool hasAttachment, string fileExtension, string filePath, IEnumerable<Guid>? tags, Guid? categoryId)
         {
             Id = Guid.CreateVersion7();
             Type = type;
@@ -16,6 +17,7 @@ namespace Domain.Entities.Sources
             FileExtension = fileExtension;
             FilePath = filePath;
             HasAttachment = hasAttachment;
+            CategoryId = categoryId;
             Created();
         }
 
@@ -64,7 +66,8 @@ namespace Domain.Entities.Sources
         public SourceType Type { get; private set; }
         public string Title { get; private set; }
         public string? Description { get; private set; }
-        public List<Guid>? Tags { get; private set; }   
+        public List<Guid>? Tags { get; private set; }
+        public Guid? CategoryId { get; private set; }
         public bool HasAttachment { get; private set; }
         public string? FileExtension { get; private set; }
         public string? FilePath { get; private set; }

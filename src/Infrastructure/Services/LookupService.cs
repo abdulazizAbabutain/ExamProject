@@ -53,21 +53,7 @@ namespace Infrastructure.Services
 
         #region category services 
 
-        public void AddCategory(string name, Guid? parentId)
-        {
-            if (parentId.HasValue)
-            {
-                var category = _repositoryManager.CategoryRepository.GetById(parentId.Value);
-                if (category.IsNull())
-                    return;
-
-                _repositoryManager.CategoryRepository.Insert(new Category(name, parentId.Value, category.Level));
-            }
-            else
-            {
-                _repositoryManager.CategoryRepository.Insert(new Category(name));
-            }
-        }
+       
 
         #endregion
 
