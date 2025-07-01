@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <Folder Include="Lookups\BulkCommands\" />
+    <Folder Include="Lookups\Queries\Categories\" />
     <Folder Include="Lookups\Queries\Sources\" />
     <Folder Include="Lookups\Queries\Tags\" />
   </ItemGroup>

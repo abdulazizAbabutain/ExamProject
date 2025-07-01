@@ -19,11 +19,6 @@ public class GetTagDetailsQueryHandler(IRepositoryManager repositoryManager, IMa
         if (tag.IsNull())
             return Result<GetTagDetailsQueryResult>.NotFoundFailure($"tag with an {request.Id} was not found");
 
-        var relatedSources = _repositoryManager.SourceRepository.GetCollection().Find(e => e.Tags.Contains(request.Id));
-
-        var tagDetails = _mapper.Map<GetTagDetailsQueryResult>(tag);
-        tagDetails.RelatedSources = _mapper.Map<IEnumerable<SourceResult>>(relatedSources);
-
-        return Result<GetTagDetailsQueryResult>.Success(tagDetails);
+        return Result<GetTagDetailsQueryResult>.Success(_mapper.Map<GetTagDetailsQueryResult>(tag));
     }
 }

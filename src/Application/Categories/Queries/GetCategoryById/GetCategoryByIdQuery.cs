@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Application.Lookups.Queries.Categories.GetCategoryById
+namespace Application.Categories.Queries.GetCategoryById
 {
     public class GetCategoryByIdQuery : IRequest<GetCategoryByIdQueryResult>
     {

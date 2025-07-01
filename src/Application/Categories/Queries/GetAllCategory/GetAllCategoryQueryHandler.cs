@@ -5,7 +5,7 @@ using Domain.Managers;
 using LinqKit;
 using MediatR;
 
-namespace Application.Lookups.Queries.Categories.GetAllCategory
+namespace Application.Categories.Queries.GetAllCategory
 {
     public class GetAllCategoryQueryHandler(IRepositoryManager repositoryManager) : IRequestHandler<GetAllCategoryQuery, PageResponse<GetAllCategoryQueryResult>>
     {
@@ -29,7 +29,7 @@ namespace Application.Lookups.Queries.Categories.GetAllCategory
 
             var result = category.Select(cat => new GetAllCategoryQueryResult
             {
-                Id = cat.Id,    
+                Id = cat.Id,
                 Name = cat.Name,
                 Level = cat.Level,
                 ParentId = cat.ParentId,

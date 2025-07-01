@@ -1,6 +1,6 @@
 ﻿using Domain.Extentions;
 
-namespace Application.Lookups.Queries.Categories.GetCategoryById
+namespace Application.Categories.Queries.GetCategoryById
 {
     public class GetCategoryByIdQueryResult
     {

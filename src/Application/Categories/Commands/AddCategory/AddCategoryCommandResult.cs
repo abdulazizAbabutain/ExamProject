@@ -1,4 +1,4 @@
-﻿namespace Application.Categories.AddCategory
+﻿namespace Application.Categories.Commands.AddCategory
 {
     public class AddCategoryCommandResult
     {

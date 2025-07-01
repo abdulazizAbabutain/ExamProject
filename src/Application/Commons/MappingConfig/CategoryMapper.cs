@@ -1,4 +1,4 @@
-﻿using Application.Categories.AddCategory;
+﻿using Application.Categories.Commands.AddCategory;
 using Domain.Entities.EntityLookup;
 using Mapster;
 

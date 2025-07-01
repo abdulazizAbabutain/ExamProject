@@ -1,6 +1,8 @@
 ﻿using Domain.Auditing;
 using Domain.Repositories.RepositoryBase;
 using LiteDB;
+using System;
+using System.Linq.Expressions;
 
 namespace Infrastructure.Repositories.BaseRepository
 {
@@ -66,6 +68,10 @@ namespace Infrastructure.Repositories.BaseRepository
 
         public virtual int Count()
             => _collection.Count();
+
+
+        public virtual int CountBy(Func<T, bool> func)
+            => _collection.FindAll().Count(func);
 
 
         public virtual Task<int> CountAsync()

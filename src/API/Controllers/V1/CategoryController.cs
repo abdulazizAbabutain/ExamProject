@@ -1,7 +1,7 @@
 ﻿using API.Interfaces;
-using Application.Categories.AddCategory;
-using Application.Lookups.Queries.Categories.GetAllCategory;
-using Application.Lookups.Queries.Categories.GetCategoryById;
+using Application.Categories.Commands.AddCategory;
+using Application.Categories.Queries.GetAllCategory;
+using Application.Categories.Queries.GetCategoryById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,5 +30,6 @@ namespace API.Controllers.V1
         {
             return Ok(await _mediator.Send(query));
         }
+
     }
 }

@@ -1,9 +1,9 @@
 ﻿using Application.Commons.Models.Pageination;
 using MediatR;
 
-namespace Application.Lookups.Queries.Categories.GetAllCategory
+namespace Application.Categories.Queries.GetAllCategory
 {
-    public class GetAllCategoryQuery : PageRequest ,IRequest<PageResponse<GetAllCategoryQueryResult>>
+    public class GetAllCategoryQuery : PageRequest, IRequest<PageResponse<GetAllCategoryQueryResult>>
     {
         public bool? IsRoot { get; set; }
         public int? Level { get; set; }

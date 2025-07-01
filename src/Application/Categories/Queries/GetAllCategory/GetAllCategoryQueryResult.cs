@@ -1,6 +1,6 @@
 ﻿using Domain.Extentions;
 
-namespace Application.Lookups.Queries.Categories.GetAllCategory
+namespace Application.Categories.Queries.GetAllCategory
 {
     public class GetAllCategoryQueryResult
     {

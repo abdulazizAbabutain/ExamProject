@@ -1,4 +1,5 @@
 ﻿using LiteDB;
+using System.Linq.Expressions;
 
 namespace Domain.Repositories.RepositoryBase
 {
@@ -13,6 +14,7 @@ namespace Domain.Repositories.RepositoryBase
         IEnumerable<T> GetAll(int pageNumber, int pageSize);
         ILiteCollection<T> GetCollection();
         int Count();
+        int CountBy(Func<T, bool> func);
         Task<int> CountAsync();
         void DeleteById(Guid id);
         void DeleteAll();

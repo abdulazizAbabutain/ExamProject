@@ -1,7 +1,7 @@
 ﻿using Application.Commons.Models.Results;
 using MediatR;
 
-namespace Application.Categories.AddCategory
+namespace Application.Categories.Commands.AddCategory
 {
     public class AddCategoryCommand : IRequest<Result<AddCategoryCommandResult>>
     {

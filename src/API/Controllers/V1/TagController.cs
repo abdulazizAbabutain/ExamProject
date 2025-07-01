@@ -9,6 +9,7 @@ using Application.Tags.Commands.ArchiveTag;
 using Application.Tags.Commands.DeleteTag;
 using Application.Tags.Commands.UnArchiveTag;
 using Application.Tags.Commands.UpdateTag;
+using Application.Tags.Queries.GetRelatedSources;
 using Application.Tags.Queries.GetTagDetails;
 using Domain.Enums;
 using MediatR;
@@ -46,6 +47,15 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
     {
         return Ok(await _mediator.Send(new GetTagDetailsQuery() { Id = id }));
     }
+    [HttpGet("{tagId:guid}/related-sources", Name = nameof(TagRelatedSources))]
+    [EndpointName(nameof(TagRelatedSources))]
+    [EndpointSummary("Tag related sources")]
+    [EndpointDescription("Tag related sources")]
+    public async Task<IActionResult> TagRelatedSources([FromRoute] Guid tagId, [FromQuery] GetRelatedSourcesQuery query)
+    {
+        query.TagId = tagId;
+        return _resultResponder.FromResult(HttpContext,await _mediator.Send(query));
+    }
 
     [HttpPut(Name = nameof(UpdateTag))]
     public async Task<IActionResult> UpdateTag([FromBody] UpdateTagCommand command)
@@ -59,18 +69,6 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
     public async Task<IActionResult> DeleteTag([FromRoute] DeleteTagCommand command)
     {
         return _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
-
-    }
-
-    [HttpPost("archive", Name = nameof(ArchiveAllTag))]
-    [EndpointName(nameof(ArchiveAllTag))]
-    [EndpointSummary("Archive all tags")]
-    [EndpointDescription("Archive all tags")]
-    [Obsolete("will be removed")]
-    public async Task<IActionResult> ArchiveAllTag([FromRoute] ArchiveAllTagsCommand command)
-    {
-        var result = await _mediator.Send(command);
-        return _resultResponder.FromResult(HttpContext, result);
 
     }
 
@@ -99,12 +97,6 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
         return Ok(await _mediator.Send(query));
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="timelineId"></param>
-    /// <param name="query"></param>
-    /// <returns></returns>
     [HttpGet("{tagId:guid}/timeline/{timelineId:guid}", Name = nameof(GetTagTimelineDetails))]
     [EndpointName(nameof(GetTagTimelineDetails))]
     [EndpointSummary("Tag Timeline details")]

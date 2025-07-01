@@ -2,7 +2,7 @@
 using Domain.Managers;
 using MediatR;
 
-namespace Application.Lookups.Queries.Categories.GetCategoryById
+namespace Application.Categories.Queries.GetCategoryById
 {
     public class GetCategoryByIdQueryHandler(IRepositoryManager repositoryManager) : IRequestHandler<GetCategoryByIdQuery, GetCategoryByIdQueryResult>
     {
@@ -14,7 +14,7 @@ namespace Application.Lookups.Queries.Categories.GetCategoryById
 
             var root = allCategories.FirstOrDefault(c => c.Id == request.Id);
             if (root == null)
-                return new GetCategoryByIdQueryResult(); 
+                return new GetCategoryByIdQueryResult();
 
             var descendants = GetAllDescendants(request.Id, allCategories);
 
@@ -22,7 +22,7 @@ namespace Application.Lookups.Queries.Categories.GetCategoryById
 
             var tree = BuildCategoryTree(root.Id, descendants); // root is unique
 
-            
+
             return new GetCategoryByIdQueryResult
             {
                 Id = root.Id,
@@ -64,7 +64,7 @@ namespace Application.Lookups.Queries.Categories.GetCategoryById
                         Id = c.Id,
                         Name = c.Name,
                         Level = c.Level,
-                        SubCategory = children.Any() ? children : null 
+                        SubCategory = children.Any() ? children : null
                     };
                 })
                 .ToList();
