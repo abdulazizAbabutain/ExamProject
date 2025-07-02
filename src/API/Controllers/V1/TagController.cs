@@ -9,20 +9,26 @@ using Application.Tags.Commands.ArchiveTag;
 using Application.Tags.Commands.DeleteTag;
 using Application.Tags.Commands.UnArchiveTag;
 using Application.Tags.Commands.UpdateTag;
+using Application.Tags.Queries.ExportTags;
 using Application.Tags.Queries.GetRelatedSources;
 using Application.Tags.Queries.GetTagDetails;
 using Domain.Enums;
+using Domain.Managers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Filters;
+using System.Text;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace API.Controllers.V1;
 
 [Route("api/tag")]
-public class TagController(IMediator mediator, IHttpResultResponder resultResponder) : ControllerBase
+public class TagController(IMediator mediator, IHttpResultResponder resultResponder, IRepositoryManager repositoryManager) : ControllerBase
 {
     private readonly IMediator _mediator = mediator;
     private readonly IHttpResultResponder _resultResponder = resultResponder;
+    private readonly IRepositoryManager _repositoryManager = repositoryManager;
 
     [HttpPost(Name = nameof(AddTag))]
     [SwaggerRequestExample(typeof(AddTagCommand), typeof(AddTagCommandRequestExample))]
@@ -110,5 +116,20 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
             EntityId = tagId
         };
         return Ok(await _mediator.Send(query));
+    }
+    [HttpGet("export")]
+    public async Task<IActionResult> ExportTags([FromQuery] ExportTagsQuery query)
+    {
+        var result = await _mediator.Send(query);
+        if (!result.IsSuccess)
+            return BadRequest(result.Errors);
+
+        return File(result.Value.FileContent, result.Value.ContentType, result.Value.FileName);
+    }
+
+    [HttpPost("import")]
+    public async Task<IActionResult> ImportTags(IFormFile file)
+    {
+        return Ok();
     }
 }
