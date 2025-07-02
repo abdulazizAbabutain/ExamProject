@@ -25,6 +25,12 @@ namespace Domain.Entities.EntityLookup
             Created();
         }
 
+        public void ChildrenFlag()
+        {
+            HasChildren = true;
+            Updated();
+        }
+
         private Category() { }  
 
         public Guid Id { get; private set; }
@@ -32,6 +38,7 @@ namespace Domain.Entities.EntityLookup
         public string? Description { get; private set; }
         public Guid? ParentId { get; private set; }
         public int Level {  get; private set; }
+        public bool HasChildren { get; private set; }
         [BsonIgnore]
         public bool IsRoot => ParentId.IsNull() && Level == 1;
     }

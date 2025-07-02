@@ -8,5 +8,6 @@ namespace Application.Categories.Queries.GetAllCategory
         public bool? IsRoot { get; set; }
         public int? Level { get; set; }
         public string? Search { get; set; }
+        public bool? HasChildren { get; set; }
     }
 }

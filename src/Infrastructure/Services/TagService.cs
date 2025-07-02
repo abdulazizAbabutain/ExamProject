@@ -75,27 +75,27 @@ namespace Infrastructure.Services
 
 
             //TODO: link to tags after compate it.
-            //var sources = _repositoryManager.SourceRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
-            //if (sources.Any() && sources.IsNotNull())
-            //{
-            //    var auditTrailSources = new List<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, Source OldEntity, Source NewEntity, int Version, string? Comment)>();
-            //    foreach (var source in sources)
-            //    {
-            //        var sourceClone = FastDeepCloner.DeepCloner.Clone(source);
-            //        source.RemoveTag(id);
-            //        auditTrailSources.Add((
-            //            entityId: Guid.NewGuid(),
-            //            actionType: ActionType.Modified,
-            //            actionBy: ActionBy.System,
-            //            oldEntity: sourceClone,
-            //            newEntity: source,
-            //            version: source.VersionNumber,
-            //            comment: "update the source to remove tag"
-            //        ));
-            //    }
-            //    _repositoryManager.SourceRepository.Update(sources);
-            //    _auditManager.AuditTrailService.UpdateEntitiesBulk(EntitiesName.Source, auditTrailSources);
-            //}
+            var sources = _repositoryManager.SourceRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
+            if (sources.Any() && sources.IsNotNull())
+            {
+                var auditTrailSources = new List<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, Source OldEntity, Source NewEntity, int Version, string? Comment)>();
+                foreach (var source in sources)
+                {
+                    var sourceClone = FastDeepCloner.DeepCloner.Clone(source);
+                    source.RemoveTag(id);
+                    auditTrailSources.Add((
+                        entityId: source.Id,
+                        actionType: ActionType.Modified,
+                        actionBy: ActionBy.System,
+                        oldEntity: sourceClone,
+                        newEntity: source,
+                        version: source.VersionNumber,
+                        comment: $"removing all related with tag id {id}"
+                    ));
+                }
+                _repositoryManager.SourceRepository.Update(sources);
+                _auditManager.AuditTrailService.UpdateEntitiesBulk(EntitiesName.Source, auditTrailSources);
+            }
 
             //var questions = _repositoryManager.QuestionRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
 

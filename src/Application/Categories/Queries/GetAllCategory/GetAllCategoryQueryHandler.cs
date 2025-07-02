@@ -3,13 +3,15 @@ using Domain.Entities.EntityLookup;
 using Domain.Extentions;
 using Domain.Managers;
 using LinqKit;
+using MapsterMapper;
 using MediatR;
 
 namespace Application.Categories.Queries.GetAllCategory
 {
-    public class GetAllCategoryQueryHandler(IRepositoryManager repositoryManager) : IRequestHandler<GetAllCategoryQuery, PageResponse<GetAllCategoryQueryResult>>
+    public class GetAllCategoryQueryHandler(IRepositoryManager repositoryManager,IMapper mapper) : IRequestHandler<GetAllCategoryQuery, PageResponse<GetAllCategoryQueryResult>>
     {
         private readonly IRepositoryManager _repositoryManager = repositoryManager;
+        private readonly IMapper _mapper = mapper;
 
         public async Task<PageResponse<GetAllCategoryQueryResult>> Handle(GetAllCategoryQuery request, CancellationToken cancellationToken)
         {
@@ -25,19 +27,14 @@ namespace Application.Categories.Queries.GetAllCategory
             if (request.Search.IsNotNullOrEmpty())
                 query = query.And(q => q.Name.Contains(request.Search));
 
-            var category = _repositoryManager.CategoryRepository.GetAll(query, request.PageNumber, request.PageSize);
+            if (request.HasChildren.HasValue)
+                query = query.And(q => q.HasChildren == request.HasChildren);
 
-            var result = category.Select(cat => new GetAllCategoryQueryResult
-            {
-                Id = cat.Id,
-                Name = cat.Name,
-                Level = cat.Level,
-                ParentId = cat.ParentId,
-            }).ToList();
+            var category = _repositoryManager.CategoryRepository.GetAll(query, request.PageNumber, request.PageSize);
 
             var count = _repositoryManager.CategoryRepository.Count();
 
-            return new PageResponse<GetAllCategoryQueryResult>(result, request.PageNumber, request.PageSize, count);
+            return new PageResponse<GetAllCategoryQueryResult>(_mapper.Map<IEnumerable<GetAllCategoryQueryResult>>(category), request.PageNumber, request.PageSize, count);
         }
     }
 }

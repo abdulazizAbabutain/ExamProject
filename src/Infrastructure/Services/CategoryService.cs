@@ -5,6 +5,7 @@ using Domain.Entities.EntityLookup;
 using Domain.Enums;
 using Domain.Extentions;
 using Domain.Managers;
+using FastDeepCloner;
 using MapsterMapper;
 
 namespace Infrastructure.Services
@@ -26,6 +27,13 @@ namespace Infrastructure.Services
                     return Result<Category>.UnprocessableEntityFailure($"The parent id {parentId} was not found");
 
                 category = new Category(name, description, parentId.Value, parentCategory.Level);
+
+
+                var parentCategoryClone = DeepCloner.Clone(parentCategory);
+                parentCategory.ChildrenFlag();
+                
+                _repositoryManager.CategoryRepository.Update(parentCategory);
+                _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Category, parentCategory.Id, ActionType.Modified, ActionBy.System, parentCategoryClone, parentCategory, parentCategory.VersionNumber, "Enable an flag for children");
             }
             else
             {
