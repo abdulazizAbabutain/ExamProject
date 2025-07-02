@@ -111,7 +111,7 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
     {
         var query = new EntityTimelineDetailsQuery()
         {
-            Id = timelineId,
+            TimelineId = timelineId,
             EntityName = EntitiesName.Tag,
             EntityId = tagId
         };

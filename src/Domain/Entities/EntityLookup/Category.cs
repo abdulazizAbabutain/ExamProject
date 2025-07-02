@@ -25,9 +25,15 @@ namespace Domain.Entities.EntityLookup
             Created();
         }
 
-        public void ChildrenFlag()
+        public void EnableChildrenFlag()
         {
             HasChildren = true;
+            Updated();
+        }
+        public void UpdateCategory(string name, string? description)
+        {
+            Name = name;
+            Description = description;
             Updated();
         }
 

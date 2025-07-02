@@ -30,7 +30,7 @@ namespace Infrastructure.Services
 
 
                 var parentCategoryClone = DeepCloner.Clone(parentCategory);
-                parentCategory.ChildrenFlag();
+                parentCategory.EnableChildrenFlag();
                 
                 _repositoryManager.CategoryRepository.Update(parentCategory);
                 _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Category, parentCategory.Id, ActionType.Modified, ActionBy.System, parentCategoryClone, parentCategory, parentCategory.VersionNumber, "Enable an flag for children");
@@ -44,5 +44,21 @@ namespace Infrastructure.Services
             _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Category, category.Id, ActionBy.User, category, category.VersionNumber);
             return Result<Category>.CreatedSuccess(category);
         }
+        
+        public Result UpdateCategory(Guid categoryId,string name, string description)
+        {
+            var category = _repositoryManager.CategoryRepository.GetById(categoryId);
+
+            if (category.IsNull())
+                return Result.NotFoundFailure($"the category with id {categoryId} was not found");
+
+            var categoryClone = DeepCloner.Clone(category);
+            category.UpdateCategory(name,description);
+
+            _repositoryManager.CategoryRepository.Update(category);
+            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Category, category.Id, ActionType.Modified, ActionBy.System, categoryClone, category, category.VersionNumber);
+            return Result.NoContentSuccess();
+        }
+
     }
 }

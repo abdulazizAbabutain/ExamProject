@@ -7,7 +7,7 @@ namespace Application.EntitlesTimeline.Queries.EntityTimelineDetails
 {
     public class EntityTimelineDetailsQuery : IRequest<Result<EntityTimelineDetailsQueryResult>>
     {
-        public Guid Id { get; set; }
+        public Guid TimelineId { get; set; }
         public EntitiesName EntityName { get; set; }
         public Guid EntityId { get; set; }
     }

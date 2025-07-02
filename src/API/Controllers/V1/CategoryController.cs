@@ -1,7 +1,11 @@
 ﻿using API.Interfaces;
 using Application.Categories.Commands.AddCategory;
+using Application.Categories.Commands.UpdateCategory;
 using Application.Categories.Queries.GetAllCategory;
 using Application.Categories.Queries.GetCategoryById;
+using Application.EntitlesTimeline.Queries.EntityTimeline;
+using Application.EntitlesTimeline.Queries.EntityTimelineDetails;
+using Domain.Enums;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,6 +32,40 @@ namespace API.Controllers.V1
         [HttpGet("{id:guid}", Name = nameof(GetCategoryById))]
         public async Task<IActionResult> GetCategoryById([FromRoute] GetCategoryByIdQuery query)
         {
+            return Ok(await _mediator.Send(query));
+        }
+
+
+        [HttpPut("{categoryId:guid}", Name = nameof(UpdateCategory))]
+        public async Task<IActionResult> UpdateCategory([FromRoute] Guid categoryId ,[FromBody] UpdateCategoryCommand command)
+        {
+            command.CategoryId = categoryId;
+            return _httpResultResponder.FromResult(HttpContext, await _mediator.Send(command));
+        }
+
+        [HttpGet("{categoryId:guid}/timeline", Name = nameof(GetCategoryTimeline))]
+        [EndpointName(nameof(GetCategoryTimeline))]
+        [EndpointSummary("Tag Timeline")]
+        [EndpointDescription("get the timeline for tag")]
+        public async Task<IActionResult> GetCategoryTimeline([FromRoute] Guid categoryId, [FromQuery] GetEntityTimelineQuery query)
+        {
+            query.Id = categoryId;
+            query.EntityName = EntitiesName.Category;
+            return Ok(await _mediator.Send(query));
+        }
+
+        [HttpGet("{categoryId:guid}/timeline/{timelineId:guid}", Name = nameof(GetCategoryTimelineDetails))]
+        [EndpointName(nameof(GetCategoryTimelineDetails))]
+        [EndpointSummary("Tag Timeline details")]
+        [EndpointDescription("get the timeline for tag")]
+        public async Task<IActionResult> GetCategoryTimelineDetails([FromRoute(Name = "TagId")] Guid categoryId, [FromRoute(Name = "TimelineId")] Guid timelineId)
+        {
+            var query = new EntityTimelineDetailsQuery()
+            {
+                TimelineId = timelineId,
+                EntityName = EntitiesName.Category,
+                EntityId = categoryId
+            };
             return Ok(await _mediator.Send(query));
         }
 

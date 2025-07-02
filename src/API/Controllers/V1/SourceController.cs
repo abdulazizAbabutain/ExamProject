@@ -119,7 +119,7 @@ public class SourceController(IMediator mediator, IHttpResultResponder resultRes
     [EndpointDescription("get the timeline for tag")]
     public async Task<IActionResult> GetSourceTimelineDetails([FromRoute] Guid id, [FromRoute] Guid timelineId, [FromQuery] EntityTimelineDetailsQuery query)
     {
-        query.Id = timelineId;
+        query.TimelineId = timelineId;
         query.EntityName = EntitiesName.Source;
         query.EntityId = id;
         return Ok(await _mediator.Send(query));
