@@ -50,6 +50,13 @@ namespace Domain.Entities.Sources
             Updated();
         }
 
+        public void AddNewTag(IEnumerable<Guid> tagIds)
+        {
+            Tags ??= new List<Guid>();
+            Tags.AddRange(tagIds);
+            Updated();
+        }
+
         public void AddMetadata(string filedName, string value, FiledType filedType)
         {
             Metadata ??= new List<Metadata>();

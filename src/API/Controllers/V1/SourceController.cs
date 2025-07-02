@@ -2,8 +2,10 @@
 using Application.Commons.Models.Pageination;
 using Application.EntitlesTimeline.Queries.EntityTimeline;
 using Application.EntitlesTimeline.Queries.EntityTimelineDetails;
+using Application.Sources.Commands.AddBulkTagsToSource;
 using Application.Sources.Commands.AddSource.Requests;
 using Application.Sources.Commands.AddTagToSource;
+using Application.Sources.Commands.RemoveBulkTagFromSource;
 using Application.Sources.Commands.RemoveTagFromSource;
 using Application.Sources.Queries.GetAllSources;
 using Application.Sources.Queries.GetSourceById;
@@ -61,10 +63,26 @@ public class SourceController(IMediator mediator, IHttpResultResponder resultRes
         return _resultResponder.FromResult(HttpContext, await _mediator.Send(new AddTagsToSourceCommand { SourceId = sourceId, TagId = tagId}));
     }
 
+    [HttpPost("{sourceId:guid}/tag/bulk")]
+    public async Task<IActionResult> AddBulkNewTags([FromRoute] Guid sourceId, [FromBody] AddBulkTagsToSourceCommand command)
+    {
+        command.SourceId = sourceId;
+        return _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
+    }
+
 
     [HttpDelete("{sourceId:guid}/tag/{tagId:guid}")]
     public async Task<IActionResult> RemoveTag([FromRoute] RemoveTagFromSourceCommand command)
     {
+        return _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
+    }
+
+
+
+    [HttpDelete("{sourceId:guid}/tag/bulk")]
+    public async Task<IActionResult> RemoveTag([FromRoute] Guid sourceId, [FromQuery] RemoveBulkTagFromSourceCommand command)
+    {
+        command.SourceId = sourceId;
         return _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
     }
 
