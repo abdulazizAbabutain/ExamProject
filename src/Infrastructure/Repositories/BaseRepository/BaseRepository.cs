@@ -46,6 +46,10 @@ namespace Infrastructure.Repositories.BaseRepository
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize);
 
+        public virtual IEnumerable<T> GetAll(Func<T, bool> func)
+           => _collection.FindAll()
+               .Where(func);
+
 
         public virtual Task<IEnumerable<T>> GetAllAsync(Func<T, bool> func, int pageNumber, int pageSize)
         => Task.Run(() =>

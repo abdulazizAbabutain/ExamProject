@@ -88,7 +88,8 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
 
         if (source.IsNull())
             return Result.NotFoundFailure($"The source id {sourceId} was was not found");
-        if (source.IsNotNull() && source.Tags.Contains(tagId))
+        
+        if (source.Tags.IsNotNull() && source.Tags.Contains(tagId))
             return Result.ConflictFailure($"tag with id {tagId} is already exists source");
 
         var sourceClone = DeepCloner.Clone(source);
@@ -96,6 +97,59 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
 
         _repositoryManager.SourceRepository.Update(source);
         _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Source,sourceId,ActionType.AddNewTag,ActionBy.User, sourceClone, source,source.VersionNumber);
+
+        return Result.NoContentSuccess();
+    }
+
+    public Result AddBulkTag(Guid sourceId, IEnumerable<Guid> tagIds)
+    {
+        var tag = _repositoryManager.TagRepository.GetAll(e => tagIds.Contains(e.Id));
+
+        if (tag.IsNull())
+            return Result.NotFoundFailure($"tag id {tagId} were not found");
+        if (tag.IsArchived)
+            return Result.UnprocessableEntityFailure("can not add archived tag unarchive the tag so you can add it");
+
+        var source = _repositoryManager.SourceRepository.GetById(sourceId);
+
+        if (source.IsNull())
+            return Result.NotFoundFailure($"The source id {sourceId} was was not found");
+
+        if (source.Tags.IsNotNull() && source.Tags.Contains(tagId))
+            return Result.ConflictFailure($"tag with id {tagId} is already exists source");
+
+        var sourceClone = DeepCloner.Clone(source);
+        source.AddNewTag(tagId);
+
+        _repositoryManager.SourceRepository.Update(source);
+        _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Source, sourceId, ActionType.AddNewTag, ActionBy.User, sourceClone, source, source.VersionNumber);
+
+        return Result.NoContentSuccess();
+    }
+
+    public Result RemoveTag(Guid sourceId, Guid tagId)
+    {
+        var tag = _repositoryManager.TagRepository.GetById(tagId);
+
+        if (tag.IsNull())
+            return Result.NotFoundFailure($"tag id {tagId} were not found");
+
+        var source = _repositoryManager.SourceRepository.GetById(sourceId);
+
+        if (source.IsNull())
+            return Result.NotFoundFailure($"The source id {sourceId} was was not found");
+
+        if (source.Tags.IsNotNull() && !source.Tags.Contains(tagId))
+            return Result.ConflictFailure($"tag with tag id {tagId} is not exists");
+
+        if (source.Tags.IsNull())
+            return Result.ConflictFailure($"the source dose not have any tags to remove from");
+
+        var sourceClone = DeepCloner.Clone(source);
+        source.RemoveTag(tagId);
+
+        _repositoryManager.SourceRepository.Update(source);
+        _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Source, sourceId, ActionType.RemoveTag, ActionBy.User, sourceClone, source, source.VersionNumber);
 
         return Result.NoContentSuccess();
     }

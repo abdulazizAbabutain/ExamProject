@@ -5,8 +5,9 @@
         Added = 1,
         Modified= 2,
         Deleted= 3,
-        Archived=4,
-        UnArchived=5, 
-        AddNewTag=6,
+        Archived = 4,
+        UnArchived = 5, 
+        AddNewTag = 6,
+        RemoveTag = 7,
     }
 }

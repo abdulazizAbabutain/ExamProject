@@ -4,6 +4,7 @@ using Application.EntitlesTimeline.Queries.EntityTimeline;
 using Application.EntitlesTimeline.Queries.EntityTimelineDetails;
 using Application.Sources.Commands.AddSource.Requests;
 using Application.Sources.Commands.AddTagToSource;
+using Application.Sources.Commands.RemoveTagFromSource;
 using Application.Sources.Queries.GetAllSources;
 using Application.Sources.Queries.GetSourceById;
 using Domain.Enums;
@@ -52,11 +53,22 @@ public class SourceController(IMediator mediator, IHttpResultResponder resultRes
     {
         return Ok(await _mediator.Send(query));
     }
+
+
     [HttpPost("{sourceId:guid}/tag/{tagId:guid}")]
     public async Task<IActionResult> AddNewTag([FromRoute] Guid sourceId, [FromRoute] Guid tagId)
     {
         return _resultResponder.FromResult(HttpContext, await _mediator.Send(new AddTagsToSourceCommand { SourceId = sourceId, TagId = tagId}));
     }
+
+
+    [HttpDelete("{sourceId:guid}/tag/{tagId:guid}")]
+    public async Task<IActionResult> RemoveTag([FromRoute] RemoveTagFromSourceCommand command)
+    {
+        return _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
+    }
+
+
 
 
     /// <summary>

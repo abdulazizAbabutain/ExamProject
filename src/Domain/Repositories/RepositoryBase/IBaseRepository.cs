@@ -9,6 +9,7 @@ namespace Domain.Repositories.RepositoryBase
         void Insert(IEnumerable<T> entity);
         T GetById(Guid id);
         IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll(Func<T, bool> func);
         IEnumerable<T> GetAll(Func<T, bool> func, int pageNumber, int pageSize);
         Task<IEnumerable<T>> GetAllAsync(Func<T, bool> func, int pageNumber, int pageSize);
         IEnumerable<T> GetAll(int pageNumber, int pageSize);
