@@ -33,7 +33,7 @@ namespace Infrastructure.Services
                 parentCategory.EnableChildrenFlag();
                 
                 _repositoryManager.CategoryRepository.Update(parentCategory);
-                _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Category, parentCategory.Id, ActionType.Modified, ActionBy.System, parentCategoryClone, parentCategory, parentCategory.VersionNumber, "Enable an flag for children");
+                _auditManager.AuditTrailService.UpdateEntity(EntityName.Category, parentCategory.Id, ActionType.Modified, ActionBy.System, parentCategoryClone, parentCategory, parentCategory.VersionNumber, "Enable an flag for children");
             }
             else
             {
@@ -41,7 +41,7 @@ namespace Infrastructure.Services
             } 
 
             _repositoryManager.CategoryRepository.Insert(category);
-            _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Category, category.Id, ActionBy.User, category, category.VersionNumber);
+            _auditManager.AuditTrailService.AddNewEntity(EntityName.Category, category.Id, ActionBy.User, category, category.VersionNumber);
             return Result<Category>.CreatedSuccess(category);
         }
         
@@ -56,7 +56,7 @@ namespace Infrastructure.Services
             category.UpdateCategory(name,description);
 
             _repositoryManager.CategoryRepository.Update(category);
-            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Category, category.Id, ActionType.Modified, ActionBy.System, categoryClone, category, category.VersionNumber);
+            _auditManager.AuditTrailService.UpdateEntity(EntityName.Category, category.Id, ActionType.Modified, ActionBy.System, categoryClone, category, category.VersionNumber);
             return Result.NoContentSuccess();
         }
 

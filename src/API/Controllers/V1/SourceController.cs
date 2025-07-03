@@ -109,7 +109,7 @@ public class SourceController(IMediator mediator, IHttpResultResponder resultRes
     public async Task<IActionResult> GetSourceTimeline([FromRoute] Guid id, [FromQuery] GetEntityTimelineQuery query)
     {
         query.Id = id;
-        query.EntityName = EntitiesName.Source;
+        query.EntityName = EntityName.Source;
         return Ok(await _mediator.Send(query));
     }
 
@@ -120,7 +120,7 @@ public class SourceController(IMediator mediator, IHttpResultResponder resultRes
     public async Task<IActionResult> GetSourceTimelineDetails([FromRoute] Guid id, [FromRoute] Guid timelineId, [FromQuery] EntityTimelineDetailsQuery query)
     {
         query.TimelineId = timelineId;
-        query.EntityName = EntitiesName.Source;
+        query.EntityName = EntityName.Source;
         query.EntityId = id;
         return Ok(await _mediator.Send(query));
     }

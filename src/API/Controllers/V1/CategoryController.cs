@@ -43,6 +43,13 @@ namespace API.Controllers.V1
             return _httpResultResponder.FromResult(HttpContext, await _mediator.Send(command));
         }
 
+        [HttpPut("{categoryId:guid}/parent-reference", Name = nameof(UpdateParrentRefrence))]
+        public async Task<IActionResult> UpdateParrentRefrence([FromRoute] Guid categoryId, [FromBody] UpdateCategoryCommand command)
+        {
+            command.CategoryId = categoryId;
+            return _httpResultResponder.FromResult(HttpContext, await _mediator.Send(command));
+        }
+
         [HttpGet("{categoryId:guid}/timeline", Name = nameof(GetCategoryTimeline))]
         [EndpointName(nameof(GetCategoryTimeline))]
         [EndpointSummary("Tag Timeline")]
@@ -50,7 +57,7 @@ namespace API.Controllers.V1
         public async Task<IActionResult> GetCategoryTimeline([FromRoute] Guid categoryId, [FromQuery] GetEntityTimelineQuery query)
         {
             query.Id = categoryId;
-            query.EntityName = EntitiesName.Category;
+            query.EntityName = EntityName.Category;
             return Ok(await _mediator.Send(query));
         }
 
@@ -58,12 +65,12 @@ namespace API.Controllers.V1
         [EndpointName(nameof(GetCategoryTimelineDetails))]
         [EndpointSummary("Tag Timeline details")]
         [EndpointDescription("get the timeline for tag")]
-        public async Task<IActionResult> GetCategoryTimelineDetails([FromRoute(Name = "TagId")] Guid categoryId, [FromRoute(Name = "TimelineId")] Guid timelineId)
+        public async Task<IActionResult> GetCategoryTimelineDetails([FromRoute(Name = "categoryId")] Guid categoryId, [FromRoute(Name = "TimelineId")] Guid timelineId)
         {
             var query = new EntityTimelineDetailsQuery()
             {
                 TimelineId = timelineId,
-                EntityName = EntitiesName.Category,
+                EntityName = EntityName.Category,
                 EntityId = categoryId
             };
             return Ok(await _mediator.Send(query));

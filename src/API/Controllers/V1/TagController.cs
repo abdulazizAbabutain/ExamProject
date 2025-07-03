@@ -99,7 +99,7 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
     public async Task<IActionResult> GetTagTimeline([FromRoute] Guid id, [FromQuery] GetEntityTimelineQuery query)
     {
         query.Id = id;
-        query.EntityName = EntitiesName.Tag;
+        query.EntityName = EntityName.Tag;
         return Ok(await _mediator.Send(query));
     }
 
@@ -112,7 +112,7 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
         var query = new EntityTimelineDetailsQuery()
         {
             TimelineId = timelineId,
-            EntityName = EntitiesName.Tag,
+            EntityName = EntityName.Tag,
             EntityId = tagId
         };
         return Ok(await _mediator.Send(query));

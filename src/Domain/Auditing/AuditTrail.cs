@@ -7,7 +7,7 @@ namespace Domain.Auditing;
 
 public class AuditTrail
 {
-    public AuditTrail(EntitiesName entityName, Guid entityId, ActionType operation, ActionBy changedBy, int versionNumber, string? comment = null)
+    public AuditTrail(EntityName entityName, Guid entityId, ActionType operation, ActionBy changedBy, int versionNumber, string? comment = null)
     {
         EntityName = entityName;
         EntityId = entityId;
@@ -21,7 +21,7 @@ public class AuditTrail
 
     public Guid Id { get; set; }
     public DateTimeOffset Timestamp { get; set; }
-    public EntitiesName EntityName { get; set; }
+    public EntityName EntityName { get; set; }
     public Guid EntityId { get; set; }
     public ActionType Operation { get; set; }
     public ActionBy ChangedBy { get; set; }

@@ -12,7 +12,7 @@ namespace Application.EntitlesTimeline.Queries.EntityTimeline
         [JsonIgnore]
         public Guid Id { get; set; }
         [JsonIgnore]
-        public EntitiesName EntityName { get; set; }
+        public EntityName EntityName { get; set; }
         public DateTimeOffset? StartDate { get; set; }
         public DateTimeOffset? EndDate { get; set; }
         public ActionType? ActionType { get; set; }

@@ -39,7 +39,7 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
 
 
         _repositoryManager.SourceRepository.Insert(source);
-        _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Source, source.Id, ActionBy.User, source, source.VersionNumber);
+        _auditManager.AuditTrailService.AddNewEntity(EntityName.Source, source.Id, ActionBy.User, source, source.VersionNumber);
         return Result<Source>.Success(source);
     }
 
@@ -48,7 +48,7 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
 
         _repositoryManager.ReferenceRepository.Insert(reference);
 
-        _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Source, reference.Id, ActionBy.User, reference, reference.VersionNumber);
+        _auditManager.AuditTrailService.AddNewEntity(EntityName.Source, reference.Id, ActionBy.User, reference, reference.VersionNumber);
     }
 
     public Result<IEnumerable<SourceReference>> AddReference(IEnumerable<AddSourceReferenceServiceModel> sourceReferences, Guid sourceId)
@@ -70,7 +70,7 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
         _repositoryManager.ReferenceRepository.Insert(referencesEntity);
 
         foreach (var item in referencesEntity)
-            _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Reference, item.Id, ActionBy.User, item, item.VersionNumber);
+            _auditManager.AuditTrailService.AddNewEntity(EntityName.Reference, item.Id, ActionBy.User, item, item.VersionNumber);
 
         return Result<IEnumerable<SourceReference>>.Success(referencesEntity);
     }
@@ -96,7 +96,7 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
         source.AddNewTag(tagId);
 
         _repositoryManager.SourceRepository.Update(source);
-        _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Source, sourceId, ActionType.AddNewTag, ActionBy.User, sourceClone, source, source.VersionNumber);
+        _auditManager.AuditTrailService.UpdateEntity(EntityName.Source, sourceId, ActionType.AddNewTag, ActionBy.User, sourceClone, source, source.VersionNumber);
 
         return Result.NoContentSuccess();
     }
@@ -148,7 +148,7 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
 
         _repositoryManager.SourceRepository.Update(source);
         _auditManager.AuditTrailService.UpdateEntity(
-            EntitiesName.Source,
+            EntityName.Source,
             sourceId,
             ActionType.AddNewTag,
             ActionBy.User,
@@ -188,7 +188,7 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
         source.RemoveTag(tagId);
 
         _repositoryManager.SourceRepository.Update(source);
-        _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Source, sourceId, ActionType.RemoveTag, ActionBy.User, sourceClone, source, source.VersionNumber);
+        _auditManager.AuditTrailService.UpdateEntity(EntityName.Source, sourceId, ActionType.RemoveTag, ActionBy.User, sourceClone, source, source.VersionNumber);
 
         return Result.NoContentSuccess();
     }
@@ -234,7 +234,7 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
 
         _repositoryManager.SourceRepository.Update(source);
         _auditManager.AuditTrailService.UpdateEntity(
-            EntitiesName.Source,
+            EntityName.Source,
             sourceId,
             ActionType.RemoveTag,
             ActionBy.User,

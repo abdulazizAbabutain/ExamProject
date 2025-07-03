@@ -17,14 +17,14 @@ public class AuditTrailService : BaseRepository<AuditTrail>, IAuditTrailService
         StartBackgroundAuditWriter();
     }
 
-    public void AddNewEntity<T>(EntitiesName entityName, Guid entityId, ActionBy actionBy,T entity ,int versionNumber, string? comment = null)
+    public void AddNewEntity<T>(EntityName entityName, Guid entityId, ActionBy actionBy,T entity ,int versionNumber, string? comment = null)
     {
         var auditTrail = new AuditTrail(entityName, entityId, ActionType.Added, actionBy, versionNumber, comment);
         auditTrail.GetChanges(entity, false);
         EnqueueAudit(auditTrail);
     }
 
-    public void UpdateEntity<T>(EntitiesName entityName, Guid entityId, ActionType actionType, ActionBy actionBy, T oldEntity, T newEntity, int versionNumber, string? comment = null)
+    public void UpdateEntity<T>(EntityName entityName, Guid entityId, ActionType actionType, ActionBy actionBy, T oldEntity, T newEntity, int versionNumber, string? comment = null)
     {
         var auditTrail = new AuditTrail(entityName, entityId, actionType, actionBy, versionNumber, comment);
         auditTrail.GetChanges(oldEntity, newEntity);
@@ -39,7 +39,7 @@ public class AuditTrailService : BaseRepository<AuditTrail>, IAuditTrailService
         _collection.InsertBulk(auditTrails);
     }
 
-    public void DeleteEntity<T>(EntitiesName entityName, Guid entityId, ActionType actionType, ActionBy actionBy,T entity ,int versionNumber, string? comment = null)
+    public void DeleteEntity<T>(EntityName entityName, Guid entityId, ActionType actionType, ActionBy actionBy,T entity ,int versionNumber, string? comment = null)
     {
         var auditTrail = new AuditTrail(entityName, entityId, actionType, actionBy, versionNumber, comment);
         auditTrail.GetChanges(entity, true);
@@ -47,7 +47,7 @@ public class AuditTrailService : BaseRepository<AuditTrail>, IAuditTrailService
     }
 
     public void UpdateEntitiesBulk<T>(
-        EntitiesName entityName,
+        EntityName entityName,
         IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string? Comment)> changes)
     {
         var auditTrails = new List<AuditTrail>();
@@ -71,9 +71,27 @@ public class AuditTrailService : BaseRepository<AuditTrail>, IAuditTrailService
             .Take(pageSize);
     }
 
+    public IEnumerable<AuditTrail> GetDeletedEntities(Func<AuditTrail, bool> func, int pageNumber, int pageSize)
+    {
+        return _collection.FindAll()
+            .Where(func)
+            .Where(e => e.Operation == ActionType.Deleted)
+            .OrderBy(e => e.Timestamp)
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize);
+    }
+
+
     public int Count(Guid entityId)
     {
         return _collection.Find(ad => ad.EntityId == entityId).Count();
+    }
+
+
+
+    public int CountDeletedEntity()
+    {
+        return _collection.Find(ad => ad.Operation == ActionType.Deleted).Count();
     }
 
     private void StartBackgroundAuditWriter()
@@ -108,7 +126,7 @@ public class AuditTrailService : BaseRepository<AuditTrail>, IAuditTrailService
         _auditQueue.Writer.TryWrite(audit);
     }
 
-    public AuditTrail GetEntityTrailDetails(Guid trailId, EntitiesName entityName, Guid entityId)
+    public AuditTrail GetEntityTrailDetails(Guid trailId, EntityName entityName, Guid entityId)
     {
         return GetCollection().Find(e => e.Id == trailId && e.EntityName == entityName && e.EntityId == entityId).FirstOrDefault();
     }

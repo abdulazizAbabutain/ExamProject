@@ -28,7 +28,7 @@ namespace Infrastructure.Services
                 colorCode = ColorExtension.GenerateRandomHexColor();
             var tag = new Tag(name, colorCode);
             _repositoryManager.TagRepository.Insert(tag);
-            _auditManager.AuditTrailService.AddNewEntity(EntitiesName.Tag, tag.Id, ActionBy.User, tag, tag.VersionNumber);
+            _auditManager.AuditTrailService.AddNewEntity(EntityName.Tag, tag.Id, ActionBy.User, tag, tag.VersionNumber);
             return Result<Tag>.Success(tag);
         }
 
@@ -61,7 +61,7 @@ namespace Infrastructure.Services
             tag.UpdateTag(name, colorCode);
             _repositoryManager.TagRepository.Update(tag);
 
-            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Modified, ActionBy.User,tagClone, tag, tag.VersionNumber);
+            _auditManager.AuditTrailService.UpdateEntity(EntityName.Tag, id, ActionType.Modified, ActionBy.User,tagClone, tag, tag.VersionNumber);
             return Result.NoContentSuccess();
         }
         /// <summary>
@@ -94,7 +94,7 @@ namespace Infrastructure.Services
                     ));
                 }
                 _repositoryManager.SourceRepository.Update(sources);
-                _auditManager.AuditTrailService.UpdateEntitiesBulk(EntitiesName.Source, auditTrailSources);
+                _auditManager.AuditTrailService.UpdateEntitiesBulk(EntityName.Source, auditTrailSources);
             }
 
             //var questions = _repositoryManager.QuestionRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
@@ -110,7 +110,7 @@ namespace Infrastructure.Services
 
             var tag = _repositoryManager.TagRepository.GetById(id);
             _repositoryManager.TagRepository.DeleteById(id);
-            _auditManager.AuditTrailService.DeleteEntity(EntitiesName.Tag,id,ActionType.Deleted,ActionBy.User, tag, tag.VersionNumber, "Delete teg");
+            _auditManager.AuditTrailService.DeleteEntity(EntityName.Tag,id,ActionType.Deleted,ActionBy.User, tag, tag.VersionNumber, "Delete teg");
             return Result.Success();
         }
         public Result ArchiveTag(Guid id)
@@ -126,7 +126,7 @@ namespace Infrastructure.Services
 
             tag.ArchiveTag();
             _repositoryManager.TagRepository.Update(tag);
-            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
+            _auditManager.AuditTrailService.UpdateEntity(EntityName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
             return Result.NoContentSuccess();
         }
 
@@ -156,7 +156,7 @@ namespace Infrastructure.Services
             foreach (var (id, oldTag, newTag, version) in audits)
             {
                 _auditManager.AuditTrailService.UpdateEntity(
-                    EntitiesName.Tag,
+                    EntityName.Tag,
                     id,
                     ActionType.Archived,
                     ActionBy.User,
@@ -182,7 +182,7 @@ namespace Infrastructure.Services
 
             tag.UnArchiveTag();
             _repositoryManager.TagRepository.Update(tag);
-            _auditManager.AuditTrailService.UpdateEntity(EntitiesName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
+            _auditManager.AuditTrailService.UpdateEntity(EntityName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
             return Result.NoContentSuccess();
         }
         #endregion

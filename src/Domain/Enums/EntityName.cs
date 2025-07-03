@@ -1,6 +1,6 @@
 ﻿namespace Domain.Enums
 {
-    public enum EntitiesName
+    public enum EntityName
     {
         Tag = 1,
         Source = 2,
