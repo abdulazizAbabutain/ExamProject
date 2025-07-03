@@ -12,7 +12,7 @@ export default function TagTimelinePage() {
     if (!id) return;
 
     getTagTimeline(id).then(res => {
-      if (res.isSuccess) {
+      if (res.isSuccess && res.value) {
         setEntries(res.value.data);
       } else {
         console.error(res.errors);

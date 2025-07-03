@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getTagsWithMeta } from '../api/Services/tagService';
+import { createTag, getTagsWithMeta } from '../api/Services/tagService';
 import type { Tag } from '../models/tagsModel/Tag';
 import type { MetaData } from '../models/common/PagedResponse';
 import { useNavigate } from 'react-router-dom';
@@ -18,8 +18,8 @@ export default function TagList() {
   const [localIsArchived, setLocalIsArchived] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [newTagName, setNewTagName] = useState('');
-  const [newTagColor, setNewTagColor] = useState('');
-  const [formError, setFormError] = useState('');
+  const [newTagColor, setNewTagColor] = useState('#000000');
+  const [formError, setFormError] = useState<string[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const navigate = useNavigate();
 
@@ -32,7 +32,7 @@ export default function TagList() {
       ColorCategory: colorCategory,
       IsArchived: isArchived ? isArchived === 'true' : undefined
     });
-    if (res.isSuccess) {
+    if (res.isSuccess && res.value) {
       setTags(res.value.data);
       setMeta(res.value.metaData);
     } else {
@@ -69,35 +69,31 @@ export default function TagList() {
   };
 
   const handleCreateTag = async () => {
-    if (!newTagName.trim() || !/^#[0-9A-Fa-f]{6}$/.test(newTagColor)) {
-      setFormError('Please provide a valid name and color code in format #RRGGBB.');
+    if (!newTagName.trim()) {
+      setFormError(['Please provide a valid name.']);
       return;
     }
     setSubmitting(true);
-    setFormError('');
-    try {
-      const response = await fetch('/api/tag', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json-patch+json'
-        },
-        body: JSON.stringify({ name: newTagName, colorCode: newTagColor })
-      });
+    setFormError([]);
 
-      if (!response.ok) {
-        const err = await response.json();
-        setFormError(err?.errors?.[0] || 'Failed to create tag');
+    try {
+      const result = await createTag(newTagName, newTagColor);
+      if (!result.isSuccess) {
+        setFormError(result.errors);
         setSubmitting(false);
         return;
       }
+      if (result.isSuccess && result.value) {
+        setShowModal(false);
+        setNewTagName(result.value?.name);
+        setNewTagColor(result.value?.colorHexCode);
+        await fetchTags();
+      }
 
-      setShowModal(false);
-      setNewTagName('');
-      setNewTagColor('');
-      await fetchTags();
+
     } catch (err) {
       console.error(err);
-      setFormError('An unexpected error occurred.');
+      setFormError(['An unexpected error occurred.']);
     } finally {
       setSubmitting(false);
     }
@@ -183,9 +179,25 @@ export default function TagList() {
         <div style={modalOverlayStyle}>
           <div style={modalStyle}>
             <h3>Add New Tag</h3>
-            {formError && <p style={{ color: 'red' }}>{formError}</p>}
+            {formError.length > 0 && (
+              <ul style={{ color: 'red' }}>
+                {formError.map((err, i) => (
+                  <li key={i}>{err}</li>
+                ))}
+              </ul>
+            )}
             <input type="text" placeholder="Tag name" value={newTagName} onChange={(e) => setNewTagName(e.target.value)} style={{ marginBottom: '0.5rem', width: '100%', padding: '0.5rem' }} />
-            <input type="text" placeholder="#RRGGBB" value={newTagColor} onChange={(e) => setNewTagColor(e.target.value)} style={{ marginBottom: '1rem', width: '100%', padding: '0.5rem' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+              <label htmlFor="colorPicker">Pick Color:</label>
+              <input
+                id="colorPicker"
+                type="color"
+                value={newTagColor}
+                onChange={(e) => setNewTagColor(e.target.value)}
+                style={{ width: '50px', height: '30px', border: 'none', background: 'none' }}
+              />
+              <span>{newTagColor}</span>
+            </div>
             <div>
               <button onClick={handleCreateTag} disabled={submitting}>{submitting ? 'Submitting...' : 'Submit'}</button>
               <button onClick={() => setShowModal(false)} style={{ marginLeft: '1rem' }}>Cancel</button>

@@ -37,3 +37,34 @@ export const getTagTimeline = async (id: string): Promise<Result<PageModel<TagTi
   const response = await api.get(`/api/tag/${id}/timeline`);
   return response.data;
 };
+
+
+export const createTag = async (
+  name: string,
+  colorCode: string
+): Promise<Result<TagDetail>> => {
+  try {
+    const response = await api.post<Result<TagDetail>>(
+      `/api/tag`,
+      { name, colorCode },
+      {
+        headers: {
+          'Content-Type': 'application/json-patch+json',
+        },
+      }
+    );
+    return response.data;
+  } catch (error: any) {
+    if (error.response && error.response.data) {
+      return error.response.data;
+    }
+
+    // fallback for unexpected error shape
+    return {
+      isSuccess: false,
+      errors: ['Unexpected error occurred.'],
+      value: null,
+      statusCode: 'InternalServerError',
+    };
+  }
+};
