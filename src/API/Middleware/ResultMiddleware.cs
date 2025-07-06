@@ -22,7 +22,7 @@ public class ResultMiddleware
         if (context.Items.TryGetValue("Result", out var resultObj) && resultObj is not null)
         {
             HttpStatusCode statusCode;
-            List<string> errors;
+            Dictionary<string, string[]> errors;
             bool isSuccess;
 
             if (resultObj is Result result)
@@ -37,7 +37,7 @@ public class ResultMiddleware
                 var type = resultObj.GetType();
                 isSuccess = (bool)type.GetProperty("IsSuccess")?.GetValue(resultObj)!;
                 statusCode = (HttpStatusCode)type.GetProperty("StatusCode")?.GetValue(resultObj)!;
-                errors = (List<string>)type.GetProperty("Errors")?.GetValue(resultObj)!;
+                errors = (Dictionary<string, string[]>)type.GetProperty("Errors")?.GetValue(resultObj)!;
             }
             else return;
 
@@ -48,7 +48,7 @@ public class ResultMiddleware
                 type = GetProblemType(statusCode),
                 title = GetTitleForStatus(statusCode),
                 status = (int)statusCode,
-                detail = string.Join(" ", errors),
+                detail =  errors,
                 instance = context.Request.Path
             };
 

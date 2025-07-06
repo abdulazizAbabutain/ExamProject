@@ -17,7 +17,7 @@ namespace Application.Sources.Queries.GetSourceById
             var source = _repositoryManager.SourceRepository.GetById(request.Id);
 
             if (source.IsNull())
-                return Result<GetSourceByIdQueryResult>.NotFoundFailure($"the source with id {request.Id} was not found");
+                return Result<GetSourceByIdQueryResult>.NotFoundFailure(nameof(request.Id), $"the source with id {request.Id} was not found");
 
             var tags = repositoryManager.TagRepository.GetCollection().Find(t => source.Tags.Contains(t.Id));
 

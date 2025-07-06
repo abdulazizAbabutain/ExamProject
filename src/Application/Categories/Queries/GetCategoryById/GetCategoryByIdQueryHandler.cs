@@ -29,7 +29,7 @@ public class GetCategoryByIdQueryHandler(IRepositoryManager repositoryManager, I
 
         var category = _repositoryManager.CategoryRepository.GetById(request.Id);
         if (category.IsNull())
-            return Result<GetCategoryByIdQueryResult>.NotFoundFailure($"category with id {request.Id} were not found");
+            return Result<GetCategoryByIdQueryResult>.NotFoundFailure(nameof(request.Id), $"category with id {request.Id} were not found");
 
         return Result<GetCategoryByIdQueryResult>.Success(_mapper.Map<GetCategoryByIdQueryResult>(category));
 

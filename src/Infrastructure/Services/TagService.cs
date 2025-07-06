@@ -22,7 +22,7 @@ namespace Infrastructure.Services
         public Result<Tag> AddTag(string name, string? colorCode = null)
         {
             if (_repositoryManager.TagRepository.IsExist(name))
-                return Result<Tag>.ConflictFailure($"Tag with name {name} already exists.");
+                return Result<Tag>.ConflictFailure(nameof(name),$"Tag with name {name} already exists.");
 
             if (colorCode.IsNull())
                 colorCode = ColorExtension.GenerateRandomHexColor();
@@ -46,12 +46,12 @@ namespace Infrastructure.Services
         public Result UpdateTag(Guid id, string name, string? colorCode = null)
         {
             if (_repositoryManager.TagRepository.IsExist(name,id))
-                return Result.ConflictFailure($"Tag with name {name} is already exists");
+                return Result.ConflictFailure(nameof(name), $"Tag with name {name} is already exists");
 
             var tag = _repositoryManager.TagRepository.GetById(id);
 
             if (tag.IsNull())
-                return Result.NotFoundFailure($"tag with id {id} was not found") ;
+                return Result.NotFoundFailure(nameof(id), $"tag with id {id} was not found") ;
 
             var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 
@@ -71,7 +71,7 @@ namespace Infrastructure.Services
         public Result DeleteTag(Guid id)
         {
             if (_repositoryManager.TagRepository.IsNotExist(id))
-                return Result.NotFoundFailure($"tag with id {id} was not found");
+                return Result.NotFoundFailure(nameof(id), $"tag with id {id} was not found");
 
 
             //TODO: link to tags after compate it.
@@ -117,10 +117,10 @@ namespace Infrastructure.Services
         {
             var tag = _repositoryManager.TagRepository.GetById(id);
             if (tag.IsNull())
-                return Result.NotFoundFailure($"Tag with id {id} were not found");
+                return Result.NotFoundFailure(nameof(id), $"Tag with id {id} were not found");
 
             if(tag.IsArchived)
-                return Result.ConflictFailure($"Tag with id {id} is already archived");
+                return Result.ConflictFailure(nameof(id), $"Tag with id {id} is already archived");
 
             var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 
@@ -138,7 +138,7 @@ namespace Infrastructure.Services
                 .ToList();
 
             if (!tags.Any())
-                return Result.UnprocessableEntityFailure("There is no tag to be archive");
+                return Result.UnprocessableEntityFailure("","There is no tag to be archive");
 
             var updatedTags = new List<Tag>();
             var audits = new List<(Guid Id, Tag Old, Tag New, int Version)>();
@@ -173,10 +173,10 @@ namespace Infrastructure.Services
         {
             var tag = _repositoryManager.TagRepository.GetById(id);
             if (tag.IsNull())
-                return Result.NotFoundFailure($"Tag with id {id} were not found");
+                return Result.NotFoundFailure(nameof(id), $"Tag with id {id} were not found");
 
             if (!tag.IsArchived)
-                return Result.ConflictFailure($"Tag with id {id} is already unarchived");
+                return Result.ConflictFailure(nameof(id), $"Tag with id {id} is already unarchived");
 
             var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 

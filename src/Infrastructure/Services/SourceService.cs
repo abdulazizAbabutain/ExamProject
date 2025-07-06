@@ -23,13 +23,13 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
         {
             var missingTags = _repositoryManager.TagRepository.GetNotFoundTags(model.Tags);
             if (missingTags.Any())
-                return Result<Source>.UnprocessableEntityFailure(missingTags.Select(e => $"tag with id {e} was not found").ToList());
+                return Result<Source>.UnprocessableEntityFailure(nameof(model.Tags),missingTags.Select(e => $"tag with id {e} was not found").ToList());
         }
 
         if (model.CategoryId.IsNotNull())
             //what will happen if the category is archived? will throw an exception or make it possible?
             if (_repositoryManager.CategoryRepository.IsNotExists(model.CategoryId.Value))
-                return Result<Source>.UnprocessableEntityFailure($"the category with id {model.CategoryId.Value} was not found");
+                return Result<Source>.UnprocessableEntityFailure(nameof(model.CategoryId),$"the category with id {model.CategoryId.Value} was not found");
 
 
 
@@ -54,7 +54,7 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
     public Result<IEnumerable<SourceReference>> AddReference(IEnumerable<AddSourceReferenceServiceModel> sourceReferences, Guid sourceId)
     {
         if (_repositoryManager.SourceRepository.IsNotExist(sourceId))
-            return Result<IEnumerable<SourceReference>>.NotFoundFailure($"source with {sourceId} was not found");
+            return Result<IEnumerable<SourceReference>>.NotFoundFailure(nameof(sourceId), $"source with {sourceId} was not found");
 
         var referencesEntity = sourceReferences.Select(reference =>
         {
@@ -80,17 +80,18 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
         var tag = _repositoryManager.TagRepository.GetById(tagId);
 
         if (tag.IsNull())
-            return Result.NotFoundFailure($"tag id {tagId} were not found");
+            return Result.NotFoundFailure(nameof(tagId), $"tag id {tagId} were not found");
+        
         if (tag.IsArchived)
-            return Result.UnprocessableEntityFailure("can not add archived tag unarchive the tag so you can add it");
+            return Result.UnprocessableEntityFailure(nameof(tagId), "can not add archived tag unarchive the tag so you can add it");
 
         var source = _repositoryManager.SourceRepository.GetById(sourceId);
 
         if (source.IsNull())
-            return Result.NotFoundFailure($"The source id {sourceId} was was not found");
+            return Result.NotFoundFailure(nameof(sourceId), $"The source id {sourceId} was was not found");
 
         if (source.Tags.IsNotNull() && source.Tags.Contains(tagId))
-            return Result.ConflictFailure($"tag with id {tagId} is already exists source");
+            return Result.ConflictFailure(nameof(tagId), $"tag with id {tagId} is already exists source");
 
         var sourceClone = DeepCloner.Clone(source);
         source.AddNewTag(tagId);
@@ -106,13 +107,13 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
         var source = _repositoryManager.SourceRepository.GetById(sourceId);
 
         if (source.IsNull())
-            return Result<PartialsSuccessResult>.NotFoundFailure($"The source id {sourceId} was not found");
+            return Result<PartialsSuccessResult>.NotFoundFailure(nameof(sourceId), $"The source id {sourceId} was not found");
 
         var existingTagIds = source.Tags ?? new List<Guid>();
         var sourceClone = DeepCloner.Clone(source);
 
         var validTags = new List<Guid>();
-        var errors = new List<string>();
+        var errors = new Dictionary<string, string[]>();
 
         var tagsFromRepo = _repositoryManager.TagRepository.GetAll(e => tagIds.Contains(e.Id));
 
@@ -122,19 +123,19 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
 
             if (!tagIds.Any(e => e == tag.Id))
             {
-                errors.Add($"Tag ID '{tag}' not found.");
+                errors[tag.ToString()] = new[] { $"Tag ID '{tag}' not found." };
                 continue;
             }
 
             if (tag.IsArchived)
             {
-                errors.Add($"Tag '{tag.Id}' is archived and cannot be added.");
+                errors[tag.ToString()] = new []{ $"Tag '{tag.Id}' is archived and cannot be added."};
                 continue;
             }
 
             if (existingTagIds.Contains(tag.Id))
             {
-                errors.Add($"Tag '{tag.Id}' already exists on the source.");
+                errors[tag.ToString()] = new[] { $"Tag '{tag.Id}' already exists on the source." } ;
                 continue;
             }
 
@@ -171,18 +172,18 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
         var tag = _repositoryManager.TagRepository.GetById(tagId);
 
         if (tag.IsNull())
-            return Result.NotFoundFailure($"tag id {tagId} were not found");
+            return Result.NotFoundFailure(nameof(tagId), $"tag id {tagId} were not found");
 
         var source = _repositoryManager.SourceRepository.GetById(sourceId);
 
         if (source.IsNull())
-            return Result.NotFoundFailure($"The source id {sourceId} was was not found");
+            return Result.NotFoundFailure(nameof(sourceId), $"The source id {sourceId} was was not found");
 
         if (source.Tags.IsNotNull() && !source.Tags.Contains(tagId))
-            return Result.ConflictFailure($"tag with tag id {tagId} is not exists");
+            return Result.ConflictFailure(nameof(tagId), $"tag with tag id {tagId} is not exists");
 
         if (source.Tags.IsNull())
-            return Result.ConflictFailure($"the source dose not have any tags to remove from");
+            return Result.ConflictFailure(nameof(source),$"the source dose not have any tags to remove from");
 
         var sourceClone = DeepCloner.Clone(source);
         source.RemoveTag(tagId);
@@ -198,14 +199,14 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
         var result = new PartialsSuccessResult();
 
         if (tagIds is null || !tagIds.Any())
-            return Result<PartialsSuccessResult>.UnprocessableEntityFailure("No tags provided for removal.");
+            return Result<PartialsSuccessResult>.UnprocessableEntityFailure(nameof(tagIds), "No tags provided for removal.");
 
         var source = _repositoryManager.SourceRepository.GetById(sourceId);
         if (source.IsNull())
-            return Result<PartialsSuccessResult>.NotFoundFailure($"The source ID '{sourceId}' was not found.");
+            return Result<PartialsSuccessResult>.NotFoundFailure(nameof(sourceId), $"The source ID '{sourceId}' was not found.");
 
         if (source.Tags.IsNull() || !source.Tags.Any())
-            return Result<PartialsSuccessResult>.ConflictFailure("The source has no tags to remove.");
+            return Result<PartialsSuccessResult>.ConflictFailure(nameof(sourceId),"The source has no tags to remove.");
 
         var sourceClone = DeepCloner.Clone(source);
 
@@ -215,13 +216,13 @@ public class SourceService(IRepositoryManager repositoryManager, IAuditManager a
         {
             if (!tagIds.Any(id => id == tagToRemoveId))
             {
-                result.Errors.Add($"Tag ID '{tagToRemoveId}' was not found.");
+                result.Errors[tagToRemoveId.ToString()] = new[] { $"Tag ID '{tagToRemoveId}' was not found." }; 
                 continue;
             }
 
             if (!source.Tags.Contains(tagToRemoveId))
             {
-                result.Errors.Add($"Tag '{tagToRemoveId}' is not assigned to source.");
+                result.Errors[tagToRemoveId.ToString()] = new[] { $"Tag '{tagToRemoveId}' is not assigned to source." };
                 continue;
             }
 

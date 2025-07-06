@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using MediatR;
+using System.Net;
 
 namespace Application.Commons.Behaviors;
 
@@ -26,14 +27,17 @@ where TResponse : class
 
             if (failures.Any())
             {
-                var errorMessages = failures.Select(f => $"{f.PropertyName}: {f.ErrorMessage}").ToList();
+                // Group by property name to match expected Dictionary<string, string[]> structure
+                var errorDictionary = failures
+                    .GroupBy(f => f.PropertyName)
+                    .ToDictionary(g => g.Key, g => g.Select(e => e.ErrorMessage).ToArray());
 
                 var resultType = typeof(TResponse);
-                var failureMethod = resultType.GetMethod("Failure", new[] { typeof(IEnumerable<string>) });
+                var failureMethod = resultType.GetMethod("Failure", new[] { typeof(Dictionary<string, string[]>), typeof(HttpStatusCode) });
 
                 if (failureMethod != null)
                 {
-                    var failureResult = failureMethod.Invoke(null, new object[] { errorMessages });
+                    var failureResult = failureMethod.Invoke(null, new object[] { errorDictionary, HttpStatusCode.BadRequest });
                     return (TResponse)failureResult!;
                 }
             }

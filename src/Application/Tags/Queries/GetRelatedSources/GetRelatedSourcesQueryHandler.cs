@@ -18,7 +18,7 @@ public class GetRelatedSourcesQueryHandler(IRepositoryManager repositoryManager,
     public async Task<Result<PageResponse<GetRelatedSourcesQueryResult>>> Handle(GetRelatedSourcesQuery request, CancellationToken cancellationToken)
     {
         if (_repositoryManager.TagRepository.IsNotExist(request.TagId))
-            return Result<PageResponse<GetRelatedSourcesQueryResult>>.NotFoundFailure($"tag with Id {request.TagId} was not found");
+            return Result<PageResponse<GetRelatedSourcesQueryResult>>.NotFoundFailure(nameof(request.TagId),$"tag with Id {request.TagId} was not found");
 
         var query = PredicateBuilder.New<Source>(true);
 

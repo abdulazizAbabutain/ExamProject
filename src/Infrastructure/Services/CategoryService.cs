@@ -24,7 +24,7 @@ namespace Infrastructure.Services
             {
                 var parentCategory = _repositoryManager.CategoryRepository.GetById(parentId.Value);
                 if (parentCategory.IsNull())
-                    return Result<Category>.UnprocessableEntityFailure($"The parent id {parentId} was not found");
+                    return Result<Category>.UnprocessableEntityFailure(nameof(parentId),$"The parent id {parentId} was not found");
 
                 category = new Category(name, description, parentId.Value, parentCategory.Level);
 
@@ -50,7 +50,7 @@ namespace Infrastructure.Services
             var category = _repositoryManager.CategoryRepository.GetById(categoryId);
 
             if (category.IsNull())
-                return Result.NotFoundFailure($"the category with id {categoryId} was not found");
+                return Result.NotFoundFailure(nameof(categoryId),$"the category with id {categoryId} was not found");
 
             var categoryClone = DeepCloner.Clone(category);
             category.UpdateCategory(name,description);

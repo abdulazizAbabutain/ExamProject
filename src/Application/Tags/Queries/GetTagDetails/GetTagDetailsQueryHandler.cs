@@ -17,7 +17,7 @@ public class GetTagDetailsQueryHandler(IRepositoryManager repositoryManager, IMa
     {
         var tag = _repositoryManager.TagRepository.GetById(request.Id);
         if (tag.IsNull())
-            return Result<GetTagDetailsQueryResult>.NotFoundFailure($"tag with an {request.Id} was not found");
+            return Result<GetTagDetailsQueryResult>.NotFoundFailure(nameof(request.Id), $"tag with an {request.Id} was not found");
 
         return Result<GetTagDetailsQueryResult>.Success(_mapper.Map<GetTagDetailsQueryResult>(tag));
     }

@@ -16,7 +16,7 @@ namespace Application.EntitlesTimeline.Queries.EntityTimelineDetails
         {
             var result = _auditManager.AuditTrailService.GetEntityTrailDetails(request.TimelineId, request.EntityName, request.EntityId);
             if (result.IsNull())
-                return Result<EntityTimelineDetailsQueryResult>.NotFoundFailure($"entity train with id {request.TimelineId} was not found");
+                return Result<EntityTimelineDetailsQueryResult>.NotFoundFailure(nameof(request.TimelineId), $"entity train with id {request.TimelineId} was not found");
 
             return Result<EntityTimelineDetailsQueryResult>.Success(_mapper.Map<EntityTimelineDetailsQueryResult>(result));
         }
