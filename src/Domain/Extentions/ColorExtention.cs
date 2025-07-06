@@ -8,8 +8,23 @@ namespace Domain.Extentions
         public static ColorCategory GetColorGroup(this string hexColor)
         {
             Color color = ColorTranslator.FromHtml(hexColor);
-            float hue = color.GetHue(); // 0-360 degrees
 
+
+            // Check for white, black, and gray using brightness and saturation
+            float brightness = color.GetBrightness(); // 0 to 1
+            float saturation = color.GetSaturation(); // 0 to 1
+
+            if (saturation <= 0.05f)
+            {
+                if (brightness >= 0.9f)
+                    return ColorCategory.White;
+                if (brightness <= 0.1f)
+                    return ColorCategory.Black;
+                return ColorCategory.Gray; // Optional: add if you support gray separately
+            }
+
+
+            float hue = color.GetHue(); // 0-360 degrees
             if (hue < 20 || hue >= 340) return ColorCategory.Red;
             if (hue < 40) return ColorCategory.Orange;
             if (hue < 65) return ColorCategory.Yellow;

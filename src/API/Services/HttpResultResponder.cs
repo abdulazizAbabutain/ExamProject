@@ -36,8 +36,8 @@ namespace API.Services
             return result.StatusCode switch
             {
                 HttpStatusCode.NoContent => new NoContentResult(),
-                HttpStatusCode.Created => new CreatedResult(context.Request.Path, result.Value),
-                HttpStatusCode.OK or _ => new OkObjectResult(result.Value)
+                HttpStatusCode.Created => new CreatedResult(context.Request.Path, result),
+                HttpStatusCode.OK or _ => new OkObjectResult(result)
             };
         }
     }

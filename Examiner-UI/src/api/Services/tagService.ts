@@ -1,11 +1,11 @@
-import type { Result } from "../../models/common/ResultModel";
-import type  { PageModel } from "../../models/common/PagedResponse";
+import type { Result } from "../../common/models/ResultModel";
+import type  { PageModel } from "../../common/models/PagedResponse";
 
-import type { Tag, TagDetail } from "../../models/tagsModel/Tag";
+import type { TagListModel, TagDetailModel, AutoComplate } from "../../models/tags/Tag";
 import api from "../axios";
-import type { TagTimelineEntry } from "../../models/common/TimelineModel";
+import type { EntityTimelineModel } from "../../common/models/TimelineModel";
 
-type tagResponemodel = Result<PageModel<Tag>>;
+type tagResponemodel = Result<PageModel<TagListModel>>;
 
 export const getTagsWithMeta = async ({
   PageNumber,
@@ -28,23 +28,38 @@ export const getTagsWithMeta = async ({
 };
 
 
-export const getTagById = async (id: string): Promise<Result<TagDetail>> => {
+export const getTagById = async (id: string): Promise<Result<TagDetailModel>> => {
   const response = await api.get(`/api/tag/${id}`);
   return response.data;
 };
 
-export const getTagTimeline = async (id: string): Promise<Result<PageModel<TagTimelineEntry>>> => {
-  const response = await api.get(`/api/tag/${id}/timeline`);
-  return response.data;
-};
+export async function getTagTimeline(
+  id: string,
+  pageNumber: number = 1,
+  pageSize: number = 10
+) {
+  try {
+    const response = await api.get(`/api/tag/${id}/timeline`, {
+      params: {
+        PageNumber: pageNumber,
+        PageSize: pageSize
+      }
+    });
+    return response.data;
+  } catch (err) {
+    console.error(err);
+    return { isSuccess: false, errors: ['Request failed'] };
+  }
+}
+
 
 
 export const createTag = async (
   name: string,
   colorCode: string
-): Promise<Result<TagDetail>> => {
+): Promise<Result<TagDetailModel>> => {
   try {
-    const response = await api.post<Result<TagDetail>>(
+    const response = await api.post<Result<TagDetailModel>>(
       `/api/tag`,
       { name, colorCode },
       {
@@ -68,3 +83,53 @@ export const createTag = async (
     };
   }
 };
+
+
+export async function autocompleteTags(query: string): Promise<AutoComplate[]> {
+  try {
+    const response = await api.get(`/api/tag/autocomplete?name=${encodeURIComponent(query)}`);
+    if (response.data.isSuccess) {
+      return response.data.value;
+    }
+    return [];
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+}
+
+export async function archiveTag(id: string) {
+  return await api.post(`/api/tag/${id}/archive`);
+}
+
+export async function unarchiveTag(id: string) {
+  return await api.post(`/api/tag/${id}/unarchive`);
+}
+
+
+
+export interface ModifiedProperty {
+  propertyName: string;
+  oldValue?: any;
+  newValue?: any;
+  propertyType: string;
+}
+
+export interface TimelineDetail {
+  id: string;
+  timestamp: string;
+  actionType: string;
+  actionBy: string;
+  modifiedProperties: ModifiedProperty[];
+  versionNumber: number;
+}
+
+export async function getTagTimelineDetail(tagId: string, timelineId: string) {
+  try {
+    const res = await api.get(`/api/tag/${tagId}/timeline/${timelineId}`);
+    return res.data;
+  } catch (err) {
+    console.error(err);
+    return { isSuccess: false, errors: ['Failed to load timeline detail.'] };
+  }
+}

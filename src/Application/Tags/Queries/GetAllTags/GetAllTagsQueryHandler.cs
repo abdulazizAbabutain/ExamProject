@@ -4,13 +4,15 @@ using Domain.Entities.EntityLookup;
 using Domain.Extentions;
 using Domain.Managers;
 using LinqKit;
+using MapsterMapper;
 using MediatR;
 
 namespace Application.Lookups.Queries.Tags.GetAllTags;
 
-public class GetAllTagsQueryHandler(IRepositoryManager repositoryManager) : IRequestHandler<GetAllTagsQuery, Result<PageResponse<GetAllTagsQueryResult>>>
+public class GetAllTagsQueryHandler(IRepositoryManager repositoryManager, IMapper mapper) : IRequestHandler<GetAllTagsQuery, Result<PageResponse<GetAllTagsQueryResult>>>
 {
     private readonly IRepositoryManager _repositoryManager = repositoryManager;
+    private readonly IMapper _mapper = mapper;
 
     public async Task<Result<PageResponse<GetAllTagsQueryResult>>> Handle(GetAllTagsQuery request, CancellationToken cancellationToken)
     {
@@ -28,21 +30,13 @@ public class GetAllTagsQueryHandler(IRepositoryManager repositoryManager) : IReq
             query = query.And(e => !e.IsArchived );
 
 
-        var tags = (await _repositoryManager.TagRepository.GetAllAsync(query, request.PageNumber,request.PageSize)).ToList();
-        var count = await _repositoryManager.TagRepository.CountAsync();
+        var tags = _repositoryManager.TagRepository.GetAll(query, request.PageNumber,request.PageSize);
+        var count = _repositoryManager.TagRepository.Count();
 
         if (tags.IsNull() || !tags.Any())
             return Result<PageResponse<GetAllTagsQueryResult>>.Success(new PageResponse<GetAllTagsQueryResult>(request.PageNumber, request.PageSize, count));
 
 
-        var result = tags.Select(t => new GetAllTagsQueryResult
-        {
-            Id = t.Id,
-            Name = t.Name,
-            ColorCode  = t.ColorHexCode,
-            ColorCategory = t.ColorGroup
-        }).ToList();
-
-        return Result<PageResponse<GetAllTagsQueryResult>>.Success(new PageResponse<GetAllTagsQueryResult>(result,request.PageNumber, request.PageSize, count));
+        return Result<PageResponse<GetAllTagsQueryResult>>.Success(new PageResponse<GetAllTagsQueryResult>(_mapper.Map<IEnumerable<GetAllTagsQueryResult>>(tags),request.PageNumber, request.PageSize, count));
     }
 }

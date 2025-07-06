@@ -1,14 +1,15 @@
 ﻿using API.ApiDoc.Tags.Requests;
 using API.Interfaces;
+using Application.Commons.Models.Results;
 using Application.EntitlesTimeline.Queries.EntityTimeline;
 using Application.EntitlesTimeline.Queries.EntityTimelineDetails;
 using Application.Lookups.Queries.Tags.GetAllTags;
 using Application.Tags.Commands.AddTag;
-using Application.Tags.Commands.ArchiveAllTags;
 using Application.Tags.Commands.ArchiveTag;
 using Application.Tags.Commands.DeleteTag;
 using Application.Tags.Commands.UnArchiveTag;
 using Application.Tags.Commands.UpdateTag;
+using Application.Tags.Queries.AutoCompleteTags;
 using Application.Tags.Queries.ExportTags;
 using Application.Tags.Queries.GetRelatedSources;
 using Application.Tags.Queries.GetTagDetails;
@@ -16,10 +17,7 @@ using Domain.Enums;
 using Domain.Managers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Filters;
-using System.Text;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace API.Controllers.V1;
 
@@ -42,7 +40,7 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
     [HttpGet(Name = nameof(GetAllTags))]
     public async Task<IActionResult> GetAllTags([FromQuery] GetAllTagsQuery query)
     {
-        return Ok(await _mediator.Send(query));
+        return _resultResponder.FromResult(HttpContext, await _mediator.Send(query));
     }
 
     [HttpGet("{id:guid}", Name = nameof(TagDetails))]
@@ -70,6 +68,16 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
         return _resultResponder.FromResult(HttpContext, result);
 
     }
+
+
+    [HttpGet("autocomplete")]
+    public async Task<IActionResult> TagAutoComplete([FromQuery] AutoCompleteTagsQuery query)
+    {
+        var result = await _mediator.Send(query);
+        return _resultResponder.FromResult(HttpContext, result);
+    }
+
+
 
     [HttpDelete("{id:guid}", Name = nameof(DeleteTag))]
     public async Task<IActionResult> DeleteTag([FromRoute] DeleteTagCommand command)

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import type { TagDetail } from "../models/tagsModel/Tag";
 import { getTagById } from "../api/Services/tagService";
+import type { TagDetailModel } from "@/models/tags";
 
 export default function TagDetailPage() {
   const { id } = useParams<{ id: string }>();
-  const [tag, setTag] = useState<TagDetail | null>(null);
+  const [tag, setTag] = useState<TagDetailModel | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

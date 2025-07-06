@@ -158,7 +158,7 @@ namespace Infrastructure.Services
                 _auditManager.AuditTrailService.UpdateEntity(
                     EntityName.Tag,
                     id,
-                    ActionType.Archived,
+                    ActionType.UnArchived,
                     ActionBy.User,
                     oldTag,
                     newTag,
@@ -182,7 +182,7 @@ namespace Infrastructure.Services
 
             tag.UnArchiveTag();
             _repositoryManager.TagRepository.Update(tag);
-            _auditManager.AuditTrailService.UpdateEntity(EntityName.Tag, id, ActionType.Archived, ActionBy.User, tagClone, tag, tag.VersionNumber);
+            _auditManager.AuditTrailService.UpdateEntity(EntityName.Tag, id, ActionType.UnArchived, ActionBy.User, tagClone, tag, tag.VersionNumber);
             return Result.NoContentSuccess();
         }
         #endregion

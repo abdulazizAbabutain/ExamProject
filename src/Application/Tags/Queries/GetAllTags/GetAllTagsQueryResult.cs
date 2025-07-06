@@ -9,5 +9,6 @@ namespace Application.Lookups.Queries.Tags.GetAllTags
         public string Name { get; set; }
         public string ColorCode { get; set; }
         public ColorCategory ColorCategory { get; set; }
+        public bool IsArchived { get; set; }
     }
 }

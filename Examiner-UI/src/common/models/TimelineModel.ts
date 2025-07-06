@@ -1,4 +1,4 @@
-export interface TagTimelineEntry {
+export interface EntityTimelineModel {
     id: string;
     timestamp: string;
     actionType: string;

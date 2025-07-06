@@ -19,6 +19,12 @@ namespace Domain.Enums
         [Description("Purple")]
         Purple = 7,
         [Description("Pink")]
-        Pink = 8
+        Pink = 8,
+        [Description("White")]
+        White = 9,
+        [Description("Black")]
+        Black = 10,
+        [Description("Gray")]
+        Gray = 11
     }
 }
