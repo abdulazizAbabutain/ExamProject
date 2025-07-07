@@ -1,7 +1,6 @@
 ﻿using Application.Commons.Managers;
 using Application.Commons.Services;
 using Domain.Managers;
-using Infrastructure.Factories;
 using Infrastructure.Services;
 using MapsterMapper;
 using Microsoft.Extensions.DependencyInjection;

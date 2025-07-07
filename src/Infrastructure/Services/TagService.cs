@@ -12,11 +12,11 @@ using Microsoft.Extensions.Localization;
 
 namespace Infrastructure.Services
 {
-    public class TagService(IRepositoryManager repositoryManager, IAuditManager auditManager, IStringLocalizer<TagService> localizerFactory) : ITagService
+    public class TagService(IRepositoryManager repositoryManager, IAuditManager auditManager, IStringLocalizer<TagService> localizer) : ITagService
     {
         private readonly IRepositoryManager _repositoryManager = repositoryManager;
         private readonly IAuditManager _auditManager = auditManager;
-        private readonly IStringLocalizer _localizerFactory = localizerFactory;
+        private readonly IStringLocalizer _localizer = localizer;
 
 
 
@@ -25,7 +25,7 @@ namespace Infrastructure.Services
         {
             if (_repositoryManager.TagRepository.IsExist(name))
             {
-                return Result<Tag>.ConflictFailure(nameof(name), _localizerFactory[ErrorMessage.TAG_WITH_SAME_NAME_EXISTS, name]);
+                return Result<Tag>.ConflictFailure(nameof(name), _localizer[ErrorMessage.TAG_WITH_SAME_NAME_EXISTS, name]);
             }
 
             if (backgroundColorCode.IsNull())
@@ -50,12 +50,12 @@ namespace Infrastructure.Services
         public Result UpdateTag(Guid id, string name, string backgroundColorCode ,string textColorCode)
         {
             if (_repositoryManager.TagRepository.IsExist(name,id))
-                return Result.ConflictFailure(nameof(name), $"Tag with name {name} is already exists");
+                return Result.ConflictFailure(nameof(name), _localizer[ErrorMessage.TAG_WITH_SAME_NAME_EXISTS, name]);
 
             var tag = _repositoryManager.TagRepository.GetById(id);
 
             if (tag.IsNull())
-                return Result.NotFoundFailure(nameof(id), $"tag with id {id} was not found") ;
+                return Result.NotFoundFailure(nameof(id), _localizer[ErrorMessage.NOT_FOUND_ENTITY,nameof(EntityName.Tag),id]) ;
 
             var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 
@@ -75,10 +75,8 @@ namespace Infrastructure.Services
         public Result DeleteTag(Guid id)
         {
             if (_repositoryManager.TagRepository.IsNotExist(id))
-                return Result.NotFoundFailure(nameof(id), $"tag with id {id} was not found");
+                return Result.NotFoundFailure(nameof(id), _localizer[ErrorMessage.TAG_WITH_SAME_NAME_EXISTS, nameof(EntityName.Tag), id]);
 
-
-            //TODO: link to tags after compate it.
             var sources = _repositoryManager.SourceRepository.GetCollection().Find(s => s.Tags.Contains(id)).ToList();
             if (sources.Any() && sources.IsNotNull())
             {
@@ -121,10 +119,10 @@ namespace Infrastructure.Services
         {
             var tag = _repositoryManager.TagRepository.GetById(id);
             if (tag.IsNull())
-                return Result.NotFoundFailure(nameof(id), $"Tag with id {id} were not found");
+                return Result.NotFoundFailure(nameof(id), _localizer[ErrorMessage.NOT_FOUND_ENTITY, nameof(EntityName.Tag), id]);
 
             if(tag.IsArchived)
-                return Result.ConflictFailure(nameof(id), $"Tag with id {id} is already archived");
+                return Result.ConflictFailure(nameof(id), _localizer[ErrorMessage.ENTITY_IS_ARCHIVED,]);
 
             var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 

@@ -1,4 +1,5 @@
 {
   "NOT_FOUND_ENTITY": "{0} with an {1} can not be found.",
-  "TAG_WITH_SAME_NAME_EXISTS": "Tag name should be unique, {0} it already exists."
+  "TAG_WITH_SAME_NAME_EXISTS": "Tag name should be unique, {0} it already exists.",
+  "ENTITY_IS_ARCHIVED": "{0} with id {1} is already archived."
 }
