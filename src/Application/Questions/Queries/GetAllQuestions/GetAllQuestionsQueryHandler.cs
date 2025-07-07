@@ -68,7 +68,7 @@ public class GetAllQuestionsQueryHandler(IRepositoryManager repositoryManager) :
             Tags = q.Tags.IsNotNull() ? tags.Where(e => q.Tags.Contains(e.Id)).Select(e => new TagResult
             {
                 Name = e.Name,
-                ColorCode = e.ColorHexCode,
+                ColorCode = e.BackgroundColorCode,
             }) : null,
             Category = categories.Where(cat => cat.Id == q.Category).Select(e => e.Name).FirstOrDefault(),
         }).ToList();

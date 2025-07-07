@@ -1,0 +1,4 @@
+{
+  "NOT_FOUND_ENTITY": "{0} with an {1} can not be found.",
+  "TAG_WITH_SAME_NAME_EXISTS": "Tag name should be unique, {0} it already exists."
+}

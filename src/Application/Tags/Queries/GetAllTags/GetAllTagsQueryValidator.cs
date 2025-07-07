@@ -19,9 +19,9 @@ namespace Application.Tags.Queries.GetAllTags
             });
 
 
-            When(e => e.ColorCategory.IsNotNull(), () =>
+            When(e => e.BackgroundColorGroup.IsNotNull(), () =>
             {
-                RuleFor(e => e.ColorCategory)
+                RuleFor(e => e.BackgroundColorGroup)
                     .IsInEnum();
             });
         }

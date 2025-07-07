@@ -12,9 +12,16 @@ namespace Application.Tags.Commands.AddTag
                 .MaximumLength(MaxLength.TAG_NAME_MAX_LENGTH)
                 .NotNull();
 
-            When(e => e.ColorCode.IsNotNull(), () =>
+            When(e => e.BackgroundColorCode.IsNotNull(), () =>
             {
-                RuleFor(e => e.ColorCode)
+                RuleFor(e => e.BackgroundColorCode)
+                    .Matches(RegexPattern.MatchHexCode)
+                    .Length(MaxLength.TAG_COLOR_CODE_MAX_LENGTH);
+            });
+
+            When(e => e.TextColorCode.IsNotNull(), () =>
+            {
+                RuleFor(e => e.TextColorCode)
                     .Matches(RegexPattern.MatchHexCode)
                     .Length(MaxLength.TAG_COLOR_CODE_MAX_LENGTH);
             });

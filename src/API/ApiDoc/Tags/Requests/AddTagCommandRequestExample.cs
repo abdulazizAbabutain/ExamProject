@@ -10,7 +10,7 @@ namespace API.ApiDoc.Tags.Requests
             return new AddTagCommand
             {
                 Name = "CS-109",
-                ColorCode = "#326721"
+                BackgroundColorCode = "#326721"
             };
           
         }

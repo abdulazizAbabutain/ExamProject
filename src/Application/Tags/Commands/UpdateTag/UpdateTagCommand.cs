@@ -7,6 +7,7 @@ namespace Application.Tags.Commands.UpdateTag
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public string? ColorHexCode { get; set; }
+        public string? BackgroundColorCode { get; set; }
+        public string? TextColorCode { get; set; }
     }
 }

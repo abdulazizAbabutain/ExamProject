@@ -3,12 +3,12 @@ import type { Result } from "@/common/models";
 import type { TagDetailModel,TagFormModel } from "@/models/tags";
 
 export const createTag = async (
-    tagform: TagFormModel
+    data: TagFormModel
 ): Promise<Result<TagDetailModel>> => {
   try {
     const response = await api.post<Result<TagDetailModel>>(
       `/api/tag`,
-      { tagform},
+      { tagform: data},
       {
         headers: {
           'Content-Type': 'application/json-patch+json',

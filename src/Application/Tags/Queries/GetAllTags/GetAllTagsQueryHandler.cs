@@ -18,10 +18,13 @@ public class GetAllTagsQueryHandler(IRepositoryManager repositoryManager, IMappe
     {
         var query = PredicateBuilder.New<Tag>(true);
 
-        if (request.ColorCategory.HasValue)
-            query = query.And(e => e.ColorGroup.Equals(request.ColorCategory));
+        if (request.BackgroundColorGroup.HasValue)
+            query = query.And(e => e.BackgroundColorGroup.Equals(request.BackgroundColorGroup));
 
-        if(!string.IsNullOrEmpty(request.Search))
+        if (request.TextColorGroup.HasValue)
+            query = query.And(e => e.TextColorGroup.Equals(request.TextColorGroup));
+
+        if (!string.IsNullOrEmpty(request.Search))
             query = query.And(e => e.Name.ToLower().Contains(request.Search.ToLower()));
         
         if(request.IsArchived.HasValue)

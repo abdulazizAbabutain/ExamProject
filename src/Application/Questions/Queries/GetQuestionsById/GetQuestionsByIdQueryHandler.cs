@@ -27,7 +27,7 @@ namespace Application.Questions.Queries.GetQuestionsById
             if (question.Tags.IsNotNull())
                 tags = _repositoryManager.TagRepository.GetCollection().Find(t => question.Tags.Contains(t.Id)).Select(e => new TagResult
                 {
-                    ColorCode = e.ColorHexCode,
+                    ColorCode = e.BackgroundColorCode,
                     Name = e.Name,
                 }).ToList();
             if (question.Sources.IsNotNull())

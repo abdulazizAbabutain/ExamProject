@@ -1,25 +1,25 @@
-import type { TagFormModel } from "@/models/tags";
+import type { TagDetailModel, TagFormModel } from "@/models/tags";
 import { useState } from "react";
 import { createTag } from "../TagApi";
+import TagForm from "./TagForm";
 
 type Props = {
   isOpen: boolean;
   onClose: () => void;
-  onSuccess?: (tag: TagFormModel) => void;
+  onSuccess?: (tag: TagDetailModel) => void;
 };
 
 export default function CreateTagModal({ isOpen, onClose, onSuccess }: Props) {
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (data: Partial<TagFormModel>) => {
+  const handleSubmit = async (data: TagFormModel) => {
     setLoading(true);
     try {
       const tag = await createTag(data);
       if(tag.isSuccess)
       {
-        
+        onSuccess?.(tag.value)
       }
-      onSuccess?.(tag);
       onClose();
     } finally {
       setLoading(false);

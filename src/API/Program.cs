@@ -7,11 +7,13 @@ using Application;
 using Application.Commons.Extensions;
 using Infrastructure;
 using Infrastructure.Services;
+using Microsoft.AspNetCore.Localization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Scalar.AspNetCore;
 using Serilog;
 using Swashbuckle.AspNetCore.Filters;
+using System.Globalization;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -51,6 +53,9 @@ builder.Services
         options.SerializerSettings.Converters.Add(new StringEnumConverter()));
 // order is vital, this *must* be called *after* addnewtonsoftjson()
 builder.Services.AddSwaggerGenNewtonsoftSupport();
+
+builder.Services.AddSingleton<LocalizationMiddleware>();
+
 
 
 Log.Logger = new LoggerConfiguration()
@@ -116,6 +121,15 @@ if (app.Environment.IsDevelopment())
 //        // Add additional configurations for production if needed
 //    });
 //}
+
+var options = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture(new CultureInfo("en-US"))
+};
+app.UseRequestLocalization(options);
+app.UseStaticFiles();
+app.UseMiddleware<LocalizationMiddleware>();
+
 app.UseCors("AllowAngularDevClient");
 
 app.UseAuthorization();

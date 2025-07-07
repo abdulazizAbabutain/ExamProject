@@ -10,7 +10,7 @@ namespace Application.Tags.Commands.UpdateTag
 
         public async Task<Result> Handle(UpdateTagCommand request, CancellationToken cancellationToken)
         {
-            return _serviceManager.TagService.UpdateTag(request.Id, request.Name, request.ColorHexCode);
+            return _serviceManager.TagService.UpdateTag(request.Id, request.Name, request.BackgroundColorCode,request.TextColorCode);
         }
     }
 }

@@ -13,6 +13,9 @@ namespace Application.Tags.Commands.AddTag
         public string Name { get; set; }
         [SwaggerSchema(Description = "Hexcode color format should start with #", Nullable = true, Title = "Tag Color")]
         [SwaggerExample("#1756a7")]
-        public string? ColorCode { get; set; }
+        public string? BackgroundColorCode { get; set; }
+        [SwaggerSchema(Description = "Hexcode color format should start with #", Nullable = true, Title = "Tag Color")]
+        [SwaggerExample("#1756a7")]
+        public string? TextColorCode { get; set; }
     }
 }

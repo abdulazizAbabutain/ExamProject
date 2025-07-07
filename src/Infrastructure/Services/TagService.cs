@@ -2,31 +2,35 @@
 using Application.Commons.Managers;
 using Application.Commons.Models.Results;
 using Application.Commons.Services;
+using Domain.Constants;
 using Domain.Entities.EntityLookup;
 using Domain.Entities.Sources;
 using Domain.Enums;
 using Domain.Extentions;
 using Domain.Managers;
-using System.Security.Principal;
+using Microsoft.Extensions.Localization;
 
 namespace Infrastructure.Services
 {
-    public class TagService(IRepositoryManager repositoryManager, IAuditManager auditManager) : ITagService
+    public class TagService(IRepositoryManager repositoryManager, IAuditManager auditManager, IStringLocalizer<TagService> localizerFactory) : ITagService
     {
         private readonly IRepositoryManager _repositoryManager = repositoryManager;
         private readonly IAuditManager _auditManager = auditManager;
+        private readonly IStringLocalizer _localizerFactory = localizerFactory;
 
 
 
         #region Tag services
-        public Result<Tag> AddTag(string name, string? colorCode = null)
+        public Result<Tag> AddTag(string name, string? backgroundColorCode = null, string testColorCode = null)
         {
             if (_repositoryManager.TagRepository.IsExist(name))
-                return Result<Tag>.ConflictFailure(nameof(name),$"Tag with name {name} already exists.");
+            {
+                return Result<Tag>.ConflictFailure(nameof(name), _localizerFactory[ErrorMessage.TAG_WITH_SAME_NAME_EXISTS, name]);
+            }
 
-            if (colorCode.IsNull())
-                colorCode = ColorExtension.GenerateRandomHexColor();
-            var tag = new Tag(name, colorCode);
+            if (backgroundColorCode.IsNull())
+                backgroundColorCode = ColorExtension.GenerateRandomHexColor();
+            var tag = new Tag(name, backgroundColorCode, testColorCode);
             _repositoryManager.TagRepository.Insert(tag);
             _auditManager.AuditTrailService.AddNewEntity(EntityName.Tag, tag.Id, ActionBy.User, tag, tag.VersionNumber);
             return Result<Tag>.Success(tag);
@@ -42,8 +46,8 @@ namespace Infrastructure.Services
         /// </summary>
         /// <param name="id"></param>
         /// <param name="name">the new Name</param>
-        /// <param name="colorCode">the color in hex code</param>
-        public Result UpdateTag(Guid id, string name, string? colorCode = null)
+        /// <param name="backgroundColorCode">the color in hex code</param>
+        public Result UpdateTag(Guid id, string name, string backgroundColorCode ,string textColorCode)
         {
             if (_repositoryManager.TagRepository.IsExist(name,id))
                 return Result.ConflictFailure(nameof(name), $"Tag with name {name} is already exists");
@@ -55,10 +59,10 @@ namespace Infrastructure.Services
 
             var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 
-            if (colorCode.IsNull())
-                colorCode = ColorExtension.GenerateRandomHexColor();
+            if (backgroundColorCode.IsNull())
+                backgroundColorCode = ColorExtension.GenerateRandomHexColor();
 
-            tag.UpdateTag(name, colorCode);
+            tag.UpdateTag(name, backgroundColorCode, textColorCode);
             _repositoryManager.TagRepository.Update(tag);
 
             _auditManager.AuditTrailService.UpdateEntity(EntityName.Tag, id, ActionType.Modified, ActionBy.User,tagClone, tag, tag.VersionNumber);

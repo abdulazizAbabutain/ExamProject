@@ -15,14 +15,12 @@ namespace Application.Commons.MappingConfig
             config.NewConfig<Tag, AddTagCommandResult>();
 
             config.NewConfig<Tag, TagResult>()
-                .Map(src => src.ColorCode, dest => dest.ColorHexCode);
+                .Map(src => src.ColorCode, dest => dest.BackgroundColorCode);
 
             config.NewConfig<Tag, GetTagDetailsQueryResult>();
 
 
-            config.NewConfig<Tag, GetAllTagsQueryResult>()
-                .Map(src => src.ColorCode, dest => dest.ColorHexCode)
-                .Map(src => src.ColorCategory , dest => dest.ColorGroup);
+            config.NewConfig<Tag, GetAllTagsQueryResult>();
 
 
             config.NewConfig<Tag, AutoCompleteTagsQueryResult>();
