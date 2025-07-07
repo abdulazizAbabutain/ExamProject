@@ -1,21 +1,29 @@
 ﻿using Application.Commons.Managers;
 using Application.Commons.Services;
 using Domain.Managers;
+using Infrastructure.Factories;
 using Infrastructure.Services;
 using MapsterMapper;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 
 namespace Infrastructure.Managers;
 
-public class ServiceManager(IRepositoryManager repositoryManager, IAuditManager auditManager, IMapper mapper, IStringLocalizer<TagService> stringLocalizer) : IServiceManager
+public class ServiceManager(IRepositoryManager repositoryManager, IAuditManager auditManager, IMapper mapper, IServiceProvider serviceProvider) : IServiceManager
 {
     private bool _disposed = false;
 
-    private readonly Lazy<IQuestionService> _QuestionService = new(() => new QuestionService(repositoryManager.QuestionRepository));
-    private readonly Lazy<ILookupService> _LookupService = new(() => new LookupService(repositoryManager, auditManager));
-    private readonly Lazy<ITagService> _TagService = new(() => new TagService(repositoryManager, auditManager, stringLocalizer));
-    private readonly Lazy<ISourceService> _sourceService = new(() => new SourceService(repositoryManager, auditManager, mapper));
-    private readonly Lazy<ICategoryService> _categoryService = new(() => new CategoryService(repositoryManager, auditManager, mapper));
+   
+    private readonly Lazy<IQuestionService> _QuestionService = 
+        new(() => new QuestionService(repositoryManager.QuestionRepository));
+    private readonly Lazy<ILookupService> _LookupService = 
+        new(() => new LookupService(repositoryManager, auditManager));
+    private readonly Lazy<ITagService> _TagService = 
+        new(() => new TagService(repositoryManager, auditManager, serviceProvider.GetRequiredService<IStringLocalizer<TagService>>()));
+    private readonly Lazy<ISourceService> _sourceService = 
+        new(() => new SourceService(repositoryManager, auditManager, mapper));
+    private readonly Lazy<ICategoryService> _categoryService = 
+        new(() => new CategoryService(repositoryManager, auditManager, mapper));
 
     public IQuestionService QuestionService => _QuestionService.Value;
     public ILookupService LookupService => _LookupService.Value;
