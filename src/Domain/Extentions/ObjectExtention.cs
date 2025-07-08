@@ -1,4 +1,4 @@
-﻿using System.Runtime.CompilerServices;
+using System.Runtime.CompilerServices;
 
 namespace Domain.Extentions;
 
@@ -11,7 +11,11 @@ public static class ObjectExtension
     /// Determines whether the specified object is not <c>null</c>.
     /// </summary>
     /// <param name="value">The object to check.</param>
-    /// <returns><c>true</c> if the object is not null; otherwise, <c>false</c>.</returns>
+    /// <summary>
+        /// Determines whether the specified object is not null.
+        /// </summary>
+        /// <param name="value">The object to check for nullity.</param>
+        /// <returns><c>true</c> if the object is not null; otherwise, <c>false</c>.</returns>
     public static bool IsNotNull(this object? value)
         => value is not null;
 
@@ -19,7 +23,11 @@ public static class ObjectExtension
     /// Determines whether the specified object is <c>null</c>.
     /// </summary>
     /// <param name="value">The object to check.</param>
-    /// <returns><c>true</c> if the object is null; otherwise, <c>false</c>.</returns>
+    /// <summary>
+       /// Determines whether the specified object is null.
+       /// </summary>
+       /// <param name="value">The object to check for null.</param>
+       /// <returns><c>true</c> if the object is null; otherwise, <c>false</c>.</returns>
     public static bool IsNull(this object? value)
        => value is null;
 }

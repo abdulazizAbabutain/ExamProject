@@ -1,4 +1,4 @@
-﻿using Application.Commons.Extentions;
+using Application.Commons.Extentions;
 using Ardalis.GuardClauses;
 using Domain.Auditing;
 using Domain.Enums;
@@ -86,6 +86,19 @@ public class Question : EntityAudit
     #endregion
 
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Question"/> class with the specified text, type, mark, difficulty, and optional metadata.
+    /// </summary>
+    /// <param name="questionText">The main text of the question. Must not be null or empty.</param>
+    /// <param name="variants">Optional alternative phrasings for the question.</param>
+    /// <param name="questionType">The type of the question (e.g., MultipleChoice, TrueFalse).</param>
+    /// <param name="mark">The number of points assigned to the question.</param>
+    /// <param name="requireManualReview">Indicates whether the question requires manual grading.</param>
+    /// <param name="difficulty">The difficulty level of the question. Must not be null.</param>
+    /// <param name="language">Optional identifier for the language of the question.</param>
+    /// <param name="tags">Optional list of tag identifiers categorizing the question.</param>
+    /// <param name="sources">Optional list of source identifiers for the question.</param>
+    /// <param name="category">Optional identifier for the question's category.</param>
     public Question(string questionText, List<string>? variants, QuestionType questionType, int mark, bool requireManualReview,QuestionDifficulty difficulty, 
         Guid? language = null, List<Guid>? tags = null, List<Guid>? sources = null, Guid? category = null)
     {
@@ -101,7 +114,10 @@ public class Question : EntityAudit
         DifficultyIndex = Guard.Against.Null(difficulty).GetMatrix();
     }
 
-    private Question() { }
+    /// <summary>
+/// Initializes a new instance of the <see cref="Question"/> class for ORM or serialization purposes.
+/// </summary>
+private Question() { }
 
 
     public void CreateMultipleChoiceQuestion(MultipleChoiseQuestion multipleChoiseQuestion)

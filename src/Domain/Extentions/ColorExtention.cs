@@ -1,4 +1,4 @@
-﻿using Domain.Enums;
+using Domain.Enums;
 using System.Drawing;
 
 namespace Domain.Extentions;
@@ -15,6 +15,11 @@ public static class ColorExtension
     /// A <see cref="ColorCategory"/> that classifies the color (e.g., Red, Green, Blue, etc.).
     /// Includes logic for grayscale colors based on brightness and saturation.
     /// </returns>
+    /// <summary>
+    /// Determines the color category of a hexadecimal color string based on its hue, brightness, and saturation.
+    /// </summary>
+    /// <param name="hexColor">A hexadecimal color string (e.g., "#FF5733").</param>
+    /// <returns>The <see cref="ColorCategory"/> corresponding to the input color.</returns>
     /// <exception cref="ArgumentException">Thrown if the hex color string is invalid or cannot be parsed.</exception>
     public static ColorCategory GetColorGroup(this string hexColor)
     {
@@ -47,6 +52,9 @@ public static class ColorExtension
 
     /// <summary>
     /// Generates a random hex color string in the format <c>#RRGGBB</c>, avoiding extremes (too dark or too bright).
+    /// </summary>
+    /// <summary>
+    /// Generates a random hex color string in the format "#RRGGBB" with each RGB component constrained between 50 and 199.
     /// </summary>
     /// <returns>A string representing a random color in hexadecimal format.</returns>
     public static string GenerateRandomHexColor()
