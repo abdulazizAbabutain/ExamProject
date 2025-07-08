@@ -98,7 +98,7 @@ public class Question : EntityAudit
         Tags = tags;
         Sources = sources;
         Category = category;
-        DifficultyIndex = Guard.Against.Null(difficulty).GetMattrix();
+        DifficultyIndex = Guard.Against.Null(difficulty).GetMatrix();
     }
 
     private Question() { }
