@@ -1,4 +1,4 @@
-﻿using Domain.Constants;
+using Domain.Constants;
 using Domain.Enums;
 
 namespace Application.Commons.Extentions;
@@ -12,7 +12,11 @@ public static class QuestionDifficultyExtension
     /// Converts a <see cref="QuestionDifficulty"/> enum value into its corresponding matrix score.
     /// </summary>
     /// <param name="difficulty">The difficulty level to convert.</param>
-    /// <returns>A <see cref="short"/> value representing the matrix value of the given difficulty level.</returns>
+    /// <summary>
+    /// Returns the matrix score associated with the specified <see cref="QuestionDifficulty"/>.
+    /// </summary>
+    /// <param name="difficulty">The difficulty level to convert.</param>
+    /// <returns>The matrix value corresponding to the given difficulty, or the average matrix value if not found.</returns>
     public static short GetMatrix(this QuestionDifficulty difficulty)
     {
         return DifficultyToMatrixMap.TryGetValue(difficulty, out var matrix)
@@ -23,7 +27,11 @@ public static class QuestionDifficultyExtension
     /// Determines the <see cref="QuestionDifficulty"/> level that corresponds to a given matrix value.
     /// </summary>
     /// <param name="matrix">The matrix value to evaluate.</param>
-    /// <returns>A <see cref="QuestionDifficulty"/> category based on the provided matrix value.</returns>
+    /// <summary>
+    /// Determines the <see cref="QuestionDifficulty"/> category corresponding to the specified matrix score.
+    /// </summary>
+    /// <param name="matrix">The matrix score to evaluate.</param>
+    /// <returns>The difficulty category that matches the given matrix value.</returns>
 
     public static QuestionDifficulty GetDifficultyCategory(this short matrix)
     {
