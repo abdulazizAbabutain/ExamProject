@@ -12,7 +12,7 @@ namespace Application.Questions.Commands.UpdateQuestion
         {
             var question =  _serviceManager.QuestionService.GetQuestion(request.Id);
 
-            question.UpdateBasicQueastion(request.QuestionText, request.Variants, request.Mark, request.RequireManulReview, request.Tags, request.Difficulty.GetMattrix());
+            question.UpdateBasicQueastion(request.QuestionText, request.Variants, request.Mark, request.RequireManulReview, request.Tags, request.Difficulty.GetMatrix());
 
             _serviceManager.QuestionService.UpdateQuestion(question);
 
