@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Extensions.CloneExtension
+  commentId: T:Application.Commons.Extensions.CloneExtension
+  id: CloneExtension
+  parent: Application.Commons.Extensions
+  children:
+  - Application.Commons.Extensions.CloneExtension.DeepClone``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: CloneExtension
+  nameWithType: CloneExtension
+  fullName: Application.Commons.Extensions.CloneExtension
+  type: Class
+  source:
+    remote:
+      path: src/Application/Commons/Extensions/ColneExtention.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CloneExtension
+    path: src/Application/Commons/Extensions/ColneExtention.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Commons.Extensions
+  syntax:
+    content: public static class CloneExtension
+    content.vb: Public Module CloneExtension
+  inheritance:
+  - System.Object
+- uid: Application.Commons.Extensions.CloneExtension.DeepClone``1(``0)
+  commentId: M:Application.Commons.Extensions.CloneExtension.DeepClone``1(``0)
+  id: DeepClone``1(``0)
+  parent: Application.Commons.Extensions.CloneExtension
+  langs:
+  - csharp
+  - vb
+  name: DeepClone<T>(T)
+  nameWithType: CloneExtension.DeepClone<T>(T)
+  fullName: Application.Commons.Extensions.CloneExtension.DeepClone<T>(T)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Extensions/ColneExtention.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DeepClone
+    path: src/Application/Commons/Extensions/ColneExtention.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Commons.Extensions
+  syntax:
+    content: public static T DeepClone<T>(T obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function DeepClone(Of T)(obj As T) As T
+  overload: Application.Commons.Extensions.CloneExtension.DeepClone*
+  nameWithType.vb: CloneExtension.DeepClone(Of T)(T)
+  fullName.vb: Application.Commons.Extensions.CloneExtension.DeepClone(Of T)(T)
+  name.vb: DeepClone(Of T)(T)
+references:
+- uid: Application.Commons.Extensions
+  commentId: N:Application.Commons.Extensions
+  href: Application.html
+  name: Application.Commons.Extensions
+  nameWithType: Application.Commons.Extensions
+  fullName: Application.Commons.Extensions
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Extensions
+    name: Extensions
+    href: Application.Commons.Extensions.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Extensions
+    name: Extensions
+    href: Application.Commons.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Extensions.CloneExtension.DeepClone*
+  commentId: Overload:Application.Commons.Extensions.CloneExtension.DeepClone
+  href: Application.Commons.Extensions.CloneExtension.html#Application_Commons_Extensions_CloneExtension_DeepClone__1___0_
+  name: DeepClone
+  nameWithType: CloneExtension.DeepClone
+  fullName: Application.Commons.Extensions.CloneExtension.DeepClone
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

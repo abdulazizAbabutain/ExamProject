@@ -1,0 +1,397 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.EntityLookup.Language
+  commentId: T:Domain.Entities.EntityLookup.Language
+  id: Language
+  parent: Domain.Entities.EntityLookup
+  children:
+  - Domain.Entities.EntityLookup.Language.#ctor(System.String,System.String)
+  - Domain.Entities.EntityLookup.Language.Code
+  - Domain.Entities.EntityLookup.Language.DisplayName
+  - Domain.Entities.EntityLookup.Language.Id
+  langs:
+  - csharp
+  - vb
+  name: Language
+  nameWithType: Language
+  fullName: Domain.Entities.EntityLookup.Language
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Entities/EntityLookup/Language.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Language
+    path: src/Domain/Entities/EntityLookup/Language.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.EntityLookup
+  summary: translate
+  example: []
+  syntax:
+    content: public class Language
+    content.vb: Public Class Language
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Entities.EntityLookup.Language.#ctor(System.String,System.String)
+  commentId: M:Domain.Entities.EntityLookup.Language.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: Domain.Entities.EntityLookup.Language
+  langs:
+  - csharp
+  - vb
+  name: Language(string, string)
+  nameWithType: Language.Language(string, string)
+  fullName: Domain.Entities.EntityLookup.Language.Language(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Domain/Entities/EntityLookup/Language.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Domain/Entities/EntityLookup/Language.cs
+    startLine: 8
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.EntityLookup
+  syntax:
+    content: public Language(string code, string displayName)
+    parameters:
+    - id: code
+      type: System.String
+    - id: displayName
+      type: System.String
+    content.vb: Public Sub New(code As String, displayName As String)
+  overload: Domain.Entities.EntityLookup.Language.#ctor*
+  nameWithType.vb: Language.New(String, String)
+  fullName.vb: Domain.Entities.EntityLookup.Language.New(String, String)
+  name.vb: New(String, String)
+- uid: Domain.Entities.EntityLookup.Language.Id
+  commentId: P:Domain.Entities.EntityLookup.Language.Id
+  id: Id
+  parent: Domain.Entities.EntityLookup.Language
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Language.Id
+  fullName: Domain.Entities.EntityLookup.Language.Id
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/EntityLookup/Language.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Id
+    path: src/Domain/Entities/EntityLookup/Language.cs
+    startLine: 15
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.EntityLookup
+  syntax:
+    content: public Guid Id { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Domain.Entities.EntityLookup.Language.Id*
+- uid: Domain.Entities.EntityLookup.Language.Code
+  commentId: P:Domain.Entities.EntityLookup.Language.Code
+  id: Code
+  parent: Domain.Entities.EntityLookup.Language
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: Language.Code
+  fullName: Domain.Entities.EntityLookup.Language.Code
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/EntityLookup/Language.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Code
+    path: src/Domain/Entities/EntityLookup/Language.cs
+    startLine: 16
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.EntityLookup
+  syntax:
+    content: public string Code { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Code As String
+  overload: Domain.Entities.EntityLookup.Language.Code*
+- uid: Domain.Entities.EntityLookup.Language.DisplayName
+  commentId: P:Domain.Entities.EntityLookup.Language.DisplayName
+  id: DisplayName
+  parent: Domain.Entities.EntityLookup.Language
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: Language.DisplayName
+  fullName: Domain.Entities.EntityLookup.Language.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/EntityLookup/Language.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DisplayName
+    path: src/Domain/Entities/EntityLookup/Language.cs
+    startLine: 17
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.EntityLookup
+  syntax:
+    content: public string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: Domain.Entities.EntityLookup.Language.DisplayName*
+references:
+- uid: Domain.Entities.EntityLookup
+  commentId: N:Domain.Entities.EntityLookup
+  href: Domain.html
+  name: Domain.Entities.EntityLookup
+  nameWithType: Domain.Entities.EntityLookup
+  fullName: Domain.Entities.EntityLookup
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.EntityLookup
+    name: EntityLookup
+    href: Domain.Entities.EntityLookup.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.EntityLookup
+    name: EntityLookup
+    href: Domain.Entities.EntityLookup.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Entities.EntityLookup.Language.#ctor*
+  commentId: Overload:Domain.Entities.EntityLookup.Language.#ctor
+  href: Domain.Entities.EntityLookup.Language.html#Domain_Entities_EntityLookup_Language__ctor_System_String_System_String_
+  name: Language
+  nameWithType: Language.Language
+  fullName: Domain.Entities.EntityLookup.Language.Language
+  nameWithType.vb: Language.New
+  fullName.vb: Domain.Entities.EntityLookup.Language.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Domain.Entities.EntityLookup.Language.Id*
+  commentId: Overload:Domain.Entities.EntityLookup.Language.Id
+  href: Domain.Entities.EntityLookup.Language.html#Domain_Entities_EntityLookup_Language_Id
+  name: Id
+  nameWithType: Language.Id
+  fullName: Domain.Entities.EntityLookup.Language.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Entities.EntityLookup.Language.Code*
+  commentId: Overload:Domain.Entities.EntityLookup.Language.Code
+  href: Domain.Entities.EntityLookup.Language.html#Domain_Entities_EntityLookup_Language_Code
+  name: Code
+  nameWithType: Language.Code
+  fullName: Domain.Entities.EntityLookup.Language.Code
+- uid: Domain.Entities.EntityLookup.Language.DisplayName*
+  commentId: Overload:Domain.Entities.EntityLookup.Language.DisplayName
+  href: Domain.Entities.EntityLookup.Language.html#Domain_Entities_EntityLookup_Language_DisplayName
+  name: DisplayName
+  nameWithType: Language.DisplayName
+  fullName: Domain.Entities.EntityLookup.Language.DisplayName

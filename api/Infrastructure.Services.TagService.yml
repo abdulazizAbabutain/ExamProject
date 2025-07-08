@@ -1,0 +1,1211 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Services.TagService
+  commentId: T:Infrastructure.Services.TagService
+  id: TagService
+  parent: Infrastructure.Services
+  children:
+  - Infrastructure.Services.TagService.#ctor(Domain.Managers.IRepositoryManager,Application.Commons.Managers.IAuditManager,Microsoft.Extensions.Localization.IStringLocalizer{Infrastructure.Services.TagService})
+  - Infrastructure.Services.TagService.AddTag(System.String,System.String,System.String)
+  - Infrastructure.Services.TagService.ArchiveAllTag
+  - Infrastructure.Services.TagService.ArchiveTag(System.Guid)
+  - Infrastructure.Services.TagService.DeleteTag(System.Guid)
+  - Infrastructure.Services.TagService.GetAllTags
+  - Infrastructure.Services.TagService.UnArchiveTag(System.Guid)
+  - Infrastructure.Services.TagService.UpdateTag(System.Guid,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: TagService
+  nameWithType: TagService
+  fullName: Infrastructure.Services.TagService
+  type: Class
+  source:
+    remote:
+      path: src/Infrastructure/Services/TagService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: TagService
+    path: src/Infrastructure/Services/TagService.cs
+    startLine: 14
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  syntax:
+    content: 'public class TagService : ITagService'
+    content.vb: Public Class TagService Implements ITagService
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Commons.Services.ITagService
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Infrastructure.Services.TagService.#ctor(Domain.Managers.IRepositoryManager,Application.Commons.Managers.IAuditManager,Microsoft.Extensions.Localization.IStringLocalizer{Infrastructure.Services.TagService})
+  commentId: M:Infrastructure.Services.TagService.#ctor(Domain.Managers.IRepositoryManager,Application.Commons.Managers.IAuditManager,Microsoft.Extensions.Localization.IStringLocalizer{Infrastructure.Services.TagService})
+  id: '#ctor(Domain.Managers.IRepositoryManager,Application.Commons.Managers.IAuditManager,Microsoft.Extensions.Localization.IStringLocalizer{Infrastructure.Services.TagService})'
+  parent: Infrastructure.Services.TagService
+  langs:
+  - csharp
+  - vb
+  name: TagService(IRepositoryManager, IAuditManager, IStringLocalizer<TagService>)
+  nameWithType: TagService.TagService(IRepositoryManager, IAuditManager, IStringLocalizer<TagService>)
+  fullName: Infrastructure.Services.TagService.TagService(Domain.Managers.IRepositoryManager, Application.Commons.Managers.IAuditManager, Microsoft.Extensions.Localization.IStringLocalizer<Infrastructure.Services.TagService>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Infrastructure/Services/TagService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Infrastructure/Services/TagService.cs
+    startLine: 14
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  syntax:
+    content: public TagService(IRepositoryManager repositoryManager, IAuditManager auditManager, IStringLocalizer<TagService> localizer)
+    parameters:
+    - id: repositoryManager
+      type: Domain.Managers.IRepositoryManager
+    - id: auditManager
+      type: Application.Commons.Managers.IAuditManager
+    - id: localizer
+      type: Microsoft.Extensions.Localization.IStringLocalizer{Infrastructure.Services.TagService}
+    content.vb: Public Sub New(repositoryManager As IRepositoryManager, auditManager As IAuditManager, localizer As IStringLocalizer(Of TagService))
+  overload: Infrastructure.Services.TagService.#ctor*
+  nameWithType.vb: TagService.New(IRepositoryManager, IAuditManager, IStringLocalizer(Of TagService))
+  fullName.vb: Infrastructure.Services.TagService.New(Domain.Managers.IRepositoryManager, Application.Commons.Managers.IAuditManager, Microsoft.Extensions.Localization.IStringLocalizer(Of Infrastructure.Services.TagService))
+  name.vb: New(IRepositoryManager, IAuditManager, IStringLocalizer(Of TagService))
+- uid: Infrastructure.Services.TagService.AddTag(System.String,System.String,System.String)
+  commentId: M:Infrastructure.Services.TagService.AddTag(System.String,System.String,System.String)
+  id: AddTag(System.String,System.String,System.String)
+  parent: Infrastructure.Services.TagService
+  langs:
+  - csharp
+  - vb
+  name: AddTag(string, string?, string)
+  nameWithType: TagService.AddTag(string, string?, string)
+  fullName: Infrastructure.Services.TagService.AddTag(string, string?, string)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/TagService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddTag
+    path: src/Infrastructure/Services/TagService.cs
+    startLine: 23
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public Result<Tag> AddTag(string name, string? backgroundColorCode = null, string testColorCode = null)
+    parameters:
+    - id: name
+      type: System.String
+    - id: backgroundColorCode
+      type: System.String
+    - id: testColorCode
+      type: System.String
+    return:
+      type: Application.Commons.Models.Results.Result{Domain.Entities.EntityLookup.Tag}
+    content.vb: Public Function AddTag(name As String, backgroundColorCode As String = Nothing, testColorCode As String = Nothing) As Result(Of Tag)
+  overload: Infrastructure.Services.TagService.AddTag*
+  implements:
+  - Application.Commons.Services.ITagService.AddTag(System.String,System.String,System.String)
+  nameWithType.vb: TagService.AddTag(String, String, String)
+  fullName.vb: Infrastructure.Services.TagService.AddTag(String, String, String)
+  name.vb: AddTag(String, String, String)
+- uid: Infrastructure.Services.TagService.GetAllTags
+  commentId: M:Infrastructure.Services.TagService.GetAllTags
+  id: GetAllTags
+  parent: Infrastructure.Services.TagService
+  langs:
+  - csharp
+  - vb
+  name: GetAllTags()
+  nameWithType: TagService.GetAllTags()
+  fullName: Infrastructure.Services.TagService.GetAllTags()
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/TagService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAllTags
+    path: src/Infrastructure/Services/TagService.cs
+    startLine: 38
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public IEnumerable<Tag> GetAllTags()
+    return:
+      type: System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Tag}
+    content.vb: Public Function GetAllTags() As IEnumerable(Of Tag)
+  overload: Infrastructure.Services.TagService.GetAllTags*
+  implements:
+  - Application.Commons.Services.ITagService.GetAllTags
+- uid: Infrastructure.Services.TagService.UpdateTag(System.Guid,System.String,System.String,System.String)
+  commentId: M:Infrastructure.Services.TagService.UpdateTag(System.Guid,System.String,System.String,System.String)
+  id: UpdateTag(System.Guid,System.String,System.String,System.String)
+  parent: Infrastructure.Services.TagService
+  langs:
+  - csharp
+  - vb
+  name: UpdateTag(Guid, string, string, string)
+  nameWithType: TagService.UpdateTag(Guid, string, string, string)
+  fullName: Infrastructure.Services.TagService.UpdateTag(System.Guid, string, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/TagService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateTag
+    path: src/Infrastructure/Services/TagService.cs
+    startLine: 49
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  summary: the service will check if there different tag with same name.
+  example: []
+  syntax:
+    content: public Result UpdateTag(Guid id, string name, string backgroundColorCode, string textColorCode)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: ''
+    - id: name
+      type: System.String
+      description: the new Name
+    - id: backgroundColorCode
+      type: System.String
+      description: the color in hex code
+    - id: textColorCode
+      type: System.String
+    return:
+      type: Application.Commons.Models.Results.Result
+    content.vb: Public Function UpdateTag(id As Guid, name As String, backgroundColorCode As String, textColorCode As String) As Result
+  overload: Infrastructure.Services.TagService.UpdateTag*
+  implements:
+  - Application.Commons.Services.ITagService.UpdateTag(System.Guid,System.String,System.String,System.String)
+  nameWithType.vb: TagService.UpdateTag(Guid, String, String, String)
+  fullName.vb: Infrastructure.Services.TagService.UpdateTag(System.Guid, String, String, String)
+  name.vb: UpdateTag(Guid, String, String, String)
+- uid: Infrastructure.Services.TagService.DeleteTag(System.Guid)
+  commentId: M:Infrastructure.Services.TagService.DeleteTag(System.Guid)
+  id: DeleteTag(System.Guid)
+  parent: Infrastructure.Services.TagService
+  langs:
+  - csharp
+  - vb
+  name: DeleteTag(Guid)
+  nameWithType: TagService.DeleteTag(Guid)
+  fullName: Infrastructure.Services.TagService.DeleteTag(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/TagService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DeleteTag
+    path: src/Infrastructure/Services/TagService.cs
+    startLine: 74
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  summary: delete a tag and all related entities with a tag.
+  example: []
+  syntax:
+    content: public Result DeleteTag(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: ''
+    return:
+      type: Application.Commons.Models.Results.Result
+    content.vb: Public Function DeleteTag(id As Guid) As Result
+  overload: Infrastructure.Services.TagService.DeleteTag*
+  implements:
+  - Application.Commons.Services.ITagService.DeleteTag(System.Guid)
+- uid: Infrastructure.Services.TagService.ArchiveTag(System.Guid)
+  commentId: M:Infrastructure.Services.TagService.ArchiveTag(System.Guid)
+  id: ArchiveTag(System.Guid)
+  parent: Infrastructure.Services.TagService
+  langs:
+  - csharp
+  - vb
+  name: ArchiveTag(Guid)
+  nameWithType: TagService.ArchiveTag(Guid)
+  fullName: Infrastructure.Services.TagService.ArchiveTag(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/TagService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ArchiveTag
+    path: src/Infrastructure/Services/TagService.cs
+    startLine: 117
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public Result ArchiveTag(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: Application.Commons.Models.Results.Result
+    content.vb: Public Function ArchiveTag(id As Guid) As Result
+  overload: Infrastructure.Services.TagService.ArchiveTag*
+  implements:
+  - Application.Commons.Services.ITagService.ArchiveTag(System.Guid)
+- uid: Infrastructure.Services.TagService.ArchiveAllTag
+  commentId: M:Infrastructure.Services.TagService.ArchiveAllTag
+  id: ArchiveAllTag
+  parent: Infrastructure.Services.TagService
+  langs:
+  - csharp
+  - vb
+  name: ArchiveAllTag()
+  nameWithType: TagService.ArchiveAllTag()
+  fullName: Infrastructure.Services.TagService.ArchiveAllTag()
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/TagService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ArchiveAllTag
+    path: src/Infrastructure/Services/TagService.cs
+    startLine: 135
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public Result ArchiveAllTag()
+    return:
+      type: Application.Commons.Models.Results.Result
+    content.vb: Public Function ArchiveAllTag() As Result
+  overload: Infrastructure.Services.TagService.ArchiveAllTag*
+  implements:
+  - Application.Commons.Services.ITagService.ArchiveAllTag
+- uid: Infrastructure.Services.TagService.UnArchiveTag(System.Guid)
+  commentId: M:Infrastructure.Services.TagService.UnArchiveTag(System.Guid)
+  id: UnArchiveTag(System.Guid)
+  parent: Infrastructure.Services.TagService
+  langs:
+  - csharp
+  - vb
+  name: UnArchiveTag(Guid)
+  nameWithType: TagService.UnArchiveTag(Guid)
+  fullName: Infrastructure.Services.TagService.UnArchiveTag(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/TagService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UnArchiveTag
+    path: src/Infrastructure/Services/TagService.cs
+    startLine: 173
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public Result UnArchiveTag(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: Application.Commons.Models.Results.Result
+    content.vb: Public Function UnArchiveTag(id As Guid) As Result
+  overload: Infrastructure.Services.TagService.UnArchiveTag*
+  implements:
+  - Application.Commons.Services.ITagService.UnArchiveTag(System.Guid)
+references:
+- uid: Infrastructure.Services
+  commentId: N:Infrastructure.Services
+  href: Infrastructure.html
+  name: Infrastructure.Services
+  nameWithType: Infrastructure.Services
+  fullName: Infrastructure.Services
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Services
+    name: Services
+    href: Infrastructure.Services.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Services
+    name: Services
+    href: Infrastructure.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Commons.Services.ITagService
+  commentId: T:Application.Commons.Services.ITagService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ITagService.html
+  name: ITagService
+  nameWithType: ITagService
+  fullName: Application.Commons.Services.ITagService
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Infrastructure.Services.TagService.#ctor*
+  commentId: Overload:Infrastructure.Services.TagService.#ctor
+  href: Infrastructure.Services.TagService.html#Infrastructure_Services_TagService__ctor_Domain_Managers_IRepositoryManager_Application_Commons_Managers_IAuditManager_Microsoft_Extensions_Localization_IStringLocalizer_Infrastructure_Services_TagService__
+  name: TagService
+  nameWithType: TagService.TagService
+  fullName: Infrastructure.Services.TagService.TagService
+  nameWithType.vb: TagService.New
+  fullName.vb: Infrastructure.Services.TagService.New
+  name.vb: New
+- uid: Domain.Managers.IRepositoryManager
+  commentId: T:Domain.Managers.IRepositoryManager
+  parent: Domain.Managers
+  href: Domain.Managers.IRepositoryManager.html
+  name: IRepositoryManager
+  nameWithType: IRepositoryManager
+  fullName: Domain.Managers.IRepositoryManager
+- uid: Application.Commons.Managers.IAuditManager
+  commentId: T:Application.Commons.Managers.IAuditManager
+  parent: Application.Commons.Managers
+  href: Application.Commons.Managers.IAuditManager.html
+  name: IAuditManager
+  nameWithType: IAuditManager
+  fullName: Application.Commons.Managers.IAuditManager
+- uid: Microsoft.Extensions.Localization.IStringLocalizer{Infrastructure.Services.TagService}
+  commentId: T:Microsoft.Extensions.Localization.IStringLocalizer{Infrastructure.Services.TagService}
+  parent: Microsoft.Extensions.Localization
+  definition: Microsoft.Extensions.Localization.IStringLocalizer`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer-1
+  name: IStringLocalizer<TagService>
+  nameWithType: IStringLocalizer<TagService>
+  fullName: Microsoft.Extensions.Localization.IStringLocalizer<Infrastructure.Services.TagService>
+  nameWithType.vb: IStringLocalizer(Of TagService)
+  fullName.vb: Microsoft.Extensions.Localization.IStringLocalizer(Of Infrastructure.Services.TagService)
+  name.vb: IStringLocalizer(Of TagService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizer`1
+    name: IStringLocalizer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer-1
+  - name: <
+  - uid: Infrastructure.Services.TagService
+    name: TagService
+    href: Infrastructure.Services.TagService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizer`1
+    name: IStringLocalizer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Infrastructure.Services.TagService
+    name: TagService
+    href: Infrastructure.Services.TagService.html
+  - name: )
+- uid: Domain.Managers
+  commentId: N:Domain.Managers
+  href: Domain.html
+  name: Domain.Managers
+  nameWithType: Domain.Managers
+  fullName: Domain.Managers
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Managers
+    name: Managers
+    href: Domain.Managers.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Managers
+    name: Managers
+    href: Domain.Managers.html
+- uid: Application.Commons.Managers
+  commentId: N:Application.Commons.Managers
+  href: Application.html
+  name: Application.Commons.Managers
+  nameWithType: Application.Commons.Managers
+  fullName: Application.Commons.Managers
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+- uid: Microsoft.Extensions.Localization.IStringLocalizer`1
+  commentId: T:Microsoft.Extensions.Localization.IStringLocalizer`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer-1
+  name: IStringLocalizer<T>
+  nameWithType: IStringLocalizer<T>
+  fullName: Microsoft.Extensions.Localization.IStringLocalizer<T>
+  nameWithType.vb: IStringLocalizer(Of T)
+  fullName.vb: Microsoft.Extensions.Localization.IStringLocalizer(Of T)
+  name.vb: IStringLocalizer(Of T)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizer`1
+    name: IStringLocalizer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizer`1
+    name: IStringLocalizer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Extensions.Localization
+  commentId: N:Microsoft.Extensions.Localization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Localization
+  nameWithType: Microsoft.Extensions.Localization
+  fullName: Microsoft.Extensions.Localization
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Localization
+    name: Localization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Localization
+    name: Localization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization
+- uid: Infrastructure.Services.TagService.AddTag*
+  commentId: Overload:Infrastructure.Services.TagService.AddTag
+  href: Infrastructure.Services.TagService.html#Infrastructure_Services_TagService_AddTag_System_String_System_String_System_String_
+  name: AddTag
+  nameWithType: TagService.AddTag
+  fullName: Infrastructure.Services.TagService.AddTag
+- uid: Application.Commons.Services.ITagService.AddTag(System.String,System.String,System.String)
+  commentId: M:Application.Commons.Services.ITagService.AddTag(System.String,System.String,System.String)
+  parent: Application.Commons.Services.ITagService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: AddTag(string, string, string)
+  nameWithType: ITagService.AddTag(string, string, string)
+  fullName: Application.Commons.Services.ITagService.AddTag(string, string, string)
+  nameWithType.vb: ITagService.AddTag(String, String, String)
+  fullName.vb: Application.Commons.Services.ITagService.AddTag(String, String, String)
+  name.vb: AddTag(String, String, String)
+  spec.csharp:
+  - uid: Application.Commons.Services.ITagService.AddTag(System.String,System.String,System.String)
+    name: AddTag
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.ITagService.AddTag(System.String,System.String,System.String)
+    name: AddTag
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Commons.Models.Results.Result{Domain.Entities.EntityLookup.Tag}
+  commentId: T:Application.Commons.Models.Results.Result{Domain.Entities.EntityLookup.Tag}
+  parent: Application.Commons.Models.Results
+  definition: Application.Commons.Models.Results.Result`1
+  href: Application.Commons.Models.Results.Result-1.html
+  name: Result<Tag>
+  nameWithType: Result<Tag>
+  fullName: Application.Commons.Models.Results.Result<Domain.Entities.EntityLookup.Tag>
+  nameWithType.vb: Result(Of Tag)
+  fullName.vb: Application.Commons.Models.Results.Result(Of Domain.Entities.EntityLookup.Tag)
+  name.vb: Result(Of Tag)
+  spec.csharp:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Domain.Entities.EntityLookup.Tag
+    name: Tag
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.EntityLookup.Tag
+    name: Tag
+  - name: )
+- uid: Application.Commons.Models.Results.Result`1
+  commentId: T:Application.Commons.Models.Results.Result`1
+  parent: Application.Commons.Models.Results
+  href: Application.Commons.Models.Results.Result-1.html
+  name: Result<T>
+  nameWithType: Result<T>
+  fullName: Application.Commons.Models.Results.Result<T>
+  nameWithType.vb: Result(Of T)
+  fullName.vb: Application.Commons.Models.Results.Result(Of T)
+  name.vb: Result(Of T)
+  spec.csharp:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Commons.Models.Results
+  commentId: N:Application.Commons.Models.Results
+  href: Application.html
+  name: Application.Commons.Models.Results
+  nameWithType: Application.Commons.Models.Results
+  fullName: Application.Commons.Models.Results
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Results
+    name: Results
+    href: Application.Commons.Models.Results.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Results
+    name: Results
+    href: Application.Commons.Models.Results.html
+- uid: Infrastructure.Services.TagService.GetAllTags*
+  commentId: Overload:Infrastructure.Services.TagService.GetAllTags
+  href: Infrastructure.Services.TagService.html#Infrastructure_Services_TagService_GetAllTags
+  name: GetAllTags
+  nameWithType: TagService.GetAllTags
+  fullName: Infrastructure.Services.TagService.GetAllTags
+- uid: Application.Commons.Services.ITagService.GetAllTags
+  commentId: M:Application.Commons.Services.ITagService.GetAllTags
+  parent: Application.Commons.Services.ITagService
+  name: GetAllTags()
+  nameWithType: ITagService.GetAllTags()
+  fullName: Application.Commons.Services.ITagService.GetAllTags()
+  spec.csharp:
+  - uid: Application.Commons.Services.ITagService.GetAllTags
+    name: GetAllTags
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.ITagService.GetAllTags
+    name: GetAllTags
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Tag}
+  commentId: T:System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Tag}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Tag>
+  nameWithType: IEnumerable<Tag>
+  fullName: System.Collections.Generic.IEnumerable<Domain.Entities.EntityLookup.Tag>
+  nameWithType.vb: IEnumerable(Of Tag)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Domain.Entities.EntityLookup.Tag)
+  name.vb: IEnumerable(Of Tag)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.EntityLookup.Tag
+    name: Tag
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.EntityLookup.Tag
+    name: Tag
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Infrastructure.Services.TagService.UpdateTag*
+  commentId: Overload:Infrastructure.Services.TagService.UpdateTag
+  href: Infrastructure.Services.TagService.html#Infrastructure_Services_TagService_UpdateTag_System_Guid_System_String_System_String_System_String_
+  name: UpdateTag
+  nameWithType: TagService.UpdateTag
+  fullName: Infrastructure.Services.TagService.UpdateTag
+- uid: Application.Commons.Services.ITagService.UpdateTag(System.Guid,System.String,System.String,System.String)
+  commentId: M:Application.Commons.Services.ITagService.UpdateTag(System.Guid,System.String,System.String,System.String)
+  parent: Application.Commons.Services.ITagService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: UpdateTag(Guid, string, string, string)
+  nameWithType: ITagService.UpdateTag(Guid, string, string, string)
+  fullName: Application.Commons.Services.ITagService.UpdateTag(System.Guid, string, string, string)
+  nameWithType.vb: ITagService.UpdateTag(Guid, String, String, String)
+  fullName.vb: Application.Commons.Services.ITagService.UpdateTag(System.Guid, String, String, String)
+  name.vb: UpdateTag(Guid, String, String, String)
+  spec.csharp:
+  - uid: Application.Commons.Services.ITagService.UpdateTag(System.Guid,System.String,System.String,System.String)
+    name: UpdateTag
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.ITagService.UpdateTag(System.Guid,System.String,System.String,System.String)
+    name: UpdateTag
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Commons.Models.Results.Result
+  commentId: T:Application.Commons.Models.Results.Result
+  parent: Application.Commons.Models.Results
+  href: Application.Commons.Models.Results.Result.html
+  name: Result
+  nameWithType: Result
+  fullName: Application.Commons.Models.Results.Result
+- uid: Infrastructure.Services.TagService.DeleteTag*
+  commentId: Overload:Infrastructure.Services.TagService.DeleteTag
+  href: Infrastructure.Services.TagService.html#Infrastructure_Services_TagService_DeleteTag_System_Guid_
+  name: DeleteTag
+  nameWithType: TagService.DeleteTag
+  fullName: Infrastructure.Services.TagService.DeleteTag
+- uid: Application.Commons.Services.ITagService.DeleteTag(System.Guid)
+  commentId: M:Application.Commons.Services.ITagService.DeleteTag(System.Guid)
+  parent: Application.Commons.Services.ITagService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: DeleteTag(Guid)
+  nameWithType: ITagService.DeleteTag(Guid)
+  fullName: Application.Commons.Services.ITagService.DeleteTag(System.Guid)
+  spec.csharp:
+  - uid: Application.Commons.Services.ITagService.DeleteTag(System.Guid)
+    name: DeleteTag
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.ITagService.DeleteTag(System.Guid)
+    name: DeleteTag
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Services.TagService.ArchiveTag*
+  commentId: Overload:Infrastructure.Services.TagService.ArchiveTag
+  href: Infrastructure.Services.TagService.html#Infrastructure_Services_TagService_ArchiveTag_System_Guid_
+  name: ArchiveTag
+  nameWithType: TagService.ArchiveTag
+  fullName: Infrastructure.Services.TagService.ArchiveTag
+- uid: Application.Commons.Services.ITagService.ArchiveTag(System.Guid)
+  commentId: M:Application.Commons.Services.ITagService.ArchiveTag(System.Guid)
+  parent: Application.Commons.Services.ITagService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: ArchiveTag(Guid)
+  nameWithType: ITagService.ArchiveTag(Guid)
+  fullName: Application.Commons.Services.ITagService.ArchiveTag(System.Guid)
+  spec.csharp:
+  - uid: Application.Commons.Services.ITagService.ArchiveTag(System.Guid)
+    name: ArchiveTag
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.ITagService.ArchiveTag(System.Guid)
+    name: ArchiveTag
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Services.TagService.ArchiveAllTag*
+  commentId: Overload:Infrastructure.Services.TagService.ArchiveAllTag
+  href: Infrastructure.Services.TagService.html#Infrastructure_Services_TagService_ArchiveAllTag
+  name: ArchiveAllTag
+  nameWithType: TagService.ArchiveAllTag
+  fullName: Infrastructure.Services.TagService.ArchiveAllTag
+- uid: Application.Commons.Services.ITagService.ArchiveAllTag
+  commentId: M:Application.Commons.Services.ITagService.ArchiveAllTag
+  parent: Application.Commons.Services.ITagService
+  name: ArchiveAllTag()
+  nameWithType: ITagService.ArchiveAllTag()
+  fullName: Application.Commons.Services.ITagService.ArchiveAllTag()
+  spec.csharp:
+  - uid: Application.Commons.Services.ITagService.ArchiveAllTag
+    name: ArchiveAllTag
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.ITagService.ArchiveAllTag
+    name: ArchiveAllTag
+  - name: (
+  - name: )
+- uid: Infrastructure.Services.TagService.UnArchiveTag*
+  commentId: Overload:Infrastructure.Services.TagService.UnArchiveTag
+  href: Infrastructure.Services.TagService.html#Infrastructure_Services_TagService_UnArchiveTag_System_Guid_
+  name: UnArchiveTag
+  nameWithType: TagService.UnArchiveTag
+  fullName: Infrastructure.Services.TagService.UnArchiveTag
+- uid: Application.Commons.Services.ITagService.UnArchiveTag(System.Guid)
+  commentId: M:Application.Commons.Services.ITagService.UnArchiveTag(System.Guid)
+  parent: Application.Commons.Services.ITagService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: UnArchiveTag(Guid)
+  nameWithType: ITagService.UnArchiveTag(Guid)
+  fullName: Application.Commons.Services.ITagService.UnArchiveTag(System.Guid)
+  spec.csharp:
+  - uid: Application.Commons.Services.ITagService.UnArchiveTag(System.Guid)
+    name: UnArchiveTag
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.ITagService.UnArchiveTag(System.Guid)
+    name: UnArchiveTag
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )

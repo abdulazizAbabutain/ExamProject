@@ -1,0 +1,708 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler
+  commentId: T:Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler
+  id: GetRelatedSourcesQueryHandler
+  parent: Application.Tags.Queries.GetRelatedSources
+  children:
+  - Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.#ctor(Domain.Managers.IRepositoryManager,MapsterMapper.IMapper)
+  - Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedSourcesQueryHandler
+  nameWithType: GetRelatedSourcesQueryHandler
+  fullName: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler
+  type: Class
+  source:
+    remote:
+      path: src/Application/Tags/Queries/GetRelatedSources/GetRelatedSourcesQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetRelatedSourcesQueryHandler
+    path: src/Application/Tags/Queries/GetRelatedSources/GetRelatedSourcesQueryHandler.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.GetRelatedSources
+  syntax:
+    content: 'public class GetRelatedSourcesQueryHandler : IRequestHandler<GetRelatedSourcesQuery, Result<PageResponse<GetRelatedSourcesQueryResult>>>'
+    content.vb: Public Class GetRelatedSourcesQueryHandler Implements IRequestHandler(Of GetRelatedSourcesQuery, Result(Of PageResponse(Of GetRelatedSourcesQueryResult)))
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.#ctor(Domain.Managers.IRepositoryManager,MapsterMapper.IMapper)
+  commentId: M:Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.#ctor(Domain.Managers.IRepositoryManager,MapsterMapper.IMapper)
+  id: '#ctor(Domain.Managers.IRepositoryManager,MapsterMapper.IMapper)'
+  parent: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: GetRelatedSourcesQueryHandler(IRepositoryManager, IMapper)
+  nameWithType: GetRelatedSourcesQueryHandler.GetRelatedSourcesQueryHandler(IRepositoryManager, IMapper)
+  fullName: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.GetRelatedSourcesQueryHandler(Domain.Managers.IRepositoryManager, MapsterMapper.IMapper)
+  type: Constructor
+  source:
+    remote:
+      path: src/Application/Tags/Queries/GetRelatedSources/GetRelatedSourcesQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Application/Tags/Queries/GetRelatedSources/GetRelatedSourcesQueryHandler.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.GetRelatedSources
+  syntax:
+    content: public GetRelatedSourcesQueryHandler(IRepositoryManager repositoryManager, IMapper mapper)
+    parameters:
+    - id: repositoryManager
+      type: Domain.Managers.IRepositoryManager
+    - id: mapper
+      type: MapsterMapper.IMapper
+    content.vb: Public Sub New(repositoryManager As IRepositoryManager, mapper As IMapper)
+  overload: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.#ctor*
+  nameWithType.vb: GetRelatedSourcesQueryHandler.New(IRepositoryManager, IMapper)
+  fullName.vb: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.New(Domain.Managers.IRepositoryManager, MapsterMapper.IMapper)
+  name.vb: New(IRepositoryManager, IMapper)
+- uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,System.Threading.CancellationToken)
+  commentId: M:Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,System.Threading.CancellationToken)
+  id: Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,System.Threading.CancellationToken)
+  parent: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(GetRelatedSourcesQuery, CancellationToken)
+  nameWithType: GetRelatedSourcesQueryHandler.Handle(GetRelatedSourcesQuery, CancellationToken)
+  fullName: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Tags/Queries/GetRelatedSources/GetRelatedSourcesQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Handle
+    path: src/Application/Tags/Queries/GetRelatedSources/GetRelatedSourcesQueryHandler.cs
+    startLine: 17
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.GetRelatedSources
+  summary: Handles a request
+  example: []
+  syntax:
+    content: public Task<Result<PageResponse<GetRelatedSourcesQueryResult>>> Handle(GetRelatedSourcesQuery request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+      description: The request
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}
+      description: Response from the request
+    content.vb: Public Function Handle(request As GetRelatedSourcesQuery, cancellationToken As CancellationToken) As Task(Of Result(Of PageResponse(Of GetRelatedSourcesQueryResult)))
+  overload: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.Handle*
+  implements:
+  - MediatR.IRequestHandler{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,System.Threading.CancellationToken)
+references:
+- uid: Application.Tags.Queries.GetRelatedSources
+  commentId: N:Application.Tags.Queries.GetRelatedSources
+  href: Application.html
+  name: Application.Tags.Queries.GetRelatedSources
+  nameWithType: Application.Tags.Queries.GetRelatedSources
+  fullName: Application.Tags.Queries.GetRelatedSources
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.GetRelatedSources
+    name: GetRelatedSources
+    href: Application.Tags.Queries.GetRelatedSources.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.GetRelatedSources
+    name: GetRelatedSources
+    href: Application.Tags.Queries.GetRelatedSources.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}
+  commentId: T:MediatR.IRequestHandler{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`2
+  href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery.html
+  name: IRequestHandler<GetRelatedSourcesQuery, Result<PageResponse<GetRelatedSourcesQueryResult>>>
+  nameWithType: IRequestHandler<GetRelatedSourcesQuery, Result<PageResponse<GetRelatedSourcesQueryResult>>>
+  fullName: MediatR.IRequestHandler<Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery, Application.Commons.Models.Results.Result<Application.Commons.Models.Pageination.PageResponse<Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult>>>
+  nameWithType.vb: IRequestHandler(Of GetRelatedSourcesQuery, Result(Of PageResponse(Of GetRelatedSourcesQueryResult)))
+  fullName.vb: MediatR.IRequestHandler(Of Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery, Application.Commons.Models.Results.Result(Of Application.Commons.Models.Pageination.PageResponse(Of Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult)))
+  name.vb: IRequestHandler(Of GetRelatedSourcesQuery, Result(Of PageResponse(Of GetRelatedSourcesQueryResult)))
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+    name: GetRelatedSourcesQuery
+    href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery.html
+  - name: ','
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: <
+  - uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult
+    name: GetRelatedSourcesQueryResult
+    href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+    name: GetRelatedSourcesQuery
+    href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery.html
+  - name: ','
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult
+    name: GetRelatedSourcesQueryResult
+    href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult.html
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`2
+  commentId: T:MediatR.IRequestHandler`2
+  isExternal: true
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.#ctor*
+  commentId: Overload:Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.#ctor
+  href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.html#Application_Tags_Queries_GetRelatedSources_GetRelatedSourcesQueryHandler__ctor_Domain_Managers_IRepositoryManager_MapsterMapper_IMapper_
+  name: GetRelatedSourcesQueryHandler
+  nameWithType: GetRelatedSourcesQueryHandler.GetRelatedSourcesQueryHandler
+  fullName: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.GetRelatedSourcesQueryHandler
+  nameWithType.vb: GetRelatedSourcesQueryHandler.New
+  fullName.vb: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.New
+  name.vb: New
+- uid: Domain.Managers.IRepositoryManager
+  commentId: T:Domain.Managers.IRepositoryManager
+  parent: Domain.Managers
+  href: Domain.Managers.IRepositoryManager.html
+  name: IRepositoryManager
+  nameWithType: IRepositoryManager
+  fullName: Domain.Managers.IRepositoryManager
+- uid: MapsterMapper.IMapper
+  commentId: T:MapsterMapper.IMapper
+  parent: MapsterMapper
+  isExternal: true
+  name: IMapper
+  nameWithType: IMapper
+  fullName: MapsterMapper.IMapper
+- uid: Domain.Managers
+  commentId: N:Domain.Managers
+  href: Domain.html
+  name: Domain.Managers
+  nameWithType: Domain.Managers
+  fullName: Domain.Managers
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Managers
+    name: Managers
+    href: Domain.Managers.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Managers
+    name: Managers
+    href: Domain.Managers.html
+- uid: MapsterMapper
+  commentId: N:MapsterMapper
+  isExternal: true
+  name: MapsterMapper
+  nameWithType: MapsterMapper
+  fullName: MapsterMapper
+- uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.Handle*
+  commentId: Overload:Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.Handle
+  href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.html#Application_Tags_Queries_GetRelatedSources_GetRelatedSourcesQueryHandler_Handle_Application_Tags_Queries_GetRelatedSources_GetRelatedSourcesQuery_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: GetRelatedSourcesQueryHandler.Handle
+  fullName: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.Handle
+- uid: MediatR.IRequestHandler{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}
+  definition: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery.html
+  name: Handle(GetRelatedSourcesQuery, CancellationToken)
+  nameWithType: IRequestHandler<GetRelatedSourcesQuery, Result<PageResponse<GetRelatedSourcesQueryResult>>>.Handle(GetRelatedSourcesQuery, CancellationToken)
+  fullName: MediatR.IRequestHandler<Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery, Application.Commons.Models.Results.Result<Application.Commons.Models.Pageination.PageResponse<Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult>>>.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of GetRelatedSourcesQuery, Result(Of PageResponse(Of GetRelatedSourcesQueryResult))).Handle(GetRelatedSourcesQuery, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery, Application.Commons.Models.Results.Result(Of Application.Commons.Models.Pageination.PageResponse(Of Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult))).Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+    name: GetRelatedSourcesQuery
+    href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}.Handle(Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+    name: GetRelatedSourcesQuery
+    href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+  commentId: T:Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+  parent: Application.Tags.Queries.GetRelatedSources
+  href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery.html
+  name: GetRelatedSourcesQuery
+  nameWithType: GetRelatedSourcesQuery
+  fullName: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}
+  commentId: T:System.Threading.Tasks.Task{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<PageResponse<GetRelatedSourcesQueryResult>>>
+  nameWithType: Task<Result<PageResponse<GetRelatedSourcesQueryResult>>>
+  fullName: System.Threading.Tasks.Task<Application.Commons.Models.Results.Result<Application.Commons.Models.Pageination.PageResponse<Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult>>>
+  nameWithType.vb: Task(Of Result(Of PageResponse(Of GetRelatedSourcesQueryResult)))
+  fullName.vb: System.Threading.Tasks.Task(Of Application.Commons.Models.Results.Result(Of Application.Commons.Models.Pageination.PageResponse(Of Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult)))
+  name.vb: Task(Of Result(Of PageResponse(Of GetRelatedSourcesQueryResult)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: <
+  - uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult
+    name: GetRelatedSourcesQueryResult
+    href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult
+    name: GetRelatedSourcesQueryResult
+    href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult.html
+  - name: )
+  - name: )
+  - name: )
+- uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

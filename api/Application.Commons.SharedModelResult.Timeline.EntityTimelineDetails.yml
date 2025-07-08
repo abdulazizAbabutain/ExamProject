@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails
+  commentId: N:Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails
+  id: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails
+  children:
+  - Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.EntityTimelineDetailsQueryResult
+  - Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.PropertyChangeResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails
+  nameWithType: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails
+  fullName: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.EntityTimelineDetailsQueryResult
+  commentId: T:Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.EntityTimelineDetailsQueryResult
+  href: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.EntityTimelineDetailsQueryResult.html
+  name: EntityTimelineDetailsQueryResult
+  nameWithType: EntityTimelineDetailsQueryResult
+  fullName: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.EntityTimelineDetailsQueryResult
+- uid: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.PropertyChangeResult
+  commentId: T:Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.PropertyChangeResult
+  href: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.PropertyChangeResult.html
+  name: PropertyChangeResult
+  nameWithType: PropertyChangeResult
+  fullName: Application.Commons.SharedModelResult.Timeline.EntityTimelineDetails.PropertyChangeResult

@@ -1,0 +1,809 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Behaviors.LoggingBehavior`2
+  commentId: T:Application.Commons.Behaviors.LoggingBehavior`2
+  id: LoggingBehavior`2
+  parent: Application.Commons.Behaviors
+  children:
+  - Application.Commons.Behaviors.LoggingBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Application.Commons.Behaviors.LoggingBehavior{`0,`1}})
+  - Application.Commons.Behaviors.LoggingBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: LoggingBehavior<TRequest, TResponse>
+  nameWithType: LoggingBehavior<TRequest, TResponse>
+  fullName: Application.Commons.Behaviors.LoggingBehavior<TRequest, TResponse>
+  type: Class
+  source:
+    remote:
+      path: src/Application/Commons/Behaviors/LoggingBehavior.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: LoggingBehavior
+    path: src/Application/Commons/Behaviors/LoggingBehavior.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Commons.Behaviors
+  syntax:
+    content: 'public class LoggingBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : notnull'
+    typeParameters:
+    - id: TRequest
+    - id: TResponse
+    content.vb: Public Class LoggingBehavior(Of TRequest, TResponse) Implements IPipelineBehavior(Of TRequest, TResponse)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IPipelineBehavior{{TRequest},{TResponse}}
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+  nameWithType.vb: LoggingBehavior(Of TRequest, TResponse)
+  fullName.vb: Application.Commons.Behaviors.LoggingBehavior(Of TRequest, TResponse)
+  name.vb: LoggingBehavior(Of TRequest, TResponse)
+- uid: Application.Commons.Behaviors.LoggingBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Application.Commons.Behaviors.LoggingBehavior{`0,`1}})
+  commentId: M:Application.Commons.Behaviors.LoggingBehavior`2.#ctor(Microsoft.Extensions.Logging.ILogger{Application.Commons.Behaviors.LoggingBehavior{`0,`1}})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Application.Commons.Behaviors.LoggingBehavior{`0,`1}})'
+  parent: Application.Commons.Behaviors.LoggingBehavior`2
+  langs:
+  - csharp
+  - vb
+  name: LoggingBehavior(ILogger<LoggingBehavior<TRequest, TResponse>>)
+  nameWithType: LoggingBehavior<TRequest, TResponse>.LoggingBehavior(ILogger<LoggingBehavior<TRequest, TResponse>>)
+  fullName: Application.Commons.Behaviors.LoggingBehavior<TRequest, TResponse>.LoggingBehavior(Microsoft.Extensions.Logging.ILogger<Application.Commons.Behaviors.LoggingBehavior<TRequest, TResponse>>)
+  type: Constructor
+  source:
+    remote:
+      path: src/Application/Commons/Behaviors/LoggingBehavior.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Application/Commons/Behaviors/LoggingBehavior.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Commons.Behaviors
+  syntax:
+    content: public LoggingBehavior(ILogger<LoggingBehavior<TRequest, TResponse>> logger)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Application.Commons.Behaviors.LoggingBehavior`2}
+    content.vb: Public Sub New(logger As ILogger(Of LoggingBehavior(Of TRequest, TResponse)))
+  overload: Application.Commons.Behaviors.LoggingBehavior`2.#ctor*
+  nameWithType.vb: LoggingBehavior(Of TRequest, TResponse).New(ILogger(Of LoggingBehavior(Of TRequest, TResponse)))
+  fullName.vb: Application.Commons.Behaviors.LoggingBehavior(Of TRequest, TResponse).New(Microsoft.Extensions.Logging.ILogger(Of Application.Commons.Behaviors.LoggingBehavior(Of TRequest, TResponse)))
+  name.vb: New(ILogger(Of LoggingBehavior(Of TRequest, TResponse)))
+- uid: Application.Commons.Behaviors.LoggingBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+  commentId: M:Application.Commons.Behaviors.LoggingBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+  id: Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+  parent: Application.Commons.Behaviors.LoggingBehavior`2
+  langs:
+  - csharp
+  - vb
+  name: Handle(TRequest, RequestHandlerDelegate<TResponse>, CancellationToken)
+  nameWithType: LoggingBehavior<TRequest, TResponse>.Handle(TRequest, RequestHandlerDelegate<TResponse>, CancellationToken)
+  fullName: Application.Commons.Behaviors.LoggingBehavior<TRequest, TResponse>.Handle(TRequest, MediatR.RequestHandlerDelegate<TResponse>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Behaviors/LoggingBehavior.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Handle
+    path: src/Application/Commons/Behaviors/LoggingBehavior.cs
+    startLine: 15
+  assemblies:
+  - Application
+  namespace: Application.Commons.Behaviors
+  summary: Pipeline handler. Perform any additional behavior and await the <code class="paramref">next</code> delegate as necessary
+  example: []
+  syntax:
+    content: public Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: '{TRequest}'
+      description: Incoming request
+    - id: next
+      type: MediatR.RequestHandlerDelegate{{TResponse}}
+      description: Awaitable delegate for the next action in the pipeline. Eventually this delegate represents the handler.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{{TResponse}}
+      description: Awaitable task returning the <code class="typeparamref">TResponse</code>
+    content.vb: Public Function Handle(request As TRequest, [next] As RequestHandlerDelegate(Of TResponse), cancellationToken As CancellationToken) As Task(Of TResponse)
+  overload: Application.Commons.Behaviors.LoggingBehavior`2.Handle*
+  implements:
+  - MediatR.IPipelineBehavior{{TRequest},{TResponse}}.Handle({TRequest},MediatR.RequestHandlerDelegate{{TResponse}},System.Threading.CancellationToken)
+  nameWithType.vb: LoggingBehavior(Of TRequest, TResponse).Handle(TRequest, RequestHandlerDelegate(Of TResponse), CancellationToken)
+  fullName.vb: Application.Commons.Behaviors.LoggingBehavior(Of TRequest, TResponse).Handle(TRequest, MediatR.RequestHandlerDelegate(Of TResponse), System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, RequestHandlerDelegate(Of TResponse), CancellationToken)
+references:
+- uid: Application.Commons.Behaviors
+  commentId: N:Application.Commons.Behaviors
+  href: Application.html
+  name: Application.Commons.Behaviors
+  nameWithType: Application.Commons.Behaviors
+  fullName: Application.Commons.Behaviors
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Behaviors
+    name: Behaviors
+    href: Application.Commons.Behaviors.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Behaviors
+    name: Behaviors
+    href: Application.Commons.Behaviors.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IPipelineBehavior{{TRequest},{TResponse}}
+  commentId: T:MediatR.IPipelineBehavior{`0,`1}
+  parent: MediatR
+  definition: MediatR.IPipelineBehavior`2
+  name: IPipelineBehavior<TRequest, TResponse>
+  nameWithType: IPipelineBehavior<TRequest, TResponse>
+  fullName: MediatR.IPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: IPipelineBehavior(Of TRequest, TResponse)
+  fullName.vb: MediatR.IPipelineBehavior(Of TRequest, TResponse)
+  name.vb: IPipelineBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IPipelineBehavior`2
+    name: IPipelineBehavior
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IPipelineBehavior`2
+    name: IPipelineBehavior
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IPipelineBehavior`2
+  commentId: T:MediatR.IPipelineBehavior`2
+  isExternal: true
+  name: IPipelineBehavior<TRequest, TResponse>
+  nameWithType: IPipelineBehavior<TRequest, TResponse>
+  fullName: MediatR.IPipelineBehavior<TRequest, TResponse>
+  nameWithType.vb: IPipelineBehavior(Of TRequest, TResponse)
+  fullName.vb: MediatR.IPipelineBehavior(Of TRequest, TResponse)
+  name.vb: IPipelineBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IPipelineBehavior`2
+    name: IPipelineBehavior
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IPipelineBehavior`2
+    name: IPipelineBehavior
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Commons.Behaviors.LoggingBehavior`2.#ctor*
+  commentId: Overload:Application.Commons.Behaviors.LoggingBehavior`2.#ctor
+  href: Application.Commons.Behaviors.LoggingBehavior-2.html#Application_Commons_Behaviors_LoggingBehavior_2__ctor_Microsoft_Extensions_Logging_ILogger_Application_Commons_Behaviors_LoggingBehavior__0__1___
+  name: LoggingBehavior
+  nameWithType: LoggingBehavior<TRequest, TResponse>.LoggingBehavior
+  fullName: Application.Commons.Behaviors.LoggingBehavior<TRequest, TResponse>.LoggingBehavior
+  nameWithType.vb: LoggingBehavior(Of TRequest, TResponse).New
+  fullName.vb: Application.Commons.Behaviors.LoggingBehavior(Of TRequest, TResponse).New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{Application.Commons.Behaviors.LoggingBehavior`2}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Application.Commons.Behaviors.LoggingBehavior`2}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<LoggingBehavior<TRequest, TResponse>>
+  nameWithType: ILogger<LoggingBehavior<TRequest, TResponse>>
+  fullName: Microsoft.Extensions.Logging.ILogger<Application.Commons.Behaviors.LoggingBehavior<TRequest, TResponse>>
+  nameWithType.vb: ILogger(Of LoggingBehavior(Of TRequest, TResponse))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Application.Commons.Behaviors.LoggingBehavior(Of TRequest, TResponse))
+  name.vb: ILogger(Of LoggingBehavior(Of TRequest, TResponse))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Application.Commons.Behaviors.LoggingBehavior`2
+    name: LoggingBehavior
+    href: Application.Commons.Behaviors.LoggingBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Behaviors.LoggingBehavior`2
+    name: LoggingBehavior
+    href: Application.Commons.Behaviors.LoggingBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Application.Commons.Behaviors.LoggingBehavior`2.Handle*
+  commentId: Overload:Application.Commons.Behaviors.LoggingBehavior`2.Handle
+  href: Application.Commons.Behaviors.LoggingBehavior-2.html#Application_Commons_Behaviors_LoggingBehavior_2_Handle__0_MediatR_RequestHandlerDelegate__1__System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: LoggingBehavior<TRequest, TResponse>.Handle
+  fullName: Application.Commons.Behaviors.LoggingBehavior<TRequest, TResponse>.Handle
+  nameWithType.vb: LoggingBehavior(Of TRequest, TResponse).Handle
+  fullName.vb: Application.Commons.Behaviors.LoggingBehavior(Of TRequest, TResponse).Handle
+- uid: MediatR.IPipelineBehavior{{TRequest},{TResponse}}.Handle({TRequest},MediatR.RequestHandlerDelegate{{TResponse}},System.Threading.CancellationToken)
+  commentId: M:MediatR.IPipelineBehavior{`0,`1}.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+  parent: MediatR.IPipelineBehavior{{TRequest},{TResponse}}
+  definition: MediatR.IPipelineBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, RequestHandlerDelegate<TResponse>, CancellationToken)
+  nameWithType: IPipelineBehavior<TRequest, TResponse>.Handle(TRequest, RequestHandlerDelegate<TResponse>, CancellationToken)
+  fullName: MediatR.IPipelineBehavior<TRequest, TResponse>.Handle(TRequest, MediatR.RequestHandlerDelegate<TResponse>, System.Threading.CancellationToken)
+  nameWithType.vb: IPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, RequestHandlerDelegate(Of TResponse), CancellationToken)
+  fullName.vb: MediatR.IPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, MediatR.RequestHandlerDelegate(Of TResponse), System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, RequestHandlerDelegate(Of TResponse), CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IPipelineBehavior{`0,`1}.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: MediatR.RequestHandlerDelegate`1
+    name: RequestHandlerDelegate
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IPipelineBehavior{`0,`1}.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: MediatR.RequestHandlerDelegate`1
+    name: RequestHandlerDelegate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: '{TRequest}'
+  commentId: '!:TRequest'
+  definition: TRequest
+  name: TRequest
+  nameWithType: TRequest
+  fullName: TRequest
+- uid: MediatR.RequestHandlerDelegate{{TResponse}}
+  commentId: T:MediatR.RequestHandlerDelegate{`1}
+  parent: MediatR
+  definition: MediatR.RequestHandlerDelegate`1
+  name: RequestHandlerDelegate<TResponse>
+  nameWithType: RequestHandlerDelegate<TResponse>
+  fullName: MediatR.RequestHandlerDelegate<TResponse>
+  nameWithType.vb: RequestHandlerDelegate(Of TResponse)
+  fullName.vb: MediatR.RequestHandlerDelegate(Of TResponse)
+  name.vb: RequestHandlerDelegate(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.RequestHandlerDelegate`1
+    name: RequestHandlerDelegate
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.RequestHandlerDelegate`1
+    name: RequestHandlerDelegate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{{TResponse}}
+  commentId: T:System.Threading.Tasks.Task{`1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResponse>
+  nameWithType: Task<TResponse>
+  fullName: System.Threading.Tasks.Task<TResponse>
+  nameWithType.vb: Task(Of TResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of TResponse)
+  name.vb: Task(Of TResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR.IPipelineBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+  commentId: M:MediatR.IPipelineBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, RequestHandlerDelegate<TResponse>, CancellationToken)
+  nameWithType: IPipelineBehavior<TRequest, TResponse>.Handle(TRequest, RequestHandlerDelegate<TResponse>, CancellationToken)
+  fullName: MediatR.IPipelineBehavior<TRequest, TResponse>.Handle(TRequest, MediatR.RequestHandlerDelegate<TResponse>, System.Threading.CancellationToken)
+  nameWithType.vb: IPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, RequestHandlerDelegate(Of TResponse), CancellationToken)
+  fullName.vb: MediatR.IPipelineBehavior(Of TRequest, TResponse).Handle(TRequest, MediatR.RequestHandlerDelegate(Of TResponse), System.Threading.CancellationToken)
+  name.vb: Handle(TRequest, RequestHandlerDelegate(Of TResponse), CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IPipelineBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: MediatR.RequestHandlerDelegate`1
+    name: RequestHandlerDelegate
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IPipelineBehavior`2.Handle(`0,MediatR.RequestHandlerDelegate{`1},System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: MediatR.RequestHandlerDelegate`1
+    name: RequestHandlerDelegate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: TRequest
+  name: TRequest
+  nameWithType: TRequest
+  fullName: TRequest
+- uid: MediatR.RequestHandlerDelegate`1
+  commentId: T:MediatR.RequestHandlerDelegate`1
+  isExternal: true
+  name: RequestHandlerDelegate<TResponse>
+  nameWithType: RequestHandlerDelegate<TResponse>
+  fullName: MediatR.RequestHandlerDelegate<TResponse>
+  nameWithType.vb: RequestHandlerDelegate(Of TResponse)
+  fullName.vb: MediatR.RequestHandlerDelegate(Of TResponse)
+  name.vb: RequestHandlerDelegate(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.RequestHandlerDelegate`1
+    name: RequestHandlerDelegate
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.RequestHandlerDelegate`1
+    name: RequestHandlerDelegate
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

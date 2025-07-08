@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  commentId: N:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  id: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  children:
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  nameWithType: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+  commentId: T:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery.html
+  name: GetDeletedEntitiesQuery
+  nameWithType: GetDeletedEntitiesQuery
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler
+  commentId: T:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.html
+  name: GetDeletedEntitiesQueryHandler
+  nameWithType: GetDeletedEntitiesQueryHandler
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  commentId: T:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html
+  name: GetDeletedEntitiesQueryResult
+  nameWithType: GetDeletedEntitiesQueryResult
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  commentId: N:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  href: Application.html
+  name: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  nameWithType: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Auditing
+    name: Auditing
+    href: Application.Auditing.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog
+    name: EntitiesLog
+    href: Application.Auditing.EntitiesLog.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries
+    name: Queries
+    href: Application.Auditing.EntitiesLog.Queries.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+    name: GetDeletedEntities
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Auditing
+    name: Auditing
+    href: Application.Auditing.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog
+    name: EntitiesLog
+    href: Application.Auditing.EntitiesLog.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries
+    name: Queries
+    href: Application.Auditing.EntitiesLog.Queries.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+    name: GetDeletedEntities
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.html

@@ -1,0 +1,1489 @@
+### YamlMime:ManagedReference
+items:
+- uid: API.Controllers.V1.SourceController
+  commentId: T:API.Controllers.V1.SourceController
+  id: SourceController
+  parent: API.Controllers.V1
+  children:
+  - API.Controllers.V1.SourceController.#ctor(MediatR.IMediator,API.Interfaces.IHttpResultResponder)
+  - API.Controllers.V1.SourceController.AddBulkNewTags(System.Guid,Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand)
+  - API.Controllers.V1.SourceController.AddNewTag(System.Guid,System.Guid)
+  - API.Controllers.V1.SourceController.AddReference(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  - API.Controllers.V1.SourceController.AddSource(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  - API.Controllers.V1.SourceController.GetAllSources(Application.Sources.Queries.GetAllSources.GetAllSourceQuery)
+  - API.Controllers.V1.SourceController.GetSourceById(System.Guid)
+  - API.Controllers.V1.SourceController.GetSourceTimeline(System.Guid,Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery)
+  - API.Controllers.V1.SourceController.GetSourceTimelineDetails(System.Guid,System.Guid,Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery)
+  - API.Controllers.V1.SourceController.RemoveTag(Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand)
+  - API.Controllers.V1.SourceController.RemoveTag(System.Guid,Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand)
+  langs:
+  - csharp
+  - vb
+  name: SourceController
+  nameWithType: SourceController
+  fullName: API.Controllers.V1.SourceController
+  type: Class
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: SourceController
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 21
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Route("api/source")]
+
+      public class SourceController : ControllerBase
+    content.vb: >-
+      <Route("api/source")>
+
+      Public Class SourceController Inherits ControllerBase
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Mvc.ControllerBase
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/source
+- uid: API.Controllers.V1.SourceController.#ctor(MediatR.IMediator,API.Interfaces.IHttpResultResponder)
+  commentId: M:API.Controllers.V1.SourceController.#ctor(MediatR.IMediator,API.Interfaces.IHttpResultResponder)
+  id: '#ctor(MediatR.IMediator,API.Interfaces.IHttpResultResponder)'
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: SourceController(IMediator, IHttpResultResponder)
+  nameWithType: SourceController.SourceController(IMediator, IHttpResultResponder)
+  fullName: API.Controllers.V1.SourceController.SourceController(MediatR.IMediator, API.Interfaces.IHttpResultResponder)
+  type: Constructor
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 21
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: public SourceController(IMediator mediator, IHttpResultResponder resultResponder)
+    parameters:
+    - id: mediator
+      type: MediatR.IMediator
+      description: ''
+    - id: resultResponder
+      type: API.Interfaces.IHttpResultResponder
+    content.vb: Public Sub New(mediator As IMediator, resultResponder As IHttpResultResponder)
+  overload: API.Controllers.V1.SourceController.#ctor*
+  nameWithType.vb: SourceController.New(IMediator, IHttpResultResponder)
+  fullName.vb: API.Controllers.V1.SourceController.New(MediatR.IMediator, API.Interfaces.IHttpResultResponder)
+  name.vb: New(IMediator, IHttpResultResponder)
+- uid: API.Controllers.V1.SourceController.AddSource(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  commentId: M:API.Controllers.V1.SourceController.AddSource(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  id: AddSource(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: AddSource(AddSourceCommand)
+  nameWithType: SourceController.AddSource(AddSourceCommand)
+  fullName: API.Controllers.V1.SourceController.AddSource(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddSource
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 32
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpPost(Name = "AddSource")]
+
+      public Task<IActionResult> AddSource(AddSourceCommand command)
+    parameters:
+    - id: command
+      type: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpPost(Name:="AddSource")>
+
+      Public Function AddSource(command As AddSourceCommand) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.AddSource*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: AddSource
+- uid: API.Controllers.V1.SourceController.AddReference(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  commentId: M:API.Controllers.V1.SourceController.AddReference(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  id: AddReference(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: AddReference(AddSourceCommand)
+  nameWithType: SourceController.AddReference(AddSourceCommand)
+  fullName: API.Controllers.V1.SourceController.AddReference(Application.Sources.Commands.AddSource.Requests.AddSourceCommand)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddReference
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 40
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpPost("{id:guid}/reference", Name = "AddReference")]
+
+      public Task<IActionResult> AddReference(AddSourceCommand command)
+    parameters:
+    - id: command
+      type: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpPost("{id:guid}/reference", Name:="AddReference")>
+
+      Public Function AddReference(command As AddSourceCommand) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.AddReference*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{id:guid}/reference'
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: AddReference
+- uid: API.Controllers.V1.SourceController.GetAllSources(Application.Sources.Queries.GetAllSources.GetAllSourceQuery)
+  commentId: M:API.Controllers.V1.SourceController.GetAllSources(Application.Sources.Queries.GetAllSources.GetAllSourceQuery)
+  id: GetAllSources(Application.Sources.Queries.GetAllSources.GetAllSourceQuery)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: GetAllSources(GetAllSourceQuery)
+  nameWithType: SourceController.GetAllSources(GetAllSourceQuery)
+  fullName: API.Controllers.V1.SourceController.GetAllSources(Application.Sources.Queries.GetAllSources.GetAllSourceQuery)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAllSources
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 51
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpGet(Name = "GetAllSources")]
+
+      [ProducesResponseType(200, Type = typeof(PageResponse<GetAllSourceQueryResult>))]
+
+      public Task<IActionResult> GetAllSources(GetAllSourceQuery query)
+    parameters:
+    - id: query
+      type: Application.Sources.Queries.GetAllSources.GetAllSourceQuery
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpGet(Name:="GetAllSources")>
+
+      <ProducesResponseType(200, Type:=GetType(PageResponse(Of GetAllSourceQueryResult)))>
+
+      Public Function GetAllSources(query As GetAllSourceQuery) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.GetAllSources*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: GetAllSources
+  - type: Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 200
+    namedArguments:
+    - name: Type
+      type: System.Type
+      value: Application.Commons.Models.Pageination.PageResponse{Application.Sources.Queries.GetAllSources.GetAllSourceQueryResult}
+- uid: API.Controllers.V1.SourceController.AddNewTag(System.Guid,System.Guid)
+  commentId: M:API.Controllers.V1.SourceController.AddNewTag(System.Guid,System.Guid)
+  id: AddNewTag(System.Guid,System.Guid)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: AddNewTag(Guid, Guid)
+  nameWithType: SourceController.AddNewTag(Guid, Guid)
+  fullName: API.Controllers.V1.SourceController.AddNewTag(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddNewTag
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 59
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  syntax:
+    content: >-
+      [HttpPost("{sourceId:guid}/tag/{tagId:guid}")]
+
+      public Task<IActionResult> AddNewTag(Guid sourceId, Guid tagId)
+    parameters:
+    - id: sourceId
+      type: System.Guid
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    - id: tagId
+      type: System.Guid
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpPost("{sourceId:guid}/tag/{tagId:guid}")>
+
+      Public Function AddNewTag(sourceId As Guid, tagId As Guid) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.AddNewTag*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{sourceId:guid}/tag/{tagId:guid}'
+- uid: API.Controllers.V1.SourceController.AddBulkNewTags(System.Guid,Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand)
+  commentId: M:API.Controllers.V1.SourceController.AddBulkNewTags(System.Guid,Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand)
+  id: AddBulkNewTags(System.Guid,Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: AddBulkNewTags(Guid, AddBulkTagsToSourceCommand)
+  nameWithType: SourceController.AddBulkNewTags(Guid, AddBulkTagsToSourceCommand)
+  fullName: API.Controllers.V1.SourceController.AddBulkNewTags(System.Guid, Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddBulkNewTags
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 65
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  syntax:
+    content: >-
+      [HttpPost("{sourceId:guid}/tag/bulk")]
+
+      public Task<IActionResult> AddBulkNewTags(Guid sourceId, AddBulkTagsToSourceCommand command)
+    parameters:
+    - id: sourceId
+      type: System.Guid
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    - id: command
+      type: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpPost("{sourceId:guid}/tag/bulk")>
+
+      Public Function AddBulkNewTags(sourceId As Guid, command As AddBulkTagsToSourceCommand) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.AddBulkNewTags*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{sourceId:guid}/tag/bulk'
+- uid: API.Controllers.V1.SourceController.RemoveTag(Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand)
+  commentId: M:API.Controllers.V1.SourceController.RemoveTag(Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand)
+  id: RemoveTag(Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: RemoveTag(RemoveTagFromSourceCommand)
+  nameWithType: SourceController.RemoveTag(RemoveTagFromSourceCommand)
+  fullName: API.Controllers.V1.SourceController.RemoveTag(Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RemoveTag
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 73
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  syntax:
+    content: >-
+      [HttpDelete("{sourceId:guid}/tag/{tagId:guid}")]
+
+      public Task<IActionResult> RemoveTag(RemoveTagFromSourceCommand command)
+    parameters:
+    - id: command
+      type: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpDelete("{sourceId:guid}/tag/{tagId:guid}")>
+
+      Public Function RemoveTag(command As RemoveTagFromSourceCommand) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.RemoveTag*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{sourceId:guid}/tag/{tagId:guid}'
+- uid: API.Controllers.V1.SourceController.RemoveTag(System.Guid,Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand)
+  commentId: M:API.Controllers.V1.SourceController.RemoveTag(System.Guid,Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand)
+  id: RemoveTag(System.Guid,Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: RemoveTag(Guid, RemoveBulkTagFromSourceCommand)
+  nameWithType: SourceController.RemoveTag(Guid, RemoveBulkTagFromSourceCommand)
+  fullName: API.Controllers.V1.SourceController.RemoveTag(System.Guid, Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RemoveTag
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 81
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  syntax:
+    content: >-
+      [HttpDelete("{sourceId:guid}/tag/bulk")]
+
+      public Task<IActionResult> RemoveTag(Guid sourceId, RemoveBulkTagFromSourceCommand command)
+    parameters:
+    - id: sourceId
+      type: System.Guid
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    - id: command
+      type: Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpDelete("{sourceId:guid}/tag/bulk")>
+
+      Public Function RemoveTag(sourceId As Guid, command As RemoveBulkTagFromSourceCommand) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.RemoveTag*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{sourceId:guid}/tag/bulk'
+- uid: API.Controllers.V1.SourceController.GetSourceById(System.Guid)
+  commentId: M:API.Controllers.V1.SourceController.GetSourceById(System.Guid)
+  id: GetSourceById(System.Guid)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: GetSourceById(Guid)
+  nameWithType: SourceController.GetSourceById(Guid)
+  fullName: API.Controllers.V1.SourceController.GetSourceById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetSourceById
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 96
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpGet("{id:guid}", Name = "GetSourceById")]
+
+      [ProducesResponseType(200, Type = typeof(PageResponse<GetSourceByIdQueryResult>))]
+
+      public Task<IActionResult> GetSourceById(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpGet("{id:guid}", Name:="GetSourceById")>
+
+      <ProducesResponseType(200, Type:=GetType(PageResponse(Of GetSourceByIdQueryResult)))>
+
+      Public Function GetSourceById(id As Guid) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.GetSourceById*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{id:guid}'
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: GetSourceById
+  - type: Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ProducesResponseTypeAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 200
+    namedArguments:
+    - name: Type
+      type: System.Type
+      value: Application.Commons.Models.Pageination.PageResponse{Application.Sources.Queries.GetSourceById.GetSourceByIdQueryResult}
+- uid: API.Controllers.V1.SourceController.GetSourceTimeline(System.Guid,Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery)
+  commentId: M:API.Controllers.V1.SourceController.GetSourceTimeline(System.Guid,Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery)
+  id: GetSourceTimeline(System.Guid,Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: GetSourceTimeline(Guid, GetEntityTimelineQuery)
+  nameWithType: SourceController.GetSourceTimeline(Guid, GetEntityTimelineQuery)
+  fullName: API.Controllers.V1.SourceController.GetSourceTimeline(System.Guid, Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetSourceTimeline
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 104
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  syntax:
+    content: >-
+      [HttpGet("{id:guid}/timeline", Name = "GetSourceTimeline")]
+
+      [EndpointName("GetSourceTimeline")]
+
+      [EndpointSummary("Tag Timeline")]
+
+      [EndpointDescription("get the timeline for tag")]
+
+      public Task<IActionResult> GetSourceTimeline(Guid id, GetEntityTimelineQuery query)
+    parameters:
+    - id: id
+      type: System.Guid
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    - id: query
+      type: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpGet("{id:guid}/timeline", Name:="GetSourceTimeline")>
+
+      <EndpointName("GetSourceTimeline")>
+
+      <EndpointSummary("Tag Timeline")>
+
+      <EndpointDescription("get the timeline for tag")>
+
+      Public Function GetSourceTimeline(id As Guid, query As GetEntityTimelineQuery) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.GetSourceTimeline*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{id:guid}/timeline'
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: GetSourceTimeline
+  - type: Microsoft.AspNetCore.Routing.EndpointNameAttribute
+    ctor: Microsoft.AspNetCore.Routing.EndpointNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GetSourceTimeline
+  - type: Microsoft.AspNetCore.Http.EndpointSummaryAttribute
+    ctor: Microsoft.AspNetCore.Http.EndpointSummaryAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Tag Timeline
+  - type: Microsoft.AspNetCore.Http.EndpointDescriptionAttribute
+    ctor: Microsoft.AspNetCore.Http.EndpointDescriptionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: get the timeline for tag
+- uid: API.Controllers.V1.SourceController.GetSourceTimelineDetails(System.Guid,System.Guid,Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery)
+  commentId: M:API.Controllers.V1.SourceController.GetSourceTimelineDetails(System.Guid,System.Guid,Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery)
+  id: GetSourceTimelineDetails(System.Guid,System.Guid,Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery)
+  parent: API.Controllers.V1.SourceController
+  langs:
+  - csharp
+  - vb
+  name: GetSourceTimelineDetails(Guid, Guid, EntityTimelineDetailsQuery)
+  nameWithType: SourceController.GetSourceTimelineDetails(Guid, Guid, EntityTimelineDetailsQuery)
+  fullName: API.Controllers.V1.SourceController.GetSourceTimelineDetails(System.Guid, System.Guid, Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/SourceController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetSourceTimelineDetails
+    path: src/API/Controllers/V1/SourceController.cs
+    startLine: 115
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  syntax:
+    content: >-
+      [HttpGet("{id:guid}/timeline/{timelineId:guid}", Name = "GetSourceTimelineDetails")]
+
+      [EndpointName("GetSourceTimelineDetails")]
+
+      [EndpointSummary("Tag Timeline details")]
+
+      [EndpointDescription("get the timeline for tag")]
+
+      public Task<IActionResult> GetSourceTimelineDetails(Guid id, Guid timelineId, EntityTimelineDetailsQuery query)
+    parameters:
+    - id: id
+      type: System.Guid
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    - id: timelineId
+      type: System.Guid
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    - id: query
+      type: Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+    content.vb: >-
+      <HttpGet("{id:guid}/timeline/{timelineId:guid}", Name:="GetSourceTimelineDetails")>
+
+      <EndpointName("GetSourceTimelineDetails")>
+
+      <EndpointSummary("Tag Timeline details")>
+
+      <EndpointDescription("get the timeline for tag")>
+
+      Public Function GetSourceTimelineDetails(id As Guid, timelineId As Guid, query As EntityTimelineDetailsQuery) As Task(Of IActionResult)
+  overload: API.Controllers.V1.SourceController.GetSourceTimelineDetails*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{id:guid}/timeline/{timelineId:guid}'
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: GetSourceTimelineDetails
+  - type: Microsoft.AspNetCore.Routing.EndpointNameAttribute
+    ctor: Microsoft.AspNetCore.Routing.EndpointNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: GetSourceTimelineDetails
+  - type: Microsoft.AspNetCore.Http.EndpointSummaryAttribute
+    ctor: Microsoft.AspNetCore.Http.EndpointSummaryAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Tag Timeline details
+  - type: Microsoft.AspNetCore.Http.EndpointDescriptionAttribute
+    ctor: Microsoft.AspNetCore.Http.EndpointDescriptionAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: get the timeline for tag
+references:
+- uid: API.Controllers.V1
+  commentId: N:API.Controllers.V1
+  href: API.html
+  name: API.Controllers.V1
+  nameWithType: API.Controllers.V1
+  fullName: API.Controllers.V1
+  spec.csharp:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Controllers
+    name: Controllers
+    href: API.Controllers.html
+  - name: .
+  - uid: API.Controllers.V1
+    name: V1
+    href: API.Controllers.V1.html
+  spec.vb:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Controllers
+    name: Controllers
+    href: API.Controllers.html
+  - name: .
+  - uid: API.Controllers.V1
+    name: V1
+    href: API.Controllers.V1.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Mvc.ControllerBase
+  commentId: T:Microsoft.AspNetCore.Mvc.ControllerBase
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: ControllerBase
+  nameWithType: ControllerBase
+  fullName: Microsoft.AspNetCore.Mvc.ControllerBase
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: API.Controllers.V1.SourceController.#ctor*
+  commentId: Overload:API.Controllers.V1.SourceController.#ctor
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController__ctor_MediatR_IMediator_API_Interfaces_IHttpResultResponder_
+  name: SourceController
+  nameWithType: SourceController.SourceController
+  fullName: API.Controllers.V1.SourceController.SourceController
+  nameWithType.vb: SourceController.New
+  fullName.vb: API.Controllers.V1.SourceController.New
+  name.vb: New
+- uid: MediatR.IMediator
+  commentId: T:MediatR.IMediator
+  parent: MediatR
+  isExternal: true
+  name: IMediator
+  nameWithType: IMediator
+  fullName: MediatR.IMediator
+- uid: API.Interfaces.IHttpResultResponder
+  commentId: T:API.Interfaces.IHttpResultResponder
+  parent: API.Interfaces
+  href: API.Interfaces.IHttpResultResponder.html
+  name: IHttpResultResponder
+  nameWithType: IHttpResultResponder
+  fullName: API.Interfaces.IHttpResultResponder
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: API.Interfaces
+  commentId: N:API.Interfaces
+  href: API.html
+  name: API.Interfaces
+  nameWithType: API.Interfaces
+  fullName: API.Interfaces
+  spec.csharp:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Interfaces
+    name: Interfaces
+    href: API.Interfaces.html
+  spec.vb:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Interfaces
+    name: Interfaces
+    href: API.Interfaces.html
+- uid: API.Controllers.V1.SourceController.AddSource*
+  commentId: Overload:API.Controllers.V1.SourceController.AddSource
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController_AddSource_Application_Sources_Commands_AddSource_Requests_AddSourceCommand_
+  name: AddSource
+  nameWithType: SourceController.AddSource
+  fullName: API.Controllers.V1.SourceController.AddSource
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  commentId: T:Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  parent: Application.Sources.Commands.AddSource.Requests
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html
+  name: AddSourceCommand
+  nameWithType: AddSourceCommand
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+- uid: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IActionResult>
+  nameWithType: Task<IActionResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.IActionResult>
+  nameWithType.vb: Task(Of IActionResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.AspNetCore.Mvc.IActionResult)
+  name.vb: Task(Of IActionResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: )
+- uid: Application.Sources.Commands.AddSource.Requests
+  commentId: N:Application.Sources.Commands.AddSource.Requests
+  href: Application.html
+  name: Application.Sources.Commands.AddSource.Requests
+  nameWithType: Application.Sources.Commands.AddSource.Requests
+  fullName: Application.Sources.Commands.AddSource.Requests
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource
+    name: AddSource
+    href: Application.Sources.Commands.AddSource.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource.Requests
+    name: Requests
+    href: Application.Sources.Commands.AddSource.Requests.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource
+    name: AddSource
+    href: Application.Sources.Commands.AddSource.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource.Requests
+    name: Requests
+    href: Application.Sources.Commands.AddSource.Requests.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: API.Controllers.V1.SourceController.AddReference*
+  commentId: Overload:API.Controllers.V1.SourceController.AddReference
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController_AddReference_Application_Sources_Commands_AddSource_Requests_AddSourceCommand_
+  name: AddReference
+  nameWithType: SourceController.AddReference
+  fullName: API.Controllers.V1.SourceController.AddReference
+- uid: API.Controllers.V1.SourceController.GetAllSources*
+  commentId: Overload:API.Controllers.V1.SourceController.GetAllSources
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController_GetAllSources_Application_Sources_Queries_GetAllSources_GetAllSourceQuery_
+  name: GetAllSources
+  nameWithType: SourceController.GetAllSources
+  fullName: API.Controllers.V1.SourceController.GetAllSources
+- uid: Application.Sources.Queries.GetAllSources.GetAllSourceQuery
+  commentId: T:Application.Sources.Queries.GetAllSources.GetAllSourceQuery
+  parent: Application.Sources.Queries.GetAllSources
+  href: Application.Sources.Queries.GetAllSources.GetAllSourceQuery.html
+  name: GetAllSourceQuery
+  nameWithType: GetAllSourceQuery
+  fullName: Application.Sources.Queries.GetAllSources.GetAllSourceQuery
+- uid: Application.Sources.Queries.GetAllSources
+  commentId: N:Application.Sources.Queries.GetAllSources
+  href: Application.html
+  name: Application.Sources.Queries.GetAllSources
+  nameWithType: Application.Sources.Queries.GetAllSources
+  fullName: Application.Sources.Queries.GetAllSources
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Queries
+    name: Queries
+    href: Application.Sources.Queries.html
+  - name: .
+  - uid: Application.Sources.Queries.GetAllSources
+    name: GetAllSources
+    href: Application.Sources.Queries.GetAllSources.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Queries
+    name: Queries
+    href: Application.Sources.Queries.html
+  - name: .
+  - uid: Application.Sources.Queries.GetAllSources
+    name: GetAllSources
+    href: Application.Sources.Queries.GetAllSources.html
+- uid: API.Controllers.V1.SourceController.AddNewTag*
+  commentId: Overload:API.Controllers.V1.SourceController.AddNewTag
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController_AddNewTag_System_Guid_System_Guid_
+  name: AddNewTag
+  nameWithType: SourceController.AddNewTag
+  fullName: API.Controllers.V1.SourceController.AddNewTag
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: API.Controllers.V1.SourceController.AddBulkNewTags*
+  commentId: Overload:API.Controllers.V1.SourceController.AddBulkNewTags
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController_AddBulkNewTags_System_Guid_Application_Sources_Commands_AddBulkTagsToSource_AddBulkTagsToSourceCommand_
+  name: AddBulkNewTags
+  nameWithType: SourceController.AddBulkNewTags
+  fullName: API.Controllers.V1.SourceController.AddBulkNewTags
+- uid: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand
+  commentId: T:Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand
+  parent: Application.Sources.Commands.AddBulkTagsToSource
+  href: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand.html
+  name: AddBulkTagsToSourceCommand
+  nameWithType: AddBulkTagsToSourceCommand
+  fullName: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand
+- uid: Application.Sources.Commands.AddBulkTagsToSource
+  commentId: N:Application.Sources.Commands.AddBulkTagsToSource
+  href: Application.html
+  name: Application.Sources.Commands.AddBulkTagsToSource
+  nameWithType: Application.Sources.Commands.AddBulkTagsToSource
+  fullName: Application.Sources.Commands.AddBulkTagsToSource
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddBulkTagsToSource
+    name: AddBulkTagsToSource
+    href: Application.Sources.Commands.AddBulkTagsToSource.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddBulkTagsToSource
+    name: AddBulkTagsToSource
+    href: Application.Sources.Commands.AddBulkTagsToSource.html
+- uid: API.Controllers.V1.SourceController.RemoveTag*
+  commentId: Overload:API.Controllers.V1.SourceController.RemoveTag
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController_RemoveTag_Application_Sources_Commands_RemoveTagFromSource_RemoveTagFromSourceCommand_
+  name: RemoveTag
+  nameWithType: SourceController.RemoveTag
+  fullName: API.Controllers.V1.SourceController.RemoveTag
+- uid: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  commentId: T:Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  parent: Application.Sources.Commands.RemoveTagFromSource
+  href: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.html
+  name: RemoveTagFromSourceCommand
+  nameWithType: RemoveTagFromSourceCommand
+  fullName: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+- uid: Application.Sources.Commands.RemoveTagFromSource
+  commentId: N:Application.Sources.Commands.RemoveTagFromSource
+  href: Application.html
+  name: Application.Sources.Commands.RemoveTagFromSource
+  nameWithType: Application.Sources.Commands.RemoveTagFromSource
+  fullName: Application.Sources.Commands.RemoveTagFromSource
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveTagFromSource
+    name: RemoveTagFromSource
+    href: Application.Sources.Commands.RemoveTagFromSource.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveTagFromSource
+    name: RemoveTagFromSource
+    href: Application.Sources.Commands.RemoveTagFromSource.html
+- uid: Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand
+  commentId: T:Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand
+  parent: Application.Sources.Commands.RemoveBulkTagFromSource
+  href: Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand.html
+  name: RemoveBulkTagFromSourceCommand
+  nameWithType: RemoveBulkTagFromSourceCommand
+  fullName: Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand
+- uid: Application.Sources.Commands.RemoveBulkTagFromSource
+  commentId: N:Application.Sources.Commands.RemoveBulkTagFromSource
+  href: Application.html
+  name: Application.Sources.Commands.RemoveBulkTagFromSource
+  nameWithType: Application.Sources.Commands.RemoveBulkTagFromSource
+  fullName: Application.Sources.Commands.RemoveBulkTagFromSource
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveBulkTagFromSource
+    name: RemoveBulkTagFromSource
+    href: Application.Sources.Commands.RemoveBulkTagFromSource.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveBulkTagFromSource
+    name: RemoveBulkTagFromSource
+    href: Application.Sources.Commands.RemoveBulkTagFromSource.html
+- uid: API.Controllers.V1.SourceController.GetSourceById*
+  commentId: Overload:API.Controllers.V1.SourceController.GetSourceById
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController_GetSourceById_System_Guid_
+  name: GetSourceById
+  nameWithType: SourceController.GetSourceById
+  fullName: API.Controllers.V1.SourceController.GetSourceById
+- uid: API.Controllers.V1.SourceController.GetSourceTimeline*
+  commentId: Overload:API.Controllers.V1.SourceController.GetSourceTimeline
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController_GetSourceTimeline_System_Guid_Application_EntitlesTimeline_Queries_EntityTimeline_GetEntityTimelineQuery_
+  name: GetSourceTimeline
+  nameWithType: SourceController.GetSourceTimeline
+  fullName: API.Controllers.V1.SourceController.GetSourceTimeline
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  commentId: T:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  parent: Application.EntitlesTimeline.Queries.EntityTimeline
+  href: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.html
+  name: GetEntityTimelineQuery
+  nameWithType: GetEntityTimelineQuery
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline
+  commentId: N:Application.EntitlesTimeline.Queries.EntityTimeline
+  href: Application.html
+  name: Application.EntitlesTimeline.Queries.EntityTimeline
+  nameWithType: Application.EntitlesTimeline.Queries.EntityTimeline
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.EntitlesTimeline
+    name: EntitlesTimeline
+    href: Application.EntitlesTimeline.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries
+    name: Queries
+    href: Application.EntitlesTimeline.Queries.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries.EntityTimeline
+    name: EntityTimeline
+    href: Application.EntitlesTimeline.Queries.EntityTimeline.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.EntitlesTimeline
+    name: EntitlesTimeline
+    href: Application.EntitlesTimeline.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries
+    name: Queries
+    href: Application.EntitlesTimeline.Queries.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries.EntityTimeline
+    name: EntityTimeline
+    href: Application.EntitlesTimeline.Queries.EntityTimeline.html
+- uid: API.Controllers.V1.SourceController.GetSourceTimelineDetails*
+  commentId: Overload:API.Controllers.V1.SourceController.GetSourceTimelineDetails
+  href: API.Controllers.V1.SourceController.html#API_Controllers_V1_SourceController_GetSourceTimelineDetails_System_Guid_System_Guid_Application_EntitlesTimeline_Queries_EntityTimelineDetails_EntityTimelineDetailsQuery_
+  name: GetSourceTimelineDetails
+  nameWithType: SourceController.GetSourceTimelineDetails
+  fullName: API.Controllers.V1.SourceController.GetSourceTimelineDetails
+- uid: Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery
+  commentId: T:Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery
+  parent: Application.EntitlesTimeline.Queries.EntityTimelineDetails
+  href: Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery.html
+  name: EntityTimelineDetailsQuery
+  nameWithType: EntityTimelineDetailsQuery
+  fullName: Application.EntitlesTimeline.Queries.EntityTimelineDetails.EntityTimelineDetailsQuery
+- uid: Application.EntitlesTimeline.Queries.EntityTimelineDetails
+  commentId: N:Application.EntitlesTimeline.Queries.EntityTimelineDetails
+  href: Application.html
+  name: Application.EntitlesTimeline.Queries.EntityTimelineDetails
+  nameWithType: Application.EntitlesTimeline.Queries.EntityTimelineDetails
+  fullName: Application.EntitlesTimeline.Queries.EntityTimelineDetails
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.EntitlesTimeline
+    name: EntitlesTimeline
+    href: Application.EntitlesTimeline.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries
+    name: Queries
+    href: Application.EntitlesTimeline.Queries.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries.EntityTimelineDetails
+    name: EntityTimelineDetails
+    href: Application.EntitlesTimeline.Queries.EntityTimelineDetails.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.EntitlesTimeline
+    name: EntitlesTimeline
+    href: Application.EntitlesTimeline.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries
+    name: Queries
+    href: Application.EntitlesTimeline.Queries.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries.EntityTimelineDetails
+    name: EntityTimelineDetails
+    href: Application.EntitlesTimeline.Queries.EntityTimelineDetails.html

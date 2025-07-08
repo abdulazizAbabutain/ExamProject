@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Queries.GetRelatedSources
+  commentId: N:Application.Tags.Queries.GetRelatedSources
+  id: Application.Tags.Queries.GetRelatedSources
+  children:
+  - Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+  - Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler
+  - Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Tags.Queries.GetRelatedSources
+  nameWithType: Application.Tags.Queries.GetRelatedSources
+  fullName: Application.Tags.Queries.GetRelatedSources
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+  commentId: T:Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+  parent: Application.Tags.Queries.GetRelatedSources
+  href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery.html
+  name: GetRelatedSourcesQuery
+  nameWithType: GetRelatedSourcesQuery
+  fullName: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQuery
+- uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler
+  commentId: T:Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler
+  href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler.html
+  name: GetRelatedSourcesQueryHandler
+  nameWithType: GetRelatedSourcesQueryHandler
+  fullName: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryHandler
+- uid: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult
+  commentId: T:Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult
+  href: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult.html
+  name: GetRelatedSourcesQueryResult
+  nameWithType: GetRelatedSourcesQueryResult
+  fullName: Application.Tags.Queries.GetRelatedSources.GetRelatedSourcesQueryResult
+- uid: Application.Tags.Queries.GetRelatedSources
+  commentId: N:Application.Tags.Queries.GetRelatedSources
+  href: Application.html
+  name: Application.Tags.Queries.GetRelatedSources
+  nameWithType: Application.Tags.Queries.GetRelatedSources
+  fullName: Application.Tags.Queries.GetRelatedSources
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.GetRelatedSources
+    name: GetRelatedSources
+    href: Application.Tags.Queries.GetRelatedSources.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.GetRelatedSources
+    name: GetRelatedSources
+    href: Application.Tags.Queries.GetRelatedSources.html

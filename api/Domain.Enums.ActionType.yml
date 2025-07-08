@@ -1,0 +1,393 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Enums.ActionType
+  commentId: T:Domain.Enums.ActionType
+  id: ActionType
+  parent: Domain.Enums
+  children:
+  - Domain.Enums.ActionType.AddNewTag
+  - Domain.Enums.ActionType.Added
+  - Domain.Enums.ActionType.Archived
+  - Domain.Enums.ActionType.Deleted
+  - Domain.Enums.ActionType.Modified
+  - Domain.Enums.ActionType.RemoveTag
+  - Domain.Enums.ActionType.UnArchived
+  langs:
+  - csharp
+  - vb
+  name: ActionType
+  nameWithType: ActionType
+  fullName: Domain.Enums.ActionType
+  type: Enum
+  source:
+    remote:
+      path: src/Domain/Enums/ActionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ActionType
+    path: src/Domain/Enums/ActionType.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: public enum ActionType
+    content.vb: Public Enum ActionType
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Enums.ActionType.Added
+  commentId: F:Domain.Enums.ActionType.Added
+  id: Added
+  parent: Domain.Enums.ActionType
+  langs:
+  - csharp
+  - vb
+  name: Added
+  nameWithType: ActionType.Added
+  fullName: Domain.Enums.ActionType.Added
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Enums/ActionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Added
+    path: src/Domain/Enums/ActionType.cs
+    startLine: 4
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: Added = 1
+    return:
+      type: Domain.Enums.ActionType
+- uid: Domain.Enums.ActionType.Modified
+  commentId: F:Domain.Enums.ActionType.Modified
+  id: Modified
+  parent: Domain.Enums.ActionType
+  langs:
+  - csharp
+  - vb
+  name: Modified
+  nameWithType: ActionType.Modified
+  fullName: Domain.Enums.ActionType.Modified
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Enums/ActionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Modified
+    path: src/Domain/Enums/ActionType.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: Modified = 2
+    return:
+      type: Domain.Enums.ActionType
+- uid: Domain.Enums.ActionType.Deleted
+  commentId: F:Domain.Enums.ActionType.Deleted
+  id: Deleted
+  parent: Domain.Enums.ActionType
+  langs:
+  - csharp
+  - vb
+  name: Deleted
+  nameWithType: ActionType.Deleted
+  fullName: Domain.Enums.ActionType.Deleted
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Enums/ActionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Deleted
+    path: src/Domain/Enums/ActionType.cs
+    startLine: 6
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: Deleted = 3
+    return:
+      type: Domain.Enums.ActionType
+- uid: Domain.Enums.ActionType.Archived
+  commentId: F:Domain.Enums.ActionType.Archived
+  id: Archived
+  parent: Domain.Enums.ActionType
+  langs:
+  - csharp
+  - vb
+  name: Archived
+  nameWithType: ActionType.Archived
+  fullName: Domain.Enums.ActionType.Archived
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Enums/ActionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Archived
+    path: src/Domain/Enums/ActionType.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: Archived = 4
+    return:
+      type: Domain.Enums.ActionType
+- uid: Domain.Enums.ActionType.UnArchived
+  commentId: F:Domain.Enums.ActionType.UnArchived
+  id: UnArchived
+  parent: Domain.Enums.ActionType
+  langs:
+  - csharp
+  - vb
+  name: UnArchived
+  nameWithType: ActionType.UnArchived
+  fullName: Domain.Enums.ActionType.UnArchived
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Enums/ActionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UnArchived
+    path: src/Domain/Enums/ActionType.cs
+    startLine: 8
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: UnArchived = 5
+    return:
+      type: Domain.Enums.ActionType
+- uid: Domain.Enums.ActionType.AddNewTag
+  commentId: F:Domain.Enums.ActionType.AddNewTag
+  id: AddNewTag
+  parent: Domain.Enums.ActionType
+  langs:
+  - csharp
+  - vb
+  name: AddNewTag
+  nameWithType: ActionType.AddNewTag
+  fullName: Domain.Enums.ActionType.AddNewTag
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Enums/ActionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddNewTag
+    path: src/Domain/Enums/ActionType.cs
+    startLine: 9
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: AddNewTag = 6
+    return:
+      type: Domain.Enums.ActionType
+- uid: Domain.Enums.ActionType.RemoveTag
+  commentId: F:Domain.Enums.ActionType.RemoveTag
+  id: RemoveTag
+  parent: Domain.Enums.ActionType
+  langs:
+  - csharp
+  - vb
+  name: RemoveTag
+  nameWithType: ActionType.RemoveTag
+  fullName: Domain.Enums.ActionType.RemoveTag
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Enums/ActionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RemoveTag
+    path: src/Domain/Enums/ActionType.cs
+    startLine: 10
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: RemoveTag = 7
+    return:
+      type: Domain.Enums.ActionType
+references:
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Enums.ActionType
+  commentId: T:Domain.Enums.ActionType
+  parent: Domain.Enums
+  href: Domain.Enums.ActionType.html
+  name: ActionType
+  nameWithType: ActionType
+  fullName: Domain.Enums.ActionType

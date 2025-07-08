@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel
+  commentId: T:Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel
+  id: AddSourceReferenceServiceModel
+  parent: Application.Commons.Models.ServicesModel.Source
+  children:
+  - Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Metadata
+  - Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Note
+  langs:
+  - csharp
+  - vb
+  name: AddSourceReferenceServiceModel
+  nameWithType: AddSourceReferenceServiceModel
+  fullName: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel
+  type: Class
+  source:
+    remote:
+      path: src/Application/Commons/Models/ServicesModel/Source/AddSourceRefrenceServiceModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddSourceReferenceServiceModel
+    path: src/Application/Commons/Models/ServicesModel/Source/AddSourceRefrenceServiceModel.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.ServicesModel.Source
+  syntax:
+    content: public class AddSourceReferenceServiceModel
+    content.vb: Public Class AddSourceReferenceServiceModel
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Note
+  commentId: P:Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Note
+  id: Note
+  parent: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel
+  langs:
+  - csharp
+  - vb
+  name: Note
+  nameWithType: AddSourceReferenceServiceModel.Note
+  fullName: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Note
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Models/ServicesModel/Source/AddSourceRefrenceServiceModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Note
+    path: src/Application/Commons/Models/ServicesModel/Source/AddSourceRefrenceServiceModel.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.ServicesModel.Source
+  syntax:
+    content: public string Note { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Note As String
+  overload: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Note*
+- uid: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Metadata
+  commentId: P:Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Metadata
+  id: Metadata
+  parent: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: AddSourceReferenceServiceModel.Metadata
+  fullName: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Metadata
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Models/ServicesModel/Source/AddSourceRefrenceServiceModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Metadata
+    path: src/Application/Commons/Models/ServicesModel/Source/AddSourceRefrenceServiceModel.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.ServicesModel.Source
+  syntax:
+    content: public List<AddMetadataSourceModel>? Metadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Application.Commons.Models.ServicesModel.Source.AddMetadataSourceModel}
+    content.vb: Public Property Metadata As List(Of AddMetadataSourceModel)
+  overload: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Metadata*
+references:
+- uid: Application.Commons.Models.ServicesModel.Source
+  commentId: N:Application.Commons.Models.ServicesModel.Source
+  href: Application.html
+  name: Application.Commons.Models.ServicesModel.Source
+  nameWithType: Application.Commons.Models.ServicesModel.Source
+  fullName: Application.Commons.Models.ServicesModel.Source
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.ServicesModel
+    name: ServicesModel
+    href: Application.Commons.Models.ServicesModel.html
+  - name: .
+  - uid: Application.Commons.Models.ServicesModel.Source
+    name: Source
+    href: Application.Commons.Models.ServicesModel.Source.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.ServicesModel
+    name: ServicesModel
+    href: Application.Commons.Models.ServicesModel.html
+  - name: .
+  - uid: Application.Commons.Models.ServicesModel.Source
+    name: Source
+    href: Application.Commons.Models.ServicesModel.Source.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Note*
+  commentId: Overload:Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Note
+  href: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.html#Application_Commons_Models_ServicesModel_Source_AddSourceReferenceServiceModel_Note
+  name: Note
+  nameWithType: AddSourceReferenceServiceModel.Note
+  fullName: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Note
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Metadata*
+  commentId: Overload:Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Metadata
+  href: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.html#Application_Commons_Models_ServicesModel_Source_AddSourceReferenceServiceModel_Metadata
+  name: Metadata
+  nameWithType: AddSourceReferenceServiceModel.Metadata
+  fullName: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.Metadata
+- uid: System.Collections.Generic.List{Application.Commons.Models.ServicesModel.Source.AddMetadataSourceModel}
+  commentId: T:System.Collections.Generic.List{Application.Commons.Models.ServicesModel.Source.AddMetadataSourceModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AddMetadataSourceModel>
+  nameWithType: List<AddMetadataSourceModel>
+  fullName: System.Collections.Generic.List<Application.Commons.Models.ServicesModel.Source.AddMetadataSourceModel>
+  nameWithType.vb: List(Of AddMetadataSourceModel)
+  fullName.vb: System.Collections.Generic.List(Of Application.Commons.Models.ServicesModel.Source.AddMetadataSourceModel)
+  name.vb: List(Of AddMetadataSourceModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.Commons.Models.ServicesModel.Source.AddMetadataSourceModel
+    name: AddMetadataSourceModel
+    href: Application.Commons.Models.ServicesModel.Source.AddMetadataSourceModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.ServicesModel.Source.AddMetadataSourceModel
+    name: AddMetadataSourceModel
+    href: Application.Commons.Models.ServicesModel.Source.AddMetadataSourceModel.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

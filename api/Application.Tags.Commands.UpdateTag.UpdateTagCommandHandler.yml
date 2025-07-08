@@ -1,0 +1,653 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler
+  commentId: T:Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler
+  id: UpdateTagCommandHandler
+  parent: Application.Tags.Commands.UpdateTag
+  children:
+  - Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.#ctor(Application.Commons.Managers.IServiceManager)
+  - Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: UpdateTagCommandHandler
+  nameWithType: UpdateTagCommandHandler
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler
+  type: Class
+  source:
+    remote:
+      path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateTagCommandHandler
+    path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandHandler.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Tags.Commands.UpdateTag
+  syntax:
+    content: 'public class UpdateTagCommandHandler : IRequestHandler<UpdateTagCommand, Result>'
+    content.vb: Public Class UpdateTagCommandHandler Implements IRequestHandler(Of UpdateTagCommand, Result)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{Application.Tags.Commands.UpdateTag.UpdateTagCommand,Application.Commons.Models.Results.Result}
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.#ctor(Application.Commons.Managers.IServiceManager)
+  commentId: M:Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.#ctor(Application.Commons.Managers.IServiceManager)
+  id: '#ctor(Application.Commons.Managers.IServiceManager)'
+  parent: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: UpdateTagCommandHandler(IServiceManager)
+  nameWithType: UpdateTagCommandHandler.UpdateTagCommandHandler(IServiceManager)
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.UpdateTagCommandHandler(Application.Commons.Managers.IServiceManager)
+  type: Constructor
+  source:
+    remote:
+      path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandHandler.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Tags.Commands.UpdateTag
+  syntax:
+    content: public UpdateTagCommandHandler(IServiceManager serviceManager)
+    parameters:
+    - id: serviceManager
+      type: Application.Commons.Managers.IServiceManager
+    content.vb: Public Sub New(serviceManager As IServiceManager)
+  overload: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.#ctor*
+  nameWithType.vb: UpdateTagCommandHandler.New(IServiceManager)
+  fullName.vb: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.New(Application.Commons.Managers.IServiceManager)
+  name.vb: New(IServiceManager)
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+  commentId: M:Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+  id: Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+  parent: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(UpdateTagCommand, CancellationToken)
+  nameWithType: UpdateTagCommandHandler.Handle(UpdateTagCommand, CancellationToken)
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Handle
+    path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandHandler.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Tags.Commands.UpdateTag
+  summary: Handles a request
+  example: []
+  syntax:
+    content: public Task<Result> Handle(UpdateTagCommand request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+      description: The request
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{Application.Commons.Models.Results.Result}
+      description: Response from the request
+    content.vb: Public Function Handle(request As UpdateTagCommand, cancellationToken As CancellationToken) As Task(Of Result)
+  overload: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.Handle*
+  implements:
+  - MediatR.IRequestHandler{Application.Tags.Commands.UpdateTag.UpdateTagCommand,Application.Commons.Models.Results.Result}.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+references:
+- uid: Application.Tags.Commands.UpdateTag
+  commentId: N:Application.Tags.Commands.UpdateTag
+  href: Application.html
+  name: Application.Tags.Commands.UpdateTag
+  nameWithType: Application.Tags.Commands.UpdateTag
+  fullName: Application.Tags.Commands.UpdateTag
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.UpdateTag
+    name: UpdateTag
+    href: Application.Tags.Commands.UpdateTag.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.UpdateTag
+    name: UpdateTag
+    href: Application.Tags.Commands.UpdateTag.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{Application.Tags.Commands.UpdateTag.UpdateTagCommand,Application.Commons.Models.Results.Result}
+  commentId: T:MediatR.IRequestHandler{Application.Tags.Commands.UpdateTag.UpdateTagCommand,Application.Commons.Models.Results.Result}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`2
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: IRequestHandler<UpdateTagCommand, Result>
+  nameWithType: IRequestHandler<UpdateTagCommand, Result>
+  fullName: MediatR.IRequestHandler<Application.Tags.Commands.UpdateTag.UpdateTagCommand, Application.Commons.Models.Results.Result>
+  nameWithType.vb: IRequestHandler(Of UpdateTagCommand, Result)
+  fullName.vb: MediatR.IRequestHandler(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, Application.Commons.Models.Results.Result)
+  name.vb: IRequestHandler(Of UpdateTagCommand, Result)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`2
+  commentId: T:MediatR.IRequestHandler`2
+  isExternal: true
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.#ctor*
+  commentId: Overload:Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.#ctor
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.html#Application_Tags_Commands_UpdateTag_UpdateTagCommandHandler__ctor_Application_Commons_Managers_IServiceManager_
+  name: UpdateTagCommandHandler
+  nameWithType: UpdateTagCommandHandler.UpdateTagCommandHandler
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.UpdateTagCommandHandler
+  nameWithType.vb: UpdateTagCommandHandler.New
+  fullName.vb: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.New
+  name.vb: New
+- uid: Application.Commons.Managers.IServiceManager
+  commentId: T:Application.Commons.Managers.IServiceManager
+  parent: Application.Commons.Managers
+  href: Application.Commons.Managers.IServiceManager.html
+  name: IServiceManager
+  nameWithType: IServiceManager
+  fullName: Application.Commons.Managers.IServiceManager
+- uid: Application.Commons.Managers
+  commentId: N:Application.Commons.Managers
+  href: Application.html
+  name: Application.Commons.Managers
+  nameWithType: Application.Commons.Managers
+  fullName: Application.Commons.Managers
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.Handle*
+  commentId: Overload:Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.Handle
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.html#Application_Tags_Commands_UpdateTag_UpdateTagCommandHandler_Handle_Application_Tags_Commands_UpdateTag_UpdateTagCommand_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: UpdateTagCommandHandler.Handle
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.Handle
+- uid: MediatR.IRequestHandler{Application.Tags.Commands.UpdateTag.UpdateTagCommand,Application.Commons.Models.Results.Result}.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{Application.Tags.Commands.UpdateTag.UpdateTagCommand,Application.Commons.Models.Results.Result}.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{Application.Tags.Commands.UpdateTag.UpdateTagCommand,Application.Commons.Models.Results.Result}
+  definition: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: Handle(UpdateTagCommand, CancellationToken)
+  nameWithType: IRequestHandler<UpdateTagCommand, Result>.Handle(UpdateTagCommand, CancellationToken)
+  fullName: MediatR.IRequestHandler<Application.Tags.Commands.UpdateTag.UpdateTagCommand, Application.Commons.Models.Results.Result>.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of UpdateTagCommand, Result).Handle(UpdateTagCommand, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, Application.Commons.Models.Results.Result).Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{Application.Tags.Commands.UpdateTag.UpdateTagCommand,Application.Commons.Models.Results.Result}.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{Application.Tags.Commands.UpdateTag.UpdateTagCommand,Application.Commons.Models.Results.Result}.Handle(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+  commentId: T:Application.Tags.Commands.UpdateTag.UpdateTagCommand
+  parent: Application.Tags.Commands.UpdateTag
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: UpdateTagCommand
+  nameWithType: UpdateTagCommand
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Application.Commons.Models.Results.Result}
+  commentId: T:System.Threading.Tasks.Task{Application.Commons.Models.Results.Result}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result>
+  nameWithType: Task<Result>
+  fullName: System.Threading.Tasks.Task<Application.Commons.Models.Results.Result>
+  nameWithType.vb: Task(Of Result)
+  fullName.vb: System.Threading.Tasks.Task(Of Application.Commons.Models.Results.Result)
+  name.vb: Task(Of Result)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: )
+- uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

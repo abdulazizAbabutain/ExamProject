@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.EntityLookup
+  commentId: N:Domain.Entities.EntityLookup
+  id: Domain.Entities.EntityLookup
+  children:
+  - Domain.Entities.EntityLookup.Category
+  - Domain.Entities.EntityLookup.Language
+  - Domain.Entities.EntityLookup.Tag
+  langs:
+  - csharp
+  - vb
+  name: Domain.Entities.EntityLookup
+  nameWithType: Domain.Entities.EntityLookup
+  fullName: Domain.Entities.EntityLookup
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Entities.EntityLookup.Category
+  commentId: T:Domain.Entities.EntityLookup.Category
+  href: Domain.Entities.EntityLookup.Category.html
+  name: Category
+  nameWithType: Category
+  fullName: Domain.Entities.EntityLookup.Category
+- uid: Domain.Entities.EntityLookup.Language
+  commentId: T:Domain.Entities.EntityLookup.Language
+  parent: Domain.Entities.EntityLookup
+  href: Domain.Entities.EntityLookup.Language.html
+  name: Language
+  nameWithType: Language
+  fullName: Domain.Entities.EntityLookup.Language
+- uid: Domain.Entities.EntityLookup.Tag
+  commentId: T:Domain.Entities.EntityLookup.Tag
+  href: Domain.Entities.EntityLookup.Tag.html
+  name: Tag
+  nameWithType: Tag
+  fullName: Domain.Entities.EntityLookup.Tag
+- uid: Domain.Entities.EntityLookup
+  commentId: N:Domain.Entities.EntityLookup
+  href: Domain.html
+  name: Domain.Entities.EntityLookup
+  nameWithType: Domain.Entities.EntityLookup
+  fullName: Domain.Entities.EntityLookup
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.EntityLookup
+    name: EntityLookup
+    href: Domain.Entities.EntityLookup.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.EntityLookup
+    name: EntityLookup
+    href: Domain.Entities.EntityLookup.html

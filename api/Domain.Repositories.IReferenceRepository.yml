@@ -1,0 +1,1529 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Repositories.IReferenceRepository
+  commentId: T:Domain.Repositories.IReferenceRepository
+  id: IReferenceRepository
+  parent: Domain.Repositories
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IReferenceRepository
+  nameWithType: IReferenceRepository
+  fullName: Domain.Repositories.IReferenceRepository
+  type: Interface
+  source:
+    remote:
+      path: src/Domain/Repositories/IReferenceRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IReferenceRepository
+    path: src/Domain/Repositories/IReferenceRepository.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories
+  syntax:
+    content: 'public interface IReferenceRepository : IBaseRepository<SourceReference>, IDisposable'
+    content.vb: Public Interface IReferenceRepository Inherits IBaseRepository(Of SourceReference), IDisposable
+  inheritedMembers:
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(Domain.Entities.Sources.SourceReference)
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetById(System.Guid)
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAllAsync(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Int32,System.Int32)
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetCollection
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Count
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountBy(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountAsync
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteById(System.Guid)
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteAll
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(Domain.Entities.Sources.SourceReference)
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+references:
+- uid: Domain.Repositories
+  commentId: N:Domain.Repositories
+  href: Domain.html
+  name: Domain.Repositories
+  nameWithType: Domain.Repositories
+  fullName: Domain.Repositories
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(Domain.Entities.Sources.SourceReference)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(Domain.Entities.Sources.SourceReference)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(`0)
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert__0_
+  name: Insert(SourceReference)
+  nameWithType: IBaseRepository<SourceReference>.Insert(SourceReference)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.Insert(Domain.Entities.Sources.SourceReference)
+  nameWithType.vb: IBaseRepository(Of SourceReference).Insert(SourceReference)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).Insert(Domain.Entities.Sources.SourceReference)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(Domain.Entities.Sources.SourceReference)
+    name: Insert
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert__0_
+  - name: (
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(Domain.Entities.Sources.SourceReference)
+    name: Insert
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert__0_
+  - name: (
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  name: Insert(IEnumerable<SourceReference>)
+  nameWithType: IBaseRepository<SourceReference>.Insert(IEnumerable<SourceReference>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.Insert(System.Collections.Generic.IEnumerable<Domain.Entities.Sources.SourceReference>)
+  nameWithType.vb: IBaseRepository(Of SourceReference).Insert(IEnumerable(Of SourceReference))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).Insert(System.Collections.Generic.IEnumerable(Of Domain.Entities.Sources.SourceReference))
+  name.vb: Insert(IEnumerable(Of SourceReference))
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+    name: Insert
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Insert(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+    name: Insert
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: )
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetById(System.Guid)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetById(System.Guid)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById(System.Guid)
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetById_System_Guid_
+  name: GetById(Guid)
+  nameWithType: IBaseRepository<SourceReference>.GetById(Guid)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.GetById(System.Guid)
+  nameWithType.vb: IBaseRepository(Of SourceReference).GetById(Guid)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).GetById(System.Guid)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetById(System.Guid)
+    name: GetById
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetById(System.Guid)
+    name: GetById
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll
+  name: GetAll()
+  nameWithType: IBaseRepository<SourceReference>.GetAll()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.GetAll()
+  nameWithType.vb: IBaseRepository(Of SourceReference).GetAll()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).GetAll()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  name: GetAll(Func<SourceReference, bool>)
+  nameWithType: IBaseRepository<SourceReference>.GetAll(Func<SourceReference, bool>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.GetAll(System.Func<Domain.Entities.Sources.SourceReference, bool>)
+  nameWithType.vb: IBaseRepository(Of SourceReference).GetAll(Func(Of SourceReference, Boolean))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).GetAll(System.Func(Of Domain.Entities.Sources.SourceReference, Boolean))
+  name.vb: GetAll(Func(Of SourceReference, Boolean))
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  name: GetAll(Func<SourceReference, bool>, int, int)
+  nameWithType: IBaseRepository<SourceReference>.GetAll(Func<SourceReference, bool>, int, int)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.GetAll(System.Func<Domain.Entities.Sources.SourceReference, bool>, int, int)
+  nameWithType.vb: IBaseRepository(Of SourceReference).GetAll(Func(Of SourceReference, Boolean), Integer, Integer)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).GetAll(System.Func(Of Domain.Entities.Sources.SourceReference, Boolean), Integer, Integer)
+  name.vb: GetAll(Func(Of SourceReference, Boolean), Integer, Integer)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAllAsync(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAllAsync(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  name: GetAllAsync(Func<SourceReference, bool>, int, int)
+  nameWithType: IBaseRepository<SourceReference>.GetAllAsync(Func<SourceReference, bool>, int, int)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.GetAllAsync(System.Func<Domain.Entities.Sources.SourceReference, bool>, int, int)
+  nameWithType.vb: IBaseRepository(Of SourceReference).GetAllAsync(Func(Of SourceReference, Boolean), Integer, Integer)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).GetAllAsync(System.Func(Of Domain.Entities.Sources.SourceReference, Boolean), Integer, Integer)
+  name.vb: GetAllAsync(Func(Of SourceReference, Boolean), Integer, Integer)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAllAsync(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+    name: GetAllAsync
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAllAsync(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean},System.Int32,System.Int32)
+    name: GetAllAsync
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Int32,System.Int32)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Int32,System.Int32)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Int32,System.Int32)
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Int32_System_Int32_
+  name: GetAll(int, int)
+  nameWithType: IBaseRepository<SourceReference>.GetAll(int, int)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.GetAll(int, int)
+  nameWithType.vb: IBaseRepository(Of SourceReference).GetAll(Integer, Integer)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).GetAll(Integer, Integer)
+  name.vb: GetAll(Integer, Integer)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Int32,System.Int32)
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetAll(System.Int32,System.Int32)
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetCollection
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetCollection
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetCollection
+  name: GetCollection()
+  nameWithType: IBaseRepository<SourceReference>.GetCollection()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.GetCollection()
+  nameWithType.vb: IBaseRepository(Of SourceReference).GetCollection()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).GetCollection()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetCollection
+    name: GetCollection
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetCollection
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.GetCollection
+    name: GetCollection
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetCollection
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Count
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Count
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.Count
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Count
+  name: Count()
+  nameWithType: IBaseRepository<SourceReference>.Count()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.Count()
+  nameWithType.vb: IBaseRepository(Of SourceReference).Count()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).Count()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Count
+    name: Count
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Count
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Count
+    name: Count
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Count
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountBy(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountBy(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  name: CountBy(Func<SourceReference, bool>)
+  nameWithType: IBaseRepository<SourceReference>.CountBy(Func<SourceReference, bool>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.CountBy(System.Func<Domain.Entities.Sources.SourceReference, bool>)
+  nameWithType.vb: IBaseRepository(Of SourceReference).CountBy(Func(Of SourceReference, Boolean))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).CountBy(System.Func(Of Domain.Entities.Sources.SourceReference, Boolean))
+  name.vb: CountBy(Func(Of SourceReference, Boolean))
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountBy(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+    name: CountBy
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountBy(System.Func{Domain.Entities.Sources.SourceReference,System.Boolean})
+    name: CountBy
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountAsync
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountAsync
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountAsync
+  name: CountAsync()
+  nameWithType: IBaseRepository<SourceReference>.CountAsync()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.CountAsync()
+  nameWithType.vb: IBaseRepository(Of SourceReference).CountAsync()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).CountAsync()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountAsync
+    name: CountAsync
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.CountAsync
+    name: CountAsync
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountAsync
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteById(System.Guid)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteById(System.Guid)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById(System.Guid)
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteById_System_Guid_
+  name: DeleteById(Guid)
+  nameWithType: IBaseRepository<SourceReference>.DeleteById(Guid)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.DeleteById(System.Guid)
+  nameWithType.vb: IBaseRepository(Of SourceReference).DeleteById(Guid)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).DeleteById(System.Guid)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteById(System.Guid)
+    name: DeleteById
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteById(System.Guid)
+    name: DeleteById
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteAll
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteAll
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteAll
+  name: DeleteAll()
+  nameWithType: IBaseRepository<SourceReference>.DeleteAll()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.DeleteAll()
+  nameWithType.vb: IBaseRepository(Of SourceReference).DeleteAll()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).DeleteAll()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteAll
+    name: DeleteAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteAll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.DeleteAll
+    name: DeleteAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteAll
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(Domain.Entities.Sources.SourceReference)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(Domain.Entities.Sources.SourceReference)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(`0)
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update__0_
+  name: Update(SourceReference)
+  nameWithType: IBaseRepository<SourceReference>.Update(SourceReference)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.Update(Domain.Entities.Sources.SourceReference)
+  nameWithType.vb: IBaseRepository(Of SourceReference).Update(SourceReference)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).Update(Domain.Entities.Sources.SourceReference)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(Domain.Entities.Sources.SourceReference)
+    name: Update
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update__0_
+  - name: (
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(Domain.Entities.Sources.SourceReference)
+    name: Update
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update__0_
+  - name: (
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  name: Update(IEnumerable<SourceReference>)
+  nameWithType: IBaseRepository<SourceReference>.Update(IEnumerable<SourceReference>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>.Update(System.Collections.Generic.IEnumerable<Domain.Entities.Sources.SourceReference>)
+  nameWithType.vb: IBaseRepository(Of SourceReference).Update(IEnumerable(Of SourceReference))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference).Update(System.Collections.Generic.IEnumerable(Of Domain.Entities.Sources.SourceReference))
+  name.vb: Update(IEnumerable(Of SourceReference))
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+    name: Update
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}.Update(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference})
+    name: Update
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: )
+  - name: )
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(`0)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(`0)
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert__0_
+  name: Insert(T)
+  nameWithType: IBaseRepository<T>.Insert(T)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Insert(T)
+  nameWithType.vb: IBaseRepository(Of T).Insert(T)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Insert(T)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(`0)
+    name: Insert
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(`0)
+    name: Insert
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  commentId: T:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Entities.Sources.SourceReference}
+  parent: Domain.Repositories.RepositoryBase
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  name: IBaseRepository<SourceReference>
+  nameWithType: IBaseRepository<SourceReference>
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Entities.Sources.SourceReference>
+  nameWithType.vb: IBaseRepository(Of SourceReference)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Entities.Sources.SourceReference)
+  name.vb: IBaseRepository(Of SourceReference)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  - name: <
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: '>'
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+    href: Domain.Entities.Sources.SourceReference.html
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  name: Insert(IEnumerable<T>)
+  nameWithType: IBaseRepository<T>.Insert(IEnumerable<T>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Insert(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: IBaseRepository(Of T).Insert(IEnumerable(Of T))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Insert(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Insert(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+    name: Insert
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+    name: Insert
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById(System.Guid)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById(System.Guid)
+  isExternal: true
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetById_System_Guid_
+  name: GetById(Guid)
+  nameWithType: IBaseRepository<T>.GetById(Guid)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetById(System.Guid)
+  nameWithType.vb: IBaseRepository(Of T).GetById(Guid)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetById(System.Guid)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById(System.Guid)
+    name: GetById
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById(System.Guid)
+    name: GetById
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll
+  name: GetAll()
+  nameWithType: IBaseRepository<T>.GetAll()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAll()
+  nameWithType.vb: IBaseRepository(Of T).GetAll()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAll()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+  isExternal: true
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  name: GetAll(Func<T, bool>)
+  nameWithType: IBaseRepository<T>.GetAll(Func<T, bool>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAll(System.Func<T, bool>)
+  nameWithType.vb: IBaseRepository(Of T).GetAll(Func(Of T, Boolean))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAll(System.Func(Of T, Boolean))
+  name.vb: GetAll(Func(Of T, Boolean))
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  isExternal: true
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  name: GetAll(Func<T, bool>, int, int)
+  nameWithType: IBaseRepository<T>.GetAll(Func<T, bool>, int, int)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAll(System.Func<T, bool>, int, int)
+  nameWithType.vb: IBaseRepository(Of T).GetAll(Func(Of T, Boolean), Integer, Integer)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAll(System.Func(Of T, Boolean), Integer, Integer)
+  name.vb: GetAll(Func(Of T, Boolean), Integer, Integer)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  isExternal: true
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  name: GetAllAsync(Func<T, bool>, int, int)
+  nameWithType: IBaseRepository<T>.GetAllAsync(Func<T, bool>, int, int)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAllAsync(System.Func<T, bool>, int, int)
+  nameWithType.vb: IBaseRepository(Of T).GetAllAsync(Func(Of T, Boolean), Integer, Integer)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAllAsync(System.Func(Of T, Boolean), Integer, Integer)
+  name.vb: GetAllAsync(Func(Of T, Boolean), Integer, Integer)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+    name: GetAllAsync
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+    name: GetAllAsync
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Int32,System.Int32)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Int32,System.Int32)
+  isExternal: true
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Int32_System_Int32_
+  name: GetAll(int, int)
+  nameWithType: IBaseRepository<T>.GetAll(int, int)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAll(int, int)
+  nameWithType.vb: IBaseRepository(Of T).GetAll(Integer, Integer)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAll(Integer, Integer)
+  name.vb: GetAll(Integer, Integer)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Int32,System.Int32)
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Int32,System.Int32)
+    name: GetAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetCollection
+  name: GetCollection()
+  nameWithType: IBaseRepository<T>.GetCollection()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetCollection()
+  nameWithType.vb: IBaseRepository(Of T).GetCollection()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetCollection()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection
+    name: GetCollection
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetCollection
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection
+    name: GetCollection
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetCollection
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Count
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Count
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Count
+  name: Count()
+  nameWithType: IBaseRepository<T>.Count()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Count()
+  nameWithType.vb: IBaseRepository(Of T).Count()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Count()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Count
+    name: Count
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Count
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Count
+    name: Count
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Count
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+  isExternal: true
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  name: CountBy(Func<T, bool>)
+  nameWithType: IBaseRepository<T>.CountBy(Func<T, bool>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.CountBy(System.Func<T, bool>)
+  nameWithType.vb: IBaseRepository(Of T).CountBy(Func(Of T, Boolean))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).CountBy(System.Func(Of T, Boolean))
+  name.vb: CountBy(Func(Of T, Boolean))
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+    name: CountBy
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+    name: CountBy
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountAsync
+  name: CountAsync()
+  nameWithType: IBaseRepository<T>.CountAsync()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.CountAsync()
+  nameWithType.vb: IBaseRepository(Of T).CountAsync()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).CountAsync()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync
+    name: CountAsync
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync
+    name: CountAsync
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountAsync
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById(System.Guid)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById(System.Guid)
+  isExternal: true
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteById_System_Guid_
+  name: DeleteById(Guid)
+  nameWithType: IBaseRepository<T>.DeleteById(Guid)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.DeleteById(System.Guid)
+  nameWithType.vb: IBaseRepository(Of T).DeleteById(Guid)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).DeleteById(System.Guid)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById(System.Guid)
+    name: DeleteById
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById(System.Guid)
+    name: DeleteById
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteAll
+  name: DeleteAll()
+  nameWithType: IBaseRepository<T>.DeleteAll()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.DeleteAll()
+  nameWithType.vb: IBaseRepository(Of T).DeleteAll()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).DeleteAll()
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll
+    name: DeleteAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteAll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll
+    name: DeleteAll
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteAll
+  - name: (
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(`0)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(`0)
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update__0_
+  name: Update(T)
+  nameWithType: IBaseRepository<T>.Update(T)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Update(T)
+  nameWithType.vb: IBaseRepository(Of T).Update(T)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Update(T)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(`0)
+    name: Update
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(`0)
+    name: Update
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  name: Update(IEnumerable<T>)
+  nameWithType: IBaseRepository<T>.Update(IEnumerable<T>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Update(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: IBaseRepository(Of T).Update(IEnumerable(Of T))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Update(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Update(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+    name: Update
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+    name: Update
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  commentId: T:Domain.Repositories.RepositoryBase.IBaseRepository`1
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  name: IBaseRepository<T>
+  nameWithType: IBaseRepository<T>
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>
+  nameWithType.vb: IBaseRepository(Of T)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T)
+  name.vb: IBaseRepository(Of T)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Domain.Repositories.RepositoryBase
+  commentId: N:Domain.Repositories.RepositoryBase
+  href: Domain.html
+  name: Domain.Repositories.RepositoryBase
+  nameWithType: Domain.Repositories.RepositoryBase
+  fullName: Domain.Repositories.RepositoryBase
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  - name: .
+  - uid: Domain.Repositories.RepositoryBase
+    name: RepositoryBase
+    href: Domain.Repositories.RepositoryBase.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  - name: .
+  - uid: Domain.Repositories.RepositoryBase
+    name: RepositoryBase
+    href: Domain.Repositories.RepositoryBase.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html

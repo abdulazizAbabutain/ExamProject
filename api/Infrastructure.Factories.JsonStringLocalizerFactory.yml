@@ -1,0 +1,567 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Factories.JsonStringLocalizerFactory
+  commentId: T:Infrastructure.Factories.JsonStringLocalizerFactory
+  id: JsonStringLocalizerFactory
+  parent: Infrastructure.Factories
+  children:
+  - Infrastructure.Factories.JsonStringLocalizerFactory.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  - Infrastructure.Factories.JsonStringLocalizerFactory.Create(System.String,System.String)
+  - Infrastructure.Factories.JsonStringLocalizerFactory.Create(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: JsonStringLocalizerFactory
+  nameWithType: JsonStringLocalizerFactory
+  fullName: Infrastructure.Factories.JsonStringLocalizerFactory
+  type: Class
+  source:
+    remote:
+      path: src/Infrastructure/Factories/JsonStringLocalizerFactory.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: JsonStringLocalizerFactory
+    path: src/Infrastructure/Factories/JsonStringLocalizerFactory.cs
+    startLine: 6
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Factories
+  syntax:
+    content: 'public class JsonStringLocalizerFactory : IStringLocalizerFactory'
+    content.vb: Public Class JsonStringLocalizerFactory Implements IStringLocalizerFactory
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.Localization.IStringLocalizerFactory
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Infrastructure.Factories.JsonStringLocalizerFactory.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  commentId: M:Infrastructure.Factories.JsonStringLocalizerFactory.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  id: '#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache)'
+  parent: Infrastructure.Factories.JsonStringLocalizerFactory
+  langs:
+  - csharp
+  - vb
+  name: JsonStringLocalizerFactory(IDistributedCache)
+  nameWithType: JsonStringLocalizerFactory.JsonStringLocalizerFactory(IDistributedCache)
+  fullName: Infrastructure.Factories.JsonStringLocalizerFactory.JsonStringLocalizerFactory(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  type: Constructor
+  source:
+    remote:
+      path: src/Infrastructure/Factories/JsonStringLocalizerFactory.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Infrastructure/Factories/JsonStringLocalizerFactory.cs
+    startLine: 9
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Factories
+  syntax:
+    content: public JsonStringLocalizerFactory(IDistributedCache cache)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    content.vb: Public Sub New(cache As IDistributedCache)
+  overload: Infrastructure.Factories.JsonStringLocalizerFactory.#ctor*
+  nameWithType.vb: JsonStringLocalizerFactory.New(IDistributedCache)
+  fullName.vb: Infrastructure.Factories.JsonStringLocalizerFactory.New(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  name.vb: New(IDistributedCache)
+- uid: Infrastructure.Factories.JsonStringLocalizerFactory.Create(System.Type)
+  commentId: M:Infrastructure.Factories.JsonStringLocalizerFactory.Create(System.Type)
+  id: Create(System.Type)
+  parent: Infrastructure.Factories.JsonStringLocalizerFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(Type)
+  nameWithType: JsonStringLocalizerFactory.Create(Type)
+  fullName: Infrastructure.Factories.JsonStringLocalizerFactory.Create(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Factories/JsonStringLocalizerFactory.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Create
+    path: src/Infrastructure/Factories/JsonStringLocalizerFactory.cs
+    startLine: 13
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Factories
+  summary: >-
+    Creates an <xref href="Microsoft.Extensions.Localization.IStringLocalizer" data-throw-if-not-resolved="false"></xref> using the <xref href="System.Reflection.Assembly" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="System.Type.FullName" data-throw-if-not-resolved="false"></xref> of the specified <xref href="System.Type" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IStringLocalizer Create(Type resourceSource)
+    parameters:
+    - id: resourceSource
+      type: System.Type
+      description: The <xref href="System.Type" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: Microsoft.Extensions.Localization.IStringLocalizer
+      description: The <xref href="Microsoft.Extensions.Localization.IStringLocalizer" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Create(resourceSource As Type) As IStringLocalizer
+  overload: Infrastructure.Factories.JsonStringLocalizerFactory.Create*
+  implements:
+  - Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.Type)
+- uid: Infrastructure.Factories.JsonStringLocalizerFactory.Create(System.String,System.String)
+  commentId: M:Infrastructure.Factories.JsonStringLocalizerFactory.Create(System.String,System.String)
+  id: Create(System.String,System.String)
+  parent: Infrastructure.Factories.JsonStringLocalizerFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(string, string)
+  nameWithType: JsonStringLocalizerFactory.Create(string, string)
+  fullName: Infrastructure.Factories.JsonStringLocalizerFactory.Create(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Factories/JsonStringLocalizerFactory.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Create
+    path: src/Infrastructure/Factories/JsonStringLocalizerFactory.cs
+    startLine: 15
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Factories
+  summary: Creates an <xref href="Microsoft.Extensions.Localization.IStringLocalizer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public IStringLocalizer Create(string baseName, string location)
+    parameters:
+    - id: baseName
+      type: System.String
+      description: The base name of the resource to load strings from.
+    - id: location
+      type: System.String
+      description: The location to load resources from.
+    return:
+      type: Microsoft.Extensions.Localization.IStringLocalizer
+      description: The <xref href="Microsoft.Extensions.Localization.IStringLocalizer" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function Create(baseName As String, location As String) As IStringLocalizer
+  overload: Infrastructure.Factories.JsonStringLocalizerFactory.Create*
+  implements:
+  - Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.String,System.String)
+  nameWithType.vb: JsonStringLocalizerFactory.Create(String, String)
+  fullName.vb: Infrastructure.Factories.JsonStringLocalizerFactory.Create(String, String)
+  name.vb: Create(String, String)
+references:
+- uid: Infrastructure.Factories
+  commentId: N:Infrastructure.Factories
+  href: Infrastructure.html
+  name: Infrastructure.Factories
+  nameWithType: Infrastructure.Factories
+  fullName: Infrastructure.Factories
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Factories
+    name: Factories
+    href: Infrastructure.Factories.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Factories
+    name: Factories
+    href: Infrastructure.Factories.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Localization.IStringLocalizerFactory
+  commentId: T:Microsoft.Extensions.Localization.IStringLocalizerFactory
+  parent: Microsoft.Extensions.Localization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizerfactory
+  name: IStringLocalizerFactory
+  nameWithType: IStringLocalizerFactory
+  fullName: Microsoft.Extensions.Localization.IStringLocalizerFactory
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Localization
+  commentId: N:Microsoft.Extensions.Localization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Localization
+  nameWithType: Microsoft.Extensions.Localization
+  fullName: Microsoft.Extensions.Localization
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Localization
+    name: Localization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Localization
+    name: Localization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Infrastructure.Factories.JsonStringLocalizerFactory.#ctor*
+  commentId: Overload:Infrastructure.Factories.JsonStringLocalizerFactory.#ctor
+  href: Infrastructure.Factories.JsonStringLocalizerFactory.html#Infrastructure_Factories_JsonStringLocalizerFactory__ctor_Microsoft_Extensions_Caching_Distributed_IDistributedCache_
+  name: JsonStringLocalizerFactory
+  nameWithType: JsonStringLocalizerFactory.JsonStringLocalizerFactory
+  fullName: Infrastructure.Factories.JsonStringLocalizerFactory.JsonStringLocalizerFactory
+  nameWithType.vb: JsonStringLocalizerFactory.New
+  fullName.vb: Infrastructure.Factories.JsonStringLocalizerFactory.New
+  name.vb: New
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  commentId: T:Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  name: IDistributedCache
+  nameWithType: IDistributedCache
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+- uid: Microsoft.Extensions.Caching.Distributed
+  commentId: N:Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Distributed
+  nameWithType: Microsoft.Extensions.Caching.Distributed
+  fullName: Microsoft.Extensions.Caching.Distributed
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+- uid: Microsoft.Extensions.Localization.IStringLocalizer
+  commentId: T:Microsoft.Extensions.Localization.IStringLocalizer
+  parent: Microsoft.Extensions.Localization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer
+  name: IStringLocalizer
+  nameWithType: IStringLocalizer
+  fullName: Microsoft.Extensions.Localization.IStringLocalizer
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Type.FullName
+  commentId: P:System.Type.FullName
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type.fullname
+  name: FullName
+  nameWithType: Type.FullName
+  fullName: System.Type.FullName
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Infrastructure.Factories.JsonStringLocalizerFactory.Create*
+  commentId: Overload:Infrastructure.Factories.JsonStringLocalizerFactory.Create
+  href: Infrastructure.Factories.JsonStringLocalizerFactory.html#Infrastructure_Factories_JsonStringLocalizerFactory_Create_System_Type_
+  name: Create
+  nameWithType: JsonStringLocalizerFactory.Create
+  fullName: Infrastructure.Factories.JsonStringLocalizerFactory.Create
+- uid: Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.Type)
+  commentId: M:Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.Type)
+  parent: Microsoft.Extensions.Localization.IStringLocalizerFactory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizerfactory.create#microsoft-extensions-localization-istringlocalizerfactory-create(system-type)
+  name: Create(Type)
+  nameWithType: IStringLocalizerFactory.Create(Type)
+  fullName: Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.Type)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.Type)
+    name: Create
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizerfactory.create#microsoft-extensions-localization-istringlocalizerfactory-create(system-type)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.Type)
+    name: Create
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizerfactory.create#microsoft-extensions-localization-istringlocalizerfactory-create(system-type)
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.String,System.String)
+  commentId: M:Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.String,System.String)
+  parent: Microsoft.Extensions.Localization.IStringLocalizerFactory
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizerfactory.create#microsoft-extensions-localization-istringlocalizerfactory-create(system-string-system-string)
+  name: Create(string, string)
+  nameWithType: IStringLocalizerFactory.Create(string, string)
+  fullName: Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(string, string)
+  nameWithType.vb: IStringLocalizerFactory.Create(String, String)
+  fullName.vb: Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(String, String)
+  name.vb: Create(String, String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.String,System.String)
+    name: Create
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizerfactory.create#microsoft-extensions-localization-istringlocalizerfactory-create(system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizerFactory.Create(System.String,System.String)
+    name: Create
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizerfactory.create#microsoft-extensions-localization-istringlocalizerfactory-create(system-string-system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,311 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Constants.ErrorMessage
+  commentId: T:Domain.Constants.ErrorMessage
+  id: ErrorMessage
+  parent: Domain.Constants
+  children:
+  - Domain.Constants.ErrorMessage.ENTITY_IS_ARCHIVED
+  - Domain.Constants.ErrorMessage.NOT_FOUND_ENTITY
+  - Domain.Constants.ErrorMessage.TAG_WITH_SAME_NAME_EXISTS
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessage
+  nameWithType: ErrorMessage
+  fullName: Domain.Constants.ErrorMessage
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Constants/ErrorMassges.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ErrorMessage
+    path: src/Domain/Constants/ErrorMassges.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  syntax:
+    content: public class ErrorMessage
+    content.vb: Public Class ErrorMessage
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Constants.ErrorMessage.NOT_FOUND_ENTITY
+  commentId: F:Domain.Constants.ErrorMessage.NOT_FOUND_ENTITY
+  id: NOT_FOUND_ENTITY
+  parent: Domain.Constants.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: NOT_FOUND_ENTITY
+  nameWithType: ErrorMessage.NOT_FOUND_ENTITY
+  fullName: Domain.Constants.ErrorMessage.NOT_FOUND_ENTITY
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Constants/ErrorMassges.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: NOT_FOUND_ENTITY
+    path: src/Domain/Constants/ErrorMassges.cs
+    startLine: 4
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  syntax:
+    content: public const string NOT_FOUND_ENTITY = "NOT_FOUND_ENTITY"
+    return:
+      type: System.String
+    content.vb: Public Const NOT_FOUND_ENTITY As String = "NOT_FOUND_ENTITY"
+- uid: Domain.Constants.ErrorMessage.TAG_WITH_SAME_NAME_EXISTS
+  commentId: F:Domain.Constants.ErrorMessage.TAG_WITH_SAME_NAME_EXISTS
+  id: TAG_WITH_SAME_NAME_EXISTS
+  parent: Domain.Constants.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: TAG_WITH_SAME_NAME_EXISTS
+  nameWithType: ErrorMessage.TAG_WITH_SAME_NAME_EXISTS
+  fullName: Domain.Constants.ErrorMessage.TAG_WITH_SAME_NAME_EXISTS
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Constants/ErrorMassges.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: TAG_WITH_SAME_NAME_EXISTS
+    path: src/Domain/Constants/ErrorMassges.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  syntax:
+    content: public const string TAG_WITH_SAME_NAME_EXISTS = "TAG_WITH_SAME_NAME_EXISTS"
+    return:
+      type: System.String
+    content.vb: Public Const TAG_WITH_SAME_NAME_EXISTS As String = "TAG_WITH_SAME_NAME_EXISTS"
+- uid: Domain.Constants.ErrorMessage.ENTITY_IS_ARCHIVED
+  commentId: F:Domain.Constants.ErrorMessage.ENTITY_IS_ARCHIVED
+  id: ENTITY_IS_ARCHIVED
+  parent: Domain.Constants.ErrorMessage
+  langs:
+  - csharp
+  - vb
+  name: ENTITY_IS_ARCHIVED
+  nameWithType: ErrorMessage.ENTITY_IS_ARCHIVED
+  fullName: Domain.Constants.ErrorMessage.ENTITY_IS_ARCHIVED
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Constants/ErrorMassges.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ENTITY_IS_ARCHIVED
+    path: src/Domain/Constants/ErrorMassges.cs
+    startLine: 6
+  assemblies:
+  - Domain
+  namespace: Domain.Constants
+  syntax:
+    content: public const string ENTITY_IS_ARCHIVED = "ENTITY_IS_ARCHIVED"
+    return:
+      type: System.String
+    content.vb: Public Const ENTITY_IS_ARCHIVED As String = "ENTITY_IS_ARCHIVED"
+references:
+- uid: Domain.Constants
+  commentId: N:Domain.Constants
+  href: Domain.html
+  name: Domain.Constants
+  nameWithType: Domain.Constants
+  fullName: Domain.Constants
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Constants
+    name: Constants
+    href: Domain.Constants.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Constants
+    name: Constants
+    href: Domain.Constants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

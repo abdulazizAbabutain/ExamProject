@@ -1,0 +1,584 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommandHandler
+  commentId: T:Application.Lookups.Commands.Languages.AddLanguageCommandHandler
+  id: AddLanguageCommandHandler
+  parent: Application.Lookups.Commands.Languages
+  children:
+  - Application.Lookups.Commands.Languages.AddLanguageCommandHandler.#ctor(Application.Commons.Managers.IServiceManager)
+  - Application.Lookups.Commands.Languages.AddLanguageCommandHandler.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: AddLanguageCommandHandler
+  nameWithType: AddLanguageCommandHandler
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommandHandler
+  type: Class
+  source:
+    remote:
+      path: src/Application/Lookups/Commands/Languages/AddLanguageCommandHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddLanguageCommandHandler
+    path: src/Application/Lookups/Commands/Languages/AddLanguageCommandHandler.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Commands.Languages
+  syntax:
+    content: 'public class AddLanguageCommandHandler : IRequestHandler<AddLanguageCommand>'
+    content.vb: Public Class AddLanguageCommandHandler Implements IRequestHandler(Of AddLanguageCommand)
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{Application.Lookups.Commands.Languages.AddLanguageCommand}
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.#ctor(Application.Commons.Managers.IServiceManager)
+  commentId: M:Application.Lookups.Commands.Languages.AddLanguageCommandHandler.#ctor(Application.Commons.Managers.IServiceManager)
+  id: '#ctor(Application.Commons.Managers.IServiceManager)'
+  parent: Application.Lookups.Commands.Languages.AddLanguageCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: AddLanguageCommandHandler(IServiceManager)
+  nameWithType: AddLanguageCommandHandler.AddLanguageCommandHandler(IServiceManager)
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.AddLanguageCommandHandler(Application.Commons.Managers.IServiceManager)
+  type: Constructor
+  source:
+    remote:
+      path: src/Application/Lookups/Commands/Languages/AddLanguageCommandHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Application/Lookups/Commands/Languages/AddLanguageCommandHandler.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Commands.Languages
+  syntax:
+    content: public AddLanguageCommandHandler(IServiceManager serviceManager)
+    parameters:
+    - id: serviceManager
+      type: Application.Commons.Managers.IServiceManager
+    content.vb: Public Sub New(serviceManager As IServiceManager)
+  overload: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.#ctor*
+  nameWithType.vb: AddLanguageCommandHandler.New(IServiceManager)
+  fullName.vb: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.New(Application.Commons.Managers.IServiceManager)
+  name.vb: New(IServiceManager)
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand,System.Threading.CancellationToken)
+  commentId: M:Application.Lookups.Commands.Languages.AddLanguageCommandHandler.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand,System.Threading.CancellationToken)
+  id: Handle(Application.Lookups.Commands.Languages.AddLanguageCommand,System.Threading.CancellationToken)
+  parent: Application.Lookups.Commands.Languages.AddLanguageCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(AddLanguageCommand, CancellationToken)
+  nameWithType: AddLanguageCommandHandler.Handle(AddLanguageCommand, CancellationToken)
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Lookups/Commands/Languages/AddLanguageCommandHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Handle
+    path: src/Application/Lookups/Commands/Languages/AddLanguageCommandHandler.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Commands.Languages
+  summary: Handles a request
+  example: []
+  syntax:
+    content: public Task Handle(AddLanguageCommand request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Application.Lookups.Commands.Languages.AddLanguageCommand
+      description: The request
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task
+      description: Response from the request
+    content.vb: Public Function Handle(request As AddLanguageCommand, cancellationToken As CancellationToken) As Task
+  overload: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.Handle*
+  implements:
+  - MediatR.IRequestHandler{Application.Lookups.Commands.Languages.AddLanguageCommand}.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand,System.Threading.CancellationToken)
+references:
+- uid: Application.Lookups.Commands.Languages
+  commentId: N:Application.Lookups.Commands.Languages
+  href: Application.html
+  name: Application.Lookups.Commands.Languages
+  nameWithType: Application.Lookups.Commands.Languages
+  fullName: Application.Lookups.Commands.Languages
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Commands
+    name: Commands
+    href: Application.Lookups.Commands.html
+  - name: .
+  - uid: Application.Lookups.Commands.Languages
+    name: Languages
+    href: Application.Lookups.Commands.Languages.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Commands
+    name: Commands
+    href: Application.Lookups.Commands.html
+  - name: .
+  - uid: Application.Lookups.Commands.Languages
+    name: Languages
+    href: Application.Lookups.Commands.Languages.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{Application.Lookups.Commands.Languages.AddLanguageCommand}
+  commentId: T:MediatR.IRequestHandler{Application.Lookups.Commands.Languages.AddLanguageCommand}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`1
+  href: Application.Lookups.Commands.Languages.AddLanguageCommand.html
+  name: IRequestHandler<AddLanguageCommand>
+  nameWithType: IRequestHandler<AddLanguageCommand>
+  fullName: MediatR.IRequestHandler<Application.Lookups.Commands.Languages.AddLanguageCommand>
+  nameWithType.vb: IRequestHandler(Of AddLanguageCommand)
+  fullName.vb: MediatR.IRequestHandler(Of Application.Lookups.Commands.Languages.AddLanguageCommand)
+  name.vb: IRequestHandler(Of AddLanguageCommand)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`1
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: Application.Lookups.Commands.Languages.AddLanguageCommand
+    name: AddLanguageCommand
+    href: Application.Lookups.Commands.Languages.AddLanguageCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`1
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Lookups.Commands.Languages.AddLanguageCommand
+    name: AddLanguageCommand
+    href: Application.Lookups.Commands.Languages.AddLanguageCommand.html
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`1
+  commentId: T:MediatR.IRequestHandler`1
+  isExternal: true
+  name: IRequestHandler<TRequest>
+  nameWithType: IRequestHandler<TRequest>
+  fullName: MediatR.IRequestHandler<TRequest>
+  nameWithType.vb: IRequestHandler(Of TRequest)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest)
+  name.vb: IRequestHandler(Of TRequest)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`1
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`1
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.#ctor*
+  commentId: Overload:Application.Lookups.Commands.Languages.AddLanguageCommandHandler.#ctor
+  href: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.html#Application_Lookups_Commands_Languages_AddLanguageCommandHandler__ctor_Application_Commons_Managers_IServiceManager_
+  name: AddLanguageCommandHandler
+  nameWithType: AddLanguageCommandHandler.AddLanguageCommandHandler
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.AddLanguageCommandHandler
+  nameWithType.vb: AddLanguageCommandHandler.New
+  fullName.vb: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.New
+  name.vb: New
+- uid: Application.Commons.Managers.IServiceManager
+  commentId: T:Application.Commons.Managers.IServiceManager
+  parent: Application.Commons.Managers
+  href: Application.Commons.Managers.IServiceManager.html
+  name: IServiceManager
+  nameWithType: IServiceManager
+  fullName: Application.Commons.Managers.IServiceManager
+- uid: Application.Commons.Managers
+  commentId: N:Application.Commons.Managers
+  href: Application.html
+  name: Application.Commons.Managers
+  nameWithType: Application.Commons.Managers
+  fullName: Application.Commons.Managers
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.Handle*
+  commentId: Overload:Application.Lookups.Commands.Languages.AddLanguageCommandHandler.Handle
+  href: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.html#Application_Lookups_Commands_Languages_AddLanguageCommandHandler_Handle_Application_Lookups_Commands_Languages_AddLanguageCommand_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: AddLanguageCommandHandler.Handle
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.Handle
+- uid: MediatR.IRequestHandler{Application.Lookups.Commands.Languages.AddLanguageCommand}.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{Application.Lookups.Commands.Languages.AddLanguageCommand}.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{Application.Lookups.Commands.Languages.AddLanguageCommand}
+  definition: MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+  href: Application.Lookups.Commands.Languages.AddLanguageCommand.html
+  name: Handle(AddLanguageCommand, CancellationToken)
+  nameWithType: IRequestHandler<AddLanguageCommand>.Handle(AddLanguageCommand, CancellationToken)
+  fullName: MediatR.IRequestHandler<Application.Lookups.Commands.Languages.AddLanguageCommand>.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of AddLanguageCommand).Handle(AddLanguageCommand, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of Application.Lookups.Commands.Languages.AddLanguageCommand).Handle(Application.Lookups.Commands.Languages.AddLanguageCommand, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{Application.Lookups.Commands.Languages.AddLanguageCommand}.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Lookups.Commands.Languages.AddLanguageCommand
+    name: AddLanguageCommand
+    href: Application.Lookups.Commands.Languages.AddLanguageCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{Application.Lookups.Commands.Languages.AddLanguageCommand}.Handle(Application.Lookups.Commands.Languages.AddLanguageCommand,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Lookups.Commands.Languages.AddLanguageCommand
+    name: AddLanguageCommand
+    href: Application.Lookups.Commands.Languages.AddLanguageCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommand
+  commentId: T:Application.Lookups.Commands.Languages.AddLanguageCommand
+  parent: Application.Lookups.Commands.Languages
+  href: Application.Lookups.Commands.Languages.AddLanguageCommand.html
+  name: AddLanguageCommand
+  nameWithType: AddLanguageCommand
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommand
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`1.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

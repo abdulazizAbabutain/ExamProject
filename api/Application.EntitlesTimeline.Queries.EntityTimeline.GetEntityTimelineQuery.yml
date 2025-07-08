@@ -1,0 +1,789 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  commentId: T:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  id: GetEntityTimelineQuery
+  parent: Application.EntitlesTimeline.Queries.EntityTimeline
+  children:
+  - Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionBy
+  - Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionType
+  - Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Comment
+  - Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EndDate
+  - Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EntityName
+  - Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Id
+  - Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.StartDate
+  langs:
+  - csharp
+  - vb
+  name: GetEntityTimelineQuery
+  nameWithType: GetEntityTimelineQuery
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  type: Class
+  source:
+    remote:
+      path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetEntityTimelineQuery
+    path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.EntitlesTimeline.Queries.EntityTimeline
+  syntax:
+    content: 'public class GetEntityTimelineQuery : PageRequest, IRequest<Result<PageResponse<TimelineQueryResult>>>, IBaseRequest'
+    content.vb: Public Class GetEntityTimelineQuery Inherits PageRequest Implements IRequest(Of Result(Of PageResponse(Of TimelineQueryResult))), IBaseRequest
+  inheritance:
+  - System.Object
+  - Application.Commons.Models.Pageination.PageRequest
+  implements:
+  - MediatR.IRequest{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Commons.SharedModelResult.Timeline.EntityTimeline.TimelineQueryResult}}}
+  - MediatR.IBaseRequest
+  inheritedMembers:
+  - Application.Commons.Models.Pageination.PageRequest.PageNumber
+  - Application.Commons.Models.Pageination.PageRequest.PageSize
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Id
+  commentId: P:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Id
+  id: Id
+  parent: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: GetEntityTimelineQuery.Id
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Id
+  type: Property
+  source:
+    remote:
+      path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Id
+    path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.EntitlesTimeline.Queries.EntityTimeline
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property Id As Guid
+  overload: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Id*
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EntityName
+  commentId: P:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EntityName
+  id: EntityName
+  parent: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  langs:
+  - csharp
+  - vb
+  name: EntityName
+  nameWithType: GetEntityTimelineQuery.EntityName
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EntityName
+  type: Property
+  source:
+    remote:
+      path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: EntityName
+    path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.EntitlesTimeline.Queries.EntityTimeline
+  syntax:
+    content: >-
+      [JsonIgnore]
+
+      public EntityName EntityName { get; set; }
+    parameters: []
+    return:
+      type: Domain.Enums.EntityName
+    content.vb: >-
+      <JsonIgnore>
+
+      Public Property EntityName As EntityName
+  overload: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EntityName*
+  attributes:
+  - type: Newtonsoft.Json.JsonIgnoreAttribute
+    ctor: Newtonsoft.Json.JsonIgnoreAttribute.#ctor
+    arguments: []
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.StartDate
+  commentId: P:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.StartDate
+  id: StartDate
+  parent: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  langs:
+  - csharp
+  - vb
+  name: StartDate
+  nameWithType: GetEntityTimelineQuery.StartDate
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.StartDate
+  type: Property
+  source:
+    remote:
+      path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: StartDate
+    path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+    startLine: 15
+  assemblies:
+  - Application
+  namespace: Application.EntitlesTimeline.Queries.EntityTimeline
+  syntax:
+    content: public DateTimeOffset? StartDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property StartDate As DateTimeOffset?
+  overload: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.StartDate*
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EndDate
+  commentId: P:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EndDate
+  id: EndDate
+  parent: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  langs:
+  - csharp
+  - vb
+  name: EndDate
+  nameWithType: GetEntityTimelineQuery.EndDate
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EndDate
+  type: Property
+  source:
+    remote:
+      path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: EndDate
+    path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.EntitlesTimeline.Queries.EntityTimeline
+  syntax:
+    content: public DateTimeOffset? EndDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property EndDate As DateTimeOffset?
+  overload: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EndDate*
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionType
+  commentId: P:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionType
+  id: ActionType
+  parent: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  langs:
+  - csharp
+  - vb
+  name: ActionType
+  nameWithType: GetEntityTimelineQuery.ActionType
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionType
+  type: Property
+  source:
+    remote:
+      path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ActionType
+    path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+    startLine: 17
+  assemblies:
+  - Application
+  namespace: Application.EntitlesTimeline.Queries.EntityTimeline
+  syntax:
+    content: public ActionType? ActionType { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Domain.Enums.ActionType}
+    content.vb: Public Property ActionType As ActionType?
+  overload: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionType*
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionBy
+  commentId: P:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionBy
+  id: ActionBy
+  parent: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  langs:
+  - csharp
+  - vb
+  name: ActionBy
+  nameWithType: GetEntityTimelineQuery.ActionBy
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionBy
+  type: Property
+  source:
+    remote:
+      path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ActionBy
+    path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+    startLine: 18
+  assemblies:
+  - Application
+  namespace: Application.EntitlesTimeline.Queries.EntityTimeline
+  syntax:
+    content: public ActionBy? ActionBy { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Domain.Enums.ActionBy}
+    content.vb: Public Property ActionBy As ActionBy?
+  overload: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionBy*
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Comment
+  commentId: P:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Comment
+  id: Comment
+  parent: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: GetEntityTimelineQuery.Comment
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Comment
+  type: Property
+  source:
+    remote:
+      path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Comment
+    path: src/Application/EntitlesTimeline/Queries/EntityTimeline/GetEntityTimelineQuery.cs
+    startLine: 19
+  assemblies:
+  - Application
+  namespace: Application.EntitlesTimeline.Queries.EntityTimeline
+  syntax:
+    content: public string? Comment { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Comment As String
+  overload: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Comment*
+references:
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline
+  commentId: N:Application.EntitlesTimeline.Queries.EntityTimeline
+  href: Application.html
+  name: Application.EntitlesTimeline.Queries.EntityTimeline
+  nameWithType: Application.EntitlesTimeline.Queries.EntityTimeline
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.EntitlesTimeline
+    name: EntitlesTimeline
+    href: Application.EntitlesTimeline.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries
+    name: Queries
+    href: Application.EntitlesTimeline.Queries.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries.EntityTimeline
+    name: EntityTimeline
+    href: Application.EntitlesTimeline.Queries.EntityTimeline.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.EntitlesTimeline
+    name: EntitlesTimeline
+    href: Application.EntitlesTimeline.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries
+    name: Queries
+    href: Application.EntitlesTimeline.Queries.html
+  - name: .
+  - uid: Application.EntitlesTimeline.Queries.EntityTimeline
+    name: EntityTimeline
+    href: Application.EntitlesTimeline.Queries.EntityTimeline.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Commons.Models.Pageination.PageRequest
+  commentId: T:Application.Commons.Models.Pageination.PageRequest
+  parent: Application.Commons.Models.Pageination
+  href: Application.Commons.Models.Pageination.PageRequest.html
+  name: PageRequest
+  nameWithType: PageRequest
+  fullName: Application.Commons.Models.Pageination.PageRequest
+- uid: MediatR.IRequest{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Commons.SharedModelResult.Timeline.EntityTimeline.TimelineQueryResult}}}
+  commentId: T:MediatR.IRequest{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Commons.SharedModelResult.Timeline.EntityTimeline.TimelineQueryResult}}}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: Application.Commons.Models.Results.Result-1.html
+  name: IRequest<Result<PageResponse<TimelineQueryResult>>>
+  nameWithType: IRequest<Result<PageResponse<TimelineQueryResult>>>
+  fullName: MediatR.IRequest<Application.Commons.Models.Results.Result<Application.Commons.Models.Pageination.PageResponse<Application.Commons.SharedModelResult.Timeline.EntityTimeline.TimelineQueryResult>>>
+  nameWithType.vb: IRequest(Of Result(Of PageResponse(Of TimelineQueryResult)))
+  fullName.vb: MediatR.IRequest(Of Application.Commons.Models.Results.Result(Of Application.Commons.Models.Pageination.PageResponse(Of Application.Commons.SharedModelResult.Timeline.EntityTimeline.TimelineQueryResult)))
+  name.vb: IRequest(Of Result(Of PageResponse(Of TimelineQueryResult)))
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: <
+  - uid: Application.Commons.SharedModelResult.Timeline.EntityTimeline.TimelineQueryResult
+    name: TimelineQueryResult
+    href: Application.Commons.SharedModelResult.Timeline.EntityTimeline.TimelineQueryResult.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.SharedModelResult.Timeline.EntityTimeline.TimelineQueryResult
+    name: TimelineQueryResult
+    href: Application.Commons.SharedModelResult.Timeline.EntityTimeline.TimelineQueryResult.html
+  - name: )
+  - name: )
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: Application.Commons.Models.Pageination.PageRequest.PageNumber
+  commentId: P:Application.Commons.Models.Pageination.PageRequest.PageNumber
+  parent: Application.Commons.Models.Pageination.PageRequest
+  href: Application.Commons.Models.Pageination.PageRequest.html#Application_Commons_Models_Pageination_PageRequest_PageNumber
+  name: PageNumber
+  nameWithType: PageRequest.PageNumber
+  fullName: Application.Commons.Models.Pageination.PageRequest.PageNumber
+- uid: Application.Commons.Models.Pageination.PageRequest.PageSize
+  commentId: P:Application.Commons.Models.Pageination.PageRequest.PageSize
+  parent: Application.Commons.Models.Pageination.PageRequest
+  href: Application.Commons.Models.Pageination.PageRequest.html#Application_Commons_Models_Pageination_PageRequest_PageSize
+  name: PageSize
+  nameWithType: PageRequest.PageSize
+  fullName: Application.Commons.Models.Pageination.PageRequest.PageSize
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Models.Pageination
+  commentId: N:Application.Commons.Models.Pageination
+  href: Application.html
+  name: Application.Commons.Models.Pageination
+  nameWithType: Application.Commons.Models.Pageination
+  fullName: Application.Commons.Models.Pageination
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Pageination
+    name: Pageination
+    href: Application.Commons.Models.Pageination.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Pageination
+    name: Pageination
+    href: Application.Commons.Models.Pageination.html
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Id*
+  commentId: Overload:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Id
+  href: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.html#Application_EntitlesTimeline_Queries_EntityTimeline_GetEntityTimelineQuery_Id
+  name: Id
+  nameWithType: GetEntityTimelineQuery.Id
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EntityName*
+  commentId: Overload:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EntityName
+  href: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.html#Application_EntitlesTimeline_Queries_EntityTimeline_GetEntityTimelineQuery_EntityName
+  name: EntityName
+  nameWithType: GetEntityTimelineQuery.EntityName
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EntityName
+- uid: Domain.Enums.EntityName
+  commentId: T:Domain.Enums.EntityName
+  parent: Domain.Enums
+  href: Domain.Enums.EntityName.html
+  name: EntityName
+  nameWithType: EntityName
+  fullName: Domain.Enums.EntityName
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.StartDate*
+  commentId: Overload:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.StartDate
+  href: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.html#Application_EntitlesTimeline_Queries_EntityTimeline_GetEntityTimelineQuery_StartDate
+  name: StartDate
+  nameWithType: GetEntityTimelineQuery.StartDate
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.StartDate
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EndDate*
+  commentId: Overload:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EndDate
+  href: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.html#Application_EntitlesTimeline_Queries_EntityTimeline_GetEntityTimelineQuery_EndDate
+  name: EndDate
+  nameWithType: GetEntityTimelineQuery.EndDate
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.EndDate
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionType*
+  commentId: Overload:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionType
+  href: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.html#Application_EntitlesTimeline_Queries_EntityTimeline_GetEntityTimelineQuery_ActionType
+  name: ActionType
+  nameWithType: GetEntityTimelineQuery.ActionType
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionType
+- uid: System.Nullable{Domain.Enums.ActionType}
+  commentId: T:System.Nullable{Domain.Enums.ActionType}
+  parent: System
+  definition: System.Nullable`1
+  name: ActionType?
+  nameWithType: ActionType?
+  fullName: Domain.Enums.ActionType?
+  spec.csharp:
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: '?'
+  spec.vb:
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: '?'
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionBy*
+  commentId: Overload:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionBy
+  href: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.html#Application_EntitlesTimeline_Queries_EntityTimeline_GetEntityTimelineQuery_ActionBy
+  name: ActionBy
+  nameWithType: GetEntityTimelineQuery.ActionBy
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.ActionBy
+- uid: System.Nullable{Domain.Enums.ActionBy}
+  commentId: T:System.Nullable{Domain.Enums.ActionBy}
+  parent: System
+  definition: System.Nullable`1
+  name: ActionBy?
+  nameWithType: ActionBy?
+  fullName: Domain.Enums.ActionBy?
+  spec.csharp:
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: '?'
+  spec.vb:
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: '?'
+- uid: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Comment*
+  commentId: Overload:Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Comment
+  href: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.html#Application_EntitlesTimeline_Queries_EntityTimeline_GetEntityTimelineQuery_Comment
+  name: Comment
+  nameWithType: GetEntityTimelineQuery.Comment
+  fullName: Application.EntitlesTimeline.Queries.EntityTimeline.GetEntityTimelineQuery.Comment
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

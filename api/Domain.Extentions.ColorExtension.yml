@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Extentions.ColorExtension
+  commentId: T:Domain.Extentions.ColorExtension
+  id: ColorExtension
+  parent: Domain.Extentions
+  children:
+  - Domain.Extentions.ColorExtension.GenerateRandomHexColor
+  - Domain.Extentions.ColorExtension.GetColorGroup(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ColorExtension
+  nameWithType: ColorExtension
+  fullName: Domain.Extentions.ColorExtension
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Extentions/ColorExtention.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ColorExtension
+    path: src/Domain/Extentions/ColorExtention.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Extentions
+  syntax:
+    content: public static class ColorExtension
+    content.vb: Public Module ColorExtension
+  inheritance:
+  - System.Object
+- uid: Domain.Extentions.ColorExtension.GetColorGroup(System.String)
+  commentId: M:Domain.Extentions.ColorExtension.GetColorGroup(System.String)
+  id: GetColorGroup(System.String)
+  isExtensionMethod: true
+  parent: Domain.Extentions.ColorExtension
+  langs:
+  - csharp
+  - vb
+  name: GetColorGroup(string)
+  nameWithType: ColorExtension.GetColorGroup(string)
+  fullName: Domain.Extentions.ColorExtension.GetColorGroup(string)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Extentions/ColorExtention.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetColorGroup
+    path: src/Domain/Extentions/ColorExtention.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.Extentions
+  syntax:
+    content: public static ColorCategory GetColorGroup(this string hexColor)
+    parameters:
+    - id: hexColor
+      type: System.String
+    return:
+      type: Domain.Enums.ColorCategory
+    content.vb: Public Shared Function GetColorGroup(hexColor As String) As ColorCategory
+  overload: Domain.Extentions.ColorExtension.GetColorGroup*
+  nameWithType.vb: ColorExtension.GetColorGroup(String)
+  fullName.vb: Domain.Extentions.ColorExtension.GetColorGroup(String)
+  name.vb: GetColorGroup(String)
+- uid: Domain.Extentions.ColorExtension.GenerateRandomHexColor
+  commentId: M:Domain.Extentions.ColorExtension.GenerateRandomHexColor
+  id: GenerateRandomHexColor
+  parent: Domain.Extentions.ColorExtension
+  langs:
+  - csharp
+  - vb
+  name: GenerateRandomHexColor()
+  nameWithType: ColorExtension.GenerateRandomHexColor()
+  fullName: Domain.Extentions.ColorExtension.GenerateRandomHexColor()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Extentions/ColorExtention.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GenerateRandomHexColor
+    path: src/Domain/Extentions/ColorExtention.cs
+    startLine: 38
+  assemblies:
+  - Domain
+  namespace: Domain.Extentions
+  syntax:
+    content: public static string GenerateRandomHexColor()
+    return:
+      type: System.String
+    content.vb: Public Shared Function GenerateRandomHexColor() As String
+  overload: Domain.Extentions.ColorExtension.GenerateRandomHexColor*
+references:
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ColorExtension.GetColorGroup*
+  commentId: Overload:Domain.Extentions.ColorExtension.GetColorGroup
+  href: Domain.Extentions.ColorExtension.html#Domain_Extentions_ColorExtension_GetColorGroup_System_String_
+  name: GetColorGroup
+  nameWithType: ColorExtension.GetColorGroup
+  fullName: Domain.Extentions.ColorExtension.GetColorGroup
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Domain.Enums.ColorCategory
+  commentId: T:Domain.Enums.ColorCategory
+  parent: Domain.Enums
+  href: Domain.Enums.ColorCategory.html
+  name: ColorCategory
+  nameWithType: ColorCategory
+  fullName: Domain.Enums.ColorCategory
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Domain.Extentions.ColorExtension.GenerateRandomHexColor*
+  commentId: Overload:Domain.Extentions.ColorExtension.GenerateRandomHexColor
+  href: Domain.Extentions.ColorExtension.html#Domain_Extentions_ColorExtension_GenerateRandomHexColor
+  name: GenerateRandomHexColor
+  nameWithType: ColorExtension.GenerateRandomHexColor
+  fullName: Domain.Extentions.ColorExtension.GenerateRandomHexColor

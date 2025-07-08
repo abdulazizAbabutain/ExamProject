@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: API.Interfaces
+  commentId: N:API.Interfaces
+  id: API.Interfaces
+  children:
+  - API.Interfaces.IHttpResultResponder
+  langs:
+  - csharp
+  - vb
+  name: API.Interfaces
+  nameWithType: API.Interfaces
+  fullName: API.Interfaces
+  type: Namespace
+  assemblies:
+  - API
+references:
+- uid: API.Interfaces.IHttpResultResponder
+  commentId: T:API.Interfaces.IHttpResultResponder
+  parent: API.Interfaces
+  href: API.Interfaces.IHttpResultResponder.html
+  name: IHttpResultResponder
+  nameWithType: IHttpResultResponder
+  fullName: API.Interfaces.IHttpResultResponder
+- uid: API.Interfaces
+  commentId: N:API.Interfaces
+  href: API.html
+  name: API.Interfaces
+  nameWithType: API.Interfaces
+  fullName: API.Interfaces
+  spec.csharp:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Interfaces
+    name: Interfaces
+    href: API.Interfaces.html
+  spec.vb:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Interfaces
+    name: Interfaces
+    href: API.Interfaces.html

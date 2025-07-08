@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: API.Services
+  commentId: N:API.Services
+  id: API.Services
+  children:
+  - API.Services.HttpResultResponder
+  langs:
+  - csharp
+  - vb
+  name: API.Services
+  nameWithType: API.Services
+  fullName: API.Services
+  type: Namespace
+  assemblies:
+  - API
+references:
+- uid: API.Services.HttpResultResponder
+  commentId: T:API.Services.HttpResultResponder
+  href: API.Services.HttpResultResponder.html
+  name: HttpResultResponder
+  nameWithType: HttpResultResponder
+  fullName: API.Services.HttpResultResponder

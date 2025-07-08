@@ -1,0 +1,655 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Services.ILookupService
+  commentId: T:Application.Commons.Services.ILookupService
+  id: ILookupService
+  parent: Application.Commons.Services
+  children:
+  - Application.Commons.Services.ILookupService.AddLanguage(Domain.Entities.EntityLookup.Language)
+  - Application.Commons.Services.ILookupService.AddSource(Domain.Entities.Sources.Source)
+  - Application.Commons.Services.ILookupService.GetLanguageReference(System.String)
+  - Application.Commons.Services.ILookupService.GetLanguages
+  - Application.Commons.Services.ILookupService.GetSource(System.Guid)
+  - Application.Commons.Services.ILookupService.UpdateSource(Domain.Entities.Sources.Source)
+  langs:
+  - csharp
+  - vb
+  name: ILookupService
+  nameWithType: ILookupService
+  fullName: Application.Commons.Services.ILookupService
+  type: Interface
+  source:
+    remote:
+      path: src/Application/Commons/Services/ILookupService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ILookupService
+    path: src/Application/Commons/Services/ILookupService.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: 'public interface ILookupService : IDisposable'
+    content.vb: Public Interface ILookupService Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Commons.Services.ILookupService.AddLanguage(Domain.Entities.EntityLookup.Language)
+  commentId: M:Application.Commons.Services.ILookupService.AddLanguage(Domain.Entities.EntityLookup.Language)
+  id: AddLanguage(Domain.Entities.EntityLookup.Language)
+  parent: Application.Commons.Services.ILookupService
+  langs:
+  - csharp
+  - vb
+  name: AddLanguage(Language)
+  nameWithType: ILookupService.AddLanguage(Language)
+  fullName: Application.Commons.Services.ILookupService.AddLanguage(Domain.Entities.EntityLookup.Language)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ILookupService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddLanguage
+    path: src/Application/Commons/Services/ILookupService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: void AddLanguage(Language language)
+    parameters:
+    - id: language
+      type: Domain.Entities.EntityLookup.Language
+    content.vb: Sub AddLanguage(language As Language)
+  overload: Application.Commons.Services.ILookupService.AddLanguage*
+- uid: Application.Commons.Services.ILookupService.GetLanguages
+  commentId: M:Application.Commons.Services.ILookupService.GetLanguages
+  id: GetLanguages
+  parent: Application.Commons.Services.ILookupService
+  langs:
+  - csharp
+  - vb
+  name: GetLanguages()
+  nameWithType: ILookupService.GetLanguages()
+  fullName: Application.Commons.Services.ILookupService.GetLanguages()
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ILookupService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetLanguages
+    path: src/Application/Commons/Services/ILookupService.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: IEnumerable<Language> GetLanguages()
+    return:
+      type: System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Language}
+    content.vb: Function GetLanguages() As IEnumerable(Of Language)
+  overload: Application.Commons.Services.ILookupService.GetLanguages*
+- uid: Application.Commons.Services.ILookupService.GetLanguageReference(System.String)
+  commentId: M:Application.Commons.Services.ILookupService.GetLanguageReference(System.String)
+  id: GetLanguageReference(System.String)
+  parent: Application.Commons.Services.ILookupService
+  langs:
+  - csharp
+  - vb
+  name: GetLanguageReference(string)
+  nameWithType: ILookupService.GetLanguageReference(string)
+  fullName: Application.Commons.Services.ILookupService.GetLanguageReference(string)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ILookupService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetLanguageReference
+    path: src/Application/Commons/Services/ILookupService.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: Guid GetLanguageReference(string code)
+    parameters:
+    - id: code
+      type: System.String
+    return:
+      type: System.Guid
+    content.vb: Function GetLanguageReference(code As String) As Guid
+  overload: Application.Commons.Services.ILookupService.GetLanguageReference*
+  nameWithType.vb: ILookupService.GetLanguageReference(String)
+  fullName.vb: Application.Commons.Services.ILookupService.GetLanguageReference(String)
+  name.vb: GetLanguageReference(String)
+- uid: Application.Commons.Services.ILookupService.AddSource(Domain.Entities.Sources.Source)
+  commentId: M:Application.Commons.Services.ILookupService.AddSource(Domain.Entities.Sources.Source)
+  id: AddSource(Domain.Entities.Sources.Source)
+  parent: Application.Commons.Services.ILookupService
+  langs:
+  - csharp
+  - vb
+  name: AddSource(Source)
+  nameWithType: ILookupService.AddSource(Source)
+  fullName: Application.Commons.Services.ILookupService.AddSource(Domain.Entities.Sources.Source)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ILookupService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddSource
+    path: src/Application/Commons/Services/ILookupService.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: void AddSource(Source source)
+    parameters:
+    - id: source
+      type: Domain.Entities.Sources.Source
+    content.vb: Sub AddSource(source As Source)
+  overload: Application.Commons.Services.ILookupService.AddSource*
+- uid: Application.Commons.Services.ILookupService.GetSource(System.Guid)
+  commentId: M:Application.Commons.Services.ILookupService.GetSource(System.Guid)
+  id: GetSource(System.Guid)
+  parent: Application.Commons.Services.ILookupService
+  langs:
+  - csharp
+  - vb
+  name: GetSource(Guid)
+  nameWithType: ILookupService.GetSource(Guid)
+  fullName: Application.Commons.Services.ILookupService.GetSource(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ILookupService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetSource
+    path: src/Application/Commons/Services/ILookupService.cs
+    startLine: 15
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: Source GetSource(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: Domain.Entities.Sources.Source
+    content.vb: Function GetSource(id As Guid) As Source
+  overload: Application.Commons.Services.ILookupService.GetSource*
+- uid: Application.Commons.Services.ILookupService.UpdateSource(Domain.Entities.Sources.Source)
+  commentId: M:Application.Commons.Services.ILookupService.UpdateSource(Domain.Entities.Sources.Source)
+  id: UpdateSource(Domain.Entities.Sources.Source)
+  parent: Application.Commons.Services.ILookupService
+  langs:
+  - csharp
+  - vb
+  name: UpdateSource(Source)
+  nameWithType: ILookupService.UpdateSource(Source)
+  fullName: Application.Commons.Services.ILookupService.UpdateSource(Domain.Entities.Sources.Source)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ILookupService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateSource
+    path: src/Application/Commons/Services/ILookupService.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: void UpdateSource(Source source)
+    parameters:
+    - id: source
+      type: Domain.Entities.Sources.Source
+    content.vb: Sub UpdateSource(source As Source)
+  overload: Application.Commons.Services.ILookupService.UpdateSource*
+references:
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Commons.Services.ILookupService.AddLanguage*
+  commentId: Overload:Application.Commons.Services.ILookupService.AddLanguage
+  href: Application.Commons.Services.ILookupService.html#Application_Commons_Services_ILookupService_AddLanguage_Domain_Entities_EntityLookup_Language_
+  name: AddLanguage
+  nameWithType: ILookupService.AddLanguage
+  fullName: Application.Commons.Services.ILookupService.AddLanguage
+- uid: Domain.Entities.EntityLookup.Language
+  commentId: T:Domain.Entities.EntityLookup.Language
+  parent: Domain.Entities.EntityLookup
+  href: Domain.Entities.EntityLookup.Language.html
+  name: Language
+  nameWithType: Language
+  fullName: Domain.Entities.EntityLookup.Language
+- uid: Domain.Entities.EntityLookup
+  commentId: N:Domain.Entities.EntityLookup
+  href: Domain.html
+  name: Domain.Entities.EntityLookup
+  nameWithType: Domain.Entities.EntityLookup
+  fullName: Domain.Entities.EntityLookup
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.EntityLookup
+    name: EntityLookup
+    href: Domain.Entities.EntityLookup.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.EntityLookup
+    name: EntityLookup
+    href: Domain.Entities.EntityLookup.html
+- uid: Application.Commons.Services.ILookupService.GetLanguages*
+  commentId: Overload:Application.Commons.Services.ILookupService.GetLanguages
+  href: Application.Commons.Services.ILookupService.html#Application_Commons_Services_ILookupService_GetLanguages
+  name: GetLanguages
+  nameWithType: ILookupService.GetLanguages
+  fullName: Application.Commons.Services.ILookupService.GetLanguages
+- uid: System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Language}
+  commentId: T:System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Language}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Language>
+  nameWithType: IEnumerable<Language>
+  fullName: System.Collections.Generic.IEnumerable<Domain.Entities.EntityLookup.Language>
+  nameWithType.vb: IEnumerable(Of Language)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Domain.Entities.EntityLookup.Language)
+  name.vb: IEnumerable(Of Language)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.EntityLookup.Language
+    name: Language
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.EntityLookup.Language
+    name: Language
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Application.Commons.Services.ILookupService.GetLanguageReference*
+  commentId: Overload:Application.Commons.Services.ILookupService.GetLanguageReference
+  href: Application.Commons.Services.ILookupService.html#Application_Commons_Services_ILookupService_GetLanguageReference_System_String_
+  name: GetLanguageReference
+  nameWithType: ILookupService.GetLanguageReference
+  fullName: Application.Commons.Services.ILookupService.GetLanguageReference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Commons.Services.ILookupService.AddSource*
+  commentId: Overload:Application.Commons.Services.ILookupService.AddSource
+  href: Application.Commons.Services.ILookupService.html#Application_Commons_Services_ILookupService_AddSource_Domain_Entities_Sources_Source_
+  name: AddSource
+  nameWithType: ILookupService.AddSource
+  fullName: Application.Commons.Services.ILookupService.AddSource
+- uid: Domain.Entities.Sources.Source
+  commentId: T:Domain.Entities.Sources.Source
+  parent: Domain.Entities.Sources
+  href: Domain.Entities.Sources.Source.html
+  name: Source
+  nameWithType: Source
+  fullName: Domain.Entities.Sources.Source
+- uid: Domain.Entities.Sources
+  commentId: N:Domain.Entities.Sources
+  href: Domain.html
+  name: Domain.Entities.Sources
+  nameWithType: Domain.Entities.Sources
+  fullName: Domain.Entities.Sources
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Sources
+    name: Sources
+    href: Domain.Entities.Sources.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Sources
+    name: Sources
+    href: Domain.Entities.Sources.html
+- uid: Application.Commons.Services.ILookupService.GetSource*
+  commentId: Overload:Application.Commons.Services.ILookupService.GetSource
+  href: Application.Commons.Services.ILookupService.html#Application_Commons_Services_ILookupService_GetSource_System_Guid_
+  name: GetSource
+  nameWithType: ILookupService.GetSource
+  fullName: Application.Commons.Services.ILookupService.GetSource
+- uid: Application.Commons.Services.ILookupService.UpdateSource*
+  commentId: Overload:Application.Commons.Services.ILookupService.UpdateSource
+  href: Application.Commons.Services.ILookupService.html#Application_Commons_Services_ILookupService_UpdateSource_Domain_Entities_Sources_Source_
+  name: UpdateSource
+  nameWithType: ILookupService.UpdateSource
+  fullName: Application.Commons.Services.ILookupService.UpdateSource

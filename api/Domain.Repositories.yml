@@ -1,0 +1,94 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Repositories
+  commentId: N:Domain.Repositories
+  id: Domain.Repositories
+  children:
+  - Domain.Repositories.IApplicationLogRepository
+  - Domain.Repositories.ICategoryRepository
+  - Domain.Repositories.ILanguageRepository
+  - Domain.Repositories.IQuestionRepository
+  - Domain.Repositories.IReferenceRepository
+  - Domain.Repositories.ISourceRepository
+  - Domain.Repositories.ITagRepository
+  langs:
+  - csharp
+  - vb
+  name: Domain.Repositories
+  nameWithType: Domain.Repositories
+  fullName: Domain.Repositories
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Repositories.IApplicationLogRepository
+  commentId: T:Domain.Repositories.IApplicationLogRepository
+  parent: Domain.Repositories
+  href: Domain.Repositories.IApplicationLogRepository.html
+  name: IApplicationLogRepository
+  nameWithType: IApplicationLogRepository
+  fullName: Domain.Repositories.IApplicationLogRepository
+- uid: Domain.Repositories.ICategoryRepository
+  commentId: T:Domain.Repositories.ICategoryRepository
+  parent: Domain.Repositories
+  href: Domain.Repositories.ICategoryRepository.html
+  name: ICategoryRepository
+  nameWithType: ICategoryRepository
+  fullName: Domain.Repositories.ICategoryRepository
+- uid: Domain.Repositories.ILanguageRepository
+  commentId: T:Domain.Repositories.ILanguageRepository
+  parent: Domain.Repositories
+  href: Domain.Repositories.ILanguageRepository.html
+  name: ILanguageRepository
+  nameWithType: ILanguageRepository
+  fullName: Domain.Repositories.ILanguageRepository
+- uid: Domain.Repositories.IQuestionRepository
+  commentId: T:Domain.Repositories.IQuestionRepository
+  parent: Domain.Repositories
+  href: Domain.Repositories.IQuestionRepository.html
+  name: IQuestionRepository
+  nameWithType: IQuestionRepository
+  fullName: Domain.Repositories.IQuestionRepository
+- uid: Domain.Repositories.IReferenceRepository
+  commentId: T:Domain.Repositories.IReferenceRepository
+  parent: Domain.Repositories
+  href: Domain.Repositories.IReferenceRepository.html
+  name: IReferenceRepository
+  nameWithType: IReferenceRepository
+  fullName: Domain.Repositories.IReferenceRepository
+- uid: Domain.Repositories.ISourceRepository
+  commentId: T:Domain.Repositories.ISourceRepository
+  parent: Domain.Repositories
+  href: Domain.Repositories.ISourceRepository.html
+  name: ISourceRepository
+  nameWithType: ISourceRepository
+  fullName: Domain.Repositories.ISourceRepository
+- uid: Domain.Repositories.ITagRepository
+  commentId: T:Domain.Repositories.ITagRepository
+  parent: Domain.Repositories
+  href: Domain.Repositories.ITagRepository.html
+  name: ITagRepository
+  nameWithType: ITagRepository
+  fullName: Domain.Repositories.ITagRepository
+- uid: Domain.Repositories
+  commentId: N:Domain.Repositories
+  href: Domain.html
+  name: Domain.Repositories
+  nameWithType: Domain.Repositories
+  fullName: Domain.Repositories
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html

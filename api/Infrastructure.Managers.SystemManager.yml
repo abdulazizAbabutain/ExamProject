@@ -1,0 +1,424 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Managers.SystemManager
+  commentId: T:Infrastructure.Managers.SystemManager
+  id: SystemManager
+  parent: Infrastructure.Managers
+  children:
+  - Infrastructure.Managers.SystemManager.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  - Infrastructure.Managers.SystemManager.SystemService
+  langs:
+  - csharp
+  - vb
+  name: SystemManager
+  nameWithType: SystemManager
+  fullName: Infrastructure.Managers.SystemManager
+  type: Class
+  source:
+    remote:
+      path: src/Infrastructure/Managers/SystemManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: SystemManager
+    path: src/Infrastructure/Managers/SystemManager.cs
+    startLine: 7
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Managers
+  syntax:
+    content: 'public class SystemManager : ISystemManager'
+    content.vb: Public Class SystemManager Implements ISystemManager
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Commons.Managers.ISystemManager
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Infrastructure.Managers.SystemManager.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  commentId: M:Infrastructure.Managers.SystemManager.#ctor(Microsoft.Extensions.Configuration.IConfiguration)
+  id: '#ctor(Microsoft.Extensions.Configuration.IConfiguration)'
+  parent: Infrastructure.Managers.SystemManager
+  langs:
+  - csharp
+  - vb
+  name: SystemManager(IConfiguration)
+  nameWithType: SystemManager.SystemManager(IConfiguration)
+  fullName: Infrastructure.Managers.SystemManager.SystemManager(Microsoft.Extensions.Configuration.IConfiguration)
+  type: Constructor
+  source:
+    remote:
+      path: src/Infrastructure/Managers/SystemManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Infrastructure/Managers/SystemManager.cs
+    startLine: 7
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Managers
+  syntax:
+    content: public SystemManager(IConfiguration configuration)
+    parameters:
+    - id: configuration
+      type: Microsoft.Extensions.Configuration.IConfiguration
+    content.vb: Public Sub New(configuration As IConfiguration)
+  overload: Infrastructure.Managers.SystemManager.#ctor*
+  nameWithType.vb: SystemManager.New(IConfiguration)
+  fullName.vb: Infrastructure.Managers.SystemManager.New(Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: New(IConfiguration)
+- uid: Infrastructure.Managers.SystemManager.SystemService
+  commentId: P:Infrastructure.Managers.SystemManager.SystemService
+  id: SystemService
+  parent: Infrastructure.Managers.SystemManager
+  langs:
+  - csharp
+  - vb
+  name: SystemService
+  nameWithType: SystemManager.SystemService
+  fullName: Infrastructure.Managers.SystemManager.SystemService
+  type: Property
+  source:
+    remote:
+      path: src/Infrastructure/Managers/SystemManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: SystemService
+    path: src/Infrastructure/Managers/SystemManager.cs
+    startLine: 11
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Managers
+  example: []
+  syntax:
+    content: public ISystemService SystemService { get; }
+    parameters: []
+    return:
+      type: Application.Commons.Services.ISystemService
+    content.vb: Public ReadOnly Property SystemService As ISystemService
+  overload: Infrastructure.Managers.SystemManager.SystemService*
+  implements:
+  - Application.Commons.Managers.ISystemManager.SystemService
+references:
+- uid: Infrastructure.Managers
+  commentId: N:Infrastructure.Managers
+  href: Infrastructure.html
+  name: Infrastructure.Managers
+  nameWithType: Infrastructure.Managers
+  fullName: Infrastructure.Managers
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Managers
+    name: Managers
+    href: Infrastructure.Managers.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Managers
+    name: Managers
+    href: Infrastructure.Managers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Commons.Managers.ISystemManager
+  commentId: T:Application.Commons.Managers.ISystemManager
+  parent: Application.Commons.Managers
+  href: Application.Commons.Managers.ISystemManager.html
+  name: ISystemManager
+  nameWithType: ISystemManager
+  fullName: Application.Commons.Managers.ISystemManager
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Managers
+  commentId: N:Application.Commons.Managers
+  href: Application.html
+  name: Application.Commons.Managers
+  nameWithType: Application.Commons.Managers
+  fullName: Application.Commons.Managers
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Infrastructure.Managers.SystemManager.#ctor*
+  commentId: Overload:Infrastructure.Managers.SystemManager.#ctor
+  href: Infrastructure.Managers.SystemManager.html#Infrastructure_Managers_SystemManager__ctor_Microsoft_Extensions_Configuration_IConfiguration_
+  name: SystemManager
+  nameWithType: SystemManager.SystemManager
+  fullName: Infrastructure.Managers.SystemManager.SystemManager
+  nameWithType.vb: SystemManager.New
+  fullName.vb: Infrastructure.Managers.SystemManager.New
+  name.vb: New
+- uid: Microsoft.Extensions.Configuration.IConfiguration
+  commentId: T:Microsoft.Extensions.Configuration.IConfiguration
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration
+  name: IConfiguration
+  nameWithType: IConfiguration
+  fullName: Microsoft.Extensions.Configuration.IConfiguration
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration
+- uid: Infrastructure.Managers.SystemManager.SystemService*
+  commentId: Overload:Infrastructure.Managers.SystemManager.SystemService
+  href: Infrastructure.Managers.SystemManager.html#Infrastructure_Managers_SystemManager_SystemService
+  name: SystemService
+  nameWithType: SystemManager.SystemService
+  fullName: Infrastructure.Managers.SystemManager.SystemService
+- uid: Application.Commons.Managers.ISystemManager.SystemService
+  commentId: P:Application.Commons.Managers.ISystemManager.SystemService
+  parent: Application.Commons.Managers.ISystemManager
+  name: SystemService
+  nameWithType: ISystemManager.SystemService
+  fullName: Application.Commons.Managers.ISystemManager.SystemService
+- uid: Application.Commons.Services.ISystemService
+  commentId: T:Application.Commons.Services.ISystemService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ISystemService.html
+  name: ISystemService
+  nameWithType: ISystemService
+  fullName: Application.Commons.Services.ISystemService
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html

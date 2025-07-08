@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Commands.DeleteTag
+  commentId: N:Application.Tags.Commands.DeleteTag
+  id: Application.Tags.Commands.DeleteTag
+  children:
+  - Application.Tags.Commands.DeleteTag.DeleteTagCommand
+  - Application.Tags.Commands.DeleteTag.DeleteTagCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Application.Tags.Commands.DeleteTag
+  nameWithType: Application.Tags.Commands.DeleteTag
+  fullName: Application.Tags.Commands.DeleteTag
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Tags.Commands.DeleteTag.DeleteTagCommand
+  commentId: T:Application.Tags.Commands.DeleteTag.DeleteTagCommand
+  parent: Application.Tags.Commands.DeleteTag
+  href: Application.Tags.Commands.DeleteTag.DeleteTagCommand.html
+  name: DeleteTagCommand
+  nameWithType: DeleteTagCommand
+  fullName: Application.Tags.Commands.DeleteTag.DeleteTagCommand
+- uid: Application.Tags.Commands.DeleteTag.DeleteTagCommandHandler
+  commentId: T:Application.Tags.Commands.DeleteTag.DeleteTagCommandHandler
+  href: Application.Tags.Commands.DeleteTag.DeleteTagCommandHandler.html
+  name: DeleteTagCommandHandler
+  nameWithType: DeleteTagCommandHandler
+  fullName: Application.Tags.Commands.DeleteTag.DeleteTagCommandHandler
+- uid: Application.Tags.Commands.DeleteTag
+  commentId: N:Application.Tags.Commands.DeleteTag
+  href: Application.html
+  name: Application.Tags.Commands.DeleteTag
+  nameWithType: Application.Tags.Commands.DeleteTag
+  fullName: Application.Tags.Commands.DeleteTag
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.DeleteTag
+    name: DeleteTag
+    href: Application.Tags.Commands.DeleteTag.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.DeleteTag
+    name: DeleteTag
+    href: Application.Tags.Commands.DeleteTag.html

@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Repositories.RepositoryBase
+  commentId: N:Domain.Repositories.RepositoryBase
+  id: Domain.Repositories.RepositoryBase
+  children:
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Domain.Repositories.RepositoryBase
+  nameWithType: Domain.Repositories.RepositoryBase
+  fullName: Domain.Repositories.RepositoryBase
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  commentId: T:Domain.Repositories.RepositoryBase.IBaseRepository`1
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  name: IBaseRepository<T>
+  nameWithType: IBaseRepository<T>
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>
+  nameWithType.vb: IBaseRepository(Of T)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T)
+  name.vb: IBaseRepository(Of T)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

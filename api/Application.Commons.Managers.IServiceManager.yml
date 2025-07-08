@@ -1,0 +1,489 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Managers.IServiceManager
+  commentId: T:Application.Commons.Managers.IServiceManager
+  id: IServiceManager
+  parent: Application.Commons.Managers
+  children:
+  - Application.Commons.Managers.IServiceManager.CategoryService
+  - Application.Commons.Managers.IServiceManager.LookupService
+  - Application.Commons.Managers.IServiceManager.QuestionService
+  - Application.Commons.Managers.IServiceManager.SourceService
+  - Application.Commons.Managers.IServiceManager.TagService
+  langs:
+  - csharp
+  - vb
+  name: IServiceManager
+  nameWithType: IServiceManager
+  fullName: Application.Commons.Managers.IServiceManager
+  type: Interface
+  source:
+    remote:
+      path: src/Application/Commons/Managers/IServiceManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IServiceManager
+    path: src/Application/Commons/Managers/IServiceManager.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Commons.Managers
+  syntax:
+    content: 'public interface IServiceManager : IDisposable'
+    content.vb: Public Interface IServiceManager Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Commons.Managers.IServiceManager.QuestionService
+  commentId: P:Application.Commons.Managers.IServiceManager.QuestionService
+  id: QuestionService
+  parent: Application.Commons.Managers.IServiceManager
+  langs:
+  - csharp
+  - vb
+  name: QuestionService
+  nameWithType: IServiceManager.QuestionService
+  fullName: Application.Commons.Managers.IServiceManager.QuestionService
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Managers/IServiceManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: QuestionService
+    path: src/Application/Commons/Managers/IServiceManager.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Commons.Managers
+  syntax:
+    content: IQuestionService QuestionService { get; }
+    parameters: []
+    return:
+      type: Application.Commons.Services.IQuestionService
+    content.vb: ReadOnly Property QuestionService As IQuestionService
+  overload: Application.Commons.Managers.IServiceManager.QuestionService*
+- uid: Application.Commons.Managers.IServiceManager.LookupService
+  commentId: P:Application.Commons.Managers.IServiceManager.LookupService
+  id: LookupService
+  parent: Application.Commons.Managers.IServiceManager
+  langs:
+  - csharp
+  - vb
+  name: LookupService
+  nameWithType: IServiceManager.LookupService
+  fullName: Application.Commons.Managers.IServiceManager.LookupService
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Managers/IServiceManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: LookupService
+    path: src/Application/Commons/Managers/IServiceManager.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Commons.Managers
+  syntax:
+    content: ILookupService LookupService { get; }
+    parameters: []
+    return:
+      type: Application.Commons.Services.ILookupService
+    content.vb: ReadOnly Property LookupService As ILookupService
+  overload: Application.Commons.Managers.IServiceManager.LookupService*
+- uid: Application.Commons.Managers.IServiceManager.TagService
+  commentId: P:Application.Commons.Managers.IServiceManager.TagService
+  id: TagService
+  parent: Application.Commons.Managers.IServiceManager
+  langs:
+  - csharp
+  - vb
+  name: TagService
+  nameWithType: IServiceManager.TagService
+  fullName: Application.Commons.Managers.IServiceManager.TagService
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Managers/IServiceManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: TagService
+    path: src/Application/Commons/Managers/IServiceManager.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Commons.Managers
+  syntax:
+    content: ITagService TagService { get; }
+    parameters: []
+    return:
+      type: Application.Commons.Services.ITagService
+    content.vb: ReadOnly Property TagService As ITagService
+  overload: Application.Commons.Managers.IServiceManager.TagService*
+- uid: Application.Commons.Managers.IServiceManager.SourceService
+  commentId: P:Application.Commons.Managers.IServiceManager.SourceService
+  id: SourceService
+  parent: Application.Commons.Managers.IServiceManager
+  langs:
+  - csharp
+  - vb
+  name: SourceService
+  nameWithType: IServiceManager.SourceService
+  fullName: Application.Commons.Managers.IServiceManager.SourceService
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Managers/IServiceManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: SourceService
+    path: src/Application/Commons/Managers/IServiceManager.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Commons.Managers
+  syntax:
+    content: ISourceService SourceService { get; }
+    parameters: []
+    return:
+      type: Application.Commons.Services.ISourceService
+    content.vb: ReadOnly Property SourceService As ISourceService
+  overload: Application.Commons.Managers.IServiceManager.SourceService*
+- uid: Application.Commons.Managers.IServiceManager.CategoryService
+  commentId: P:Application.Commons.Managers.IServiceManager.CategoryService
+  id: CategoryService
+  parent: Application.Commons.Managers.IServiceManager
+  langs:
+  - csharp
+  - vb
+  name: CategoryService
+  nameWithType: IServiceManager.CategoryService
+  fullName: Application.Commons.Managers.IServiceManager.CategoryService
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Managers/IServiceManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CategoryService
+    path: src/Application/Commons/Managers/IServiceManager.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Commons.Managers
+  syntax:
+    content: ICategoryService CategoryService { get; }
+    parameters: []
+    return:
+      type: Application.Commons.Services.ICategoryService
+    content.vb: ReadOnly Property CategoryService As ICategoryService
+  overload: Application.Commons.Managers.IServiceManager.CategoryService*
+references:
+- uid: Application.Commons.Managers
+  commentId: N:Application.Commons.Managers
+  href: Application.html
+  name: Application.Commons.Managers
+  nameWithType: Application.Commons.Managers
+  fullName: Application.Commons.Managers
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Commons.Managers.IServiceManager.QuestionService*
+  commentId: Overload:Application.Commons.Managers.IServiceManager.QuestionService
+  href: Application.Commons.Managers.IServiceManager.html#Application_Commons_Managers_IServiceManager_QuestionService
+  name: QuestionService
+  nameWithType: IServiceManager.QuestionService
+  fullName: Application.Commons.Managers.IServiceManager.QuestionService
+- uid: Application.Commons.Services.IQuestionService
+  commentId: T:Application.Commons.Services.IQuestionService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.IQuestionService.html
+  name: IQuestionService
+  nameWithType: IQuestionService
+  fullName: Application.Commons.Services.IQuestionService
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+- uid: Application.Commons.Managers.IServiceManager.LookupService*
+  commentId: Overload:Application.Commons.Managers.IServiceManager.LookupService
+  href: Application.Commons.Managers.IServiceManager.html#Application_Commons_Managers_IServiceManager_LookupService
+  name: LookupService
+  nameWithType: IServiceManager.LookupService
+  fullName: Application.Commons.Managers.IServiceManager.LookupService
+- uid: Application.Commons.Services.ILookupService
+  commentId: T:Application.Commons.Services.ILookupService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ILookupService.html
+  name: ILookupService
+  nameWithType: ILookupService
+  fullName: Application.Commons.Services.ILookupService
+- uid: Application.Commons.Managers.IServiceManager.TagService*
+  commentId: Overload:Application.Commons.Managers.IServiceManager.TagService
+  href: Application.Commons.Managers.IServiceManager.html#Application_Commons_Managers_IServiceManager_TagService
+  name: TagService
+  nameWithType: IServiceManager.TagService
+  fullName: Application.Commons.Managers.IServiceManager.TagService
+- uid: Application.Commons.Services.ITagService
+  commentId: T:Application.Commons.Services.ITagService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ITagService.html
+  name: ITagService
+  nameWithType: ITagService
+  fullName: Application.Commons.Services.ITagService
+- uid: Application.Commons.Managers.IServiceManager.SourceService*
+  commentId: Overload:Application.Commons.Managers.IServiceManager.SourceService
+  href: Application.Commons.Managers.IServiceManager.html#Application_Commons_Managers_IServiceManager_SourceService
+  name: SourceService
+  nameWithType: IServiceManager.SourceService
+  fullName: Application.Commons.Managers.IServiceManager.SourceService
+- uid: Application.Commons.Services.ISourceService
+  commentId: T:Application.Commons.Services.ISourceService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ISourceService.html
+  name: ISourceService
+  nameWithType: ISourceService
+  fullName: Application.Commons.Services.ISourceService
+- uid: Application.Commons.Managers.IServiceManager.CategoryService*
+  commentId: Overload:Application.Commons.Managers.IServiceManager.CategoryService
+  href: Application.Commons.Managers.IServiceManager.html#Application_Commons_Managers_IServiceManager_CategoryService
+  name: CategoryService
+  nameWithType: IServiceManager.CategoryService
+  fullName: Application.Commons.Managers.IServiceManager.CategoryService
+- uid: Application.Commons.Services.ICategoryService
+  commentId: T:Application.Commons.Services.ICategoryService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ICategoryService.html
+  name: ICategoryService
+  nameWithType: ICategoryService
+  fullName: Application.Commons.Services.ICategoryService

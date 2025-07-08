@@ -1,0 +1,408 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Services.ISystemService
+  commentId: T:Application.Commons.Services.ISystemService
+  id: ISystemService
+  parent: Application.Commons.Services
+  children:
+  - Application.Commons.Services.ISystemService.AnalyzeCollections(System.Int32)
+  - Application.Commons.Services.ISystemService.GetDatabaseFileSizeBytes
+  langs:
+  - csharp
+  - vb
+  name: ISystemService
+  nameWithType: ISystemService
+  fullName: Application.Commons.Services.ISystemService
+  type: Interface
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISystemService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ISystemService
+    path: src/Application/Commons/Services/ISystemService.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: public interface ISystemService
+    content.vb: Public Interface ISystemService
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Commons.Services.ISystemService.GetDatabaseFileSizeBytes
+  commentId: M:Application.Commons.Services.ISystemService.GetDatabaseFileSizeBytes
+  id: GetDatabaseFileSizeBytes
+  parent: Application.Commons.Services.ISystemService
+  langs:
+  - csharp
+  - vb
+  name: GetDatabaseFileSizeBytes()
+  nameWithType: ISystemService.GetDatabaseFileSizeBytes()
+  fullName: Application.Commons.Services.ISystemService.GetDatabaseFileSizeBytes()
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISystemService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetDatabaseFileSizeBytes
+    path: src/Application/Commons/Services/ISystemService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: long GetDatabaseFileSizeBytes()
+    return:
+      type: System.Int64
+    content.vb: Function GetDatabaseFileSizeBytes() As Long
+  overload: Application.Commons.Services.ISystemService.GetDatabaseFileSizeBytes*
+- uid: Application.Commons.Services.ISystemService.AnalyzeCollections(System.Int32)
+  commentId: M:Application.Commons.Services.ISystemService.AnalyzeCollections(System.Int32)
+  id: AnalyzeCollections(System.Int32)
+  parent: Application.Commons.Services.ISystemService
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeCollections(int)
+  nameWithType: ISystemService.AnalyzeCollections(int)
+  fullName: Application.Commons.Services.ISystemService.AnalyzeCollections(int)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISystemService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AnalyzeCollections
+    path: src/Application/Commons/Services/ISystemService.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: List<CollectionStorageStat> AnalyzeCollections(int sampleSize = 10)
+    parameters:
+    - id: sampleSize
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.List{Application.Commons.Models.SystemModels.CollectionStorageStat}
+    content.vb: Function AnalyzeCollections(sampleSize As Integer = 10) As List(Of CollectionStorageStat)
+  overload: Application.Commons.Services.ISystemService.AnalyzeCollections*
+  nameWithType.vb: ISystemService.AnalyzeCollections(Integer)
+  fullName.vb: Application.Commons.Services.ISystemService.AnalyzeCollections(Integer)
+  name.vb: AnalyzeCollections(Integer)
+references:
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Commons.Services.ISystemService.GetDatabaseFileSizeBytes*
+  commentId: Overload:Application.Commons.Services.ISystemService.GetDatabaseFileSizeBytes
+  href: Application.Commons.Services.ISystemService.html#Application_Commons_Services_ISystemService_GetDatabaseFileSizeBytes
+  name: GetDatabaseFileSizeBytes
+  nameWithType: ISystemService.GetDatabaseFileSizeBytes
+  fullName: Application.Commons.Services.ISystemService.GetDatabaseFileSizeBytes
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Services.ISystemService.AnalyzeCollections*
+  commentId: Overload:Application.Commons.Services.ISystemService.AnalyzeCollections
+  href: Application.Commons.Services.ISystemService.html#Application_Commons_Services_ISystemService_AnalyzeCollections_System_Int32_
+  name: AnalyzeCollections
+  nameWithType: ISystemService.AnalyzeCollections
+  fullName: Application.Commons.Services.ISystemService.AnalyzeCollections
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.List{Application.Commons.Models.SystemModels.CollectionStorageStat}
+  commentId: T:System.Collections.Generic.List{Application.Commons.Models.SystemModels.CollectionStorageStat}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CollectionStorageStat>
+  nameWithType: List<CollectionStorageStat>
+  fullName: System.Collections.Generic.List<Application.Commons.Models.SystemModels.CollectionStorageStat>
+  nameWithType.vb: List(Of CollectionStorageStat)
+  fullName.vb: System.Collections.Generic.List(Of Application.Commons.Models.SystemModels.CollectionStorageStat)
+  name.vb: List(Of CollectionStorageStat)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.Commons.Models.SystemModels.CollectionStorageStat
+    name: CollectionStorageStat
+    href: Application.Commons.Models.SystemModels.CollectionStorageStat.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.SystemModels.CollectionStorageStat
+    name: CollectionStorageStat
+    href: Application.Commons.Models.SystemModels.CollectionStorageStat.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,343 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Managers.IAuditManager
+  commentId: T:Application.Commons.Managers.IAuditManager
+  id: IAuditManager
+  parent: Application.Commons.Managers
+  children:
+  - Application.Commons.Managers.IAuditManager.ApplicationLogRepository
+  - Application.Commons.Managers.IAuditManager.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: IAuditManager
+  nameWithType: IAuditManager
+  fullName: Application.Commons.Managers.IAuditManager
+  type: Interface
+  source:
+    remote:
+      path: src/Application/Commons/Managers/IAuditManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IAuditManager
+    path: src/Application/Commons/Managers/IAuditManager.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Commons.Managers
+  syntax:
+    content: public interface IAuditManager
+    content.vb: Public Interface IAuditManager
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Commons.Managers.IAuditManager.ApplicationLogRepository
+  commentId: P:Application.Commons.Managers.IAuditManager.ApplicationLogRepository
+  id: ApplicationLogRepository
+  parent: Application.Commons.Managers.IAuditManager
+  langs:
+  - csharp
+  - vb
+  name: ApplicationLogRepository
+  nameWithType: IAuditManager.ApplicationLogRepository
+  fullName: Application.Commons.Managers.IAuditManager.ApplicationLogRepository
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Managers/IAuditManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ApplicationLogRepository
+    path: src/Application/Commons/Managers/IAuditManager.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Commons.Managers
+  syntax:
+    content: IApplicationLogRepository ApplicationLogRepository { get; }
+    parameters: []
+    return:
+      type: Domain.Repositories.IApplicationLogRepository
+    content.vb: ReadOnly Property ApplicationLogRepository As IApplicationLogRepository
+  overload: Application.Commons.Managers.IAuditManager.ApplicationLogRepository*
+- uid: Application.Commons.Managers.IAuditManager.AuditTrailService
+  commentId: P:Application.Commons.Managers.IAuditManager.AuditTrailService
+  id: AuditTrailService
+  parent: Application.Commons.Managers.IAuditManager
+  langs:
+  - csharp
+  - vb
+  name: AuditTrailService
+  nameWithType: IAuditManager.AuditTrailService
+  fullName: Application.Commons.Managers.IAuditManager.AuditTrailService
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Managers/IAuditManager.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AuditTrailService
+    path: src/Application/Commons/Managers/IAuditManager.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Commons.Managers
+  syntax:
+    content: IAuditTrailService AuditTrailService { get; }
+    parameters: []
+    return:
+      type: Application.Commons.Services.IAuditTrailService
+    content.vb: ReadOnly Property AuditTrailService As IAuditTrailService
+  overload: Application.Commons.Managers.IAuditManager.AuditTrailService*
+references:
+- uid: Application.Commons.Managers
+  commentId: N:Application.Commons.Managers
+  href: Application.html
+  name: Application.Commons.Managers
+  nameWithType: Application.Commons.Managers
+  fullName: Application.Commons.Managers
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Commons.Managers.IAuditManager.ApplicationLogRepository*
+  commentId: Overload:Application.Commons.Managers.IAuditManager.ApplicationLogRepository
+  href: Application.Commons.Managers.IAuditManager.html#Application_Commons_Managers_IAuditManager_ApplicationLogRepository
+  name: ApplicationLogRepository
+  nameWithType: IAuditManager.ApplicationLogRepository
+  fullName: Application.Commons.Managers.IAuditManager.ApplicationLogRepository
+- uid: Domain.Repositories.IApplicationLogRepository
+  commentId: T:Domain.Repositories.IApplicationLogRepository
+  parent: Domain.Repositories
+  href: Domain.Repositories.IApplicationLogRepository.html
+  name: IApplicationLogRepository
+  nameWithType: IApplicationLogRepository
+  fullName: Domain.Repositories.IApplicationLogRepository
+- uid: Domain.Repositories
+  commentId: N:Domain.Repositories
+  href: Domain.html
+  name: Domain.Repositories
+  nameWithType: Domain.Repositories
+  fullName: Domain.Repositories
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+- uid: Application.Commons.Managers.IAuditManager.AuditTrailService*
+  commentId: Overload:Application.Commons.Managers.IAuditManager.AuditTrailService
+  href: Application.Commons.Managers.IAuditManager.html#Application_Commons_Managers_IAuditManager_AuditTrailService
+  name: AuditTrailService
+  nameWithType: IAuditManager.AuditTrailService
+  fullName: Application.Commons.Managers.IAuditManager.AuditTrailService
+- uid: Application.Commons.Services.IAuditTrailService
+  commentId: T:Application.Commons.Services.IAuditTrailService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.IAuditTrailService.html
+  name: IAuditTrailService
+  nameWithType: IAuditTrailService
+  fullName: Application.Commons.Services.IAuditTrailService
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html

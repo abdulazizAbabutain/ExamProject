@@ -1,0 +1,732 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Auditing.EntityAudit
+  commentId: T:Domain.Auditing.EntityAudit
+  id: EntityAudit
+  parent: Domain.Auditing
+  children:
+  - Domain.Auditing.EntityAudit.Archive
+  - Domain.Auditing.EntityAudit.Created
+  - Domain.Auditing.EntityAudit.CreationDate
+  - Domain.Auditing.EntityAudit.Id
+  - Domain.Auditing.EntityAudit.IsArchived
+  - Domain.Auditing.EntityAudit.LastArchiveDate
+  - Domain.Auditing.EntityAudit.LastModifiedDate
+  - Domain.Auditing.EntityAudit.UnArchive
+  - Domain.Auditing.EntityAudit.Updated
+  - Domain.Auditing.EntityAudit.VersionNumber
+  langs:
+  - csharp
+  - vb
+  name: EntityAudit
+  nameWithType: EntityAudit
+  fullName: Domain.Auditing.EntityAudit
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: EntityAudit
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: >-
+    Represents a base class for auditable entities, providing standard audit properties such as creation date,
+
+    last modification timestamp, version tracking, and soft-archive support.
+  example: []
+  syntax:
+    content: public class EntityAudit
+    content.vb: Public Class EntityAudit
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Domain.Entities.EntityLookup.Category
+  - Domain.Entities.EntityLookup.Tag
+  - Domain.Entities.Examiner.Question
+  - Domain.Entities.Sources.Source
+  - Domain.Entities.Sources.SourceReference
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Auditing.EntityAudit.Id
+  commentId: P:Domain.Auditing.EntityAudit.Id
+  id: Id
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: EntityAudit.Id
+  fullName: Domain.Auditing.EntityAudit.Id
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Id
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 12
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: Gets or sets the unique identifier of the entity.
+  example: []
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Domain.Auditing.EntityAudit.Id*
+- uid: Domain.Auditing.EntityAudit.LastModifiedDate
+  commentId: P:Domain.Auditing.EntityAudit.LastModifiedDate
+  id: LastModifiedDate
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: LastModifiedDate
+  nameWithType: EntityAudit.LastModifiedDate
+  fullName: Domain.Auditing.EntityAudit.LastModifiedDate
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: LastModifiedDate
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 17
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: Gets the timestamp of the last modification made to the entity.
+  example: []
+  syntax:
+    content: public DateTimeOffset? LastModifiedDate { get; protected set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property LastModifiedDate As DateTimeOffset?
+  overload: Domain.Auditing.EntityAudit.LastModifiedDate*
+- uid: Domain.Auditing.EntityAudit.LastArchiveDate
+  commentId: P:Domain.Auditing.EntityAudit.LastArchiveDate
+  id: LastArchiveDate
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: LastArchiveDate
+  nameWithType: EntityAudit.LastArchiveDate
+  fullName: Domain.Auditing.EntityAudit.LastArchiveDate
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: LastArchiveDate
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 22
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: Gets the timestamp when the entity was archived.
+  example: []
+  syntax:
+    content: public DateTimeOffset? LastArchiveDate { get; protected set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property LastArchiveDate As DateTimeOffset?
+  overload: Domain.Auditing.EntityAudit.LastArchiveDate*
+- uid: Domain.Auditing.EntityAudit.CreationDate
+  commentId: P:Domain.Auditing.EntityAudit.CreationDate
+  id: CreationDate
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: CreationDate
+  nameWithType: EntityAudit.CreationDate
+  fullName: Domain.Auditing.EntityAudit.CreationDate
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CreationDate
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 27
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: Gets the timestamp when the entity was created.
+  example: []
+  syntax:
+    content: public DateTimeOffset CreationDate { get; protected set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property CreationDate As DateTimeOffset
+  overload: Domain.Auditing.EntityAudit.CreationDate*
+- uid: Domain.Auditing.EntityAudit.IsArchived
+  commentId: P:Domain.Auditing.EntityAudit.IsArchived
+  id: IsArchived
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: IsArchived
+  nameWithType: EntityAudit.IsArchived
+  fullName: Domain.Auditing.EntityAudit.IsArchived
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IsArchived
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 32
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: Gets a value indicating whether the entity is archived (soft-deleted).
+  example: []
+  syntax:
+    content: public bool IsArchived { get; protected set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsArchived As Boolean
+  overload: Domain.Auditing.EntityAudit.IsArchived*
+- uid: Domain.Auditing.EntityAudit.VersionNumber
+  commentId: P:Domain.Auditing.EntityAudit.VersionNumber
+  id: VersionNumber
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: VersionNumber
+  nameWithType: EntityAudit.VersionNumber
+  fullName: Domain.Auditing.EntityAudit.VersionNumber
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: VersionNumber
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 37
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: Gets the current version number of the entity. Incremented with each update.
+  example: []
+  syntax:
+    content: public int VersionNumber { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property VersionNumber As Integer
+  overload: Domain.Auditing.EntityAudit.VersionNumber*
+- uid: Domain.Auditing.EntityAudit.Created
+  commentId: M:Domain.Auditing.EntityAudit.Created
+  id: Created
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: Created()
+  nameWithType: EntityAudit.Created()
+  fullName: Domain.Auditing.EntityAudit.Created()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Created
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 43
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: >-
+    Sets the entity as newly created. Initializes <xref href="Domain.Auditing.EntityAudit.CreationDate" data-throw-if-not-resolved="false"></xref>, sets <xref href="Domain.Auditing.EntityAudit.VersionNumber" data-throw-if-not-resolved="false"></xref> to 1,
+
+    and ensures the entity is not archived.
+  example: []
+  syntax:
+    content: protected void Created()
+    content.vb: Protected Sub Created()
+  overload: Domain.Auditing.EntityAudit.Created*
+- uid: Domain.Auditing.EntityAudit.Updated
+  commentId: M:Domain.Auditing.EntityAudit.Updated
+  id: Updated
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: Updated()
+  nameWithType: EntityAudit.Updated()
+  fullName: Domain.Auditing.EntityAudit.Updated()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Updated
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 54
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: >-
+    Updates the <xref href="Domain.Auditing.EntityAudit.LastModifiedDate" data-throw-if-not-resolved="false"></xref> to the current timestamp and increments the <xref href="Domain.Auditing.EntityAudit.VersionNumber" data-throw-if-not-resolved="false"></xref>.
+
+    Should be called whenever the entity is modified.
+  example: []
+  syntax:
+    content: protected void Updated()
+    content.vb: Protected Sub Updated()
+  overload: Domain.Auditing.EntityAudit.Updated*
+- uid: Domain.Auditing.EntityAudit.Archive
+  commentId: M:Domain.Auditing.EntityAudit.Archive
+  id: Archive
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: Archive()
+  nameWithType: EntityAudit.Archive()
+  fullName: Domain.Auditing.EntityAudit.Archive()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Archive
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 64
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: >-
+    Archives the entity by setting <xref href="Domain.Auditing.EntityAudit.IsArchived" data-throw-if-not-resolved="false"></xref> to <code>true</code> and updating the <xref href="Domain.Auditing.EntityAudit.LastArchiveDate" data-throw-if-not-resolved="false"></xref>.
+
+    Also updates the modification timestamp and version.
+  example: []
+  syntax:
+    content: protected void Archive()
+    content.vb: Protected Sub Archive()
+  overload: Domain.Auditing.EntityAudit.Archive*
+- uid: Domain.Auditing.EntityAudit.UnArchive
+  commentId: M:Domain.Auditing.EntityAudit.UnArchive
+  id: UnArchive
+  parent: Domain.Auditing.EntityAudit
+  langs:
+  - csharp
+  - vb
+  name: UnArchive()
+  nameWithType: EntityAudit.UnArchive()
+  fullName: Domain.Auditing.EntityAudit.UnArchive()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Auditing/EntityAudit.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UnArchive
+    path: src/Domain/Auditing/EntityAudit.cs
+    startLine: 74
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  summary: Unarchives the entity by setting <xref href="Domain.Auditing.EntityAudit.IsArchived" data-throw-if-not-resolved="false"></xref> to <code>false</code> and updating the modification state.
+  example: []
+  syntax:
+    content: protected void UnArchive()
+    content.vb: Protected Sub UnArchive()
+  overload: Domain.Auditing.EntityAudit.UnArchive*
+references:
+- uid: Domain.Auditing
+  commentId: N:Domain.Auditing
+  href: Domain.html
+  name: Domain.Auditing
+  nameWithType: Domain.Auditing
+  fullName: Domain.Auditing
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Auditing.EntityAudit.Id*
+  commentId: Overload:Domain.Auditing.EntityAudit.Id
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Id
+  name: Id
+  nameWithType: EntityAudit.Id
+  fullName: Domain.Auditing.EntityAudit.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Auditing.EntityAudit.LastModifiedDate*
+  commentId: Overload:Domain.Auditing.EntityAudit.LastModifiedDate
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastModifiedDate
+  name: LastModifiedDate
+  nameWithType: EntityAudit.LastModifiedDate
+  fullName: Domain.Auditing.EntityAudit.LastModifiedDate
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Domain.Auditing.EntityAudit.LastArchiveDate*
+  commentId: Overload:Domain.Auditing.EntityAudit.LastArchiveDate
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastArchiveDate
+  name: LastArchiveDate
+  nameWithType: EntityAudit.LastArchiveDate
+  fullName: Domain.Auditing.EntityAudit.LastArchiveDate
+- uid: Domain.Auditing.EntityAudit.CreationDate*
+  commentId: Overload:Domain.Auditing.EntityAudit.CreationDate
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_CreationDate
+  name: CreationDate
+  nameWithType: EntityAudit.CreationDate
+  fullName: Domain.Auditing.EntityAudit.CreationDate
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Domain.Auditing.EntityAudit.IsArchived*
+  commentId: Overload:Domain.Auditing.EntityAudit.IsArchived
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_IsArchived
+  name: IsArchived
+  nameWithType: EntityAudit.IsArchived
+  fullName: Domain.Auditing.EntityAudit.IsArchived
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Domain.Auditing.EntityAudit.VersionNumber*
+  commentId: Overload:Domain.Auditing.EntityAudit.VersionNumber
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_VersionNumber
+  name: VersionNumber
+  nameWithType: EntityAudit.VersionNumber
+  fullName: Domain.Auditing.EntityAudit.VersionNumber
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Domain.Auditing.EntityAudit.CreationDate
+  commentId: P:Domain.Auditing.EntityAudit.CreationDate
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_CreationDate
+  name: CreationDate
+  nameWithType: EntityAudit.CreationDate
+  fullName: Domain.Auditing.EntityAudit.CreationDate
+- uid: Domain.Auditing.EntityAudit.VersionNumber
+  commentId: P:Domain.Auditing.EntityAudit.VersionNumber
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_VersionNumber
+  name: VersionNumber
+  nameWithType: EntityAudit.VersionNumber
+  fullName: Domain.Auditing.EntityAudit.VersionNumber
+- uid: Domain.Auditing.EntityAudit.Created*
+  commentId: Overload:Domain.Auditing.EntityAudit.Created
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Created
+  name: Created
+  nameWithType: EntityAudit.Created
+  fullName: Domain.Auditing.EntityAudit.Created
+- uid: Domain.Auditing.EntityAudit
+  commentId: T:Domain.Auditing.EntityAudit
+  parent: Domain.Auditing
+  href: Domain.Auditing.EntityAudit.html
+  name: EntityAudit
+  nameWithType: EntityAudit
+  fullName: Domain.Auditing.EntityAudit
+- uid: Domain.Auditing.EntityAudit.LastModifiedDate
+  commentId: P:Domain.Auditing.EntityAudit.LastModifiedDate
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastModifiedDate
+  name: LastModifiedDate
+  nameWithType: EntityAudit.LastModifiedDate
+  fullName: Domain.Auditing.EntityAudit.LastModifiedDate
+- uid: Domain.Auditing.EntityAudit.Updated*
+  commentId: Overload:Domain.Auditing.EntityAudit.Updated
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Updated
+  name: Updated
+  nameWithType: EntityAudit.Updated
+  fullName: Domain.Auditing.EntityAudit.Updated
+- uid: Domain.Auditing.EntityAudit.IsArchived
+  commentId: P:Domain.Auditing.EntityAudit.IsArchived
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_IsArchived
+  name: IsArchived
+  nameWithType: EntityAudit.IsArchived
+  fullName: Domain.Auditing.EntityAudit.IsArchived
+- uid: Domain.Auditing.EntityAudit.LastArchiveDate
+  commentId: P:Domain.Auditing.EntityAudit.LastArchiveDate
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastArchiveDate
+  name: LastArchiveDate
+  nameWithType: EntityAudit.LastArchiveDate
+  fullName: Domain.Auditing.EntityAudit.LastArchiveDate
+- uid: Domain.Auditing.EntityAudit.Archive*
+  commentId: Overload:Domain.Auditing.EntityAudit.Archive
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Archive
+  name: Archive
+  nameWithType: EntityAudit.Archive
+  fullName: Domain.Auditing.EntityAudit.Archive
+- uid: Domain.Auditing.EntityAudit.UnArchive*
+  commentId: Overload:Domain.Auditing.EntityAudit.UnArchive
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_UnArchive
+  name: UnArchive
+  nameWithType: EntityAudit.UnArchive
+  fullName: Domain.Auditing.EntityAudit.UnArchive

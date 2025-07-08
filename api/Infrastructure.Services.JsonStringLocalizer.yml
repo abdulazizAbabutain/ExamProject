@@ -1,0 +1,758 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Services.JsonStringLocalizer
+  commentId: T:Infrastructure.Services.JsonStringLocalizer
+  id: JsonStringLocalizer
+  parent: Infrastructure.Services
+  children:
+  - Infrastructure.Services.JsonStringLocalizer.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  - Infrastructure.Services.JsonStringLocalizer.GetAllStrings(System.Boolean)
+  - Infrastructure.Services.JsonStringLocalizer.Item(System.String)
+  - Infrastructure.Services.JsonStringLocalizer.Item(System.String,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: JsonStringLocalizer
+  nameWithType: JsonStringLocalizer
+  fullName: Infrastructure.Services.JsonStringLocalizer
+  type: Class
+  source:
+    remote:
+      path: src/Infrastructure/Services/JsonStringLocalizer.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: JsonStringLocalizer
+    path: src/Infrastructure/Services/JsonStringLocalizer.cs
+    startLine: 7
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  syntax:
+    content: 'public class JsonStringLocalizer : IStringLocalizer'
+    content.vb: Public Class JsonStringLocalizer Implements IStringLocalizer
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.Localization.IStringLocalizer
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Infrastructure.Services.JsonStringLocalizer.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  commentId: M:Infrastructure.Services.JsonStringLocalizer.#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  id: '#ctor(Microsoft.Extensions.Caching.Distributed.IDistributedCache)'
+  parent: Infrastructure.Services.JsonStringLocalizer
+  langs:
+  - csharp
+  - vb
+  name: JsonStringLocalizer(IDistributedCache)
+  nameWithType: JsonStringLocalizer.JsonStringLocalizer(IDistributedCache)
+  fullName: Infrastructure.Services.JsonStringLocalizer.JsonStringLocalizer(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  type: Constructor
+  source:
+    remote:
+      path: src/Infrastructure/Services/JsonStringLocalizer.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Infrastructure/Services/JsonStringLocalizer.cs
+    startLine: 11
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  syntax:
+    content: public JsonStringLocalizer(IDistributedCache cache)
+    parameters:
+    - id: cache
+      type: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+    content.vb: Public Sub New(cache As IDistributedCache)
+  overload: Infrastructure.Services.JsonStringLocalizer.#ctor*
+  nameWithType.vb: JsonStringLocalizer.New(IDistributedCache)
+  fullName.vb: Infrastructure.Services.JsonStringLocalizer.New(Microsoft.Extensions.Caching.Distributed.IDistributedCache)
+  name.vb: New(IDistributedCache)
+- uid: Infrastructure.Services.JsonStringLocalizer.Item(System.String)
+  commentId: P:Infrastructure.Services.JsonStringLocalizer.Item(System.String)
+  id: Item(System.String)
+  parent: Infrastructure.Services.JsonStringLocalizer
+  langs:
+  - csharp
+  - vb
+  name: this[string]
+  nameWithType: JsonStringLocalizer.this[string]
+  fullName: Infrastructure.Services.JsonStringLocalizer.this[string]
+  type: Property
+  source:
+    remote:
+      path: src/Infrastructure/Services/JsonStringLocalizer.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: this[]
+    path: src/Infrastructure/Services/JsonStringLocalizer.cs
+    startLine: 15
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  summary: Gets the string resource with the given name.
+  example: []
+  syntax:
+    content: public LocalizedString this[string name] { get; }
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the string resource.
+    return:
+      type: Microsoft.Extensions.Localization.LocalizedString
+      description: The string resource as a <xref href="Microsoft.Extensions.Localization.LocalizedString" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Default Property this[](name As String) As LocalizedString
+  overload: Infrastructure.Services.JsonStringLocalizer.Item*
+  implements:
+  - Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String)
+  nameWithType.vb: JsonStringLocalizer.this[](String)
+  fullName.vb: Infrastructure.Services.JsonStringLocalizer.this[](String)
+  name.vb: this[](String)
+- uid: Infrastructure.Services.JsonStringLocalizer.Item(System.String,System.Object[])
+  commentId: P:Infrastructure.Services.JsonStringLocalizer.Item(System.String,System.Object[])
+  id: Item(System.String,System.Object[])
+  parent: Infrastructure.Services.JsonStringLocalizer
+  langs:
+  - csharp
+  - vb
+  name: this[string, object[]]
+  nameWithType: JsonStringLocalizer.this[string, object[]]
+  fullName: Infrastructure.Services.JsonStringLocalizer.this[string, object[]]
+  type: Property
+  source:
+    remote:
+      path: src/Infrastructure/Services/JsonStringLocalizer.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: this[]
+    path: src/Infrastructure/Services/JsonStringLocalizer.cs
+    startLine: 23
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  summary: Gets the string resource with the given name and formatted with the supplied arguments.
+  example: []
+  syntax:
+    content: public LocalizedString this[string name, params object[] arguments] { get; }
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the string resource.
+    - id: arguments
+      type: System.Object[]
+      description: The values to format the string with.
+    return:
+      type: Microsoft.Extensions.Localization.LocalizedString
+      description: The formatted string resource as a <xref href="Microsoft.Extensions.Localization.LocalizedString" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Default Property this[](name As String, ParamArray arguments As Object()) As LocalizedString
+  overload: Infrastructure.Services.JsonStringLocalizer.Item*
+  implements:
+  - Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])
+  nameWithType.vb: JsonStringLocalizer.this[](String, Object())
+  fullName.vb: Infrastructure.Services.JsonStringLocalizer.this[](String, Object())
+  name.vb: this[](String, Object())
+- uid: Infrastructure.Services.JsonStringLocalizer.GetAllStrings(System.Boolean)
+  commentId: M:Infrastructure.Services.JsonStringLocalizer.GetAllStrings(System.Boolean)
+  id: GetAllStrings(System.Boolean)
+  parent: Infrastructure.Services.JsonStringLocalizer
+  langs:
+  - csharp
+  - vb
+  name: GetAllStrings(bool)
+  nameWithType: JsonStringLocalizer.GetAllStrings(bool)
+  fullName: Infrastructure.Services.JsonStringLocalizer.GetAllStrings(bool)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/JsonStringLocalizer.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAllStrings
+    path: src/Infrastructure/Services/JsonStringLocalizer.cs
+    startLine: 33
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  summary: Gets all string resources.
+  example: []
+  syntax:
+    content: public IEnumerable<LocalizedString> GetAllStrings(bool includeParentCultures)
+    parameters:
+    - id: includeParentCultures
+      type: System.Boolean
+      description: A <xref href="System.Boolean" data-throw-if-not-resolved="false"></xref> indicating whether to include strings from parent cultures.
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.Extensions.Localization.LocalizedString}
+      description: The strings.
+    content.vb: Public Function GetAllStrings(includeParentCultures As Boolean) As IEnumerable(Of LocalizedString)
+  overload: Infrastructure.Services.JsonStringLocalizer.GetAllStrings*
+  implements:
+  - Microsoft.Extensions.Localization.IStringLocalizer.GetAllStrings(System.Boolean)
+  nameWithType.vb: JsonStringLocalizer.GetAllStrings(Boolean)
+  fullName.vb: Infrastructure.Services.JsonStringLocalizer.GetAllStrings(Boolean)
+  name.vb: GetAllStrings(Boolean)
+references:
+- uid: Infrastructure.Services
+  commentId: N:Infrastructure.Services
+  href: Infrastructure.html
+  name: Infrastructure.Services
+  nameWithType: Infrastructure.Services
+  fullName: Infrastructure.Services
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Services
+    name: Services
+    href: Infrastructure.Services.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Services
+    name: Services
+    href: Infrastructure.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Localization.IStringLocalizer
+  commentId: T:Microsoft.Extensions.Localization.IStringLocalizer
+  parent: Microsoft.Extensions.Localization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer
+  name: IStringLocalizer
+  nameWithType: IStringLocalizer
+  fullName: Microsoft.Extensions.Localization.IStringLocalizer
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Localization
+  commentId: N:Microsoft.Extensions.Localization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Localization
+  nameWithType: Microsoft.Extensions.Localization
+  fullName: Microsoft.Extensions.Localization
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Localization
+    name: Localization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Localization
+    name: Localization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Infrastructure.Services.JsonStringLocalizer.#ctor*
+  commentId: Overload:Infrastructure.Services.JsonStringLocalizer.#ctor
+  href: Infrastructure.Services.JsonStringLocalizer.html#Infrastructure_Services_JsonStringLocalizer__ctor_Microsoft_Extensions_Caching_Distributed_IDistributedCache_
+  name: JsonStringLocalizer
+  nameWithType: JsonStringLocalizer.JsonStringLocalizer
+  fullName: Infrastructure.Services.JsonStringLocalizer.JsonStringLocalizer
+  nameWithType.vb: JsonStringLocalizer.New
+  fullName.vb: Infrastructure.Services.JsonStringLocalizer.New
+  name.vb: New
+- uid: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  commentId: T:Microsoft.Extensions.Caching.Distributed.IDistributedCache
+  parent: Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache
+  name: IDistributedCache
+  nameWithType: IDistributedCache
+  fullName: Microsoft.Extensions.Caching.Distributed.IDistributedCache
+- uid: Microsoft.Extensions.Caching.Distributed
+  commentId: N:Microsoft.Extensions.Caching.Distributed
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Caching.Distributed
+  nameWithType: Microsoft.Extensions.Caching.Distributed
+  fullName: Microsoft.Extensions.Caching.Distributed
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Caching
+    name: Caching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching
+  - name: .
+  - uid: Microsoft.Extensions.Caching.Distributed
+    name: Distributed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.distributed
+- uid: Microsoft.Extensions.Localization.LocalizedString
+  commentId: T:Microsoft.Extensions.Localization.LocalizedString
+  parent: Microsoft.Extensions.Localization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.localizedstring
+  name: LocalizedString
+  nameWithType: LocalizedString
+  fullName: Microsoft.Extensions.Localization.LocalizedString
+- uid: Infrastructure.Services.JsonStringLocalizer.Item*
+  commentId: Overload:Infrastructure.Services.JsonStringLocalizer.Item
+  href: Infrastructure.Services.JsonStringLocalizer.html#Infrastructure_Services_JsonStringLocalizer_Item_System_String_
+  name: this
+  nameWithType: JsonStringLocalizer.this
+  fullName: Infrastructure.Services.JsonStringLocalizer.this
+  nameWithType.vb: JsonStringLocalizer.this[]
+  fullName.vb: Infrastructure.Services.JsonStringLocalizer.this[]
+  name.vb: this[]
+- uid: Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String)
+  commentId: P:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String)
+  parent: Microsoft.Extensions.Localization.IStringLocalizer
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: this[string]
+  nameWithType: IStringLocalizer.this[string]
+  fullName: Microsoft.Extensions.Localization.IStringLocalizer.this[string]
+  nameWithType.vb: IStringLocalizer.this[](String)
+  fullName.vb: Microsoft.Extensions.Localization.IStringLocalizer.this[](String)
+  name.vb: this[](String)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer.item
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])
+  commentId: P:Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])
+  parent: Microsoft.Extensions.Localization.IStringLocalizer
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: this[string, object[]]
+  nameWithType: IStringLocalizer.this[string, object[]]
+  fullName: Microsoft.Extensions.Localization.IStringLocalizer.this[string, object[]]
+  nameWithType.vb: IStringLocalizer.this[](String, Object())
+  fullName.vb: Microsoft.Extensions.Localization.IStringLocalizer.this[](String, Object())
+  name.vb: this[](String, Object())
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizer.Item(System.String,System.Object[])
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer.item
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Infrastructure.Services.JsonStringLocalizer.GetAllStrings*
+  commentId: Overload:Infrastructure.Services.JsonStringLocalizer.GetAllStrings
+  href: Infrastructure.Services.JsonStringLocalizer.html#Infrastructure_Services_JsonStringLocalizer_GetAllStrings_System_Boolean_
+  name: GetAllStrings
+  nameWithType: JsonStringLocalizer.GetAllStrings
+  fullName: Infrastructure.Services.JsonStringLocalizer.GetAllStrings
+- uid: Microsoft.Extensions.Localization.IStringLocalizer.GetAllStrings(System.Boolean)
+  commentId: M:Microsoft.Extensions.Localization.IStringLocalizer.GetAllStrings(System.Boolean)
+  parent: Microsoft.Extensions.Localization.IStringLocalizer
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer.getallstrings
+  name: GetAllStrings(bool)
+  nameWithType: IStringLocalizer.GetAllStrings(bool)
+  fullName: Microsoft.Extensions.Localization.IStringLocalizer.GetAllStrings(bool)
+  nameWithType.vb: IStringLocalizer.GetAllStrings(Boolean)
+  fullName.vb: Microsoft.Extensions.Localization.IStringLocalizer.GetAllStrings(Boolean)
+  name.vb: GetAllStrings(Boolean)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizer.GetAllStrings(System.Boolean)
+    name: GetAllStrings
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer.getallstrings
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Localization.IStringLocalizer.GetAllStrings(System.Boolean)
+    name: GetAllStrings
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.istringlocalizer.getallstrings
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Extensions.Localization.LocalizedString}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.Extensions.Localization.LocalizedString}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<LocalizedString>
+  nameWithType: IEnumerable<LocalizedString>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Extensions.Localization.LocalizedString>
+  nameWithType.vb: IEnumerable(Of LocalizedString)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Extensions.Localization.LocalizedString)
+  name.vb: IEnumerable(Of LocalizedString)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.Extensions.Localization.LocalizedString
+    name: LocalizedString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.localizedstring
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Localization.LocalizedString
+    name: LocalizedString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.localization.localizedstring
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

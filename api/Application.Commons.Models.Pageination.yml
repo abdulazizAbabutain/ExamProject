@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Models.Pageination
+  commentId: N:Application.Commons.Models.Pageination
+  id: Application.Commons.Models.Pageination
+  children:
+  - Application.Commons.Models.Pageination.PageMetaData
+  - Application.Commons.Models.Pageination.PageRequest
+  - Application.Commons.Models.Pageination.PageResponse`1
+  langs:
+  - csharp
+  - vb
+  name: Application.Commons.Models.Pageination
+  nameWithType: Application.Commons.Models.Pageination
+  fullName: Application.Commons.Models.Pageination
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Commons.Models.Pageination.PageMetaData
+  commentId: T:Application.Commons.Models.Pageination.PageMetaData
+  parent: Application.Commons.Models.Pageination
+  href: Application.Commons.Models.Pageination.PageMetaData.html
+  name: PageMetaData
+  nameWithType: PageMetaData
+  fullName: Application.Commons.Models.Pageination.PageMetaData
+- uid: Application.Commons.Models.Pageination.PageRequest
+  commentId: T:Application.Commons.Models.Pageination.PageRequest
+  parent: Application.Commons.Models.Pageination
+  href: Application.Commons.Models.Pageination.PageRequest.html
+  name: PageRequest
+  nameWithType: PageRequest
+  fullName: Application.Commons.Models.Pageination.PageRequest
+- uid: Application.Commons.Models.Pageination.PageResponse`1
+  commentId: T:Application.Commons.Models.Pageination.PageResponse`1
+  href: Application.Commons.Models.Pageination.PageResponse-1.html
+  name: PageResponse<T>
+  nameWithType: PageResponse<T>
+  fullName: Application.Commons.Models.Pageination.PageResponse<T>
+  nameWithType.vb: PageResponse(Of T)
+  fullName.vb: Application.Commons.Models.Pageination.PageResponse(Of T)
+  name.vb: PageResponse(Of T)
+  spec.csharp:
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Commons.Models.Pageination
+  commentId: N:Application.Commons.Models.Pageination
+  href: Application.html
+  name: Application.Commons.Models.Pageination
+  nameWithType: Application.Commons.Models.Pageination
+  fullName: Application.Commons.Models.Pageination
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Pageination
+    name: Pageination
+    href: Application.Commons.Models.Pageination.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Pageination
+    name: Pageination
+    href: Application.Commons.Models.Pageination.html

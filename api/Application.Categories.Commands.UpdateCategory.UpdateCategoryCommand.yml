@@ -1,0 +1,431 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+  commentId: T:Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+  id: UpdateCategoryCommand
+  parent: Application.Categories.Commands.UpdateCategory
+  children:
+  - Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.CategoryId
+  - Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Description
+  - Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Name
+  langs:
+  - csharp
+  - vb
+  name: UpdateCategoryCommand
+  nameWithType: UpdateCategoryCommand
+  fullName: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+  type: Class
+  source:
+    remote:
+      path: src/Application/Categories/Commands/UpdateCategory/UpdateCategoryCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateCategoryCommand
+    path: src/Application/Categories/Commands/UpdateCategory/UpdateCategoryCommand.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.UpdateCategory
+  syntax:
+    content: 'public class UpdateCategoryCommand : IRequest<Result>, IBaseRequest'
+    content.vb: Public Class UpdateCategoryCommand Implements IRequest(Of Result), IBaseRequest
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{Application.Commons.Models.Results.Result}
+  - MediatR.IBaseRequest
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.CategoryId
+  commentId: P:Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.CategoryId
+  id: CategoryId
+  parent: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+  langs:
+  - csharp
+  - vb
+  name: CategoryId
+  nameWithType: UpdateCategoryCommand.CategoryId
+  fullName: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.CategoryId
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/UpdateCategory/UpdateCategoryCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CategoryId
+    path: src/Application/Categories/Commands/UpdateCategory/UpdateCategoryCommand.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.UpdateCategory
+  syntax:
+    content: public Guid CategoryId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property CategoryId As Guid
+  overload: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.CategoryId*
+- uid: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Name
+  commentId: P:Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Name
+  id: Name
+  parent: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: UpdateCategoryCommand.Name
+  fullName: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Name
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/UpdateCategory/UpdateCategoryCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Name
+    path: src/Application/Categories/Commands/UpdateCategory/UpdateCategoryCommand.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.UpdateCategory
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Name*
+- uid: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Description
+  commentId: P:Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Description
+  id: Description
+  parent: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: UpdateCategoryCommand.Description
+  fullName: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Description
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/UpdateCategory/UpdateCategoryCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Description
+    path: src/Application/Categories/Commands/UpdateCategory/UpdateCategoryCommand.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.UpdateCategory
+  syntax:
+    content: public string? Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Description*
+references:
+- uid: Application.Categories.Commands.UpdateCategory
+  commentId: N:Application.Categories.Commands.UpdateCategory
+  href: Application.html
+  name: Application.Categories.Commands.UpdateCategory
+  nameWithType: Application.Categories.Commands.UpdateCategory
+  fullName: Application.Categories.Commands.UpdateCategory
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.UpdateCategory
+    name: UpdateCategory
+    href: Application.Categories.Commands.UpdateCategory.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.UpdateCategory
+    name: UpdateCategory
+    href: Application.Categories.Commands.UpdateCategory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{Application.Commons.Models.Results.Result}
+  commentId: T:MediatR.IRequest{Application.Commons.Models.Results.Result}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: Application.Commons.Models.Results.Result.html
+  name: IRequest<Result>
+  nameWithType: IRequest<Result>
+  fullName: MediatR.IRequest<Application.Commons.Models.Results.Result>
+  nameWithType.vb: IRequest(Of Result)
+  fullName.vb: MediatR.IRequest(Of Application.Commons.Models.Results.Result)
+  name.vb: IRequest(Of Result)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.CategoryId*
+  commentId: Overload:Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.CategoryId
+  href: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.html#Application_Categories_Commands_UpdateCategory_UpdateCategoryCommand_CategoryId
+  name: CategoryId
+  nameWithType: UpdateCategoryCommand.CategoryId
+  fullName: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.CategoryId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Name*
+  commentId: Overload:Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Name
+  href: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.html#Application_Categories_Commands_UpdateCategory_UpdateCategoryCommand_Name
+  name: Name
+  nameWithType: UpdateCategoryCommand.Name
+  fullName: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Description*
+  commentId: Overload:Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Description
+  href: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.html#Application_Categories_Commands_UpdateCategory_UpdateCategoryCommand_Description
+  name: Description
+  nameWithType: UpdateCategoryCommand.Description
+  fullName: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.Description

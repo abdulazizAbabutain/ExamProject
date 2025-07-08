@@ -1,0 +1,183 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Extensions.StringExtension
+  commentId: T:Application.Commons.Extensions.StringExtension
+  id: StringExtension
+  parent: Application.Commons.Extensions
+  children:
+  - Application.Commons.Extensions.StringExtension.FirstCharToLower(System.String)
+  - Application.Commons.Extensions.StringExtension.ToReadableSize(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: StringExtension
+  nameWithType: StringExtension
+  fullName: Application.Commons.Extensions.StringExtension
+  type: Class
+  source:
+    remote:
+      path: src/Application/Commons/Extensions/StringExtenstion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: StringExtension
+    path: src/Application/Commons/Extensions/StringExtenstion.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Commons.Extensions
+  syntax:
+    content: public static class StringExtension
+    content.vb: Public Module StringExtension
+  inheritance:
+  - System.Object
+- uid: Application.Commons.Extensions.StringExtension.FirstCharToLower(System.String)
+  commentId: M:Application.Commons.Extensions.StringExtension.FirstCharToLower(System.String)
+  id: FirstCharToLower(System.String)
+  isExtensionMethod: true
+  parent: Application.Commons.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: FirstCharToLower(string)
+  nameWithType: StringExtension.FirstCharToLower(string)
+  fullName: Application.Commons.Extensions.StringExtension.FirstCharToLower(string)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Extensions/StringExtenstion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: FirstCharToLower
+    path: src/Application/Commons/Extensions/StringExtenstion.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Commons.Extensions
+  syntax:
+    content: public static string FirstCharToLower(this string input)
+    parameters:
+    - id: input
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function FirstCharToLower(input As String) As String
+  overload: Application.Commons.Extensions.StringExtension.FirstCharToLower*
+  nameWithType.vb: StringExtension.FirstCharToLower(String)
+  fullName.vb: Application.Commons.Extensions.StringExtension.FirstCharToLower(String)
+  name.vb: FirstCharToLower(String)
+- uid: Application.Commons.Extensions.StringExtension.ToReadableSize(System.Double)
+  commentId: M:Application.Commons.Extensions.StringExtension.ToReadableSize(System.Double)
+  id: ToReadableSize(System.Double)
+  parent: Application.Commons.Extensions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: ToReadableSize(double)
+  nameWithType: StringExtension.ToReadableSize(double)
+  fullName: Application.Commons.Extensions.StringExtension.ToReadableSize(double)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Extensions/StringExtenstion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ToReadableSize
+    path: src/Application/Commons/Extensions/StringExtenstion.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.Commons.Extensions
+  syntax:
+    content: public static string ToReadableSize(double bytes)
+    parameters:
+    - id: bytes
+      type: System.Double
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToReadableSize(bytes As Double) As String
+  overload: Application.Commons.Extensions.StringExtension.ToReadableSize*
+  nameWithType.vb: StringExtension.ToReadableSize(Double)
+  fullName.vb: Application.Commons.Extensions.StringExtension.ToReadableSize(Double)
+  name.vb: ToReadableSize(Double)
+references:
+- uid: Application.Commons.Extensions
+  commentId: N:Application.Commons.Extensions
+  href: Application.html
+  name: Application.Commons.Extensions
+  nameWithType: Application.Commons.Extensions
+  fullName: Application.Commons.Extensions
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Extensions
+    name: Extensions
+    href: Application.Commons.Extensions.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Extensions
+    name: Extensions
+    href: Application.Commons.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Extensions.StringExtension.FirstCharToLower*
+  commentId: Overload:Application.Commons.Extensions.StringExtension.FirstCharToLower
+  href: Application.Commons.Extensions.StringExtension.html#Application_Commons_Extensions_StringExtension_FirstCharToLower_System_String_
+  name: FirstCharToLower
+  nameWithType: StringExtension.FirstCharToLower
+  fullName: Application.Commons.Extensions.StringExtension.FirstCharToLower
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Commons.Extensions.StringExtension.ToReadableSize*
+  commentId: Overload:Application.Commons.Extensions.StringExtension.ToReadableSize
+  href: Application.Commons.Extensions.StringExtension.html#Application_Commons_Extensions_StringExtension_ToReadableSize_System_Double_
+  name: ToReadableSize
+  nameWithType: StringExtension.ToReadableSize
+  fullName: Application.Commons.Extensions.StringExtension.ToReadableSize
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double

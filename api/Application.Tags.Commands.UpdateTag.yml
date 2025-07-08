@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Commands.UpdateTag
+  commentId: N:Application.Tags.Commands.UpdateTag
+  id: Application.Tags.Commands.UpdateTag
+  children:
+  - Application.Tags.Commands.UpdateTag.UpdateTagCommand
+  - Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler
+  - Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator
+  langs:
+  - csharp
+  - vb
+  name: Application.Tags.Commands.UpdateTag
+  nameWithType: Application.Tags.Commands.UpdateTag
+  fullName: Application.Tags.Commands.UpdateTag
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+  commentId: T:Application.Tags.Commands.UpdateTag.UpdateTagCommand
+  parent: Application.Tags.Commands.UpdateTag
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: UpdateTagCommand
+  nameWithType: UpdateTagCommand
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler
+  commentId: T:Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler.html
+  name: UpdateTagCommandHandler
+  nameWithType: UpdateTagCommandHandler
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandHandler
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator
+  commentId: T:Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.html
+  name: UpdateTagCommandValidator
+  nameWithType: UpdateTagCommandValidator
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator
+- uid: Application.Tags.Commands.UpdateTag
+  commentId: N:Application.Tags.Commands.UpdateTag
+  href: Application.html
+  name: Application.Tags.Commands.UpdateTag
+  nameWithType: Application.Tags.Commands.UpdateTag
+  fullName: Application.Tags.Commands.UpdateTag
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.UpdateTag
+    name: UpdateTag
+    href: Application.Tags.Commands.UpdateTag.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.UpdateTag
+    name: UpdateTag
+    href: Application.Tags.Commands.UpdateTag.html

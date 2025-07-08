@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Questions.Commands.AddQuestion
+  commentId: N:Application.Questions.Commands.AddQuestion
+  id: Application.Questions.Commands.AddQuestion
+  children:
+  - Application.Questions.Commands.AddQuestion.AddQuestionCommand
+  - Application.Questions.Commands.AddQuestion.AddQuestionCommandResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Questions.Commands.AddQuestion
+  nameWithType: Application.Questions.Commands.AddQuestion
+  fullName: Application.Questions.Commands.AddQuestion
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Questions.Commands.AddQuestion.AddQuestionCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.AddQuestionCommand
+  parent: Application.Questions.Commands.AddQuestion
+  href: Application.Questions.Commands.AddQuestion.AddQuestionCommand.html
+  name: AddQuestionCommand
+  nameWithType: AddQuestionCommand
+  fullName: Application.Questions.Commands.AddQuestion.AddQuestionCommand
+- uid: Application.Questions.Commands.AddQuestion.AddQuestionCommandResult
+  commentId: T:Application.Questions.Commands.AddQuestion.AddQuestionCommandResult
+  href: Application.Questions.Commands.AddQuestion.AddQuestionCommandResult.html
+  name: AddQuestionCommandResult
+  nameWithType: AddQuestionCommandResult
+  fullName: Application.Questions.Commands.AddQuestion.AddQuestionCommandResult
+- uid: Application.Questions.Commands.AddQuestion
+  commentId: N:Application.Questions.Commands.AddQuestion
+  href: Application.html
+  name: Application.Questions.Commands.AddQuestion
+  nameWithType: Application.Questions.Commands.AddQuestion
+  fullName: Application.Questions.Commands.AddQuestion
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion
+    name: AddQuestion
+    href: Application.Questions.Commands.AddQuestion.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion
+    name: AddQuestion
+    href: Application.Questions.Commands.AddQuestion.html

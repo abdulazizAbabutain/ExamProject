@@ -15,4 +15,3 @@ export interface LogEntry {
   exception?: LogException;
   properties?: Record<string, string>;
 }
-

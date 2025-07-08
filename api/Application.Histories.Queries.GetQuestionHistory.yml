@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Histories.Queries.GetQuestionHistory
+  commentId: N:Application.Histories.Queries.GetQuestionHistory
+  id: Application.Histories.Queries.GetQuestionHistory
+  children:
+  - Application.Histories.Queries.GetQuestionHistory.GetQuestionHistoryQuery
+  langs:
+  - csharp
+  - vb
+  name: Application.Histories.Queries.GetQuestionHistory
+  nameWithType: Application.Histories.Queries.GetQuestionHistory
+  fullName: Application.Histories.Queries.GetQuestionHistory
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Histories.Queries.GetQuestionHistory.GetQuestionHistoryQuery
+  commentId: T:Application.Histories.Queries.GetQuestionHistory.GetQuestionHistoryQuery
+  href: Application.Histories.Queries.GetQuestionHistory.GetQuestionHistoryQuery.html
+  name: GetQuestionHistoryQuery
+  nameWithType: GetQuestionHistoryQuery
+  fullName: Application.Histories.Queries.GetQuestionHistory.GetQuestionHistoryQuery

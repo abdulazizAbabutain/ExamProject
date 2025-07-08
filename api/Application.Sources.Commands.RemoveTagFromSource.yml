@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Commands.RemoveTagFromSource
+  commentId: N:Application.Sources.Commands.RemoveTagFromSource
+  id: Application.Sources.Commands.RemoveTagFromSource
+  children:
+  - Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  - Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Application.Sources.Commands.RemoveTagFromSource
+  nameWithType: Application.Sources.Commands.RemoveTagFromSource
+  fullName: Application.Sources.Commands.RemoveTagFromSource
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  commentId: T:Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  parent: Application.Sources.Commands.RemoveTagFromSource
+  href: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.html
+  name: RemoveTagFromSourceCommand
+  nameWithType: RemoveTagFromSourceCommand
+  fullName: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+- uid: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommandHandler
+  commentId: T:Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommandHandler
+  href: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommandHandler.html
+  name: RemoveTagFromSourceCommandHandler
+  nameWithType: RemoveTagFromSourceCommandHandler
+  fullName: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommandHandler
+- uid: Application.Sources.Commands.RemoveTagFromSource
+  commentId: N:Application.Sources.Commands.RemoveTagFromSource
+  href: Application.html
+  name: Application.Sources.Commands.RemoveTagFromSource
+  nameWithType: Application.Sources.Commands.RemoveTagFromSource
+  fullName: Application.Sources.Commands.RemoveTagFromSource
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveTagFromSource
+    name: RemoveTagFromSource
+    href: Application.Sources.Commands.RemoveTagFromSource.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveTagFromSource
+    name: RemoveTagFromSource
+    href: Application.Sources.Commands.RemoveTagFromSource.html

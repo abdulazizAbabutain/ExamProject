@@ -1,0 +1,304 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Commands.ArchiveAllTags.ArchiveAllTagsCommand
+  commentId: T:Application.Tags.Commands.ArchiveAllTags.ArchiveAllTagsCommand
+  id: ArchiveAllTagsCommand
+  parent: Application.Tags.Commands.ArchiveAllTags
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ArchiveAllTagsCommand
+  nameWithType: ArchiveAllTagsCommand
+  fullName: Application.Tags.Commands.ArchiveAllTags.ArchiveAllTagsCommand
+  type: Class
+  source:
+    remote:
+      path: src/Application/Tags/Commands/ArchiveAllTags/ArchiveAllTagsCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ArchiveAllTagsCommand
+    path: src/Application/Tags/Commands/ArchiveAllTags/ArchiveAllTagsCommand.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Tags.Commands.ArchiveAllTags
+  syntax:
+    content: 'public class ArchiveAllTagsCommand : IRequest<Result>, IBaseRequest'
+    content.vb: Public Class ArchiveAllTagsCommand Implements IRequest(Of Result), IBaseRequest
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{Application.Commons.Models.Results.Result}
+  - MediatR.IBaseRequest
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+references:
+- uid: Application.Tags.Commands.ArchiveAllTags
+  commentId: N:Application.Tags.Commands.ArchiveAllTags
+  href: Application.html
+  name: Application.Tags.Commands.ArchiveAllTags
+  nameWithType: Application.Tags.Commands.ArchiveAllTags
+  fullName: Application.Tags.Commands.ArchiveAllTags
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.ArchiveAllTags
+    name: ArchiveAllTags
+    href: Application.Tags.Commands.ArchiveAllTags.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.ArchiveAllTags
+    name: ArchiveAllTags
+    href: Application.Tags.Commands.ArchiveAllTags.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{Application.Commons.Models.Results.Result}
+  commentId: T:MediatR.IRequest{Application.Commons.Models.Results.Result}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: Application.Commons.Models.Results.Result.html
+  name: IRequest<Result>
+  nameWithType: IRequest<Result>
+  fullName: MediatR.IRequest<Application.Commons.Models.Results.Result>
+  nameWithType.vb: IRequest(Of Result)
+  fullName.vb: MediatR.IRequest(Of Application.Commons.Models.Results.Result)
+  name.vb: IRequest(Of Result)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html

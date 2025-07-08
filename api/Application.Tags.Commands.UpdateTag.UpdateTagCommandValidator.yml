@@ -1,0 +1,4188 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator
+  commentId: T:Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator
+  id: UpdateTagCommandValidator
+  parent: Application.Tags.Commands.UpdateTag
+  children:
+  - Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.#ctor
+  langs:
+  - csharp
+  - vb
+  name: UpdateTagCommandValidator
+  nameWithType: UpdateTagCommandValidator
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator
+  type: Class
+  source:
+    remote:
+      path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandValidator.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateTagCommandValidator
+    path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandValidator.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Tags.Commands.UpdateTag
+  syntax:
+    content: 'public class UpdateTagCommandValidator : AbstractValidator<UpdateTagCommand>, IValidator<UpdateTagCommand>, IValidator, IEnumerable<IValidationRule>, IEnumerable'
+    content.vb: Public Class UpdateTagCommandValidator Inherits AbstractValidator(Of UpdateTagCommand) Implements IValidator(Of UpdateTagCommand), IValidator, IEnumerable(Of IValidationRule), IEnumerable
+  inheritance:
+  - System.Object
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  implements:
+  - FluentValidation.IValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  - FluentValidation.IValidator
+  - System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(Application.Tags.Commands.UpdateTag.UpdateTagCommand)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.CreateDescriptor
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TProperty}}})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TProperty}}},System.Func{{TProperty},{TTransformed}})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TProperty}}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TProperty},{TTransformed}})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{{TElement}}}})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{{TElement}}}},System.Func{{TElement},{TTransformed}})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{{TElement}}}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TElement},{TTransformed}})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleSet(System.String,System.Action)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include(FluentValidation.IValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include``1(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TValidator}})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.GetEnumerator
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.EnsureInstanceNotNull(System.Object)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.PreValidate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RaiseValidationException(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.OnRuleAdded(FluentValidation.IValidationRule{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.CascadeMode
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ClassLevelCascadeMode
+  - FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleLevelCascadeMode
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.#ctor
+  commentId: M:Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.#ctor
+  id: '#ctor'
+  parent: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator
+  langs:
+  - csharp
+  - vb
+  name: UpdateTagCommandValidator()
+  nameWithType: UpdateTagCommandValidator.UpdateTagCommandValidator()
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.UpdateTagCommandValidator()
+  type: Constructor
+  source:
+    remote:
+      path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandValidator.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Application/Tags/Commands/UpdateTag/UpdateTagCommandValidator.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Tags.Commands.UpdateTag
+  syntax:
+    content: public UpdateTagCommandValidator()
+    content.vb: Public Sub New()
+  overload: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.#ctor*
+  nameWithType.vb: UpdateTagCommandValidator.New()
+  fullName.vb: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.New()
+  name.vb: New()
+references:
+- uid: Application.Tags.Commands.UpdateTag
+  commentId: N:Application.Tags.Commands.UpdateTag
+  href: Application.html
+  name: Application.Tags.Commands.UpdateTag
+  nameWithType: Application.Tags.Commands.UpdateTag
+  fullName: Application.Tags.Commands.UpdateTag
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.UpdateTag
+    name: UpdateTag
+    href: Application.Tags.Commands.UpdateTag.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.UpdateTag
+    name: UpdateTag
+    href: Application.Tags.Commands.UpdateTag.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  commentId: T:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  parent: FluentValidation
+  definition: FluentValidation.AbstractValidator`1
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: AbstractValidator<UpdateTagCommand>
+  nameWithType: AbstractValidator<UpdateTagCommand>
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand)
+  name.vb: AbstractValidator(Of UpdateTagCommand)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+- uid: FluentValidation.IValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  commentId: T:FluentValidation.IValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  parent: FluentValidation
+  definition: FluentValidation.IValidator`1
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: IValidator<UpdateTagCommand>
+  nameWithType: IValidator<UpdateTagCommand>
+  fullName: FluentValidation.IValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>
+  nameWithType.vb: IValidator(Of UpdateTagCommand)
+  fullName.vb: FluentValidation.IValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand)
+  name.vb: IValidator(Of UpdateTagCommand)
+  spec.csharp:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+- uid: FluentValidation.IValidator
+  commentId: T:FluentValidation.IValidator
+  parent: FluentValidation
+  isExternal: true
+  name: IValidator
+  nameWithType: IValidator
+  fullName: FluentValidation.IValidator
+- uid: System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}
+  commentId: T:System.Collections.Generic.IEnumerable{FluentValidation.IValidationRule}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IValidationRule>
+  nameWithType: IEnumerable<IValidationRule>
+  fullName: System.Collections.Generic.IEnumerable<FluentValidation.IValidationRule>
+  nameWithType.vb: IEnumerable(Of IValidationRule)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of FluentValidation.IValidationRule)
+  name.vb: IEnumerable(Of IValidationRule)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: FluentValidation.IValidationRule
+    name: IValidationRule
+    isExternal: true
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(Application.Tags.Commands.UpdateTag.UpdateTagCommand)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(Application.Tags.Commands.UpdateTag.UpdateTagCommand)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.Validate(`0)
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: Validate(UpdateTagCommand)
+  nameWithType: AbstractValidator<UpdateTagCommand>.Validate(UpdateTagCommand)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.Validate(Application.Tags.Commands.UpdateTag.UpdateTagCommand)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).Validate(UpdateTagCommand)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).Validate(Application.Tags.Commands.UpdateTag.UpdateTagCommand)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(Application.Tags.Commands.UpdateTag.UpdateTagCommand)
+    name: Validate
+    isExternal: true
+  - name: (
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(Application.Tags.Commands.UpdateTag.UpdateTagCommand)
+    name: Validate
+    isExternal: true
+  - name: (
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: ValidateAsync(UpdateTagCommand, CancellationToken)
+  nameWithType: AbstractValidator<UpdateTagCommand>.ValidateAsync(UpdateTagCommand, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.ValidateAsync(Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).ValidateAsync(UpdateTagCommand, CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).ValidateAsync(Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+    name: ValidateAsync
+    isExternal: true
+  - name: (
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken)
+    name: ValidateAsync
+    isExternal: true
+  - name: (
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: Validate(ValidationContext<UpdateTagCommand>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.Validate(ValidationContext<UpdateTagCommand>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.Validate(FluentValidation.ValidationContext<Application.Tags.Commands.UpdateTag.UpdateTagCommand>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).Validate(ValidationContext(Of UpdateTagCommand))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).Validate(FluentValidation.ValidationContext(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand))
+  name.vb: Validate(ValidationContext(Of UpdateTagCommand))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+    name: Validate
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Validate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+    name: Validate
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: ValidateAsync(ValidationContext<UpdateTagCommand>, CancellationToken)
+  nameWithType: AbstractValidator<UpdateTagCommand>.ValidateAsync(ValidationContext<UpdateTagCommand>, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.ValidateAsync(FluentValidation.ValidationContext<Application.Tags.Commands.UpdateTag.UpdateTagCommand>, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).ValidateAsync(ValidationContext(Of UpdateTagCommand), CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).ValidateAsync(FluentValidation.ValidationContext(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand), System.Threading.CancellationToken)
+  name.vb: ValidateAsync(ValidationContext(Of UpdateTagCommand), CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken)
+    name: ValidateAsync
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ValidateAsync(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken)
+    name: ValidateAsync
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.CreateDescriptor
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.CreateDescriptor
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.CreateDescriptor
+  name: CreateDescriptor()
+  nameWithType: AbstractValidator<UpdateTagCommand>.CreateDescriptor()
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.CreateDescriptor()
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).CreateDescriptor()
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).CreateDescriptor()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.CreateDescriptor
+    name: CreateDescriptor
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.CreateDescriptor
+    name: CreateDescriptor
+    isExternal: true
+  - name: (
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TProperty}}})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0}})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: RuleFor<TProperty>(Expression<Func<UpdateTagCommand, TProperty>>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.RuleFor<TProperty>(Expression<Func<UpdateTagCommand, TProperty>>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, TProperty>>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).RuleFor(Of TProperty)(Expression(Of Func(Of UpdateTagCommand, TProperty)))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, TProperty)))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of UpdateTagCommand, TProperty)))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0}})
+    name: RuleFor
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleFor``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0}})
+    name: RuleFor
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TProperty}}},System.Func{{TProperty},{TTransformed}})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0}},System.Func{``0,``1})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0,``1})
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Transform<TProperty, TTransformed>(Expression<Func<UpdateTagCommand, TProperty>>, Func<TProperty, TTransformed>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.Transform<TProperty, TTransformed>(Expression<Func<UpdateTagCommand, TProperty>>, Func<TProperty, TTransformed>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.Transform<TProperty, TTransformed>(System.Linq.Expressions.Expression<System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, TProperty>>, System.Func<TProperty, TTransformed>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).Transform(Of TProperty, TTransformed)(Expression(Of Func(Of UpdateTagCommand, TProperty)), Func(Of TProperty, TTransformed))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).Transform(Of TProperty, TTransformed)(System.Linq.Expressions.Expression(Of System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, TProperty)), System.Func(Of TProperty, TTransformed))
+  name.vb: Transform(Of TProperty, TTransformed)(Expression(Of Func(Of UpdateTagCommand, TProperty)), Func(Of TProperty, TTransformed))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0}},System.Func{``0,``1})
+    name: Transform
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0}},System.Func{``0,``1})
+    name: Transform
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TProperty}}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TProperty},{TTransformed}})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0,``1})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{`0,``0,``1})
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Transform<TProperty, TTransformed>(Expression<Func<UpdateTagCommand, TProperty>>, Func<UpdateTagCommand, TProperty, TTransformed>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.Transform<TProperty, TTransformed>(Expression<Func<UpdateTagCommand, TProperty>>, Func<UpdateTagCommand, TProperty, TTransformed>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.Transform<TProperty, TTransformed>(System.Linq.Expressions.Expression<System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, TProperty>>, System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, TProperty, TTransformed>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).Transform(Of TProperty, TTransformed)(Expression(Of Func(Of UpdateTagCommand, TProperty)), Func(Of UpdateTagCommand, TProperty, TTransformed))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).Transform(Of TProperty, TTransformed)(System.Linq.Expressions.Expression(Of System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, TProperty)), System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, TProperty, TTransformed))
+  name.vb: Transform(Of TProperty, TTransformed)(Expression(Of Func(Of UpdateTagCommand, TProperty)), Func(Of UpdateTagCommand, TProperty, TTransformed))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0,``1})
+    name: Transform
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Transform``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0,``1})
+    name: Transform
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{{TElement}}}})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{``0}}})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: RuleForEach<TElement>(Expression<Func<UpdateTagCommand, IEnumerable<TElement>>>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.RuleForEach<TElement>(Expression<Func<UpdateTagCommand, IEnumerable<TElement>>>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.RuleForEach<TElement>(System.Linq.Expressions.Expression<System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Collections.Generic.IEnumerable<TElement>>>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).RuleForEach(Of TElement)(Expression(Of Func(Of UpdateTagCommand, IEnumerable(Of TElement))))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).RuleForEach(Of TElement)(System.Linq.Expressions.Expression(Of System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Collections.Generic.IEnumerable(Of TElement))))
+  name.vb: RuleForEach(Of TElement)(Expression(Of Func(Of UpdateTagCommand, IEnumerable(Of TElement))))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{``0}}})
+    name: RuleForEach
+    isExternal: true
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{``0}}})
+    name: RuleForEach
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{{TElement}}}},System.Func{{TElement},{TTransformed}})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,``1})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,``1})
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: TransformForEach<TElement, TTransformed>(Expression<Func<UpdateTagCommand, IEnumerable<TElement>>>, Func<TElement, TTransformed>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.TransformForEach<TElement, TTransformed>(Expression<Func<UpdateTagCommand, IEnumerable<TElement>>>, Func<TElement, TTransformed>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.TransformForEach<TElement, TTransformed>(System.Linq.Expressions.Expression<System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Collections.Generic.IEnumerable<TElement>>>, System.Func<TElement, TTransformed>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).TransformForEach(Of TElement, TTransformed)(Expression(Of Func(Of UpdateTagCommand, IEnumerable(Of TElement))), Func(Of TElement, TTransformed))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).TransformForEach(Of TElement, TTransformed)(System.Linq.Expressions.Expression(Of System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Collections.Generic.IEnumerable(Of TElement))), System.Func(Of TElement, TTransformed))
+  name.vb: TransformForEach(Of TElement, TTransformed)(Expression(Of Func(Of UpdateTagCommand, IEnumerable(Of TElement))), Func(Of TElement, TTransformed))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,``1})
+    name: TransformForEach
+    isExternal: true
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,``1})
+    name: TransformForEach
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{{TElement}}}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TElement},{TTransformed}})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{``0}}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0,``1})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{`0,``0,``1})
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: TransformForEach<TElement, TTransformed>(Expression<Func<UpdateTagCommand, IEnumerable<TElement>>>, Func<UpdateTagCommand, TElement, TTransformed>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.TransformForEach<TElement, TTransformed>(Expression<Func<UpdateTagCommand, IEnumerable<TElement>>>, Func<UpdateTagCommand, TElement, TTransformed>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.TransformForEach<TElement, TTransformed>(System.Linq.Expressions.Expression<System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Collections.Generic.IEnumerable<TElement>>>, System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, TElement, TTransformed>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).TransformForEach(Of TElement, TTransformed)(Expression(Of Func(Of UpdateTagCommand, IEnumerable(Of TElement))), Func(Of UpdateTagCommand, TElement, TTransformed))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).TransformForEach(Of TElement, TTransformed)(System.Linq.Expressions.Expression(Of System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Collections.Generic.IEnumerable(Of TElement))), System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, TElement, TTransformed))
+  name.vb: TransformForEach(Of TElement, TTransformed)(Expression(Of Func(Of UpdateTagCommand, IEnumerable(Of TElement))), Func(Of UpdateTagCommand, TElement, TTransformed))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{``0}}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0,``1})
+    name: TransformForEach
+    isExternal: true
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Collections.Generic.IEnumerable{``0}}},System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0,``1})
+    name: TransformForEach
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleSet(System.String,System.Action)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleSet(System.String,System.Action)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: RuleSet(string, Action)
+  nameWithType: AbstractValidator<UpdateTagCommand>.RuleSet(string, Action)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.RuleSet(string, System.Action)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).RuleSet(String, Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).RuleSet(String, System.Action)
+  name.vb: RuleSet(String, Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleSet(System.String,System.Action)
+    name: RuleSet
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleSet(System.String,System.Action)
+    name: RuleSet
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: When(Func<UpdateTagCommand, bool>, Action)
+  nameWithType: AbstractValidator<UpdateTagCommand>.When(Func<UpdateTagCommand, bool>, Action)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.When(System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, bool>, System.Action)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).When(Func(Of UpdateTagCommand, Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).When(System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, Boolean), System.Action)
+  name.vb: When(Func(Of UpdateTagCommand, Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+    name: When
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+    name: When
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.When(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: When(Func<UpdateTagCommand, ValidationContext<UpdateTagCommand>, bool>, Action)
+  nameWithType: AbstractValidator<UpdateTagCommand>.When(Func<UpdateTagCommand, ValidationContext<UpdateTagCommand>, bool>, Action)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.When(System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, FluentValidation.ValidationContext<Application.Tags.Commands.UpdateTag.UpdateTagCommand>, bool>, System.Action)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).When(Func(Of UpdateTagCommand, ValidationContext(Of UpdateTagCommand), Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).When(System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, FluentValidation.ValidationContext(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand), Boolean), System.Action)
+  name.vb: When(Func(Of UpdateTagCommand, ValidationContext(Of UpdateTagCommand), Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+    name: When
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.When(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+    name: When
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Unless(Func<UpdateTagCommand, bool>, Action)
+  nameWithType: AbstractValidator<UpdateTagCommand>.Unless(Func<UpdateTagCommand, bool>, Action)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.Unless(System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, bool>, System.Action)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).Unless(Func(Of UpdateTagCommand, Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).Unless(System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, Boolean), System.Action)
+  name.vb: Unless(Func(Of UpdateTagCommand, Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+    name: Unless
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Boolean},System.Action)
+    name: Unless
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Unless(Func<UpdateTagCommand, ValidationContext<UpdateTagCommand>, bool>, Action)
+  nameWithType: AbstractValidator<UpdateTagCommand>.Unless(Func<UpdateTagCommand, ValidationContext<UpdateTagCommand>, bool>, Action)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.Unless(System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, FluentValidation.ValidationContext<Application.Tags.Commands.UpdateTag.UpdateTagCommand>, bool>, System.Action)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).Unless(Func(Of UpdateTagCommand, ValidationContext(Of UpdateTagCommand), Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).Unless(System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, FluentValidation.ValidationContext(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand), Boolean), System.Action)
+  name.vb: Unless(Func(Of UpdateTagCommand, ValidationContext(Of UpdateTagCommand), Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+    name: Unless
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Unless(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Boolean},System.Action)
+    name: Unless
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: WhenAsync(Func<UpdateTagCommand, CancellationToken, Task<bool>>, Action)
+  nameWithType: AbstractValidator<UpdateTagCommand>.WhenAsync(Func<UpdateTagCommand, CancellationToken, Task<bool>>, Action)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.WhenAsync(System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Threading.CancellationToken, System.Threading.Tasks.Task<bool>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).WhenAsync(Func(Of UpdateTagCommand, CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).WhenAsync(System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Boolean)), System.Action)
+  name.vb: WhenAsync(Func(Of UpdateTagCommand, CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: WhenAsync(Func<UpdateTagCommand, ValidationContext<UpdateTagCommand>, CancellationToken, Task<bool>>, Action)
+  nameWithType: AbstractValidator<UpdateTagCommand>.WhenAsync(Func<UpdateTagCommand, ValidationContext<UpdateTagCommand>, CancellationToken, Task<bool>>, Action)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.WhenAsync(System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, FluentValidation.ValidationContext<Application.Tags.Commands.UpdateTag.UpdateTagCommand>, System.Threading.CancellationToken, System.Threading.Tasks.Task<bool>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).WhenAsync(Func(Of UpdateTagCommand, ValidationContext(Of UpdateTagCommand), CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).WhenAsync(System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, FluentValidation.ValidationContext(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand), System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Boolean)), System.Action)
+  name.vb: WhenAsync(Func(Of UpdateTagCommand, ValidationContext(Of UpdateTagCommand), CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.WhenAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: UnlessAsync(Func<UpdateTagCommand, CancellationToken, Task<bool>>, Action)
+  nameWithType: AbstractValidator<UpdateTagCommand>.UnlessAsync(Func<UpdateTagCommand, CancellationToken, Task<bool>>, Action)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.UnlessAsync(System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Threading.CancellationToken, System.Threading.Tasks.Task<bool>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).UnlessAsync(Func(Of UpdateTagCommand, CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).UnlessAsync(System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Boolean)), System.Action)
+  name.vb: UnlessAsync(Func(Of UpdateTagCommand, CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: UnlessAsync(Func<UpdateTagCommand, ValidationContext<UpdateTagCommand>, CancellationToken, Task<bool>>, Action)
+  nameWithType: AbstractValidator<UpdateTagCommand>.UnlessAsync(Func<UpdateTagCommand, ValidationContext<UpdateTagCommand>, CancellationToken, Task<bool>>, Action)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.UnlessAsync(System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, FluentValidation.ValidationContext<Application.Tags.Commands.UpdateTag.UpdateTagCommand>, System.Threading.CancellationToken, System.Threading.Tasks.Task<bool>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).UnlessAsync(Func(Of UpdateTagCommand, ValidationContext(Of UpdateTagCommand), CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).UnlessAsync(System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, FluentValidation.ValidationContext(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand), System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Boolean)), System.Action)
+  name.vb: UnlessAsync(Func(Of UpdateTagCommand, ValidationContext(Of UpdateTagCommand), CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.UnlessAsync(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include(FluentValidation.IValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include(FluentValidation.IValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: Include(IValidator<UpdateTagCommand>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.Include(IValidator<UpdateTagCommand>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.Include(FluentValidation.IValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).Include(IValidator(Of UpdateTagCommand))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).Include(FluentValidation.IValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand))
+  name.vb: Include(IValidator(Of UpdateTagCommand))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include(FluentValidation.IValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+    name: Include
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include(FluentValidation.IValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+    name: Include
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include``1(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,{TValidator}})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include``1(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Include<TValidator>(Func<UpdateTagCommand, TValidator>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.Include<TValidator>(Func<UpdateTagCommand, TValidator>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.Include<TValidator>(System.Func<Application.Tags.Commands.UpdateTag.UpdateTagCommand, TValidator>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).Include(Of TValidator)(Func(Of UpdateTagCommand, TValidator))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).Include(Of TValidator)(System.Func(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand, TValidator))
+  name.vb: Include(Of TValidator)(Func(Of UpdateTagCommand, TValidator))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include``1(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0})
+    name: Include
+    isExternal: true
+  - name: <
+  - name: TValidator
+  - name: '>'
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TValidator
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.Include``1(System.Func{Application.Tags.Commands.UpdateTag.UpdateTagCommand,``0})
+    name: Include
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValidator
+  - name: )
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: ','
+  - name: " "
+  - name: TValidator
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.GetEnumerator
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.GetEnumerator
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: AbstractValidator<UpdateTagCommand>.GetEnumerator()
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.GetEnumerator()
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).GetEnumerator()
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).GetEnumerator()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+  - name: (
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.EnsureInstanceNotNull(System.Object)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.EnsureInstanceNotNull(System.Object)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+  name: EnsureInstanceNotNull(object)
+  nameWithType: AbstractValidator<UpdateTagCommand>.EnsureInstanceNotNull(object)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.EnsureInstanceNotNull(object)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).EnsureInstanceNotNull(Object)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).EnsureInstanceNotNull(Object)
+  name.vb: EnsureInstanceNotNull(Object)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.EnsureInstanceNotNull(System.Object)
+    name: EnsureInstanceNotNull
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.EnsureInstanceNotNull(System.Object)
+    name: EnsureInstanceNotNull
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.PreValidate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.PreValidate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: PreValidate(ValidationContext<UpdateTagCommand>, ValidationResult)
+  nameWithType: AbstractValidator<UpdateTagCommand>.PreValidate(ValidationContext<UpdateTagCommand>, ValidationResult)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.PreValidate(FluentValidation.ValidationContext<Application.Tags.Commands.UpdateTag.UpdateTagCommand>, FluentValidation.Results.ValidationResult)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).PreValidate(ValidationContext(Of UpdateTagCommand), ValidationResult)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).PreValidate(FluentValidation.ValidationContext(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand), FluentValidation.Results.ValidationResult)
+  name.vb: PreValidate(ValidationContext(Of UpdateTagCommand), ValidationResult)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.PreValidate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+    name: PreValidate
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.PreValidate(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+    name: PreValidate
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RaiseValidationException(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RaiseValidationException(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.RaiseValidationException(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: RaiseValidationException(ValidationContext<UpdateTagCommand>, ValidationResult)
+  nameWithType: AbstractValidator<UpdateTagCommand>.RaiseValidationException(ValidationContext<UpdateTagCommand>, ValidationResult)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.RaiseValidationException(FluentValidation.ValidationContext<Application.Tags.Commands.UpdateTag.UpdateTagCommand>, FluentValidation.Results.ValidationResult)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).RaiseValidationException(ValidationContext(Of UpdateTagCommand), ValidationResult)
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).RaiseValidationException(FluentValidation.ValidationContext(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand), FluentValidation.Results.ValidationResult)
+  name.vb: RaiseValidationException(ValidationContext(Of UpdateTagCommand), ValidationResult)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RaiseValidationException(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+    name: RaiseValidationException
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RaiseValidationException(FluentValidation.ValidationContext{Application.Tags.Commands.UpdateTag.UpdateTagCommand},FluentValidation.Results.ValidationResult)
+    name: RaiseValidationException
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.OnRuleAdded(FluentValidation.IValidationRule{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+  commentId: M:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.OnRuleAdded(FluentValidation.IValidationRule{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.OnRuleAdded(FluentValidation.IValidationRule{`0})
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  name: OnRuleAdded(IValidationRule<UpdateTagCommand>)
+  nameWithType: AbstractValidator<UpdateTagCommand>.OnRuleAdded(IValidationRule<UpdateTagCommand>)
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.OnRuleAdded(FluentValidation.IValidationRule<Application.Tags.Commands.UpdateTag.UpdateTagCommand>)
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).OnRuleAdded(IValidationRule(Of UpdateTagCommand))
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).OnRuleAdded(FluentValidation.IValidationRule(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand))
+  name.vb: OnRuleAdded(IValidationRule(Of UpdateTagCommand))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.OnRuleAdded(FluentValidation.IValidationRule{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+    name: OnRuleAdded
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.IValidationRule`1
+    name: IValidationRule
+    isExternal: true
+  - name: <
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.OnRuleAdded(FluentValidation.IValidationRule{Application.Tags.Commands.UpdateTag.UpdateTagCommand})
+    name: OnRuleAdded
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.IValidationRule`1
+    name: IValidationRule
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Tags.Commands.UpdateTag.UpdateTagCommand
+    name: UpdateTagCommand
+    href: Application.Tags.Commands.UpdateTag.UpdateTagCommand.html
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.CascadeMode
+  commentId: P:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.CascadeMode
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.CascadeMode
+  name: CascadeMode
+  nameWithType: AbstractValidator<UpdateTagCommand>.CascadeMode
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.CascadeMode
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).CascadeMode
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).CascadeMode
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ClassLevelCascadeMode
+  commentId: P:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.ClassLevelCascadeMode
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.ClassLevelCascadeMode
+  name: ClassLevelCascadeMode
+  nameWithType: AbstractValidator<UpdateTagCommand>.ClassLevelCascadeMode
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.ClassLevelCascadeMode
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).ClassLevelCascadeMode
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).ClassLevelCascadeMode
+- uid: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleLevelCascadeMode
+  commentId: P:FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}.RuleLevelCascadeMode
+  parent: FluentValidation.AbstractValidator{Application.Tags.Commands.UpdateTag.UpdateTagCommand}
+  definition: FluentValidation.AbstractValidator`1.RuleLevelCascadeMode
+  name: RuleLevelCascadeMode
+  nameWithType: AbstractValidator<UpdateTagCommand>.RuleLevelCascadeMode
+  fullName: FluentValidation.AbstractValidator<Application.Tags.Commands.UpdateTag.UpdateTagCommand>.RuleLevelCascadeMode
+  nameWithType.vb: AbstractValidator(Of UpdateTagCommand).RuleLevelCascadeMode
+  fullName.vb: FluentValidation.AbstractValidator(Of Application.Tags.Commands.UpdateTag.UpdateTagCommand).RuleLevelCascadeMode
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: FluentValidation.AbstractValidator`1
+  commentId: T:FluentValidation.AbstractValidator`1
+  isExternal: true
+  name: AbstractValidator<T>
+  nameWithType: AbstractValidator<T>
+  fullName: FluentValidation.AbstractValidator<T>
+  nameWithType.vb: AbstractValidator(Of T)
+  fullName.vb: FluentValidation.AbstractValidator(Of T)
+  name.vb: AbstractValidator(Of T)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1
+    name: AbstractValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: FluentValidation
+  commentId: N:FluentValidation
+  isExternal: true
+  name: FluentValidation
+  nameWithType: FluentValidation
+  fullName: FluentValidation
+- uid: FluentValidation.IValidator`1
+  commentId: T:FluentValidation.IValidator`1
+  isExternal: true
+  name: IValidator<T>
+  nameWithType: IValidator<T>
+  fullName: FluentValidation.IValidator<T>
+  nameWithType.vb: IValidator(Of T)
+  fullName.vb: FluentValidation.IValidator(Of T)
+  name.vb: IValidator(Of T)
+  spec.csharp:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: FluentValidation.AbstractValidator`1.Validate(`0)
+  commentId: M:FluentValidation.AbstractValidator`1.Validate(`0)
+  isExternal: true
+  name: Validate(T)
+  nameWithType: AbstractValidator<T>.Validate(T)
+  fullName: FluentValidation.AbstractValidator<T>.Validate(T)
+  nameWithType.vb: AbstractValidator(Of T).Validate(T)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Validate(T)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Validate(`0)
+    name: Validate
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Validate(`0)
+    name: Validate
+    isExternal: true
+  - name: (
+  - name: T
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: ValidateAsync(T, CancellationToken)
+  nameWithType: AbstractValidator<T>.ValidateAsync(T, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<T>.ValidateAsync(T, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of T).ValidateAsync(T, CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).ValidateAsync(T, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+    name: ValidateAsync
+    isExternal: true
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(`0,System.Threading.CancellationToken)
+    name: ValidateAsync
+    isExternal: true
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+  commentId: M:FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+  isExternal: true
+  name: Validate(ValidationContext<T>)
+  nameWithType: AbstractValidator<T>.Validate(ValidationContext<T>)
+  fullName: FluentValidation.AbstractValidator<T>.Validate(FluentValidation.ValidationContext<T>)
+  nameWithType.vb: AbstractValidator(Of T).Validate(ValidationContext(Of T))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Validate(FluentValidation.ValidationContext(Of T))
+  name.vb: Validate(ValidationContext(Of T))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+    name: Validate
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Validate(FluentValidation.ValidationContext{`0})
+    name: Validate
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+  commentId: M:FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: ValidateAsync(ValidationContext<T>, CancellationToken)
+  nameWithType: AbstractValidator<T>.ValidateAsync(ValidationContext<T>, CancellationToken)
+  fullName: FluentValidation.AbstractValidator<T>.ValidateAsync(FluentValidation.ValidationContext<T>, System.Threading.CancellationToken)
+  nameWithType.vb: AbstractValidator(Of T).ValidateAsync(ValidationContext(Of T), CancellationToken)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).ValidateAsync(FluentValidation.ValidationContext(Of T), System.Threading.CancellationToken)
+  name.vb: ValidateAsync(ValidationContext(Of T), CancellationToken)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+    name: ValidateAsync
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.ValidateAsync(FluentValidation.ValidationContext{`0},System.Threading.CancellationToken)
+    name: ValidateAsync
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.CreateDescriptor
+  commentId: M:FluentValidation.AbstractValidator`1.CreateDescriptor
+  isExternal: true
+  name: CreateDescriptor()
+  nameWithType: AbstractValidator<T>.CreateDescriptor()
+  fullName: FluentValidation.AbstractValidator<T>.CreateDescriptor()
+  nameWithType.vb: AbstractValidator(Of T).CreateDescriptor()
+  fullName.vb: FluentValidation.AbstractValidator(Of T).CreateDescriptor()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.CreateDescriptor
+    name: CreateDescriptor
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.CreateDescriptor
+    name: CreateDescriptor
+    isExternal: true
+  - name: (
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  commentId: M:FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: RuleFor<TProperty>(Expression<Func<T, TProperty>>)
+  nameWithType: AbstractValidator<T>.RuleFor<TProperty>(Expression<Func<T, TProperty>>)
+  fullName: FluentValidation.AbstractValidator<T>.RuleFor<TProperty>(System.Linq.Expressions.Expression<System.Func<T, TProperty>>)
+  nameWithType.vb: AbstractValidator(Of T).RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).RuleFor(Of TProperty)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)))
+  name.vb: RuleFor(Of TProperty)(Expression(Of Func(Of T, TProperty)))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RuleFor``1(System.Linq.Expressions.Expression{System.Func{`0,``0}})
+    name: RuleFor
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0,``1})
+  commentId: M:FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0,``1})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Transform<TProperty, TTransformed>(Expression<Func<T, TProperty>>, Func<TProperty, TTransformed>)
+  nameWithType: AbstractValidator<T>.Transform<TProperty, TTransformed>(Expression<Func<T, TProperty>>, Func<TProperty, TTransformed>)
+  fullName: FluentValidation.AbstractValidator<T>.Transform<TProperty, TTransformed>(System.Linq.Expressions.Expression<System.Func<T, TProperty>>, System.Func<TProperty, TTransformed>)
+  nameWithType.vb: AbstractValidator(Of T).Transform(Of TProperty, TTransformed)(Expression(Of Func(Of T, TProperty)), Func(Of TProperty, TTransformed))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Transform(Of TProperty, TTransformed)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), System.Func(Of TProperty, TTransformed))
+  name.vb: Transform(Of TProperty, TTransformed)(Expression(Of Func(Of T, TProperty)), Func(Of TProperty, TTransformed))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0,``1})
+    name: Transform
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{``0,``1})
+    name: Transform
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{`0,``0,``1})
+  commentId: M:FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{`0,``0,``1})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Transform<TProperty, TTransformed>(Expression<Func<T, TProperty>>, Func<T, TProperty, TTransformed>)
+  nameWithType: AbstractValidator<T>.Transform<TProperty, TTransformed>(Expression<Func<T, TProperty>>, Func<T, TProperty, TTransformed>)
+  fullName: FluentValidation.AbstractValidator<T>.Transform<TProperty, TTransformed>(System.Linq.Expressions.Expression<System.Func<T, TProperty>>, System.Func<T, TProperty, TTransformed>)
+  nameWithType.vb: AbstractValidator(Of T).Transform(Of TProperty, TTransformed)(Expression(Of Func(Of T, TProperty)), Func(Of T, TProperty, TTransformed))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Transform(Of TProperty, TTransformed)(System.Linq.Expressions.Expression(Of System.Func(Of T, TProperty)), System.Func(Of T, TProperty, TTransformed))
+  name.vb: Transform(Of TProperty, TTransformed)(Expression(Of Func(Of T, TProperty)), Func(Of T, TProperty, TTransformed))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{`0,``0,``1})
+    name: Transform
+    isExternal: true
+  - name: <
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Transform``2(System.Linq.Expressions.Expression{System.Func{`0,``0}},System.Func{`0,``0,``1})
+    name: Transform
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TProperty
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+  commentId: M:FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: RuleForEach<TElement>(Expression<Func<T, IEnumerable<TElement>>>)
+  nameWithType: AbstractValidator<T>.RuleForEach<TElement>(Expression<Func<T, IEnumerable<TElement>>>)
+  fullName: FluentValidation.AbstractValidator<T>.RuleForEach<TElement>(System.Linq.Expressions.Expression<System.Func<T, System.Collections.Generic.IEnumerable<TElement>>>)
+  nameWithType.vb: AbstractValidator(Of T).RuleForEach(Of TElement)(Expression(Of Func(Of T, IEnumerable(Of TElement))))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).RuleForEach(Of TElement)(System.Linq.Expressions.Expression(Of System.Func(Of T, System.Collections.Generic.IEnumerable(Of TElement))))
+  name.vb: RuleForEach(Of TElement)(Expression(Of Func(Of T, IEnumerable(Of TElement))))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+    name: RuleForEach
+    isExternal: true
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RuleForEach``1(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}})
+    name: RuleForEach
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,``1})
+  commentId: M:FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,``1})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: TransformForEach<TElement, TTransformed>(Expression<Func<T, IEnumerable<TElement>>>, Func<TElement, TTransformed>)
+  nameWithType: AbstractValidator<T>.TransformForEach<TElement, TTransformed>(Expression<Func<T, IEnumerable<TElement>>>, Func<TElement, TTransformed>)
+  fullName: FluentValidation.AbstractValidator<T>.TransformForEach<TElement, TTransformed>(System.Linq.Expressions.Expression<System.Func<T, System.Collections.Generic.IEnumerable<TElement>>>, System.Func<TElement, TTransformed>)
+  nameWithType.vb: AbstractValidator(Of T).TransformForEach(Of TElement, TTransformed)(Expression(Of Func(Of T, IEnumerable(Of TElement))), Func(Of TElement, TTransformed))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).TransformForEach(Of TElement, TTransformed)(System.Linq.Expressions.Expression(Of System.Func(Of T, System.Collections.Generic.IEnumerable(Of TElement))), System.Func(Of TElement, TTransformed))
+  name.vb: TransformForEach(Of TElement, TTransformed)(Expression(Of Func(Of T, IEnumerable(Of TElement))), Func(Of TElement, TTransformed))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,``1})
+    name: TransformForEach
+    isExternal: true
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{``0,``1})
+    name: TransformForEach
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{`0,``0,``1})
+  commentId: M:FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{`0,``0,``1})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: TransformForEach<TElement, TTransformed>(Expression<Func<T, IEnumerable<TElement>>>, Func<T, TElement, TTransformed>)
+  nameWithType: AbstractValidator<T>.TransformForEach<TElement, TTransformed>(Expression<Func<T, IEnumerable<TElement>>>, Func<T, TElement, TTransformed>)
+  fullName: FluentValidation.AbstractValidator<T>.TransformForEach<TElement, TTransformed>(System.Linq.Expressions.Expression<System.Func<T, System.Collections.Generic.IEnumerable<TElement>>>, System.Func<T, TElement, TTransformed>)
+  nameWithType.vb: AbstractValidator(Of T).TransformForEach(Of TElement, TTransformed)(Expression(Of Func(Of T, IEnumerable(Of TElement))), Func(Of T, TElement, TTransformed))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).TransformForEach(Of TElement, TTransformed)(System.Linq.Expressions.Expression(Of System.Func(Of T, System.Collections.Generic.IEnumerable(Of TElement))), System.Func(Of T, TElement, TTransformed))
+  name.vb: TransformForEach(Of TElement, TTransformed)(Expression(Of Func(Of T, IEnumerable(Of TElement))), Func(Of T, TElement, TTransformed))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{`0,``0,``1})
+    name: TransformForEach
+    isExternal: true
+  - name: <
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.TransformForEach``2(System.Linq.Expressions.Expression{System.Func{`0,System.Collections.Generic.IEnumerable{``0}}},System.Func{`0,``0,``1})
+    name: TransformForEach
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: (
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: ','
+  - name: " "
+  - name: TTransformed
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: RuleSet(string, Action)
+  nameWithType: AbstractValidator<T>.RuleSet(string, Action)
+  fullName: FluentValidation.AbstractValidator<T>.RuleSet(string, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).RuleSet(String, Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).RuleSet(String, System.Action)
+  name.vb: RuleSet(String, Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+    name: RuleSet
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RuleSet(System.String,System.Action)
+    name: RuleSet
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: When(Func<T, bool>, Action)
+  nameWithType: AbstractValidator<T>.When(Func<T, bool>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.When(System.Func<T, bool>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).When(Func(Of T, Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).When(System.Func(Of T, Boolean), System.Action)
+  name.vb: When(Func(Of T, Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+    name: When
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,System.Boolean},System.Action)
+    name: When
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.When(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: When(Func<T, ValidationContext<T>, bool>, Action)
+  nameWithType: AbstractValidator<T>.When(Func<T, ValidationContext<T>, bool>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.When(System.Func<T, FluentValidation.ValidationContext<T>, bool>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).When(Func(Of T, ValidationContext(Of T), Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).When(System.Func(Of T, FluentValidation.ValidationContext(Of T), Boolean), System.Action)
+  name.vb: When(Func(Of T, ValidationContext(Of T), Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+    name: When
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.When(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+    name: When
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Unless(Func<T, bool>, Action)
+  nameWithType: AbstractValidator<T>.Unless(Func<T, bool>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.Unless(System.Func<T, bool>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).Unless(Func(Of T, Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Unless(System.Func(Of T, Boolean), System.Action)
+  name.vb: Unless(Func(Of T, Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+    name: Unless
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,System.Boolean},System.Action)
+    name: Unless
+    isExternal: true
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.Unless(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Unless(Func<T, ValidationContext<T>, bool>, Action)
+  nameWithType: AbstractValidator<T>.Unless(Func<T, ValidationContext<T>, bool>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.Unless(System.Func<T, FluentValidation.ValidationContext<T>, bool>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).Unless(Func(Of T, ValidationContext(Of T), Boolean), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Unless(System.Func(Of T, FluentValidation.ValidationContext(Of T), Boolean), System.Action)
+  name.vb: Unless(Func(Of T, ValidationContext(Of T), Boolean), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+    name: Unless
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Unless(System.Func{`0,FluentValidation.ValidationContext{`0},System.Boolean},System.Action)
+    name: Unless
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: WhenAsync(Func<T, CancellationToken, Task<bool>>, Action)
+  nameWithType: AbstractValidator<T>.WhenAsync(Func<T, CancellationToken, Task<bool>>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.WhenAsync(System.Func<T, System.Threading.CancellationToken, System.Threading.Tasks.Task<bool>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).WhenAsync(Func(Of T, CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).WhenAsync(System.Func(Of T, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Boolean)), System.Action)
+  name.vb: WhenAsync(Func(Of T, CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: WhenAsync(Func<T, ValidationContext<T>, CancellationToken, Task<bool>>, Action)
+  nameWithType: AbstractValidator<T>.WhenAsync(Func<T, ValidationContext<T>, CancellationToken, Task<bool>>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.WhenAsync(System.Func<T, FluentValidation.ValidationContext<T>, System.Threading.CancellationToken, System.Threading.Tasks.Task<bool>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).WhenAsync(Func(Of T, ValidationContext(Of T), CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).WhenAsync(System.Func(Of T, FluentValidation.ValidationContext(Of T), System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Boolean)), System.Action)
+  name.vb: WhenAsync(Func(Of T, ValidationContext(Of T), CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.WhenAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: WhenAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: UnlessAsync(Func<T, CancellationToken, Task<bool>>, Action)
+  nameWithType: AbstractValidator<T>.UnlessAsync(Func<T, CancellationToken, Task<bool>>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.UnlessAsync(System.Func<T, System.Threading.CancellationToken, System.Threading.Tasks.Task<bool>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).UnlessAsync(Func(Of T, CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).UnlessAsync(System.Func(Of T, System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Boolean)), System.Action)
+  name.vb: UnlessAsync(Func(Of T, CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  commentId: M:FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: UnlessAsync(Func<T, ValidationContext<T>, CancellationToken, Task<bool>>, Action)
+  nameWithType: AbstractValidator<T>.UnlessAsync(Func<T, ValidationContext<T>, CancellationToken, Task<bool>>, Action)
+  fullName: FluentValidation.AbstractValidator<T>.UnlessAsync(System.Func<T, FluentValidation.ValidationContext<T>, System.Threading.CancellationToken, System.Threading.Tasks.Task<bool>>, System.Action)
+  nameWithType.vb: AbstractValidator(Of T).UnlessAsync(Func(Of T, ValidationContext(Of T), CancellationToken, Task(Of Boolean)), Action)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).UnlessAsync(System.Func(Of T, FluentValidation.ValidationContext(Of T), System.Threading.CancellationToken, System.Threading.Tasks.Task(Of Boolean)), System.Action)
+  name.vb: UnlessAsync(Func(Of T, ValidationContext(Of T), CancellationToken, Task(Of Boolean)), Action)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.UnlessAsync(System.Func{`0,FluentValidation.ValidationContext{`0},System.Threading.CancellationToken,System.Threading.Tasks.Task{System.Boolean}},System.Action)
+    name: UnlessAsync
+    isExternal: true
+  - name: (
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+  commentId: M:FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+  isExternal: true
+  name: Include(IValidator<T>)
+  nameWithType: AbstractValidator<T>.Include(IValidator<T>)
+  fullName: FluentValidation.AbstractValidator<T>.Include(FluentValidation.IValidator<T>)
+  nameWithType.vb: AbstractValidator(Of T).Include(IValidator(Of T))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Include(FluentValidation.IValidator(Of T))
+  name.vb: Include(IValidator(Of T))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+    name: Include
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Include(FluentValidation.IValidator{`0})
+    name: Include
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.IValidator`1
+    name: IValidator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+  commentId: M:FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Include<TValidator>(Func<T, TValidator>)
+  nameWithType: AbstractValidator<T>.Include<TValidator>(Func<T, TValidator>)
+  fullName: FluentValidation.AbstractValidator<T>.Include<TValidator>(System.Func<T, TValidator>)
+  nameWithType.vb: AbstractValidator(Of T).Include(Of TValidator)(Func(Of T, TValidator))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).Include(Of TValidator)(System.Func(Of T, TValidator))
+  name.vb: Include(Of TValidator)(Func(Of T, TValidator))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+    name: Include
+    isExternal: true
+  - name: <
+  - name: TValidator
+  - name: '>'
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TValidator
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.Include``1(System.Func{`0,``0})
+    name: Include
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValidator
+  - name: )
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TValidator
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.GetEnumerator
+  commentId: M:FluentValidation.AbstractValidator`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: AbstractValidator<T>.GetEnumerator()
+  fullName: FluentValidation.AbstractValidator<T>.GetEnumerator()
+  nameWithType.vb: AbstractValidator(Of T).GetEnumerator()
+  fullName.vb: FluentValidation.AbstractValidator(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+  - name: (
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+  commentId: M:FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+  isExternal: true
+  name: EnsureInstanceNotNull(object)
+  nameWithType: AbstractValidator<T>.EnsureInstanceNotNull(object)
+  fullName: FluentValidation.AbstractValidator<T>.EnsureInstanceNotNull(object)
+  nameWithType.vb: AbstractValidator(Of T).EnsureInstanceNotNull(Object)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).EnsureInstanceNotNull(Object)
+  name.vb: EnsureInstanceNotNull(Object)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+    name: EnsureInstanceNotNull
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.EnsureInstanceNotNull(System.Object)
+    name: EnsureInstanceNotNull
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+  commentId: M:FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+  isExternal: true
+  name: PreValidate(ValidationContext<T>, ValidationResult)
+  nameWithType: AbstractValidator<T>.PreValidate(ValidationContext<T>, ValidationResult)
+  fullName: FluentValidation.AbstractValidator<T>.PreValidate(FluentValidation.ValidationContext<T>, FluentValidation.Results.ValidationResult)
+  nameWithType.vb: AbstractValidator(Of T).PreValidate(ValidationContext(Of T), ValidationResult)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).PreValidate(FluentValidation.ValidationContext(Of T), FluentValidation.Results.ValidationResult)
+  name.vb: PreValidate(ValidationContext(Of T), ValidationResult)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+    name: PreValidate
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.PreValidate(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+    name: PreValidate
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.RaiseValidationException(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+  commentId: M:FluentValidation.AbstractValidator`1.RaiseValidationException(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+  isExternal: true
+  name: RaiseValidationException(ValidationContext<T>, ValidationResult)
+  nameWithType: AbstractValidator<T>.RaiseValidationException(ValidationContext<T>, ValidationResult)
+  fullName: FluentValidation.AbstractValidator<T>.RaiseValidationException(FluentValidation.ValidationContext<T>, FluentValidation.Results.ValidationResult)
+  nameWithType.vb: AbstractValidator(Of T).RaiseValidationException(ValidationContext(Of T), ValidationResult)
+  fullName.vb: FluentValidation.AbstractValidator(Of T).RaiseValidationException(FluentValidation.ValidationContext(Of T), FluentValidation.Results.ValidationResult)
+  name.vb: RaiseValidationException(ValidationContext(Of T), ValidationResult)
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.RaiseValidationException(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+    name: RaiseValidationException
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.RaiseValidationException(FluentValidation.ValidationContext{`0},FluentValidation.Results.ValidationResult)
+    name: RaiseValidationException
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.ValidationContext`1
+    name: ValidationContext
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: FluentValidation.Results.ValidationResult
+    name: ValidationResult
+    isExternal: true
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.OnRuleAdded(FluentValidation.IValidationRule{`0})
+  commentId: M:FluentValidation.AbstractValidator`1.OnRuleAdded(FluentValidation.IValidationRule{`0})
+  isExternal: true
+  name: OnRuleAdded(IValidationRule<T>)
+  nameWithType: AbstractValidator<T>.OnRuleAdded(IValidationRule<T>)
+  fullName: FluentValidation.AbstractValidator<T>.OnRuleAdded(FluentValidation.IValidationRule<T>)
+  nameWithType.vb: AbstractValidator(Of T).OnRuleAdded(IValidationRule(Of T))
+  fullName.vb: FluentValidation.AbstractValidator(Of T).OnRuleAdded(FluentValidation.IValidationRule(Of T))
+  name.vb: OnRuleAdded(IValidationRule(Of T))
+  spec.csharp:
+  - uid: FluentValidation.AbstractValidator`1.OnRuleAdded(FluentValidation.IValidationRule{`0})
+    name: OnRuleAdded
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.IValidationRule`1
+    name: IValidationRule
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: FluentValidation.AbstractValidator`1.OnRuleAdded(FluentValidation.IValidationRule{`0})
+    name: OnRuleAdded
+    isExternal: true
+  - name: (
+  - uid: FluentValidation.IValidationRule`1
+    name: IValidationRule
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: FluentValidation.AbstractValidator`1.CascadeMode
+  commentId: P:FluentValidation.AbstractValidator`1.CascadeMode
+  isExternal: true
+  name: CascadeMode
+  nameWithType: AbstractValidator<T>.CascadeMode
+  fullName: FluentValidation.AbstractValidator<T>.CascadeMode
+  nameWithType.vb: AbstractValidator(Of T).CascadeMode
+  fullName.vb: FluentValidation.AbstractValidator(Of T).CascadeMode
+- uid: FluentValidation.AbstractValidator`1.ClassLevelCascadeMode
+  commentId: P:FluentValidation.AbstractValidator`1.ClassLevelCascadeMode
+  isExternal: true
+  name: ClassLevelCascadeMode
+  nameWithType: AbstractValidator<T>.ClassLevelCascadeMode
+  fullName: FluentValidation.AbstractValidator<T>.ClassLevelCascadeMode
+  nameWithType.vb: AbstractValidator(Of T).ClassLevelCascadeMode
+  fullName.vb: FluentValidation.AbstractValidator(Of T).ClassLevelCascadeMode
+- uid: FluentValidation.AbstractValidator`1.RuleLevelCascadeMode
+  commentId: P:FluentValidation.AbstractValidator`1.RuleLevelCascadeMode
+  isExternal: true
+  name: RuleLevelCascadeMode
+  nameWithType: AbstractValidator<T>.RuleLevelCascadeMode
+  fullName: FluentValidation.AbstractValidator<T>.RuleLevelCascadeMode
+  nameWithType.vb: AbstractValidator(Of T).RuleLevelCascadeMode
+  fullName.vb: FluentValidation.AbstractValidator(Of T).RuleLevelCascadeMode
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.#ctor*
+  commentId: Overload:Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.#ctor
+  href: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.html#Application_Tags_Commands_UpdateTag_UpdateTagCommandValidator__ctor
+  name: UpdateTagCommandValidator
+  nameWithType: UpdateTagCommandValidator.UpdateTagCommandValidator
+  fullName: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.UpdateTagCommandValidator
+  nameWithType.vb: UpdateTagCommandValidator.New
+  fullName.vb: Application.Tags.Commands.UpdateTag.UpdateTagCommandValidator.New
+  name.vb: New

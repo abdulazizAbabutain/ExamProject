@@ -1,0 +1,480 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Commands.AddReference.AddReferenceCommand
+  commentId: T:Application.Sources.Commands.AddReference.AddReferenceCommand
+  id: AddReferenceCommand
+  parent: Application.Sources.Commands.AddReference
+  children:
+  - Application.Sources.Commands.AddReference.AddReferenceCommand.Metadata
+  - Application.Sources.Commands.AddReference.AddReferenceCommand.Notes
+  - Application.Sources.Commands.AddReference.AddReferenceCommand.SourceId
+  langs:
+  - csharp
+  - vb
+  name: AddReferenceCommand
+  nameWithType: AddReferenceCommand
+  fullName: Application.Sources.Commands.AddReference.AddReferenceCommand
+  type: Class
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddReference/AddReferenceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddReferenceCommand
+    path: src/Application/Sources/Commands/AddReference/AddReferenceCommand.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddReference
+  syntax:
+    content: 'public class AddReferenceCommand : IRequest, IBaseRequest'
+    content.vb: Public Class AddReferenceCommand Implements IRequest, IBaseRequest
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest
+  - MediatR.IBaseRequest
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Sources.Commands.AddReference.AddReferenceCommand.SourceId
+  commentId: P:Application.Sources.Commands.AddReference.AddReferenceCommand.SourceId
+  id: SourceId
+  parent: Application.Sources.Commands.AddReference.AddReferenceCommand
+  langs:
+  - csharp
+  - vb
+  name: SourceId
+  nameWithType: AddReferenceCommand.SourceId
+  fullName: Application.Sources.Commands.AddReference.AddReferenceCommand.SourceId
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddReference/AddReferenceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: SourceId
+    path: src/Application/Sources/Commands/AddReference/AddReferenceCommand.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddReference
+  syntax:
+    content: public Guid SourceId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property SourceId As Guid
+  overload: Application.Sources.Commands.AddReference.AddReferenceCommand.SourceId*
+- uid: Application.Sources.Commands.AddReference.AddReferenceCommand.Notes
+  commentId: P:Application.Sources.Commands.AddReference.AddReferenceCommand.Notes
+  id: Notes
+  parent: Application.Sources.Commands.AddReference.AddReferenceCommand
+  langs:
+  - csharp
+  - vb
+  name: Notes
+  nameWithType: AddReferenceCommand.Notes
+  fullName: Application.Sources.Commands.AddReference.AddReferenceCommand.Notes
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddReference/AddReferenceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Notes
+    path: src/Application/Sources/Commands/AddReference/AddReferenceCommand.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddReference
+  syntax:
+    content: public string? Notes { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Notes As String
+  overload: Application.Sources.Commands.AddReference.AddReferenceCommand.Notes*
+- uid: Application.Sources.Commands.AddReference.AddReferenceCommand.Metadata
+  commentId: P:Application.Sources.Commands.AddReference.AddReferenceCommand.Metadata
+  id: Metadata
+  parent: Application.Sources.Commands.AddReference.AddReferenceCommand
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: AddReferenceCommand.Metadata
+  fullName: Application.Sources.Commands.AddReference.AddReferenceCommand.Metadata
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddReference/AddReferenceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Metadata
+    path: src/Application/Sources/Commands/AddReference/AddReferenceCommand.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddReference
+  syntax:
+    content: public List<AddMetadataCommand>? Metadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Application.Commons.Models.Commands.AddMetadataCommand}
+    content.vb: Public Property Metadata As List(Of AddMetadataCommand)
+  overload: Application.Sources.Commands.AddReference.AddReferenceCommand.Metadata*
+references:
+- uid: Application.Sources.Commands.AddReference
+  commentId: N:Application.Sources.Commands.AddReference
+  href: Application.html
+  name: Application.Sources.Commands.AddReference
+  nameWithType: Application.Sources.Commands.AddReference
+  fullName: Application.Sources.Commands.AddReference
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddReference
+    name: AddReference
+    href: Application.Sources.Commands.AddReference.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddReference
+    name: AddReference
+    href: Application.Sources.Commands.AddReference.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest
+  commentId: T:MediatR.IRequest
+  parent: MediatR
+  isExternal: true
+  name: IRequest
+  nameWithType: IRequest
+  fullName: MediatR.IRequest
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Sources.Commands.AddReference.AddReferenceCommand.SourceId*
+  commentId: Overload:Application.Sources.Commands.AddReference.AddReferenceCommand.SourceId
+  href: Application.Sources.Commands.AddReference.AddReferenceCommand.html#Application_Sources_Commands_AddReference_AddReferenceCommand_SourceId
+  name: SourceId
+  nameWithType: AddReferenceCommand.SourceId
+  fullName: Application.Sources.Commands.AddReference.AddReferenceCommand.SourceId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Sources.Commands.AddReference.AddReferenceCommand.Notes*
+  commentId: Overload:Application.Sources.Commands.AddReference.AddReferenceCommand.Notes
+  href: Application.Sources.Commands.AddReference.AddReferenceCommand.html#Application_Sources_Commands_AddReference_AddReferenceCommand_Notes
+  name: Notes
+  nameWithType: AddReferenceCommand.Notes
+  fullName: Application.Sources.Commands.AddReference.AddReferenceCommand.Notes
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Sources.Commands.AddReference.AddReferenceCommand.Metadata*
+  commentId: Overload:Application.Sources.Commands.AddReference.AddReferenceCommand.Metadata
+  href: Application.Sources.Commands.AddReference.AddReferenceCommand.html#Application_Sources_Commands_AddReference_AddReferenceCommand_Metadata
+  name: Metadata
+  nameWithType: AddReferenceCommand.Metadata
+  fullName: Application.Sources.Commands.AddReference.AddReferenceCommand.Metadata
+- uid: System.Collections.Generic.List{Application.Commons.Models.Commands.AddMetadataCommand}
+  commentId: T:System.Collections.Generic.List{Application.Commons.Models.Commands.AddMetadataCommand}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AddMetadataCommand>
+  nameWithType: List<AddMetadataCommand>
+  fullName: System.Collections.Generic.List<Application.Commons.Models.Commands.AddMetadataCommand>
+  nameWithType.vb: List(Of AddMetadataCommand)
+  fullName.vb: System.Collections.Generic.List(Of Application.Commons.Models.Commands.AddMetadataCommand)
+  name.vb: List(Of AddMetadataCommand)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.Commons.Models.Commands.AddMetadataCommand
+    name: AddMetadataCommand
+    href: Application.Commons.Models.Commands.AddMetadataCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Commands.AddMetadataCommand
+    name: AddMetadataCommand
+    href: Application.Commons.Models.Commands.AddMetadataCommand.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: API.Middleware
+  commentId: N:API.Middleware
+  id: API.Middleware
+  children:
+  - API.Middleware.CorrelationIdMiddleware
+  - API.Middleware.LocalizationMiddleware
+  - API.Middleware.ResultMiddleware
+  langs:
+  - csharp
+  - vb
+  name: API.Middleware
+  nameWithType: API.Middleware
+  fullName: API.Middleware
+  type: Namespace
+  assemblies:
+  - API
+references:
+- uid: API.Middleware.CorrelationIdMiddleware
+  commentId: T:API.Middleware.CorrelationIdMiddleware
+  href: API.Middleware.CorrelationIdMiddleware.html
+  name: CorrelationIdMiddleware
+  nameWithType: CorrelationIdMiddleware
+  fullName: API.Middleware.CorrelationIdMiddleware
+- uid: API.Middleware.LocalizationMiddleware
+  commentId: T:API.Middleware.LocalizationMiddleware
+  href: API.Middleware.LocalizationMiddleware.html
+  name: LocalizationMiddleware
+  nameWithType: LocalizationMiddleware
+  fullName: API.Middleware.LocalizationMiddleware
+- uid: API.Middleware.ResultMiddleware
+  commentId: T:API.Middleware.ResultMiddleware
+  href: API.Middleware.ResultMiddleware.html
+  name: ResultMiddleware
+  nameWithType: ResultMiddleware
+  fullName: API.Middleware.ResultMiddleware

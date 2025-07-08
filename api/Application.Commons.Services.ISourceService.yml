@@ -1,0 +1,827 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Services.ISourceService
+  commentId: T:Application.Commons.Services.ISourceService
+  id: ISourceService
+  parent: Application.Commons.Services
+  children:
+  - Application.Commons.Services.ISourceService.AddBulkTag(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})
+  - Application.Commons.Services.ISourceService.AddReference(System.Collections.Generic.IEnumerable{Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel},System.Guid)
+  - Application.Commons.Services.ISourceService.AddSource(Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel)
+  - Application.Commons.Services.ISourceService.AddTag(System.Guid,System.Guid)
+  - Application.Commons.Services.ISourceService.RemoveBulkTags(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})
+  - Application.Commons.Services.ISourceService.RemoveTag(System.Guid,System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: ISourceService
+  nameWithType: ISourceService
+  fullName: Application.Commons.Services.ISourceService
+  type: Interface
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISourceService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ISourceService
+    path: src/Application/Commons/Services/ISourceService.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: public interface ISourceService
+    content.vb: Public Interface ISourceService
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Commons.Services.ISourceService.AddSource(Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel)
+  commentId: M:Application.Commons.Services.ISourceService.AddSource(Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel)
+  id: AddSource(Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel)
+  parent: Application.Commons.Services.ISourceService
+  langs:
+  - csharp
+  - vb
+  name: AddSource(AddSourceServiceModel)
+  nameWithType: ISourceService.AddSource(AddSourceServiceModel)
+  fullName: Application.Commons.Services.ISourceService.AddSource(Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISourceService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddSource
+    path: src/Application/Commons/Services/ISourceService.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: Result<Source> AddSource(AddSourceServiceModel model)
+    parameters:
+    - id: model
+      type: Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel
+    return:
+      type: Application.Commons.Models.Results.Result{Domain.Entities.Sources.Source}
+    content.vb: Function AddSource(model As AddSourceServiceModel) As Result(Of Source)
+  overload: Application.Commons.Services.ISourceService.AddSource*
+- uid: Application.Commons.Services.ISourceService.AddReference(System.Collections.Generic.IEnumerable{Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel},System.Guid)
+  commentId: M:Application.Commons.Services.ISourceService.AddReference(System.Collections.Generic.IEnumerable{Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel},System.Guid)
+  id: AddReference(System.Collections.Generic.IEnumerable{Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel},System.Guid)
+  parent: Application.Commons.Services.ISourceService
+  langs:
+  - csharp
+  - vb
+  name: AddReference(IEnumerable<AddSourceReferenceServiceModel>, Guid)
+  nameWithType: ISourceService.AddReference(IEnumerable<AddSourceReferenceServiceModel>, Guid)
+  fullName: Application.Commons.Services.ISourceService.AddReference(System.Collections.Generic.IEnumerable<Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel>, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISourceService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddReference
+    path: src/Application/Commons/Services/ISourceService.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: Result<IEnumerable<SourceReference>> AddReference(IEnumerable<AddSourceReferenceServiceModel> sourceReferences, Guid sourceId)
+    parameters:
+    - id: sourceReferences
+      type: System.Collections.Generic.IEnumerable{Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel}
+    - id: sourceId
+      type: System.Guid
+    return:
+      type: Application.Commons.Models.Results.Result{System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference}}
+    content.vb: Function AddReference(sourceReferences As IEnumerable(Of AddSourceReferenceServiceModel), sourceId As Guid) As Result(Of IEnumerable(Of SourceReference))
+  overload: Application.Commons.Services.ISourceService.AddReference*
+  nameWithType.vb: ISourceService.AddReference(IEnumerable(Of AddSourceReferenceServiceModel), Guid)
+  fullName.vb: Application.Commons.Services.ISourceService.AddReference(System.Collections.Generic.IEnumerable(Of Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel), System.Guid)
+  name.vb: AddReference(IEnumerable(Of AddSourceReferenceServiceModel), Guid)
+- uid: Application.Commons.Services.ISourceService.AddTag(System.Guid,System.Guid)
+  commentId: M:Application.Commons.Services.ISourceService.AddTag(System.Guid,System.Guid)
+  id: AddTag(System.Guid,System.Guid)
+  parent: Application.Commons.Services.ISourceService
+  langs:
+  - csharp
+  - vb
+  name: AddTag(Guid, Guid)
+  nameWithType: ISourceService.AddTag(Guid, Guid)
+  fullName: Application.Commons.Services.ISourceService.AddTag(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISourceService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddTag
+    path: src/Application/Commons/Services/ISourceService.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: Result AddTag(Guid sourceId, Guid tagId)
+    parameters:
+    - id: sourceId
+      type: System.Guid
+    - id: tagId
+      type: System.Guid
+    return:
+      type: Application.Commons.Models.Results.Result
+    content.vb: Function AddTag(sourceId As Guid, tagId As Guid) As Result
+  overload: Application.Commons.Services.ISourceService.AddTag*
+- uid: Application.Commons.Services.ISourceService.AddBulkTag(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})
+  commentId: M:Application.Commons.Services.ISourceService.AddBulkTag(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})
+  id: AddBulkTag(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})
+  parent: Application.Commons.Services.ISourceService
+  langs:
+  - csharp
+  - vb
+  name: AddBulkTag(Guid, IEnumerable<Guid>)
+  nameWithType: ISourceService.AddBulkTag(Guid, IEnumerable<Guid>)
+  fullName: Application.Commons.Services.ISourceService.AddBulkTag(System.Guid, System.Collections.Generic.IEnumerable<System.Guid>)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISourceService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddBulkTag
+    path: src/Application/Commons/Services/ISourceService.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: Result<PartialsSuccessResult> AddBulkTag(Guid sourceId, IEnumerable<Guid> tagIds)
+    parameters:
+    - id: sourceId
+      type: System.Guid
+    - id: tagIds
+      type: System.Collections.Generic.IEnumerable{System.Guid}
+    return:
+      type: Application.Commons.Models.Results.Result{Application.Commons.Models.Results.PartialsSuccessResult}
+    content.vb: Function AddBulkTag(sourceId As Guid, tagIds As IEnumerable(Of Guid)) As Result(Of PartialsSuccessResult)
+  overload: Application.Commons.Services.ISourceService.AddBulkTag*
+  nameWithType.vb: ISourceService.AddBulkTag(Guid, IEnumerable(Of Guid))
+  fullName.vb: Application.Commons.Services.ISourceService.AddBulkTag(System.Guid, System.Collections.Generic.IEnumerable(Of System.Guid))
+  name.vb: AddBulkTag(Guid, IEnumerable(Of Guid))
+- uid: Application.Commons.Services.ISourceService.RemoveTag(System.Guid,System.Guid)
+  commentId: M:Application.Commons.Services.ISourceService.RemoveTag(System.Guid,System.Guid)
+  id: RemoveTag(System.Guid,System.Guid)
+  parent: Application.Commons.Services.ISourceService
+  langs:
+  - csharp
+  - vb
+  name: RemoveTag(Guid, Guid)
+  nameWithType: ISourceService.RemoveTag(Guid, Guid)
+  fullName: Application.Commons.Services.ISourceService.RemoveTag(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISourceService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RemoveTag
+    path: src/Application/Commons/Services/ISourceService.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: Result RemoveTag(Guid sourceId, Guid tagId)
+    parameters:
+    - id: sourceId
+      type: System.Guid
+    - id: tagId
+      type: System.Guid
+    return:
+      type: Application.Commons.Models.Results.Result
+    content.vb: Function RemoveTag(sourceId As Guid, tagId As Guid) As Result
+  overload: Application.Commons.Services.ISourceService.RemoveTag*
+- uid: Application.Commons.Services.ISourceService.RemoveBulkTags(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})
+  commentId: M:Application.Commons.Services.ISourceService.RemoveBulkTags(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})
+  id: RemoveBulkTags(System.Guid,System.Collections.Generic.IEnumerable{System.Guid})
+  parent: Application.Commons.Services.ISourceService
+  langs:
+  - csharp
+  - vb
+  name: RemoveBulkTags(Guid, IEnumerable<Guid>)
+  nameWithType: ISourceService.RemoveBulkTags(Guid, IEnumerable<Guid>)
+  fullName: Application.Commons.Services.ISourceService.RemoveBulkTags(System.Guid, System.Collections.Generic.IEnumerable<System.Guid>)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Commons/Services/ISourceService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RemoveBulkTags
+    path: src/Application/Commons/Services/ISourceService.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.Commons.Services
+  syntax:
+    content: Result<PartialsSuccessResult> RemoveBulkTags(Guid sourceId, IEnumerable<Guid> tagIds)
+    parameters:
+    - id: sourceId
+      type: System.Guid
+    - id: tagIds
+      type: System.Collections.Generic.IEnumerable{System.Guid}
+    return:
+      type: Application.Commons.Models.Results.Result{Application.Commons.Models.Results.PartialsSuccessResult}
+    content.vb: Function RemoveBulkTags(sourceId As Guid, tagIds As IEnumerable(Of Guid)) As Result(Of PartialsSuccessResult)
+  overload: Application.Commons.Services.ISourceService.RemoveBulkTags*
+  nameWithType.vb: ISourceService.RemoveBulkTags(Guid, IEnumerable(Of Guid))
+  fullName.vb: Application.Commons.Services.ISourceService.RemoveBulkTags(System.Guid, System.Collections.Generic.IEnumerable(Of System.Guid))
+  name.vb: RemoveBulkTags(Guid, IEnumerable(Of Guid))
+references:
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Commons.Services.ISourceService.AddSource*
+  commentId: Overload:Application.Commons.Services.ISourceService.AddSource
+  href: Application.Commons.Services.ISourceService.html#Application_Commons_Services_ISourceService_AddSource_Application_Commons_Models_ServicesModel_Source_AddSourceServiceModel_
+  name: AddSource
+  nameWithType: ISourceService.AddSource
+  fullName: Application.Commons.Services.ISourceService.AddSource
+- uid: Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel
+  commentId: T:Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel
+  parent: Application.Commons.Models.ServicesModel.Source
+  href: Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel.html
+  name: AddSourceServiceModel
+  nameWithType: AddSourceServiceModel
+  fullName: Application.Commons.Models.ServicesModel.Source.AddSourceServiceModel
+- uid: Application.Commons.Models.Results.Result{Domain.Entities.Sources.Source}
+  commentId: T:Application.Commons.Models.Results.Result{Domain.Entities.Sources.Source}
+  parent: Application.Commons.Models.Results
+  definition: Application.Commons.Models.Results.Result`1
+  href: Application.Commons.Models.Results.Result-1.html
+  name: Result<Source>
+  nameWithType: Result<Source>
+  fullName: Application.Commons.Models.Results.Result<Domain.Entities.Sources.Source>
+  nameWithType.vb: Result(Of Source)
+  fullName.vb: Application.Commons.Models.Results.Result(Of Domain.Entities.Sources.Source)
+  name.vb: Result(Of Source)
+  spec.csharp:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Domain.Entities.Sources.Source
+    name: Source
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.Source
+    name: Source
+  - name: )
+- uid: Application.Commons.Models.ServicesModel.Source
+  commentId: N:Application.Commons.Models.ServicesModel.Source
+  href: Application.html
+  name: Application.Commons.Models.ServicesModel.Source
+  nameWithType: Application.Commons.Models.ServicesModel.Source
+  fullName: Application.Commons.Models.ServicesModel.Source
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.ServicesModel
+    name: ServicesModel
+    href: Application.Commons.Models.ServicesModel.html
+  - name: .
+  - uid: Application.Commons.Models.ServicesModel.Source
+    name: Source
+    href: Application.Commons.Models.ServicesModel.Source.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.ServicesModel
+    name: ServicesModel
+    href: Application.Commons.Models.ServicesModel.html
+  - name: .
+  - uid: Application.Commons.Models.ServicesModel.Source
+    name: Source
+    href: Application.Commons.Models.ServicesModel.Source.html
+- uid: Application.Commons.Models.Results.Result`1
+  commentId: T:Application.Commons.Models.Results.Result`1
+  parent: Application.Commons.Models.Results
+  href: Application.Commons.Models.Results.Result-1.html
+  name: Result<T>
+  nameWithType: Result<T>
+  fullName: Application.Commons.Models.Results.Result<T>
+  nameWithType.vb: Result(Of T)
+  fullName.vb: Application.Commons.Models.Results.Result(Of T)
+  name.vb: Result(Of T)
+  spec.csharp:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Commons.Models.Results
+  commentId: N:Application.Commons.Models.Results
+  href: Application.html
+  name: Application.Commons.Models.Results
+  nameWithType: Application.Commons.Models.Results
+  fullName: Application.Commons.Models.Results
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Results
+    name: Results
+    href: Application.Commons.Models.Results.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Results
+    name: Results
+    href: Application.Commons.Models.Results.html
+- uid: Application.Commons.Services.ISourceService.AddReference*
+  commentId: Overload:Application.Commons.Services.ISourceService.AddReference
+  href: Application.Commons.Services.ISourceService.html#Application_Commons_Services_ISourceService_AddReference_System_Collections_Generic_IEnumerable_Application_Commons_Models_ServicesModel_Source_AddSourceReferenceServiceModel__System_Guid_
+  name: AddReference
+  nameWithType: ISourceService.AddReference
+  fullName: Application.Commons.Services.ISourceService.AddReference
+- uid: System.Collections.Generic.IEnumerable{Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel}
+  commentId: T:System.Collections.Generic.IEnumerable{Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<AddSourceReferenceServiceModel>
+  nameWithType: IEnumerable<AddSourceReferenceServiceModel>
+  fullName: System.Collections.Generic.IEnumerable<Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel>
+  nameWithType.vb: IEnumerable(Of AddSourceReferenceServiceModel)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel)
+  name.vb: IEnumerable(Of AddSourceReferenceServiceModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel
+    name: AddSourceReferenceServiceModel
+    href: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel
+    name: AddSourceReferenceServiceModel
+    href: Application.Commons.Models.ServicesModel.Source.AddSourceReferenceServiceModel.html
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Commons.Models.Results.Result{System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference}}
+  commentId: T:Application.Commons.Models.Results.Result{System.Collections.Generic.IEnumerable{Domain.Entities.Sources.SourceReference}}
+  parent: Application.Commons.Models.Results
+  definition: Application.Commons.Models.Results.Result`1
+  href: Application.Commons.Models.Results.Result-1.html
+  name: Result<IEnumerable<SourceReference>>
+  nameWithType: Result<IEnumerable<SourceReference>>
+  fullName: Application.Commons.Models.Results.Result<System.Collections.Generic.IEnumerable<Domain.Entities.Sources.SourceReference>>
+  nameWithType.vb: Result(Of IEnumerable(Of SourceReference))
+  fullName.vb: Application.Commons.Models.Results.Result(Of System.Collections.Generic.IEnumerable(Of Domain.Entities.Sources.SourceReference))
+  name.vb: Result(Of IEnumerable(Of SourceReference))
+  spec.csharp:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.SourceReference
+    name: SourceReference
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Services.ISourceService.AddTag*
+  commentId: Overload:Application.Commons.Services.ISourceService.AddTag
+  href: Application.Commons.Services.ISourceService.html#Application_Commons_Services_ISourceService_AddTag_System_Guid_System_Guid_
+  name: AddTag
+  nameWithType: ISourceService.AddTag
+  fullName: Application.Commons.Services.ISourceService.AddTag
+- uid: Application.Commons.Models.Results.Result
+  commentId: T:Application.Commons.Models.Results.Result
+  parent: Application.Commons.Models.Results
+  href: Application.Commons.Models.Results.Result.html
+  name: Result
+  nameWithType: Result
+  fullName: Application.Commons.Models.Results.Result
+- uid: Application.Commons.Services.ISourceService.AddBulkTag*
+  commentId: Overload:Application.Commons.Services.ISourceService.AddBulkTag
+  href: Application.Commons.Services.ISourceService.html#Application_Commons_Services_ISourceService_AddBulkTag_System_Guid_System_Collections_Generic_IEnumerable_System_Guid__
+  name: AddBulkTag
+  nameWithType: ISourceService.AddBulkTag
+  fullName: Application.Commons.Services.ISourceService.AddBulkTag
+- uid: System.Collections.Generic.IEnumerable{System.Guid}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Guid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Guid>
+  nameWithType: IEnumerable<Guid>
+  fullName: System.Collections.Generic.IEnumerable<System.Guid>
+  nameWithType.vb: IEnumerable(Of Guid)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Guid)
+  name.vb: IEnumerable(Of Guid)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Application.Commons.Models.Results.Result{Application.Commons.Models.Results.PartialsSuccessResult}
+  commentId: T:Application.Commons.Models.Results.Result{Application.Commons.Models.Results.PartialsSuccessResult}
+  parent: Application.Commons.Models.Results
+  definition: Application.Commons.Models.Results.Result`1
+  href: Application.Commons.Models.Results.Result-1.html
+  name: Result<PartialsSuccessResult>
+  nameWithType: Result<PartialsSuccessResult>
+  fullName: Application.Commons.Models.Results.Result<Application.Commons.Models.Results.PartialsSuccessResult>
+  nameWithType.vb: Result(Of PartialsSuccessResult)
+  fullName.vb: Application.Commons.Models.Results.Result(Of Application.Commons.Models.Results.PartialsSuccessResult)
+  name.vb: Result(Of PartialsSuccessResult)
+  spec.csharp:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Commons.Models.Results.PartialsSuccessResult
+    name: PartialsSuccessResult
+    href: Application.Commons.Models.Results.PartialsSuccessResult.html
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.PartialsSuccessResult
+    name: PartialsSuccessResult
+    href: Application.Commons.Models.Results.PartialsSuccessResult.html
+  - name: )
+- uid: Application.Commons.Services.ISourceService.RemoveTag*
+  commentId: Overload:Application.Commons.Services.ISourceService.RemoveTag
+  href: Application.Commons.Services.ISourceService.html#Application_Commons_Services_ISourceService_RemoveTag_System_Guid_System_Guid_
+  name: RemoveTag
+  nameWithType: ISourceService.RemoveTag
+  fullName: Application.Commons.Services.ISourceService.RemoveTag
+- uid: Application.Commons.Services.ISourceService.RemoveBulkTags*
+  commentId: Overload:Application.Commons.Services.ISourceService.RemoveBulkTags
+  href: Application.Commons.Services.ISourceService.html#Application_Commons_Services_ISourceService_RemoveBulkTags_System_Guid_System_Collections_Generic_IEnumerable_System_Guid__
+  name: RemoveBulkTags
+  nameWithType: ISourceService.RemoveBulkTags
+  fullName: Application.Commons.Services.ISourceService.RemoveBulkTags

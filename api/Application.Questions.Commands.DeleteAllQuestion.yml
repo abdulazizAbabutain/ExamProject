@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Questions.Commands.DeleteAllQuestion
+  commentId: N:Application.Questions.Commands.DeleteAllQuestion
+  id: Application.Questions.Commands.DeleteAllQuestion
+  children:
+  - Application.Questions.Commands.DeleteAllQuestion.DeleteAllQuestionCommand
+  langs:
+  - csharp
+  - vb
+  name: Application.Questions.Commands.DeleteAllQuestion
+  nameWithType: Application.Questions.Commands.DeleteAllQuestion
+  fullName: Application.Questions.Commands.DeleteAllQuestion
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Questions.Commands.DeleteAllQuestion.DeleteAllQuestionCommand
+  commentId: T:Application.Questions.Commands.DeleteAllQuestion.DeleteAllQuestionCommand
+  href: Application.Questions.Commands.DeleteAllQuestion.DeleteAllQuestionCommand.html
+  name: DeleteAllQuestionCommand
+  nameWithType: DeleteAllQuestionCommand
+  fullName: Application.Questions.Commands.DeleteAllQuestion.DeleteAllQuestionCommand

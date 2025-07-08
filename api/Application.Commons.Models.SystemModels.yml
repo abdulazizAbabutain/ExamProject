@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Models.SystemModels
+  commentId: N:Application.Commons.Models.SystemModels
+  id: Application.Commons.Models.SystemModels
+  children:
+  - Application.Commons.Models.SystemModels.AppStatusResponseModel
+  - Application.Commons.Models.SystemModels.CollectionStorageStat
+  langs:
+  - csharp
+  - vb
+  name: Application.Commons.Models.SystemModels
+  nameWithType: Application.Commons.Models.SystemModels
+  fullName: Application.Commons.Models.SystemModels
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  commentId: T:Application.Commons.Models.SystemModels.AppStatusResponseModel
+  href: Application.Commons.Models.SystemModels.AppStatusResponseModel.html
+  name: AppStatusResponseModel
+  nameWithType: AppStatusResponseModel
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel
+- uid: Application.Commons.Models.SystemModels.CollectionStorageStat
+  commentId: T:Application.Commons.Models.SystemModels.CollectionStorageStat
+  href: Application.Commons.Models.SystemModels.CollectionStorageStat.html
+  name: CollectionStorageStat
+  nameWithType: CollectionStorageStat
+  fullName: Application.Commons.Models.SystemModels.CollectionStorageStat

@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Lookups
+  commentId: N:Domain.Lookups
+  id: Domain.Lookups
+  children:
+  - Domain.Lookups.EntityHistoryTypeLookup
+  - Domain.Lookups.QuestionDifficultyLookup
+  - Domain.Lookups.QuestionTypeLookup
+  - Domain.Lookups.SourceTypeLookup
+  langs:
+  - csharp
+  - vb
+  name: Domain.Lookups
+  nameWithType: Domain.Lookups
+  fullName: Domain.Lookups
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Lookups.EntityHistoryTypeLookup
+  commentId: T:Domain.Lookups.EntityHistoryTypeLookup
+  href: Domain.Lookups.EntityHistoryTypeLookup.html
+  name: EntityHistoryTypeLookup
+  nameWithType: EntityHistoryTypeLookup
+  fullName: Domain.Lookups.EntityHistoryTypeLookup
+- uid: Domain.Lookups.QuestionDifficultyLookup
+  commentId: T:Domain.Lookups.QuestionDifficultyLookup
+  parent: Domain.Lookups
+  href: Domain.Lookups.QuestionDifficultyLookup.html
+  name: QuestionDifficultyLookup
+  nameWithType: QuestionDifficultyLookup
+  fullName: Domain.Lookups.QuestionDifficultyLookup
+- uid: Domain.Lookups.QuestionTypeLookup
+  commentId: T:Domain.Lookups.QuestionTypeLookup
+  parent: Domain.Lookups
+  href: Domain.Lookups.QuestionTypeLookup.html
+  name: QuestionTypeLookup
+  nameWithType: QuestionTypeLookup
+  fullName: Domain.Lookups.QuestionTypeLookup
+- uid: Domain.Lookups.SourceTypeLookup
+  commentId: T:Domain.Lookups.SourceTypeLookup
+  parent: Domain.Lookups
+  href: Domain.Lookups.SourceTypeLookup.html
+  name: SourceTypeLookup
+  nameWithType: SourceTypeLookup
+  fullName: Domain.Lookups.SourceTypeLookup
+- uid: Domain.Lookups
+  commentId: N:Domain.Lookups
+  href: Domain.html
+  name: Domain.Lookups
+  nameWithType: Domain.Lookups
+  fullName: Domain.Lookups
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Lookups
+    name: Lookups
+    href: Domain.Lookups.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Lookups
+    name: Lookups
+    href: Domain.Lookups.html

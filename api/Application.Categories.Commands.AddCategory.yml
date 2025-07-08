@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Categories.Commands.AddCategory
+  commentId: N:Application.Categories.Commands.AddCategory
+  id: Application.Categories.Commands.AddCategory
+  children:
+  - Application.Categories.Commands.AddCategory.AddCategoryCommand
+  - Application.Categories.Commands.AddCategory.AddCategoryCommandHandler
+  - Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Categories.Commands.AddCategory
+  nameWithType: Application.Categories.Commands.AddCategory
+  fullName: Application.Categories.Commands.AddCategory
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommand
+  commentId: T:Application.Categories.Commands.AddCategory.AddCategoryCommand
+  parent: Application.Categories.Commands.AddCategory
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommand.html
+  name: AddCategoryCommand
+  nameWithType: AddCategoryCommand
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommand
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandHandler
+  commentId: T:Application.Categories.Commands.AddCategory.AddCategoryCommandHandler
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommandHandler.html
+  name: AddCategoryCommandHandler
+  nameWithType: AddCategoryCommandHandler
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandHandler
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  commentId: T:Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.html
+  name: AddCategoryCommandResult
+  nameWithType: AddCategoryCommandResult
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+- uid: Application.Categories.Commands.AddCategory
+  commentId: N:Application.Categories.Commands.AddCategory
+  href: Application.html
+  name: Application.Categories.Commands.AddCategory
+  nameWithType: Application.Categories.Commands.AddCategory
+  fullName: Application.Categories.Commands.AddCategory
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.AddCategory
+    name: AddCategory
+    href: Application.Categories.Commands.AddCategory.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.AddCategory
+    name: AddCategory
+    href: Application.Categories.Commands.AddCategory.html

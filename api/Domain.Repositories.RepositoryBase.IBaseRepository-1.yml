@@ -1,0 +1,1269 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  commentId: T:Domain.Repositories.RepositoryBase.IBaseRepository`1
+  id: IBaseRepository`1
+  parent: Domain.Repositories.RepositoryBase
+  children:
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.Count
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById(System.Guid)
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Int32,System.Int32)
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById(System.Guid)
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(`0)
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+  - Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(`0)
+  langs:
+  - csharp
+  - vb
+  name: IBaseRepository<T>
+  nameWithType: IBaseRepository<T>
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>
+  type: Interface
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IBaseRepository
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: 'public interface IBaseRepository<T> : IDisposable where T : class'
+    typeParameters:
+    - id: T
+    content.vb: Public Interface IBaseRepository(Of T As Class) Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+  nameWithType.vb: IBaseRepository(Of T)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T)
+  name.vb: IBaseRepository(Of T)
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(`0)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(`0)
+  id: Insert(`0)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(T)
+  nameWithType: IBaseRepository<T>.Insert(T)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Insert(T)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Insert
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: void Insert(T entity)
+    parameters:
+    - id: entity
+      type: '{T}'
+    content.vb: Sub Insert(entity As T)
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert*
+  nameWithType.vb: IBaseRepository(Of T).Insert(T)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Insert(T)
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+  id: Insert(System.Collections.Generic.IEnumerable{`0})
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Insert(IEnumerable<T>)
+  nameWithType: IBaseRepository<T>.Insert(IEnumerable<T>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Insert(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Insert
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 8
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: void Insert(IEnumerable<T> entity)
+    parameters:
+    - id: entity
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Sub Insert(entity As IEnumerable(Of T))
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert*
+  nameWithType.vb: IBaseRepository(Of T).Insert(IEnumerable(Of T))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Insert(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Insert(IEnumerable(Of T))
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById(System.Guid)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById(System.Guid)
+  id: GetById(System.Guid)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetById(Guid)
+  nameWithType: IBaseRepository<T>.GetById(Guid)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetById
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 9
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: T GetById(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: '{T}'
+    content.vb: Function GetById(id As Guid) As T
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById*
+  nameWithType.vb: IBaseRepository(Of T).GetById(Guid)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetById(System.Guid)
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll
+  id: GetAll
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: IBaseRepository<T>.GetAll()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAll()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAll
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 10
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: IEnumerable<T> GetAll()
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Function GetAll() As IEnumerable(Of T)
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll*
+  nameWithType.vb: IBaseRepository(Of T).GetAll()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAll()
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+  id: GetAll(System.Func{`0,System.Boolean})
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAll(Func<T, bool>)
+  nameWithType: IBaseRepository<T>.GetAll(Func<T, bool>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAll(System.Func<T, bool>)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAll
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 11
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: IEnumerable<T> GetAll(Func<T, bool> func)
+    parameters:
+    - id: func
+      type: System.Func{{T},System.Boolean}
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Function GetAll(func As Func(Of T, Boolean)) As IEnumerable(Of T)
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll*
+  nameWithType.vb: IBaseRepository(Of T).GetAll(Func(Of T, Boolean))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAll(System.Func(Of T, Boolean))
+  name.vb: GetAll(Func(Of T, Boolean))
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  id: GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAll(Func<T, bool>, int, int)
+  nameWithType: IBaseRepository<T>.GetAll(Func<T, bool>, int, int)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAll(System.Func<T, bool>, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAll
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 12
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: IEnumerable<T> GetAll(Func<T, bool> func, int pageNumber, int pageSize)
+    parameters:
+    - id: func
+      type: System.Func{{T},System.Boolean}
+    - id: pageNumber
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Function GetAll(func As Func(Of T, Boolean), pageNumber As Integer, pageSize As Integer) As IEnumerable(Of T)
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll*
+  nameWithType.vb: IBaseRepository(Of T).GetAll(Func(Of T, Boolean), Integer, Integer)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAll(System.Func(Of T, Boolean), Integer, Integer)
+  name.vb: GetAll(Func(Of T, Boolean), Integer, Integer)
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  id: GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync(Func<T, bool>, int, int)
+  nameWithType: IBaseRepository<T>.GetAllAsync(Func<T, bool>, int, int)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAllAsync(System.Func<T, bool>, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAllAsync
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 13
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: Task<IEnumerable<T>> GetAllAsync(Func<T, bool> func, int pageNumber, int pageSize)
+    parameters:
+    - id: func
+      type: System.Func{{T},System.Boolean}
+    - id: pageNumber
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{T}}}
+    content.vb: Function GetAllAsync(func As Func(Of T, Boolean), pageNumber As Integer, pageSize As Integer) As Task(Of IEnumerable(Of T))
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync*
+  nameWithType.vb: IBaseRepository(Of T).GetAllAsync(Func(Of T, Boolean), Integer, Integer)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAllAsync(System.Func(Of T, Boolean), Integer, Integer)
+  name.vb: GetAllAsync(Func(Of T, Boolean), Integer, Integer)
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Int32,System.Int32)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll(System.Int32,System.Int32)
+  id: GetAll(System.Int32,System.Int32)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetAll(int, int)
+  nameWithType: IBaseRepository<T>.GetAll(int, int)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAll(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAll
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 14
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: IEnumerable<T> GetAll(int pageNumber, int pageSize)
+    parameters:
+    - id: pageNumber
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Function GetAll(pageNumber As Integer, pageSize As Integer) As IEnumerable(Of T)
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll*
+  nameWithType.vb: IBaseRepository(Of T).GetAll(Integer, Integer)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAll(Integer, Integer)
+  name.vb: GetAll(Integer, Integer)
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection
+  id: GetCollection
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: GetCollection()
+  nameWithType: IBaseRepository<T>.GetCollection()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetCollection()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetCollection
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 15
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: ILiteCollection<T> GetCollection()
+    return:
+      type: LiteDB.ILiteCollection{{T}}
+    content.vb: Function GetCollection() As ILiteCollection(Of T)
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection*
+  nameWithType.vb: IBaseRepository(Of T).GetCollection()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetCollection()
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Count
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Count
+  id: Count
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Count()
+  nameWithType: IBaseRepository<T>.Count()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Count()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Count
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 16
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: int Count()
+    return:
+      type: System.Int32
+    content.vb: Function Count() As Integer
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.Count*
+  nameWithType.vb: IBaseRepository(Of T).Count()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Count()
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+  id: CountBy(System.Func{`0,System.Boolean})
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: CountBy(Func<T, bool>)
+  nameWithType: IBaseRepository<T>.CountBy(Func<T, bool>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.CountBy(System.Func<T, bool>)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CountBy
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 17
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: int CountBy(Func<T, bool> func)
+    parameters:
+    - id: func
+      type: System.Func{{T},System.Boolean}
+    return:
+      type: System.Int32
+    content.vb: Function CountBy(func As Func(Of T, Boolean)) As Integer
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy*
+  nameWithType.vb: IBaseRepository(Of T).CountBy(Func(Of T, Boolean))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).CountBy(System.Func(Of T, Boolean))
+  name.vb: CountBy(Func(Of T, Boolean))
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync
+  id: CountAsync
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: CountAsync()
+  nameWithType: IBaseRepository<T>.CountAsync()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.CountAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CountAsync
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 18
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: Task<int> CountAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Int32}
+    content.vb: Function CountAsync() As Task(Of Integer)
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync*
+  nameWithType.vb: IBaseRepository(Of T).CountAsync()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).CountAsync()
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById(System.Guid)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById(System.Guid)
+  id: DeleteById(System.Guid)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: DeleteById(Guid)
+  nameWithType: IBaseRepository<T>.DeleteById(Guid)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.DeleteById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DeleteById
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 19
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: void DeleteById(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    content.vb: Sub DeleteById(id As Guid)
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById*
+  nameWithType.vb: IBaseRepository(Of T).DeleteById(Guid)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).DeleteById(System.Guid)
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll
+  id: DeleteAll
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: DeleteAll()
+  nameWithType: IBaseRepository<T>.DeleteAll()
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.DeleteAll()
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DeleteAll
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 20
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: void DeleteAll()
+    content.vb: Sub DeleteAll()
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll*
+  nameWithType.vb: IBaseRepository(Of T).DeleteAll()
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).DeleteAll()
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(`0)
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(`0)
+  id: Update(`0)
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Update(T)
+  nameWithType: IBaseRepository<T>.Update(T)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Update(T)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Update
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 21
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: void Update(T entity)
+    parameters:
+    - id: entity
+      type: '{T}'
+    content.vb: Sub Update(entity As T)
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update*
+  nameWithType.vb: IBaseRepository(Of T).Update(T)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Update(T)
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Domain.Repositories.RepositoryBase.IBaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+  id: Update(System.Collections.Generic.IEnumerable{`0})
+  parent: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  langs:
+  - csharp
+  - vb
+  name: Update(IEnumerable<T>)
+  nameWithType: IBaseRepository<T>.Update(IEnumerable<T>)
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Update(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Update
+    path: src/Domain/Repositories/RepositoryBase/IBaseRepository.cs
+    startLine: 22
+  assemblies:
+  - Domain
+  namespace: Domain.Repositories.RepositoryBase
+  syntax:
+    content: void Update(IEnumerable<T> entity)
+    parameters:
+    - id: entity
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Sub Update(entity As IEnumerable(Of T))
+  overload: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update*
+  nameWithType.vb: IBaseRepository(Of T).Update(IEnumerable(Of T))
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Update(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Update(IEnumerable(Of T))
+references:
+- uid: Domain.Repositories.RepositoryBase
+  commentId: N:Domain.Repositories.RepositoryBase
+  href: Domain.html
+  name: Domain.Repositories.RepositoryBase
+  nameWithType: Domain.Repositories.RepositoryBase
+  fullName: Domain.Repositories.RepositoryBase
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  - name: .
+  - uid: Domain.Repositories.RepositoryBase
+    name: RepositoryBase
+    href: Domain.Repositories.RepositoryBase.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  - name: .
+  - uid: Domain.Repositories.RepositoryBase
+    name: RepositoryBase
+    href: Domain.Repositories.RepositoryBase.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.Insert
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Insert__0_
+  name: Insert
+  nameWithType: IBaseRepository<T>.Insert
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Insert
+  nameWithType.vb: IBaseRepository(Of T).Insert
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Insert
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetById
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetById_System_Guid_
+  name: GetById
+  nameWithType: IBaseRepository<T>.GetById
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetById
+  nameWithType.vb: IBaseRepository(Of T).GetById
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetById
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAll
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAll
+  name: GetAll
+  nameWithType: IBaseRepository<T>.GetAll
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAll
+  nameWithType.vb: IBaseRepository(Of T).GetAll
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAll
+- uid: System.Func{{T},System.Boolean}
+  commentId: T:System.Func{`0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, bool>
+  nameWithType: Func<T, bool>
+  fullName: System.Func<T, bool>
+  nameWithType.vb: Func(Of T, Boolean)
+  fullName.vb: System.Func(Of T, Boolean)
+  name.vb: Func(Of T, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetAllAsync
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  name: GetAllAsync
+  nameWithType: IBaseRepository<T>.GetAllAsync
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetAllAsync
+  nameWithType.vb: IBaseRepository(Of T).GetAllAsync
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetAllAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{T}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`0}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<T>>
+  nameWithType: Task<IEnumerable<T>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<T>>
+  nameWithType.vb: Task(Of IEnumerable(Of T))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Task(Of IEnumerable(Of T))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.GetCollection
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_GetCollection
+  name: GetCollection
+  nameWithType: IBaseRepository<T>.GetCollection
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.GetCollection
+  nameWithType.vb: IBaseRepository(Of T).GetCollection
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).GetCollection
+- uid: LiteDB.ILiteCollection{{T}}
+  commentId: T:LiteDB.ILiteCollection{`0}
+  parent: LiteDB
+  definition: LiteDB.ILiteCollection`1
+  name: ILiteCollection<T>
+  nameWithType: ILiteCollection<T>
+  fullName: LiteDB.ILiteCollection<T>
+  nameWithType.vb: ILiteCollection(Of T)
+  fullName.vb: LiteDB.ILiteCollection(Of T)
+  name.vb: ILiteCollection(Of T)
+  spec.csharp:
+  - uid: LiteDB.ILiteCollection`1
+    name: ILiteCollection
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LiteDB.ILiteCollection`1
+    name: ILiteCollection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LiteDB.ILiteCollection`1
+  commentId: T:LiteDB.ILiteCollection`1
+  isExternal: true
+  name: ILiteCollection<T>
+  nameWithType: ILiteCollection<T>
+  fullName: LiteDB.ILiteCollection<T>
+  nameWithType.vb: ILiteCollection(Of T)
+  fullName.vb: LiteDB.ILiteCollection(Of T)
+  name.vb: ILiteCollection(Of T)
+  spec.csharp:
+  - uid: LiteDB.ILiteCollection`1
+    name: ILiteCollection
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: LiteDB.ILiteCollection`1
+    name: ILiteCollection
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: LiteDB
+  commentId: N:LiteDB
+  isExternal: true
+  name: LiteDB
+  nameWithType: LiteDB
+  fullName: LiteDB
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Count*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.Count
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Count
+  name: Count
+  nameWithType: IBaseRepository<T>.Count
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Count
+  nameWithType.vb: IBaseRepository(Of T).Count
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Count
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.CountBy
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  name: CountBy
+  nameWithType: IBaseRepository<T>.CountBy
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.CountBy
+  nameWithType.vb: IBaseRepository(Of T).CountBy
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).CountBy
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.CountAsync
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_CountAsync
+  name: CountAsync
+  nameWithType: IBaseRepository<T>.CountAsync
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.CountAsync
+  nameWithType.vb: IBaseRepository(Of T).CountAsync
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).CountAsync
+- uid: System.Threading.Tasks.Task{System.Int32}
+  commentId: T:System.Threading.Tasks.Task{System.Int32}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int>
+  nameWithType: Task<int>
+  fullName: System.Threading.Tasks.Task<int>
+  nameWithType.vb: Task(Of Integer)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer)
+  name.vb: Task(Of Integer)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteById
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteById_System_Guid_
+  name: DeleteById
+  nameWithType: IBaseRepository<T>.DeleteById
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.DeleteById
+  nameWithType.vb: IBaseRepository(Of T).DeleteById
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).DeleteById
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.DeleteAll
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_DeleteAll
+  name: DeleteAll
+  nameWithType: IBaseRepository<T>.DeleteAll
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.DeleteAll
+  nameWithType.vb: IBaseRepository(Of T).DeleteAll
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).DeleteAll
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1.Update*
+  commentId: Overload:Domain.Repositories.RepositoryBase.IBaseRepository`1.Update
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html#Domain_Repositories_RepositoryBase_IBaseRepository_1_Update__0_
+  name: Update
+  nameWithType: IBaseRepository<T>.Update
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>.Update
+  nameWithType.vb: IBaseRepository(Of T).Update
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T).Update

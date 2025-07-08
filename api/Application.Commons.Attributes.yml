@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Attributes
+  commentId: N:Application.Commons.Attributes
+  id: Application.Commons.Attributes
+  children:
+  - Application.Commons.Attributes.MinMaxAttribute
+  - Application.Commons.Attributes.SwaggerExampleAttribute
+  langs:
+  - csharp
+  - vb
+  name: Application.Commons.Attributes
+  nameWithType: Application.Commons.Attributes
+  fullName: Application.Commons.Attributes
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Commons.Attributes.MinMaxAttribute
+  commentId: T:Application.Commons.Attributes.MinMaxAttribute
+  href: Application.Commons.Attributes.MinMaxAttribute.html
+  name: MinMaxAttribute
+  nameWithType: MinMaxAttribute
+  fullName: Application.Commons.Attributes.MinMaxAttribute
+- uid: Application.Commons.Attributes.SwaggerExampleAttribute
+  commentId: T:Application.Commons.Attributes.SwaggerExampleAttribute
+  parent: Application.Commons.Attributes
+  href: Application.Commons.Attributes.SwaggerExampleAttribute.html
+  name: SwaggerExampleAttribute
+  nameWithType: SwaggerExampleAttribute
+  fullName: Application.Commons.Attributes.SwaggerExampleAttribute
+- uid: Application.Commons.Attributes
+  commentId: N:Application.Commons.Attributes
+  href: Application.html
+  name: Application.Commons.Attributes
+  nameWithType: Application.Commons.Attributes
+  fullName: Application.Commons.Attributes
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Attributes
+    name: Attributes
+    href: Application.Commons.Attributes.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Attributes
+    name: Attributes
+    href: Application.Commons.Attributes.html

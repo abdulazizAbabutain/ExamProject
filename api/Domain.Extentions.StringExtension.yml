@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Extentions.StringExtension
+  commentId: T:Domain.Extentions.StringExtension
+  id: StringExtension
+  parent: Domain.Extentions
+  children:
+  - Domain.Extentions.StringExtension.IsHexColor(System.String)
+  - Domain.Extentions.StringExtension.IsNotNullOrEmpty(System.String)
+  langs:
+  - csharp
+  - vb
+  name: StringExtension
+  nameWithType: StringExtension
+  fullName: Domain.Extentions.StringExtension
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Extentions/StringExtention.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: StringExtension
+    path: src/Domain/Extentions/StringExtention.cs
+    startLine: 6
+  assemblies:
+  - Domain
+  namespace: Domain.Extentions
+  syntax:
+    content: public static class StringExtension
+    content.vb: Public Module StringExtension
+  inheritance:
+  - System.Object
+- uid: Domain.Extentions.StringExtension.IsNotNullOrEmpty(System.String)
+  commentId: M:Domain.Extentions.StringExtension.IsNotNullOrEmpty(System.String)
+  id: IsNotNullOrEmpty(System.String)
+  isExtensionMethod: true
+  parent: Domain.Extentions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: IsNotNullOrEmpty(string)
+  nameWithType: StringExtension.IsNotNullOrEmpty(string)
+  fullName: Domain.Extentions.StringExtension.IsNotNullOrEmpty(string)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Extentions/StringExtention.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IsNotNullOrEmpty
+    path: src/Domain/Extentions/StringExtention.cs
+    startLine: 8
+  assemblies:
+  - Domain
+  namespace: Domain.Extentions
+  syntax:
+    content: public static bool IsNotNullOrEmpty(this string value)
+    parameters:
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsNotNullOrEmpty(value As String) As Boolean
+  overload: Domain.Extentions.StringExtension.IsNotNullOrEmpty*
+  nameWithType.vb: StringExtension.IsNotNullOrEmpty(String)
+  fullName.vb: Domain.Extentions.StringExtension.IsNotNullOrEmpty(String)
+  name.vb: IsNotNullOrEmpty(String)
+- uid: Domain.Extentions.StringExtension.IsHexColor(System.String)
+  commentId: M:Domain.Extentions.StringExtension.IsHexColor(System.String)
+  id: IsHexColor(System.String)
+  isExtensionMethod: true
+  parent: Domain.Extentions.StringExtension
+  langs:
+  - csharp
+  - vb
+  name: IsHexColor(string)
+  nameWithType: StringExtension.IsHexColor(string)
+  fullName: Domain.Extentions.StringExtension.IsHexColor(string)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Extentions/StringExtention.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IsHexColor
+    path: src/Domain/Extentions/StringExtention.cs
+    startLine: 11
+  assemblies:
+  - Domain
+  namespace: Domain.Extentions
+  syntax:
+    content: public static bool IsHexColor(this string input)
+    parameters:
+    - id: input
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsHexColor(input As String) As Boolean
+  overload: Domain.Extentions.StringExtension.IsHexColor*
+  nameWithType.vb: StringExtension.IsHexColor(String)
+  fullName.vb: Domain.Extentions.StringExtension.IsHexColor(String)
+  name.vb: IsHexColor(String)
+references:
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.StringExtension.IsNotNullOrEmpty*
+  commentId: Overload:Domain.Extentions.StringExtension.IsNotNullOrEmpty
+  href: Domain.Extentions.StringExtension.html#Domain_Extentions_StringExtension_IsNotNullOrEmpty_System_String_
+  name: IsNotNullOrEmpty
+  nameWithType: StringExtension.IsNotNullOrEmpty
+  fullName: Domain.Extentions.StringExtension.IsNotNullOrEmpty
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Domain.Extentions.StringExtension.IsHexColor*
+  commentId: Overload:Domain.Extentions.StringExtension.IsHexColor
+  href: Domain.Extentions.StringExtension.html#Domain_Extentions_StringExtension_IsHexColor_System_String_
+  name: IsHexColor
+  nameWithType: StringExtension.IsHexColor
+  fullName: Domain.Extentions.StringExtension.IsHexColor

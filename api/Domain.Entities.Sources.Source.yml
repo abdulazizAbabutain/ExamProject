@@ -1,0 +1,1369 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.Sources.Source
+  commentId: T:Domain.Entities.Sources.Source
+  id: Source
+  parent: Domain.Entities.Sources
+  children:
+  - Domain.Entities.Sources.Source.#ctor(Domain.Enums.SourceType,System.String,System.String,System.Boolean,System.String,System.String,System.Collections.Generic.IEnumerable{System.Guid},System.Nullable{System.Guid})
+  - Domain.Entities.Sources.Source.AddMetadata(Domain.Entities.Sources.Metadata)
+  - Domain.Entities.Sources.Source.AddMetadata(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.Metadata})
+  - Domain.Entities.Sources.Source.AddMetadata(System.String,System.String,Domain.Enums.FiledType)
+  - Domain.Entities.Sources.Source.AddNewTag(System.Collections.Generic.IEnumerable{System.Guid})
+  - Domain.Entities.Sources.Source.AddNewTag(System.Guid)
+  - Domain.Entities.Sources.Source.CategoryId
+  - Domain.Entities.Sources.Source.Description
+  - Domain.Entities.Sources.Source.FileExtension
+  - Domain.Entities.Sources.Source.FilePath
+  - Domain.Entities.Sources.Source.HasAttachment
+  - Domain.Entities.Sources.Source.Metadata
+  - Domain.Entities.Sources.Source.RemoveTag(System.Guid)
+  - Domain.Entities.Sources.Source.Tags
+  - Domain.Entities.Sources.Source.Title
+  - Domain.Entities.Sources.Source.Type
+  - Domain.Entities.Sources.Source.UpdateSource(Domain.Enums.SourceType,System.String,System.String,System.Collections.Generic.IEnumerable{System.Guid})
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: Source
+  fullName: Domain.Entities.Sources.Source
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Source
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: 'public class Source : EntityAudit'
+    content.vb: Public Class Source Inherits EntityAudit
+  inheritance:
+  - System.Object
+  - Domain.Auditing.EntityAudit
+  inheritedMembers:
+  - Domain.Auditing.EntityAudit.Id
+  - Domain.Auditing.EntityAudit.LastModifiedDate
+  - Domain.Auditing.EntityAudit.LastArchiveDate
+  - Domain.Auditing.EntityAudit.CreationDate
+  - Domain.Auditing.EntityAudit.IsArchived
+  - Domain.Auditing.EntityAudit.VersionNumber
+  - Domain.Auditing.EntityAudit.Created
+  - Domain.Auditing.EntityAudit.Updated
+  - Domain.Auditing.EntityAudit.Archive
+  - Domain.Auditing.EntityAudit.UnArchive
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Entities.Sources.Source.#ctor(Domain.Enums.SourceType,System.String,System.String,System.Boolean,System.String,System.String,System.Collections.Generic.IEnumerable{System.Guid},System.Nullable{System.Guid})
+  commentId: M:Domain.Entities.Sources.Source.#ctor(Domain.Enums.SourceType,System.String,System.String,System.Boolean,System.String,System.String,System.Collections.Generic.IEnumerable{System.Guid},System.Nullable{System.Guid})
+  id: '#ctor(Domain.Enums.SourceType,System.String,System.String,System.Boolean,System.String,System.String,System.Collections.Generic.IEnumerable{System.Guid},System.Nullable{System.Guid})'
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: Source(SourceType, string, string?, bool, string, string, IEnumerable<Guid>?, Guid?)
+  nameWithType: Source.Source(SourceType, string, string?, bool, string, string, IEnumerable<Guid>?, Guid?)
+  fullName: Domain.Entities.Sources.Source.Source(Domain.Enums.SourceType, string, string?, bool, string, string, System.Collections.Generic.IEnumerable<System.Guid>?, System.Guid?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 9
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public Source(SourceType type, string title, string? description, bool hasAttachment, string fileExtension, string filePath, IEnumerable<Guid>? tags, Guid? categoryId)
+    parameters:
+    - id: type
+      type: Domain.Enums.SourceType
+    - id: title
+      type: System.String
+    - id: description
+      type: System.String
+    - id: hasAttachment
+      type: System.Boolean
+    - id: fileExtension
+      type: System.String
+    - id: filePath
+      type: System.String
+    - id: tags
+      type: System.Collections.Generic.IEnumerable{System.Guid}
+    - id: categoryId
+      type: System.Nullable{System.Guid}
+    content.vb: Public Sub New(type As SourceType, title As String, description As String, hasAttachment As Boolean, fileExtension As String, filePath As String, tags As IEnumerable(Of Guid), categoryId As Guid?)
+  overload: Domain.Entities.Sources.Source.#ctor*
+  nameWithType.vb: Source.New(SourceType, String, String, Boolean, String, String, IEnumerable(Of Guid), Guid?)
+  fullName.vb: Domain.Entities.Sources.Source.New(Domain.Enums.SourceType, String, String, Boolean, String, String, System.Collections.Generic.IEnumerable(Of System.Guid), System.Guid?)
+  name.vb: New(SourceType, String, String, Boolean, String, String, IEnumerable(Of Guid), Guid?)
+- uid: Domain.Entities.Sources.Source.UpdateSource(Domain.Enums.SourceType,System.String,System.String,System.Collections.Generic.IEnumerable{System.Guid})
+  commentId: M:Domain.Entities.Sources.Source.UpdateSource(Domain.Enums.SourceType,System.String,System.String,System.Collections.Generic.IEnumerable{System.Guid})
+  id: UpdateSource(Domain.Enums.SourceType,System.String,System.String,System.Collections.Generic.IEnumerable{System.Guid})
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: UpdateSource(SourceType, string, string?, IEnumerable<Guid>?)
+  nameWithType: Source.UpdateSource(SourceType, string, string?, IEnumerable<Guid>?)
+  fullName: Domain.Entities.Sources.Source.UpdateSource(Domain.Enums.SourceType, string, string?, System.Collections.Generic.IEnumerable<System.Guid>?)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateSource
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 25
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public void UpdateSource(SourceType type, string title, string? description, IEnumerable<Guid>? tags)
+    parameters:
+    - id: type
+      type: Domain.Enums.SourceType
+    - id: title
+      type: System.String
+    - id: description
+      type: System.String
+    - id: tags
+      type: System.Collections.Generic.IEnumerable{System.Guid}
+    content.vb: Public Sub UpdateSource(type As SourceType, title As String, description As String, tags As IEnumerable(Of Guid))
+  overload: Domain.Entities.Sources.Source.UpdateSource*
+  nameWithType.vb: Source.UpdateSource(SourceType, String, String, IEnumerable(Of Guid))
+  fullName.vb: Domain.Entities.Sources.Source.UpdateSource(Domain.Enums.SourceType, String, String, System.Collections.Generic.IEnumerable(Of System.Guid))
+  name.vb: UpdateSource(SourceType, String, String, IEnumerable(Of Guid))
+- uid: Domain.Entities.Sources.Source.RemoveTag(System.Guid)
+  commentId: M:Domain.Entities.Sources.Source.RemoveTag(System.Guid)
+  id: RemoveTag(System.Guid)
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: RemoveTag(Guid)
+  nameWithType: Source.RemoveTag(Guid)
+  fullName: Domain.Entities.Sources.Source.RemoveTag(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RemoveTag
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 33
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public void RemoveTag(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    content.vb: Public Sub RemoveTag(id As Guid)
+  overload: Domain.Entities.Sources.Source.RemoveTag*
+- uid: Domain.Entities.Sources.Source.AddNewTag(System.Guid)
+  commentId: M:Domain.Entities.Sources.Source.AddNewTag(System.Guid)
+  id: AddNewTag(System.Guid)
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: AddNewTag(Guid)
+  nameWithType: Source.AddNewTag(Guid)
+  fullName: Domain.Entities.Sources.Source.AddNewTag(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddNewTag
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 45
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public void AddNewTag(Guid tagId)
+    parameters:
+    - id: tagId
+      type: System.Guid
+    content.vb: Public Sub AddNewTag(tagId As Guid)
+  overload: Domain.Entities.Sources.Source.AddNewTag*
+- uid: Domain.Entities.Sources.Source.AddNewTag(System.Collections.Generic.IEnumerable{System.Guid})
+  commentId: M:Domain.Entities.Sources.Source.AddNewTag(System.Collections.Generic.IEnumerable{System.Guid})
+  id: AddNewTag(System.Collections.Generic.IEnumerable{System.Guid})
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: AddNewTag(IEnumerable<Guid>)
+  nameWithType: Source.AddNewTag(IEnumerable<Guid>)
+  fullName: Domain.Entities.Sources.Source.AddNewTag(System.Collections.Generic.IEnumerable<System.Guid>)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddNewTag
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 52
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public void AddNewTag(IEnumerable<Guid> tagIds)
+    parameters:
+    - id: tagIds
+      type: System.Collections.Generic.IEnumerable{System.Guid}
+    content.vb: Public Sub AddNewTag(tagIds As IEnumerable(Of Guid))
+  overload: Domain.Entities.Sources.Source.AddNewTag*
+  nameWithType.vb: Source.AddNewTag(IEnumerable(Of Guid))
+  fullName.vb: Domain.Entities.Sources.Source.AddNewTag(System.Collections.Generic.IEnumerable(Of System.Guid))
+  name.vb: AddNewTag(IEnumerable(Of Guid))
+- uid: Domain.Entities.Sources.Source.AddMetadata(System.String,System.String,Domain.Enums.FiledType)
+  commentId: M:Domain.Entities.Sources.Source.AddMetadata(System.String,System.String,Domain.Enums.FiledType)
+  id: AddMetadata(System.String,System.String,Domain.Enums.FiledType)
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: AddMetadata(string, string, FiledType)
+  nameWithType: Source.AddMetadata(string, string, FiledType)
+  fullName: Domain.Entities.Sources.Source.AddMetadata(string, string, Domain.Enums.FiledType)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddMetadata
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 59
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public void AddMetadata(string filedName, string value, FiledType filedType)
+    parameters:
+    - id: filedName
+      type: System.String
+    - id: value
+      type: System.String
+    - id: filedType
+      type: Domain.Enums.FiledType
+    content.vb: Public Sub AddMetadata(filedName As String, value As String, filedType As FiledType)
+  overload: Domain.Entities.Sources.Source.AddMetadata*
+  nameWithType.vb: Source.AddMetadata(String, String, FiledType)
+  fullName.vb: Domain.Entities.Sources.Source.AddMetadata(String, String, Domain.Enums.FiledType)
+  name.vb: AddMetadata(String, String, FiledType)
+- uid: Domain.Entities.Sources.Source.AddMetadata(Domain.Entities.Sources.Metadata)
+  commentId: M:Domain.Entities.Sources.Source.AddMetadata(Domain.Entities.Sources.Metadata)
+  id: AddMetadata(Domain.Entities.Sources.Metadata)
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: AddMetadata(Metadata)
+  nameWithType: Source.AddMetadata(Metadata)
+  fullName: Domain.Entities.Sources.Source.AddMetadata(Domain.Entities.Sources.Metadata)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddMetadata
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 66
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public void AddMetadata(Metadata metadata)
+    parameters:
+    - id: metadata
+      type: Domain.Entities.Sources.Metadata
+    content.vb: Public Sub AddMetadata(metadata As Metadata)
+  overload: Domain.Entities.Sources.Source.AddMetadata*
+- uid: Domain.Entities.Sources.Source.AddMetadata(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.Metadata})
+  commentId: M:Domain.Entities.Sources.Source.AddMetadata(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.Metadata})
+  id: AddMetadata(System.Collections.Generic.IEnumerable{Domain.Entities.Sources.Metadata})
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: AddMetadata(IEnumerable<Metadata>)
+  nameWithType: Source.AddMetadata(IEnumerable<Metadata>)
+  fullName: Domain.Entities.Sources.Source.AddMetadata(System.Collections.Generic.IEnumerable<Domain.Entities.Sources.Metadata>)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddMetadata
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 73
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public void AddMetadata(IEnumerable<Metadata> metadata)
+    parameters:
+    - id: metadata
+      type: System.Collections.Generic.IEnumerable{Domain.Entities.Sources.Metadata}
+    content.vb: Public Sub AddMetadata(metadata As IEnumerable(Of Metadata))
+  overload: Domain.Entities.Sources.Source.AddMetadata*
+  nameWithType.vb: Source.AddMetadata(IEnumerable(Of Metadata))
+  fullName.vb: Domain.Entities.Sources.Source.AddMetadata(System.Collections.Generic.IEnumerable(Of Domain.Entities.Sources.Metadata))
+  name.vb: AddMetadata(IEnumerable(Of Metadata))
+- uid: Domain.Entities.Sources.Source.Type
+  commentId: P:Domain.Entities.Sources.Source.Type
+  id: Type
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Source.Type
+  fullName: Domain.Entities.Sources.Source.Type
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Type
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 79
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public SourceType Type { get; }
+    parameters: []
+    return:
+      type: Domain.Enums.SourceType
+    content.vb: Public Property Type As SourceType
+  overload: Domain.Entities.Sources.Source.Type*
+- uid: Domain.Entities.Sources.Source.Title
+  commentId: P:Domain.Entities.Sources.Source.Title
+  id: Title
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: Source.Title
+  fullName: Domain.Entities.Sources.Source.Title
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Title
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 80
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: Domain.Entities.Sources.Source.Title*
+- uid: Domain.Entities.Sources.Source.Description
+  commentId: P:Domain.Entities.Sources.Source.Description
+  id: Description
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Source.Description
+  fullName: Domain.Entities.Sources.Source.Description
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Description
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 81
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public string? Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Domain.Entities.Sources.Source.Description*
+- uid: Domain.Entities.Sources.Source.Tags
+  commentId: P:Domain.Entities.Sources.Source.Tags
+  id: Tags
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: Source.Tags
+  fullName: Domain.Entities.Sources.Source.Tags
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Tags
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 82
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public List<Guid>? Tags { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Guid}
+    content.vb: Public Property Tags As List(Of Guid)
+  overload: Domain.Entities.Sources.Source.Tags*
+- uid: Domain.Entities.Sources.Source.CategoryId
+  commentId: P:Domain.Entities.Sources.Source.CategoryId
+  id: CategoryId
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: CategoryId
+  nameWithType: Source.CategoryId
+  fullName: Domain.Entities.Sources.Source.CategoryId
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CategoryId
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 83
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public Guid? CategoryId { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property CategoryId As Guid?
+  overload: Domain.Entities.Sources.Source.CategoryId*
+- uid: Domain.Entities.Sources.Source.HasAttachment
+  commentId: P:Domain.Entities.Sources.Source.HasAttachment
+  id: HasAttachment
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: HasAttachment
+  nameWithType: Source.HasAttachment
+  fullName: Domain.Entities.Sources.Source.HasAttachment
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: HasAttachment
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 84
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public bool HasAttachment { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasAttachment As Boolean
+  overload: Domain.Entities.Sources.Source.HasAttachment*
+- uid: Domain.Entities.Sources.Source.FileExtension
+  commentId: P:Domain.Entities.Sources.Source.FileExtension
+  id: FileExtension
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: FileExtension
+  nameWithType: Source.FileExtension
+  fullName: Domain.Entities.Sources.Source.FileExtension
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: FileExtension
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 85
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public string? FileExtension { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileExtension As String
+  overload: Domain.Entities.Sources.Source.FileExtension*
+- uid: Domain.Entities.Sources.Source.FilePath
+  commentId: P:Domain.Entities.Sources.Source.FilePath
+  id: FilePath
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: FilePath
+  nameWithType: Source.FilePath
+  fullName: Domain.Entities.Sources.Source.FilePath
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: FilePath
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 86
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public string? FilePath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FilePath As String
+  overload: Domain.Entities.Sources.Source.FilePath*
+- uid: Domain.Entities.Sources.Source.Metadata
+  commentId: P:Domain.Entities.Sources.Source.Metadata
+  id: Metadata
+  parent: Domain.Entities.Sources.Source
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: Source.Metadata
+  fullName: Domain.Entities.Sources.Source.Metadata
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Sources/Source.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Metadata
+    path: src/Domain/Entities/Sources/Source.cs
+    startLine: 87
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Sources
+  syntax:
+    content: public List<Metadata>? Metadata { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Domain.Entities.Sources.Metadata}
+    content.vb: Public Property Metadata As List(Of Metadata)
+  overload: Domain.Entities.Sources.Source.Metadata*
+references:
+- uid: Domain.Entities.Sources
+  commentId: N:Domain.Entities.Sources
+  href: Domain.html
+  name: Domain.Entities.Sources
+  nameWithType: Domain.Entities.Sources
+  fullName: Domain.Entities.Sources
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Sources
+    name: Sources
+    href: Domain.Entities.Sources.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Sources
+    name: Sources
+    href: Domain.Entities.Sources.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Domain.Auditing.EntityAudit
+  commentId: T:Domain.Auditing.EntityAudit
+  parent: Domain.Auditing
+  href: Domain.Auditing.EntityAudit.html
+  name: EntityAudit
+  nameWithType: EntityAudit
+  fullName: Domain.Auditing.EntityAudit
+- uid: Domain.Auditing.EntityAudit.Id
+  commentId: P:Domain.Auditing.EntityAudit.Id
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Id
+  name: Id
+  nameWithType: EntityAudit.Id
+  fullName: Domain.Auditing.EntityAudit.Id
+- uid: Domain.Auditing.EntityAudit.LastModifiedDate
+  commentId: P:Domain.Auditing.EntityAudit.LastModifiedDate
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastModifiedDate
+  name: LastModifiedDate
+  nameWithType: EntityAudit.LastModifiedDate
+  fullName: Domain.Auditing.EntityAudit.LastModifiedDate
+- uid: Domain.Auditing.EntityAudit.LastArchiveDate
+  commentId: P:Domain.Auditing.EntityAudit.LastArchiveDate
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastArchiveDate
+  name: LastArchiveDate
+  nameWithType: EntityAudit.LastArchiveDate
+  fullName: Domain.Auditing.EntityAudit.LastArchiveDate
+- uid: Domain.Auditing.EntityAudit.CreationDate
+  commentId: P:Domain.Auditing.EntityAudit.CreationDate
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_CreationDate
+  name: CreationDate
+  nameWithType: EntityAudit.CreationDate
+  fullName: Domain.Auditing.EntityAudit.CreationDate
+- uid: Domain.Auditing.EntityAudit.IsArchived
+  commentId: P:Domain.Auditing.EntityAudit.IsArchived
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_IsArchived
+  name: IsArchived
+  nameWithType: EntityAudit.IsArchived
+  fullName: Domain.Auditing.EntityAudit.IsArchived
+- uid: Domain.Auditing.EntityAudit.VersionNumber
+  commentId: P:Domain.Auditing.EntityAudit.VersionNumber
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_VersionNumber
+  name: VersionNumber
+  nameWithType: EntityAudit.VersionNumber
+  fullName: Domain.Auditing.EntityAudit.VersionNumber
+- uid: Domain.Auditing.EntityAudit.Created
+  commentId: M:Domain.Auditing.EntityAudit.Created
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Created
+  name: Created()
+  nameWithType: EntityAudit.Created()
+  fullName: Domain.Auditing.EntityAudit.Created()
+  spec.csharp:
+  - uid: Domain.Auditing.EntityAudit.Created
+    name: Created
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Created
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Auditing.EntityAudit.Created
+    name: Created
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Created
+  - name: (
+  - name: )
+- uid: Domain.Auditing.EntityAudit.Updated
+  commentId: M:Domain.Auditing.EntityAudit.Updated
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Updated
+  name: Updated()
+  nameWithType: EntityAudit.Updated()
+  fullName: Domain.Auditing.EntityAudit.Updated()
+  spec.csharp:
+  - uid: Domain.Auditing.EntityAudit.Updated
+    name: Updated
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Updated
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Auditing.EntityAudit.Updated
+    name: Updated
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Updated
+  - name: (
+  - name: )
+- uid: Domain.Auditing.EntityAudit.Archive
+  commentId: M:Domain.Auditing.EntityAudit.Archive
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Archive
+  name: Archive()
+  nameWithType: EntityAudit.Archive()
+  fullName: Domain.Auditing.EntityAudit.Archive()
+  spec.csharp:
+  - uid: Domain.Auditing.EntityAudit.Archive
+    name: Archive
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Archive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Auditing.EntityAudit.Archive
+    name: Archive
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Archive
+  - name: (
+  - name: )
+- uid: Domain.Auditing.EntityAudit.UnArchive
+  commentId: M:Domain.Auditing.EntityAudit.UnArchive
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_UnArchive
+  name: UnArchive()
+  nameWithType: EntityAudit.UnArchive()
+  fullName: Domain.Auditing.EntityAudit.UnArchive()
+  spec.csharp:
+  - uid: Domain.Auditing.EntityAudit.UnArchive
+    name: UnArchive
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_UnArchive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Auditing.EntityAudit.UnArchive
+    name: UnArchive
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_UnArchive
+  - name: (
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Auditing
+  commentId: N:Domain.Auditing
+  href: Domain.html
+  name: Domain.Auditing
+  nameWithType: Domain.Auditing
+  fullName: Domain.Auditing
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Entities.Sources.Source.#ctor*
+  commentId: Overload:Domain.Entities.Sources.Source.#ctor
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source__ctor_Domain_Enums_SourceType_System_String_System_String_System_Boolean_System_String_System_String_System_Collections_Generic_IEnumerable_System_Guid__System_Nullable_System_Guid__
+  name: Source
+  nameWithType: Source.Source
+  fullName: Domain.Entities.Sources.Source.Source
+  nameWithType.vb: Source.New
+  fullName.vb: Domain.Entities.Sources.Source.New
+  name.vb: New
+- uid: Domain.Enums.SourceType
+  commentId: T:Domain.Enums.SourceType
+  parent: Domain.Enums
+  href: Domain.Enums.SourceType.html
+  name: SourceType
+  nameWithType: SourceType
+  fullName: Domain.Enums.SourceType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.IEnumerable{System.Guid}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Guid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Guid>
+  nameWithType: IEnumerable<Guid>
+  fullName: System.Collections.Generic.IEnumerable<System.Guid>
+  nameWithType.vb: IEnumerable(Of Guid)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Guid)
+  name.vb: IEnumerable(Of Guid)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Domain.Entities.Sources.Source.UpdateSource*
+  commentId: Overload:Domain.Entities.Sources.Source.UpdateSource
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_UpdateSource_Domain_Enums_SourceType_System_String_System_String_System_Collections_Generic_IEnumerable_System_Guid__
+  name: UpdateSource
+  nameWithType: Source.UpdateSource
+  fullName: Domain.Entities.Sources.Source.UpdateSource
+- uid: Domain.Entities.Sources.Source.RemoveTag*
+  commentId: Overload:Domain.Entities.Sources.Source.RemoveTag
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_RemoveTag_System_Guid_
+  name: RemoveTag
+  nameWithType: Source.RemoveTag
+  fullName: Domain.Entities.Sources.Source.RemoveTag
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Entities.Sources.Source.AddNewTag*
+  commentId: Overload:Domain.Entities.Sources.Source.AddNewTag
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_AddNewTag_System_Guid_
+  name: AddNewTag
+  nameWithType: Source.AddNewTag
+  fullName: Domain.Entities.Sources.Source.AddNewTag
+- uid: Domain.Entities.Sources.Source.AddMetadata*
+  commentId: Overload:Domain.Entities.Sources.Source.AddMetadata
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_AddMetadata_System_String_System_String_Domain_Enums_FiledType_
+  name: AddMetadata
+  nameWithType: Source.AddMetadata
+  fullName: Domain.Entities.Sources.Source.AddMetadata
+- uid: Domain.Enums.FiledType
+  commentId: T:Domain.Enums.FiledType
+  parent: Domain.Enums
+  href: Domain.Enums.FiledType.html
+  name: FiledType
+  nameWithType: FiledType
+  fullName: Domain.Enums.FiledType
+- uid: Domain.Entities.Sources.Metadata
+  commentId: T:Domain.Entities.Sources.Metadata
+  parent: Domain.Entities.Sources
+  href: Domain.Entities.Sources.Metadata.html
+  name: Metadata
+  nameWithType: Metadata
+  fullName: Domain.Entities.Sources.Metadata
+- uid: System.Collections.Generic.IEnumerable{Domain.Entities.Sources.Metadata}
+  commentId: T:System.Collections.Generic.IEnumerable{Domain.Entities.Sources.Metadata}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Metadata>
+  nameWithType: IEnumerable<Metadata>
+  fullName: System.Collections.Generic.IEnumerable<Domain.Entities.Sources.Metadata>
+  nameWithType.vb: IEnumerable(Of Metadata)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Domain.Entities.Sources.Metadata)
+  name.vb: IEnumerable(Of Metadata)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.Sources.Metadata
+    name: Metadata
+    href: Domain.Entities.Sources.Metadata.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.Metadata
+    name: Metadata
+    href: Domain.Entities.Sources.Metadata.html
+  - name: )
+- uid: Domain.Entities.Sources.Source.Type*
+  commentId: Overload:Domain.Entities.Sources.Source.Type
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_Type
+  name: Type
+  nameWithType: Source.Type
+  fullName: Domain.Entities.Sources.Source.Type
+- uid: Domain.Entities.Sources.Source.Title*
+  commentId: Overload:Domain.Entities.Sources.Source.Title
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_Title
+  name: Title
+  nameWithType: Source.Title
+  fullName: Domain.Entities.Sources.Source.Title
+- uid: Domain.Entities.Sources.Source.Description*
+  commentId: Overload:Domain.Entities.Sources.Source.Description
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_Description
+  name: Description
+  nameWithType: Source.Description
+  fullName: Domain.Entities.Sources.Source.Description
+- uid: Domain.Entities.Sources.Source.Tags*
+  commentId: Overload:Domain.Entities.Sources.Source.Tags
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_Tags
+  name: Tags
+  nameWithType: Source.Tags
+  fullName: Domain.Entities.Sources.Source.Tags
+- uid: System.Collections.Generic.List{System.Guid}
+  commentId: T:System.Collections.Generic.List{System.Guid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Guid>
+  nameWithType: List<Guid>
+  fullName: System.Collections.Generic.List<System.Guid>
+  nameWithType.vb: List(Of Guid)
+  fullName.vb: System.Collections.Generic.List(Of System.Guid)
+  name.vb: List(Of Guid)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Domain.Entities.Sources.Source.CategoryId*
+  commentId: Overload:Domain.Entities.Sources.Source.CategoryId
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_CategoryId
+  name: CategoryId
+  nameWithType: Source.CategoryId
+  fullName: Domain.Entities.Sources.Source.CategoryId
+- uid: Domain.Entities.Sources.Source.HasAttachment*
+  commentId: Overload:Domain.Entities.Sources.Source.HasAttachment
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_HasAttachment
+  name: HasAttachment
+  nameWithType: Source.HasAttachment
+  fullName: Domain.Entities.Sources.Source.HasAttachment
+- uid: Domain.Entities.Sources.Source.FileExtension*
+  commentId: Overload:Domain.Entities.Sources.Source.FileExtension
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_FileExtension
+  name: FileExtension
+  nameWithType: Source.FileExtension
+  fullName: Domain.Entities.Sources.Source.FileExtension
+- uid: Domain.Entities.Sources.Source.FilePath*
+  commentId: Overload:Domain.Entities.Sources.Source.FilePath
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_FilePath
+  name: FilePath
+  nameWithType: Source.FilePath
+  fullName: Domain.Entities.Sources.Source.FilePath
+- uid: Domain.Entities.Sources.Source.Metadata*
+  commentId: Overload:Domain.Entities.Sources.Source.Metadata
+  href: Domain.Entities.Sources.Source.html#Domain_Entities_Sources_Source_Metadata
+  name: Metadata
+  nameWithType: Source.Metadata
+  fullName: Domain.Entities.Sources.Source.Metadata
+- uid: System.Collections.Generic.List{Domain.Entities.Sources.Metadata}
+  commentId: T:System.Collections.Generic.List{Domain.Entities.Sources.Metadata}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Metadata>
+  nameWithType: List<Metadata>
+  fullName: System.Collections.Generic.List<Domain.Entities.Sources.Metadata>
+  nameWithType.vb: List(Of Metadata)
+  fullName.vb: System.Collections.Generic.List(Of Domain.Entities.Sources.Metadata)
+  name.vb: List(Of Metadata)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Domain.Entities.Sources.Metadata
+    name: Metadata
+    href: Domain.Entities.Sources.Metadata.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Sources.Metadata
+    name: Metadata
+    href: Domain.Entities.Sources.Metadata.html
+  - name: )

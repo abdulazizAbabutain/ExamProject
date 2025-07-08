@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel
+  commentId: N:Application.Questions.Queries.GetQuestionsById.ResultModel
+  id: Application.Questions.Queries.GetQuestionsById.ResultModel
+  children:
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.LongAnswerQuestionQueryResult
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.MultipleChoiseQuestionResult
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.ShortAnswerQuestionQueryResult
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.TrueFalseQuestionQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Questions.Queries.GetQuestionsById.ResultModel
+  nameWithType: Application.Questions.Queries.GetQuestionsById.ResultModel
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult
+  commentId: T:Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult.html
+  name: FeedbackQueryResult
+  nameWithType: FeedbackQueryResult
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.LongAnswerQuestionQueryResult
+  commentId: T:Application.Questions.Queries.GetQuestionsById.ResultModel.LongAnswerQuestionQueryResult
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.LongAnswerQuestionQueryResult.html
+  name: LongAnswerQuestionQueryResult
+  nameWithType: LongAnswerQuestionQueryResult
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.LongAnswerQuestionQueryResult
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.MultipleChoiseQuestionResult
+  commentId: T:Application.Questions.Queries.GetQuestionsById.ResultModel.MultipleChoiseQuestionResult
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.MultipleChoiseQuestionResult.html
+  name: MultipleChoiseQuestionResult
+  nameWithType: MultipleChoiseQuestionResult
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.MultipleChoiseQuestionResult
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  commentId: T:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.html
+  name: ReorderingQuestionQueryResult
+  nameWithType: ReorderingQuestionQueryResult
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ShortAnswerQuestionQueryResult
+  commentId: T:Application.Questions.Queries.GetQuestionsById.ResultModel.ShortAnswerQuestionQueryResult
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.ShortAnswerQuestionQueryResult.html
+  name: ShortAnswerQuestionQueryResult
+  nameWithType: ShortAnswerQuestionQueryResult
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ShortAnswerQuestionQueryResult
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.TrueFalseQuestionQueryResult
+  commentId: T:Application.Questions.Queries.GetQuestionsById.ResultModel.TrueFalseQuestionQueryResult
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.TrueFalseQuestionQueryResult.html
+  name: TrueFalseQuestionQueryResult
+  nameWithType: TrueFalseQuestionQueryResult
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.TrueFalseQuestionQueryResult
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel
+  commentId: N:Application.Questions.Queries.GetQuestionsById.ResultModel
+  href: Application.html
+  name: Application.Questions.Queries.GetQuestionsById.ResultModel
+  nameWithType: Application.Questions.Queries.GetQuestionsById.ResultModel
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Queries
+    name: Queries
+    href: Application.Questions.Queries.html
+  - name: .
+  - uid: Application.Questions.Queries.GetQuestionsById
+    name: GetQuestionsById
+    href: Application.Questions.Queries.GetQuestionsById.html
+  - name: .
+  - uid: Application.Questions.Queries.GetQuestionsById.ResultModel
+    name: ResultModel
+    href: Application.Questions.Queries.GetQuestionsById.ResultModel.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Queries
+    name: Queries
+    href: Application.Questions.Queries.html
+  - name: .
+  - uid: Application.Questions.Queries.GetQuestionsById
+    name: GetQuestionsById
+    href: Application.Questions.Queries.GetQuestionsById.html
+  - name: .
+  - uid: Application.Questions.Queries.GetQuestionsById.ResultModel
+    name: ResultModel
+    href: Application.Questions.Queries.GetQuestionsById.ResultModel.html

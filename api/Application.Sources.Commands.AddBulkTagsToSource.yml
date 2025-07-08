@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Commands.AddBulkTagsToSource
+  commentId: N:Application.Sources.Commands.AddBulkTagsToSource
+  id: Application.Sources.Commands.AddBulkTagsToSource
+  children:
+  - Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand
+  - Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Application.Sources.Commands.AddBulkTagsToSource
+  nameWithType: Application.Sources.Commands.AddBulkTagsToSource
+  fullName: Application.Sources.Commands.AddBulkTagsToSource
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand
+  commentId: T:Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand
+  parent: Application.Sources.Commands.AddBulkTagsToSource
+  href: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand.html
+  name: AddBulkTagsToSourceCommand
+  nameWithType: AddBulkTagsToSourceCommand
+  fullName: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommand
+- uid: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommandHandler
+  commentId: T:Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommandHandler
+  href: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommandHandler.html
+  name: AddBulkTagsToSourceCommandHandler
+  nameWithType: AddBulkTagsToSourceCommandHandler
+  fullName: Application.Sources.Commands.AddBulkTagsToSource.AddBulkTagsToSourceCommandHandler
+- uid: Application.Sources.Commands.AddBulkTagsToSource
+  commentId: N:Application.Sources.Commands.AddBulkTagsToSource
+  href: Application.html
+  name: Application.Sources.Commands.AddBulkTagsToSource
+  nameWithType: Application.Sources.Commands.AddBulkTagsToSource
+  fullName: Application.Sources.Commands.AddBulkTagsToSource
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddBulkTagsToSource
+    name: AddBulkTagsToSource
+    href: Application.Sources.Commands.AddBulkTagsToSource.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddBulkTagsToSource
+    name: AddBulkTagsToSource
+    href: Application.Sources.Commands.AddBulkTagsToSource.html

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Queries.GetAllTags
+  commentId: N:Application.Tags.Queries.GetAllTags
+  id: Application.Tags.Queries.GetAllTags
+  children:
+  - Application.Tags.Queries.GetAllTags.GetAllTagsQueryValidator
+  langs:
+  - csharp
+  - vb
+  name: Application.Tags.Queries.GetAllTags
+  nameWithType: Application.Tags.Queries.GetAllTags
+  fullName: Application.Tags.Queries.GetAllTags
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Tags.Queries.GetAllTags.GetAllTagsQueryValidator
+  commentId: T:Application.Tags.Queries.GetAllTags.GetAllTagsQueryValidator
+  href: Application.Tags.Queries.GetAllTags.GetAllTagsQueryValidator.html
+  name: GetAllTagsQueryValidator
+  nameWithType: GetAllTagsQueryValidator
+  fullName: Application.Tags.Queries.GetAllTags.GetAllTagsQueryValidator

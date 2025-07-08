@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Histories.Queries.GetQuestionHistory.Models
+  commentId: N:Application.Histories.Queries.GetQuestionHistory.Models
+  id: Application.Histories.Queries.GetQuestionHistory.Models
+  children:
+  - Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Histories.Queries.GetQuestionHistory.Models
+  nameWithType: Application.Histories.Queries.GetQuestionHistory.Models
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  commentId: T:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  href: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.html
+  name: PropertyChangesQueryResult
+  nameWithType: PropertyChangesQueryResult
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult

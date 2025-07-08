@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Questions.Queries.GetQuestionsById
+  commentId: N:Application.Questions.Queries.GetQuestionsById
+  id: Application.Questions.Queries.GetQuestionsById
+  children:
+  - Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQuery
+  - Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Questions.Queries.GetQuestionsById
+  nameWithType: Application.Questions.Queries.GetQuestionsById
+  fullName: Application.Questions.Queries.GetQuestionsById
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQuery
+  commentId: T:Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQuery
+  href: Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQuery.html
+  name: GetQuestionsByIdQuery
+  nameWithType: GetQuestionsByIdQuery
+  fullName: Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQuery
+- uid: Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQueryResult
+  commentId: T:Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQueryResult
+  href: Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQueryResult.html
+  name: GetQuestionsByIdQueryResult
+  nameWithType: GetQuestionsByIdQueryResult
+  fullName: Application.Questions.Queries.GetQuestionsById.GetQuestionsByIdQueryResult

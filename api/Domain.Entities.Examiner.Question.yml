@@ -1,0 +1,1817 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.Examiner.Question
+  commentId: T:Domain.Entities.Examiner.Question
+  id: Question
+  parent: Domain.Entities.Examiner
+  children:
+  - Domain.Entities.Examiner.Question.#ctor(System.String,System.Collections.Generic.List{System.String},Domain.Enums.QuestionType,System.Int32,System.Boolean,Domain.Enums.QuestionDifficulty,System.Nullable{System.Guid},System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{System.Guid},System.Nullable{System.Guid})
+  - Domain.Entities.Examiner.Question.Category
+  - Domain.Entities.Examiner.Question.CreateLongAnswer(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)
+  - Domain.Entities.Examiner.Question.CreateMultipleChoiceQuestion(Domain.Entities.Examiner.MultipleChoiseQuestion)
+  - Domain.Entities.Examiner.Question.CreateReordering(System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.ReorderingQuestion})
+  - Domain.Entities.Examiner.Question.CreateShortAnswer(System.String,System.Collections.Generic.List{System.String},System.String,System.String)
+  - Domain.Entities.Examiner.Question.CreateTrueAndFalse(Domain.Entities.Examiner.TrueFalseQuestion)
+  - Domain.Entities.Examiner.Question.DifficultyIndex
+  - Domain.Entities.Examiner.Question.HasAttachments
+  - Domain.Entities.Examiner.Question.Id
+  - Domain.Entities.Examiner.Question.ImagesFilePaths
+  - Domain.Entities.Examiner.Question.Language
+  - Domain.Entities.Examiner.Question.LongAnswerQuestion
+  - Domain.Entities.Examiner.Question.Mark
+  - Domain.Entities.Examiner.Question.MultipleChoiceQuestion
+  - Domain.Entities.Examiner.Question.QuestionText
+  - Domain.Entities.Examiner.Question.QuestionType
+  - Domain.Entities.Examiner.Question.RemoveTag(System.Guid)
+  - Domain.Entities.Examiner.Question.ReorderingQuestions
+  - Domain.Entities.Examiner.Question.RequireManualReview
+  - Domain.Entities.Examiner.Question.ShortAnswerQuestion
+  - Domain.Entities.Examiner.Question.Sources
+  - Domain.Entities.Examiner.Question.Tags
+  - Domain.Entities.Examiner.Question.TrueFalseQuestion
+  - Domain.Entities.Examiner.Question.UpdateBasicQueastion(System.String,System.Collections.Generic.List{System.String},System.Int32,System.Boolean,System.Collections.Generic.List{System.String},System.Int16)
+  - Domain.Entities.Examiner.Question.Variants
+  langs:
+  - csharp
+  - vb
+  name: Question
+  nameWithType: Question
+  fullName: Domain.Entities.Examiner.Question
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Question
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 8
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: 'public class Question : EntityAudit'
+    content.vb: Public Class Question Inherits EntityAudit
+  inheritance:
+  - System.Object
+  - Domain.Auditing.EntityAudit
+  inheritedMembers:
+  - Domain.Auditing.EntityAudit.LastModifiedDate
+  - Domain.Auditing.EntityAudit.LastArchiveDate
+  - Domain.Auditing.EntityAudit.CreationDate
+  - Domain.Auditing.EntityAudit.IsArchived
+  - Domain.Auditing.EntityAudit.VersionNumber
+  - Domain.Auditing.EntityAudit.Created
+  - Domain.Auditing.EntityAudit.Updated
+  - Domain.Auditing.EntityAudit.Archive
+  - Domain.Auditing.EntityAudit.UnArchive
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Entities.Examiner.Question.Id
+  commentId: P:Domain.Entities.Examiner.Question.Id
+  id: Id
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Question.Id
+  fullName: Domain.Entities.Examiner.Question.Id
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Id
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 14
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Unique identifier for the question.
+  example: []
+  syntax:
+    content: public Guid Id { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Domain.Entities.Examiner.Question.Id*
+- uid: Domain.Entities.Examiner.Question.QuestionText
+  commentId: P:Domain.Entities.Examiner.Question.QuestionText
+  id: QuestionText
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: QuestionText
+  nameWithType: Question.QuestionText
+  fullName: Domain.Entities.Examiner.Question.QuestionText
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: QuestionText
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 18
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: The actual text of the question displayed to the user.
+  example: []
+  syntax:
+    content: public string QuestionText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property QuestionText As String
+  overload: Domain.Entities.Examiner.Question.QuestionText*
+- uid: Domain.Entities.Examiner.Question.Variants
+  commentId: P:Domain.Entities.Examiner.Question.Variants
+  id: Variants
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: Variants
+  nameWithType: Question.Variants
+  fullName: Domain.Entities.Examiner.Question.Variants
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Variants
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 22
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Different phrase of questions
+  example: []
+  syntax:
+    content: public List<string>? Variants { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property Variants As List(Of String)
+  overload: Domain.Entities.Examiner.Question.Variants*
+- uid: Domain.Entities.Examiner.Question.QuestionType
+  commentId: P:Domain.Entities.Examiner.Question.QuestionType
+  id: QuestionType
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: QuestionType
+  nameWithType: Question.QuestionType
+  fullName: Domain.Entities.Examiner.Question.QuestionType
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: QuestionType
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 26
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: The type of the question, e.g., MultipleChoice, TrueFalse, ShortAnswer.
+  example: []
+  syntax:
+    content: public QuestionType QuestionType { get; }
+    parameters: []
+    return:
+      type: Domain.Enums.QuestionType
+    content.vb: Public Property QuestionType As QuestionType
+  overload: Domain.Entities.Examiner.Question.QuestionType*
+- uid: Domain.Entities.Examiner.Question.Mark
+  commentId: P:Domain.Entities.Examiner.Question.Mark
+  id: Mark
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: Mark
+  nameWithType: Question.Mark
+  fullName: Domain.Entities.Examiner.Question.Mark
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Mark
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 30
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: The number of points (marks) assigned to this question.
+  example: []
+  syntax:
+    content: public int Mark { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Mark As Integer
+  overload: Domain.Entities.Examiner.Question.Mark*
+- uid: Domain.Entities.Examiner.Question.RequireManualReview
+  commentId: P:Domain.Entities.Examiner.Question.RequireManualReview
+  id: RequireManualReview
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: RequireManualReview
+  nameWithType: Question.RequireManualReview
+  fullName: Domain.Entities.Examiner.Question.RequireManualReview
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RequireManualReview
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 34
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Indicates whether the question needs manual grading (e.g., short answer).
+  example: []
+  syntax:
+    content: public bool RequireManualReview { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RequireManualReview As Boolean
+  overload: Domain.Entities.Examiner.Question.RequireManualReview*
+- uid: Domain.Entities.Examiner.Question.DifficultyIndex
+  commentId: P:Domain.Entities.Examiner.Question.DifficultyIndex
+  id: DifficultyIndex
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: DifficultyIndex
+  nameWithType: Question.DifficultyIndex
+  fullName: Domain.Entities.Examiner.Question.DifficultyIndex
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DifficultyIndex
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 38
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: An index (0–100) representing how difficult the question is perceived to be.
+  example: []
+  syntax:
+    content: public short DifficultyIndex { get; }
+    parameters: []
+    return:
+      type: System.Int16
+    content.vb: Public Property DifficultyIndex As Short
+  overload: Domain.Entities.Examiner.Question.DifficultyIndex*
+- uid: Domain.Entities.Examiner.Question.HasAttachments
+  commentId: P:Domain.Entities.Examiner.Question.HasAttachments
+  id: HasAttachments
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: HasAttachments
+  nameWithType: Question.HasAttachments
+  fullName: Domain.Entities.Examiner.Question.HasAttachments
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: HasAttachments
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 42
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Determine if the
+  example: []
+  syntax:
+    content: public bool HasAttachments { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasAttachments As Boolean
+  overload: Domain.Entities.Examiner.Question.HasAttachments*
+- uid: Domain.Entities.Examiner.Question.ImagesFilePaths
+  commentId: P:Domain.Entities.Examiner.Question.ImagesFilePaths
+  id: ImagesFilePaths
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: ImagesFilePaths
+  nameWithType: Question.ImagesFilePaths
+  fullName: Domain.Entities.Examiner.Question.ImagesFilePaths
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ImagesFilePaths
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 46
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: File path for an image for handling images
+  example: []
+  syntax:
+    content: public List<string> ImagesFilePaths { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Property ImagesFilePaths As List(Of String)
+  overload: Domain.Entities.Examiner.Question.ImagesFilePaths*
+- uid: Domain.Entities.Examiner.Question.MultipleChoiceQuestion
+  commentId: P:Domain.Entities.Examiner.Question.MultipleChoiceQuestion
+  id: MultipleChoiceQuestion
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: MultipleChoiceQuestion
+  nameWithType: Question.MultipleChoiceQuestion
+  fullName: Domain.Entities.Examiner.Question.MultipleChoiceQuestion
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: MultipleChoiceQuestion
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 50
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Details specific to multiple choice questions (if applicable).
+  example: []
+  syntax:
+    content: public MultipleChoiseQuestion? MultipleChoiceQuestion { get; }
+    parameters: []
+    return:
+      type: Domain.Entities.Examiner.MultipleChoiseQuestion
+    content.vb: Public Property MultipleChoiceQuestion As MultipleChoiseQuestion
+  overload: Domain.Entities.Examiner.Question.MultipleChoiceQuestion*
+- uid: Domain.Entities.Examiner.Question.TrueFalseQuestion
+  commentId: P:Domain.Entities.Examiner.Question.TrueFalseQuestion
+  id: TrueFalseQuestion
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: TrueFalseQuestion
+  nameWithType: Question.TrueFalseQuestion
+  fullName: Domain.Entities.Examiner.Question.TrueFalseQuestion
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: TrueFalseQuestion
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 54
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Details specific to true/false questions (if applicable).
+  example: []
+  syntax:
+    content: public TrueFalseQuestion? TrueFalseQuestion { get; }
+    parameters: []
+    return:
+      type: Domain.Entities.Examiner.TrueFalseQuestion
+    content.vb: Public Property TrueFalseQuestion As TrueFalseQuestion
+  overload: Domain.Entities.Examiner.Question.TrueFalseQuestion*
+- uid: Domain.Entities.Examiner.Question.ShortAnswerQuestion
+  commentId: P:Domain.Entities.Examiner.Question.ShortAnswerQuestion
+  id: ShortAnswerQuestion
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: ShortAnswerQuestion
+  nameWithType: Question.ShortAnswerQuestion
+  fullName: Domain.Entities.Examiner.Question.ShortAnswerQuestion
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ShortAnswerQuestion
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 58
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Details specific to short answer questions (if applicable).
+  example: []
+  syntax:
+    content: public ShortAnswerQuestion? ShortAnswerQuestion { get; }
+    parameters: []
+    return:
+      type: Domain.Entities.Examiner.ShortAnswerQuestion
+    content.vb: Public Property ShortAnswerQuestion As ShortAnswerQuestion
+  overload: Domain.Entities.Examiner.Question.ShortAnswerQuestion*
+- uid: Domain.Entities.Examiner.Question.LongAnswerQuestion
+  commentId: P:Domain.Entities.Examiner.Question.LongAnswerQuestion
+  id: LongAnswerQuestion
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: LongAnswerQuestion
+  nameWithType: Question.LongAnswerQuestion
+  fullName: Domain.Entities.Examiner.Question.LongAnswerQuestion
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: LongAnswerQuestion
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 62
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Details specific to long answer questions (if applicable).
+  example: []
+  syntax:
+    content: public LongAnswerQuestion? LongAnswerQuestion { get; }
+    parameters: []
+    return:
+      type: Domain.Entities.Examiner.LongAnswerQuestion
+    content.vb: Public Property LongAnswerQuestion As LongAnswerQuestion
+  overload: Domain.Entities.Examiner.Question.LongAnswerQuestion*
+- uid: Domain.Entities.Examiner.Question.ReorderingQuestions
+  commentId: P:Domain.Entities.Examiner.Question.ReorderingQuestions
+  id: ReorderingQuestions
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: ReorderingQuestions
+  nameWithType: Question.ReorderingQuestions
+  fullName: Domain.Entities.Examiner.Question.ReorderingQuestions
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ReorderingQuestions
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 66
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Details specific to reordering questions (if applicable).
+  example: []
+  syntax:
+    content: public List<ReorderingQuestion>? ReorderingQuestions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Domain.Entities.Examiner.ReorderingQuestion}
+    content.vb: Public Property ReorderingQuestions As List(Of ReorderingQuestion)
+  overload: Domain.Entities.Examiner.Question.ReorderingQuestions*
+- uid: Domain.Entities.Examiner.Question.Language
+  commentId: P:Domain.Entities.Examiner.Question.Language
+  id: Language
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: Language
+  nameWithType: Question.Language
+  fullName: Domain.Entities.Examiner.Question.Language
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Language
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 71
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public Guid? Language { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property Language As Guid?
+  overload: Domain.Entities.Examiner.Question.Language*
+- uid: Domain.Entities.Examiner.Question.Tags
+  commentId: P:Domain.Entities.Examiner.Question.Tags
+  id: Tags
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: Question.Tags
+  fullName: Domain.Entities.Examiner.Question.Tags
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Tags
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 75
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public List<Guid>? Tags { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Guid}
+    content.vb: Public Property Tags As List(Of Guid)
+  overload: Domain.Entities.Examiner.Question.Tags*
+- uid: Domain.Entities.Examiner.Question.Sources
+  commentId: P:Domain.Entities.Examiner.Question.Sources
+  id: Sources
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: Sources
+  nameWithType: Question.Sources
+  fullName: Domain.Entities.Examiner.Question.Sources
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Sources
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 79
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: Optional list of sources (e.g., books, websites) from which the question originates.
+  example: []
+  syntax:
+    content: public List<Guid>? Sources { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Guid}
+    content.vb: Public Property Sources As List(Of Guid)
+  overload: Domain.Entities.Examiner.Question.Sources*
+- uid: Domain.Entities.Examiner.Question.Category
+  commentId: P:Domain.Entities.Examiner.Question.Category
+  id: Category
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: Category
+  nameWithType: Question.Category
+  fullName: Domain.Entities.Examiner.Question.Category
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Category
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 83
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  summary: The category under which this question falls, if any.
+  example: []
+  syntax:
+    content: public Guid? Category { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property Category As Guid?
+  overload: Domain.Entities.Examiner.Question.Category*
+- uid: Domain.Entities.Examiner.Question.#ctor(System.String,System.Collections.Generic.List{System.String},Domain.Enums.QuestionType,System.Int32,System.Boolean,Domain.Enums.QuestionDifficulty,System.Nullable{System.Guid},System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{System.Guid},System.Nullable{System.Guid})
+  commentId: M:Domain.Entities.Examiner.Question.#ctor(System.String,System.Collections.Generic.List{System.String},Domain.Enums.QuestionType,System.Int32,System.Boolean,Domain.Enums.QuestionDifficulty,System.Nullable{System.Guid},System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{System.Guid},System.Nullable{System.Guid})
+  id: '#ctor(System.String,System.Collections.Generic.List{System.String},Domain.Enums.QuestionType,System.Int32,System.Boolean,Domain.Enums.QuestionDifficulty,System.Nullable{System.Guid},System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{System.Guid},System.Nullable{System.Guid})'
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: Question(string, List<string>?, QuestionType, int, bool, QuestionDifficulty, Guid?, List<Guid>?, List<Guid>?, Guid?)
+  nameWithType: Question.Question(string, List<string>?, QuestionType, int, bool, QuestionDifficulty, Guid?, List<Guid>?, List<Guid>?, Guid?)
+  fullName: Domain.Entities.Examiner.Question.Question(string, System.Collections.Generic.List<string>?, Domain.Enums.QuestionType, int, bool, Domain.Enums.QuestionDifficulty, System.Guid?, System.Collections.Generic.List<System.Guid>?, System.Collections.Generic.List<System.Guid>?, System.Guid?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 88
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public Question(string questionText, List<string>? variants, QuestionType questionType, int mark, bool requireManualReview, QuestionDifficulty difficulty, Guid? language = null, List<Guid>? tags = null, List<Guid>? sources = null, Guid? category = null)
+    parameters:
+    - id: questionText
+      type: System.String
+    - id: variants
+      type: System.Collections.Generic.List{System.String}
+    - id: questionType
+      type: Domain.Enums.QuestionType
+    - id: mark
+      type: System.Int32
+    - id: requireManualReview
+      type: System.Boolean
+    - id: difficulty
+      type: Domain.Enums.QuestionDifficulty
+    - id: language
+      type: System.Nullable{System.Guid}
+    - id: tags
+      type: System.Collections.Generic.List{System.Guid}
+    - id: sources
+      type: System.Collections.Generic.List{System.Guid}
+    - id: category
+      type: System.Nullable{System.Guid}
+    content.vb: Public Sub New(questionText As String, variants As List(Of String), questionType As QuestionType, mark As Integer, requireManualReview As Boolean, difficulty As QuestionDifficulty, language As Guid? = Nothing, tags As List(Of Guid) = Nothing, sources As List(Of Guid) = Nothing, category As Guid? = Nothing)
+  overload: Domain.Entities.Examiner.Question.#ctor*
+  nameWithType.vb: Question.New(String, List(Of String), QuestionType, Integer, Boolean, QuestionDifficulty, Guid?, List(Of Guid), List(Of Guid), Guid?)
+  fullName.vb: Domain.Entities.Examiner.Question.New(String, System.Collections.Generic.List(Of String), Domain.Enums.QuestionType, Integer, Boolean, Domain.Enums.QuestionDifficulty, System.Guid?, System.Collections.Generic.List(Of System.Guid), System.Collections.Generic.List(Of System.Guid), System.Guid?)
+  name.vb: New(String, List(Of String), QuestionType, Integer, Boolean, QuestionDifficulty, Guid?, List(Of Guid), List(Of Guid), Guid?)
+- uid: Domain.Entities.Examiner.Question.CreateMultipleChoiceQuestion(Domain.Entities.Examiner.MultipleChoiseQuestion)
+  commentId: M:Domain.Entities.Examiner.Question.CreateMultipleChoiceQuestion(Domain.Entities.Examiner.MultipleChoiseQuestion)
+  id: CreateMultipleChoiceQuestion(Domain.Entities.Examiner.MultipleChoiseQuestion)
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: CreateMultipleChoiceQuestion(MultipleChoiseQuestion)
+  nameWithType: Question.CreateMultipleChoiceQuestion(MultipleChoiseQuestion)
+  fullName: Domain.Entities.Examiner.Question.CreateMultipleChoiceQuestion(Domain.Entities.Examiner.MultipleChoiseQuestion)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CreateMultipleChoiceQuestion
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 106
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public void CreateMultipleChoiceQuestion(MultipleChoiseQuestion multipleChoiseQuestion)
+    parameters:
+    - id: multipleChoiseQuestion
+      type: Domain.Entities.Examiner.MultipleChoiseQuestion
+    content.vb: Public Sub CreateMultipleChoiceQuestion(multipleChoiseQuestion As MultipleChoiseQuestion)
+  overload: Domain.Entities.Examiner.Question.CreateMultipleChoiceQuestion*
+- uid: Domain.Entities.Examiner.Question.CreateTrueAndFalse(Domain.Entities.Examiner.TrueFalseQuestion)
+  commentId: M:Domain.Entities.Examiner.Question.CreateTrueAndFalse(Domain.Entities.Examiner.TrueFalseQuestion)
+  id: CreateTrueAndFalse(Domain.Entities.Examiner.TrueFalseQuestion)
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: CreateTrueAndFalse(TrueFalseQuestion)
+  nameWithType: Question.CreateTrueAndFalse(TrueFalseQuestion)
+  fullName: Domain.Entities.Examiner.Question.CreateTrueAndFalse(Domain.Entities.Examiner.TrueFalseQuestion)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CreateTrueAndFalse
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 112
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public void CreateTrueAndFalse(TrueFalseQuestion trueFalseQuestion)
+    parameters:
+    - id: trueFalseQuestion
+      type: Domain.Entities.Examiner.TrueFalseQuestion
+    content.vb: Public Sub CreateTrueAndFalse(trueFalseQuestion As TrueFalseQuestion)
+  overload: Domain.Entities.Examiner.Question.CreateTrueAndFalse*
+- uid: Domain.Entities.Examiner.Question.CreateShortAnswer(System.String,System.Collections.Generic.List{System.String},System.String,System.String)
+  commentId: M:Domain.Entities.Examiner.Question.CreateShortAnswer(System.String,System.Collections.Generic.List{System.String},System.String,System.String)
+  id: CreateShortAnswer(System.String,System.Collections.Generic.List{System.String},System.String,System.String)
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: CreateShortAnswer(string, List<string>?, string?, string?)
+  nameWithType: Question.CreateShortAnswer(string, List<string>?, string?, string?)
+  fullName: Domain.Entities.Examiner.Question.CreateShortAnswer(string, System.Collections.Generic.List<string>?, string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CreateShortAnswer
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 118
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public void CreateShortAnswer(string correctAnswer, List<string>? possibleAnswers, string? wrongAnswerFeedBack, string? correctAnswerFeedBack)
+    parameters:
+    - id: correctAnswer
+      type: System.String
+    - id: possibleAnswers
+      type: System.Collections.Generic.List{System.String}
+    - id: wrongAnswerFeedBack
+      type: System.String
+    - id: correctAnswerFeedBack
+      type: System.String
+    content.vb: Public Sub CreateShortAnswer(correctAnswer As String, possibleAnswers As List(Of String), wrongAnswerFeedBack As String, correctAnswerFeedBack As String)
+  overload: Domain.Entities.Examiner.Question.CreateShortAnswer*
+  nameWithType.vb: Question.CreateShortAnswer(String, List(Of String), String, String)
+  fullName.vb: Domain.Entities.Examiner.Question.CreateShortAnswer(String, System.Collections.Generic.List(Of String), String, String)
+  name.vb: CreateShortAnswer(String, List(Of String), String, String)
+- uid: Domain.Entities.Examiner.Question.CreateLongAnswer(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)
+  commentId: M:Domain.Entities.Examiner.Question.CreateLongAnswer(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)
+  id: CreateLongAnswer(System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: CreateLongAnswer(int?, int?, string, string?)
+  nameWithType: Question.CreateLongAnswer(int?, int?, string, string?)
+  fullName: Domain.Entities.Examiner.Question.CreateLongAnswer(int?, int?, string, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CreateLongAnswer
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 125
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public void CreateLongAnswer(int? maximinWords, int? minimalWords, string answer, string? feedback)
+    parameters:
+    - id: maximinWords
+      type: System.Nullable{System.Int32}
+    - id: minimalWords
+      type: System.Nullable{System.Int32}
+    - id: answer
+      type: System.String
+    - id: feedback
+      type: System.String
+    content.vb: Public Sub CreateLongAnswer(maximinWords As Integer?, minimalWords As Integer?, answer As String, feedback As String)
+  overload: Domain.Entities.Examiner.Question.CreateLongAnswer*
+  nameWithType.vb: Question.CreateLongAnswer(Integer?, Integer?, String, String)
+  fullName.vb: Domain.Entities.Examiner.Question.CreateLongAnswer(Integer?, Integer?, String, String)
+  name.vb: CreateLongAnswer(Integer?, Integer?, String, String)
+- uid: Domain.Entities.Examiner.Question.CreateReordering(System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.ReorderingQuestion})
+  commentId: M:Domain.Entities.Examiner.Question.CreateReordering(System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.ReorderingQuestion})
+  id: CreateReordering(System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.ReorderingQuestion})
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: CreateReordering(IEnumerable<ReorderingQuestion>)
+  nameWithType: Question.CreateReordering(IEnumerable<ReorderingQuestion>)
+  fullName: Domain.Entities.Examiner.Question.CreateReordering(System.Collections.Generic.IEnumerable<Domain.Entities.Examiner.ReorderingQuestion>)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CreateReordering
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 132
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public void CreateReordering(IEnumerable<ReorderingQuestion> reorderingQuestions)
+    parameters:
+    - id: reorderingQuestions
+      type: System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.ReorderingQuestion}
+    content.vb: Public Sub CreateReordering(reorderingQuestions As IEnumerable(Of ReorderingQuestion))
+  overload: Domain.Entities.Examiner.Question.CreateReordering*
+  nameWithType.vb: Question.CreateReordering(IEnumerable(Of ReorderingQuestion))
+  fullName.vb: Domain.Entities.Examiner.Question.CreateReordering(System.Collections.Generic.IEnumerable(Of Domain.Entities.Examiner.ReorderingQuestion))
+  name.vb: CreateReordering(IEnumerable(Of ReorderingQuestion))
+- uid: Domain.Entities.Examiner.Question.UpdateBasicQueastion(System.String,System.Collections.Generic.List{System.String},System.Int32,System.Boolean,System.Collections.Generic.List{System.String},System.Int16)
+  commentId: M:Domain.Entities.Examiner.Question.UpdateBasicQueastion(System.String,System.Collections.Generic.List{System.String},System.Int32,System.Boolean,System.Collections.Generic.List{System.String},System.Int16)
+  id: UpdateBasicQueastion(System.String,System.Collections.Generic.List{System.String},System.Int32,System.Boolean,System.Collections.Generic.List{System.String},System.Int16)
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: UpdateBasicQueastion(string, List<string>?, int, bool, List<string>, short)
+  nameWithType: Question.UpdateBasicQueastion(string, List<string>?, int, bool, List<string>, short)
+  fullName: Domain.Entities.Examiner.Question.UpdateBasicQueastion(string, System.Collections.Generic.List<string>?, int, bool, System.Collections.Generic.List<string>, short)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateBasicQueastion
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 139
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public void UpdateBasicQueastion(string questionText, List<string>? variants, int mark, bool requireManualReview, List<string> tags, short difficultyIndex)
+    parameters:
+    - id: questionText
+      type: System.String
+    - id: variants
+      type: System.Collections.Generic.List{System.String}
+    - id: mark
+      type: System.Int32
+    - id: requireManualReview
+      type: System.Boolean
+    - id: tags
+      type: System.Collections.Generic.List{System.String}
+    - id: difficultyIndex
+      type: System.Int16
+    content.vb: Public Sub UpdateBasicQueastion(questionText As String, variants As List(Of String), mark As Integer, requireManualReview As Boolean, tags As List(Of String), difficultyIndex As Short)
+  overload: Domain.Entities.Examiner.Question.UpdateBasicQueastion*
+  nameWithType.vb: Question.UpdateBasicQueastion(String, List(Of String), Integer, Boolean, List(Of String), Short)
+  fullName.vb: Domain.Entities.Examiner.Question.UpdateBasicQueastion(String, System.Collections.Generic.List(Of String), Integer, Boolean, System.Collections.Generic.List(Of String), Short)
+  name.vb: UpdateBasicQueastion(String, List(Of String), Integer, Boolean, List(Of String), Short)
+- uid: Domain.Entities.Examiner.Question.RemoveTag(System.Guid)
+  commentId: M:Domain.Entities.Examiner.Question.RemoveTag(System.Guid)
+  id: RemoveTag(System.Guid)
+  parent: Domain.Entities.Examiner.Question
+  langs:
+  - csharp
+  - vb
+  name: RemoveTag(Guid)
+  nameWithType: Question.RemoveTag(Guid)
+  fullName: Domain.Entities.Examiner.Question.RemoveTag(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/Question.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RemoveTag
+    path: src/Domain/Entities/Examiner/Question.cs
+    startLine: 169
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public void RemoveTag(Guid tagId)
+    parameters:
+    - id: tagId
+      type: System.Guid
+    content.vb: Public Sub RemoveTag(tagId As Guid)
+  overload: Domain.Entities.Examiner.Question.RemoveTag*
+references:
+- uid: Domain.Entities.Examiner
+  commentId: N:Domain.Entities.Examiner
+  href: Domain.html
+  name: Domain.Entities.Examiner
+  nameWithType: Domain.Entities.Examiner
+  fullName: Domain.Entities.Examiner
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Examiner
+    name: Examiner
+    href: Domain.Entities.Examiner.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Examiner
+    name: Examiner
+    href: Domain.Entities.Examiner.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Domain.Auditing.EntityAudit
+  commentId: T:Domain.Auditing.EntityAudit
+  parent: Domain.Auditing
+  href: Domain.Auditing.EntityAudit.html
+  name: EntityAudit
+  nameWithType: EntityAudit
+  fullName: Domain.Auditing.EntityAudit
+- uid: Domain.Auditing.EntityAudit.LastModifiedDate
+  commentId: P:Domain.Auditing.EntityAudit.LastModifiedDate
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastModifiedDate
+  name: LastModifiedDate
+  nameWithType: EntityAudit.LastModifiedDate
+  fullName: Domain.Auditing.EntityAudit.LastModifiedDate
+- uid: Domain.Auditing.EntityAudit.LastArchiveDate
+  commentId: P:Domain.Auditing.EntityAudit.LastArchiveDate
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastArchiveDate
+  name: LastArchiveDate
+  nameWithType: EntityAudit.LastArchiveDate
+  fullName: Domain.Auditing.EntityAudit.LastArchiveDate
+- uid: Domain.Auditing.EntityAudit.CreationDate
+  commentId: P:Domain.Auditing.EntityAudit.CreationDate
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_CreationDate
+  name: CreationDate
+  nameWithType: EntityAudit.CreationDate
+  fullName: Domain.Auditing.EntityAudit.CreationDate
+- uid: Domain.Auditing.EntityAudit.IsArchived
+  commentId: P:Domain.Auditing.EntityAudit.IsArchived
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_IsArchived
+  name: IsArchived
+  nameWithType: EntityAudit.IsArchived
+  fullName: Domain.Auditing.EntityAudit.IsArchived
+- uid: Domain.Auditing.EntityAudit.VersionNumber
+  commentId: P:Domain.Auditing.EntityAudit.VersionNumber
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_VersionNumber
+  name: VersionNumber
+  nameWithType: EntityAudit.VersionNumber
+  fullName: Domain.Auditing.EntityAudit.VersionNumber
+- uid: Domain.Auditing.EntityAudit.Created
+  commentId: M:Domain.Auditing.EntityAudit.Created
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Created
+  name: Created()
+  nameWithType: EntityAudit.Created()
+  fullName: Domain.Auditing.EntityAudit.Created()
+  spec.csharp:
+  - uid: Domain.Auditing.EntityAudit.Created
+    name: Created
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Created
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Auditing.EntityAudit.Created
+    name: Created
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Created
+  - name: (
+  - name: )
+- uid: Domain.Auditing.EntityAudit.Updated
+  commentId: M:Domain.Auditing.EntityAudit.Updated
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Updated
+  name: Updated()
+  nameWithType: EntityAudit.Updated()
+  fullName: Domain.Auditing.EntityAudit.Updated()
+  spec.csharp:
+  - uid: Domain.Auditing.EntityAudit.Updated
+    name: Updated
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Updated
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Auditing.EntityAudit.Updated
+    name: Updated
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Updated
+  - name: (
+  - name: )
+- uid: Domain.Auditing.EntityAudit.Archive
+  commentId: M:Domain.Auditing.EntityAudit.Archive
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Archive
+  name: Archive()
+  nameWithType: EntityAudit.Archive()
+  fullName: Domain.Auditing.EntityAudit.Archive()
+  spec.csharp:
+  - uid: Domain.Auditing.EntityAudit.Archive
+    name: Archive
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Archive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Auditing.EntityAudit.Archive
+    name: Archive
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_Archive
+  - name: (
+  - name: )
+- uid: Domain.Auditing.EntityAudit.UnArchive
+  commentId: M:Domain.Auditing.EntityAudit.UnArchive
+  parent: Domain.Auditing.EntityAudit
+  href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_UnArchive
+  name: UnArchive()
+  nameWithType: EntityAudit.UnArchive()
+  fullName: Domain.Auditing.EntityAudit.UnArchive()
+  spec.csharp:
+  - uid: Domain.Auditing.EntityAudit.UnArchive
+    name: UnArchive
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_UnArchive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Domain.Auditing.EntityAudit.UnArchive
+    name: UnArchive
+    href: Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_UnArchive
+  - name: (
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Auditing
+  commentId: N:Domain.Auditing
+  href: Domain.html
+  name: Domain.Auditing
+  nameWithType: Domain.Auditing
+  fullName: Domain.Auditing
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Entities.Examiner.Question.Id*
+  commentId: Overload:Domain.Entities.Examiner.Question.Id
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_Id
+  name: Id
+  nameWithType: Question.Id
+  fullName: Domain.Entities.Examiner.Question.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Entities.Examiner.Question.QuestionText*
+  commentId: Overload:Domain.Entities.Examiner.Question.QuestionText
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_QuestionText
+  name: QuestionText
+  nameWithType: Question.QuestionText
+  fullName: Domain.Entities.Examiner.Question.QuestionText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Domain.Entities.Examiner.Question.Variants*
+  commentId: Overload:Domain.Entities.Examiner.Question.Variants
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_Variants
+  name: Variants
+  nameWithType: Question.Variants
+  fullName: Domain.Entities.Examiner.Question.Variants
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Domain.Entities.Examiner.Question.QuestionType*
+  commentId: Overload:Domain.Entities.Examiner.Question.QuestionType
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_QuestionType
+  name: QuestionType
+  nameWithType: Question.QuestionType
+  fullName: Domain.Entities.Examiner.Question.QuestionType
+- uid: Domain.Enums.QuestionType
+  commentId: T:Domain.Enums.QuestionType
+  parent: Domain.Enums
+  href: Domain.Enums.QuestionType.html
+  name: QuestionType
+  nameWithType: QuestionType
+  fullName: Domain.Enums.QuestionType
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Domain.Entities.Examiner.Question.Mark*
+  commentId: Overload:Domain.Entities.Examiner.Question.Mark
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_Mark
+  name: Mark
+  nameWithType: Question.Mark
+  fullName: Domain.Entities.Examiner.Question.Mark
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Domain.Entities.Examiner.Question.RequireManualReview*
+  commentId: Overload:Domain.Entities.Examiner.Question.RequireManualReview
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_RequireManualReview
+  name: RequireManualReview
+  nameWithType: Question.RequireManualReview
+  fullName: Domain.Entities.Examiner.Question.RequireManualReview
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Domain.Entities.Examiner.Question.DifficultyIndex*
+  commentId: Overload:Domain.Entities.Examiner.Question.DifficultyIndex
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_DifficultyIndex
+  name: DifficultyIndex
+  nameWithType: Question.DifficultyIndex
+  fullName: Domain.Entities.Examiner.Question.DifficultyIndex
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: Domain.Entities.Examiner.Question.HasAttachments*
+  commentId: Overload:Domain.Entities.Examiner.Question.HasAttachments
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_HasAttachments
+  name: HasAttachments
+  nameWithType: Question.HasAttachments
+  fullName: Domain.Entities.Examiner.Question.HasAttachments
+- uid: Domain.Entities.Examiner.Question.ImagesFilePaths*
+  commentId: Overload:Domain.Entities.Examiner.Question.ImagesFilePaths
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_ImagesFilePaths
+  name: ImagesFilePaths
+  nameWithType: Question.ImagesFilePaths
+  fullName: Domain.Entities.Examiner.Question.ImagesFilePaths
+- uid: Domain.Entities.Examiner.Question.MultipleChoiceQuestion*
+  commentId: Overload:Domain.Entities.Examiner.Question.MultipleChoiceQuestion
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_MultipleChoiceQuestion
+  name: MultipleChoiceQuestion
+  nameWithType: Question.MultipleChoiceQuestion
+  fullName: Domain.Entities.Examiner.Question.MultipleChoiceQuestion
+- uid: Domain.Entities.Examiner.MultipleChoiseQuestion
+  commentId: T:Domain.Entities.Examiner.MultipleChoiseQuestion
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.MultipleChoiseQuestion.html
+  name: MultipleChoiseQuestion
+  nameWithType: MultipleChoiseQuestion
+  fullName: Domain.Entities.Examiner.MultipleChoiseQuestion
+- uid: Domain.Entities.Examiner.Question.TrueFalseQuestion*
+  commentId: Overload:Domain.Entities.Examiner.Question.TrueFalseQuestion
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_TrueFalseQuestion
+  name: TrueFalseQuestion
+  nameWithType: Question.TrueFalseQuestion
+  fullName: Domain.Entities.Examiner.Question.TrueFalseQuestion
+- uid: Domain.Entities.Examiner.TrueFalseQuestion
+  commentId: T:Domain.Entities.Examiner.TrueFalseQuestion
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.TrueFalseQuestion.html
+  name: TrueFalseQuestion
+  nameWithType: TrueFalseQuestion
+  fullName: Domain.Entities.Examiner.TrueFalseQuestion
+- uid: Domain.Entities.Examiner.Question.ShortAnswerQuestion*
+  commentId: Overload:Domain.Entities.Examiner.Question.ShortAnswerQuestion
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_ShortAnswerQuestion
+  name: ShortAnswerQuestion
+  nameWithType: Question.ShortAnswerQuestion
+  fullName: Domain.Entities.Examiner.Question.ShortAnswerQuestion
+- uid: Domain.Entities.Examiner.ShortAnswerQuestion
+  commentId: T:Domain.Entities.Examiner.ShortAnswerQuestion
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.ShortAnswerQuestion.html
+  name: ShortAnswerQuestion
+  nameWithType: ShortAnswerQuestion
+  fullName: Domain.Entities.Examiner.ShortAnswerQuestion
+- uid: Domain.Entities.Examiner.Question.LongAnswerQuestion*
+  commentId: Overload:Domain.Entities.Examiner.Question.LongAnswerQuestion
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_LongAnswerQuestion
+  name: LongAnswerQuestion
+  nameWithType: Question.LongAnswerQuestion
+  fullName: Domain.Entities.Examiner.Question.LongAnswerQuestion
+- uid: Domain.Entities.Examiner.LongAnswerQuestion
+  commentId: T:Domain.Entities.Examiner.LongAnswerQuestion
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.LongAnswerQuestion.html
+  name: LongAnswerQuestion
+  nameWithType: LongAnswerQuestion
+  fullName: Domain.Entities.Examiner.LongAnswerQuestion
+- uid: Domain.Entities.Examiner.Question.ReorderingQuestions*
+  commentId: Overload:Domain.Entities.Examiner.Question.ReorderingQuestions
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_ReorderingQuestions
+  name: ReorderingQuestions
+  nameWithType: Question.ReorderingQuestions
+  fullName: Domain.Entities.Examiner.Question.ReorderingQuestions
+- uid: System.Collections.Generic.List{Domain.Entities.Examiner.ReorderingQuestion}
+  commentId: T:System.Collections.Generic.List{Domain.Entities.Examiner.ReorderingQuestion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ReorderingQuestion>
+  nameWithType: List<ReorderingQuestion>
+  fullName: System.Collections.Generic.List<Domain.Entities.Examiner.ReorderingQuestion>
+  nameWithType.vb: List(Of ReorderingQuestion)
+  fullName.vb: System.Collections.Generic.List(Of Domain.Entities.Examiner.ReorderingQuestion)
+  name.vb: List(Of ReorderingQuestion)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Domain.Entities.Examiner.ReorderingQuestion
+    name: ReorderingQuestion
+    href: Domain.Entities.Examiner.ReorderingQuestion.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Examiner.ReorderingQuestion
+    name: ReorderingQuestion
+    href: Domain.Entities.Examiner.ReorderingQuestion.html
+  - name: )
+- uid: Domain.Entities.Examiner.Question.Language*
+  commentId: Overload:Domain.Entities.Examiner.Question.Language
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_Language
+  name: Language
+  nameWithType: Question.Language
+  fullName: Domain.Entities.Examiner.Question.Language
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Domain.Entities.Examiner.Question.Tags*
+  commentId: Overload:Domain.Entities.Examiner.Question.Tags
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_Tags
+  name: Tags
+  nameWithType: Question.Tags
+  fullName: Domain.Entities.Examiner.Question.Tags
+- uid: System.Collections.Generic.List{System.Guid}
+  commentId: T:System.Collections.Generic.List{System.Guid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Guid>
+  nameWithType: List<Guid>
+  fullName: System.Collections.Generic.List<System.Guid>
+  nameWithType.vb: List(Of Guid)
+  fullName.vb: System.Collections.Generic.List(Of System.Guid)
+  name.vb: List(Of Guid)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Domain.Entities.Examiner.Question.Sources*
+  commentId: Overload:Domain.Entities.Examiner.Question.Sources
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_Sources
+  name: Sources
+  nameWithType: Question.Sources
+  fullName: Domain.Entities.Examiner.Question.Sources
+- uid: Domain.Entities.Examiner.Question.Category*
+  commentId: Overload:Domain.Entities.Examiner.Question.Category
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_Category
+  name: Category
+  nameWithType: Question.Category
+  fullName: Domain.Entities.Examiner.Question.Category
+- uid: Domain.Entities.Examiner.Question.#ctor*
+  commentId: Overload:Domain.Entities.Examiner.Question.#ctor
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question__ctor_System_String_System_Collections_Generic_List_System_String__Domain_Enums_QuestionType_System_Int32_System_Boolean_Domain_Enums_QuestionDifficulty_System_Nullable_System_Guid__System_Collections_Generic_List_System_Guid__System_Collections_Generic_List_System_Guid__System_Nullable_System_Guid__
+  name: Question
+  nameWithType: Question.Question
+  fullName: Domain.Entities.Examiner.Question.Question
+  nameWithType.vb: Question.New
+  fullName.vb: Domain.Entities.Examiner.Question.New
+  name.vb: New
+- uid: Domain.Enums.QuestionDifficulty
+  commentId: T:Domain.Enums.QuestionDifficulty
+  parent: Domain.Enums
+  href: Domain.Enums.QuestionDifficulty.html
+  name: QuestionDifficulty
+  nameWithType: QuestionDifficulty
+  fullName: Domain.Enums.QuestionDifficulty
+- uid: Domain.Entities.Examiner.Question.CreateMultipleChoiceQuestion*
+  commentId: Overload:Domain.Entities.Examiner.Question.CreateMultipleChoiceQuestion
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_CreateMultipleChoiceQuestion_Domain_Entities_Examiner_MultipleChoiseQuestion_
+  name: CreateMultipleChoiceQuestion
+  nameWithType: Question.CreateMultipleChoiceQuestion
+  fullName: Domain.Entities.Examiner.Question.CreateMultipleChoiceQuestion
+- uid: Domain.Entities.Examiner.Question.CreateTrueAndFalse*
+  commentId: Overload:Domain.Entities.Examiner.Question.CreateTrueAndFalse
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_CreateTrueAndFalse_Domain_Entities_Examiner_TrueFalseQuestion_
+  name: CreateTrueAndFalse
+  nameWithType: Question.CreateTrueAndFalse
+  fullName: Domain.Entities.Examiner.Question.CreateTrueAndFalse
+- uid: Domain.Entities.Examiner.Question.CreateShortAnswer*
+  commentId: Overload:Domain.Entities.Examiner.Question.CreateShortAnswer
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_CreateShortAnswer_System_String_System_Collections_Generic_List_System_String__System_String_System_String_
+  name: CreateShortAnswer
+  nameWithType: Question.CreateShortAnswer
+  fullName: Domain.Entities.Examiner.Question.CreateShortAnswer
+- uid: Domain.Entities.Examiner.Question.CreateLongAnswer*
+  commentId: Overload:Domain.Entities.Examiner.Question.CreateLongAnswer
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_CreateLongAnswer_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_
+  name: CreateLongAnswer
+  nameWithType: Question.CreateLongAnswer
+  fullName: Domain.Entities.Examiner.Question.CreateLongAnswer
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: Domain.Entities.Examiner.Question.CreateReordering*
+  commentId: Overload:Domain.Entities.Examiner.Question.CreateReordering
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_CreateReordering_System_Collections_Generic_IEnumerable_Domain_Entities_Examiner_ReorderingQuestion__
+  name: CreateReordering
+  nameWithType: Question.CreateReordering
+  fullName: Domain.Entities.Examiner.Question.CreateReordering
+- uid: System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.ReorderingQuestion}
+  commentId: T:System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.ReorderingQuestion}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ReorderingQuestion>
+  nameWithType: IEnumerable<ReorderingQuestion>
+  fullName: System.Collections.Generic.IEnumerable<Domain.Entities.Examiner.ReorderingQuestion>
+  nameWithType.vb: IEnumerable(Of ReorderingQuestion)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Domain.Entities.Examiner.ReorderingQuestion)
+  name.vb: IEnumerable(Of ReorderingQuestion)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.Examiner.ReorderingQuestion
+    name: ReorderingQuestion
+    href: Domain.Entities.Examiner.ReorderingQuestion.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Examiner.ReorderingQuestion
+    name: ReorderingQuestion
+    href: Domain.Entities.Examiner.ReorderingQuestion.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Domain.Entities.Examiner.Question.UpdateBasicQueastion*
+  commentId: Overload:Domain.Entities.Examiner.Question.UpdateBasicQueastion
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_UpdateBasicQueastion_System_String_System_Collections_Generic_List_System_String__System_Int32_System_Boolean_System_Collections_Generic_List_System_String__System_Int16_
+  name: UpdateBasicQueastion
+  nameWithType: Question.UpdateBasicQueastion
+  fullName: Domain.Entities.Examiner.Question.UpdateBasicQueastion
+- uid: Domain.Entities.Examiner.Question.RemoveTag*
+  commentId: Overload:Domain.Entities.Examiner.Question.RemoveTag
+  href: Domain.Entities.Examiner.Question.html#Domain_Entities_Examiner_Question_RemoveTag_System_Guid_
+  name: RemoveTag
+  nameWithType: Question.RemoveTag
+  fullName: Domain.Entities.Examiner.Question.RemoveTag

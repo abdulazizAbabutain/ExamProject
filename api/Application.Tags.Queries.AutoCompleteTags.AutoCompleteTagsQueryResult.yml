@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult
+  commentId: T:Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult
+  id: AutoCompleteTagsQueryResult
+  parent: Application.Tags.Queries.AutoCompleteTags
+  children:
+  - Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Id
+  - Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Name
+  langs:
+  - csharp
+  - vb
+  name: AutoCompleteTagsQueryResult
+  nameWithType: AutoCompleteTagsQueryResult
+  fullName: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult
+  type: Class
+  source:
+    remote:
+      path: src/Application/Tags/Queries/AutoCompleteTags/AutoCompleteTagsQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AutoCompleteTagsQueryResult
+    path: src/Application/Tags/Queries/AutoCompleteTags/AutoCompleteTagsQueryResult.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.AutoCompleteTags
+  syntax:
+    content: public class AutoCompleteTagsQueryResult
+    content.vb: Public Class AutoCompleteTagsQueryResult
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Id
+  commentId: P:Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Id
+  id: Id
+  parent: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AutoCompleteTagsQueryResult.Id
+  fullName: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Id
+  type: Property
+  source:
+    remote:
+      path: src/Application/Tags/Queries/AutoCompleteTags/AutoCompleteTagsQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Id
+    path: src/Application/Tags/Queries/AutoCompleteTags/AutoCompleteTagsQueryResult.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.AutoCompleteTags
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Id*
+- uid: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Name
+  commentId: P:Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Name
+  id: Name
+  parent: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: AutoCompleteTagsQueryResult.Name
+  fullName: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Name
+  type: Property
+  source:
+    remote:
+      path: src/Application/Tags/Queries/AutoCompleteTags/AutoCompleteTagsQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Name
+    path: src/Application/Tags/Queries/AutoCompleteTags/AutoCompleteTagsQueryResult.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.AutoCompleteTags
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Name*
+references:
+- uid: Application.Tags.Queries.AutoCompleteTags
+  commentId: N:Application.Tags.Queries.AutoCompleteTags
+  href: Application.html
+  name: Application.Tags.Queries.AutoCompleteTags
+  nameWithType: Application.Tags.Queries.AutoCompleteTags
+  fullName: Application.Tags.Queries.AutoCompleteTags
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.AutoCompleteTags
+    name: AutoCompleteTags
+    href: Application.Tags.Queries.AutoCompleteTags.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.AutoCompleteTags
+    name: AutoCompleteTags
+    href: Application.Tags.Queries.AutoCompleteTags.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Id*
+  commentId: Overload:Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Id
+  href: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.html#Application_Tags_Queries_AutoCompleteTags_AutoCompleteTagsQueryResult_Id
+  name: Id
+  nameWithType: AutoCompleteTagsQueryResult.Id
+  fullName: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Name*
+  commentId: Overload:Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Name
+  href: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.html#Application_Tags_Queries_AutoCompleteTags_AutoCompleteTagsQueryResult_Name
+  name: Name
+  nameWithType: AutoCompleteTagsQueryResult.Name
+  fullName: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

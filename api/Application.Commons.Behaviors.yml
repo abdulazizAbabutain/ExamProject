@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Behaviors
+  commentId: N:Application.Commons.Behaviors
+  id: Application.Commons.Behaviors
+  children:
+  - Application.Commons.Behaviors.LoggingBehavior`2
+  - Application.Commons.Behaviors.MetricsBehavior`2
+  - Application.Commons.Behaviors.ValidationBehavior`2
+  langs:
+  - csharp
+  - vb
+  name: Application.Commons.Behaviors
+  nameWithType: Application.Commons.Behaviors
+  fullName: Application.Commons.Behaviors
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Commons.Behaviors.LoggingBehavior`2
+  commentId: T:Application.Commons.Behaviors.LoggingBehavior`2
+  href: Application.Commons.Behaviors.LoggingBehavior-2.html
+  name: LoggingBehavior<TRequest, TResponse>
+  nameWithType: LoggingBehavior<TRequest, TResponse>
+  fullName: Application.Commons.Behaviors.LoggingBehavior<TRequest, TResponse>
+  nameWithType.vb: LoggingBehavior(Of TRequest, TResponse)
+  fullName.vb: Application.Commons.Behaviors.LoggingBehavior(Of TRequest, TResponse)
+  name.vb: LoggingBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Application.Commons.Behaviors.LoggingBehavior`2
+    name: LoggingBehavior
+    href: Application.Commons.Behaviors.LoggingBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Behaviors.LoggingBehavior`2
+    name: LoggingBehavior
+    href: Application.Commons.Behaviors.LoggingBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Application.Commons.Behaviors.MetricsBehavior`2
+  commentId: T:Application.Commons.Behaviors.MetricsBehavior`2
+  href: Application.Commons.Behaviors.MetricsBehavior-2.html
+  name: MetricsBehavior<TRequest, TResponse>
+  nameWithType: MetricsBehavior<TRequest, TResponse>
+  fullName: Application.Commons.Behaviors.MetricsBehavior<TRequest, TResponse>
+  nameWithType.vb: MetricsBehavior(Of TRequest, TResponse)
+  fullName.vb: Application.Commons.Behaviors.MetricsBehavior(Of TRequest, TResponse)
+  name.vb: MetricsBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Application.Commons.Behaviors.MetricsBehavior`2
+    name: MetricsBehavior
+    href: Application.Commons.Behaviors.MetricsBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Behaviors.MetricsBehavior`2
+    name: MetricsBehavior
+    href: Application.Commons.Behaviors.MetricsBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: Application.Commons.Behaviors.ValidationBehavior`2
+  commentId: T:Application.Commons.Behaviors.ValidationBehavior`2
+  href: Application.Commons.Behaviors.ValidationBehavior-2.html
+  name: ValidationBehavior<TRequest, TResponse>
+  nameWithType: ValidationBehavior<TRequest, TResponse>
+  fullName: Application.Commons.Behaviors.ValidationBehavior<TRequest, TResponse>
+  nameWithType.vb: ValidationBehavior(Of TRequest, TResponse)
+  fullName.vb: Application.Commons.Behaviors.ValidationBehavior(Of TRequest, TResponse)
+  name.vb: ValidationBehavior(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: Application.Commons.Behaviors.ValidationBehavior`2
+    name: ValidationBehavior
+    href: Application.Commons.Behaviors.ValidationBehavior-2.html
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Behaviors.ValidationBehavior`2
+    name: ValidationBehavior
+    href: Application.Commons.Behaviors.ValidationBehavior-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )

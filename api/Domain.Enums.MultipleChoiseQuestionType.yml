@@ -1,0 +1,258 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Enums.MultipleChoiseQuestionType
+  commentId: T:Domain.Enums.MultipleChoiseQuestionType
+  id: MultipleChoiseQuestionType
+  parent: Domain.Enums
+  children:
+  - Domain.Enums.MultipleChoiseQuestionType.MuktipleChoise
+  - Domain.Enums.MultipleChoiseQuestionType.SingleChoise
+  langs:
+  - csharp
+  - vb
+  name: MultipleChoiseQuestionType
+  nameWithType: MultipleChoiseQuestionType
+  fullName: Domain.Enums.MultipleChoiseQuestionType
+  type: Enum
+  source:
+    remote:
+      path: src/Domain/Enums/MultipleChoiseQuestionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: MultipleChoiseQuestionType
+    path: src/Domain/Enums/MultipleChoiseQuestionType.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: public enum MultipleChoiseQuestionType
+    content.vb: Public Enum MultipleChoiseQuestionType
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Enums.MultipleChoiseQuestionType.MuktipleChoise
+  commentId: F:Domain.Enums.MultipleChoiseQuestionType.MuktipleChoise
+  id: MuktipleChoise
+  parent: Domain.Enums.MultipleChoiseQuestionType
+  langs:
+  - csharp
+  - vb
+  name: MuktipleChoise
+  nameWithType: MultipleChoiseQuestionType.MuktipleChoise
+  fullName: Domain.Enums.MultipleChoiseQuestionType.MuktipleChoise
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Enums/MultipleChoiseQuestionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: MuktipleChoise
+    path: src/Domain/Enums/MultipleChoiseQuestionType.cs
+    startLine: 4
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: MuktipleChoise = 1
+    return:
+      type: Domain.Enums.MultipleChoiseQuestionType
+- uid: Domain.Enums.MultipleChoiseQuestionType.SingleChoise
+  commentId: F:Domain.Enums.MultipleChoiseQuestionType.SingleChoise
+  id: SingleChoise
+  parent: Domain.Enums.MultipleChoiseQuestionType
+  langs:
+  - csharp
+  - vb
+  name: SingleChoise
+  nameWithType: MultipleChoiseQuestionType.SingleChoise
+  fullName: Domain.Enums.MultipleChoiseQuestionType.SingleChoise
+  type: Field
+  source:
+    remote:
+      path: src/Domain/Enums/MultipleChoiseQuestionType.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: SingleChoise
+    path: src/Domain/Enums/MultipleChoiseQuestionType.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Enums
+  syntax:
+    content: SingleChoise = 2
+    return:
+      type: Domain.Enums.MultipleChoiseQuestionType
+references:
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Enums.MultipleChoiseQuestionType
+  commentId: T:Domain.Enums.MultipleChoiseQuestionType
+  parent: Domain.Enums
+  href: Domain.Enums.MultipleChoiseQuestionType.html
+  name: MultipleChoiseQuestionType
+  nameWithType: MultipleChoiseQuestionType
+  fullName: Domain.Enums.MultipleChoiseQuestionType

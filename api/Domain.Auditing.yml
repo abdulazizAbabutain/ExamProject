@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Auditing
+  commentId: N:Domain.Auditing
+  id: Domain.Auditing
+  children:
+  - Domain.Auditing.ApplicationLog
+  - Domain.Auditing.AuditTrail
+  - Domain.Auditing.EntityAudit
+  - Domain.Auditing.ExceptionInfo
+  - Domain.Auditing.PropertyChange
+  langs:
+  - csharp
+  - vb
+  name: Domain.Auditing
+  nameWithType: Domain.Auditing
+  fullName: Domain.Auditing
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Auditing.ApplicationLog
+  commentId: T:Domain.Auditing.ApplicationLog
+  href: Domain.Auditing.ApplicationLog.html
+  name: ApplicationLog
+  nameWithType: ApplicationLog
+  fullName: Domain.Auditing.ApplicationLog
+- uid: Domain.Auditing.AuditTrail
+  commentId: T:Domain.Auditing.AuditTrail
+  parent: Domain.Auditing
+  href: Domain.Auditing.AuditTrail.html
+  name: AuditTrail
+  nameWithType: AuditTrail
+  fullName: Domain.Auditing.AuditTrail
+- uid: Domain.Auditing.EntityAudit
+  commentId: T:Domain.Auditing.EntityAudit
+  parent: Domain.Auditing
+  href: Domain.Auditing.EntityAudit.html
+  name: EntityAudit
+  nameWithType: EntityAudit
+  fullName: Domain.Auditing.EntityAudit
+- uid: Domain.Auditing.ExceptionInfo
+  commentId: T:Domain.Auditing.ExceptionInfo
+  parent: Domain.Auditing
+  href: Domain.Auditing.ExceptionInfo.html
+  name: ExceptionInfo
+  nameWithType: ExceptionInfo
+  fullName: Domain.Auditing.ExceptionInfo
+- uid: Domain.Auditing.PropertyChange
+  commentId: T:Domain.Auditing.PropertyChange
+  href: Domain.Auditing.PropertyChange.html
+  name: PropertyChange
+  nameWithType: PropertyChange
+  fullName: Domain.Auditing.PropertyChange
+- uid: Domain.Auditing
+  commentId: N:Domain.Auditing
+  href: Domain.html
+  name: Domain.Auditing
+  nameWithType: Domain.Auditing
+  fullName: Domain.Auditing
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html

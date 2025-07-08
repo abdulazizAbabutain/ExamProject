@@ -1,0 +1,446 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  id: LongAnswerQuestionCommand
+  parent: Application.Questions.Commands.AddQuestion.CommandModels
+  children:
+  - Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.Answer
+  - Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.GeneralFeedback
+  - Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MaximinWords
+  - Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MinimanWords
+  langs:
+  - csharp
+  - vb
+  name: LongAnswerQuestionCommand
+  nameWithType: LongAnswerQuestionCommand
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  type: Class
+  source:
+    remote:
+      path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: LongAnswerQuestionCommand
+    path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Questions.Commands.AddQuestion.CommandModels
+  syntax:
+    content: public class LongAnswerQuestionCommand
+    content.vb: Public Class LongAnswerQuestionCommand
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MaximinWords
+  commentId: P:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MaximinWords
+  id: MaximinWords
+  parent: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  langs:
+  - csharp
+  - vb
+  name: MaximinWords
+  nameWithType: LongAnswerQuestionCommand.MaximinWords
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MaximinWords
+  type: Property
+  source:
+    remote:
+      path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: MaximinWords
+    path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Questions.Commands.AddQuestion.CommandModels
+  syntax:
+    content: public int? MaximinWords { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property MaximinWords As Integer?
+  overload: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MaximinWords*
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MinimanWords
+  commentId: P:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MinimanWords
+  id: MinimanWords
+  parent: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  langs:
+  - csharp
+  - vb
+  name: MinimanWords
+  nameWithType: LongAnswerQuestionCommand.MinimanWords
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MinimanWords
+  type: Property
+  source:
+    remote:
+      path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: MinimanWords
+    path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Questions.Commands.AddQuestion.CommandModels
+  syntax:
+    content: public int? MinimanWords { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property MinimanWords As Integer?
+  overload: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MinimanWords*
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.Answer
+  commentId: P:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.Answer
+  id: Answer
+  parent: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  langs:
+  - csharp
+  - vb
+  name: Answer
+  nameWithType: LongAnswerQuestionCommand.Answer
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.Answer
+  type: Property
+  source:
+    remote:
+      path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Answer
+    path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Questions.Commands.AddQuestion.CommandModels
+  syntax:
+    content: public string Answer { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Answer As String
+  overload: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.Answer*
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.GeneralFeedback
+  commentId: P:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.GeneralFeedback
+  id: GeneralFeedback
+  parent: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  langs:
+  - csharp
+  - vb
+  name: GeneralFeedback
+  nameWithType: LongAnswerQuestionCommand.GeneralFeedback
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.GeneralFeedback
+  type: Property
+  source:
+    remote:
+      path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GeneralFeedback
+    path: src/Application/Questions/Commands/AddQuestion/CommandModels/LongAnswerQuestionCommand.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Questions.Commands.AddQuestion.CommandModels
+  syntax:
+    content: public string? GeneralFeedback { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property GeneralFeedback As String
+  overload: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.GeneralFeedback*
+references:
+- uid: Application.Questions.Commands.AddQuestion.CommandModels
+  commentId: N:Application.Questions.Commands.AddQuestion.CommandModels
+  href: Application.html
+  name: Application.Questions.Commands.AddQuestion.CommandModels
+  nameWithType: Application.Questions.Commands.AddQuestion.CommandModels
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion
+    name: AddQuestion
+    href: Application.Questions.Commands.AddQuestion.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion.CommandModels
+    name: CommandModels
+    href: Application.Questions.Commands.AddQuestion.CommandModels.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion
+    name: AddQuestion
+    href: Application.Questions.Commands.AddQuestion.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion.CommandModels
+    name: CommandModels
+    href: Application.Questions.Commands.AddQuestion.CommandModels.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MaximinWords*
+  commentId: Overload:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MaximinWords
+  href: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.html#Application_Questions_Commands_AddQuestion_CommandModels_LongAnswerQuestionCommand_MaximinWords
+  name: MaximinWords
+  nameWithType: LongAnswerQuestionCommand.MaximinWords
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MaximinWords
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MinimanWords*
+  commentId: Overload:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MinimanWords
+  href: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.html#Application_Questions_Commands_AddQuestion_CommandModels_LongAnswerQuestionCommand_MinimanWords
+  name: MinimanWords
+  nameWithType: LongAnswerQuestionCommand.MinimanWords
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.MinimanWords
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.Answer*
+  commentId: Overload:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.Answer
+  href: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.html#Application_Questions_Commands_AddQuestion_CommandModels_LongAnswerQuestionCommand_Answer
+  name: Answer
+  nameWithType: LongAnswerQuestionCommand.Answer
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.Answer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.GeneralFeedback*
+  commentId: Overload:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.GeneralFeedback
+  href: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.html#Application_Questions_Commands_AddQuestion_CommandModels_LongAnswerQuestionCommand_GeneralFeedback
+  name: GeneralFeedback
+  nameWithType: LongAnswerQuestionCommand.GeneralFeedback
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.GeneralFeedback

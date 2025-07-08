@@ -1,0 +1,3880 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Audits.AuditTrailService
+  commentId: T:Infrastructure.Audits.AuditTrailService
+  id: AuditTrailService
+  parent: Infrastructure.Audits
+  children:
+  - Infrastructure.Audits.AuditTrailService.#ctor(System.String)
+  - Infrastructure.Audits.AuditTrailService.AddEntitiesBulk(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  - Infrastructure.Audits.AuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  - Infrastructure.Audits.AuditTrailService.Count(System.Guid)
+  - Infrastructure.Audits.AuditTrailService.CountDeletedEntity
+  - Infrastructure.Audits.AuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  - Infrastructure.Audits.AuditTrailService.EnqueueAudit(Domain.Auditing.AuditTrail)
+  - Infrastructure.Audits.AuditTrailService.GetDeletedEntities(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  - Infrastructure.Audits.AuditTrailService.GetEntityTrail(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32,System.Guid)
+  - Infrastructure.Audits.AuditTrailService.GetEntityTrailDetails(System.Guid,Domain.Enums.EntityName,System.Guid)
+  - Infrastructure.Audits.AuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+  - Infrastructure.Audits.AuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+  langs:
+  - csharp
+  - vb
+  name: AuditTrailService
+  nameWithType: AuditTrailService
+  fullName: Infrastructure.Audits.AuditTrailService
+  type: Class
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AuditTrailService
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 8
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  syntax:
+    content: 'public class AuditTrailService : BaseRepository<AuditTrail>, IBaseRepository<AuditTrail>, IDisposable, IAuditTrailService'
+    content.vb: Public Class AuditTrailService Inherits BaseRepository(Of AuditTrail) Implements IBaseRepository(Of AuditTrail), IDisposable, IAuditTrailService
+  inheritance:
+  - System.Object
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  implements:
+  - Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Auditing.AuditTrail}
+  - System.IDisposable
+  - Application.Commons.Services.IAuditTrailService
+  inheritedMembers:
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}._db
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}._collection
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}._collectionName
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(Domain.Auditing.AuditTrail)
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(Domain.Auditing.AuditTrail)
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteById(System.Guid)
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteAll
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetById(System.Guid)
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAllAsync(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Int32,System.Int32)
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetCollection
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Count
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountBy(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountAsync
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  - Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Dispose
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Infrastructure.Audits.AuditTrailService.#ctor(System.String)
+  commentId: M:Infrastructure.Audits.AuditTrailService.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: AuditTrailService(string)
+  nameWithType: AuditTrailService.AuditTrailService(string)
+  fullName: Infrastructure.Audits.AuditTrailService.AuditTrailService(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 12
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  syntax:
+    content: public AuditTrailService(string databasePath)
+    parameters:
+    - id: databasePath
+      type: System.String
+    content.vb: Public Sub New(databasePath As String)
+  overload: Infrastructure.Audits.AuditTrailService.#ctor*
+  nameWithType.vb: AuditTrailService.New(String)
+  fullName.vb: Infrastructure.Audits.AuditTrailService.New(String)
+  name.vb: New(String)
+- uid: Infrastructure.Audits.AuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  commentId: M:Infrastructure.Audits.AuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  id: AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: AddNewEntity<T>(EntityName, Guid, ActionBy, T, int, string?)
+  nameWithType: AuditTrailService.AddNewEntity<T>(EntityName, Guid, ActionBy, T, int, string?)
+  fullName: Infrastructure.Audits.AuditTrailService.AddNewEntity<T>(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionBy, T, int, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddNewEntity
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 19
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  example: []
+  syntax:
+    content: public void AddNewEntity<T>(EntityName entityName, Guid entityId, ActionBy actionBy, T entity, int versionNumber, string? comment = null)
+    parameters:
+    - id: entityName
+      type: Domain.Enums.EntityName
+    - id: entityId
+      type: System.Guid
+    - id: actionBy
+      type: Domain.Enums.ActionBy
+    - id: entity
+      type: '{T}'
+    - id: versionNumber
+      type: System.Int32
+    - id: comment
+      type: System.String
+    typeParameters:
+    - id: T
+    content.vb: Public Sub AddNewEntity(Of T)(entityName As EntityName, entityId As Guid, actionBy As ActionBy, entity As T, versionNumber As Integer, comment As String = Nothing)
+  overload: Infrastructure.Audits.AuditTrailService.AddNewEntity*
+  implements:
+  - Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,{T},System.Int32,System.String)
+  nameWithType.vb: AuditTrailService.AddNewEntity(Of T)(EntityName, Guid, ActionBy, T, Integer, String)
+  fullName.vb: Infrastructure.Audits.AuditTrailService.AddNewEntity(Of T)(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionBy, T, Integer, String)
+  name.vb: AddNewEntity(Of T)(EntityName, Guid, ActionBy, T, Integer, String)
+- uid: Infrastructure.Audits.AuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+  commentId: M:Infrastructure.Audits.AuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+  id: UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: UpdateEntity<T>(EntityName, Guid, ActionType, ActionBy, T, T, int, string?)
+  nameWithType: AuditTrailService.UpdateEntity<T>(EntityName, Guid, ActionType, ActionBy, T, T, int, string?)
+  fullName: Infrastructure.Audits.AuditTrailService.UpdateEntity<T>(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, T, int, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateEntity
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 26
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  example: []
+  syntax:
+    content: public void UpdateEntity<T>(EntityName entityName, Guid entityId, ActionType actionType, ActionBy actionBy, T oldEntity, T newEntity, int versionNumber, string? comment = null)
+    parameters:
+    - id: entityName
+      type: Domain.Enums.EntityName
+    - id: entityId
+      type: System.Guid
+    - id: actionType
+      type: Domain.Enums.ActionType
+    - id: actionBy
+      type: Domain.Enums.ActionBy
+    - id: oldEntity
+      type: '{T}'
+    - id: newEntity
+      type: '{T}'
+    - id: versionNumber
+      type: System.Int32
+    - id: comment
+      type: System.String
+    typeParameters:
+    - id: T
+    content.vb: Public Sub UpdateEntity(Of T)(entityName As EntityName, entityId As Guid, actionType As ActionType, actionBy As ActionBy, oldEntity As T, newEntity As T, versionNumber As Integer, comment As String = Nothing)
+  overload: Infrastructure.Audits.AuditTrailService.UpdateEntity*
+  implements:
+  - Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,{T},{T},System.Int32,System.String)
+  nameWithType.vb: AuditTrailService.UpdateEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, T, Integer, String)
+  fullName.vb: Infrastructure.Audits.AuditTrailService.UpdateEntity(Of T)(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, T, Integer, String)
+  name.vb: UpdateEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, T, Integer, String)
+- uid: Infrastructure.Audits.AuditTrailService.AddEntitiesBulk(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  commentId: M:Infrastructure.Audits.AuditTrailService.AddEntitiesBulk(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  id: AddEntitiesBulk(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: AddEntitiesBulk(IEnumerable<AuditTrail>)
+  nameWithType: AuditTrailService.AddEntitiesBulk(IEnumerable<AuditTrail>)
+  fullName: Infrastructure.Audits.AuditTrailService.AddEntitiesBulk(System.Collections.Generic.IEnumerable<Domain.Auditing.AuditTrail>)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddEntitiesBulk
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 33
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  syntax:
+    content: public void AddEntitiesBulk(IEnumerable<AuditTrail> auditTrails)
+    parameters:
+    - id: auditTrails
+      type: System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail}
+    content.vb: Public Sub AddEntitiesBulk(auditTrails As IEnumerable(Of AuditTrail))
+  overload: Infrastructure.Audits.AuditTrailService.AddEntitiesBulk*
+  nameWithType.vb: AuditTrailService.AddEntitiesBulk(IEnumerable(Of AuditTrail))
+  fullName.vb: Infrastructure.Audits.AuditTrailService.AddEntitiesBulk(System.Collections.Generic.IEnumerable(Of Domain.Auditing.AuditTrail))
+  name.vb: AddEntitiesBulk(IEnumerable(Of AuditTrail))
+- uid: Infrastructure.Audits.AuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  commentId: M:Infrastructure.Audits.AuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  id: DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: DeleteEntity<T>(EntityName, Guid, ActionType, ActionBy, T, int, string?)
+  nameWithType: AuditTrailService.DeleteEntity<T>(EntityName, Guid, ActionType, ActionBy, T, int, string?)
+  fullName: Infrastructure.Audits.AuditTrailService.DeleteEntity<T>(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, int, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DeleteEntity
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 41
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  example: []
+  syntax:
+    content: public void DeleteEntity<T>(EntityName entityName, Guid entityId, ActionType actionType, ActionBy actionBy, T entity, int versionNumber, string? comment = null)
+    parameters:
+    - id: entityName
+      type: Domain.Enums.EntityName
+    - id: entityId
+      type: System.Guid
+    - id: actionType
+      type: Domain.Enums.ActionType
+    - id: actionBy
+      type: Domain.Enums.ActionBy
+    - id: entity
+      type: '{T}'
+    - id: versionNumber
+      type: System.Int32
+    - id: comment
+      type: System.String
+    typeParameters:
+    - id: T
+    content.vb: Public Sub DeleteEntity(Of T)(entityName As EntityName, entityId As Guid, actionType As ActionType, actionBy As ActionBy, entity As T, versionNumber As Integer, comment As String = Nothing)
+  overload: Infrastructure.Audits.AuditTrailService.DeleteEntity*
+  implements:
+  - Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,{T},System.Int32,System.String)
+  nameWithType.vb: AuditTrailService.DeleteEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, Integer, String)
+  fullName.vb: Infrastructure.Audits.AuditTrailService.DeleteEntity(Of T)(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, Integer, String)
+  name.vb: DeleteEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, Integer, String)
+- uid: Infrastructure.Audits.AuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+  commentId: M:Infrastructure.Audits.AuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+  id: UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: UpdateEntitiesBulk<T>(EntityName, IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string? Comment)>)
+  nameWithType: AuditTrailService.UpdateEntitiesBulk<T>(EntityName, IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string? Comment)>)
+  fullName: Infrastructure.Audits.AuditTrailService.UpdateEntitiesBulk<T>(Domain.Enums.EntityName, System.Collections.Generic.IEnumerable<(System.Guid EntityId, Domain.Enums.ActionType ActionType, Domain.Enums.ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string? Comment)>)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateEntitiesBulk
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 48
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  example: []
+  syntax:
+    content: public void UpdateEntitiesBulk<T>(EntityName entityName, IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string? Comment)> changes)
+    parameters:
+    - id: entityName
+      type: Domain.Enums.EntityName
+    - id: changes
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,{T},{T},System.Int32,System.String}}
+    typeParameters:
+    - id: T
+    content.vb: Public Sub UpdateEntitiesBulk(Of T)(entityName As EntityName, changes As IEnumerable(Of (EntityId As Guid, ActionType As ActionType, ActionBy As ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+  overload: Infrastructure.Audits.AuditTrailService.UpdateEntitiesBulk*
+  implements:
+  - Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,{T},{T},System.Int32,System.String}})
+  nameWithType.vb: AuditTrailService.UpdateEntitiesBulk(Of T)(EntityName, IEnumerable(Of (EntityId As Guid, ActionType As ActionType, ActionBy As ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+  fullName.vb: Infrastructure.Audits.AuditTrailService.UpdateEntitiesBulk(Of T)(Domain.Enums.EntityName, System.Collections.Generic.IEnumerable(Of (EntityId As System.Guid, ActionType As Domain.Enums.ActionType, ActionBy As Domain.Enums.ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+  name.vb: UpdateEntitiesBulk(Of T)(EntityName, IEnumerable(Of (EntityId As Guid, ActionType As ActionType, ActionBy As ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+- uid: Infrastructure.Audits.AuditTrailService.GetEntityTrail(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32,System.Guid)
+  commentId: M:Infrastructure.Audits.AuditTrailService.GetEntityTrail(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32,System.Guid)
+  id: GetEntityTrail(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32,System.Guid)
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: GetEntityTrail(Func<AuditTrail, bool>, int, int, Guid)
+  nameWithType: AuditTrailService.GetEntityTrail(Func<AuditTrail, bool>, int, int, Guid)
+  fullName: Infrastructure.Audits.AuditTrailService.GetEntityTrail(System.Func<Domain.Auditing.AuditTrail, bool>, int, int, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetEntityTrail
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 64
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  example: []
+  syntax:
+    content: public IEnumerable<AuditTrail> GetEntityTrail(Func<AuditTrail, bool> func, int pageNumber, int pageSize, Guid entityId)
+    parameters:
+    - id: func
+      type: System.Func{Domain.Auditing.AuditTrail,System.Boolean}
+    - id: pageNumber
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    - id: entityId
+      type: System.Guid
+    return:
+      type: System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail}
+    content.vb: Public Function GetEntityTrail(func As Func(Of AuditTrail, Boolean), pageNumber As Integer, pageSize As Integer, entityId As Guid) As IEnumerable(Of AuditTrail)
+  overload: Infrastructure.Audits.AuditTrailService.GetEntityTrail*
+  implements:
+  - Application.Commons.Services.IAuditTrailService.GetEntityTrail(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32,System.Guid)
+  nameWithType.vb: AuditTrailService.GetEntityTrail(Func(Of AuditTrail, Boolean), Integer, Integer, Guid)
+  fullName.vb: Infrastructure.Audits.AuditTrailService.GetEntityTrail(System.Func(Of Domain.Auditing.AuditTrail, Boolean), Integer, Integer, System.Guid)
+  name.vb: GetEntityTrail(Func(Of AuditTrail, Boolean), Integer, Integer, Guid)
+- uid: Infrastructure.Audits.AuditTrailService.GetDeletedEntities(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Infrastructure.Audits.AuditTrailService.GetDeletedEntities(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  id: GetDeletedEntities(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: GetDeletedEntities(Func<AuditTrail, bool>, int, int)
+  nameWithType: AuditTrailService.GetDeletedEntities(Func<AuditTrail, bool>, int, int)
+  fullName: Infrastructure.Audits.AuditTrailService.GetDeletedEntities(System.Func<Domain.Auditing.AuditTrail, bool>, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetDeletedEntities
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 73
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  example: []
+  syntax:
+    content: public IEnumerable<AuditTrail> GetDeletedEntities(Func<AuditTrail, bool> func, int pageNumber, int pageSize)
+    parameters:
+    - id: func
+      type: System.Func{Domain.Auditing.AuditTrail,System.Boolean}
+    - id: pageNumber
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail}
+    content.vb: Public Function GetDeletedEntities(func As Func(Of AuditTrail, Boolean), pageNumber As Integer, pageSize As Integer) As IEnumerable(Of AuditTrail)
+  overload: Infrastructure.Audits.AuditTrailService.GetDeletedEntities*
+  implements:
+  - Application.Commons.Services.IAuditTrailService.GetDeletedEntities(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  nameWithType.vb: AuditTrailService.GetDeletedEntities(Func(Of AuditTrail, Boolean), Integer, Integer)
+  fullName.vb: Infrastructure.Audits.AuditTrailService.GetDeletedEntities(System.Func(Of Domain.Auditing.AuditTrail, Boolean), Integer, Integer)
+  name.vb: GetDeletedEntities(Func(Of AuditTrail, Boolean), Integer, Integer)
+- uid: Infrastructure.Audits.AuditTrailService.Count(System.Guid)
+  commentId: M:Infrastructure.Audits.AuditTrailService.Count(System.Guid)
+  id: Count(System.Guid)
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: Count(Guid)
+  nameWithType: AuditTrailService.Count(Guid)
+  fullName: Infrastructure.Audits.AuditTrailService.Count(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Count
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 84
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  example: []
+  syntax:
+    content: public int Count(Guid entityId)
+    parameters:
+    - id: entityId
+      type: System.Guid
+    return:
+      type: System.Int32
+    content.vb: Public Function Count(entityId As Guid) As Integer
+  overload: Infrastructure.Audits.AuditTrailService.Count*
+  implements:
+  - Application.Commons.Services.IAuditTrailService.Count(System.Guid)
+- uid: Infrastructure.Audits.AuditTrailService.CountDeletedEntity
+  commentId: M:Infrastructure.Audits.AuditTrailService.CountDeletedEntity
+  id: CountDeletedEntity
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: CountDeletedEntity()
+  nameWithType: AuditTrailService.CountDeletedEntity()
+  fullName: Infrastructure.Audits.AuditTrailService.CountDeletedEntity()
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CountDeletedEntity
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 91
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  example: []
+  syntax:
+    content: public int CountDeletedEntity()
+    return:
+      type: System.Int32
+    content.vb: Public Function CountDeletedEntity() As Integer
+  overload: Infrastructure.Audits.AuditTrailService.CountDeletedEntity*
+  implements:
+  - Application.Commons.Services.IAuditTrailService.CountDeletedEntity
+- uid: Infrastructure.Audits.AuditTrailService.EnqueueAudit(Domain.Auditing.AuditTrail)
+  commentId: M:Infrastructure.Audits.AuditTrailService.EnqueueAudit(Domain.Auditing.AuditTrail)
+  id: EnqueueAudit(Domain.Auditing.AuditTrail)
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: EnqueueAudit(AuditTrail)
+  nameWithType: AuditTrailService.EnqueueAudit(AuditTrail)
+  fullName: Infrastructure.Audits.AuditTrailService.EnqueueAudit(Domain.Auditing.AuditTrail)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: EnqueueAudit
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 123
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  syntax:
+    content: public void EnqueueAudit(AuditTrail audit)
+    parameters:
+    - id: audit
+      type: Domain.Auditing.AuditTrail
+    content.vb: Public Sub EnqueueAudit(audit As AuditTrail)
+  overload: Infrastructure.Audits.AuditTrailService.EnqueueAudit*
+- uid: Infrastructure.Audits.AuditTrailService.GetEntityTrailDetails(System.Guid,Domain.Enums.EntityName,System.Guid)
+  commentId: M:Infrastructure.Audits.AuditTrailService.GetEntityTrailDetails(System.Guid,Domain.Enums.EntityName,System.Guid)
+  id: GetEntityTrailDetails(System.Guid,Domain.Enums.EntityName,System.Guid)
+  parent: Infrastructure.Audits.AuditTrailService
+  langs:
+  - csharp
+  - vb
+  name: GetEntityTrailDetails(Guid, EntityName, Guid)
+  nameWithType: AuditTrailService.GetEntityTrailDetails(Guid, EntityName, Guid)
+  fullName: Infrastructure.Audits.AuditTrailService.GetEntityTrailDetails(System.Guid, Domain.Enums.EntityName, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Audits/AuditTrailService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetEntityTrailDetails
+    path: src/Infrastructure/Audits/AuditTrailService.cs
+    startLine: 128
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Audits
+  example: []
+  syntax:
+    content: public AuditTrail GetEntityTrailDetails(Guid trailId, EntityName entityName, Guid entityId)
+    parameters:
+    - id: trailId
+      type: System.Guid
+    - id: entityName
+      type: Domain.Enums.EntityName
+    - id: entityId
+      type: System.Guid
+    return:
+      type: Domain.Auditing.AuditTrail
+    content.vb: Public Function GetEntityTrailDetails(trailId As Guid, entityName As EntityName, entityId As Guid) As AuditTrail
+  overload: Infrastructure.Audits.AuditTrailService.GetEntityTrailDetails*
+  implements:
+  - Application.Commons.Services.IAuditTrailService.GetEntityTrailDetails(System.Guid,Domain.Enums.EntityName,System.Guid)
+references:
+- uid: Infrastructure.Audits
+  commentId: N:Infrastructure.Audits
+  href: Infrastructure.html
+  name: Infrastructure.Audits
+  nameWithType: Infrastructure.Audits
+  fullName: Infrastructure.Audits
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Audits
+    name: Audits
+    href: Infrastructure.Audits.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Audits
+    name: Audits
+    href: Infrastructure.Audits.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  commentId: T:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  parent: Infrastructure.Repositories.BaseRepository
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html
+  name: BaseRepository<AuditTrail>
+  nameWithType: BaseRepository<AuditTrail>
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>
+  nameWithType.vb: BaseRepository(Of AuditTrail)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail)
+  name.vb: BaseRepository(Of AuditTrail)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1
+    name: BaseRepository
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: '>'
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1
+    name: BaseRepository
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: )
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Auditing.AuditTrail}
+  commentId: T:Domain.Repositories.RepositoryBase.IBaseRepository{Domain.Auditing.AuditTrail}
+  parent: Domain.Repositories.RepositoryBase
+  definition: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  name: IBaseRepository<AuditTrail>
+  nameWithType: IBaseRepository<AuditTrail>
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<Domain.Auditing.AuditTrail>
+  nameWithType.vb: IBaseRepository(Of AuditTrail)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of Domain.Auditing.AuditTrail)
+  name.vb: IBaseRepository(Of AuditTrail)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: '>'
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Application.Commons.Services.IAuditTrailService
+  commentId: T:Application.Commons.Services.IAuditTrailService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.IAuditTrailService.html
+  name: IAuditTrailService
+  nameWithType: IAuditTrailService
+  fullName: Application.Commons.Services.IAuditTrailService
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}._db
+  commentId: F:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}._db
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1._db
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1__db
+  name: _db
+  nameWithType: BaseRepository<AuditTrail>._db
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>._db
+  nameWithType.vb: BaseRepository(Of AuditTrail)._db
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail)._db
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}._collection
+  commentId: F:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}._collection
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1._collection
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1__collection
+  name: _collection
+  nameWithType: BaseRepository<AuditTrail>._collection
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>._collection
+  nameWithType.vb: BaseRepository(Of AuditTrail)._collection
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail)._collection
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}._collectionName
+  commentId: F:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}._collectionName
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1._collectionName
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1__collectionName
+  name: _collectionName
+  nameWithType: BaseRepository<AuditTrail>._collectionName
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>._collectionName
+  nameWithType.vb: BaseRepository(Of AuditTrail)._collectionName
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail)._collectionName
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(Domain.Auditing.AuditTrail)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(Domain.Auditing.AuditTrail)
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(`0)
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert__0_
+  name: Insert(AuditTrail)
+  nameWithType: BaseRepository<AuditTrail>.Insert(AuditTrail)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.Insert(Domain.Auditing.AuditTrail)
+  nameWithType.vb: BaseRepository(Of AuditTrail).Insert(AuditTrail)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).Insert(Domain.Auditing.AuditTrail)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(Domain.Auditing.AuditTrail)
+    name: Insert
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert__0_
+  - name: (
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(Domain.Auditing.AuditTrail)
+    name: Insert
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert__0_
+  - name: (
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  name: Insert(IEnumerable<AuditTrail>)
+  nameWithType: BaseRepository<AuditTrail>.Insert(IEnumerable<AuditTrail>)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.Insert(System.Collections.Generic.IEnumerable<Domain.Auditing.AuditTrail>)
+  nameWithType.vb: BaseRepository(Of AuditTrail).Insert(IEnumerable(Of AuditTrail))
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).Insert(System.Collections.Generic.IEnumerable(Of Domain.Auditing.AuditTrail))
+  name.vb: Insert(IEnumerable(Of AuditTrail))
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+    name: Insert
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Insert(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+    name: Insert
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(Domain.Auditing.AuditTrail)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(Domain.Auditing.AuditTrail)
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(`0)
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update__0_
+  name: Update(AuditTrail)
+  nameWithType: BaseRepository<AuditTrail>.Update(AuditTrail)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.Update(Domain.Auditing.AuditTrail)
+  nameWithType.vb: BaseRepository(Of AuditTrail).Update(AuditTrail)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).Update(Domain.Auditing.AuditTrail)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(Domain.Auditing.AuditTrail)
+    name: Update
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update__0_
+  - name: (
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(Domain.Auditing.AuditTrail)
+    name: Update
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update__0_
+  - name: (
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteById(System.Guid)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteById(System.Guid)
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteById(System.Guid)
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteById_System_Guid_
+  name: DeleteById(Guid)
+  nameWithType: BaseRepository<AuditTrail>.DeleteById(Guid)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.DeleteById(System.Guid)
+  nameWithType.vb: BaseRepository(Of AuditTrail).DeleteById(Guid)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).DeleteById(System.Guid)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteById(System.Guid)
+    name: DeleteById
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteById(System.Guid)
+    name: DeleteById
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteAll
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteAll
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteAll
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteAll
+  name: DeleteAll()
+  nameWithType: BaseRepository<AuditTrail>.DeleteAll()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.DeleteAll()
+  nameWithType.vb: BaseRepository(Of AuditTrail).DeleteAll()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).DeleteAll()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteAll
+    name: DeleteAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteAll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.DeleteAll
+    name: DeleteAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteAll
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetById(System.Guid)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetById(System.Guid)
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetById(System.Guid)
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetById_System_Guid_
+  name: GetById(Guid)
+  nameWithType: BaseRepository<AuditTrail>.GetById(Guid)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.GetById(System.Guid)
+  nameWithType.vb: BaseRepository(Of AuditTrail).GetById(Guid)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).GetById(System.Guid)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetById(System.Guid)
+    name: GetById
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetById(System.Guid)
+    name: GetById
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll
+  name: GetAll()
+  nameWithType: BaseRepository<AuditTrail>.GetAll()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.GetAll()
+  nameWithType.vb: BaseRepository(Of AuditTrail).GetAll()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).GetAll()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  name: GetAll(Func<AuditTrail, bool>, int, int)
+  nameWithType: BaseRepository<AuditTrail>.GetAll(Func<AuditTrail, bool>, int, int)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.GetAll(System.Func<Domain.Auditing.AuditTrail, bool>, int, int)
+  nameWithType.vb: BaseRepository(Of AuditTrail).GetAll(Func(Of AuditTrail, Boolean), Integer, Integer)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).GetAll(System.Func(Of Domain.Auditing.AuditTrail, Boolean), Integer, Integer)
+  name.vb: GetAll(Func(Of AuditTrail, Boolean), Integer, Integer)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  name: GetAll(Func<AuditTrail, bool>)
+  nameWithType: BaseRepository<AuditTrail>.GetAll(Func<AuditTrail, bool>)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.GetAll(System.Func<Domain.Auditing.AuditTrail, bool>)
+  nameWithType.vb: BaseRepository(Of AuditTrail).GetAll(Func(Of AuditTrail, Boolean))
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).GetAll(System.Func(Of Domain.Auditing.AuditTrail, Boolean))
+  name.vb: GetAll(Func(Of AuditTrail, Boolean))
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAllAsync(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAllAsync(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  name: GetAllAsync(Func<AuditTrail, bool>, int, int)
+  nameWithType: BaseRepository<AuditTrail>.GetAllAsync(Func<AuditTrail, bool>, int, int)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.GetAllAsync(System.Func<Domain.Auditing.AuditTrail, bool>, int, int)
+  nameWithType.vb: BaseRepository(Of AuditTrail).GetAllAsync(Func(Of AuditTrail, Boolean), Integer, Integer)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).GetAllAsync(System.Func(Of Domain.Auditing.AuditTrail, Boolean), Integer, Integer)
+  name.vb: GetAllAsync(Func(Of AuditTrail, Boolean), Integer, Integer)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAllAsync(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+    name: GetAllAsync
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAllAsync(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+    name: GetAllAsync
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Int32,System.Int32)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Int32,System.Int32)
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Int32,System.Int32)
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Int32_System_Int32_
+  name: GetAll(int, int)
+  nameWithType: BaseRepository<AuditTrail>.GetAll(int, int)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.GetAll(int, int)
+  nameWithType.vb: BaseRepository(Of AuditTrail).GetAll(Integer, Integer)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).GetAll(Integer, Integer)
+  name.vb: GetAll(Integer, Integer)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Int32,System.Int32)
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetAll(System.Int32,System.Int32)
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetCollection
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetCollection
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetCollection
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetCollection
+  name: GetCollection()
+  nameWithType: BaseRepository<AuditTrail>.GetCollection()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.GetCollection()
+  nameWithType.vb: BaseRepository(Of AuditTrail).GetCollection()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).GetCollection()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetCollection
+    name: GetCollection
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetCollection
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.GetCollection
+    name: GetCollection
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetCollection
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Count
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Count
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Count
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Count
+  name: Count()
+  nameWithType: BaseRepository<AuditTrail>.Count()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.Count()
+  nameWithType.vb: BaseRepository(Of AuditTrail).Count()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).Count()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Count
+    name: Count
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Count
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Count
+    name: Count
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Count
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountBy(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountBy(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  name: CountBy(Func<AuditTrail, bool>)
+  nameWithType: BaseRepository<AuditTrail>.CountBy(Func<AuditTrail, bool>)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.CountBy(System.Func<Domain.Auditing.AuditTrail, bool>)
+  nameWithType.vb: BaseRepository(Of AuditTrail).CountBy(Func(Of AuditTrail, Boolean))
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).CountBy(System.Func(Of Domain.Auditing.AuditTrail, Boolean))
+  name.vb: CountBy(Func(Of AuditTrail, Boolean))
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountBy(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+    name: CountBy
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountBy(System.Func{Domain.Auditing.AuditTrail,System.Boolean})
+    name: CountBy
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountAsync
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountAsync
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountAsync
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountAsync
+  name: CountAsync()
+  nameWithType: BaseRepository<AuditTrail>.CountAsync()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.CountAsync()
+  nameWithType.vb: BaseRepository(Of AuditTrail).CountAsync()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).CountAsync()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountAsync
+    name: CountAsync
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.CountAsync
+    name: CountAsync
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountAsync
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  name: Update(IEnumerable<AuditTrail>)
+  nameWithType: BaseRepository<AuditTrail>.Update(IEnumerable<AuditTrail>)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.Update(System.Collections.Generic.IEnumerable<Domain.Auditing.AuditTrail>)
+  nameWithType.vb: BaseRepository(Of AuditTrail).Update(IEnumerable(Of AuditTrail))
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).Update(System.Collections.Generic.IEnumerable(Of Domain.Auditing.AuditTrail))
+  name.vb: Update(IEnumerable(Of AuditTrail))
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+    name: Update
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Update(System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail})
+    name: Update
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Dispose
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Dispose
+  parent: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}
+  definition: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Dispose
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Dispose
+  name: Dispose()
+  nameWithType: BaseRepository<AuditTrail>.Dispose()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<Domain.Auditing.AuditTrail>.Dispose()
+  nameWithType.vb: BaseRepository(Of AuditTrail).Dispose()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of Domain.Auditing.AuditTrail).Dispose()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Dispose
+    name: Dispose
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository{Domain.Auditing.AuditTrail}.Dispose
+    name: Dispose
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1
+  commentId: T:Infrastructure.Repositories.BaseRepository.BaseRepository`1
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html
+  name: BaseRepository<T>
+  nameWithType: BaseRepository<T>
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>
+  nameWithType.vb: BaseRepository(Of T)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T)
+  name.vb: BaseRepository(Of T)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1
+    name: BaseRepository
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1
+    name: BaseRepository
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository
+  commentId: N:Infrastructure.Repositories.BaseRepository
+  href: Infrastructure.html
+  name: Infrastructure.Repositories.BaseRepository
+  nameWithType: Infrastructure.Repositories.BaseRepository
+  fullName: Infrastructure.Repositories.BaseRepository
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+  - name: .
+  - uid: Infrastructure.Repositories.BaseRepository
+    name: BaseRepository
+    href: Infrastructure.Repositories.BaseRepository.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Repositories
+    name: Repositories
+    href: Infrastructure.Repositories.html
+  - name: .
+  - uid: Infrastructure.Repositories.BaseRepository
+    name: BaseRepository
+    href: Infrastructure.Repositories.BaseRepository.html
+- uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+  commentId: T:Domain.Repositories.RepositoryBase.IBaseRepository`1
+  href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  name: IBaseRepository<T>
+  nameWithType: IBaseRepository<T>
+  fullName: Domain.Repositories.RepositoryBase.IBaseRepository<T>
+  nameWithType.vb: IBaseRepository(Of T)
+  fullName.vb: Domain.Repositories.RepositoryBase.IBaseRepository(Of T)
+  name.vb: IBaseRepository(Of T)
+  spec.csharp:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Domain.Repositories.RepositoryBase.IBaseRepository`1
+    name: IBaseRepository
+    href: Domain.Repositories.RepositoryBase.IBaseRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Domain.Repositories.RepositoryBase
+  commentId: N:Domain.Repositories.RepositoryBase
+  href: Domain.html
+  name: Domain.Repositories.RepositoryBase
+  nameWithType: Domain.Repositories.RepositoryBase
+  fullName: Domain.Repositories.RepositoryBase
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  - name: .
+  - uid: Domain.Repositories.RepositoryBase
+    name: RepositoryBase
+    href: Domain.Repositories.RepositoryBase.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  - name: .
+  - uid: Domain.Repositories.RepositoryBase
+    name: RepositoryBase
+    href: Domain.Repositories.RepositoryBase.html
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1._db
+  commentId: F:Infrastructure.Repositories.BaseRepository.BaseRepository`1._db
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1__db
+  name: _db
+  nameWithType: BaseRepository<T>._db
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>._db
+  nameWithType.vb: BaseRepository(Of T)._db
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T)._db
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1._collection
+  commentId: F:Infrastructure.Repositories.BaseRepository.BaseRepository`1._collection
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1__collection
+  name: _collection
+  nameWithType: BaseRepository<T>._collection
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>._collection
+  nameWithType.vb: BaseRepository(Of T)._collection
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T)._collection
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1._collectionName
+  commentId: F:Infrastructure.Repositories.BaseRepository.BaseRepository`1._collectionName
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1__collectionName
+  name: _collectionName
+  nameWithType: BaseRepository<T>._collectionName
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>._collectionName
+  nameWithType.vb: BaseRepository(Of T)._collectionName
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T)._collectionName
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(`0)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(`0)
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert__0_
+  name: Insert(T)
+  nameWithType: BaseRepository<T>.Insert(T)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.Insert(T)
+  nameWithType.vb: BaseRepository(Of T).Insert(T)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).Insert(T)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(`0)
+    name: Insert
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(`0)
+    name: Insert
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  name: Insert(IEnumerable<T>)
+  nameWithType: BaseRepository<T>.Insert(IEnumerable<T>)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.Insert(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: BaseRepository(Of T).Insert(IEnumerable(Of T))
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).Insert(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Insert(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+    name: Insert
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Insert(System.Collections.Generic.IEnumerable{`0})
+    name: Insert
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(`0)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(`0)
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update__0_
+  name: Update(T)
+  nameWithType: BaseRepository<T>.Update(T)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.Update(T)
+  nameWithType.vb: BaseRepository(Of T).Update(T)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).Update(T)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(`0)
+    name: Update
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(`0)
+    name: Update
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteById(System.Guid)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteById(System.Guid)
+  isExternal: true
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteById_System_Guid_
+  name: DeleteById(Guid)
+  nameWithType: BaseRepository<T>.DeleteById(Guid)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.DeleteById(System.Guid)
+  nameWithType.vb: BaseRepository(Of T).DeleteById(Guid)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).DeleteById(System.Guid)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteById(System.Guid)
+    name: DeleteById
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteById(System.Guid)
+    name: DeleteById
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteAll
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteAll
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteAll
+  name: DeleteAll()
+  nameWithType: BaseRepository<T>.DeleteAll()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.DeleteAll()
+  nameWithType.vb: BaseRepository(Of T).DeleteAll()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).DeleteAll()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteAll
+    name: DeleteAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteAll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.DeleteAll
+    name: DeleteAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_DeleteAll
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetById(System.Guid)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetById(System.Guid)
+  isExternal: true
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetById_System_Guid_
+  name: GetById(Guid)
+  nameWithType: BaseRepository<T>.GetById(Guid)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.GetById(System.Guid)
+  nameWithType.vb: BaseRepository(Of T).GetById(Guid)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).GetById(System.Guid)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetById(System.Guid)
+    name: GetById
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetById(System.Guid)
+    name: GetById
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetById_System_Guid_
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll
+  name: GetAll()
+  nameWithType: BaseRepository<T>.GetAll()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.GetAll()
+  nameWithType.vb: BaseRepository(Of T).GetAll()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).GetAll()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  isExternal: true
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  name: GetAll(Func<T, bool>, int, int)
+  nameWithType: BaseRepository<T>.GetAll(Func<T, bool>, int, int)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.GetAll(System.Func<T, bool>, int, int)
+  nameWithType.vb: BaseRepository(Of T).GetAll(Func(Of T, Boolean), Integer, Integer)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).GetAll(System.Func(Of T, Boolean), Integer, Integer)
+  name.vb: GetAll(Func(Of T, Boolean), Integer, Integer)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+  isExternal: true
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  name: GetAll(Func<T, bool>)
+  nameWithType: BaseRepository<T>.GetAll(Func<T, bool>)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.GetAll(System.Func<T, bool>)
+  nameWithType.vb: BaseRepository(Of T).GetAll(Func(Of T, Boolean))
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).GetAll(System.Func(Of T, Boolean))
+  name.vb: GetAll(Func(Of T, Boolean))
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Func{`0,System.Boolean})
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+  isExternal: true
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  name: GetAllAsync(Func<T, bool>, int, int)
+  nameWithType: BaseRepository<T>.GetAllAsync(Func<T, bool>, int, int)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.GetAllAsync(System.Func<T, bool>, int, int)
+  nameWithType.vb: BaseRepository(Of T).GetAllAsync(Func(Of T, Boolean), Integer, Integer)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).GetAllAsync(System.Func(Of T, Boolean), Integer, Integer)
+  name.vb: GetAllAsync(Func(Of T, Boolean), Integer, Integer)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+    name: GetAllAsync
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAllAsync(System.Func{`0,System.Boolean},System.Int32,System.Int32)
+    name: GetAllAsync
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAllAsync_System_Func__0_System_Boolean__System_Int32_System_Int32_
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Int32,System.Int32)
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Int32,System.Int32)
+  isExternal: true
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Int32_System_Int32_
+  name: GetAll(int, int)
+  nameWithType: BaseRepository<T>.GetAll(int, int)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.GetAll(int, int)
+  nameWithType.vb: BaseRepository(Of T).GetAll(Integer, Integer)
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).GetAll(Integer, Integer)
+  name.vb: GetAll(Integer, Integer)
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Int32,System.Int32)
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetAll(System.Int32,System.Int32)
+    name: GetAll
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetAll_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetCollection
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetCollection
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetCollection
+  name: GetCollection()
+  nameWithType: BaseRepository<T>.GetCollection()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.GetCollection()
+  nameWithType.vb: BaseRepository(Of T).GetCollection()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).GetCollection()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetCollection
+    name: GetCollection
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetCollection
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.GetCollection
+    name: GetCollection
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_GetCollection
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Count
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.Count
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Count
+  name: Count()
+  nameWithType: BaseRepository<T>.Count()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.Count()
+  nameWithType.vb: BaseRepository(Of T).Count()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).Count()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Count
+    name: Count
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Count
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Count
+    name: Count
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Count
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+  isExternal: true
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  name: CountBy(Func<T, bool>)
+  nameWithType: BaseRepository<T>.CountBy(Func<T, bool>)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.CountBy(System.Func<T, bool>)
+  nameWithType.vb: BaseRepository(Of T).CountBy(Func(Of T, Boolean))
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).CountBy(System.Func(Of T, Boolean))
+  name.vb: CountBy(Func(Of T, Boolean))
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+    name: CountBy
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountBy(System.Func{`0,System.Boolean})
+    name: CountBy
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountBy_System_Func__0_System_Boolean__
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountAsync
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountAsync
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountAsync
+  name: CountAsync()
+  nameWithType: BaseRepository<T>.CountAsync()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.CountAsync()
+  nameWithType.vb: BaseRepository(Of T).CountAsync()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).CountAsync()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountAsync
+    name: CountAsync
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.CountAsync
+    name: CountAsync
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_CountAsync
+  - name: (
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  name: Update(IEnumerable<T>)
+  nameWithType: BaseRepository<T>.Update(IEnumerable<T>)
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.Update(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: BaseRepository(Of T).Update(IEnumerable(Of T))
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).Update(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Update(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+    name: Update
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Update(System.Collections.Generic.IEnumerable{`0})
+    name: Update
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Dispose
+  commentId: M:Infrastructure.Repositories.BaseRepository.BaseRepository`1.Dispose
+  href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Dispose
+  name: Dispose()
+  nameWithType: BaseRepository<T>.Dispose()
+  fullName: Infrastructure.Repositories.BaseRepository.BaseRepository<T>.Dispose()
+  nameWithType.vb: BaseRepository(Of T).Dispose()
+  fullName.vb: Infrastructure.Repositories.BaseRepository.BaseRepository(Of T).Dispose()
+  spec.csharp:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Dispose
+    name: Dispose
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Infrastructure.Repositories.BaseRepository.BaseRepository`1.Dispose
+    name: Dispose
+    href: Infrastructure.Repositories.BaseRepository.BaseRepository-1.html#Infrastructure_Repositories_BaseRepository_BaseRepository_1_Dispose
+  - name: (
+  - name: )
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Infrastructure.Audits.AuditTrailService.#ctor*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.#ctor
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService__ctor_System_String_
+  name: AuditTrailService
+  nameWithType: AuditTrailService.AuditTrailService
+  fullName: Infrastructure.Audits.AuditTrailService.AuditTrailService
+  nameWithType.vb: AuditTrailService.New
+  fullName.vb: Infrastructure.Audits.AuditTrailService.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Infrastructure.Audits.AuditTrailService.AddNewEntity*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.AddNewEntity
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_AddNewEntity__1_Domain_Enums_EntityName_System_Guid_Domain_Enums_ActionBy___0_System_Int32_System_String_
+  name: AddNewEntity
+  nameWithType: AuditTrailService.AddNewEntity
+  fullName: Infrastructure.Audits.AuditTrailService.AddNewEntity
+- uid: Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,{T},System.Int32,System.String)
+  commentId: M:Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  parent: Application.Commons.Services.IAuditTrailService
+  definition: Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: AddNewEntity<T>(EntityName, Guid, ActionBy, T, int, string)
+  nameWithType: IAuditTrailService.AddNewEntity<T>(EntityName, Guid, ActionBy, T, int, string)
+  fullName: Application.Commons.Services.IAuditTrailService.AddNewEntity<T>(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionBy, T, int, string)
+  nameWithType.vb: IAuditTrailService.AddNewEntity(Of T)(EntityName, Guid, ActionBy, T, Integer, String)
+  fullName.vb: Application.Commons.Services.IAuditTrailService.AddNewEntity(Of T)(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionBy, T, Integer, String)
+  name.vb: AddNewEntity(Of T)(EntityName, Guid, ActionBy, T, Integer, String)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+    name: AddNewEntity
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+    name: AddNewEntity
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Domain.Enums.EntityName
+  commentId: T:Domain.Enums.EntityName
+  parent: Domain.Enums
+  href: Domain.Enums.EntityName.html
+  name: EntityName
+  nameWithType: EntityName
+  fullName: Domain.Enums.EntityName
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Enums.ActionBy
+  commentId: T:Domain.Enums.ActionBy
+  parent: Domain.Enums
+  href: Domain.Enums.ActionBy.html
+  name: ActionBy
+  nameWithType: ActionBy
+  fullName: Domain.Enums.ActionBy
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  commentId: M:Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: AddNewEntity<T>(EntityName, Guid, ActionBy, T, int, string)
+  nameWithType: IAuditTrailService.AddNewEntity<T>(EntityName, Guid, ActionBy, T, int, string)
+  fullName: Application.Commons.Services.IAuditTrailService.AddNewEntity<T>(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionBy, T, int, string)
+  nameWithType.vb: IAuditTrailService.AddNewEntity(Of T)(EntityName, Guid, ActionBy, T, Integer, String)
+  fullName.vb: Application.Commons.Services.IAuditTrailService.AddNewEntity(Of T)(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionBy, T, Integer, String)
+  name.vb: AddNewEntity(Of T)(EntityName, Guid, ActionBy, T, Integer, String)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+    name: AddNewEntity
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.AddNewEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+    name: AddNewEntity
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Infrastructure.Audits.AuditTrailService.UpdateEntity*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.UpdateEntity
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_UpdateEntity__1_Domain_Enums_EntityName_System_Guid_Domain_Enums_ActionType_Domain_Enums_ActionBy___0___0_System_Int32_System_String_
+  name: UpdateEntity
+  nameWithType: AuditTrailService.UpdateEntity
+  fullName: Infrastructure.Audits.AuditTrailService.UpdateEntity
+- uid: Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,{T},{T},System.Int32,System.String)
+  commentId: M:Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+  parent: Application.Commons.Services.IAuditTrailService
+  definition: Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: UpdateEntity<T>(EntityName, Guid, ActionType, ActionBy, T, T, int, string)
+  nameWithType: IAuditTrailService.UpdateEntity<T>(EntityName, Guid, ActionType, ActionBy, T, T, int, string)
+  fullName: Application.Commons.Services.IAuditTrailService.UpdateEntity<T>(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, T, int, string)
+  nameWithType.vb: IAuditTrailService.UpdateEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, T, Integer, String)
+  fullName.vb: Application.Commons.Services.IAuditTrailService.UpdateEntity(Of T)(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, T, Integer, String)
+  name.vb: UpdateEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, T, Integer, String)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+    name: UpdateEntity
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+    name: UpdateEntity
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Domain.Enums.ActionType
+  commentId: T:Domain.Enums.ActionType
+  parent: Domain.Enums
+  href: Domain.Enums.ActionType.html
+  name: ActionType
+  nameWithType: ActionType
+  fullName: Domain.Enums.ActionType
+- uid: Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+  commentId: M:Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: UpdateEntity<T>(EntityName, Guid, ActionType, ActionBy, T, T, int, string)
+  nameWithType: IAuditTrailService.UpdateEntity<T>(EntityName, Guid, ActionType, ActionBy, T, T, int, string)
+  fullName: Application.Commons.Services.IAuditTrailService.UpdateEntity<T>(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, T, int, string)
+  nameWithType.vb: IAuditTrailService.UpdateEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, T, Integer, String)
+  fullName.vb: Application.Commons.Services.IAuditTrailService.UpdateEntity(Of T)(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, T, Integer, String)
+  name.vb: UpdateEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, T, Integer, String)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+    name: UpdateEntity
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.UpdateEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String)
+    name: UpdateEntity
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Infrastructure.Audits.AuditTrailService.AddEntitiesBulk*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.AddEntitiesBulk
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_AddEntitiesBulk_System_Collections_Generic_IEnumerable_Domain_Auditing_AuditTrail__
+  name: AddEntitiesBulk
+  nameWithType: AuditTrailService.AddEntitiesBulk
+  fullName: Infrastructure.Audits.AuditTrailService.AddEntitiesBulk
+- uid: System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail}
+  commentId: T:System.Collections.Generic.IEnumerable{Domain.Auditing.AuditTrail}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<AuditTrail>
+  nameWithType: IEnumerable<AuditTrail>
+  fullName: System.Collections.Generic.IEnumerable<Domain.Auditing.AuditTrail>
+  nameWithType.vb: IEnumerable(Of AuditTrail)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Domain.Auditing.AuditTrail)
+  name.vb: IEnumerable(Of AuditTrail)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Infrastructure.Audits.AuditTrailService.DeleteEntity*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.DeleteEntity
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_DeleteEntity__1_Domain_Enums_EntityName_System_Guid_Domain_Enums_ActionType_Domain_Enums_ActionBy___0_System_Int32_System_String_
+  name: DeleteEntity
+  nameWithType: AuditTrailService.DeleteEntity
+  fullName: Infrastructure.Audits.AuditTrailService.DeleteEntity
+- uid: Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,{T},System.Int32,System.String)
+  commentId: M:Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  parent: Application.Commons.Services.IAuditTrailService
+  definition: Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: DeleteEntity<T>(EntityName, Guid, ActionType, ActionBy, T, int, string)
+  nameWithType: IAuditTrailService.DeleteEntity<T>(EntityName, Guid, ActionType, ActionBy, T, int, string)
+  fullName: Application.Commons.Services.IAuditTrailService.DeleteEntity<T>(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, int, string)
+  nameWithType.vb: IAuditTrailService.DeleteEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, Integer, String)
+  fullName.vb: Application.Commons.Services.IAuditTrailService.DeleteEntity(Of T)(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, Integer, String)
+  name.vb: DeleteEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, Integer, String)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+    name: DeleteEntity
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+    name: DeleteEntity
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  commentId: M:Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: DeleteEntity<T>(EntityName, Guid, ActionType, ActionBy, T, int, string)
+  nameWithType: IAuditTrailService.DeleteEntity<T>(EntityName, Guid, ActionType, ActionBy, T, int, string)
+  fullName: Application.Commons.Services.IAuditTrailService.DeleteEntity<T>(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, int, string)
+  nameWithType.vb: IAuditTrailService.DeleteEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, Integer, String)
+  fullName.vb: Application.Commons.Services.IAuditTrailService.DeleteEntity(Of T)(Domain.Enums.EntityName, System.Guid, Domain.Enums.ActionType, Domain.Enums.ActionBy, T, Integer, String)
+  name.vb: DeleteEntity(Of T)(EntityName, Guid, ActionType, ActionBy, T, Integer, String)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+    name: DeleteEntity
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.DeleteEntity``1(Domain.Enums.EntityName,System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,System.Int32,System.String)
+    name: DeleteEntity
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Infrastructure.Audits.AuditTrailService.UpdateEntitiesBulk*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.UpdateEntitiesBulk
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_UpdateEntitiesBulk__1_Domain_Enums_EntityName_System_Collections_Generic_IEnumerable_System_ValueTuple_System_Guid_Domain_Enums_ActionType_Domain_Enums_ActionBy___0___0_System_Int32_System_String___
+  name: UpdateEntitiesBulk
+  nameWithType: AuditTrailService.UpdateEntitiesBulk
+  fullName: Infrastructure.Audits.AuditTrailService.UpdateEntitiesBulk
+- uid: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,{T},{T},System.Int32,System.String}})
+  commentId: M:Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+  parent: Application.Commons.Services.IAuditTrailService
+  definition: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: UpdateEntitiesBulk<T>(EntityName, IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string Comment)>)
+  nameWithType: IAuditTrailService.UpdateEntitiesBulk<T>(EntityName, IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string Comment)>)
+  fullName: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk<T>(Domain.Enums.EntityName, System.Collections.Generic.IEnumerable<(System.Guid EntityId, Domain.Enums.ActionType ActionType, Domain.Enums.ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string Comment)>)
+  nameWithType.vb: IAuditTrailService.UpdateEntitiesBulk(Of T)(EntityName, IEnumerable(Of (EntityId As Guid, ActionType As ActionType, ActionBy As ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+  fullName.vb: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk(Of T)(Domain.Enums.EntityName, System.Collections.Generic.IEnumerable(Of (EntityId As System.Guid, ActionType As Domain.Enums.ActionType, ActionBy As Domain.Enums.ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+  name.vb: UpdateEntitiesBulk(Of T)(EntityName, IEnumerable(Of (EntityId As Guid, ActionType As ActionType, ActionBy As ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+    name: UpdateEntitiesBulk
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.EntityId
+    name: EntityId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.entityid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionType
+    name: ActionType
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actiontype
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionBy
+    name: ActionBy
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actionby
+  - name: ','
+  - name: " "
+  - name: T
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.OldEntity
+    name: OldEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.oldentity
+  - name: ','
+  - name: " "
+  - name: T
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.NewEntity
+    name: NewEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.newentity
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Version
+    name: Version
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.version
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Comment
+    name: Comment
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.comment
+  - name: )
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+    name: UpdateEntitiesBulk
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.EntityId
+    name: EntityId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.entityid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionType
+    name: ActionType
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actiontype
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionBy
+    name: ActionBy
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actionby
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.OldEntity
+    name: OldEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.oldentity
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.NewEntity
+    name: NewEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.newentity
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Version
+    name: Version
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.version
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Comment
+    name: Comment
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.comment
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,{T},{T},System.Int32,System.String}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string Comment)>
+  nameWithType: IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string Comment)>
+  fullName: System.Collections.Generic.IEnumerable<(System.Guid EntityId, Domain.Enums.ActionType ActionType, Domain.Enums.ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string Comment)>
+  nameWithType.vb: IEnumerable(Of (EntityId As Guid, ActionType As ActionType, ActionBy As ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (EntityId As System.Guid, ActionType As Domain.Enums.ActionType, ActionBy As Domain.Enums.ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String))
+  name.vb: IEnumerable(Of (EntityId As Guid, ActionType As ActionType, ActionBy As ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.EntityId
+    name: EntityId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.entityid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionType
+    name: ActionType
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actiontype
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionBy
+    name: ActionBy
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actionby
+  - name: ','
+  - name: " "
+  - name: T
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.OldEntity
+    name: OldEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.oldentity
+  - name: ','
+  - name: " "
+  - name: T
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.NewEntity
+    name: NewEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.newentity
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Version
+    name: Version
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.version
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Comment
+    name: Comment
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.comment
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.EntityId
+    name: EntityId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.entityid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionType
+    name: ActionType
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actiontype
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionBy
+    name: ActionBy
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actionby
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.OldEntity
+    name: OldEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.oldentity
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.NewEntity
+    name: NewEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.newentity
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Version
+    name: Version
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.version
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Comment
+    name: Comment
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.comment
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+  commentId: M:Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: UpdateEntitiesBulk<T>(EntityName, IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string Comment)>)
+  nameWithType: IAuditTrailService.UpdateEntitiesBulk<T>(EntityName, IEnumerable<(Guid EntityId, ActionType ActionType, ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string Comment)>)
+  fullName: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk<T>(Domain.Enums.EntityName, System.Collections.Generic.IEnumerable<(System.Guid EntityId, Domain.Enums.ActionType ActionType, Domain.Enums.ActionBy ActionBy, T OldEntity, T NewEntity, int Version, string Comment)>)
+  nameWithType.vb: IAuditTrailService.UpdateEntitiesBulk(Of T)(EntityName, IEnumerable(Of (EntityId As Guid, ActionType As ActionType, ActionBy As ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+  fullName.vb: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk(Of T)(Domain.Enums.EntityName, System.Collections.Generic.IEnumerable(Of (EntityId As System.Guid, ActionType As Domain.Enums.ActionType, ActionBy As Domain.Enums.ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+  name.vb: UpdateEntitiesBulk(Of T)(EntityName, IEnumerable(Of (EntityId As Guid, ActionType As ActionType, ActionBy As ActionBy, OldEntity As T, NewEntity As T, Version As Integer, Comment As String)))
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+    name: UpdateEntitiesBulk
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.EntityId
+    name: EntityId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.entityid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionType
+    name: ActionType
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actiontype
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionBy
+    name: ActionBy
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actionby
+  - name: ','
+  - name: " "
+  - name: T
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.OldEntity
+    name: OldEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.oldentity
+  - name: ','
+  - name: " "
+  - name: T
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.NewEntity
+    name: NewEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.newentity
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Version
+    name: Version
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.version
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Comment
+    name: Comment
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.comment
+  - name: )
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.UpdateEntitiesBulk``1(Domain.Enums.EntityName,System.Collections.Generic.IEnumerable{System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}})
+    name: UpdateEntitiesBulk
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.EntityId
+    name: EntityId
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.entityid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionType
+    name: ActionType
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actiontype
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Domain.Enums.ActionType
+    name: ActionType
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.ActionBy
+    name: ActionBy
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.actionby
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Domain.Enums.ActionBy
+    name: ActionBy
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.OldEntity
+    name: OldEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.oldentity
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.NewEntity
+    name: NewEntity
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.newentity
+  - name: " "
+  - name: As
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Version
+    name: Version
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.version
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Guid,Domain.Enums.ActionType,Domain.Enums.ActionBy,``0,``0,System.Int32,System.String}.Comment
+    name: Comment
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.guid,domain.enums.actiontype,domain.enums.actionby,--0,--0,system.int32,system.string-.comment
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+  - name: )
+- uid: Infrastructure.Audits.AuditTrailService.GetEntityTrail*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.GetEntityTrail
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_GetEntityTrail_System_Func_Domain_Auditing_AuditTrail_System_Boolean__System_Int32_System_Int32_System_Guid_
+  name: GetEntityTrail
+  nameWithType: AuditTrailService.GetEntityTrail
+  fullName: Infrastructure.Audits.AuditTrailService.GetEntityTrail
+- uid: Application.Commons.Services.IAuditTrailService.GetEntityTrail(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32,System.Guid)
+  commentId: M:Application.Commons.Services.IAuditTrailService.GetEntityTrail(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32,System.Guid)
+  parent: Application.Commons.Services.IAuditTrailService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: GetEntityTrail(Func<AuditTrail, bool>, int, int, Guid)
+  nameWithType: IAuditTrailService.GetEntityTrail(Func<AuditTrail, bool>, int, int, Guid)
+  fullName: Application.Commons.Services.IAuditTrailService.GetEntityTrail(System.Func<Domain.Auditing.AuditTrail, bool>, int, int, System.Guid)
+  nameWithType.vb: IAuditTrailService.GetEntityTrail(Func(Of AuditTrail, Boolean), Integer, Integer, Guid)
+  fullName.vb: Application.Commons.Services.IAuditTrailService.GetEntityTrail(System.Func(Of Domain.Auditing.AuditTrail, Boolean), Integer, Integer, System.Guid)
+  name.vb: GetEntityTrail(Func(Of AuditTrail, Boolean), Integer, Integer, Guid)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.GetEntityTrail(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32,System.Guid)
+    name: GetEntityTrail
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.GetEntityTrail(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32,System.Guid)
+    name: GetEntityTrail
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Func{Domain.Auditing.AuditTrail,System.Boolean}
+  commentId: T:System.Func{Domain.Auditing.AuditTrail,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<AuditTrail, bool>
+  nameWithType: Func<AuditTrail, bool>
+  fullName: System.Func<Domain.Auditing.AuditTrail, bool>
+  nameWithType.vb: Func(Of AuditTrail, Boolean)
+  fullName.vb: System.Func(Of Domain.Auditing.AuditTrail, Boolean)
+  name.vb: Func(Of AuditTrail, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Infrastructure.Audits.AuditTrailService.GetDeletedEntities*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.GetDeletedEntities
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_GetDeletedEntities_System_Func_Domain_Auditing_AuditTrail_System_Boolean__System_Int32_System_Int32_
+  name: GetDeletedEntities
+  nameWithType: AuditTrailService.GetDeletedEntities
+  fullName: Infrastructure.Audits.AuditTrailService.GetDeletedEntities
+- uid: Application.Commons.Services.IAuditTrailService.GetDeletedEntities(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  commentId: M:Application.Commons.Services.IAuditTrailService.GetDeletedEntities(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+  parent: Application.Commons.Services.IAuditTrailService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: GetDeletedEntities(Func<AuditTrail, bool>, int, int)
+  nameWithType: IAuditTrailService.GetDeletedEntities(Func<AuditTrail, bool>, int, int)
+  fullName: Application.Commons.Services.IAuditTrailService.GetDeletedEntities(System.Func<Domain.Auditing.AuditTrail, bool>, int, int)
+  nameWithType.vb: IAuditTrailService.GetDeletedEntities(Func(Of AuditTrail, Boolean), Integer, Integer)
+  fullName.vb: Application.Commons.Services.IAuditTrailService.GetDeletedEntities(System.Func(Of Domain.Auditing.AuditTrail, Boolean), Integer, Integer)
+  name.vb: GetDeletedEntities(Func(Of AuditTrail, Boolean), Integer, Integer)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.GetDeletedEntities(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+    name: GetDeletedEntities
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.GetDeletedEntities(System.Func{Domain.Auditing.AuditTrail,System.Boolean},System.Int32,System.Int32)
+    name: GetDeletedEntities
+  - name: (
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Auditing.AuditTrail
+    name: AuditTrail
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Infrastructure.Audits.AuditTrailService.Count*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.Count
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_Count_System_Guid_
+  name: Count
+  nameWithType: AuditTrailService.Count
+  fullName: Infrastructure.Audits.AuditTrailService.Count
+- uid: Application.Commons.Services.IAuditTrailService.Count(System.Guid)
+  commentId: M:Application.Commons.Services.IAuditTrailService.Count(System.Guid)
+  parent: Application.Commons.Services.IAuditTrailService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Count(Guid)
+  nameWithType: IAuditTrailService.Count(Guid)
+  fullName: Application.Commons.Services.IAuditTrailService.Count(System.Guid)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.Count(System.Guid)
+    name: Count
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.Count(System.Guid)
+    name: Count
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Audits.AuditTrailService.CountDeletedEntity*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.CountDeletedEntity
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_CountDeletedEntity
+  name: CountDeletedEntity
+  nameWithType: AuditTrailService.CountDeletedEntity
+  fullName: Infrastructure.Audits.AuditTrailService.CountDeletedEntity
+- uid: Application.Commons.Services.IAuditTrailService.CountDeletedEntity
+  commentId: M:Application.Commons.Services.IAuditTrailService.CountDeletedEntity
+  parent: Application.Commons.Services.IAuditTrailService
+  name: CountDeletedEntity()
+  nameWithType: IAuditTrailService.CountDeletedEntity()
+  fullName: Application.Commons.Services.IAuditTrailService.CountDeletedEntity()
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.CountDeletedEntity
+    name: CountDeletedEntity
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.CountDeletedEntity
+    name: CountDeletedEntity
+  - name: (
+  - name: )
+- uid: Infrastructure.Audits.AuditTrailService.EnqueueAudit*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.EnqueueAudit
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_EnqueueAudit_Domain_Auditing_AuditTrail_
+  name: EnqueueAudit
+  nameWithType: AuditTrailService.EnqueueAudit
+  fullName: Infrastructure.Audits.AuditTrailService.EnqueueAudit
+- uid: Domain.Auditing.AuditTrail
+  commentId: T:Domain.Auditing.AuditTrail
+  parent: Domain.Auditing
+  href: Domain.Auditing.AuditTrail.html
+  name: AuditTrail
+  nameWithType: AuditTrail
+  fullName: Domain.Auditing.AuditTrail
+- uid: Domain.Auditing
+  commentId: N:Domain.Auditing
+  href: Domain.html
+  name: Domain.Auditing
+  nameWithType: Domain.Auditing
+  fullName: Domain.Auditing
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+- uid: Infrastructure.Audits.AuditTrailService.GetEntityTrailDetails*
+  commentId: Overload:Infrastructure.Audits.AuditTrailService.GetEntityTrailDetails
+  href: Infrastructure.Audits.AuditTrailService.html#Infrastructure_Audits_AuditTrailService_GetEntityTrailDetails_System_Guid_Domain_Enums_EntityName_System_Guid_
+  name: GetEntityTrailDetails
+  nameWithType: AuditTrailService.GetEntityTrailDetails
+  fullName: Infrastructure.Audits.AuditTrailService.GetEntityTrailDetails
+- uid: Application.Commons.Services.IAuditTrailService.GetEntityTrailDetails(System.Guid,Domain.Enums.EntityName,System.Guid)
+  commentId: M:Application.Commons.Services.IAuditTrailService.GetEntityTrailDetails(System.Guid,Domain.Enums.EntityName,System.Guid)
+  parent: Application.Commons.Services.IAuditTrailService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetEntityTrailDetails(Guid, EntityName, Guid)
+  nameWithType: IAuditTrailService.GetEntityTrailDetails(Guid, EntityName, Guid)
+  fullName: Application.Commons.Services.IAuditTrailService.GetEntityTrailDetails(System.Guid, Domain.Enums.EntityName, System.Guid)
+  spec.csharp:
+  - uid: Application.Commons.Services.IAuditTrailService.GetEntityTrailDetails(System.Guid,Domain.Enums.EntityName,System.Guid)
+    name: GetEntityTrailDetails
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IAuditTrailService.GetEntityTrailDetails(System.Guid,Domain.Enums.EntityName,System.Guid)
+    name: GetEntityTrailDetails
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: Domain.Enums.EntityName
+    name: EntityName
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )

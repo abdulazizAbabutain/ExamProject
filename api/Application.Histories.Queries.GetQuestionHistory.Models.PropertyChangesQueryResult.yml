@@ -1,0 +1,442 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  commentId: T:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  id: PropertyChangesQueryResult
+  parent: Application.Histories.Queries.GetQuestionHistory.Models
+  children:
+  - Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.DataType
+  - Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.IsNullable
+  - Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.Name
+  - Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.NewValue
+  - Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.OldValue
+  langs:
+  - csharp
+  - vb
+  name: PropertyChangesQueryResult
+  nameWithType: PropertyChangesQueryResult
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  type: Class
+  source:
+    remote:
+      path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: PropertyChangesQueryResult
+    path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Histories.Queries.GetQuestionHistory.Models
+  syntax:
+    content: public class PropertyChangesQueryResult
+    content.vb: Public Class PropertyChangesQueryResult
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.Name
+  commentId: P:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.Name
+  id: Name
+  parent: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PropertyChangesQueryResult.Name
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.Name
+  type: Property
+  source:
+    remote:
+      path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Name
+    path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Histories.Queries.GetQuestionHistory.Models
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.Name*
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.DataType
+  commentId: P:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.DataType
+  id: DataType
+  parent: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: DataType
+  nameWithType: PropertyChangesQueryResult.DataType
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.DataType
+  type: Property
+  source:
+    remote:
+      path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DataType
+    path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Histories.Queries.GetQuestionHistory.Models
+  syntax:
+    content: public string DataType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DataType As String
+  overload: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.DataType*
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.IsNullable
+  commentId: P:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.IsNullable
+  id: IsNullable
+  parent: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: IsNullable
+  nameWithType: PropertyChangesQueryResult.IsNullable
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.IsNullable
+  type: Property
+  source:
+    remote:
+      path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IsNullable
+    path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Histories.Queries.GetQuestionHistory.Models
+  syntax:
+    content: public bool IsNullable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsNullable As Boolean
+  overload: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.IsNullable*
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.OldValue
+  commentId: P:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.OldValue
+  id: OldValue
+  parent: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: OldValue
+  nameWithType: PropertyChangesQueryResult.OldValue
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.OldValue
+  type: Property
+  source:
+    remote:
+      path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: OldValue
+    path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Histories.Queries.GetQuestionHistory.Models
+  syntax:
+    content: public object? OldValue { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property OldValue As Object
+  overload: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.OldValue*
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.NewValue
+  commentId: P:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.NewValue
+  id: NewValue
+  parent: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: NewValue
+  nameWithType: PropertyChangesQueryResult.NewValue
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.NewValue
+  type: Property
+  source:
+    remote:
+      path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: NewValue
+    path: src/Application/Histories/Queries/GetQuestionHistory/Models/PropertyChangesQueryResult.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Histories.Queries.GetQuestionHistory.Models
+  syntax:
+    content: public object? NewValue { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property NewValue As Object
+  overload: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.NewValue*
+references:
+- uid: Application.Histories.Queries.GetQuestionHistory.Models
+  commentId: N:Application.Histories.Queries.GetQuestionHistory.Models
+  href: Application.html
+  name: Application.Histories.Queries.GetQuestionHistory.Models
+  nameWithType: Application.Histories.Queries.GetQuestionHistory.Models
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Histories
+    name: Histories
+    href: Application.Histories.html
+  - name: .
+  - uid: Application.Histories.Queries
+    name: Queries
+    href: Application.Histories.Queries.html
+  - name: .
+  - uid: Application.Histories.Queries.GetQuestionHistory
+    name: GetQuestionHistory
+    href: Application.Histories.Queries.GetQuestionHistory.html
+  - name: .
+  - uid: Application.Histories.Queries.GetQuestionHistory.Models
+    name: Models
+    href: Application.Histories.Queries.GetQuestionHistory.Models.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Histories
+    name: Histories
+    href: Application.Histories.html
+  - name: .
+  - uid: Application.Histories.Queries
+    name: Queries
+    href: Application.Histories.Queries.html
+  - name: .
+  - uid: Application.Histories.Queries.GetQuestionHistory
+    name: GetQuestionHistory
+    href: Application.Histories.Queries.GetQuestionHistory.html
+  - name: .
+  - uid: Application.Histories.Queries.GetQuestionHistory.Models
+    name: Models
+    href: Application.Histories.Queries.GetQuestionHistory.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.Name*
+  commentId: Overload:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.Name
+  href: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.html#Application_Histories_Queries_GetQuestionHistory_Models_PropertyChangesQueryResult_Name
+  name: Name
+  nameWithType: PropertyChangesQueryResult.Name
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.DataType*
+  commentId: Overload:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.DataType
+  href: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.html#Application_Histories_Queries_GetQuestionHistory_Models_PropertyChangesQueryResult_DataType
+  name: DataType
+  nameWithType: PropertyChangesQueryResult.DataType
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.DataType
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.IsNullable*
+  commentId: Overload:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.IsNullable
+  href: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.html#Application_Histories_Queries_GetQuestionHistory_Models_PropertyChangesQueryResult_IsNullable
+  name: IsNullable
+  nameWithType: PropertyChangesQueryResult.IsNullable
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.IsNullable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.OldValue*
+  commentId: Overload:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.OldValue
+  href: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.html#Application_Histories_Queries_GetQuestionHistory_Models_PropertyChangesQueryResult_OldValue
+  name: OldValue
+  nameWithType: PropertyChangesQueryResult.OldValue
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.OldValue
+- uid: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.NewValue*
+  commentId: Overload:Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.NewValue
+  href: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.html#Application_Histories_Queries_GetQuestionHistory_Models_PropertyChangesQueryResult_NewValue
+  name: NewValue
+  nameWithType: PropertyChangesQueryResult.NewValue
+  fullName: Application.Histories.Queries.GetQuestionHistory.Models.PropertyChangesQueryResult.NewValue

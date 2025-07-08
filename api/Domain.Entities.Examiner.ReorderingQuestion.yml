@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.Examiner.ReorderingQuestion
+  commentId: T:Domain.Entities.Examiner.ReorderingQuestion
+  id: ReorderingQuestion
+  parent: Domain.Entities.Examiner
+  children:
+  - Domain.Entities.Examiner.ReorderingQuestion.#ctor(System.String,System.Int32,System.String,System.String)
+  - Domain.Entities.Examiner.ReorderingQuestion.CorrectAnswerFeedBack
+  - Domain.Entities.Examiner.ReorderingQuestion.Id
+  - Domain.Entities.Examiner.ReorderingQuestion.Order
+  - Domain.Entities.Examiner.ReorderingQuestion.Value
+  - Domain.Entities.Examiner.ReorderingQuestion.WrongAnswerFeedBack
+  langs:
+  - csharp
+  - vb
+  name: ReorderingQuestion
+  nameWithType: ReorderingQuestion
+  fullName: Domain.Entities.Examiner.ReorderingQuestion
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ReorderingQuestion
+    path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public class ReorderingQuestion
+    content.vb: Public Class ReorderingQuestion
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Entities.Examiner.ReorderingQuestion.#ctor(System.String,System.Int32,System.String,System.String)
+  commentId: M:Domain.Entities.Examiner.ReorderingQuestion.#ctor(System.String,System.Int32,System.String,System.String)
+  id: '#ctor(System.String,System.Int32,System.String,System.String)'
+  parent: Domain.Entities.Examiner.ReorderingQuestion
+  langs:
+  - csharp
+  - vb
+  name: ReorderingQuestion(string, int, string?, string?)
+  nameWithType: ReorderingQuestion.ReorderingQuestion(string, int, string?, string?)
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.ReorderingQuestion(string, int, string?, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+    startLine: 4
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public ReorderingQuestion(string value, int order, string? wrongAnswerFeedBack, string? correctAnswerFeedBack)
+    parameters:
+    - id: value
+      type: System.String
+    - id: order
+      type: System.Int32
+    - id: wrongAnswerFeedBack
+      type: System.String
+    - id: correctAnswerFeedBack
+      type: System.String
+    content.vb: Public Sub New(value As String, order As Integer, wrongAnswerFeedBack As String, correctAnswerFeedBack As String)
+  overload: Domain.Entities.Examiner.ReorderingQuestion.#ctor*
+  nameWithType.vb: ReorderingQuestion.New(String, Integer, String, String)
+  fullName.vb: Domain.Entities.Examiner.ReorderingQuestion.New(String, Integer, String, String)
+  name.vb: New(String, Integer, String, String)
+- uid: Domain.Entities.Examiner.ReorderingQuestion.Id
+  commentId: P:Domain.Entities.Examiner.ReorderingQuestion.Id
+  id: Id
+  parent: Domain.Entities.Examiner.ReorderingQuestion
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ReorderingQuestion.Id
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.Id
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Id
+    path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+    startLine: 12
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public Guid Id { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Domain.Entities.Examiner.ReorderingQuestion.Id*
+- uid: Domain.Entities.Examiner.ReorderingQuestion.Value
+  commentId: P:Domain.Entities.Examiner.ReorderingQuestion.Value
+  id: Value
+  parent: Domain.Entities.Examiner.ReorderingQuestion
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ReorderingQuestion.Value
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.Value
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Value
+    path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+    startLine: 13
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: Domain.Entities.Examiner.ReorderingQuestion.Value*
+- uid: Domain.Entities.Examiner.ReorderingQuestion.Order
+  commentId: P:Domain.Entities.Examiner.ReorderingQuestion.Order
+  id: Order
+  parent: Domain.Entities.Examiner.ReorderingQuestion
+  langs:
+  - csharp
+  - vb
+  name: Order
+  nameWithType: ReorderingQuestion.Order
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.Order
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Order
+    path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+    startLine: 14
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public int Order { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Order As Integer
+  overload: Domain.Entities.Examiner.ReorderingQuestion.Order*
+- uid: Domain.Entities.Examiner.ReorderingQuestion.WrongAnswerFeedBack
+  commentId: P:Domain.Entities.Examiner.ReorderingQuestion.WrongAnswerFeedBack
+  id: WrongAnswerFeedBack
+  parent: Domain.Entities.Examiner.ReorderingQuestion
+  langs:
+  - csharp
+  - vb
+  name: WrongAnswerFeedBack
+  nameWithType: ReorderingQuestion.WrongAnswerFeedBack
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.WrongAnswerFeedBack
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: WrongAnswerFeedBack
+    path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+    startLine: 15
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public string? WrongAnswerFeedBack { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property WrongAnswerFeedBack As String
+  overload: Domain.Entities.Examiner.ReorderingQuestion.WrongAnswerFeedBack*
+- uid: Domain.Entities.Examiner.ReorderingQuestion.CorrectAnswerFeedBack
+  commentId: P:Domain.Entities.Examiner.ReorderingQuestion.CorrectAnswerFeedBack
+  id: CorrectAnswerFeedBack
+  parent: Domain.Entities.Examiner.ReorderingQuestion
+  langs:
+  - csharp
+  - vb
+  name: CorrectAnswerFeedBack
+  nameWithType: ReorderingQuestion.CorrectAnswerFeedBack
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.CorrectAnswerFeedBack
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CorrectAnswerFeedBack
+    path: src/Domain/Entities/Examiner/ReorderingQuestion.cs
+    startLine: 16
+  assemblies:
+  - Domain
+  namespace: Domain.Entities.Examiner
+  syntax:
+    content: public string? CorrectAnswerFeedBack { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CorrectAnswerFeedBack As String
+  overload: Domain.Entities.Examiner.ReorderingQuestion.CorrectAnswerFeedBack*
+references:
+- uid: Domain.Entities.Examiner
+  commentId: N:Domain.Entities.Examiner
+  href: Domain.html
+  name: Domain.Entities.Examiner
+  nameWithType: Domain.Entities.Examiner
+  fullName: Domain.Entities.Examiner
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Examiner
+    name: Examiner
+    href: Domain.Entities.Examiner.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Examiner
+    name: Examiner
+    href: Domain.Entities.Examiner.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Entities.Examiner.ReorderingQuestion.#ctor*
+  commentId: Overload:Domain.Entities.Examiner.ReorderingQuestion.#ctor
+  href: Domain.Entities.Examiner.ReorderingQuestion.html#Domain_Entities_Examiner_ReorderingQuestion__ctor_System_String_System_Int32_System_String_System_String_
+  name: ReorderingQuestion
+  nameWithType: ReorderingQuestion.ReorderingQuestion
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.ReorderingQuestion
+  nameWithType.vb: ReorderingQuestion.New
+  fullName.vb: Domain.Entities.Examiner.ReorderingQuestion.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Domain.Entities.Examiner.ReorderingQuestion.Id*
+  commentId: Overload:Domain.Entities.Examiner.ReorderingQuestion.Id
+  href: Domain.Entities.Examiner.ReorderingQuestion.html#Domain_Entities_Examiner_ReorderingQuestion_Id
+  name: Id
+  nameWithType: ReorderingQuestion.Id
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Domain.Entities.Examiner.ReorderingQuestion.Value*
+  commentId: Overload:Domain.Entities.Examiner.ReorderingQuestion.Value
+  href: Domain.Entities.Examiner.ReorderingQuestion.html#Domain_Entities_Examiner_ReorderingQuestion_Value
+  name: Value
+  nameWithType: ReorderingQuestion.Value
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.Value
+- uid: Domain.Entities.Examiner.ReorderingQuestion.Order*
+  commentId: Overload:Domain.Entities.Examiner.ReorderingQuestion.Order
+  href: Domain.Entities.Examiner.ReorderingQuestion.html#Domain_Entities_Examiner_ReorderingQuestion_Order
+  name: Order
+  nameWithType: ReorderingQuestion.Order
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.Order
+- uid: Domain.Entities.Examiner.ReorderingQuestion.WrongAnswerFeedBack*
+  commentId: Overload:Domain.Entities.Examiner.ReorderingQuestion.WrongAnswerFeedBack
+  href: Domain.Entities.Examiner.ReorderingQuestion.html#Domain_Entities_Examiner_ReorderingQuestion_WrongAnswerFeedBack
+  name: WrongAnswerFeedBack
+  nameWithType: ReorderingQuestion.WrongAnswerFeedBack
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.WrongAnswerFeedBack
+- uid: Domain.Entities.Examiner.ReorderingQuestion.CorrectAnswerFeedBack*
+  commentId: Overload:Domain.Entities.Examiner.ReorderingQuestion.CorrectAnswerFeedBack
+  href: Domain.Entities.Examiner.ReorderingQuestion.html#Domain_Entities_Examiner_ReorderingQuestion_CorrectAnswerFeedBack
+  name: CorrectAnswerFeedBack
+  nameWithType: ReorderingQuestion.CorrectAnswerFeedBack
+  fullName: Domain.Entities.Examiner.ReorderingQuestion.CorrectAnswerFeedBack

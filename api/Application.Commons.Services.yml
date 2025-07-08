@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  id: Application.Commons.Services
+  children:
+  - Application.Commons.Services.IAuditTrailService
+  - Application.Commons.Services.ICategoryService
+  - Application.Commons.Services.ILoggingService
+  - Application.Commons.Services.ILookupService
+  - Application.Commons.Services.IQuestionService
+  - Application.Commons.Services.ISourceService
+  - Application.Commons.Services.ISystemService
+  - Application.Commons.Services.ITagService
+  langs:
+  - csharp
+  - vb
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Commons.Services.IAuditTrailService
+  commentId: T:Application.Commons.Services.IAuditTrailService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.IAuditTrailService.html
+  name: IAuditTrailService
+  nameWithType: IAuditTrailService
+  fullName: Application.Commons.Services.IAuditTrailService
+- uid: Application.Commons.Services.ICategoryService
+  commentId: T:Application.Commons.Services.ICategoryService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ICategoryService.html
+  name: ICategoryService
+  nameWithType: ICategoryService
+  fullName: Application.Commons.Services.ICategoryService
+- uid: Application.Commons.Services.ILoggingService
+  commentId: T:Application.Commons.Services.ILoggingService
+  href: Application.Commons.Services.ILoggingService.html
+  name: ILoggingService
+  nameWithType: ILoggingService
+  fullName: Application.Commons.Services.ILoggingService
+- uid: Application.Commons.Services.ILookupService
+  commentId: T:Application.Commons.Services.ILookupService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ILookupService.html
+  name: ILookupService
+  nameWithType: ILookupService
+  fullName: Application.Commons.Services.ILookupService
+- uid: Application.Commons.Services.IQuestionService
+  commentId: T:Application.Commons.Services.IQuestionService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.IQuestionService.html
+  name: IQuestionService
+  nameWithType: IQuestionService
+  fullName: Application.Commons.Services.IQuestionService
+- uid: Application.Commons.Services.ISourceService
+  commentId: T:Application.Commons.Services.ISourceService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ISourceService.html
+  name: ISourceService
+  nameWithType: ISourceService
+  fullName: Application.Commons.Services.ISourceService
+- uid: Application.Commons.Services.ISystemService
+  commentId: T:Application.Commons.Services.ISystemService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ISystemService.html
+  name: ISystemService
+  nameWithType: ISystemService
+  fullName: Application.Commons.Services.ISystemService
+- uid: Application.Commons.Services.ITagService
+  commentId: T:Application.Commons.Services.ITagService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ITagService.html
+  name: ITagService
+  nameWithType: ITagService
+  fullName: Application.Commons.Services.ITagService
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html

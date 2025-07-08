@@ -1,0 +1,573 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  commentId: T:Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  id: AddCategoryCommandResult
+  parent: Application.Categories.Commands.AddCategory
+  children:
+  - Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Description
+  - Application.Categories.Commands.AddCategory.AddCategoryCommandResult.HasChildren
+  - Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Id
+  - Application.Categories.Commands.AddCategory.AddCategoryCommandResult.IsRoot
+  - Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Level
+  - Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Name
+  - Application.Categories.Commands.AddCategory.AddCategoryCommandResult.ParentId
+  langs:
+  - csharp
+  - vb
+  name: AddCategoryCommandResult
+  nameWithType: AddCategoryCommandResult
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  type: Class
+  source:
+    remote:
+      path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddCategoryCommandResult
+    path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.AddCategory
+  syntax:
+    content: public class AddCategoryCommandResult
+    content.vb: Public Class AddCategoryCommandResult
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Id
+  commentId: P:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Id
+  id: Id
+  parent: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AddCategoryCommandResult.Id
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Id
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Id
+    path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.AddCategory
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Id*
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Name
+  commentId: P:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Name
+  id: Name
+  parent: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: AddCategoryCommandResult.Name
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Name
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Name
+    path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.AddCategory
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Name*
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Description
+  commentId: P:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Description
+  id: Description
+  parent: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: AddCategoryCommandResult.Description
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Description
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Description
+    path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.AddCategory
+  syntax:
+    content: public string? Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Description*
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.ParentId
+  commentId: P:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.ParentId
+  id: ParentId
+  parent: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  langs:
+  - csharp
+  - vb
+  name: ParentId
+  nameWithType: AddCategoryCommandResult.ParentId
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.ParentId
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ParentId
+    path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.AddCategory
+  syntax:
+    content: public Guid? ParentId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property ParentId As Guid?
+  overload: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.ParentId*
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Level
+  commentId: P:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Level
+  id: Level
+  parent: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  langs:
+  - csharp
+  - vb
+  name: Level
+  nameWithType: AddCategoryCommandResult.Level
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Level
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Level
+    path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.AddCategory
+  syntax:
+    content: public int Level { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Level As Integer
+  overload: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Level*
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.HasChildren
+  commentId: P:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.HasChildren
+  id: HasChildren
+  parent: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  langs:
+  - csharp
+  - vb
+  name: HasChildren
+  nameWithType: AddCategoryCommandResult.HasChildren
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.HasChildren
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: HasChildren
+    path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.AddCategory
+  syntax:
+    content: public bool HasChildren { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasChildren As Boolean
+  overload: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.HasChildren*
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.IsRoot
+  commentId: P:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.IsRoot
+  id: IsRoot
+  parent: Application.Categories.Commands.AddCategory.AddCategoryCommandResult
+  langs:
+  - csharp
+  - vb
+  name: IsRoot
+  nameWithType: AddCategoryCommandResult.IsRoot
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.IsRoot
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IsRoot
+    path: src/Application/Categories/Commands/AddCategory/AddCategoryCommandResult.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.AddCategory
+  syntax:
+    content: public bool IsRoot { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRoot As Boolean
+  overload: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.IsRoot*
+references:
+- uid: Application.Categories.Commands.AddCategory
+  commentId: N:Application.Categories.Commands.AddCategory
+  href: Application.html
+  name: Application.Categories.Commands.AddCategory
+  nameWithType: Application.Categories.Commands.AddCategory
+  fullName: Application.Categories.Commands.AddCategory
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.AddCategory
+    name: AddCategory
+    href: Application.Categories.Commands.AddCategory.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.AddCategory
+    name: AddCategory
+    href: Application.Categories.Commands.AddCategory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Id*
+  commentId: Overload:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Id
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.html#Application_Categories_Commands_AddCategory_AddCategoryCommandResult_Id
+  name: Id
+  nameWithType: AddCategoryCommandResult.Id
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Name*
+  commentId: Overload:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Name
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.html#Application_Categories_Commands_AddCategory_AddCategoryCommandResult_Name
+  name: Name
+  nameWithType: AddCategoryCommandResult.Name
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Description*
+  commentId: Overload:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Description
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.html#Application_Categories_Commands_AddCategory_AddCategoryCommandResult_Description
+  name: Description
+  nameWithType: AddCategoryCommandResult.Description
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Description
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.ParentId*
+  commentId: Overload:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.ParentId
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.html#Application_Categories_Commands_AddCategory_AddCategoryCommandResult_ParentId
+  name: ParentId
+  nameWithType: AddCategoryCommandResult.ParentId
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.ParentId
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Level*
+  commentId: Overload:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Level
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.html#Application_Categories_Commands_AddCategory_AddCategoryCommandResult_Level
+  name: Level
+  nameWithType: AddCategoryCommandResult.Level
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.Level
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.HasChildren*
+  commentId: Overload:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.HasChildren
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.html#Application_Categories_Commands_AddCategory_AddCategoryCommandResult_HasChildren
+  name: HasChildren
+  nameWithType: AddCategoryCommandResult.HasChildren
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.HasChildren
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.IsRoot*
+  commentId: Overload:Application.Categories.Commands.AddCategory.AddCategoryCommandResult.IsRoot
+  href: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.html#Application_Categories_Commands_AddCategory_AddCategoryCommandResult_IsRoot
+  name: IsRoot
+  nameWithType: AddCategoryCommandResult.IsRoot
+  fullName: Application.Categories.Commands.AddCategory.AddCategoryCommandResult.IsRoot

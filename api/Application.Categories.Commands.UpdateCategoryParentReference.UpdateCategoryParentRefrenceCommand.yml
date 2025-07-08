@@ -1,0 +1,279 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand
+  commentId: T:Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand
+  id: UpdateCategoryParentRefrenceCommand
+  parent: Application.Categories.Commands.UpdateCategoryParentReference
+  children:
+  - Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand.MyProperty
+  langs:
+  - csharp
+  - vb
+  name: UpdateCategoryParentRefrenceCommand
+  nameWithType: UpdateCategoryParentRefrenceCommand
+  fullName: Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand
+  type: Class
+  source:
+    remote:
+      path: src/Application/Categories/Commands/UpdateCategoryParentReference/UpdateCategoryParentRefrenceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateCategoryParentRefrenceCommand
+    path: src/Application/Categories/Commands/UpdateCategoryParentReference/UpdateCategoryParentRefrenceCommand.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.UpdateCategoryParentReference
+  syntax:
+    content: public class UpdateCategoryParentRefrenceCommand
+    content.vb: Public Class UpdateCategoryParentRefrenceCommand
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand.MyProperty
+  commentId: P:Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand.MyProperty
+  id: MyProperty
+  parent: Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand
+  langs:
+  - csharp
+  - vb
+  name: MyProperty
+  nameWithType: UpdateCategoryParentRefrenceCommand.MyProperty
+  fullName: Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand.MyProperty
+  type: Property
+  source:
+    remote:
+      path: src/Application/Categories/Commands/UpdateCategoryParentReference/UpdateCategoryParentRefrenceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: MyProperty
+    path: src/Application/Categories/Commands/UpdateCategoryParentReference/UpdateCategoryParentRefrenceCommand.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Categories.Commands.UpdateCategoryParentReference
+  syntax:
+    content: public int MyProperty { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MyProperty As Integer
+  overload: Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand.MyProperty*
+references:
+- uid: Application.Categories.Commands.UpdateCategoryParentReference
+  commentId: N:Application.Categories.Commands.UpdateCategoryParentReference
+  href: Application.html
+  name: Application.Categories.Commands.UpdateCategoryParentReference
+  nameWithType: Application.Categories.Commands.UpdateCategoryParentReference
+  fullName: Application.Categories.Commands.UpdateCategoryParentReference
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.UpdateCategoryParentReference
+    name: UpdateCategoryParentReference
+    href: Application.Categories.Commands.UpdateCategoryParentReference.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.UpdateCategoryParentReference
+    name: UpdateCategoryParentReference
+    href: Application.Categories.Commands.UpdateCategoryParentReference.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand.MyProperty*
+  commentId: Overload:Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand.MyProperty
+  href: Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand.html#Application_Categories_Commands_UpdateCategoryParentReference_UpdateCategoryParentRefrenceCommand_MyProperty
+  name: MyProperty
+  nameWithType: UpdateCategoryParentRefrenceCommand.MyProperty
+  fullName: Application.Categories.Commands.UpdateCategoryParentReference.UpdateCategoryParentRefrenceCommand.MyProperty
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

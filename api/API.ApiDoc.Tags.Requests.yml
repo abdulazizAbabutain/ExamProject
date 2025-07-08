@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: API.ApiDoc.Tags.Requests
+  commentId: N:API.ApiDoc.Tags.Requests
+  id: API.ApiDoc.Tags.Requests
+  children:
+  - API.ApiDoc.Tags.Requests.AddTagCommandRequestExample
+  langs:
+  - csharp
+  - vb
+  name: API.ApiDoc.Tags.Requests
+  nameWithType: API.ApiDoc.Tags.Requests
+  fullName: API.ApiDoc.Tags.Requests
+  type: Namespace
+  assemblies:
+  - API
+references:
+- uid: API.ApiDoc.Tags.Requests.AddTagCommandRequestExample
+  commentId: T:API.ApiDoc.Tags.Requests.AddTagCommandRequestExample
+  parent: API.ApiDoc.Tags.Requests
+  href: API.ApiDoc.Tags.Requests.AddTagCommandRequestExample.html
+  name: AddTagCommandRequestExample
+  nameWithType: AddTagCommandRequestExample
+  fullName: API.ApiDoc.Tags.Requests.AddTagCommandRequestExample
+- uid: API.ApiDoc.Tags.Requests
+  commentId: N:API.ApiDoc.Tags.Requests
+  href: API.html
+  name: API.ApiDoc.Tags.Requests
+  nameWithType: API.ApiDoc.Tags.Requests
+  fullName: API.ApiDoc.Tags.Requests
+  spec.csharp:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.ApiDoc
+    name: ApiDoc
+    href: API.ApiDoc.html
+  - name: .
+  - uid: API.ApiDoc.Tags
+    name: Tags
+    href: API.ApiDoc.Tags.html
+  - name: .
+  - uid: API.ApiDoc.Tags.Requests
+    name: Requests
+    href: API.ApiDoc.Tags.Requests.html
+  spec.vb:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.ApiDoc
+    name: ApiDoc
+    href: API.ApiDoc.html
+  - name: .
+  - uid: API.ApiDoc.Tags
+    name: Tags
+    href: API.ApiDoc.Tags.html
+  - name: .
+  - uid: API.ApiDoc.Tags.Requests
+    name: Requests
+    href: API.ApiDoc.Tags.Requests.html

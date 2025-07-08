@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Queries.AutoCompleteTags
+  commentId: N:Application.Tags.Queries.AutoCompleteTags
+  id: Application.Tags.Queries.AutoCompleteTags
+  children:
+  - Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQuery
+  - Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryHandler
+  - Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Tags.Queries.AutoCompleteTags
+  nameWithType: Application.Tags.Queries.AutoCompleteTags
+  fullName: Application.Tags.Queries.AutoCompleteTags
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQuery
+  commentId: T:Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQuery
+  parent: Application.Tags.Queries.AutoCompleteTags
+  href: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQuery.html
+  name: AutoCompleteTagsQuery
+  nameWithType: AutoCompleteTagsQuery
+  fullName: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQuery
+- uid: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryHandler
+  commentId: T:Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryHandler
+  href: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryHandler.html
+  name: AutoCompleteTagsQueryHandler
+  nameWithType: AutoCompleteTagsQueryHandler
+  fullName: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryHandler
+- uid: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult
+  commentId: T:Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult
+  href: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult.html
+  name: AutoCompleteTagsQueryResult
+  nameWithType: AutoCompleteTagsQueryResult
+  fullName: Application.Tags.Queries.AutoCompleteTags.AutoCompleteTagsQueryResult
+- uid: Application.Tags.Queries.AutoCompleteTags
+  commentId: N:Application.Tags.Queries.AutoCompleteTags
+  href: Application.html
+  name: Application.Tags.Queries.AutoCompleteTags
+  nameWithType: Application.Tags.Queries.AutoCompleteTags
+  fullName: Application.Tags.Queries.AutoCompleteTags
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.AutoCompleteTags
+    name: AutoCompleteTags
+    href: Application.Tags.Queries.AutoCompleteTags.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.AutoCompleteTags
+    name: AutoCompleteTags
+    href: Application.Tags.Queries.AutoCompleteTags.html

@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Commands.ArchiveTag
+  commentId: N:Application.Tags.Commands.ArchiveTag
+  id: Application.Tags.Commands.ArchiveTag
+  children:
+  - Application.Tags.Commands.ArchiveTag.ArchiveTagCommand
+  - Application.Tags.Commands.ArchiveTag.ArchiveTagCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Application.Tags.Commands.ArchiveTag
+  nameWithType: Application.Tags.Commands.ArchiveTag
+  fullName: Application.Tags.Commands.ArchiveTag
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Tags.Commands.ArchiveTag.ArchiveTagCommand
+  commentId: T:Application.Tags.Commands.ArchiveTag.ArchiveTagCommand
+  parent: Application.Tags.Commands.ArchiveTag
+  href: Application.Tags.Commands.ArchiveTag.ArchiveTagCommand.html
+  name: ArchiveTagCommand
+  nameWithType: ArchiveTagCommand
+  fullName: Application.Tags.Commands.ArchiveTag.ArchiveTagCommand
+- uid: Application.Tags.Commands.ArchiveTag.ArchiveTagCommandHandler
+  commentId: T:Application.Tags.Commands.ArchiveTag.ArchiveTagCommandHandler
+  href: Application.Tags.Commands.ArchiveTag.ArchiveTagCommandHandler.html
+  name: ArchiveTagCommandHandler
+  nameWithType: ArchiveTagCommandHandler
+  fullName: Application.Tags.Commands.ArchiveTag.ArchiveTagCommandHandler
+- uid: Application.Tags.Commands.ArchiveTag
+  commentId: N:Application.Tags.Commands.ArchiveTag
+  href: Application.html
+  name: Application.Tags.Commands.ArchiveTag
+  nameWithType: Application.Tags.Commands.ArchiveTag
+  fullName: Application.Tags.Commands.ArchiveTag
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.ArchiveTag
+    name: ArchiveTag
+    href: Application.Tags.Commands.ArchiveTag.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.ArchiveTag
+    name: ArchiveTag
+    href: Application.Tags.Commands.ArchiveTag.html

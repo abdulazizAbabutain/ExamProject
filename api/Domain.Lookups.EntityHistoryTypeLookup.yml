@@ -1,0 +1,328 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Lookups.EntityHistoryTypeLookup
+  commentId: T:Domain.Lookups.EntityHistoryTypeLookup
+  id: EntityHistoryTypeLookup
+  parent: Domain.Lookups
+  children:
+  - Domain.Lookups.EntityHistoryTypeLookup.Id
+  - Domain.Lookups.EntityHistoryTypeLookup.Value
+  langs:
+  - csharp
+  - vb
+  name: EntityHistoryTypeLookup
+  nameWithType: EntityHistoryTypeLookup
+  fullName: Domain.Lookups.EntityHistoryTypeLookup
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Lookups/EntityHistoryTypeLookup.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: EntityHistoryTypeLookup
+    path: src/Domain/Lookups/EntityHistoryTypeLookup.cs
+    startLine: 4
+  assemblies:
+  - Domain
+  namespace: Domain.Lookups
+  syntax:
+    content: public class EntityHistoryTypeLookup
+    content.vb: Public Class EntityHistoryTypeLookup
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Lookups.EntityHistoryTypeLookup.Id
+  commentId: P:Domain.Lookups.EntityHistoryTypeLookup.Id
+  id: Id
+  parent: Domain.Lookups.EntityHistoryTypeLookup
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: EntityHistoryTypeLookup.Id
+  fullName: Domain.Lookups.EntityHistoryTypeLookup.Id
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Lookups/EntityHistoryTypeLookup.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Id
+    path: src/Domain/Lookups/EntityHistoryTypeLookup.cs
+    startLine: 6
+  assemblies:
+  - Domain
+  namespace: Domain.Lookups
+  syntax:
+    content: public ActionType Id { get; set; }
+    parameters: []
+    return:
+      type: Domain.Enums.ActionType
+    content.vb: Public Property Id As ActionType
+  overload: Domain.Lookups.EntityHistoryTypeLookup.Id*
+- uid: Domain.Lookups.EntityHistoryTypeLookup.Value
+  commentId: P:Domain.Lookups.EntityHistoryTypeLookup.Value
+  id: Value
+  parent: Domain.Lookups.EntityHistoryTypeLookup
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: EntityHistoryTypeLookup.Value
+  fullName: Domain.Lookups.EntityHistoryTypeLookup.Value
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Lookups/EntityHistoryTypeLookup.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Value
+    path: src/Domain/Lookups/EntityHistoryTypeLookup.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.Lookups
+  syntax:
+    content: public string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Value As String
+  overload: Domain.Lookups.EntityHistoryTypeLookup.Value*
+references:
+- uid: Domain.Lookups
+  commentId: N:Domain.Lookups
+  href: Domain.html
+  name: Domain.Lookups
+  nameWithType: Domain.Lookups
+  fullName: Domain.Lookups
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Lookups
+    name: Lookups
+    href: Domain.Lookups.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Lookups
+    name: Lookups
+    href: Domain.Lookups.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Lookups.EntityHistoryTypeLookup.Id*
+  commentId: Overload:Domain.Lookups.EntityHistoryTypeLookup.Id
+  href: Domain.Lookups.EntityHistoryTypeLookup.html#Domain_Lookups_EntityHistoryTypeLookup_Id
+  name: Id
+  nameWithType: EntityHistoryTypeLookup.Id
+  fullName: Domain.Lookups.EntityHistoryTypeLookup.Id
+- uid: Domain.Enums.ActionType
+  commentId: T:Domain.Enums.ActionType
+  parent: Domain.Enums
+  href: Domain.Enums.ActionType.html
+  name: ActionType
+  nameWithType: ActionType
+  fullName: Domain.Enums.ActionType
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Domain.Lookups.EntityHistoryTypeLookup.Value*
+  commentId: Overload:Domain.Lookups.EntityHistoryTypeLookup.Value
+  href: Domain.Lookups.EntityHistoryTypeLookup.html#Domain_Lookups_EntityHistoryTypeLookup_Value
+  name: Value
+  nameWithType: EntityHistoryTypeLookup.Value
+  fullName: Domain.Lookups.EntityHistoryTypeLookup.Value
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

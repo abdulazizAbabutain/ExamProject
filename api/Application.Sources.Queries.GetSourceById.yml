@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Queries.GetSourceById
+  commentId: N:Application.Sources.Queries.GetSourceById
+  id: Application.Sources.Queries.GetSourceById
+  children:
+  - Application.Sources.Queries.GetSourceById.GetSourceByIdQuery
+  - Application.Sources.Queries.GetSourceById.GetSourceByIdQueryHandler
+  - Application.Sources.Queries.GetSourceById.GetSourceByIdQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Sources.Queries.GetSourceById
+  nameWithType: Application.Sources.Queries.GetSourceById
+  fullName: Application.Sources.Queries.GetSourceById
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Sources.Queries.GetSourceById.GetSourceByIdQuery
+  commentId: T:Application.Sources.Queries.GetSourceById.GetSourceByIdQuery
+  parent: Application.Sources.Queries.GetSourceById
+  href: Application.Sources.Queries.GetSourceById.GetSourceByIdQuery.html
+  name: GetSourceByIdQuery
+  nameWithType: GetSourceByIdQuery
+  fullName: Application.Sources.Queries.GetSourceById.GetSourceByIdQuery
+- uid: Application.Sources.Queries.GetSourceById.GetSourceByIdQueryHandler
+  commentId: T:Application.Sources.Queries.GetSourceById.GetSourceByIdQueryHandler
+  href: Application.Sources.Queries.GetSourceById.GetSourceByIdQueryHandler.html
+  name: GetSourceByIdQueryHandler
+  nameWithType: GetSourceByIdQueryHandler
+  fullName: Application.Sources.Queries.GetSourceById.GetSourceByIdQueryHandler
+- uid: Application.Sources.Queries.GetSourceById.GetSourceByIdQueryResult
+  commentId: T:Application.Sources.Queries.GetSourceById.GetSourceByIdQueryResult
+  href: Application.Sources.Queries.GetSourceById.GetSourceByIdQueryResult.html
+  name: GetSourceByIdQueryResult
+  nameWithType: GetSourceByIdQueryResult
+  fullName: Application.Sources.Queries.GetSourceById.GetSourceByIdQueryResult
+- uid: Application.Sources.Queries.GetSourceById
+  commentId: N:Application.Sources.Queries.GetSourceById
+  href: Application.html
+  name: Application.Sources.Queries.GetSourceById
+  nameWithType: Application.Sources.Queries.GetSourceById
+  fullName: Application.Sources.Queries.GetSourceById
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Queries
+    name: Queries
+    href: Application.Sources.Queries.html
+  - name: .
+  - uid: Application.Sources.Queries.GetSourceById
+    name: GetSourceById
+    href: Application.Sources.Queries.GetSourceById.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Queries
+    name: Queries
+    href: Application.Sources.Queries.html
+  - name: .
+  - uid: Application.Sources.Queries.GetSourceById
+    name: GetSourceById
+    href: Application.Sources.Queries.GetSourceById.html

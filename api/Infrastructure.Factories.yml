@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Factories
+  commentId: N:Infrastructure.Factories
+  id: Infrastructure.Factories
+  children:
+  - Infrastructure.Factories.JsonStringLocalizerFactory
+  langs:
+  - csharp
+  - vb
+  name: Infrastructure.Factories
+  nameWithType: Infrastructure.Factories
+  fullName: Infrastructure.Factories
+  type: Namespace
+  assemblies:
+  - Infrastructure
+references:
+- uid: Infrastructure.Factories.JsonStringLocalizerFactory
+  commentId: T:Infrastructure.Factories.JsonStringLocalizerFactory
+  href: Infrastructure.Factories.JsonStringLocalizerFactory.html
+  name: JsonStringLocalizerFactory
+  nameWithType: JsonStringLocalizerFactory
+  fullName: Infrastructure.Factories.JsonStringLocalizerFactory

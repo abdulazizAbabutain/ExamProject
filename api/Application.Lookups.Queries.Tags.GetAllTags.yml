@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Lookups.Queries.Tags.GetAllTags
+  commentId: N:Application.Lookups.Queries.Tags.GetAllTags
+  id: Application.Lookups.Queries.Tags.GetAllTags
+  children:
+  - Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  - Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryHandler
+  - Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Lookups.Queries.Tags.GetAllTags
+  nameWithType: Application.Lookups.Queries.Tags.GetAllTags
+  fullName: Application.Lookups.Queries.Tags.GetAllTags
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  commentId: T:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  parent: Application.Lookups.Queries.Tags.GetAllTags
+  href: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.html
+  name: GetAllTagsQuery
+  nameWithType: GetAllTagsQuery
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryHandler
+  commentId: T:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryHandler
+  href: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryHandler.html
+  name: GetAllTagsQueryHandler
+  nameWithType: GetAllTagsQueryHandler
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryHandler
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult
+  commentId: T:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult
+  href: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult.html
+  name: GetAllTagsQueryResult
+  nameWithType: GetAllTagsQueryResult
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult
+- uid: Application.Lookups.Queries.Tags.GetAllTags
+  commentId: N:Application.Lookups.Queries.Tags.GetAllTags
+  href: Application.html
+  name: Application.Lookups.Queries.Tags.GetAllTags
+  nameWithType: Application.Lookups.Queries.Tags.GetAllTags
+  fullName: Application.Lookups.Queries.Tags.GetAllTags
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Queries
+    name: Queries
+    href: Application.Lookups.Queries.html
+  - name: .
+  - uid: Application.Lookups.Queries.Tags
+    name: Tags
+    href: Application.Lookups.Queries.Tags.html
+  - name: .
+  - uid: Application.Lookups.Queries.Tags.GetAllTags
+    name: GetAllTags
+    href: Application.Lookups.Queries.Tags.GetAllTags.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Queries
+    name: Queries
+    href: Application.Lookups.Queries.html
+  - name: .
+  - uid: Application.Lookups.Queries.Tags
+    name: Tags
+    href: Application.Lookups.Queries.Tags.html
+  - name: .
+  - uid: Application.Lookups.Queries.Tags.GetAllTags
+    name: GetAllTags
+    href: Application.Lookups.Queries.Tags.GetAllTags.html

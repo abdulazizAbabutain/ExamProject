@@ -1,0 +1,931 @@
+### YamlMime:ManagedReference
+items:
+- uid: API.Controllers.V1.QuestionsController
+  commentId: T:API.Controllers.V1.QuestionsController
+  id: QuestionsController
+  parent: API.Controllers.V1
+  children:
+  - API.Controllers.V1.QuestionsController.#ctor(MediatR.IMediator)
+  - API.Controllers.V1.QuestionsController.AddQuestion(Application.Questions.Commands.AddQuestion.AddQuestionCommand)
+  - API.Controllers.V1.QuestionsController.DeleteAllQuestion
+  - API.Controllers.V1.QuestionsController.DeleteQuestion(System.Guid)
+  - API.Controllers.V1.QuestionsController.GetAllQuestions(Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery)
+  - API.Controllers.V1.QuestionsController.GetQuestionById(System.Guid)
+  - API.Controllers.V1.QuestionsController.UpdateQuestion(Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand)
+  langs:
+  - csharp
+  - vb
+  name: QuestionsController
+  nameWithType: QuestionsController
+  fullName: API.Controllers.V1.QuestionsController
+  type: Class
+  source:
+    remote:
+      path: src/API/Controllers/V1/QuestionsController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: QuestionsController
+    path: src/API/Controllers/V1/QuestionsController.cs
+    startLine: 13
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Route("api/[controller]")]
+
+      [ApiController]
+
+      public class QuestionsController : ControllerBase
+    content.vb: >-
+      <Route("api/[controller]")>
+
+      <ApiController>
+
+      Public Class QuestionsController Inherits ControllerBase
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Mvc.ControllerBase
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.RouteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.RouteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: api/[controller]
+  - type: Microsoft.AspNetCore.Mvc.ApiControllerAttribute
+    ctor: Microsoft.AspNetCore.Mvc.ApiControllerAttribute.#ctor
+    arguments: []
+- uid: API.Controllers.V1.QuestionsController.#ctor(MediatR.IMediator)
+  commentId: M:API.Controllers.V1.QuestionsController.#ctor(MediatR.IMediator)
+  id: '#ctor(MediatR.IMediator)'
+  parent: API.Controllers.V1.QuestionsController
+  langs:
+  - csharp
+  - vb
+  name: QuestionsController(IMediator)
+  nameWithType: QuestionsController.QuestionsController(IMediator)
+  fullName: API.Controllers.V1.QuestionsController.QuestionsController(MediatR.IMediator)
+  type: Constructor
+  source:
+    remote:
+      path: src/API/Controllers/V1/QuestionsController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/API/Controllers/V1/QuestionsController.cs
+    startLine: 23
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: public QuestionsController(IMediator mediator)
+    parameters:
+    - id: mediator
+      type: MediatR.IMediator
+      description: ''
+    content.vb: Public Sub New(mediator As IMediator)
+  overload: API.Controllers.V1.QuestionsController.#ctor*
+  nameWithType.vb: QuestionsController.New(IMediator)
+  fullName.vb: API.Controllers.V1.QuestionsController.New(MediatR.IMediator)
+  name.vb: New(IMediator)
+- uid: API.Controllers.V1.QuestionsController.AddQuestion(Application.Questions.Commands.AddQuestion.AddQuestionCommand)
+  commentId: M:API.Controllers.V1.QuestionsController.AddQuestion(Application.Questions.Commands.AddQuestion.AddQuestionCommand)
+  id: AddQuestion(Application.Questions.Commands.AddQuestion.AddQuestionCommand)
+  parent: API.Controllers.V1.QuestionsController
+  langs:
+  - csharp
+  - vb
+  name: AddQuestion(AddQuestionCommand)
+  nameWithType: QuestionsController.AddQuestion(AddQuestionCommand)
+  fullName: API.Controllers.V1.QuestionsController.AddQuestion(Application.Questions.Commands.AddQuestion.AddQuestionCommand)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/QuestionsController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddQuestion
+    path: src/API/Controllers/V1/QuestionsController.cs
+    startLine: 32
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpPost]
+
+      public Task<IActionResult> AddQuestion(AddQuestionCommand command)
+    parameters:
+    - id: command
+      type: Application.Questions.Commands.AddQuestion.AddQuestionCommand
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpPost>
+
+      Public Function AddQuestion(command As AddQuestionCommand) As Task(Of IActionResult)
+  overload: API.Controllers.V1.QuestionsController.AddQuestion*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPostAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPostAttribute.#ctor
+    arguments: []
+- uid: API.Controllers.V1.QuestionsController.GetAllQuestions(Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery)
+  commentId: M:API.Controllers.V1.QuestionsController.GetAllQuestions(Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery)
+  id: GetAllQuestions(Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery)
+  parent: API.Controllers.V1.QuestionsController
+  langs:
+  - csharp
+  - vb
+  name: GetAllQuestions(GetAllQuestionsQuery)
+  nameWithType: QuestionsController.GetAllQuestions(GetAllQuestionsQuery)
+  fullName: API.Controllers.V1.QuestionsController.GetAllQuestions(Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/QuestionsController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAllQuestions
+    path: src/API/Controllers/V1/QuestionsController.cs
+    startLine: 42
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpGet]
+
+      public Task<IActionResult> GetAllQuestions(GetAllQuestionsQuery query)
+    parameters:
+    - id: query
+      type: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromQueryAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromQueryAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpGet>
+
+      Public Function GetAllQuestions(query As GetAllQuestionsQuery) As Task(Of IActionResult)
+  overload: API.Controllers.V1.QuestionsController.GetAllQuestions*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor
+    arguments: []
+- uid: API.Controllers.V1.QuestionsController.GetQuestionById(System.Guid)
+  commentId: M:API.Controllers.V1.QuestionsController.GetQuestionById(System.Guid)
+  id: GetQuestionById(System.Guid)
+  parent: API.Controllers.V1.QuestionsController
+  langs:
+  - csharp
+  - vb
+  name: GetQuestionById(Guid)
+  nameWithType: QuestionsController.GetQuestionById(Guid)
+  fullName: API.Controllers.V1.QuestionsController.GetQuestionById(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/QuestionsController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetQuestionById
+    path: src/API/Controllers/V1/QuestionsController.cs
+    startLine: 52
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpGet("{id}")]
+
+      public Task<IActionResult> GetQuestionById(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpGet("{id}")>
+
+      Public Function GetQuestionById(id As Guid) As Task(Of IActionResult)
+  overload: API.Controllers.V1.QuestionsController.GetQuestionById*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpGetAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpGetAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{id}'
+- uid: API.Controllers.V1.QuestionsController.DeleteAllQuestion
+  commentId: M:API.Controllers.V1.QuestionsController.DeleteAllQuestion
+  id: DeleteAllQuestion
+  parent: API.Controllers.V1.QuestionsController
+  langs:
+  - csharp
+  - vb
+  name: DeleteAllQuestion()
+  nameWithType: QuestionsController.DeleteAllQuestion()
+  fullName: API.Controllers.V1.QuestionsController.DeleteAllQuestion()
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/QuestionsController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DeleteAllQuestion
+    path: src/API/Controllers/V1/QuestionsController.cs
+    startLine: 61
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpDelete(Name = "DeleteAllQuestion")]
+
+      public Task<IActionResult> DeleteAllQuestion()
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpDelete(Name:="DeleteAllQuestion")>
+
+      Public Function DeleteAllQuestion() As Task(Of IActionResult)
+  overload: API.Controllers.V1.QuestionsController.DeleteAllQuestion*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: DeleteAllQuestion
+- uid: API.Controllers.V1.QuestionsController.DeleteQuestion(System.Guid)
+  commentId: M:API.Controllers.V1.QuestionsController.DeleteQuestion(System.Guid)
+  id: DeleteQuestion(System.Guid)
+  parent: API.Controllers.V1.QuestionsController
+  langs:
+  - csharp
+  - vb
+  name: DeleteQuestion(Guid)
+  nameWithType: QuestionsController.DeleteQuestion(Guid)
+  fullName: API.Controllers.V1.QuestionsController.DeleteQuestion(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/QuestionsController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DeleteQuestion
+    path: src/API/Controllers/V1/QuestionsController.cs
+    startLine: 72
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpDelete("{id}", Name = "DeleteQuestion")]
+
+      public Task<IActionResult> DeleteQuestion(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromRouteAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromRouteAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpDelete("{id}", Name:="DeleteQuestion")>
+
+      Public Function DeleteQuestion(id As Guid) As Task(Of IActionResult)
+  overload: API.Controllers.V1.QuestionsController.DeleteQuestion*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpDeleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: '{id}'
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: DeleteQuestion
+- uid: API.Controllers.V1.QuestionsController.UpdateQuestion(Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand)
+  commentId: M:API.Controllers.V1.QuestionsController.UpdateQuestion(Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand)
+  id: UpdateQuestion(Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand)
+  parent: API.Controllers.V1.QuestionsController
+  langs:
+  - csharp
+  - vb
+  name: UpdateQuestion(UpdateQuestionCommand)
+  nameWithType: QuestionsController.UpdateQuestion(UpdateQuestionCommand)
+  fullName: API.Controllers.V1.QuestionsController.UpdateQuestion(Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand)
+  type: Method
+  source:
+    remote:
+      path: src/API/Controllers/V1/QuestionsController.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateQuestion
+    path: src/API/Controllers/V1/QuestionsController.cs
+    startLine: 83
+  assemblies:
+  - API
+  namespace: API.Controllers.V1
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [HttpPut(Name = "UpdateQuestion")]
+
+      public Task<IActionResult> UpdateQuestion(UpdateQuestionCommand command)
+    parameters:
+    - id: command
+      type: Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand
+      description: ''
+      attributes:
+      - type: Microsoft.AspNetCore.Mvc.FromBodyAttribute
+        ctor: Microsoft.AspNetCore.Mvc.FromBodyAttribute.#ctor
+        arguments: []
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+      description: ''
+    content.vb: >-
+      <HttpPut(Name:="UpdateQuestion")>
+
+      Public Function UpdateQuestion(command As UpdateQuestionCommand) As Task(Of IActionResult)
+  overload: API.Controllers.V1.QuestionsController.UpdateQuestion*
+  attributes:
+  - type: Microsoft.AspNetCore.Mvc.HttpPutAttribute
+    ctor: Microsoft.AspNetCore.Mvc.HttpPutAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: UpdateQuestion
+references:
+- uid: API.Controllers.V1
+  commentId: N:API.Controllers.V1
+  href: API.html
+  name: API.Controllers.V1
+  nameWithType: API.Controllers.V1
+  fullName: API.Controllers.V1
+  spec.csharp:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Controllers
+    name: Controllers
+    href: API.Controllers.html
+  - name: .
+  - uid: API.Controllers.V1
+    name: V1
+    href: API.Controllers.V1.html
+  spec.vb:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Controllers
+    name: Controllers
+    href: API.Controllers.html
+  - name: .
+  - uid: API.Controllers.V1
+    name: V1
+    href: API.Controllers.V1.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Mvc.ControllerBase
+  commentId: T:Microsoft.AspNetCore.Mvc.ControllerBase
+  parent: Microsoft.AspNetCore.Mvc
+  isExternal: true
+  name: ControllerBase
+  nameWithType: ControllerBase
+  fullName: Microsoft.AspNetCore.Mvc.ControllerBase
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc
+  commentId: N:Microsoft.AspNetCore.Mvc
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc
+  nameWithType: Microsoft.AspNetCore.Mvc
+  fullName: Microsoft.AspNetCore.Mvc
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: API.Controllers.V1.QuestionsController.#ctor*
+  commentId: Overload:API.Controllers.V1.QuestionsController.#ctor
+  href: API.Controllers.V1.QuestionsController.html#API_Controllers_V1_QuestionsController__ctor_MediatR_IMediator_
+  name: QuestionsController
+  nameWithType: QuestionsController.QuestionsController
+  fullName: API.Controllers.V1.QuestionsController.QuestionsController
+  nameWithType.vb: QuestionsController.New
+  fullName.vb: API.Controllers.V1.QuestionsController.New
+  name.vb: New
+- uid: MediatR.IMediator
+  commentId: T:MediatR.IMediator
+  parent: MediatR
+  isExternal: true
+  name: IMediator
+  nameWithType: IMediator
+  fullName: MediatR.IMediator
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: API.Controllers.V1.QuestionsController.AddQuestion*
+  commentId: Overload:API.Controllers.V1.QuestionsController.AddQuestion
+  href: API.Controllers.V1.QuestionsController.html#API_Controllers_V1_QuestionsController_AddQuestion_Application_Questions_Commands_AddQuestion_AddQuestionCommand_
+  name: AddQuestion
+  nameWithType: QuestionsController.AddQuestion
+  fullName: API.Controllers.V1.QuestionsController.AddQuestion
+- uid: Application.Questions.Commands.AddQuestion.AddQuestionCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.AddQuestionCommand
+  parent: Application.Questions.Commands.AddQuestion
+  href: Application.Questions.Commands.AddQuestion.AddQuestionCommand.html
+  name: AddQuestionCommand
+  nameWithType: AddQuestionCommand
+  fullName: Application.Questions.Commands.AddQuestion.AddQuestionCommand
+- uid: System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.AspNetCore.Mvc.IActionResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IActionResult>
+  nameWithType: Task<IActionResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.AspNetCore.Mvc.IActionResult>
+  nameWithType.vb: Task(Of IActionResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.AspNetCore.Mvc.IActionResult)
+  name.vb: Task(Of IActionResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.IActionResult
+    name: IActionResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult
+  - name: )
+- uid: Application.Questions.Commands.AddQuestion
+  commentId: N:Application.Questions.Commands.AddQuestion
+  href: Application.html
+  name: Application.Questions.Commands.AddQuestion
+  nameWithType: Application.Questions.Commands.AddQuestion
+  fullName: Application.Questions.Commands.AddQuestion
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion
+    name: AddQuestion
+    href: Application.Questions.Commands.AddQuestion.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion
+    name: AddQuestion
+    href: Application.Questions.Commands.AddQuestion.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: API.Controllers.V1.QuestionsController.GetAllQuestions*
+  commentId: Overload:API.Controllers.V1.QuestionsController.GetAllQuestions
+  href: API.Controllers.V1.QuestionsController.html#API_Controllers_V1_QuestionsController_GetAllQuestions_Application_Questions_Queries_GetAllQuestions_GetAllQuestionsQuery_
+  name: GetAllQuestions
+  nameWithType: QuestionsController.GetAllQuestions
+  fullName: API.Controllers.V1.QuestionsController.GetAllQuestions
+- uid: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery
+  commentId: T:Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery
+  parent: Application.Questions.Queries.GetAllQuestions
+  href: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery.html
+  name: GetAllQuestionsQuery
+  nameWithType: GetAllQuestionsQuery
+  fullName: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery
+- uid: Application.Questions.Queries.GetAllQuestions
+  commentId: N:Application.Questions.Queries.GetAllQuestions
+  href: Application.html
+  name: Application.Questions.Queries.GetAllQuestions
+  nameWithType: Application.Questions.Queries.GetAllQuestions
+  fullName: Application.Questions.Queries.GetAllQuestions
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Queries
+    name: Queries
+    href: Application.Questions.Queries.html
+  - name: .
+  - uid: Application.Questions.Queries.GetAllQuestions
+    name: GetAllQuestions
+    href: Application.Questions.Queries.GetAllQuestions.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Queries
+    name: Queries
+    href: Application.Questions.Queries.html
+  - name: .
+  - uid: Application.Questions.Queries.GetAllQuestions
+    name: GetAllQuestions
+    href: Application.Questions.Queries.GetAllQuestions.html
+- uid: API.Controllers.V1.QuestionsController.GetQuestionById*
+  commentId: Overload:API.Controllers.V1.QuestionsController.GetQuestionById
+  href: API.Controllers.V1.QuestionsController.html#API_Controllers_V1_QuestionsController_GetQuestionById_System_Guid_
+  name: GetQuestionById
+  nameWithType: QuestionsController.GetQuestionById
+  fullName: API.Controllers.V1.QuestionsController.GetQuestionById
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: API.Controllers.V1.QuestionsController.DeleteAllQuestion*
+  commentId: Overload:API.Controllers.V1.QuestionsController.DeleteAllQuestion
+  href: API.Controllers.V1.QuestionsController.html#API_Controllers_V1_QuestionsController_DeleteAllQuestion
+  name: DeleteAllQuestion
+  nameWithType: QuestionsController.DeleteAllQuestion
+  fullName: API.Controllers.V1.QuestionsController.DeleteAllQuestion
+- uid: API.Controllers.V1.QuestionsController.DeleteQuestion*
+  commentId: Overload:API.Controllers.V1.QuestionsController.DeleteQuestion
+  href: API.Controllers.V1.QuestionsController.html#API_Controllers_V1_QuestionsController_DeleteQuestion_System_Guid_
+  name: DeleteQuestion
+  nameWithType: QuestionsController.DeleteQuestion
+  fullName: API.Controllers.V1.QuestionsController.DeleteQuestion
+- uid: API.Controllers.V1.QuestionsController.UpdateQuestion*
+  commentId: Overload:API.Controllers.V1.QuestionsController.UpdateQuestion
+  href: API.Controllers.V1.QuestionsController.html#API_Controllers_V1_QuestionsController_UpdateQuestion_Application_Questions_Commands_UpdateQuestion_UpdateQuestionCommand_
+  name: UpdateQuestion
+  nameWithType: QuestionsController.UpdateQuestion
+  fullName: API.Controllers.V1.QuestionsController.UpdateQuestion
+- uid: Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand
+  commentId: T:Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand
+  parent: Application.Questions.Commands.UpdateQuestion
+  href: Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand.html
+  name: UpdateQuestionCommand
+  nameWithType: UpdateQuestionCommand
+  fullName: Application.Questions.Commands.UpdateQuestion.UpdateQuestionCommand
+- uid: Application.Questions.Commands.UpdateQuestion
+  commentId: N:Application.Questions.Commands.UpdateQuestion
+  href: Application.html
+  name: Application.Questions.Commands.UpdateQuestion
+  nameWithType: Application.Questions.Commands.UpdateQuestion
+  fullName: Application.Questions.Commands.UpdateQuestion
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.UpdateQuestion
+    name: UpdateQuestion
+    href: Application.Questions.Commands.UpdateQuestion.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.UpdateQuestion
+    name: UpdateQuestion
+    href: Application.Questions.Commands.UpdateQuestion.html

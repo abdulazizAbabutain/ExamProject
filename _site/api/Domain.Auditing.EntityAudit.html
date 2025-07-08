@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class EntityAudit | Examiner </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EntityAudit | Examiner ">
+      
+      <meta name="description" content="Represents a base class for auditable entities, providing standard audit properties such as creation date, last modification timestamp, version tracking, and soft-archive support.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/abdulazizAbabutain/Examiner/new/master/apiSpec/new?filename=Domain_Auditing_EntityAudit.md&amp;value=---%0Auid%3A%20Domain.Auditing.EntityAudit%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="Examiner">
+            Examiner
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Domain.Auditing.EntityAudit">
+
+
+
+  <h1 id="Domain_Auditing_EntityAudit" data-uid="Domain.Auditing.EntityAudit" class="text-break">
+Class EntityAudit  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Domain.html">Domain</a>.<a class="xref" href="Domain.Auditing.html">Auditing</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Domain.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a base class for auditable entities, providing standard audit properties such as creation date,
+last modification timestamp, version tracking, and soft-archive support.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EntityAudit</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">EntityAudit</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Domain.Entities.EntityLookup.Category.html">Category</a></div>
+      <div><a class="xref" href="Domain.Entities.EntityLookup.Tag.html">Tag</a></div>
+      <div><a class="xref" href="Domain.Entities.Examiner.Question.html">Question</a></div>
+      <div><a class="xref" href="Domain.Entities.Sources.Source.html">Source</a></div>
+      <div><a class="xref" href="Domain.Entities.Sources.SourceReference.html">SourceReference</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_">ObjectExtention.IsNotNull(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_">ObjectExtention.IsNull(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Domain_Auditing_EntityAudit_CreationDate_" data-uid="Domain.Auditing.EntityAudit.CreationDate*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_CreationDate" data-uid="Domain.Auditing.EntityAudit.CreationDate">
+  CreationDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the timestamp when the entity was created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset CreationDate { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Auditing_EntityAudit_Id_" data-uid="Domain.Auditing.EntityAudit.Id*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_Id" data-uid="Domain.Auditing.EntityAudit.Id">
+  Id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the unique identifier of the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Id { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Auditing_EntityAudit_IsArchived_" data-uid="Domain.Auditing.EntityAudit.IsArchived*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_IsArchived" data-uid="Domain.Auditing.EntityAudit.IsArchived">
+  IsArchived
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the entity is archived (soft-deleted).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsArchived { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Auditing_EntityAudit_LastArchiveDate_" data-uid="Domain.Auditing.EntityAudit.LastArchiveDate*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_LastArchiveDate" data-uid="Domain.Auditing.EntityAudit.LastArchiveDate">
+  LastArchiveDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the timestamp when the entity was archived.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? LastArchiveDate { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Auditing_EntityAudit_LastModifiedDate_" data-uid="Domain.Auditing.EntityAudit.LastModifiedDate*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_LastModifiedDate" data-uid="Domain.Auditing.EntityAudit.LastModifiedDate">
+  LastModifiedDate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the timestamp of the last modification made to the entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset? LastModifiedDate { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Domain_Auditing_EntityAudit_VersionNumber_" data-uid="Domain.Auditing.EntityAudit.VersionNumber*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_VersionNumber" data-uid="Domain.Auditing.EntityAudit.VersionNumber">
+  VersionNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the current version number of the entity. Incremented with each update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VersionNumber { get; protected set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Domain_Auditing_EntityAudit_Archive_" data-uid="Domain.Auditing.EntityAudit.Archive*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_Archive" data-uid="Domain.Auditing.EntityAudit.Archive">
+  Archive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Archives the entity by setting <a class="xref" href="Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_IsArchived">IsArchived</a> to <code>true</code> and updating the <a class="xref" href="Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastArchiveDate">LastArchiveDate</a>.
+Also updates the modification timestamp and version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Archive()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Domain_Auditing_EntityAudit_Created_" data-uid="Domain.Auditing.EntityAudit.Created*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_Created" data-uid="Domain.Auditing.EntityAudit.Created">
+  Created()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the entity as newly created. Initializes <a class="xref" href="Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_CreationDate">CreationDate</a>, sets <a class="xref" href="Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_VersionNumber">VersionNumber</a> to 1,
+and ensures the entity is not archived.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Created()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Domain_Auditing_EntityAudit_UnArchive_" data-uid="Domain.Auditing.EntityAudit.UnArchive*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_UnArchive" data-uid="Domain.Auditing.EntityAudit.UnArchive">
+  UnArchive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Unarchives the entity by setting <a class="xref" href="Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_IsArchived">IsArchived</a> to <code>false</code> and updating the modification state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UnArchive()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Domain_Auditing_EntityAudit_Updated_" data-uid="Domain.Auditing.EntityAudit.Updated*"></a>
+
+  <h3 id="Domain_Auditing_EntityAudit_Updated" data-uid="Domain.Auditing.EntityAudit.Updated">
+  Updated()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the <a class="xref" href="Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_LastModifiedDate">LastModifiedDate</a> to the current timestamp and increments the <a class="xref" href="Domain.Auditing.EntityAudit.html#Domain_Auditing_EntityAudit_VersionNumber">VersionNumber</a>.
+Should be called whenever the entity is modified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Updated()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/abdulazizAbabutain/Examiner/blob/master/src/Domain/Auditing/EntityAudit.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

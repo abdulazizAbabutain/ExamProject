@@ -1,0 +1,724 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler
+  commentId: T:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler
+  id: GetDeletedEntitiesQueryHandler
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  children:
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.#ctor(Application.Commons.Managers.IAuditManager,MapsterMapper.IMapper)
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: GetDeletedEntitiesQueryHandler
+  nameWithType: GetDeletedEntitiesQueryHandler
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler
+  type: Class
+  source:
+    remote:
+      path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetDeletedEntitiesQueryHandler
+    path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryHandler.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  syntax:
+    content: 'public class GetDeletedEntitiesQueryHandler : IRequestHandler<GetDeletedEntitiesQuery, Result<PageResponse<GetDeletedEntitiesQueryResult>>>'
+    content.vb: Public Class GetDeletedEntitiesQueryHandler Implements IRequestHandler(Of GetDeletedEntitiesQuery, Result(Of PageResponse(Of GetDeletedEntitiesQueryResult)))
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.#ctor(Application.Commons.Managers.IAuditManager,MapsterMapper.IMapper)
+  commentId: M:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.#ctor(Application.Commons.Managers.IAuditManager,MapsterMapper.IMapper)
+  id: '#ctor(Application.Commons.Managers.IAuditManager,MapsterMapper.IMapper)'
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: GetDeletedEntitiesQueryHandler(IAuditManager, IMapper)
+  nameWithType: GetDeletedEntitiesQueryHandler.GetDeletedEntitiesQueryHandler(IAuditManager, IMapper)
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.GetDeletedEntitiesQueryHandler(Application.Commons.Managers.IAuditManager, MapsterMapper.IMapper)
+  type: Constructor
+  source:
+    remote:
+      path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryHandler.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  syntax:
+    content: public GetDeletedEntitiesQueryHandler(IAuditManager auditManager, IMapper mapper)
+    parameters:
+    - id: auditManager
+      type: Application.Commons.Managers.IAuditManager
+    - id: mapper
+      type: MapsterMapper.IMapper
+    content.vb: Public Sub New(auditManager As IAuditManager, mapper As IMapper)
+  overload: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.#ctor*
+  nameWithType.vb: GetDeletedEntitiesQueryHandler.New(IAuditManager, IMapper)
+  fullName.vb: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.New(Application.Commons.Managers.IAuditManager, MapsterMapper.IMapper)
+  name.vb: New(IAuditManager, IMapper)
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,System.Threading.CancellationToken)
+  commentId: M:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,System.Threading.CancellationToken)
+  id: Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,System.Threading.CancellationToken)
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(GetDeletedEntitiesQuery, CancellationToken)
+  nameWithType: GetDeletedEntitiesQueryHandler.Handle(GetDeletedEntitiesQuery, CancellationToken)
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Handle
+    path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryHandler.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  summary: Handles a request
+  example: []
+  syntax:
+    content: public Task<Result<PageResponse<GetDeletedEntitiesQueryResult>>> Handle(GetDeletedEntitiesQuery request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+      description: The request
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}
+      description: Response from the request
+    content.vb: Public Function Handle(request As GetDeletedEntitiesQuery, cancellationToken As CancellationToken) As Task(Of Result(Of PageResponse(Of GetDeletedEntitiesQueryResult)))
+  overload: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.Handle*
+  implements:
+  - MediatR.IRequestHandler{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,System.Threading.CancellationToken)
+references:
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  commentId: N:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  href: Application.html
+  name: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  nameWithType: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Auditing
+    name: Auditing
+    href: Application.Auditing.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog
+    name: EntitiesLog
+    href: Application.Auditing.EntitiesLog.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries
+    name: Queries
+    href: Application.Auditing.EntitiesLog.Queries.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+    name: GetDeletedEntities
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Auditing
+    name: Auditing
+    href: Application.Auditing.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog
+    name: EntitiesLog
+    href: Application.Auditing.EntitiesLog.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries
+    name: Queries
+    href: Application.Auditing.EntitiesLog.Queries.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+    name: GetDeletedEntities
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}
+  commentId: T:MediatR.IRequestHandler{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`2
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery.html
+  name: IRequestHandler<GetDeletedEntitiesQuery, Result<PageResponse<GetDeletedEntitiesQueryResult>>>
+  nameWithType: IRequestHandler<GetDeletedEntitiesQuery, Result<PageResponse<GetDeletedEntitiesQueryResult>>>
+  fullName: MediatR.IRequestHandler<Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery, Application.Commons.Models.Results.Result<Application.Commons.Models.Pageination.PageResponse<Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult>>>
+  nameWithType.vb: IRequestHandler(Of GetDeletedEntitiesQuery, Result(Of PageResponse(Of GetDeletedEntitiesQueryResult)))
+  fullName.vb: MediatR.IRequestHandler(Of Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery, Application.Commons.Models.Results.Result(Of Application.Commons.Models.Pageination.PageResponse(Of Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult)))
+  name.vb: IRequestHandler(Of GetDeletedEntitiesQuery, Result(Of PageResponse(Of GetDeletedEntitiesQueryResult)))
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+    name: GetDeletedEntitiesQuery
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery.html
+  - name: ','
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: <
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+    name: GetDeletedEntitiesQueryResult
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+    name: GetDeletedEntitiesQuery
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery.html
+  - name: ','
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+    name: GetDeletedEntitiesQueryResult
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html
+  - name: )
+  - name: )
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`2
+  commentId: T:MediatR.IRequestHandler`2
+  isExternal: true
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.#ctor*
+  commentId: Overload:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.#ctor
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.html#Application_Auditing_EntitiesLog_Queries_GetDeletedEntities_GetDeletedEntitiesQueryHandler__ctor_Application_Commons_Managers_IAuditManager_MapsterMapper_IMapper_
+  name: GetDeletedEntitiesQueryHandler
+  nameWithType: GetDeletedEntitiesQueryHandler.GetDeletedEntitiesQueryHandler
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.GetDeletedEntitiesQueryHandler
+  nameWithType.vb: GetDeletedEntitiesQueryHandler.New
+  fullName.vb: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.New
+  name.vb: New
+- uid: Application.Commons.Managers.IAuditManager
+  commentId: T:Application.Commons.Managers.IAuditManager
+  parent: Application.Commons.Managers
+  href: Application.Commons.Managers.IAuditManager.html
+  name: IAuditManager
+  nameWithType: IAuditManager
+  fullName: Application.Commons.Managers.IAuditManager
+- uid: MapsterMapper.IMapper
+  commentId: T:MapsterMapper.IMapper
+  parent: MapsterMapper
+  isExternal: true
+  name: IMapper
+  nameWithType: IMapper
+  fullName: MapsterMapper.IMapper
+- uid: Application.Commons.Managers
+  commentId: N:Application.Commons.Managers
+  href: Application.html
+  name: Application.Commons.Managers
+  nameWithType: Application.Commons.Managers
+  fullName: Application.Commons.Managers
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+- uid: MapsterMapper
+  commentId: N:MapsterMapper
+  isExternal: true
+  name: MapsterMapper
+  nameWithType: MapsterMapper
+  fullName: MapsterMapper
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.Handle*
+  commentId: Overload:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.Handle
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.html#Application_Auditing_EntitiesLog_Queries_GetDeletedEntities_GetDeletedEntitiesQueryHandler_Handle_Application_Auditing_EntitiesLog_Queries_GetDeletedEntities_GetDeletedEntitiesQuery_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: GetDeletedEntitiesQueryHandler.Handle
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryHandler.Handle
+- uid: MediatR.IRequestHandler{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}
+  definition: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery.html
+  name: Handle(GetDeletedEntitiesQuery, CancellationToken)
+  nameWithType: IRequestHandler<GetDeletedEntitiesQuery, Result<PageResponse<GetDeletedEntitiesQueryResult>>>.Handle(GetDeletedEntitiesQuery, CancellationToken)
+  fullName: MediatR.IRequestHandler<Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery, Application.Commons.Models.Results.Result<Application.Commons.Models.Pageination.PageResponse<Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult>>>.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of GetDeletedEntitiesQuery, Result(Of PageResponse(Of GetDeletedEntitiesQueryResult))).Handle(GetDeletedEntitiesQuery, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery, Application.Commons.Models.Results.Result(Of Application.Commons.Models.Pageination.PageResponse(Of Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult))).Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+    name: GetDeletedEntitiesQuery
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}.Handle(Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+    name: GetDeletedEntitiesQuery
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+  commentId: T:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery.html
+  name: GetDeletedEntitiesQuery
+  nameWithType: GetDeletedEntitiesQuery
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQuery
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}
+  commentId: T:System.Threading.Tasks.Task{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<PageResponse<GetDeletedEntitiesQueryResult>>>
+  nameWithType: Task<Result<PageResponse<GetDeletedEntitiesQueryResult>>>
+  fullName: System.Threading.Tasks.Task<Application.Commons.Models.Results.Result<Application.Commons.Models.Pageination.PageResponse<Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult>>>
+  nameWithType.vb: Task(Of Result(Of PageResponse(Of GetDeletedEntitiesQueryResult)))
+  fullName.vb: System.Threading.Tasks.Task(Of Application.Commons.Models.Results.Result(Of Application.Commons.Models.Pageination.PageResponse(Of Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult)))
+  name.vb: Task(Of Result(Of PageResponse(Of GetDeletedEntitiesQueryResult)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: <
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+    name: GetDeletedEntitiesQueryResult
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+    name: GetDeletedEntitiesQueryResult
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html
+  - name: )
+  - name: )
+  - name: )
+- uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

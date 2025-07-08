@@ -1,0 +1,949 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  commentId: T:Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  id: AddSourceCommand
+  parent: Application.Sources.Commands.AddSource.Requests
+  children:
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.CategoryId
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Description
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FileExtension
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FilePath
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.HasAttachment
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Metadata
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.References
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Tags
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Title
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Type
+  langs:
+  - csharp
+  - vb
+  name: AddSourceCommand
+  nameWithType: AddSourceCommand
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  type: Class
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddSourceCommand
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: 'public class AddSourceCommand : IRequest<Result<AddSourceCommandResult>>, IBaseRequest'
+    content.vb: Public Class AddSourceCommand Implements IRequest(Of Result(Of AddSourceCommandResult)), IBaseRequest
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{Application.Commons.Models.Results.Result{Application.Sources.Commands.AddSource.Results.AddSourceCommandResult}}
+  - MediatR.IBaseRequest
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Type
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Type
+  id: Type
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: AddSourceCommand.Type
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Type
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Type
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public SourceType Type { get; set; }
+    parameters: []
+    return:
+      type: Domain.Enums.SourceType
+    content.vb: Public Property Type As SourceType
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Type*
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Title
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Title
+  id: Title
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: AddSourceCommand.Title
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Title
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Title
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Title As String
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Title*
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Description
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Description
+  id: Description
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: AddSourceCommand.Description
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Description
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Description
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public string? Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Description As String
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Description*
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FilePath
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FilePath
+  id: FilePath
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: FilePath
+  nameWithType: AddSourceCommand.FilePath
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FilePath
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: FilePath
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 13
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public string? FilePath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FilePath As String
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FilePath*
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.HasAttachment
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.HasAttachment
+  id: HasAttachment
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: HasAttachment
+  nameWithType: AddSourceCommand.HasAttachment
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.HasAttachment
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: HasAttachment
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public bool HasAttachment { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property HasAttachment As Boolean
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.HasAttachment*
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FileExtension
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FileExtension
+  id: FileExtension
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: FileExtension
+  nameWithType: AddSourceCommand.FileExtension
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FileExtension
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: FileExtension
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 15
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public string? FileExtension { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileExtension As String
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FileExtension*
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Tags
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Tags
+  id: Tags
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: AddSourceCommand.Tags
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Tags
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Tags
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 16
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public List<Guid>? Tags { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.Guid}
+    content.vb: Public Property Tags As List(Of Guid)
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Tags*
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.CategoryId
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.CategoryId
+  id: CategoryId
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: CategoryId
+  nameWithType: AddSourceCommand.CategoryId
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.CategoryId
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CategoryId
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 17
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public Guid? CategoryId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Guid}
+    content.vb: Public Property CategoryId As Guid?
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.CategoryId*
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Metadata
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Metadata
+  id: Metadata
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: AddSourceCommand.Metadata
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Metadata
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Metadata
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 18
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public List<AddMetadataCommand>? Metadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Application.Commons.Models.Commands.AddMetadataCommand}
+    content.vb: Public Property Metadata As List(Of AddMetadataCommand)
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Metadata*
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.References
+  commentId: P:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.References
+  id: References
+  parent: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: References
+  nameWithType: AddSourceCommand.References
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.References
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: References
+    path: src/Application/Sources/Commands/AddSource/Requests/AddSourceCommand.cs
+    startLine: 19
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.AddSource.Requests
+  syntax:
+    content: public List<AddSourceReferenceCommand>? References { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand}
+    content.vb: Public Property References As List(Of AddSourceReferenceCommand)
+  overload: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.References*
+references:
+- uid: Application.Sources.Commands.AddSource.Requests
+  commentId: N:Application.Sources.Commands.AddSource.Requests
+  href: Application.html
+  name: Application.Sources.Commands.AddSource.Requests
+  nameWithType: Application.Sources.Commands.AddSource.Requests
+  fullName: Application.Sources.Commands.AddSource.Requests
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource
+    name: AddSource
+    href: Application.Sources.Commands.AddSource.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource.Requests
+    name: Requests
+    href: Application.Sources.Commands.AddSource.Requests.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource
+    name: AddSource
+    href: Application.Sources.Commands.AddSource.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource.Requests
+    name: Requests
+    href: Application.Sources.Commands.AddSource.Requests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{Application.Commons.Models.Results.Result{Application.Sources.Commands.AddSource.Results.AddSourceCommandResult}}
+  commentId: T:MediatR.IRequest{Application.Commons.Models.Results.Result{Application.Sources.Commands.AddSource.Results.AddSourceCommandResult}}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: Application.Commons.Models.Results.Result-1.html
+  name: IRequest<Result<AddSourceCommandResult>>
+  nameWithType: IRequest<Result<AddSourceCommandResult>>
+  fullName: MediatR.IRequest<Application.Commons.Models.Results.Result<Application.Sources.Commands.AddSource.Results.AddSourceCommandResult>>
+  nameWithType.vb: IRequest(Of Result(Of AddSourceCommandResult))
+  fullName.vb: MediatR.IRequest(Of Application.Commons.Models.Results.Result(Of Application.Sources.Commands.AddSource.Results.AddSourceCommandResult))
+  name.vb: IRequest(Of Result(Of AddSourceCommandResult))
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Sources.Commands.AddSource.Results.AddSourceCommandResult
+    name: AddSourceCommandResult
+    href: Application.Sources.Commands.AddSource.Results.AddSourceCommandResult.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Sources.Commands.AddSource.Results.AddSourceCommandResult
+    name: AddSourceCommandResult
+    href: Application.Sources.Commands.AddSource.Results.AddSourceCommandResult.html
+  - name: )
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Type*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Type
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_Type
+  name: Type
+  nameWithType: AddSourceCommand.Type
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Type
+- uid: Domain.Enums.SourceType
+  commentId: T:Domain.Enums.SourceType
+  parent: Domain.Enums
+  href: Domain.Enums.SourceType.html
+  name: SourceType
+  nameWithType: SourceType
+  fullName: Domain.Enums.SourceType
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Title*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Title
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_Title
+  name: Title
+  nameWithType: AddSourceCommand.Title
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Description*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Description
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_Description
+  name: Description
+  nameWithType: AddSourceCommand.Description
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Description
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FilePath*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FilePath
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_FilePath
+  name: FilePath
+  nameWithType: AddSourceCommand.FilePath
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FilePath
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.HasAttachment*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.HasAttachment
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_HasAttachment
+  name: HasAttachment
+  nameWithType: AddSourceCommand.HasAttachment
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.HasAttachment
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FileExtension*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FileExtension
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_FileExtension
+  name: FileExtension
+  nameWithType: AddSourceCommand.FileExtension
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.FileExtension
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Tags*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Tags
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_Tags
+  name: Tags
+  nameWithType: AddSourceCommand.Tags
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Tags
+- uid: System.Collections.Generic.List{System.Guid}
+  commentId: T:System.Collections.Generic.List{System.Guid}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Guid>
+  nameWithType: List<Guid>
+  fullName: System.Collections.Generic.List<System.Guid>
+  nameWithType.vb: List(Of Guid)
+  fullName.vb: System.Collections.Generic.List(Of System.Guid)
+  name.vb: List(Of Guid)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.CategoryId*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.CategoryId
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_CategoryId
+  name: CategoryId
+  nameWithType: AddSourceCommand.CategoryId
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.CategoryId
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Metadata*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Metadata
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_Metadata
+  name: Metadata
+  nameWithType: AddSourceCommand.Metadata
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.Metadata
+- uid: System.Collections.Generic.List{Application.Commons.Models.Commands.AddMetadataCommand}
+  commentId: T:System.Collections.Generic.List{Application.Commons.Models.Commands.AddMetadataCommand}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AddMetadataCommand>
+  nameWithType: List<AddMetadataCommand>
+  fullName: System.Collections.Generic.List<Application.Commons.Models.Commands.AddMetadataCommand>
+  nameWithType.vb: List(Of AddMetadataCommand)
+  fullName.vb: System.Collections.Generic.List(Of Application.Commons.Models.Commands.AddMetadataCommand)
+  name.vb: List(Of AddMetadataCommand)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.Commons.Models.Commands.AddMetadataCommand
+    name: AddMetadataCommand
+    href: Application.Commons.Models.Commands.AddMetadataCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Commands.AddMetadataCommand
+    name: AddMetadataCommand
+    href: Application.Commons.Models.Commands.AddMetadataCommand.html
+  - name: )
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.References*
+  commentId: Overload:Application.Sources.Commands.AddSource.Requests.AddSourceCommand.References
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html#Application_Sources_Commands_AddSource_Requests_AddSourceCommand_References
+  name: References
+  nameWithType: AddSourceCommand.References
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.References
+- uid: System.Collections.Generic.List{Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand}
+  commentId: T:System.Collections.Generic.List{Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AddSourceReferenceCommand>
+  nameWithType: List<AddSourceReferenceCommand>
+  fullName: System.Collections.Generic.List<Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand>
+  nameWithType.vb: List(Of AddSourceReferenceCommand)
+  fullName.vb: System.Collections.Generic.List(Of Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand)
+  name.vb: List(Of AddSourceReferenceCommand)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand
+    name: AddSourceReferenceCommand
+    href: Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand
+    name: AddSourceReferenceCommand
+    href: Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand.html
+  - name: )

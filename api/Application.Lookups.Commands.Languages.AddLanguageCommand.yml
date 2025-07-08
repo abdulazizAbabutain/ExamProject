@@ -1,0 +1,338 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommand
+  commentId: T:Application.Lookups.Commands.Languages.AddLanguageCommand
+  id: AddLanguageCommand
+  parent: Application.Lookups.Commands.Languages
+  children:
+  - Application.Lookups.Commands.Languages.AddLanguageCommand.Code
+  - Application.Lookups.Commands.Languages.AddLanguageCommand.DisplayName
+  langs:
+  - csharp
+  - vb
+  name: AddLanguageCommand
+  nameWithType: AddLanguageCommand
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommand
+  type: Class
+  source:
+    remote:
+      path: src/Application/Lookups/Commands/Languages/AddLanguageCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddLanguageCommand
+    path: src/Application/Lookups/Commands/Languages/AddLanguageCommand.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Commands.Languages
+  syntax:
+    content: 'public class AddLanguageCommand : IRequest, IBaseRequest'
+    content.vb: Public Class AddLanguageCommand Implements IRequest, IBaseRequest
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest
+  - MediatR.IBaseRequest
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommand.Code
+  commentId: P:Application.Lookups.Commands.Languages.AddLanguageCommand.Code
+  id: Code
+  parent: Application.Lookups.Commands.Languages.AddLanguageCommand
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: AddLanguageCommand.Code
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommand.Code
+  type: Property
+  source:
+    remote:
+      path: src/Application/Lookups/Commands/Languages/AddLanguageCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Code
+    path: src/Application/Lookups/Commands/Languages/AddLanguageCommand.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Commands.Languages
+  syntax:
+    content: public required string Code { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Code As String
+  overload: Application.Lookups.Commands.Languages.AddLanguageCommand.Code*
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommand.DisplayName
+  commentId: P:Application.Lookups.Commands.Languages.AddLanguageCommand.DisplayName
+  id: DisplayName
+  parent: Application.Lookups.Commands.Languages.AddLanguageCommand
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: AddLanguageCommand.DisplayName
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommand.DisplayName
+  type: Property
+  source:
+    remote:
+      path: src/Application/Lookups/Commands/Languages/AddLanguageCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DisplayName
+    path: src/Application/Lookups/Commands/Languages/AddLanguageCommand.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Commands.Languages
+  syntax:
+    content: public required string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: Application.Lookups.Commands.Languages.AddLanguageCommand.DisplayName*
+references:
+- uid: Application.Lookups.Commands.Languages
+  commentId: N:Application.Lookups.Commands.Languages
+  href: Application.html
+  name: Application.Lookups.Commands.Languages
+  nameWithType: Application.Lookups.Commands.Languages
+  fullName: Application.Lookups.Commands.Languages
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Commands
+    name: Commands
+    href: Application.Lookups.Commands.html
+  - name: .
+  - uid: Application.Lookups.Commands.Languages
+    name: Languages
+    href: Application.Lookups.Commands.Languages.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Commands
+    name: Commands
+    href: Application.Lookups.Commands.html
+  - name: .
+  - uid: Application.Lookups.Commands.Languages
+    name: Languages
+    href: Application.Lookups.Commands.Languages.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest
+  commentId: T:MediatR.IRequest
+  parent: MediatR
+  isExternal: true
+  name: IRequest
+  nameWithType: IRequest
+  fullName: MediatR.IRequest
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommand.Code*
+  commentId: Overload:Application.Lookups.Commands.Languages.AddLanguageCommand.Code
+  href: Application.Lookups.Commands.Languages.AddLanguageCommand.html#Application_Lookups_Commands_Languages_AddLanguageCommand_Code
+  name: Code
+  nameWithType: AddLanguageCommand.Code
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommand.Code
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommand.DisplayName*
+  commentId: Overload:Application.Lookups.Commands.Languages.AddLanguageCommand.DisplayName
+  href: Application.Lookups.Commands.Languages.AddLanguageCommand.html#Application_Lookups_Commands_Languages_AddLanguageCommand_DisplayName
+  name: DisplayName
+  nameWithType: AddLanguageCommand.DisplayName
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommand.DisplayName

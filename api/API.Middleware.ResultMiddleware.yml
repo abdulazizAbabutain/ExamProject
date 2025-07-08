@@ -1,0 +1,394 @@
+### YamlMime:ManagedReference
+items:
+- uid: API.Middleware.ResultMiddleware
+  commentId: T:API.Middleware.ResultMiddleware
+  id: ResultMiddleware
+  parent: API.Middleware
+  children:
+  - API.Middleware.ResultMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  - API.Middleware.ResultMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  langs:
+  - csharp
+  - vb
+  name: ResultMiddleware
+  nameWithType: ResultMiddleware
+  fullName: API.Middleware.ResultMiddleware
+  type: Class
+  source:
+    remote:
+      path: src/API/Middleware/ResultMiddleware.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ResultMiddleware
+    path: src/API/Middleware/ResultMiddleware.cs
+    startLine: 5
+  assemblies:
+  - API
+  namespace: API.Middleware
+  syntax:
+    content: public class ResultMiddleware
+    content.vb: Public Class ResultMiddleware
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: API.Middleware.ResultMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  commentId: M:API.Middleware.ResultMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  id: '#ctor(Microsoft.AspNetCore.Http.RequestDelegate)'
+  parent: API.Middleware.ResultMiddleware
+  langs:
+  - csharp
+  - vb
+  name: ResultMiddleware(RequestDelegate)
+  nameWithType: ResultMiddleware.ResultMiddleware(RequestDelegate)
+  fullName: API.Middleware.ResultMiddleware.ResultMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)
+  type: Constructor
+  source:
+    remote:
+      path: src/API/Middleware/ResultMiddleware.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/API/Middleware/ResultMiddleware.cs
+    startLine: 9
+  assemblies:
+  - API
+  namespace: API.Middleware
+  syntax:
+    content: public ResultMiddleware(RequestDelegate next)
+    parameters:
+    - id: next
+      type: Microsoft.AspNetCore.Http.RequestDelegate
+    content.vb: Public Sub New([next] As RequestDelegate)
+  overload: API.Middleware.ResultMiddleware.#ctor*
+  nameWithType.vb: ResultMiddleware.New(RequestDelegate)
+  fullName.vb: API.Middleware.ResultMiddleware.New(Microsoft.AspNetCore.Http.RequestDelegate)
+  name.vb: New(RequestDelegate)
+- uid: API.Middleware.ResultMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:API.Middleware.ResultMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  id: Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  parent: API.Middleware.ResultMiddleware
+  langs:
+  - csharp
+  - vb
+  name: Invoke(HttpContext)
+  nameWithType: ResultMiddleware.Invoke(HttpContext)
+  fullName: API.Middleware.ResultMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/API/Middleware/ResultMiddleware.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Invoke
+    path: src/API/Middleware/ResultMiddleware.cs
+    startLine: 14
+  assemblies:
+  - API
+  namespace: API.Middleware
+  syntax:
+    content: public Task Invoke(HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function Invoke(context As HttpContext) As Task
+  overload: API.Middleware.ResultMiddleware.Invoke*
+references:
+- uid: API.Middleware
+  commentId: N:API.Middleware
+  href: API.html
+  name: API.Middleware
+  nameWithType: API.Middleware
+  fullName: API.Middleware
+  spec.csharp:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Middleware
+    name: Middleware
+    href: API.Middleware.html
+  spec.vb:
+  - uid: API
+    name: API
+    href: API.html
+  - name: .
+  - uid: API.Middleware
+    name: Middleware
+    href: API.Middleware.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: API.Middleware.ResultMiddleware.#ctor*
+  commentId: Overload:API.Middleware.ResultMiddleware.#ctor
+  href: API.Middleware.ResultMiddleware.html#API_Middleware_ResultMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_
+  name: ResultMiddleware
+  nameWithType: ResultMiddleware.ResultMiddleware
+  fullName: API.Middleware.ResultMiddleware.ResultMiddleware
+  nameWithType.vb: ResultMiddleware.New
+  fullName.vb: API.Middleware.ResultMiddleware.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Http.RequestDelegate
+  commentId: T:Microsoft.AspNetCore.Http.RequestDelegate
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.requestdelegate
+  name: RequestDelegate
+  nameWithType: RequestDelegate
+  fullName: Microsoft.AspNetCore.Http.RequestDelegate
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+- uid: API.Middleware.ResultMiddleware.Invoke*
+  commentId: Overload:API.Middleware.ResultMiddleware.Invoke
+  href: API.Middleware.ResultMiddleware.html#API_Middleware_ResultMiddleware_Invoke_Microsoft_AspNetCore_Http_HttpContext_
+  name: Invoke
+  nameWithType: ResultMiddleware.Invoke
+  fullName: API.Middleware.ResultMiddleware.Invoke
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

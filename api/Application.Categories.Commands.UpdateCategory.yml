@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Categories.Commands.UpdateCategory
+  commentId: N:Application.Categories.Commands.UpdateCategory
+  id: Application.Categories.Commands.UpdateCategory
+  children:
+  - Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+  - Application.Categories.Commands.UpdateCategory.UpdateCategoryCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Application.Categories.Commands.UpdateCategory
+  nameWithType: Application.Categories.Commands.UpdateCategory
+  fullName: Application.Categories.Commands.UpdateCategory
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+  commentId: T:Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+  parent: Application.Categories.Commands.UpdateCategory
+  href: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand.html
+  name: UpdateCategoryCommand
+  nameWithType: UpdateCategoryCommand
+  fullName: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommand
+- uid: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommandHandler
+  commentId: T:Application.Categories.Commands.UpdateCategory.UpdateCategoryCommandHandler
+  href: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommandHandler.html
+  name: UpdateCategoryCommandHandler
+  nameWithType: UpdateCategoryCommandHandler
+  fullName: Application.Categories.Commands.UpdateCategory.UpdateCategoryCommandHandler
+- uid: Application.Categories.Commands.UpdateCategory
+  commentId: N:Application.Categories.Commands.UpdateCategory
+  href: Application.html
+  name: Application.Categories.Commands.UpdateCategory
+  nameWithType: Application.Categories.Commands.UpdateCategory
+  fullName: Application.Categories.Commands.UpdateCategory
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.UpdateCategory
+    name: UpdateCategory
+    href: Application.Categories.Commands.UpdateCategory.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Commands
+    name: Commands
+    href: Application.Categories.Commands.html
+  - name: .
+  - uid: Application.Categories.Commands.UpdateCategory
+    name: UpdateCategory
+    href: Application.Categories.Commands.UpdateCategory.html

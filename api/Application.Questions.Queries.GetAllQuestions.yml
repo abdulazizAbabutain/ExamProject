@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Questions.Queries.GetAllQuestions
+  commentId: N:Application.Questions.Queries.GetAllQuestions
+  id: Application.Questions.Queries.GetAllQuestions
+  children:
+  - Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery
+  - Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryHandler
+  - Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Application.Questions.Queries.GetAllQuestions
+  nameWithType: Application.Questions.Queries.GetAllQuestions
+  fullName: Application.Questions.Queries.GetAllQuestions
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery
+  commentId: T:Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery
+  parent: Application.Questions.Queries.GetAllQuestions
+  href: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery.html
+  name: GetAllQuestionsQuery
+  nameWithType: GetAllQuestionsQuery
+  fullName: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQuery
+- uid: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryHandler
+  commentId: T:Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryHandler
+  href: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryHandler.html
+  name: GetAllQuestionsQueryHandler
+  nameWithType: GetAllQuestionsQueryHandler
+  fullName: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryHandler
+- uid: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryResult
+  commentId: T:Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryResult
+  href: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryResult.html
+  name: GetAllQuestionsQueryResult
+  nameWithType: GetAllQuestionsQueryResult
+  fullName: Application.Questions.Queries.GetAllQuestions.GetAllQuestionsQueryResult
+- uid: Application.Questions.Queries.GetAllQuestions
+  commentId: N:Application.Questions.Queries.GetAllQuestions
+  href: Application.html
+  name: Application.Questions.Queries.GetAllQuestions
+  nameWithType: Application.Questions.Queries.GetAllQuestions
+  fullName: Application.Questions.Queries.GetAllQuestions
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Queries
+    name: Queries
+    href: Application.Questions.Queries.html
+  - name: .
+  - uid: Application.Questions.Queries.GetAllQuestions
+    name: GetAllQuestions
+    href: Application.Questions.Queries.GetAllQuestions.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Queries
+    name: Queries
+    href: Application.Questions.Queries.html
+  - name: .
+  - uid: Application.Questions.Queries.GetAllQuestions
+    name: GetAllQuestions
+    href: Application.Questions.Queries.GetAllQuestions.html

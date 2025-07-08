@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Commands.AddSource
+  commentId: N:Application.Sources.Commands.AddSource
+  id: Application.Sources.Commands.AddSource
+  children:
+  - Application.Sources.Commands.AddSource.AddSourceCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Application.Sources.Commands.AddSource
+  nameWithType: Application.Sources.Commands.AddSource
+  fullName: Application.Sources.Commands.AddSource
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Sources.Commands.AddSource.AddSourceCommandHandler
+  commentId: T:Application.Sources.Commands.AddSource.AddSourceCommandHandler
+  href: Application.Sources.Commands.AddSource.AddSourceCommandHandler.html
+  name: AddSourceCommandHandler
+  nameWithType: AddSourceCommandHandler
+  fullName: Application.Sources.Commands.AddSource.AddSourceCommandHandler

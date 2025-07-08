@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  commentId: T:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  id: GetDeletedEntitiesQueryResult
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  children:
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionBy
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionDate
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityId
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityName
+  - Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.VersionNumber
+  langs:
+  - csharp
+  - vb
+  name: GetDeletedEntitiesQueryResult
+  nameWithType: GetDeletedEntitiesQueryResult
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  type: Class
+  source:
+    remote:
+      path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetDeletedEntitiesQueryResult
+    path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  syntax:
+    content: public class GetDeletedEntitiesQueryResult
+    content.vb: Public Class GetDeletedEntitiesQueryResult
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityId
+  commentId: P:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityId
+  id: EntityId
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: EntityId
+  nameWithType: GetDeletedEntitiesQueryResult.EntityId
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityId
+  type: Property
+  source:
+    remote:
+      path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: EntityId
+    path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  syntax:
+    content: public Guid EntityId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property EntityId As Guid
+  overload: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityId*
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityName
+  commentId: P:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityName
+  id: EntityName
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: EntityName
+  nameWithType: GetDeletedEntitiesQueryResult.EntityName
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityName
+  type: Property
+  source:
+    remote:
+      path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: EntityName
+    path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  syntax:
+    content: public EntityName EntityName { get; set; }
+    parameters: []
+    return:
+      type: Domain.Enums.EntityName
+    content.vb: Public Property EntityName As EntityName
+  overload: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityName*
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionDate
+  commentId: P:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionDate
+  id: ActionDate
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: ActionDate
+  nameWithType: GetDeletedEntitiesQueryResult.ActionDate
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionDate
+  type: Property
+  source:
+    remote:
+      path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ActionDate
+    path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  syntax:
+    content: public DateTimeOffset ActionDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public Property ActionDate As DateTimeOffset
+  overload: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionDate*
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionBy
+  commentId: P:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionBy
+  id: ActionBy
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: ActionBy
+  nameWithType: GetDeletedEntitiesQueryResult.ActionBy
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionBy
+  type: Property
+  source:
+    remote:
+      path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ActionBy
+    path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  syntax:
+    content: public ActionBy ActionBy { get; set; }
+    parameters: []
+    return:
+      type: Domain.Enums.ActionBy
+    content.vb: Public Property ActionBy As ActionBy
+  overload: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionBy*
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.VersionNumber
+  commentId: P:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.VersionNumber
+  id: VersionNumber
+  parent: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult
+  langs:
+  - csharp
+  - vb
+  name: VersionNumber
+  nameWithType: GetDeletedEntitiesQueryResult.VersionNumber
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.VersionNumber
+  type: Property
+  source:
+    remote:
+      path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: VersionNumber
+    path: src/Application/Auditing/EntitiesLog/Queries/GetDeletedEntities/GetDeletedEntitiesQueryResult.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  syntax:
+    content: public int VersionNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property VersionNumber As Integer
+  overload: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.VersionNumber*
+references:
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  commentId: N:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  href: Application.html
+  name: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  nameWithType: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Auditing
+    name: Auditing
+    href: Application.Auditing.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog
+    name: EntitiesLog
+    href: Application.Auditing.EntitiesLog.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries
+    name: Queries
+    href: Application.Auditing.EntitiesLog.Queries.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+    name: GetDeletedEntities
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Auditing
+    name: Auditing
+    href: Application.Auditing.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog
+    name: EntitiesLog
+    href: Application.Auditing.EntitiesLog.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries
+    name: Queries
+    href: Application.Auditing.EntitiesLog.Queries.html
+  - name: .
+  - uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities
+    name: GetDeletedEntities
+    href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityId*
+  commentId: Overload:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityId
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html#Application_Auditing_EntitiesLog_Queries_GetDeletedEntities_GetDeletedEntitiesQueryResult_EntityId
+  name: EntityId
+  nameWithType: GetDeletedEntitiesQueryResult.EntityId
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityName*
+  commentId: Overload:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityName
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html#Application_Auditing_EntitiesLog_Queries_GetDeletedEntities_GetDeletedEntitiesQueryResult_EntityName
+  name: EntityName
+  nameWithType: GetDeletedEntitiesQueryResult.EntityName
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.EntityName
+- uid: Domain.Enums.EntityName
+  commentId: T:Domain.Enums.EntityName
+  parent: Domain.Enums
+  href: Domain.Enums.EntityName.html
+  name: EntityName
+  nameWithType: EntityName
+  fullName: Domain.Enums.EntityName
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionDate*
+  commentId: Overload:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionDate
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html#Application_Auditing_EntitiesLog_Queries_GetDeletedEntities_GetDeletedEntitiesQueryResult_ActionDate
+  name: ActionDate
+  nameWithType: GetDeletedEntitiesQueryResult.ActionDate
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionDate
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionBy*
+  commentId: Overload:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionBy
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html#Application_Auditing_EntitiesLog_Queries_GetDeletedEntities_GetDeletedEntitiesQueryResult_ActionBy
+  name: ActionBy
+  nameWithType: GetDeletedEntitiesQueryResult.ActionBy
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.ActionBy
+- uid: Domain.Enums.ActionBy
+  commentId: T:Domain.Enums.ActionBy
+  parent: Domain.Enums
+  href: Domain.Enums.ActionBy.html
+  name: ActionBy
+  nameWithType: ActionBy
+  fullName: Domain.Enums.ActionBy
+- uid: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.VersionNumber*
+  commentId: Overload:Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.VersionNumber
+  href: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.html#Application_Auditing_EntitiesLog_Queries_GetDeletedEntities_GetDeletedEntitiesQueryResult_VersionNumber
+  name: VersionNumber
+  nameWithType: GetDeletedEntitiesQueryResult.VersionNumber
+  fullName: Application.Auditing.EntitiesLog.Queries.GetDeletedEntities.GetDeletedEntitiesQueryResult.VersionNumber
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

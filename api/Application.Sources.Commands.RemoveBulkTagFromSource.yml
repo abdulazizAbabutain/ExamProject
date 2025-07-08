@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Commands.RemoveBulkTagFromSource
+  commentId: N:Application.Sources.Commands.RemoveBulkTagFromSource
+  id: Application.Sources.Commands.RemoveBulkTagFromSource
+  children:
+  - Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: Application.Sources.Commands.RemoveBulkTagFromSource
+  nameWithType: Application.Sources.Commands.RemoveBulkTagFromSource
+  fullName: Application.Sources.Commands.RemoveBulkTagFromSource
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand
+  commentId: T:Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand
+  parent: Application.Sources.Commands.RemoveBulkTagFromSource
+  href: Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand.html
+  name: RemoveBulkTagFromSourceCommand
+  nameWithType: RemoveBulkTagFromSourceCommand
+  fullName: Application.Sources.Commands.RemoveBulkTagFromSource.RemoveBulkTagFromSourceCommand
+- uid: Application.Sources.Commands.RemoveBulkTagFromSource
+  commentId: N:Application.Sources.Commands.RemoveBulkTagFromSource
+  href: Application.html
+  name: Application.Sources.Commands.RemoveBulkTagFromSource
+  nameWithType: Application.Sources.Commands.RemoveBulkTagFromSource
+  fullName: Application.Sources.Commands.RemoveBulkTagFromSource
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveBulkTagFromSource
+    name: RemoveBulkTagFromSource
+    href: Application.Sources.Commands.RemoveBulkTagFromSource.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveBulkTagFromSource
+    name: RemoveBulkTagFromSource
+    href: Application.Sources.Commands.RemoveBulkTagFromSource.html

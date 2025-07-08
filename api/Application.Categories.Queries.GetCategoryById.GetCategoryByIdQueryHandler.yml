@@ -1,0 +1,932 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler
+  commentId: T:Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler
+  id: GetCategoryByIdQueryHandler
+  parent: Application.Categories.Queries.GetCategoryById
+  children:
+  - Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.#ctor(Domain.Managers.IRepositoryManager,MapsterMapper.IMapper)
+  - Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.BuildCategoryTree(System.Nullable{System.Guid},System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Category})
+  - Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: GetCategoryByIdQueryHandler
+  nameWithType: GetCategoryByIdQueryHandler
+  fullName: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler
+  type: Class
+  source:
+    remote:
+      path: src/Application/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetCategoryByIdQueryHandler
+    path: src/Application/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Categories.Queries.GetCategoryById
+  syntax:
+    content: 'public class GetCategoryByIdQueryHandler : IRequestHandler<GetCategoryByIdQuery, Result<GetCategoryByIdQueryResult>>'
+    content.vb: Public Class GetCategoryByIdQueryHandler Implements IRequestHandler(Of GetCategoryByIdQuery, Result(Of GetCategoryByIdQueryResult))
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequestHandler{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.#ctor(Domain.Managers.IRepositoryManager,MapsterMapper.IMapper)
+  commentId: M:Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.#ctor(Domain.Managers.IRepositoryManager,MapsterMapper.IMapper)
+  id: '#ctor(Domain.Managers.IRepositoryManager,MapsterMapper.IMapper)'
+  parent: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: GetCategoryByIdQueryHandler(IRepositoryManager, IMapper)
+  nameWithType: GetCategoryByIdQueryHandler.GetCategoryByIdQueryHandler(IRepositoryManager, IMapper)
+  fullName: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.GetCategoryByIdQueryHandler(Domain.Managers.IRepositoryManager, MapsterMapper.IMapper)
+  type: Constructor
+  source:
+    remote:
+      path: src/Application/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Application/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Categories.Queries.GetCategoryById
+  syntax:
+    content: public GetCategoryByIdQueryHandler(IRepositoryManager repositoryManager, IMapper mapper)
+    parameters:
+    - id: repositoryManager
+      type: Domain.Managers.IRepositoryManager
+    - id: mapper
+      type: MapsterMapper.IMapper
+    content.vb: Public Sub New(repositoryManager As IRepositoryManager, mapper As IMapper)
+  overload: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.#ctor*
+  nameWithType.vb: GetCategoryByIdQueryHandler.New(IRepositoryManager, IMapper)
+  fullName.vb: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.New(Domain.Managers.IRepositoryManager, MapsterMapper.IMapper)
+  name.vb: New(IRepositoryManager, IMapper)
+- uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,System.Threading.CancellationToken)
+  commentId: M:Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,System.Threading.CancellationToken)
+  id: Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,System.Threading.CancellationToken)
+  parent: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: Handle(GetCategoryByIdQuery, CancellationToken)
+  nameWithType: GetCategoryByIdQueryHandler.Handle(GetCategoryByIdQuery, CancellationToken)
+  fullName: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Handle
+    path: src/Application/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs
+    startLine: 14
+  assemblies:
+  - Application
+  namespace: Application.Categories.Queries.GetCategoryById
+  summary: Handles a request
+  example: []
+  syntax:
+    content: public Task<Result<GetCategoryByIdQueryResult>> Handle(GetCategoryByIdQuery request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery
+      description: The request
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token
+    return:
+      type: System.Threading.Tasks.Task{Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}
+      description: Response from the request
+    content.vb: Public Function Handle(request As GetCategoryByIdQuery, cancellationToken As CancellationToken) As Task(Of Result(Of GetCategoryByIdQueryResult))
+  overload: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.Handle*
+  implements:
+  - MediatR.IRequestHandler{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,System.Threading.CancellationToken)
+- uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.BuildCategoryTree(System.Nullable{System.Guid},System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Category})
+  commentId: M:Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.BuildCategoryTree(System.Nullable{System.Guid},System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Category})
+  id: BuildCategoryTree(System.Nullable{System.Guid},System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Category})
+  parent: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler
+  langs:
+  - csharp
+  - vb
+  name: BuildCategoryTree(Guid?, IEnumerable<Category>)
+  nameWithType: GetCategoryByIdQueryHandler.BuildCategoryTree(Guid?, IEnumerable<Category>)
+  fullName: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.BuildCategoryTree(System.Guid?, System.Collections.Generic.IEnumerable<Domain.Entities.EntityLookup.Category>)
+  type: Method
+  source:
+    remote:
+      path: src/Application/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: BuildCategoryTree
+    path: src/Application/Categories/Queries/GetCategoryById/GetCategoryByIdQueryHandler.cs
+    startLine: 55
+  assemblies:
+  - Application
+  namespace: Application.Categories.Queries.GetCategoryById
+  syntax:
+    content: public List<GetCategoryByIdQueryResult> BuildCategoryTree(Guid? parentId, IEnumerable<Category> allCategories)
+    parameters:
+    - id: parentId
+      type: System.Nullable{System.Guid}
+    - id: allCategories
+      type: System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Category}
+    return:
+      type: System.Collections.Generic.List{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}
+    content.vb: Public Function BuildCategoryTree(parentId As Guid?, allCategories As IEnumerable(Of Category)) As List(Of GetCategoryByIdQueryResult)
+  overload: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.BuildCategoryTree*
+  nameWithType.vb: GetCategoryByIdQueryHandler.BuildCategoryTree(Guid?, IEnumerable(Of Category))
+  fullName.vb: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.BuildCategoryTree(System.Guid?, System.Collections.Generic.IEnumerable(Of Domain.Entities.EntityLookup.Category))
+  name.vb: BuildCategoryTree(Guid?, IEnumerable(Of Category))
+references:
+- uid: Application.Categories.Queries.GetCategoryById
+  commentId: N:Application.Categories.Queries.GetCategoryById
+  href: Application.html
+  name: Application.Categories.Queries.GetCategoryById
+  nameWithType: Application.Categories.Queries.GetCategoryById
+  fullName: Application.Categories.Queries.GetCategoryById
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Queries
+    name: Queries
+    href: Application.Categories.Queries.html
+  - name: .
+  - uid: Application.Categories.Queries.GetCategoryById
+    name: GetCategoryById
+    href: Application.Categories.Queries.GetCategoryById.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Categories
+    name: Categories
+    href: Application.Categories.html
+  - name: .
+  - uid: Application.Categories.Queries
+    name: Queries
+    href: Application.Categories.Queries.html
+  - name: .
+  - uid: Application.Categories.Queries.GetCategoryById
+    name: GetCategoryById
+    href: Application.Categories.Queries.GetCategoryById.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequestHandler{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}
+  commentId: T:MediatR.IRequestHandler{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}
+  parent: MediatR
+  definition: MediatR.IRequestHandler`2
+  href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery.html
+  name: IRequestHandler<GetCategoryByIdQuery, Result<GetCategoryByIdQueryResult>>
+  nameWithType: IRequestHandler<GetCategoryByIdQuery, Result<GetCategoryByIdQueryResult>>
+  fullName: MediatR.IRequestHandler<Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery, Application.Commons.Models.Results.Result<Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult>>
+  nameWithType.vb: IRequestHandler(Of GetCategoryByIdQuery, Result(Of GetCategoryByIdQueryResult))
+  fullName.vb: MediatR.IRequestHandler(Of Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery, Application.Commons.Models.Results.Result(Of Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult))
+  name.vb: IRequestHandler(Of GetCategoryByIdQuery, Result(Of GetCategoryByIdQueryResult))
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery
+    name: GetCategoryByIdQuery
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery.html
+  - name: ','
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult
+    name: GetCategoryByIdQueryResult
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery
+    name: GetCategoryByIdQuery
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery.html
+  - name: ','
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult
+    name: GetCategoryByIdQueryResult
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult.html
+  - name: )
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequestHandler`2
+  commentId: T:MediatR.IRequestHandler`2
+  isExternal: true
+  name: IRequestHandler<TRequest, TResponse>
+  nameWithType: IRequestHandler<TRequest, TResponse>
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse)
+  name.vb: IRequestHandler(Of TRequest, TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: <
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2
+    name: IRequestHandler
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.#ctor*
+  commentId: Overload:Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.#ctor
+  href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.html#Application_Categories_Queries_GetCategoryById_GetCategoryByIdQueryHandler__ctor_Domain_Managers_IRepositoryManager_MapsterMapper_IMapper_
+  name: GetCategoryByIdQueryHandler
+  nameWithType: GetCategoryByIdQueryHandler.GetCategoryByIdQueryHandler
+  fullName: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.GetCategoryByIdQueryHandler
+  nameWithType.vb: GetCategoryByIdQueryHandler.New
+  fullName.vb: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.New
+  name.vb: New
+- uid: Domain.Managers.IRepositoryManager
+  commentId: T:Domain.Managers.IRepositoryManager
+  parent: Domain.Managers
+  href: Domain.Managers.IRepositoryManager.html
+  name: IRepositoryManager
+  nameWithType: IRepositoryManager
+  fullName: Domain.Managers.IRepositoryManager
+- uid: MapsterMapper.IMapper
+  commentId: T:MapsterMapper.IMapper
+  parent: MapsterMapper
+  isExternal: true
+  name: IMapper
+  nameWithType: IMapper
+  fullName: MapsterMapper.IMapper
+- uid: Domain.Managers
+  commentId: N:Domain.Managers
+  href: Domain.html
+  name: Domain.Managers
+  nameWithType: Domain.Managers
+  fullName: Domain.Managers
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Managers
+    name: Managers
+    href: Domain.Managers.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Managers
+    name: Managers
+    href: Domain.Managers.html
+- uid: MapsterMapper
+  commentId: N:MapsterMapper
+  isExternal: true
+  name: MapsterMapper
+  nameWithType: MapsterMapper
+  fullName: MapsterMapper
+- uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.Handle*
+  commentId: Overload:Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.Handle
+  href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.html#Application_Categories_Queries_GetCategoryById_GetCategoryByIdQueryHandler_Handle_Application_Categories_Queries_GetCategoryById_GetCategoryByIdQuery_System_Threading_CancellationToken_
+  name: Handle
+  nameWithType: GetCategoryByIdQueryHandler.Handle
+  fullName: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.Handle
+- uid: MediatR.IRequestHandler{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,System.Threading.CancellationToken)
+  parent: MediatR.IRequestHandler{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}
+  definition: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery.html
+  name: Handle(GetCategoryByIdQuery, CancellationToken)
+  nameWithType: IRequestHandler<GetCategoryByIdQuery, Result<GetCategoryByIdQueryResult>>.Handle(GetCategoryByIdQuery, CancellationToken)
+  fullName: MediatR.IRequestHandler<Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery, Application.Commons.Models.Results.Result<Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult>>.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of GetCategoryByIdQuery, Result(Of GetCategoryByIdQueryResult)).Handle(GetCategoryByIdQuery, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery, Application.Commons.Models.Results.Result(Of Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult)).Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery
+    name: GetCategoryByIdQuery
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}.Handle(Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery
+    name: GetCategoryByIdQuery
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery
+  commentId: T:Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery
+  parent: Application.Categories.Queries.GetCategoryById
+  href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery.html
+  name: GetCategoryByIdQuery
+  nameWithType: GetCategoryByIdQuery
+  fullName: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQuery
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}
+  commentId: T:System.Threading.Tasks.Task{Application.Commons.Models.Results.Result{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Result<GetCategoryByIdQueryResult>>
+  nameWithType: Task<Result<GetCategoryByIdQueryResult>>
+  fullName: System.Threading.Tasks.Task<Application.Commons.Models.Results.Result<Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult>>
+  nameWithType.vb: Task(Of Result(Of GetCategoryByIdQueryResult))
+  fullName.vb: System.Threading.Tasks.Task(Of Application.Commons.Models.Results.Result(Of Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult))
+  name.vb: Task(Of Result(Of GetCategoryByIdQueryResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult
+    name: GetCategoryByIdQueryResult
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult
+    name: GetCategoryByIdQueryResult
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult.html
+  - name: )
+  - name: )
+- uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  commentId: M:MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: Handle(TRequest, CancellationToken)
+  nameWithType: IRequestHandler<TRequest, TResponse>.Handle(TRequest, CancellationToken)
+  fullName: MediatR.IRequestHandler<TRequest, TResponse>.Handle(TRequest, System.Threading.CancellationToken)
+  nameWithType.vb: IRequestHandler(Of TRequest, TResponse).Handle(TRequest, CancellationToken)
+  fullName.vb: MediatR.IRequestHandler(Of TRequest, TResponse).Handle(TRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: MediatR.IRequestHandler`2.Handle(`0,System.Threading.CancellationToken)
+    name: Handle
+    isExternal: true
+  - name: (
+  - name: TRequest
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.BuildCategoryTree*
+  commentId: Overload:Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.BuildCategoryTree
+  href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.html#Application_Categories_Queries_GetCategoryById_GetCategoryByIdQueryHandler_BuildCategoryTree_System_Nullable_System_Guid__System_Collections_Generic_IEnumerable_Domain_Entities_EntityLookup_Category__
+  name: BuildCategoryTree
+  nameWithType: GetCategoryByIdQueryHandler.BuildCategoryTree
+  fullName: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryHandler.BuildCategoryTree
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Category}
+  commentId: T:System.Collections.Generic.IEnumerable{Domain.Entities.EntityLookup.Category}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Category>
+  nameWithType: IEnumerable<Category>
+  fullName: System.Collections.Generic.IEnumerable<Domain.Entities.EntityLookup.Category>
+  nameWithType.vb: IEnumerable(Of Category)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Domain.Entities.EntityLookup.Category)
+  name.vb: IEnumerable(Of Category)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.EntityLookup.Category
+    name: Category
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.EntityLookup.Category
+    name: Category
+  - name: )
+- uid: System.Collections.Generic.List{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}
+  commentId: T:System.Collections.Generic.List{Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GetCategoryByIdQueryResult>
+  nameWithType: List<GetCategoryByIdQueryResult>
+  fullName: System.Collections.Generic.List<Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult>
+  nameWithType.vb: List(Of GetCategoryByIdQueryResult)
+  fullName.vb: System.Collections.Generic.List(Of Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult)
+  name.vb: List(Of GetCategoryByIdQueryResult)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult
+    name: GetCategoryByIdQueryResult
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult
+    name: GetCategoryByIdQueryResult
+    href: Application.Categories.Queries.GetCategoryById.GetCategoryByIdQueryResult.html
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

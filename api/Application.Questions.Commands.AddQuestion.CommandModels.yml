@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Questions.Commands.AddQuestion.CommandModels
+  commentId: N:Application.Questions.Commands.AddQuestion.CommandModels
+  id: Application.Questions.Commands.AddQuestion.CommandModels
+  children:
+  - Application.Questions.Commands.AddQuestion.CommandModels.FeedbackCommand
+  - Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  - Application.Questions.Commands.AddQuestion.CommandModels.MultipleChoiseQuestionCommand
+  - Application.Questions.Commands.AddQuestion.CommandModels.QuestionSourceCommand
+  - Application.Questions.Commands.AddQuestion.CommandModels.ReorderingQuestionCommand
+  - Application.Questions.Commands.AddQuestion.CommandModels.ShortAnswerQuestionCommand
+  - Application.Questions.Commands.AddQuestion.CommandModels.TrueFalseQuestionCommand
+  langs:
+  - csharp
+  - vb
+  name: Application.Questions.Commands.AddQuestion.CommandModels
+  nameWithType: Application.Questions.Commands.AddQuestion.CommandModels
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.FeedbackCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.CommandModels.FeedbackCommand
+  parent: Application.Questions.Commands.AddQuestion.CommandModels
+  href: Application.Questions.Commands.AddQuestion.CommandModels.FeedbackCommand.html
+  name: FeedbackCommand
+  nameWithType: FeedbackCommand
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.FeedbackCommand
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+  parent: Application.Questions.Commands.AddQuestion.CommandModels
+  href: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand.html
+  name: LongAnswerQuestionCommand
+  nameWithType: LongAnswerQuestionCommand
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.LongAnswerQuestionCommand
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.MultipleChoiseQuestionCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.CommandModels.MultipleChoiseQuestionCommand
+  href: Application.Questions.Commands.AddQuestion.CommandModels.MultipleChoiseQuestionCommand.html
+  name: MultipleChoiseQuestionCommand
+  nameWithType: MultipleChoiseQuestionCommand
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.MultipleChoiseQuestionCommand
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.QuestionSourceCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.CommandModels.QuestionSourceCommand
+  href: Application.Questions.Commands.AddQuestion.CommandModels.QuestionSourceCommand.html
+  name: QuestionSourceCommand
+  nameWithType: QuestionSourceCommand
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.QuestionSourceCommand
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.ReorderingQuestionCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.CommandModels.ReorderingQuestionCommand
+  href: Application.Questions.Commands.AddQuestion.CommandModels.ReorderingQuestionCommand.html
+  name: ReorderingQuestionCommand
+  nameWithType: ReorderingQuestionCommand
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.ReorderingQuestionCommand
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.ShortAnswerQuestionCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.CommandModels.ShortAnswerQuestionCommand
+  parent: Application.Questions.Commands.AddQuestion.CommandModels
+  href: Application.Questions.Commands.AddQuestion.CommandModels.ShortAnswerQuestionCommand.html
+  name: ShortAnswerQuestionCommand
+  nameWithType: ShortAnswerQuestionCommand
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.ShortAnswerQuestionCommand
+- uid: Application.Questions.Commands.AddQuestion.CommandModels.TrueFalseQuestionCommand
+  commentId: T:Application.Questions.Commands.AddQuestion.CommandModels.TrueFalseQuestionCommand
+  parent: Application.Questions.Commands.AddQuestion.CommandModels
+  href: Application.Questions.Commands.AddQuestion.CommandModels.TrueFalseQuestionCommand.html
+  name: TrueFalseQuestionCommand
+  nameWithType: TrueFalseQuestionCommand
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels.TrueFalseQuestionCommand
+- uid: Application.Questions.Commands.AddQuestion.CommandModels
+  commentId: N:Application.Questions.Commands.AddQuestion.CommandModels
+  href: Application.html
+  name: Application.Questions.Commands.AddQuestion.CommandModels
+  nameWithType: Application.Questions.Commands.AddQuestion.CommandModels
+  fullName: Application.Questions.Commands.AddQuestion.CommandModels
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion
+    name: AddQuestion
+    href: Application.Questions.Commands.AddQuestion.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion.CommandModels
+    name: CommandModels
+    href: Application.Questions.Commands.AddQuestion.CommandModels.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Commands
+    name: Commands
+    href: Application.Questions.Commands.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion
+    name: AddQuestion
+    href: Application.Questions.Commands.AddQuestion.html
+  - name: .
+  - uid: Application.Questions.Commands.AddQuestion.CommandModels
+    name: CommandModels
+    href: Application.Questions.Commands.AddQuestion.CommandModels.html

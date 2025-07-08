@@ -1,0 +1,751 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Services.CategoryService
+  commentId: T:Infrastructure.Services.CategoryService
+  id: CategoryService
+  parent: Infrastructure.Services
+  children:
+  - Infrastructure.Services.CategoryService.#ctor(Domain.Managers.IRepositoryManager,Application.Commons.Managers.IAuditManager,MapsterMapper.IMapper)
+  - Infrastructure.Services.CategoryService.AddCategory(System.String,System.String,System.Nullable{System.Guid})
+  - Infrastructure.Services.CategoryService.UpdateCategory(System.Guid,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: CategoryService
+  nameWithType: CategoryService
+  fullName: Infrastructure.Services.CategoryService
+  type: Class
+  source:
+    remote:
+      path: src/Infrastructure/Services/CategoryService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CategoryService
+    path: src/Infrastructure/Services/CategoryService.cs
+    startLine: 12
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  syntax:
+    content: 'public class CategoryService : ICategoryService'
+    content.vb: Public Class CategoryService Implements ICategoryService
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Commons.Services.ICategoryService
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Infrastructure.Services.CategoryService.#ctor(Domain.Managers.IRepositoryManager,Application.Commons.Managers.IAuditManager,MapsterMapper.IMapper)
+  commentId: M:Infrastructure.Services.CategoryService.#ctor(Domain.Managers.IRepositoryManager,Application.Commons.Managers.IAuditManager,MapsterMapper.IMapper)
+  id: '#ctor(Domain.Managers.IRepositoryManager,Application.Commons.Managers.IAuditManager,MapsterMapper.IMapper)'
+  parent: Infrastructure.Services.CategoryService
+  langs:
+  - csharp
+  - vb
+  name: CategoryService(IRepositoryManager, IAuditManager, IMapper)
+  nameWithType: CategoryService.CategoryService(IRepositoryManager, IAuditManager, IMapper)
+  fullName: Infrastructure.Services.CategoryService.CategoryService(Domain.Managers.IRepositoryManager, Application.Commons.Managers.IAuditManager, MapsterMapper.IMapper)
+  type: Constructor
+  source:
+    remote:
+      path: src/Infrastructure/Services/CategoryService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Infrastructure/Services/CategoryService.cs
+    startLine: 12
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  syntax:
+    content: public CategoryService(IRepositoryManager repositoryManager, IAuditManager auditManager, IMapper mapper)
+    parameters:
+    - id: repositoryManager
+      type: Domain.Managers.IRepositoryManager
+    - id: auditManager
+      type: Application.Commons.Managers.IAuditManager
+    - id: mapper
+      type: MapsterMapper.IMapper
+    content.vb: Public Sub New(repositoryManager As IRepositoryManager, auditManager As IAuditManager, mapper As IMapper)
+  overload: Infrastructure.Services.CategoryService.#ctor*
+  nameWithType.vb: CategoryService.New(IRepositoryManager, IAuditManager, IMapper)
+  fullName.vb: Infrastructure.Services.CategoryService.New(Domain.Managers.IRepositoryManager, Application.Commons.Managers.IAuditManager, MapsterMapper.IMapper)
+  name.vb: New(IRepositoryManager, IAuditManager, IMapper)
+- uid: Infrastructure.Services.CategoryService.AddCategory(System.String,System.String,System.Nullable{System.Guid})
+  commentId: M:Infrastructure.Services.CategoryService.AddCategory(System.String,System.String,System.Nullable{System.Guid})
+  id: AddCategory(System.String,System.String,System.Nullable{System.Guid})
+  parent: Infrastructure.Services.CategoryService
+  langs:
+  - csharp
+  - vb
+  name: AddCategory(string, string, Guid?)
+  nameWithType: CategoryService.AddCategory(string, string, Guid?)
+  fullName: Infrastructure.Services.CategoryService.AddCategory(string, string, System.Guid?)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/CategoryService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AddCategory
+    path: src/Infrastructure/Services/CategoryService.cs
+    startLine: 18
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public Result<Category> AddCategory(string name, string description, Guid? parentId)
+    parameters:
+    - id: name
+      type: System.String
+    - id: description
+      type: System.String
+    - id: parentId
+      type: System.Nullable{System.Guid}
+    return:
+      type: Application.Commons.Models.Results.Result{Domain.Entities.EntityLookup.Category}
+    content.vb: Public Function AddCategory(name As String, description As String, parentId As Guid?) As Result(Of Category)
+  overload: Infrastructure.Services.CategoryService.AddCategory*
+  implements:
+  - Application.Commons.Services.ICategoryService.AddCategory(System.String,System.String,System.Nullable{System.Guid})
+  nameWithType.vb: CategoryService.AddCategory(String, String, Guid?)
+  fullName.vb: Infrastructure.Services.CategoryService.AddCategory(String, String, System.Guid?)
+  name.vb: AddCategory(String, String, Guid?)
+- uid: Infrastructure.Services.CategoryService.UpdateCategory(System.Guid,System.String,System.String)
+  commentId: M:Infrastructure.Services.CategoryService.UpdateCategory(System.Guid,System.String,System.String)
+  id: UpdateCategory(System.Guid,System.String,System.String)
+  parent: Infrastructure.Services.CategoryService
+  langs:
+  - csharp
+  - vb
+  name: UpdateCategory(Guid, string, string)
+  nameWithType: CategoryService.UpdateCategory(Guid, string, string)
+  fullName: Infrastructure.Services.CategoryService.UpdateCategory(System.Guid, string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/CategoryService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateCategory
+    path: src/Infrastructure/Services/CategoryService.cs
+    startLine: 47
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public Result UpdateCategory(Guid categoryId, string name, string description)
+    parameters:
+    - id: categoryId
+      type: System.Guid
+    - id: name
+      type: System.String
+    - id: description
+      type: System.String
+    return:
+      type: Application.Commons.Models.Results.Result
+    content.vb: Public Function UpdateCategory(categoryId As Guid, name As String, description As String) As Result
+  overload: Infrastructure.Services.CategoryService.UpdateCategory*
+  implements:
+  - Application.Commons.Services.ICategoryService.UpdateCategory(System.Guid,System.String,System.String)
+  nameWithType.vb: CategoryService.UpdateCategory(Guid, String, String)
+  fullName.vb: Infrastructure.Services.CategoryService.UpdateCategory(System.Guid, String, String)
+  name.vb: UpdateCategory(Guid, String, String)
+references:
+- uid: Infrastructure.Services
+  commentId: N:Infrastructure.Services
+  href: Infrastructure.html
+  name: Infrastructure.Services
+  nameWithType: Infrastructure.Services
+  fullName: Infrastructure.Services
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Services
+    name: Services
+    href: Infrastructure.Services.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Services
+    name: Services
+    href: Infrastructure.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Commons.Services.ICategoryService
+  commentId: T:Application.Commons.Services.ICategoryService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.ICategoryService.html
+  name: ICategoryService
+  nameWithType: ICategoryService
+  fullName: Application.Commons.Services.ICategoryService
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Infrastructure.Services.CategoryService.#ctor*
+  commentId: Overload:Infrastructure.Services.CategoryService.#ctor
+  href: Infrastructure.Services.CategoryService.html#Infrastructure_Services_CategoryService__ctor_Domain_Managers_IRepositoryManager_Application_Commons_Managers_IAuditManager_MapsterMapper_IMapper_
+  name: CategoryService
+  nameWithType: CategoryService.CategoryService
+  fullName: Infrastructure.Services.CategoryService.CategoryService
+  nameWithType.vb: CategoryService.New
+  fullName.vb: Infrastructure.Services.CategoryService.New
+  name.vb: New
+- uid: Domain.Managers.IRepositoryManager
+  commentId: T:Domain.Managers.IRepositoryManager
+  parent: Domain.Managers
+  href: Domain.Managers.IRepositoryManager.html
+  name: IRepositoryManager
+  nameWithType: IRepositoryManager
+  fullName: Domain.Managers.IRepositoryManager
+- uid: Application.Commons.Managers.IAuditManager
+  commentId: T:Application.Commons.Managers.IAuditManager
+  parent: Application.Commons.Managers
+  href: Application.Commons.Managers.IAuditManager.html
+  name: IAuditManager
+  nameWithType: IAuditManager
+  fullName: Application.Commons.Managers.IAuditManager
+- uid: MapsterMapper.IMapper
+  commentId: T:MapsterMapper.IMapper
+  parent: MapsterMapper
+  isExternal: true
+  name: IMapper
+  nameWithType: IMapper
+  fullName: MapsterMapper.IMapper
+- uid: Domain.Managers
+  commentId: N:Domain.Managers
+  href: Domain.html
+  name: Domain.Managers
+  nameWithType: Domain.Managers
+  fullName: Domain.Managers
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Managers
+    name: Managers
+    href: Domain.Managers.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Managers
+    name: Managers
+    href: Domain.Managers.html
+- uid: Application.Commons.Managers
+  commentId: N:Application.Commons.Managers
+  href: Application.html
+  name: Application.Commons.Managers
+  nameWithType: Application.Commons.Managers
+  fullName: Application.Commons.Managers
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Managers
+    name: Managers
+    href: Application.Commons.Managers.html
+- uid: MapsterMapper
+  commentId: N:MapsterMapper
+  isExternal: true
+  name: MapsterMapper
+  nameWithType: MapsterMapper
+  fullName: MapsterMapper
+- uid: Infrastructure.Services.CategoryService.AddCategory*
+  commentId: Overload:Infrastructure.Services.CategoryService.AddCategory
+  href: Infrastructure.Services.CategoryService.html#Infrastructure_Services_CategoryService_AddCategory_System_String_System_String_System_Nullable_System_Guid__
+  name: AddCategory
+  nameWithType: CategoryService.AddCategory
+  fullName: Infrastructure.Services.CategoryService.AddCategory
+- uid: Application.Commons.Services.ICategoryService.AddCategory(System.String,System.String,System.Nullable{System.Guid})
+  commentId: M:Application.Commons.Services.ICategoryService.AddCategory(System.String,System.String,System.Nullable{System.Guid})
+  parent: Application.Commons.Services.ICategoryService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: AddCategory(string, string, Guid?)
+  nameWithType: ICategoryService.AddCategory(string, string, Guid?)
+  fullName: Application.Commons.Services.ICategoryService.AddCategory(string, string, System.Guid?)
+  nameWithType.vb: ICategoryService.AddCategory(String, String, Guid?)
+  fullName.vb: Application.Commons.Services.ICategoryService.AddCategory(String, String, System.Guid?)
+  name.vb: AddCategory(String, String, Guid?)
+  spec.csharp:
+  - uid: Application.Commons.Services.ICategoryService.AddCategory(System.String,System.String,System.Nullable{System.Guid})
+    name: AddCategory
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.ICategoryService.AddCategory(System.String,System.String,System.Nullable{System.Guid})
+    name: AddCategory
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable{System.Guid}
+  commentId: T:System.Nullable{System.Guid}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid?
+  nameWithType: Guid?
+  fullName: System.Guid?
+  spec.csharp:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+  spec.vb:
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: '?'
+- uid: Application.Commons.Models.Results.Result{Domain.Entities.EntityLookup.Category}
+  commentId: T:Application.Commons.Models.Results.Result{Domain.Entities.EntityLookup.Category}
+  parent: Application.Commons.Models.Results
+  definition: Application.Commons.Models.Results.Result`1
+  href: Application.Commons.Models.Results.Result-1.html
+  name: Result<Category>
+  nameWithType: Result<Category>
+  fullName: Application.Commons.Models.Results.Result<Domain.Entities.EntityLookup.Category>
+  nameWithType.vb: Result(Of Category)
+  fullName.vb: Application.Commons.Models.Results.Result(Of Domain.Entities.EntityLookup.Category)
+  name.vb: Result(Of Category)
+  spec.csharp:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Domain.Entities.EntityLookup.Category
+    name: Category
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.EntityLookup.Category
+    name: Category
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Commons.Models.Results.Result`1
+  commentId: T:Application.Commons.Models.Results.Result`1
+  parent: Application.Commons.Models.Results
+  href: Application.Commons.Models.Results.Result-1.html
+  name: Result<T>
+  nameWithType: Result<T>
+  fullName: Application.Commons.Models.Results.Result<T>
+  nameWithType.vb: Result(Of T)
+  fullName.vb: Application.Commons.Models.Results.Result(Of T)
+  name.vb: Result(Of T)
+  spec.csharp:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Commons.Models.Results
+  commentId: N:Application.Commons.Models.Results
+  href: Application.html
+  name: Application.Commons.Models.Results
+  nameWithType: Application.Commons.Models.Results
+  fullName: Application.Commons.Models.Results
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Results
+    name: Results
+    href: Application.Commons.Models.Results.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Results
+    name: Results
+    href: Application.Commons.Models.Results.html
+- uid: Infrastructure.Services.CategoryService.UpdateCategory*
+  commentId: Overload:Infrastructure.Services.CategoryService.UpdateCategory
+  href: Infrastructure.Services.CategoryService.html#Infrastructure_Services_CategoryService_UpdateCategory_System_Guid_System_String_System_String_
+  name: UpdateCategory
+  nameWithType: CategoryService.UpdateCategory
+  fullName: Infrastructure.Services.CategoryService.UpdateCategory
+- uid: Application.Commons.Services.ICategoryService.UpdateCategory(System.Guid,System.String,System.String)
+  commentId: M:Application.Commons.Services.ICategoryService.UpdateCategory(System.Guid,System.String,System.String)
+  parent: Application.Commons.Services.ICategoryService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: UpdateCategory(Guid, string, string)
+  nameWithType: ICategoryService.UpdateCategory(Guid, string, string)
+  fullName: Application.Commons.Services.ICategoryService.UpdateCategory(System.Guid, string, string)
+  nameWithType.vb: ICategoryService.UpdateCategory(Guid, String, String)
+  fullName.vb: Application.Commons.Services.ICategoryService.UpdateCategory(System.Guid, String, String)
+  name.vb: UpdateCategory(Guid, String, String)
+  spec.csharp:
+  - uid: Application.Commons.Services.ICategoryService.UpdateCategory(System.Guid,System.String,System.String)
+    name: UpdateCategory
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.ICategoryService.UpdateCategory(System.Guid,System.String,System.String)
+    name: UpdateCategory
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Commons.Models.Results.Result
+  commentId: T:Application.Commons.Models.Results.Result
+  parent: Application.Commons.Models.Results
+  href: Application.Commons.Models.Results.Result.html
+  name: Result
+  nameWithType: Result
+  fullName: Application.Commons.Models.Results.Result

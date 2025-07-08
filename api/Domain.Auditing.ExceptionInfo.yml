@@ -1,0 +1,424 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Auditing.ExceptionInfo
+  commentId: T:Domain.Auditing.ExceptionInfo
+  id: ExceptionInfo
+  parent: Domain.Auditing
+  children:
+  - Domain.Auditing.ExceptionInfo.FromException(System.Exception)
+  - Domain.Auditing.ExceptionInfo.InnerException
+  - Domain.Auditing.ExceptionInfo.Message
+  - Domain.Auditing.ExceptionInfo.StackTrace
+  - Domain.Auditing.ExceptionInfo.Type
+  langs:
+  - csharp
+  - vb
+  name: ExceptionInfo
+  nameWithType: ExceptionInfo
+  fullName: Domain.Auditing.ExceptionInfo
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Auditing/ExceptionInfo.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ExceptionInfo
+    path: src/Domain/Auditing/ExceptionInfo.cs
+    startLine: 2
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  syntax:
+    content: public class ExceptionInfo
+    content.vb: Public Class ExceptionInfo
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Domain.Auditing.ExceptionInfo.Type
+  commentId: P:Domain.Auditing.ExceptionInfo.Type
+  id: Type
+  parent: Domain.Auditing.ExceptionInfo
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: ExceptionInfo.Type
+  fullName: Domain.Auditing.ExceptionInfo.Type
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/ExceptionInfo.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Type
+    path: src/Domain/Auditing/ExceptionInfo.cs
+    startLine: 4
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  syntax:
+    content: public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Type As String
+  overload: Domain.Auditing.ExceptionInfo.Type*
+- uid: Domain.Auditing.ExceptionInfo.Message
+  commentId: P:Domain.Auditing.ExceptionInfo.Message
+  id: Message
+  parent: Domain.Auditing.ExceptionInfo
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: ExceptionInfo.Message
+  fullName: Domain.Auditing.ExceptionInfo.Message
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/ExceptionInfo.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Message
+    path: src/Domain/Auditing/ExceptionInfo.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  syntax:
+    content: public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: Domain.Auditing.ExceptionInfo.Message*
+- uid: Domain.Auditing.ExceptionInfo.StackTrace
+  commentId: P:Domain.Auditing.ExceptionInfo.StackTrace
+  id: StackTrace
+  parent: Domain.Auditing.ExceptionInfo
+  langs:
+  - csharp
+  - vb
+  name: StackTrace
+  nameWithType: ExceptionInfo.StackTrace
+  fullName: Domain.Auditing.ExceptionInfo.StackTrace
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/ExceptionInfo.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: StackTrace
+    path: src/Domain/Auditing/ExceptionInfo.cs
+    startLine: 6
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  syntax:
+    content: public string? StackTrace { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StackTrace As String
+  overload: Domain.Auditing.ExceptionInfo.StackTrace*
+- uid: Domain.Auditing.ExceptionInfo.InnerException
+  commentId: P:Domain.Auditing.ExceptionInfo.InnerException
+  id: InnerException
+  parent: Domain.Auditing.ExceptionInfo
+  langs:
+  - csharp
+  - vb
+  name: InnerException
+  nameWithType: ExceptionInfo.InnerException
+  fullName: Domain.Auditing.ExceptionInfo.InnerException
+  type: Property
+  source:
+    remote:
+      path: src/Domain/Auditing/ExceptionInfo.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: InnerException
+    path: src/Domain/Auditing/ExceptionInfo.cs
+    startLine: 7
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  syntax:
+    content: public ExceptionInfo? InnerException { get; set; }
+    parameters: []
+    return:
+      type: Domain.Auditing.ExceptionInfo
+    content.vb: Public Property InnerException As ExceptionInfo
+  overload: Domain.Auditing.ExceptionInfo.InnerException*
+- uid: Domain.Auditing.ExceptionInfo.FromException(System.Exception)
+  commentId: M:Domain.Auditing.ExceptionInfo.FromException(System.Exception)
+  id: FromException(System.Exception)
+  parent: Domain.Auditing.ExceptionInfo
+  langs:
+  - csharp
+  - vb
+  name: FromException(Exception)
+  nameWithType: ExceptionInfo.FromException(Exception)
+  fullName: Domain.Auditing.ExceptionInfo.FromException(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Auditing/ExceptionInfo.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: FromException
+    path: src/Domain/Auditing/ExceptionInfo.cs
+    startLine: 9
+  assemblies:
+  - Domain
+  namespace: Domain.Auditing
+  syntax:
+    content: public static ExceptionInfo FromException(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    return:
+      type: Domain.Auditing.ExceptionInfo
+    content.vb: Public Shared Function FromException(ex As Exception) As ExceptionInfo
+  overload: Domain.Auditing.ExceptionInfo.FromException*
+references:
+- uid: Domain.Auditing
+  commentId: N:Domain.Auditing
+  href: Domain.html
+  name: Domain.Auditing
+  nameWithType: Domain.Auditing
+  fullName: Domain.Auditing
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Auditing
+    name: Auditing
+    href: Domain.Auditing.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Domain.Auditing.ExceptionInfo.Type*
+  commentId: Overload:Domain.Auditing.ExceptionInfo.Type
+  href: Domain.Auditing.ExceptionInfo.html#Domain_Auditing_ExceptionInfo_Type
+  name: Type
+  nameWithType: ExceptionInfo.Type
+  fullName: Domain.Auditing.ExceptionInfo.Type
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Domain.Auditing.ExceptionInfo.Message*
+  commentId: Overload:Domain.Auditing.ExceptionInfo.Message
+  href: Domain.Auditing.ExceptionInfo.html#Domain_Auditing_ExceptionInfo_Message
+  name: Message
+  nameWithType: ExceptionInfo.Message
+  fullName: Domain.Auditing.ExceptionInfo.Message
+- uid: Domain.Auditing.ExceptionInfo.StackTrace*
+  commentId: Overload:Domain.Auditing.ExceptionInfo.StackTrace
+  href: Domain.Auditing.ExceptionInfo.html#Domain_Auditing_ExceptionInfo_StackTrace
+  name: StackTrace
+  nameWithType: ExceptionInfo.StackTrace
+  fullName: Domain.Auditing.ExceptionInfo.StackTrace
+- uid: Domain.Auditing.ExceptionInfo.InnerException*
+  commentId: Overload:Domain.Auditing.ExceptionInfo.InnerException
+  href: Domain.Auditing.ExceptionInfo.html#Domain_Auditing_ExceptionInfo_InnerException
+  name: InnerException
+  nameWithType: ExceptionInfo.InnerException
+  fullName: Domain.Auditing.ExceptionInfo.InnerException
+- uid: Domain.Auditing.ExceptionInfo
+  commentId: T:Domain.Auditing.ExceptionInfo
+  parent: Domain.Auditing
+  href: Domain.Auditing.ExceptionInfo.html
+  name: ExceptionInfo
+  nameWithType: ExceptionInfo
+  fullName: Domain.Auditing.ExceptionInfo
+- uid: Domain.Auditing.ExceptionInfo.FromException*
+  commentId: Overload:Domain.Auditing.ExceptionInfo.FromException
+  href: Domain.Auditing.ExceptionInfo.html#Domain_Auditing_ExceptionInfo_FromException_System_Exception_
+  name: FromException
+  nameWithType: ExceptionInfo.FromException
+  fullName: Domain.Auditing.ExceptionInfo.FromException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception

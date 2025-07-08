@@ -1,0 +1,601 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  commentId: T:Application.Commons.Models.SystemModels.AppStatusResponseModel
+  id: AppStatusResponseModel
+  parent: Application.Commons.Models.SystemModels
+  children:
+  - Application.Commons.Models.SystemModels.AppStatusResponseModel.AppVersion
+  - Application.Commons.Models.SystemModels.AppStatusResponseModel.Collections
+  - Application.Commons.Models.SystemModels.AppStatusResponseModel.CpuArchitecture
+  - Application.Commons.Models.SystemModels.AppStatusResponseModel.DatabaseSizeBytes
+  - Application.Commons.Models.SystemModels.AppStatusResponseModel.MemoryUsageMB
+  - Application.Commons.Models.SystemModels.AppStatusResponseModel.OSVersion
+  - Application.Commons.Models.SystemModels.AppStatusResponseModel.Uptime
+  langs:
+  - csharp
+  - vb
+  name: AppStatusResponseModel
+  nameWithType: AppStatusResponseModel
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  type: Class
+  source:
+    remote:
+      path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AppStatusResponseModel
+    path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.SystemModels
+  syntax:
+    content: public class AppStatusResponseModel
+    content.vb: Public Class AppStatusResponseModel
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.AppVersion
+  commentId: P:Application.Commons.Models.SystemModels.AppStatusResponseModel.AppVersion
+  id: AppVersion
+  parent: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  langs:
+  - csharp
+  - vb
+  name: AppVersion
+  nameWithType: AppStatusResponseModel.AppVersion
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.AppVersion
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: AppVersion
+    path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.SystemModels
+  syntax:
+    content: public string AppVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AppVersion As String
+  overload: Application.Commons.Models.SystemModels.AppStatusResponseModel.AppVersion*
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.Uptime
+  commentId: P:Application.Commons.Models.SystemModels.AppStatusResponseModel.Uptime
+  id: Uptime
+  parent: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  langs:
+  - csharp
+  - vb
+  name: Uptime
+  nameWithType: AppStatusResponseModel.Uptime
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.Uptime
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Uptime
+    path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.SystemModels
+  syntax:
+    content: public TimeSpan Uptime { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property Uptime As TimeSpan
+  overload: Application.Commons.Models.SystemModels.AppStatusResponseModel.Uptime*
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.OSVersion
+  commentId: P:Application.Commons.Models.SystemModels.AppStatusResponseModel.OSVersion
+  id: OSVersion
+  parent: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  langs:
+  - csharp
+  - vb
+  name: OSVersion
+  nameWithType: AppStatusResponseModel.OSVersion
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.OSVersion
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: OSVersion
+    path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.SystemModels
+  syntax:
+    content: public string OSVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OSVersion As String
+  overload: Application.Commons.Models.SystemModels.AppStatusResponseModel.OSVersion*
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.CpuArchitecture
+  commentId: P:Application.Commons.Models.SystemModels.AppStatusResponseModel.CpuArchitecture
+  id: CpuArchitecture
+  parent: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  langs:
+  - csharp
+  - vb
+  name: CpuArchitecture
+  nameWithType: AppStatusResponseModel.CpuArchitecture
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.CpuArchitecture
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: CpuArchitecture
+    path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.SystemModels
+  syntax:
+    content: public string CpuArchitecture { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CpuArchitecture As String
+  overload: Application.Commons.Models.SystemModels.AppStatusResponseModel.CpuArchitecture*
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.MemoryUsageMB
+  commentId: P:Application.Commons.Models.SystemModels.AppStatusResponseModel.MemoryUsageMB
+  id: MemoryUsageMB
+  parent: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  langs:
+  - csharp
+  - vb
+  name: MemoryUsageMB
+  nameWithType: AppStatusResponseModel.MemoryUsageMB
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.MemoryUsageMB
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: MemoryUsageMB
+    path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.SystemModels
+  syntax:
+    content: public string MemoryUsageMB { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MemoryUsageMB As String
+  overload: Application.Commons.Models.SystemModels.AppStatusResponseModel.MemoryUsageMB*
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.DatabaseSizeBytes
+  commentId: P:Application.Commons.Models.SystemModels.AppStatusResponseModel.DatabaseSizeBytes
+  id: DatabaseSizeBytes
+  parent: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  langs:
+  - csharp
+  - vb
+  name: DatabaseSizeBytes
+  nameWithType: AppStatusResponseModel.DatabaseSizeBytes
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.DatabaseSizeBytes
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DatabaseSizeBytes
+    path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.SystemModels
+  syntax:
+    content: public string DatabaseSizeBytes { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DatabaseSizeBytes As String
+  overload: Application.Commons.Models.SystemModels.AppStatusResponseModel.DatabaseSizeBytes*
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.Collections
+  commentId: P:Application.Commons.Models.SystemModels.AppStatusResponseModel.Collections
+  id: Collections
+  parent: Application.Commons.Models.SystemModels.AppStatusResponseModel
+  langs:
+  - csharp
+  - vb
+  name: Collections
+  nameWithType: AppStatusResponseModel.Collections
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.Collections
+  type: Property
+  source:
+    remote:
+      path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Collections
+    path: src/Application/Commons/Models/SystemModels/AppStatusResponseModel.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Commons.Models.SystemModels
+  syntax:
+    content: public List<CollectionStorageStat> Collections { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Application.Commons.Models.SystemModels.CollectionStorageStat}
+    content.vb: Public Property Collections As List(Of CollectionStorageStat)
+  overload: Application.Commons.Models.SystemModels.AppStatusResponseModel.Collections*
+references:
+- uid: Application.Commons.Models.SystemModels
+  commentId: N:Application.Commons.Models.SystemModels
+  href: Application.html
+  name: Application.Commons.Models.SystemModels
+  nameWithType: Application.Commons.Models.SystemModels
+  fullName: Application.Commons.Models.SystemModels
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.SystemModels
+    name: SystemModels
+    href: Application.Commons.Models.SystemModels.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.SystemModels
+    name: SystemModels
+    href: Application.Commons.Models.SystemModels.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.AppVersion*
+  commentId: Overload:Application.Commons.Models.SystemModels.AppStatusResponseModel.AppVersion
+  href: Application.Commons.Models.SystemModels.AppStatusResponseModel.html#Application_Commons_Models_SystemModels_AppStatusResponseModel_AppVersion
+  name: AppVersion
+  nameWithType: AppStatusResponseModel.AppVersion
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.AppVersion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.Uptime*
+  commentId: Overload:Application.Commons.Models.SystemModels.AppStatusResponseModel.Uptime
+  href: Application.Commons.Models.SystemModels.AppStatusResponseModel.html#Application_Commons_Models_SystemModels_AppStatusResponseModel_Uptime
+  name: Uptime
+  nameWithType: AppStatusResponseModel.Uptime
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.Uptime
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.OSVersion*
+  commentId: Overload:Application.Commons.Models.SystemModels.AppStatusResponseModel.OSVersion
+  href: Application.Commons.Models.SystemModels.AppStatusResponseModel.html#Application_Commons_Models_SystemModels_AppStatusResponseModel_OSVersion
+  name: OSVersion
+  nameWithType: AppStatusResponseModel.OSVersion
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.OSVersion
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.CpuArchitecture*
+  commentId: Overload:Application.Commons.Models.SystemModels.AppStatusResponseModel.CpuArchitecture
+  href: Application.Commons.Models.SystemModels.AppStatusResponseModel.html#Application_Commons_Models_SystemModels_AppStatusResponseModel_CpuArchitecture
+  name: CpuArchitecture
+  nameWithType: AppStatusResponseModel.CpuArchitecture
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.CpuArchitecture
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.MemoryUsageMB*
+  commentId: Overload:Application.Commons.Models.SystemModels.AppStatusResponseModel.MemoryUsageMB
+  href: Application.Commons.Models.SystemModels.AppStatusResponseModel.html#Application_Commons_Models_SystemModels_AppStatusResponseModel_MemoryUsageMB
+  name: MemoryUsageMB
+  nameWithType: AppStatusResponseModel.MemoryUsageMB
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.MemoryUsageMB
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.DatabaseSizeBytes*
+  commentId: Overload:Application.Commons.Models.SystemModels.AppStatusResponseModel.DatabaseSizeBytes
+  href: Application.Commons.Models.SystemModels.AppStatusResponseModel.html#Application_Commons_Models_SystemModels_AppStatusResponseModel_DatabaseSizeBytes
+  name: DatabaseSizeBytes
+  nameWithType: AppStatusResponseModel.DatabaseSizeBytes
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.DatabaseSizeBytes
+- uid: Application.Commons.Models.SystemModels.AppStatusResponseModel.Collections*
+  commentId: Overload:Application.Commons.Models.SystemModels.AppStatusResponseModel.Collections
+  href: Application.Commons.Models.SystemModels.AppStatusResponseModel.html#Application_Commons_Models_SystemModels_AppStatusResponseModel_Collections
+  name: Collections
+  nameWithType: AppStatusResponseModel.Collections
+  fullName: Application.Commons.Models.SystemModels.AppStatusResponseModel.Collections
+- uid: System.Collections.Generic.List{Application.Commons.Models.SystemModels.CollectionStorageStat}
+  commentId: T:System.Collections.Generic.List{Application.Commons.Models.SystemModels.CollectionStorageStat}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<CollectionStorageStat>
+  nameWithType: List<CollectionStorageStat>
+  fullName: System.Collections.Generic.List<Application.Commons.Models.SystemModels.CollectionStorageStat>
+  nameWithType.vb: List(Of CollectionStorageStat)
+  fullName.vb: System.Collections.Generic.List(Of Application.Commons.Models.SystemModels.CollectionStorageStat)
+  name.vb: List(Of CollectionStorageStat)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Application.Commons.Models.SystemModels.CollectionStorageStat
+    name: CollectionStorageStat
+    href: Application.Commons.Models.SystemModels.CollectionStorageStat.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.SystemModels.CollectionStorageStat
+    name: CollectionStorageStat
+    href: Application.Commons.Models.SystemModels.CollectionStorageStat.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

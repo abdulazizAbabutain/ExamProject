@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Commands.UnArchiveTag
+  commentId: N:Application.Tags.Commands.UnArchiveTag
+  id: Application.Tags.Commands.UnArchiveTag
+  children:
+  - Application.Tags.Commands.UnArchiveTag.UnArchiveTagCommandHandler
+  - Application.Tags.Commands.UnArchiveTag.UnarchiveTagCommand
+  langs:
+  - csharp
+  - vb
+  name: Application.Tags.Commands.UnArchiveTag
+  nameWithType: Application.Tags.Commands.UnArchiveTag
+  fullName: Application.Tags.Commands.UnArchiveTag
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Tags.Commands.UnArchiveTag.UnarchiveTagCommand
+  commentId: T:Application.Tags.Commands.UnArchiveTag.UnarchiveTagCommand
+  parent: Application.Tags.Commands.UnArchiveTag
+  href: Application.Tags.Commands.UnArchiveTag.UnarchiveTagCommand.html
+  name: UnarchiveTagCommand
+  nameWithType: UnarchiveTagCommand
+  fullName: Application.Tags.Commands.UnArchiveTag.UnarchiveTagCommand
+- uid: Application.Tags.Commands.UnArchiveTag.UnArchiveTagCommandHandler
+  commentId: T:Application.Tags.Commands.UnArchiveTag.UnArchiveTagCommandHandler
+  href: Application.Tags.Commands.UnArchiveTag.UnArchiveTagCommandHandler.html
+  name: UnArchiveTagCommandHandler
+  nameWithType: UnArchiveTagCommandHandler
+  fullName: Application.Tags.Commands.UnArchiveTag.UnArchiveTagCommandHandler
+- uid: Application.Tags.Commands.UnArchiveTag
+  commentId: N:Application.Tags.Commands.UnArchiveTag
+  href: Application.html
+  name: Application.Tags.Commands.UnArchiveTag
+  nameWithType: Application.Tags.Commands.UnArchiveTag
+  fullName: Application.Tags.Commands.UnArchiveTag
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.UnArchiveTag
+    name: UnArchiveTag
+    href: Application.Tags.Commands.UnArchiveTag.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Commands
+    name: Commands
+    href: Application.Tags.Commands.html
+  - name: .
+  - uid: Application.Tags.Commands.UnArchiveTag
+    name: UnArchiveTag
+    href: Application.Tags.Commands.UnArchiveTag.html

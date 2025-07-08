@@ -1,0 +1,374 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Tags.Queries.ExportTags.ExportTagsQueryResult
+  commentId: T:Application.Tags.Queries.ExportTags.ExportTagsQueryResult
+  id: ExportTagsQueryResult
+  parent: Application.Tags.Queries.ExportTags
+  children:
+  - Application.Tags.Queries.ExportTags.ExportTagsQueryResult.ContentType
+  - Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileContent
+  - Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileName
+  langs:
+  - csharp
+  - vb
+  name: ExportTagsQueryResult
+  nameWithType: ExportTagsQueryResult
+  fullName: Application.Tags.Queries.ExportTags.ExportTagsQueryResult
+  type: Class
+  source:
+    remote:
+      path: src/Application/Tags/Queries/ExportTags/ExportTagsQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ExportTagsQueryResult
+    path: src/Application/Tags/Queries/ExportTags/ExportTagsQueryResult.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.ExportTags
+  syntax:
+    content: public class ExportTagsQueryResult
+    content.vb: Public Class ExportTagsQueryResult
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileName
+  commentId: P:Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileName
+  id: FileName
+  parent: Application.Tags.Queries.ExportTags.ExportTagsQueryResult
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: ExportTagsQueryResult.FileName
+  fullName: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileName
+  type: Property
+  source:
+    remote:
+      path: src/Application/Tags/Queries/ExportTags/ExportTagsQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: FileName
+    path: src/Application/Tags/Queries/ExportTags/ExportTagsQueryResult.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.ExportTags
+  syntax:
+    content: public string FileName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FileName As String
+  overload: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileName*
+- uid: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.ContentType
+  commentId: P:Application.Tags.Queries.ExportTags.ExportTagsQueryResult.ContentType
+  id: ContentType
+  parent: Application.Tags.Queries.ExportTags.ExportTagsQueryResult
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: ExportTagsQueryResult.ContentType
+  fullName: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.ContentType
+  type: Property
+  source:
+    remote:
+      path: src/Application/Tags/Queries/ExportTags/ExportTagsQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ContentType
+    path: src/Application/Tags/Queries/ExportTags/ExportTagsQueryResult.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.ExportTags
+  syntax:
+    content: public string ContentType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ContentType As String
+  overload: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.ContentType*
+- uid: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileContent
+  commentId: P:Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileContent
+  id: FileContent
+  parent: Application.Tags.Queries.ExportTags.ExportTagsQueryResult
+  langs:
+  - csharp
+  - vb
+  name: FileContent
+  nameWithType: ExportTagsQueryResult.FileContent
+  fullName: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileContent
+  type: Property
+  source:
+    remote:
+      path: src/Application/Tags/Queries/ExportTags/ExportTagsQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: FileContent
+    path: src/Application/Tags/Queries/ExportTags/ExportTagsQueryResult.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Tags.Queries.ExportTags
+  syntax:
+    content: public byte[] FileContent { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public Property FileContent As Byte()
+  overload: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileContent*
+references:
+- uid: Application.Tags.Queries.ExportTags
+  commentId: N:Application.Tags.Queries.ExportTags
+  href: Application.html
+  name: Application.Tags.Queries.ExportTags
+  nameWithType: Application.Tags.Queries.ExportTags
+  fullName: Application.Tags.Queries.ExportTags
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.ExportTags
+    name: ExportTags
+    href: Application.Tags.Queries.ExportTags.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Tags
+    name: Tags
+    href: Application.Tags.html
+  - name: .
+  - uid: Application.Tags.Queries
+    name: Queries
+    href: Application.Tags.Queries.html
+  - name: .
+  - uid: Application.Tags.Queries.ExportTags
+    name: ExportTags
+    href: Application.Tags.Queries.ExportTags.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileName*
+  commentId: Overload:Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileName
+  href: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.html#Application_Tags_Queries_ExportTags_ExportTagsQueryResult_FileName
+  name: FileName
+  nameWithType: ExportTagsQueryResult.FileName
+  fullName: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.ContentType*
+  commentId: Overload:Application.Tags.Queries.ExportTags.ExportTagsQueryResult.ContentType
+  href: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.html#Application_Tags_Queries_ExportTags_ExportTagsQueryResult_ContentType
+  name: ContentType
+  nameWithType: ExportTagsQueryResult.ContentType
+  fullName: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.ContentType
+- uid: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileContent*
+  commentId: Overload:Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileContent
+  href: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.html#Application_Tags_Queries_ExportTags_ExportTagsQueryResult_FileContent
+  name: FileContent
+  nameWithType: ExportTagsQueryResult.FileContent
+  fullName: Application.Tags.Queries.ExportTags.ExportTagsQueryResult.FileContent
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )

@@ -1,0 +1,421 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  commentId: T:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  id: ReorderingQuestionQueryResult
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel
+  children:
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Feedback
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Id
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Order
+  - Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Value
+  langs:
+  - csharp
+  - vb
+  name: ReorderingQuestionQueryResult
+  nameWithType: ReorderingQuestionQueryResult
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  type: Class
+  source:
+    remote:
+      path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ReorderingQuestionQueryResult
+    path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+    startLine: 2
+  assemblies:
+  - Application
+  namespace: Application.Questions.Queries.GetQuestionsById.ResultModel
+  syntax:
+    content: public class ReorderingQuestionQueryResult
+    content.vb: Public Class ReorderingQuestionQueryResult
+  inheritance:
+  - System.Object
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Id
+  commentId: P:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Id
+  id: Id
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ReorderingQuestionQueryResult.Id
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Id
+  type: Property
+  source:
+    remote:
+      path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Id
+    path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+    startLine: 4
+  assemblies:
+  - Application
+  namespace: Application.Questions.Queries.GetQuestionsById.ResultModel
+  syntax:
+    content: public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Id As Guid
+  overload: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Id*
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Value
+  commentId: P:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Value
+  id: Value
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ReorderingQuestionQueryResult.Value
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Value
+  type: Property
+  source:
+    remote:
+      path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Value
+    path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Questions.Queries.GetQuestionsById.ResultModel
+  syntax:
+    content: public string Value { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Value*
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Order
+  commentId: P:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Order
+  id: Order
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Order
+  nameWithType: ReorderingQuestionQueryResult.Order
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Order
+  type: Property
+  source:
+    remote:
+      path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Order
+    path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+    startLine: 6
+  assemblies:
+  - Application
+  namespace: Application.Questions.Queries.GetQuestionsById.ResultModel
+  syntax:
+    content: public int Order { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Order As Integer
+  overload: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Order*
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Feedback
+  commentId: P:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Feedback
+  id: Feedback
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult
+  langs:
+  - csharp
+  - vb
+  name: Feedback
+  nameWithType: ReorderingQuestionQueryResult.Feedback
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Feedback
+  type: Property
+  source:
+    remote:
+      path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Feedback
+    path: src/Application/Questions/Queries/GetQuestionsById/ResultModel/ReorderingQuestionQueryResult.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Questions.Queries.GetQuestionsById.ResultModel
+  syntax:
+    content: public FeedbackQueryResult? Feedback { get; set; }
+    parameters: []
+    return:
+      type: Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult
+    content.vb: Public Property Feedback As FeedbackQueryResult
+  overload: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Feedback*
+references:
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel
+  commentId: N:Application.Questions.Queries.GetQuestionsById.ResultModel
+  href: Application.html
+  name: Application.Questions.Queries.GetQuestionsById.ResultModel
+  nameWithType: Application.Questions.Queries.GetQuestionsById.ResultModel
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Queries
+    name: Queries
+    href: Application.Questions.Queries.html
+  - name: .
+  - uid: Application.Questions.Queries.GetQuestionsById
+    name: GetQuestionsById
+    href: Application.Questions.Queries.GetQuestionsById.html
+  - name: .
+  - uid: Application.Questions.Queries.GetQuestionsById.ResultModel
+    name: ResultModel
+    href: Application.Questions.Queries.GetQuestionsById.ResultModel.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Questions
+    name: Questions
+    href: Application.Questions.html
+  - name: .
+  - uid: Application.Questions.Queries
+    name: Queries
+    href: Application.Questions.Queries.html
+  - name: .
+  - uid: Application.Questions.Queries.GetQuestionsById
+    name: GetQuestionsById
+    href: Application.Questions.Queries.GetQuestionsById.html
+  - name: .
+  - uid: Application.Questions.Queries.GetQuestionsById.ResultModel
+    name: ResultModel
+    href: Application.Questions.Queries.GetQuestionsById.ResultModel.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Id*
+  commentId: Overload:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Id
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.html#Application_Questions_Queries_GetQuestionsById_ResultModel_ReorderingQuestionQueryResult_Id
+  name: Id
+  nameWithType: ReorderingQuestionQueryResult.Id
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Value*
+  commentId: Overload:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Value
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.html#Application_Questions_Queries_GetQuestionsById_ResultModel_ReorderingQuestionQueryResult_Value
+  name: Value
+  nameWithType: ReorderingQuestionQueryResult.Value
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Value
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Order*
+  commentId: Overload:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Order
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.html#Application_Questions_Queries_GetQuestionsById_ResultModel_ReorderingQuestionQueryResult_Order
+  name: Order
+  nameWithType: ReorderingQuestionQueryResult.Order
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Order
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Feedback*
+  commentId: Overload:Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Feedback
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.html#Application_Questions_Queries_GetQuestionsById_ResultModel_ReorderingQuestionQueryResult_Feedback
+  name: Feedback
+  nameWithType: ReorderingQuestionQueryResult.Feedback
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.ReorderingQuestionQueryResult.Feedback
+- uid: Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult
+  commentId: T:Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult
+  parent: Application.Questions.Queries.GetQuestionsById.ResultModel
+  href: Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult.html
+  name: FeedbackQueryResult
+  nameWithType: FeedbackQueryResult
+  fullName: Application.Questions.Queries.GetQuestionsById.ResultModel.FeedbackQueryResult

@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Domain.Entities.Examiner
+  commentId: N:Domain.Entities.Examiner
+  id: Domain.Entities.Examiner
+  children:
+  - Domain.Entities.Examiner.LongAnswerQuestion
+  - Domain.Entities.Examiner.MultipleChoiceQuestionOption
+  - Domain.Entities.Examiner.MultipleChoiseQuestion
+  - Domain.Entities.Examiner.Question
+  - Domain.Entities.Examiner.QuestionAttachments
+  - Domain.Entities.Examiner.ReorderingQuestion
+  - Domain.Entities.Examiner.ShortAnswerQuestion
+  - Domain.Entities.Examiner.TrueFalseQuestion
+  langs:
+  - csharp
+  - vb
+  name: Domain.Entities.Examiner
+  nameWithType: Domain.Entities.Examiner
+  fullName: Domain.Entities.Examiner
+  type: Namespace
+  assemblies:
+  - Domain
+references:
+- uid: Domain.Entities.Examiner.LongAnswerQuestion
+  commentId: T:Domain.Entities.Examiner.LongAnswerQuestion
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.LongAnswerQuestion.html
+  name: LongAnswerQuestion
+  nameWithType: LongAnswerQuestion
+  fullName: Domain.Entities.Examiner.LongAnswerQuestion
+- uid: Domain.Entities.Examiner.MultipleChoiseQuestion
+  commentId: T:Domain.Entities.Examiner.MultipleChoiseQuestion
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.MultipleChoiseQuestion.html
+  name: MultipleChoiseQuestion
+  nameWithType: MultipleChoiseQuestion
+  fullName: Domain.Entities.Examiner.MultipleChoiseQuestion
+- uid: Domain.Entities.Examiner.MultipleChoiceQuestionOption
+  commentId: T:Domain.Entities.Examiner.MultipleChoiceQuestionOption
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.MultipleChoiceQuestionOption.html
+  name: MultipleChoiceQuestionOption
+  nameWithType: MultipleChoiceQuestionOption
+  fullName: Domain.Entities.Examiner.MultipleChoiceQuestionOption
+- uid: Domain.Entities.Examiner.Question
+  commentId: T:Domain.Entities.Examiner.Question
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.Question.html
+  name: Question
+  nameWithType: Question
+  fullName: Domain.Entities.Examiner.Question
+- uid: Domain.Entities.Examiner.QuestionAttachments
+  commentId: T:Domain.Entities.Examiner.QuestionAttachments
+  href: Domain.Entities.Examiner.QuestionAttachments.html
+  name: QuestionAttachments
+  nameWithType: QuestionAttachments
+  fullName: Domain.Entities.Examiner.QuestionAttachments
+- uid: Domain.Entities.Examiner.ReorderingQuestion
+  commentId: T:Domain.Entities.Examiner.ReorderingQuestion
+  href: Domain.Entities.Examiner.ReorderingQuestion.html
+  name: ReorderingQuestion
+  nameWithType: ReorderingQuestion
+  fullName: Domain.Entities.Examiner.ReorderingQuestion
+- uid: Domain.Entities.Examiner.ShortAnswerQuestion
+  commentId: T:Domain.Entities.Examiner.ShortAnswerQuestion
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.ShortAnswerQuestion.html
+  name: ShortAnswerQuestion
+  nameWithType: ShortAnswerQuestion
+  fullName: Domain.Entities.Examiner.ShortAnswerQuestion
+- uid: Domain.Entities.Examiner.TrueFalseQuestion
+  commentId: T:Domain.Entities.Examiner.TrueFalseQuestion
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.TrueFalseQuestion.html
+  name: TrueFalseQuestion
+  nameWithType: TrueFalseQuestion
+  fullName: Domain.Entities.Examiner.TrueFalseQuestion
+- uid: Domain.Entities.Examiner
+  commentId: N:Domain.Entities.Examiner
+  href: Domain.html
+  name: Domain.Entities.Examiner
+  nameWithType: Domain.Entities.Examiner
+  fullName: Domain.Entities.Examiner
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Examiner
+    name: Examiner
+    href: Domain.Entities.Examiner.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Examiner
+    name: Examiner
+    href: Domain.Entities.Examiner.html

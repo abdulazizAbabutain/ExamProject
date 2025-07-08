@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Models.Commands
+  commentId: N:Application.Commons.Models.Commands
+  id: Application.Commons.Models.Commands
+  children:
+  - Application.Commons.Models.Commands.AddMetadataCommand
+  langs:
+  - csharp
+  - vb
+  name: Application.Commons.Models.Commands
+  nameWithType: Application.Commons.Models.Commands
+  fullName: Application.Commons.Models.Commands
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Commons.Models.Commands.AddMetadataCommand
+  commentId: T:Application.Commons.Models.Commands.AddMetadataCommand
+  href: Application.Commons.Models.Commands.AddMetadataCommand.html
+  name: AddMetadataCommand
+  nameWithType: AddMetadataCommand
+  fullName: Application.Commons.Models.Commands.AddMetadataCommand

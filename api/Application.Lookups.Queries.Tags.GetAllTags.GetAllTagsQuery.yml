@@ -1,0 +1,620 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  commentId: T:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  id: GetAllTagsQuery
+  parent: Application.Lookups.Queries.Tags.GetAllTags
+  children:
+  - Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.BackgroundColorGroup
+  - Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.IsArchived
+  - Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.Search
+  - Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.TextColorGroup
+  langs:
+  - csharp
+  - vb
+  name: GetAllTagsQuery
+  nameWithType: GetAllTagsQuery
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  type: Class
+  source:
+    remote:
+      path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetAllTagsQuery
+    path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Queries.Tags.GetAllTags
+  syntax:
+    content: 'public class GetAllTagsQuery : PageRequest, IRequest<Result<PageResponse<GetAllTagsQueryResult>>>, IBaseRequest'
+    content.vb: Public Class GetAllTagsQuery Inherits PageRequest Implements IRequest(Of Result(Of PageResponse(Of GetAllTagsQueryResult))), IBaseRequest
+  inheritance:
+  - System.Object
+  - Application.Commons.Models.Pageination.PageRequest
+  implements:
+  - MediatR.IRequest{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult}}}
+  - MediatR.IBaseRequest
+  inheritedMembers:
+  - Application.Commons.Models.Pageination.PageRequest.PageNumber
+  - Application.Commons.Models.Pageination.PageRequest.PageSize
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.BackgroundColorGroup
+  commentId: P:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.BackgroundColorGroup
+  id: BackgroundColorGroup
+  parent: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColorGroup
+  nameWithType: GetAllTagsQuery.BackgroundColorGroup
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.BackgroundColorGroup
+  type: Property
+  source:
+    remote:
+      path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: BackgroundColorGroup
+    path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+    startLine: 9
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Queries.Tags.GetAllTags
+  syntax:
+    content: public ColorCategory? BackgroundColorGroup { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Domain.Enums.ColorCategory}
+    content.vb: Public Property BackgroundColorGroup As ColorCategory?
+  overload: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.BackgroundColorGroup*
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.TextColorGroup
+  commentId: P:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.TextColorGroup
+  id: TextColorGroup
+  parent: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  langs:
+  - csharp
+  - vb
+  name: TextColorGroup
+  nameWithType: GetAllTagsQuery.TextColorGroup
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.TextColorGroup
+  type: Property
+  source:
+    remote:
+      path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: TextColorGroup
+    path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Queries.Tags.GetAllTags
+  syntax:
+    content: public ColorCategory? TextColorGroup { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Domain.Enums.ColorCategory}
+    content.vb: Public Property TextColorGroup As ColorCategory?
+  overload: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.TextColorGroup*
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.Search
+  commentId: P:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.Search
+  id: Search
+  parent: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  langs:
+  - csharp
+  - vb
+  name: Search
+  nameWithType: GetAllTagsQuery.Search
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.Search
+  type: Property
+  source:
+    remote:
+      path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Search
+    path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+    startLine: 11
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Queries.Tags.GetAllTags
+  syntax:
+    content: public string? Search { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Search As String
+  overload: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.Search*
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.IsArchived
+  commentId: P:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.IsArchived
+  id: IsArchived
+  parent: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery
+  langs:
+  - csharp
+  - vb
+  name: IsArchived
+  nameWithType: GetAllTagsQuery.IsArchived
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.IsArchived
+  type: Property
+  source:
+    remote:
+      path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: IsArchived
+    path: src/Application/Tags/Queries/GetAllTags/GetAllTagsQuery.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application.Lookups.Queries.Tags.GetAllTags
+  syntax:
+    content: public bool? IsArchived { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Property IsArchived As Boolean?
+  overload: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.IsArchived*
+references:
+- uid: Application.Lookups.Queries.Tags.GetAllTags
+  commentId: N:Application.Lookups.Queries.Tags.GetAllTags
+  href: Application.html
+  name: Application.Lookups.Queries.Tags.GetAllTags
+  nameWithType: Application.Lookups.Queries.Tags.GetAllTags
+  fullName: Application.Lookups.Queries.Tags.GetAllTags
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Queries
+    name: Queries
+    href: Application.Lookups.Queries.html
+  - name: .
+  - uid: Application.Lookups.Queries.Tags
+    name: Tags
+    href: Application.Lookups.Queries.Tags.html
+  - name: .
+  - uid: Application.Lookups.Queries.Tags.GetAllTags
+    name: GetAllTags
+    href: Application.Lookups.Queries.Tags.GetAllTags.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Queries
+    name: Queries
+    href: Application.Lookups.Queries.html
+  - name: .
+  - uid: Application.Lookups.Queries.Tags
+    name: Tags
+    href: Application.Lookups.Queries.Tags.html
+  - name: .
+  - uid: Application.Lookups.Queries.Tags.GetAllTags
+    name: GetAllTags
+    href: Application.Lookups.Queries.Tags.GetAllTags.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Commons.Models.Pageination.PageRequest
+  commentId: T:Application.Commons.Models.Pageination.PageRequest
+  parent: Application.Commons.Models.Pageination
+  href: Application.Commons.Models.Pageination.PageRequest.html
+  name: PageRequest
+  nameWithType: PageRequest
+  fullName: Application.Commons.Models.Pageination.PageRequest
+- uid: MediatR.IRequest{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult}}}
+  commentId: T:MediatR.IRequest{Application.Commons.Models.Results.Result{Application.Commons.Models.Pageination.PageResponse{Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult}}}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: Application.Commons.Models.Results.Result-1.html
+  name: IRequest<Result<PageResponse<GetAllTagsQueryResult>>>
+  nameWithType: IRequest<Result<PageResponse<GetAllTagsQueryResult>>>
+  fullName: MediatR.IRequest<Application.Commons.Models.Results.Result<Application.Commons.Models.Pageination.PageResponse<Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult>>>
+  nameWithType.vb: IRequest(Of Result(Of PageResponse(Of GetAllTagsQueryResult)))
+  fullName.vb: MediatR.IRequest(Of Application.Commons.Models.Results.Result(Of Application.Commons.Models.Pageination.PageResponse(Of Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult)))
+  name.vb: IRequest(Of Result(Of PageResponse(Of GetAllTagsQueryResult)))
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: <
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: <
+  - uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult
+    name: GetAllTagsQueryResult
+    href: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult.html
+  - name: '>'
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result`1
+    name: Result
+    href: Application.Commons.Models.Results.Result-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Pageination.PageResponse`1
+    name: PageResponse
+    href: Application.Commons.Models.Pageination.PageResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult
+    name: GetAllTagsQueryResult
+    href: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQueryResult.html
+  - name: )
+  - name: )
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: Application.Commons.Models.Pageination.PageRequest.PageNumber
+  commentId: P:Application.Commons.Models.Pageination.PageRequest.PageNumber
+  parent: Application.Commons.Models.Pageination.PageRequest
+  href: Application.Commons.Models.Pageination.PageRequest.html#Application_Commons_Models_Pageination_PageRequest_PageNumber
+  name: PageNumber
+  nameWithType: PageRequest.PageNumber
+  fullName: Application.Commons.Models.Pageination.PageRequest.PageNumber
+- uid: Application.Commons.Models.Pageination.PageRequest.PageSize
+  commentId: P:Application.Commons.Models.Pageination.PageRequest.PageSize
+  parent: Application.Commons.Models.Pageination.PageRequest
+  href: Application.Commons.Models.Pageination.PageRequest.html#Application_Commons_Models_Pageination_PageRequest_PageSize
+  name: PageSize
+  nameWithType: PageRequest.PageSize
+  fullName: Application.Commons.Models.Pageination.PageRequest.PageSize
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Models.Pageination
+  commentId: N:Application.Commons.Models.Pageination
+  href: Application.html
+  name: Application.Commons.Models.Pageination
+  nameWithType: Application.Commons.Models.Pageination
+  fullName: Application.Commons.Models.Pageination
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Pageination
+    name: Pageination
+    href: Application.Commons.Models.Pageination.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Models
+    name: Models
+    href: Application.Commons.Models.html
+  - name: .
+  - uid: Application.Commons.Models.Pageination
+    name: Pageination
+    href: Application.Commons.Models.Pageination.html
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.BackgroundColorGroup*
+  commentId: Overload:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.BackgroundColorGroup
+  href: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.html#Application_Lookups_Queries_Tags_GetAllTags_GetAllTagsQuery_BackgroundColorGroup
+  name: BackgroundColorGroup
+  nameWithType: GetAllTagsQuery.BackgroundColorGroup
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.BackgroundColorGroup
+- uid: System.Nullable{Domain.Enums.ColorCategory}
+  commentId: T:System.Nullable{Domain.Enums.ColorCategory}
+  parent: System
+  definition: System.Nullable`1
+  name: ColorCategory?
+  nameWithType: ColorCategory?
+  fullName: Domain.Enums.ColorCategory?
+  spec.csharp:
+  - uid: Domain.Enums.ColorCategory
+    name: ColorCategory
+  - name: '?'
+  spec.vb:
+  - uid: Domain.Enums.ColorCategory
+    name: ColorCategory
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.TextColorGroup*
+  commentId: Overload:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.TextColorGroup
+  href: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.html#Application_Lookups_Queries_Tags_GetAllTags_GetAllTagsQuery_TextColorGroup
+  name: TextColorGroup
+  nameWithType: GetAllTagsQuery.TextColorGroup
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.TextColorGroup
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.Search*
+  commentId: Overload:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.Search
+  href: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.html#Application_Lookups_Queries_Tags_GetAllTags_GetAllTagsQuery_Search
+  name: Search
+  nameWithType: GetAllTagsQuery.Search
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.Search
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.IsArchived*
+  commentId: Overload:Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.IsArchived
+  href: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.html#Application_Lookups_Queries_Tags_GetAllTags_GetAllTagsQuery_IsArchived
+  name: IsArchived
+  nameWithType: GetAllTagsQuery.IsArchived
+  fullName: Application.Lookups.Queries.Tags.GetAllTags.GetAllTagsQuery.IsArchived
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'

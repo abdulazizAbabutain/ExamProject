@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Commons.Extentions.QuestionDifficultyExtenstion
+  commentId: T:Application.Commons.Extentions.QuestionDifficultyExtenstion
+  id: QuestionDifficultyExtenstion
+  parent: Application.Commons.Extentions
+  children:
+  - Application.Commons.Extentions.QuestionDifficultyExtenstion.GetDifficultyCategory(System.Int16)
+  - Application.Commons.Extentions.QuestionDifficultyExtenstion.GetMattrix(Domain.Enums.QuestionDifficulty)
+  langs:
+  - csharp
+  - vb
+  name: QuestionDifficultyExtenstion
+  nameWithType: QuestionDifficultyExtenstion
+  fullName: Application.Commons.Extentions.QuestionDifficultyExtenstion
+  type: Class
+  source:
+    remote:
+      path: src/Domain/Extentions/QuestionDifficultyExtenstion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: QuestionDifficultyExtenstion
+    path: src/Domain/Extentions/QuestionDifficultyExtenstion.cs
+    startLine: 5
+  assemblies:
+  - Domain
+  namespace: Application.Commons.Extentions
+  syntax:
+    content: public static class QuestionDifficultyExtenstion
+    content.vb: Public Module QuestionDifficultyExtenstion
+  inheritance:
+  - System.Object
+- uid: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetMattrix(Domain.Enums.QuestionDifficulty)
+  commentId: M:Application.Commons.Extentions.QuestionDifficultyExtenstion.GetMattrix(Domain.Enums.QuestionDifficulty)
+  id: GetMattrix(Domain.Enums.QuestionDifficulty)
+  isExtensionMethod: true
+  parent: Application.Commons.Extentions.QuestionDifficultyExtenstion
+  langs:
+  - csharp
+  - vb
+  name: GetMattrix(QuestionDifficulty)
+  nameWithType: QuestionDifficultyExtenstion.GetMattrix(QuestionDifficulty)
+  fullName: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetMattrix(Domain.Enums.QuestionDifficulty)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Extentions/QuestionDifficultyExtenstion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetMattrix
+    path: src/Domain/Extentions/QuestionDifficultyExtenstion.cs
+    startLine: 12
+  assemblies:
+  - Domain
+  namespace: Application.Commons.Extentions
+  summary: calcalute the startign mattrix for each given difficulty,
+  example: []
+  syntax:
+    content: public static short GetMattrix(this QuestionDifficulty difficulty)
+    parameters:
+    - id: difficulty
+      type: Domain.Enums.QuestionDifficulty
+      description: ''
+    return:
+      type: System.Int16
+      description: float
+    content.vb: Public Shared Function GetMattrix(difficulty As QuestionDifficulty) As Short
+  overload: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetMattrix*
+- uid: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetDifficultyCategory(System.Int16)
+  commentId: M:Application.Commons.Extentions.QuestionDifficultyExtenstion.GetDifficultyCategory(System.Int16)
+  id: GetDifficultyCategory(System.Int16)
+  isExtensionMethod: true
+  parent: Application.Commons.Extentions.QuestionDifficultyExtenstion
+  langs:
+  - csharp
+  - vb
+  name: GetDifficultyCategory(short)
+  nameWithType: QuestionDifficultyExtenstion.GetDifficultyCategory(short)
+  fullName: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetDifficultyCategory(short)
+  type: Method
+  source:
+    remote:
+      path: src/Domain/Extentions/QuestionDifficultyExtenstion.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetDifficultyCategory
+    path: src/Domain/Extentions/QuestionDifficultyExtenstion.cs
+    startLine: 48
+  assemblies:
+  - Domain
+  namespace: Application.Commons.Extentions
+  summary: ''
+  example: []
+  syntax:
+    content: public static QuestionDifficulty GetDifficultyCategory(this short mattrix)
+    parameters:
+    - id: mattrix
+      type: System.Int16
+    return:
+      type: Domain.Enums.QuestionDifficulty
+      description: float
+    content.vb: Public Shared Function GetDifficultyCategory(mattrix As Short) As QuestionDifficulty
+  overload: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetDifficultyCategory*
+  nameWithType.vb: QuestionDifficultyExtenstion.GetDifficultyCategory(Short)
+  fullName.vb: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetDifficultyCategory(Short)
+  name.vb: GetDifficultyCategory(Short)
+references:
+- uid: Application.Commons.Extentions
+  commentId: N:Application.Commons.Extentions
+  href: Application.html
+  name: Application.Commons.Extentions
+  nameWithType: Application.Commons.Extentions
+  fullName: Application.Commons.Extentions
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Extentions
+    name: Extentions
+    href: Application.Commons.Extentions.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Extentions
+    name: Extentions
+    href: Application.Commons.Extentions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetMattrix*
+  commentId: Overload:Application.Commons.Extentions.QuestionDifficultyExtenstion.GetMattrix
+  href: Application.Commons.Extentions.QuestionDifficultyExtenstion.html#Application_Commons_Extentions_QuestionDifficultyExtenstion_GetMattrix_Domain_Enums_QuestionDifficulty_
+  name: GetMattrix
+  nameWithType: QuestionDifficultyExtenstion.GetMattrix
+  fullName: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetMattrix
+- uid: Domain.Enums.QuestionDifficulty
+  commentId: T:Domain.Enums.QuestionDifficulty
+  parent: Domain.Enums
+  href: Domain.Enums.QuestionDifficulty.html
+  name: QuestionDifficulty
+  nameWithType: QuestionDifficulty
+  fullName: Domain.Enums.QuestionDifficulty
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: Domain.Enums
+  commentId: N:Domain.Enums
+  href: Domain.html
+  name: Domain.Enums
+  nameWithType: Domain.Enums
+  fullName: Domain.Enums
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Enums
+    name: Enums
+    href: Domain.Enums.html
+- uid: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetDifficultyCategory*
+  commentId: Overload:Application.Commons.Extentions.QuestionDifficultyExtenstion.GetDifficultyCategory
+  href: Application.Commons.Extentions.QuestionDifficultyExtenstion.html#Application_Commons_Extentions_QuestionDifficultyExtenstion_GetDifficultyCategory_System_Int16_
+  name: GetDifficultyCategory
+  nameWithType: QuestionDifficultyExtenstion.GetDifficultyCategory
+  fullName: Application.Commons.Extentions.QuestionDifficultyExtenstion.GetDifficultyCategory

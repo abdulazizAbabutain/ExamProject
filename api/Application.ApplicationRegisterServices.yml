@@ -1,0 +1,138 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.ApplicationRegisterServices
+  commentId: T:Application.ApplicationRegisterServices
+  id: ApplicationRegisterServices
+  parent: Application
+  children:
+  - Application.ApplicationRegisterServices.RegisterApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  langs:
+  - csharp
+  - vb
+  name: ApplicationRegisterServices
+  nameWithType: ApplicationRegisterServices
+  fullName: Application.ApplicationRegisterServices
+  type: Class
+  source:
+    remote:
+      path: src/Application/ApplicationRegisterServices.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: ApplicationRegisterServices
+    path: src/Application/ApplicationRegisterServices.cs
+    startLine: 10
+  assemblies:
+  - Application
+  namespace: Application
+  syntax:
+    content: public static class ApplicationRegisterServices
+    content.vb: Public Module ApplicationRegisterServices
+  inheritance:
+  - System.Object
+- uid: Application.ApplicationRegisterServices.RegisterApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Application.ApplicationRegisterServices.RegisterApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: RegisterApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Application.ApplicationRegisterServices
+  langs:
+  - csharp
+  - vb
+  name: RegisterApplication(IServiceCollection)
+  nameWithType: ApplicationRegisterServices.RegisterApplication(IServiceCollection)
+  fullName: Application.ApplicationRegisterServices.RegisterApplication(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  source:
+    remote:
+      path: src/Application/ApplicationRegisterServices.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RegisterApplication
+    path: src/Application/ApplicationRegisterServices.cs
+    startLine: 12
+  assemblies:
+  - Application
+  namespace: Application
+  syntax:
+    content: public static IServiceCollection RegisterApplication(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function RegisterApplication(services As IServiceCollection) As IServiceCollection
+  overload: Application.ApplicationRegisterServices.RegisterApplication*
+references:
+- uid: Application
+  commentId: N:Application
+  href: Application.html
+  name: Application
+  nameWithType: Application
+  fullName: Application
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.ApplicationRegisterServices.RegisterApplication*
+  commentId: Overload:Application.ApplicationRegisterServices.RegisterApplication
+  href: Application.ApplicationRegisterServices.html#Application_ApplicationRegisterServices_RegisterApplication_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: RegisterApplication
+  nameWithType: ApplicationRegisterServices.RegisterApplication
+  fullName: Application.ApplicationRegisterServices.RegisterApplication
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection

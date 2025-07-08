@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Services
+  commentId: N:Infrastructure.Services
+  id: Infrastructure.Services
+  children:
+  - Infrastructure.Services.CategoryService
+  - Infrastructure.Services.JsonStringLocalizer
+  - Infrastructure.Services.LoggingService
+  - Infrastructure.Services.LookupService
+  - Infrastructure.Services.QuestionService
+  - Infrastructure.Services.SourceService
+  - Infrastructure.Services.SystemService
+  - Infrastructure.Services.TagService
+  langs:
+  - csharp
+  - vb
+  name: Infrastructure.Services
+  nameWithType: Infrastructure.Services
+  fullName: Infrastructure.Services
+  type: Namespace
+  assemblies:
+  - Infrastructure
+references:
+- uid: Infrastructure.Services.CategoryService
+  commentId: T:Infrastructure.Services.CategoryService
+  href: Infrastructure.Services.CategoryService.html
+  name: CategoryService
+  nameWithType: CategoryService
+  fullName: Infrastructure.Services.CategoryService
+- uid: Infrastructure.Services.JsonStringLocalizer
+  commentId: T:Infrastructure.Services.JsonStringLocalizer
+  href: Infrastructure.Services.JsonStringLocalizer.html
+  name: JsonStringLocalizer
+  nameWithType: JsonStringLocalizer
+  fullName: Infrastructure.Services.JsonStringLocalizer
+- uid: Infrastructure.Services.LoggingService
+  commentId: T:Infrastructure.Services.LoggingService
+  href: Infrastructure.Services.LoggingService.html
+  name: LoggingService
+  nameWithType: LoggingService
+  fullName: Infrastructure.Services.LoggingService
+- uid: Infrastructure.Services.LookupService
+  commentId: T:Infrastructure.Services.LookupService
+  href: Infrastructure.Services.LookupService.html
+  name: LookupService
+  nameWithType: LookupService
+  fullName: Infrastructure.Services.LookupService
+- uid: Infrastructure.Services.QuestionService
+  commentId: T:Infrastructure.Services.QuestionService
+  href: Infrastructure.Services.QuestionService.html
+  name: QuestionService
+  nameWithType: QuestionService
+  fullName: Infrastructure.Services.QuestionService
+- uid: Infrastructure.Services.SourceService
+  commentId: T:Infrastructure.Services.SourceService
+  href: Infrastructure.Services.SourceService.html
+  name: SourceService
+  nameWithType: SourceService
+  fullName: Infrastructure.Services.SourceService
+- uid: Infrastructure.Services.SystemService
+  commentId: T:Infrastructure.Services.SystemService
+  href: Infrastructure.Services.SystemService.html
+  name: SystemService
+  nameWithType: SystemService
+  fullName: Infrastructure.Services.SystemService
+- uid: Infrastructure.Services.TagService
+  commentId: T:Infrastructure.Services.TagService
+  href: Infrastructure.Services.TagService.html
+  name: TagService
+  nameWithType: TagService
+  fullName: Infrastructure.Services.TagService

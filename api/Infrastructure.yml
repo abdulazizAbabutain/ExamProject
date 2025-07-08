@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure
+  commentId: N:Infrastructure
+  id: Infrastructure
+  children:
+  - Infrastructure.InfrastructureRegisterServices
+  langs:
+  - csharp
+  - vb
+  name: Infrastructure
+  nameWithType: Infrastructure
+  fullName: Infrastructure
+  type: Namespace
+  assemblies:
+  - Infrastructure
+references:
+- uid: Infrastructure.InfrastructureRegisterServices
+  commentId: T:Infrastructure.InfrastructureRegisterServices
+  href: Infrastructure.InfrastructureRegisterServices.html
+  name: InfrastructureRegisterServices
+  nameWithType: InfrastructureRegisterServices
+  fullName: Infrastructure.InfrastructureRegisterServices

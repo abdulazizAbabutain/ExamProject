@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Commands.AddTagToSource
+  commentId: N:Application.Sources.Commands.AddTagToSource
+  id: Application.Sources.Commands.AddTagToSource
+  children:
+  - Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommand
+  - Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Application.Sources.Commands.AddTagToSource
+  nameWithType: Application.Sources.Commands.AddTagToSource
+  fullName: Application.Sources.Commands.AddTagToSource
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommand
+  commentId: T:Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommand
+  parent: Application.Sources.Commands.AddTagToSource
+  href: Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommand.html
+  name: AddTagsToSourceCommand
+  nameWithType: AddTagsToSourceCommand
+  fullName: Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommand
+- uid: Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommandHandler
+  commentId: T:Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommandHandler
+  href: Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommandHandler.html
+  name: AddTagsToSourceCommandHandler
+  nameWithType: AddTagsToSourceCommandHandler
+  fullName: Application.Sources.Commands.AddTagToSource.AddTagsToSourceCommandHandler
+- uid: Application.Sources.Commands.AddTagToSource
+  commentId: N:Application.Sources.Commands.AddTagToSource
+  href: Application.html
+  name: Application.Sources.Commands.AddTagToSource
+  nameWithType: Application.Sources.Commands.AddTagToSource
+  fullName: Application.Sources.Commands.AddTagToSource
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddTagToSource
+    name: AddTagToSource
+    href: Application.Sources.Commands.AddTagToSource.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddTagToSource
+    name: AddTagToSource
+    href: Application.Sources.Commands.AddTagToSource.html

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: API.Filters
+  commentId: N:API.Filters
+  id: API.Filters
+  children:
+  - API.Filters.ExampleSchemaFilter
+  langs:
+  - csharp
+  - vb
+  name: API.Filters
+  nameWithType: API.Filters
+  fullName: API.Filters
+  type: Namespace
+  assemblies:
+  - API
+references:
+- uid: API.Filters.ExampleSchemaFilter
+  commentId: T:API.Filters.ExampleSchemaFilter
+  href: API.Filters.ExampleSchemaFilter.html
+  name: ExampleSchemaFilter
+  nameWithType: ExampleSchemaFilter
+  fullName: API.Filters.ExampleSchemaFilter

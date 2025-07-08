@@ -1,0 +1,1035 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Services.QuestionService
+  commentId: T:Infrastructure.Services.QuestionService
+  id: QuestionService
+  parent: Infrastructure.Services
+  children:
+  - Infrastructure.Services.QuestionService.#ctor(Domain.Repositories.IQuestionRepository)
+  - Infrastructure.Services.QuestionService.Count
+  - Infrastructure.Services.QuestionService.DeleteAllQuestions
+  - Infrastructure.Services.QuestionService.DeleteQuestion(System.Guid)
+  - Infrastructure.Services.QuestionService.Dispose
+  - Infrastructure.Services.QuestionService.Dispose(System.Boolean)
+  - Infrastructure.Services.QuestionService.GetQuestion(System.Guid)
+  - Infrastructure.Services.QuestionService.GetQuestions(System.Int32,System.Int32)
+  - Infrastructure.Services.QuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+  - Infrastructure.Services.QuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+  langs:
+  - csharp
+  - vb
+  name: QuestionService
+  nameWithType: QuestionService
+  fullName: Infrastructure.Services.QuestionService
+  type: Class
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: QuestionService
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 6
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  syntax:
+    content: 'public class QuestionService : IQuestionService, IDisposable'
+    content.vb: Public Class QuestionService Implements IQuestionService, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Application.Commons.Services.IQuestionService
+  - System.IDisposable
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Infrastructure.Services.QuestionService.#ctor(Domain.Repositories.IQuestionRepository)
+  commentId: M:Infrastructure.Services.QuestionService.#ctor(Domain.Repositories.IQuestionRepository)
+  id: '#ctor(Domain.Repositories.IQuestionRepository)'
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: QuestionService(IQuestionRepository)
+  nameWithType: QuestionService.QuestionService(IQuestionRepository)
+  fullName: Infrastructure.Services.QuestionService.QuestionService(Domain.Repositories.IQuestionRepository)
+  type: Constructor
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: .ctor
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 6
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  syntax:
+    content: public QuestionService(IQuestionRepository questionRepository)
+    parameters:
+    - id: questionRepository
+      type: Domain.Repositories.IQuestionRepository
+    content.vb: Public Sub New(questionRepository As IQuestionRepository)
+  overload: Infrastructure.Services.QuestionService.#ctor*
+  nameWithType.vb: QuestionService.New(IQuestionRepository)
+  fullName.vb: Infrastructure.Services.QuestionService.New(Domain.Repositories.IQuestionRepository)
+  name.vb: New(IQuestionRepository)
+- uid: Infrastructure.Services.QuestionService.GetQuestions(System.Int32,System.Int32)
+  commentId: M:Infrastructure.Services.QuestionService.GetQuestions(System.Int32,System.Int32)
+  id: GetQuestions(System.Int32,System.Int32)
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: GetQuestions(int, int)
+  nameWithType: QuestionService.GetQuestions(int, int)
+  fullName: Infrastructure.Services.QuestionService.GetQuestions(int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetQuestions
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 11
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public IEnumerable<Question> GetQuestions(int pageNumber, int pageSize)
+    parameters:
+    - id: pageNumber
+      type: System.Int32
+    - id: pageSize
+      type: System.Int32
+    return:
+      type: System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.Question}
+    content.vb: Public Function GetQuestions(pageNumber As Integer, pageSize As Integer) As IEnumerable(Of Question)
+  overload: Infrastructure.Services.QuestionService.GetQuestions*
+  implements:
+  - Application.Commons.Services.IQuestionService.GetQuestions(System.Int32,System.Int32)
+  nameWithType.vb: QuestionService.GetQuestions(Integer, Integer)
+  fullName.vb: Infrastructure.Services.QuestionService.GetQuestions(Integer, Integer)
+  name.vb: GetQuestions(Integer, Integer)
+- uid: Infrastructure.Services.QuestionService.Count
+  commentId: M:Infrastructure.Services.QuestionService.Count
+  id: Count
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: Count()
+  nameWithType: QuestionService.Count()
+  fullName: Infrastructure.Services.QuestionService.Count()
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Count
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 16
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public int Count()
+    return:
+      type: System.Int32
+    content.vb: Public Function Count() As Integer
+  overload: Infrastructure.Services.QuestionService.Count*
+  implements:
+  - Application.Commons.Services.IQuestionService.Count
+- uid: Infrastructure.Services.QuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+  commentId: M:Infrastructure.Services.QuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+  id: InsertQuestion(Domain.Entities.Examiner.Question)
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: InsertQuestion(Question)
+  nameWithType: QuestionService.InsertQuestion(Question)
+  fullName: Infrastructure.Services.QuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: InsertQuestion
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 21
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public Question InsertQuestion(Question question)
+    parameters:
+    - id: question
+      type: Domain.Entities.Examiner.Question
+    return:
+      type: Domain.Entities.Examiner.Question
+    content.vb: Public Function InsertQuestion(question As Question) As Question
+  overload: Infrastructure.Services.QuestionService.InsertQuestion*
+  implements:
+  - Application.Commons.Services.IQuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+- uid: Infrastructure.Services.QuestionService.GetQuestion(System.Guid)
+  commentId: M:Infrastructure.Services.QuestionService.GetQuestion(System.Guid)
+  id: GetQuestion(System.Guid)
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: GetQuestion(Guid)
+  nameWithType: QuestionService.GetQuestion(Guid)
+  fullName: Infrastructure.Services.QuestionService.GetQuestion(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: GetQuestion
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 27
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public Question GetQuestion(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    return:
+      type: Domain.Entities.Examiner.Question
+    content.vb: Public Function GetQuestion(id As Guid) As Question
+  overload: Infrastructure.Services.QuestionService.GetQuestion*
+  implements:
+  - Application.Commons.Services.IQuestionService.GetQuestion(System.Guid)
+- uid: Infrastructure.Services.QuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+  commentId: M:Infrastructure.Services.QuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+  id: UpdateQuestion(Domain.Entities.Examiner.Question)
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: UpdateQuestion(Question)
+  nameWithType: QuestionService.UpdateQuestion(Question)
+  fullName: Infrastructure.Services.QuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: UpdateQuestion
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 32
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public void UpdateQuestion(Question question)
+    parameters:
+    - id: question
+      type: Domain.Entities.Examiner.Question
+    content.vb: Public Sub UpdateQuestion(question As Question)
+  overload: Infrastructure.Services.QuestionService.UpdateQuestion*
+  implements:
+  - Application.Commons.Services.IQuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+- uid: Infrastructure.Services.QuestionService.DeleteQuestion(System.Guid)
+  commentId: M:Infrastructure.Services.QuestionService.DeleteQuestion(System.Guid)
+  id: DeleteQuestion(System.Guid)
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: DeleteQuestion(Guid)
+  nameWithType: QuestionService.DeleteQuestion(Guid)
+  fullName: Infrastructure.Services.QuestionService.DeleteQuestion(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DeleteQuestion
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 37
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public void DeleteQuestion(Guid id)
+    parameters:
+    - id: id
+      type: System.Guid
+    content.vb: Public Sub DeleteQuestion(id As Guid)
+  overload: Infrastructure.Services.QuestionService.DeleteQuestion*
+  implements:
+  - Application.Commons.Services.IQuestionService.DeleteQuestion(System.Guid)
+- uid: Infrastructure.Services.QuestionService.DeleteAllQuestions
+  commentId: M:Infrastructure.Services.QuestionService.DeleteAllQuestions
+  id: DeleteAllQuestions
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: DeleteAllQuestions()
+  nameWithType: QuestionService.DeleteAllQuestions()
+  fullName: Infrastructure.Services.QuestionService.DeleteAllQuestions()
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: DeleteAllQuestions
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 42
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  example: []
+  syntax:
+    content: public void DeleteAllQuestions()
+    content.vb: Public Sub DeleteAllQuestions()
+  overload: Infrastructure.Services.QuestionService.DeleteAllQuestions*
+  implements:
+  - Application.Commons.Services.IQuestionService.DeleteAllQuestions
+- uid: Infrastructure.Services.QuestionService.Dispose
+  commentId: M:Infrastructure.Services.QuestionService.Dispose
+  id: Dispose
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: QuestionService.Dispose()
+  fullName: Infrastructure.Services.QuestionService.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Dispose
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 48
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Infrastructure.Services.QuestionService.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Infrastructure.Services.QuestionService.Dispose(System.Boolean)
+  commentId: M:Infrastructure.Services.QuestionService.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Infrastructure.Services.QuestionService
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: QuestionService.Dispose(bool)
+  fullName: Infrastructure.Services.QuestionService.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: src/Infrastructure/Services/QuestionService.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: Dispose
+    path: src/Infrastructure/Services/QuestionService.cs
+    startLine: 54
+  assemblies:
+  - Infrastructure
+  namespace: Infrastructure.Services
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Infrastructure.Services.QuestionService.Dispose*
+  nameWithType.vb: QuestionService.Dispose(Boolean)
+  fullName.vb: Infrastructure.Services.QuestionService.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+references:
+- uid: Infrastructure.Services
+  commentId: N:Infrastructure.Services
+  href: Infrastructure.html
+  name: Infrastructure.Services
+  nameWithType: Infrastructure.Services
+  fullName: Infrastructure.Services
+  spec.csharp:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Services
+    name: Services
+    href: Infrastructure.Services.html
+  spec.vb:
+  - uid: Infrastructure
+    name: Infrastructure
+    href: Infrastructure.html
+  - name: .
+  - uid: Infrastructure.Services
+    name: Services
+    href: Infrastructure.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Application.Commons.Services.IQuestionService
+  commentId: T:Application.Commons.Services.IQuestionService
+  parent: Application.Commons.Services
+  href: Application.Commons.Services.IQuestionService.html
+  name: IQuestionService
+  nameWithType: IQuestionService
+  fullName: Application.Commons.Services.IQuestionService
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Application.Commons.Services
+  commentId: N:Application.Commons.Services
+  href: Application.html
+  name: Application.Commons.Services
+  nameWithType: Application.Commons.Services
+  fullName: Application.Commons.Services
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Commons
+    name: Commons
+    href: Application.Commons.html
+  - name: .
+  - uid: Application.Commons.Services
+    name: Services
+    href: Application.Commons.Services.html
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Infrastructure.Services.QuestionService.#ctor*
+  commentId: Overload:Infrastructure.Services.QuestionService.#ctor
+  href: Infrastructure.Services.QuestionService.html#Infrastructure_Services_QuestionService__ctor_Domain_Repositories_IQuestionRepository_
+  name: QuestionService
+  nameWithType: QuestionService.QuestionService
+  fullName: Infrastructure.Services.QuestionService.QuestionService
+  nameWithType.vb: QuestionService.New
+  fullName.vb: Infrastructure.Services.QuestionService.New
+  name.vb: New
+- uid: Domain.Repositories.IQuestionRepository
+  commentId: T:Domain.Repositories.IQuestionRepository
+  parent: Domain.Repositories
+  href: Domain.Repositories.IQuestionRepository.html
+  name: IQuestionRepository
+  nameWithType: IQuestionRepository
+  fullName: Domain.Repositories.IQuestionRepository
+- uid: Domain.Repositories
+  commentId: N:Domain.Repositories
+  href: Domain.html
+  name: Domain.Repositories
+  nameWithType: Domain.Repositories
+  fullName: Domain.Repositories
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Repositories
+    name: Repositories
+    href: Domain.Repositories.html
+- uid: Infrastructure.Services.QuestionService.GetQuestions*
+  commentId: Overload:Infrastructure.Services.QuestionService.GetQuestions
+  href: Infrastructure.Services.QuestionService.html#Infrastructure_Services_QuestionService_GetQuestions_System_Int32_System_Int32_
+  name: GetQuestions
+  nameWithType: QuestionService.GetQuestions
+  fullName: Infrastructure.Services.QuestionService.GetQuestions
+- uid: Application.Commons.Services.IQuestionService.GetQuestions(System.Int32,System.Int32)
+  commentId: M:Application.Commons.Services.IQuestionService.GetQuestions(System.Int32,System.Int32)
+  parent: Application.Commons.Services.IQuestionService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: GetQuestions(int, int)
+  nameWithType: IQuestionService.GetQuestions(int, int)
+  fullName: Application.Commons.Services.IQuestionService.GetQuestions(int, int)
+  nameWithType.vb: IQuestionService.GetQuestions(Integer, Integer)
+  fullName.vb: Application.Commons.Services.IQuestionService.GetQuestions(Integer, Integer)
+  name.vb: GetQuestions(Integer, Integer)
+  spec.csharp:
+  - uid: Application.Commons.Services.IQuestionService.GetQuestions(System.Int32,System.Int32)
+    name: GetQuestions
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IQuestionService.GetQuestions(System.Int32,System.Int32)
+    name: GetQuestions
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.Question}
+  commentId: T:System.Collections.Generic.IEnumerable{Domain.Entities.Examiner.Question}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Question>
+  nameWithType: IEnumerable<Question>
+  fullName: System.Collections.Generic.IEnumerable<Domain.Entities.Examiner.Question>
+  nameWithType.vb: IEnumerable(Of Question)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Domain.Entities.Examiner.Question)
+  name.vb: IEnumerable(Of Question)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Domain.Entities.Examiner.Question
+    name: Question
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Domain.Entities.Examiner.Question
+    name: Question
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Infrastructure.Services.QuestionService.Count*
+  commentId: Overload:Infrastructure.Services.QuestionService.Count
+  href: Infrastructure.Services.QuestionService.html#Infrastructure_Services_QuestionService_Count
+  name: Count
+  nameWithType: QuestionService.Count
+  fullName: Infrastructure.Services.QuestionService.Count
+- uid: Application.Commons.Services.IQuestionService.Count
+  commentId: M:Application.Commons.Services.IQuestionService.Count
+  parent: Application.Commons.Services.IQuestionService
+  name: Count()
+  nameWithType: IQuestionService.Count()
+  fullName: Application.Commons.Services.IQuestionService.Count()
+  spec.csharp:
+  - uid: Application.Commons.Services.IQuestionService.Count
+    name: Count
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IQuestionService.Count
+    name: Count
+  - name: (
+  - name: )
+- uid: Infrastructure.Services.QuestionService.InsertQuestion*
+  commentId: Overload:Infrastructure.Services.QuestionService.InsertQuestion
+  href: Infrastructure.Services.QuestionService.html#Infrastructure_Services_QuestionService_InsertQuestion_Domain_Entities_Examiner_Question_
+  name: InsertQuestion
+  nameWithType: QuestionService.InsertQuestion
+  fullName: Infrastructure.Services.QuestionService.InsertQuestion
+- uid: Application.Commons.Services.IQuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+  commentId: M:Application.Commons.Services.IQuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+  parent: Application.Commons.Services.IQuestionService
+  name: InsertQuestion(Question)
+  nameWithType: IQuestionService.InsertQuestion(Question)
+  fullName: Application.Commons.Services.IQuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+  spec.csharp:
+  - uid: Application.Commons.Services.IQuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+    name: InsertQuestion
+  - name: (
+  - uid: Domain.Entities.Examiner.Question
+    name: Question
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IQuestionService.InsertQuestion(Domain.Entities.Examiner.Question)
+    name: InsertQuestion
+  - name: (
+  - uid: Domain.Entities.Examiner.Question
+    name: Question
+  - name: )
+- uid: Domain.Entities.Examiner.Question
+  commentId: T:Domain.Entities.Examiner.Question
+  parent: Domain.Entities.Examiner
+  href: Domain.Entities.Examiner.Question.html
+  name: Question
+  nameWithType: Question
+  fullName: Domain.Entities.Examiner.Question
+- uid: Domain.Entities.Examiner
+  commentId: N:Domain.Entities.Examiner
+  href: Domain.html
+  name: Domain.Entities.Examiner
+  nameWithType: Domain.Entities.Examiner
+  fullName: Domain.Entities.Examiner
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Examiner
+    name: Examiner
+    href: Domain.Entities.Examiner.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Entities
+    name: Entities
+    href: Domain.Entities.html
+  - name: .
+  - uid: Domain.Entities.Examiner
+    name: Examiner
+    href: Domain.Entities.Examiner.html
+- uid: Infrastructure.Services.QuestionService.GetQuestion*
+  commentId: Overload:Infrastructure.Services.QuestionService.GetQuestion
+  href: Infrastructure.Services.QuestionService.html#Infrastructure_Services_QuestionService_GetQuestion_System_Guid_
+  name: GetQuestion
+  nameWithType: QuestionService.GetQuestion
+  fullName: Infrastructure.Services.QuestionService.GetQuestion
+- uid: Application.Commons.Services.IQuestionService.GetQuestion(System.Guid)
+  commentId: M:Application.Commons.Services.IQuestionService.GetQuestion(System.Guid)
+  parent: Application.Commons.Services.IQuestionService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: GetQuestion(Guid)
+  nameWithType: IQuestionService.GetQuestion(Guid)
+  fullName: Application.Commons.Services.IQuestionService.GetQuestion(System.Guid)
+  spec.csharp:
+  - uid: Application.Commons.Services.IQuestionService.GetQuestion(System.Guid)
+    name: GetQuestion
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IQuestionService.GetQuestion(System.Guid)
+    name: GetQuestion
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Infrastructure.Services.QuestionService.UpdateQuestion*
+  commentId: Overload:Infrastructure.Services.QuestionService.UpdateQuestion
+  href: Infrastructure.Services.QuestionService.html#Infrastructure_Services_QuestionService_UpdateQuestion_Domain_Entities_Examiner_Question_
+  name: UpdateQuestion
+  nameWithType: QuestionService.UpdateQuestion
+  fullName: Infrastructure.Services.QuestionService.UpdateQuestion
+- uid: Application.Commons.Services.IQuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+  commentId: M:Application.Commons.Services.IQuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+  parent: Application.Commons.Services.IQuestionService
+  name: UpdateQuestion(Question)
+  nameWithType: IQuestionService.UpdateQuestion(Question)
+  fullName: Application.Commons.Services.IQuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+  spec.csharp:
+  - uid: Application.Commons.Services.IQuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+    name: UpdateQuestion
+  - name: (
+  - uid: Domain.Entities.Examiner.Question
+    name: Question
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IQuestionService.UpdateQuestion(Domain.Entities.Examiner.Question)
+    name: UpdateQuestion
+  - name: (
+  - uid: Domain.Entities.Examiner.Question
+    name: Question
+  - name: )
+- uid: Infrastructure.Services.QuestionService.DeleteQuestion*
+  commentId: Overload:Infrastructure.Services.QuestionService.DeleteQuestion
+  href: Infrastructure.Services.QuestionService.html#Infrastructure_Services_QuestionService_DeleteQuestion_System_Guid_
+  name: DeleteQuestion
+  nameWithType: QuestionService.DeleteQuestion
+  fullName: Infrastructure.Services.QuestionService.DeleteQuestion
+- uid: Application.Commons.Services.IQuestionService.DeleteQuestion(System.Guid)
+  commentId: M:Application.Commons.Services.IQuestionService.DeleteQuestion(System.Guid)
+  parent: Application.Commons.Services.IQuestionService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: DeleteQuestion(Guid)
+  nameWithType: IQuestionService.DeleteQuestion(Guid)
+  fullName: Application.Commons.Services.IQuestionService.DeleteQuestion(System.Guid)
+  spec.csharp:
+  - uid: Application.Commons.Services.IQuestionService.DeleteQuestion(System.Guid)
+    name: DeleteQuestion
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IQuestionService.DeleteQuestion(System.Guid)
+    name: DeleteQuestion
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: Infrastructure.Services.QuestionService.DeleteAllQuestions*
+  commentId: Overload:Infrastructure.Services.QuestionService.DeleteAllQuestions
+  href: Infrastructure.Services.QuestionService.html#Infrastructure_Services_QuestionService_DeleteAllQuestions
+  name: DeleteAllQuestions
+  nameWithType: QuestionService.DeleteAllQuestions
+  fullName: Infrastructure.Services.QuestionService.DeleteAllQuestions
+- uid: Application.Commons.Services.IQuestionService.DeleteAllQuestions
+  commentId: M:Application.Commons.Services.IQuestionService.DeleteAllQuestions
+  parent: Application.Commons.Services.IQuestionService
+  name: DeleteAllQuestions()
+  nameWithType: IQuestionService.DeleteAllQuestions()
+  fullName: Application.Commons.Services.IQuestionService.DeleteAllQuestions()
+  spec.csharp:
+  - uid: Application.Commons.Services.IQuestionService.DeleteAllQuestions
+    name: DeleteAllQuestions
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Application.Commons.Services.IQuestionService.DeleteAllQuestions
+    name: DeleteAllQuestions
+  - name: (
+  - name: )
+- uid: Infrastructure.Services.QuestionService.Dispose*
+  commentId: Overload:Infrastructure.Services.QuestionService.Dispose
+  href: Infrastructure.Services.QuestionService.html#Infrastructure_Services_QuestionService_Dispose
+  name: Dispose
+  nameWithType: QuestionService.Dispose
+  fullName: Infrastructure.Services.QuestionService.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Lookups.Commands.Languages
+  commentId: N:Application.Lookups.Commands.Languages
+  id: Application.Lookups.Commands.Languages
+  children:
+  - Application.Lookups.Commands.Languages.AddLanguageCommand
+  - Application.Lookups.Commands.Languages.AddLanguageCommandHandler
+  langs:
+  - csharp
+  - vb
+  name: Application.Lookups.Commands.Languages
+  nameWithType: Application.Lookups.Commands.Languages
+  fullName: Application.Lookups.Commands.Languages
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommand
+  commentId: T:Application.Lookups.Commands.Languages.AddLanguageCommand
+  parent: Application.Lookups.Commands.Languages
+  href: Application.Lookups.Commands.Languages.AddLanguageCommand.html
+  name: AddLanguageCommand
+  nameWithType: AddLanguageCommand
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommand
+- uid: Application.Lookups.Commands.Languages.AddLanguageCommandHandler
+  commentId: T:Application.Lookups.Commands.Languages.AddLanguageCommandHandler
+  href: Application.Lookups.Commands.Languages.AddLanguageCommandHandler.html
+  name: AddLanguageCommandHandler
+  nameWithType: AddLanguageCommandHandler
+  fullName: Application.Lookups.Commands.Languages.AddLanguageCommandHandler
+- uid: Application.Lookups.Commands.Languages
+  commentId: N:Application.Lookups.Commands.Languages
+  href: Application.html
+  name: Application.Lookups.Commands.Languages
+  nameWithType: Application.Lookups.Commands.Languages
+  fullName: Application.Lookups.Commands.Languages
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Commands
+    name: Commands
+    href: Application.Lookups.Commands.html
+  - name: .
+  - uid: Application.Lookups.Commands.Languages
+    name: Languages
+    href: Application.Lookups.Commands.Languages.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Lookups
+    name: Lookups
+    href: Application.Lookups.html
+  - name: .
+  - uid: Application.Lookups.Commands
+    name: Commands
+    href: Application.Lookups.Commands.html
+  - name: .
+  - uid: Application.Lookups.Commands.Languages
+    name: Languages
+    href: Application.Lookups.Commands.Languages.html

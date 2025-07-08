@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Infrastructure.Managers
+  commentId: N:Infrastructure.Managers
+  id: Infrastructure.Managers
+  children:
+  - Infrastructure.Managers.AuditManager
+  - Infrastructure.Managers.RepositoryManager
+  - Infrastructure.Managers.ServiceManager
+  - Infrastructure.Managers.SystemManager
+  langs:
+  - csharp
+  - vb
+  name: Infrastructure.Managers
+  nameWithType: Infrastructure.Managers
+  fullName: Infrastructure.Managers
+  type: Namespace
+  assemblies:
+  - Infrastructure
+references:
+- uid: Infrastructure.Managers.AuditManager
+  commentId: T:Infrastructure.Managers.AuditManager
+  href: Infrastructure.Managers.AuditManager.html
+  name: AuditManager
+  nameWithType: AuditManager
+  fullName: Infrastructure.Managers.AuditManager
+- uid: Infrastructure.Managers.RepositoryManager
+  commentId: T:Infrastructure.Managers.RepositoryManager
+  href: Infrastructure.Managers.RepositoryManager.html
+  name: RepositoryManager
+  nameWithType: RepositoryManager
+  fullName: Infrastructure.Managers.RepositoryManager
+- uid: Infrastructure.Managers.ServiceManager
+  commentId: T:Infrastructure.Managers.ServiceManager
+  href: Infrastructure.Managers.ServiceManager.html
+  name: ServiceManager
+  nameWithType: ServiceManager
+  fullName: Infrastructure.Managers.ServiceManager
+- uid: Infrastructure.Managers.SystemManager
+  commentId: T:Infrastructure.Managers.SystemManager
+  href: Infrastructure.Managers.SystemManager.html
+  name: SystemManager
+  nameWithType: SystemManager
+  fullName: Infrastructure.Managers.SystemManager

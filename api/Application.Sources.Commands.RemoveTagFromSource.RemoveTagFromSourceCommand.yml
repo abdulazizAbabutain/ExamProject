@@ -1,0 +1,384 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  commentId: T:Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  id: RemoveTagFromSourceCommand
+  parent: Application.Sources.Commands.RemoveTagFromSource
+  children:
+  - Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.SourceId
+  - Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.TagId
+  langs:
+  - csharp
+  - vb
+  name: RemoveTagFromSourceCommand
+  nameWithType: RemoveTagFromSourceCommand
+  fullName: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  type: Class
+  source:
+    remote:
+      path: src/Application/Sources/Commands/RemoveTagFromSource/RemoveTagFromSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: RemoveTagFromSourceCommand
+    path: src/Application/Sources/Commands/RemoveTagFromSource/RemoveTagFromSourceCommand.cs
+    startLine: 5
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.RemoveTagFromSource
+  syntax:
+    content: 'public class RemoveTagFromSourceCommand : IRequest<Result>, IBaseRequest'
+    content.vb: Public Class RemoveTagFromSourceCommand Implements IRequest(Of Result), IBaseRequest
+  inheritance:
+  - System.Object
+  implements:
+  - MediatR.IRequest{Application.Commons.Models.Results.Result}
+  - MediatR.IBaseRequest
+  extensionMethods:
+  - System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  - System.Object.Domain.Extentions.ObjectExtention.IsNull
+- uid: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.SourceId
+  commentId: P:Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.SourceId
+  id: SourceId
+  parent: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: SourceId
+  nameWithType: RemoveTagFromSourceCommand.SourceId
+  fullName: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.SourceId
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/RemoveTagFromSource/RemoveTagFromSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: SourceId
+    path: src/Application/Sources/Commands/RemoveTagFromSource/RemoveTagFromSourceCommand.cs
+    startLine: 7
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.RemoveTagFromSource
+  syntax:
+    content: public Guid SourceId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property SourceId As Guid
+  overload: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.SourceId*
+- uid: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.TagId
+  commentId: P:Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.TagId
+  id: TagId
+  parent: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand
+  langs:
+  - csharp
+  - vb
+  name: TagId
+  nameWithType: RemoveTagFromSourceCommand.TagId
+  fullName: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.TagId
+  type: Property
+  source:
+    remote:
+      path: src/Application/Sources/Commands/RemoveTagFromSource/RemoveTagFromSourceCommand.cs
+      branch: master
+      repo: https://github.com/abdulazizAbabutain/Examiner.git
+    id: TagId
+    path: src/Application/Sources/Commands/RemoveTagFromSource/RemoveTagFromSourceCommand.cs
+    startLine: 8
+  assemblies:
+  - Application
+  namespace: Application.Sources.Commands.RemoveTagFromSource
+  syntax:
+    content: public Guid TagId { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property TagId As Guid
+  overload: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.TagId*
+references:
+- uid: Application.Sources.Commands.RemoveTagFromSource
+  commentId: N:Application.Sources.Commands.RemoveTagFromSource
+  href: Application.html
+  name: Application.Sources.Commands.RemoveTagFromSource
+  nameWithType: Application.Sources.Commands.RemoveTagFromSource
+  fullName: Application.Sources.Commands.RemoveTagFromSource
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveTagFromSource
+    name: RemoveTagFromSource
+    href: Application.Sources.Commands.RemoveTagFromSource.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.RemoveTagFromSource
+    name: RemoveTagFromSource
+    href: Application.Sources.Commands.RemoveTagFromSource.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MediatR.IRequest{Application.Commons.Models.Results.Result}
+  commentId: T:MediatR.IRequest{Application.Commons.Models.Results.Result}
+  parent: MediatR
+  definition: MediatR.IRequest`1
+  href: Application.Commons.Models.Results.Result.html
+  name: IRequest<Result>
+  nameWithType: IRequest<Result>
+  fullName: MediatR.IRequest<Application.Commons.Models.Results.Result>
+  nameWithType.vb: IRequest(Of Result)
+  fullName.vb: MediatR.IRequest(Of Application.Commons.Models.Results.Result)
+  name.vb: IRequest(Of Result)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Application.Commons.Models.Results.Result
+    name: Result
+    href: Application.Commons.Models.Results.Result.html
+  - name: )
+- uid: MediatR.IBaseRequest
+  commentId: T:MediatR.IBaseRequest
+  parent: MediatR
+  isExternal: true
+  name: IBaseRequest
+  nameWithType: IBaseRequest
+  fullName: MediatR.IBaseRequest
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNotNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System.Object.Domain.Extentions.ObjectExtention.IsNull
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  parent: Domain.Extentions.ObjectExtention
+  definition: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MediatR.IRequest`1
+  commentId: T:MediatR.IRequest`1
+  isExternal: true
+  name: IRequest<TResponse>
+  nameWithType: IRequest<TResponse>
+  fullName: MediatR.IRequest<TResponse>
+  nameWithType.vb: IRequest(Of TResponse)
+  fullName.vb: MediatR.IRequest(Of TResponse)
+  name.vb: IRequest(Of TResponse)
+  spec.csharp:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: <
+  - name: TResponse
+  - name: '>'
+  spec.vb:
+  - uid: MediatR.IRequest`1
+    name: IRequest
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResponse
+  - name: )
+- uid: MediatR
+  commentId: N:MediatR
+  isExternal: true
+  name: MediatR
+  nameWithType: MediatR
+  fullName: MediatR
+- uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  name: IsNotNull(object)
+  nameWithType: ObjectExtention.IsNotNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNotNull(object)
+  nameWithType.vb: ObjectExtention.IsNotNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNotNull(Object)
+  name.vb: IsNotNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNotNull(System.Object)
+    name: IsNotNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNotNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions.ObjectExtention
+  commentId: T:Domain.Extentions.ObjectExtention
+  parent: Domain.Extentions
+  href: Domain.Extentions.ObjectExtention.html
+  name: ObjectExtention
+  nameWithType: ObjectExtention
+  fullName: Domain.Extentions.ObjectExtention
+- uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  commentId: M:Domain.Extentions.ObjectExtention.IsNull(System.Object)
+  isExternal: true
+  href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  name: IsNull(object)
+  nameWithType: ObjectExtention.IsNull(object)
+  fullName: Domain.Extentions.ObjectExtention.IsNull(object)
+  nameWithType.vb: ObjectExtention.IsNull(Object)
+  fullName.vb: Domain.Extentions.ObjectExtention.IsNull(Object)
+  name.vb: IsNull(Object)
+  spec.csharp:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Domain.Extentions.ObjectExtention.IsNull(System.Object)
+    name: IsNull
+    href: Domain.Extentions.ObjectExtention.html#Domain_Extentions_ObjectExtention_IsNull_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: )
+- uid: Domain.Extentions
+  commentId: N:Domain.Extentions
+  href: Domain.html
+  name: Domain.Extentions
+  nameWithType: Domain.Extentions
+  fullName: Domain.Extentions
+  spec.csharp:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+  spec.vb:
+  - uid: Domain
+    name: Domain
+    href: Domain.html
+  - name: .
+  - uid: Domain.Extentions
+    name: Extentions
+    href: Domain.Extentions.html
+- uid: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.SourceId*
+  commentId: Overload:Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.SourceId
+  href: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.html#Application_Sources_Commands_RemoveTagFromSource_RemoveTagFromSourceCommand_SourceId
+  name: SourceId
+  nameWithType: RemoveTagFromSourceCommand.SourceId
+  fullName: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.SourceId
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.TagId*
+  commentId: Overload:Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.TagId
+  href: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.html#Application_Sources_Commands_RemoveTagFromSource_RemoveTagFromSourceCommand_TagId
+  name: TagId
+  nameWithType: RemoveTagFromSourceCommand.TagId
+  fullName: Application.Sources.Commands.RemoveTagFromSource.RemoveTagFromSourceCommand.TagId

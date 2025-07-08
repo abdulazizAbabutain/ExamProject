@@ -122,7 +122,7 @@ namespace Infrastructure.Services
                 return Result.NotFoundFailure(nameof(id), _localizer[ErrorMessage.NOT_FOUND_ENTITY, nameof(EntityName.Tag), id]);
 
             if(tag.IsArchived)
-                return Result.ConflictFailure(nameof(id), _localizer[ErrorMessage.ENTITY_IS_ARCHIVED,]);
+                return Result.ConflictFailure(nameof(id), _localizer[ErrorMessage.ENTITY_IS_ARCHIVED,id]);
 
             var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
 

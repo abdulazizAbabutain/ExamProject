@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Application.Sources.Commands.AddSource.Requests
+  commentId: N:Application.Sources.Commands.AddSource.Requests
+  id: Application.Sources.Commands.AddSource.Requests
+  children:
+  - Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  - Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand
+  langs:
+  - csharp
+  - vb
+  name: Application.Sources.Commands.AddSource.Requests
+  nameWithType: Application.Sources.Commands.AddSource.Requests
+  fullName: Application.Sources.Commands.AddSource.Requests
+  type: Namespace
+  assemblies:
+  - Application
+references:
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  commentId: T:Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+  parent: Application.Sources.Commands.AddSource.Requests
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceCommand.html
+  name: AddSourceCommand
+  nameWithType: AddSourceCommand
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceCommand
+- uid: Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand
+  commentId: T:Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand
+  href: Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand.html
+  name: AddSourceReferenceCommand
+  nameWithType: AddSourceReferenceCommand
+  fullName: Application.Sources.Commands.AddSource.Requests.AddSourceReferenceCommand
+- uid: Application.Sources.Commands.AddSource.Requests
+  commentId: N:Application.Sources.Commands.AddSource.Requests
+  href: Application.html
+  name: Application.Sources.Commands.AddSource.Requests
+  nameWithType: Application.Sources.Commands.AddSource.Requests
+  fullName: Application.Sources.Commands.AddSource.Requests
+  spec.csharp:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource
+    name: AddSource
+    href: Application.Sources.Commands.AddSource.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource.Requests
+    name: Requests
+    href: Application.Sources.Commands.AddSource.Requests.html
+  spec.vb:
+  - uid: Application
+    name: Application
+    href: Application.html
+  - name: .
+  - uid: Application.Sources
+    name: Sources
+    href: Application.Sources.html
+  - name: .
+  - uid: Application.Sources.Commands
+    name: Commands
+    href: Application.Sources.Commands.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource
+    name: AddSource
+    href: Application.Sources.Commands.AddSource.html
+  - name: .
+  - uid: Application.Sources.Commands.AddSource.Requests
+    name: Requests
+    href: Application.Sources.Commands.AddSource.Requests.html
