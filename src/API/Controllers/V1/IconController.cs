@@ -4,6 +4,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Application.Commons.Models.Icons;
 using Domain.Enums;
+using Domain.Extentions;
 
 namespace API.Controllers.V1
 {
@@ -28,7 +29,8 @@ namespace API.Controllers.V1
             var predefinedIcons = Directory.GetFiles(predefinedDir)
                 .Select(file => new IconsModel
                 {
-                    Name = Path.GetFileNameWithoutExtension(file),
+                    Id = file.GetGuidFromFileName(),
+                    Name = file.GetOriginalNameFromFile(),
                     Url = $"/icons/predefined/{Path.GetFileName(file)}",
                     Source = IconSource.Predefined
                 });
@@ -36,7 +38,8 @@ namespace API.Controllers.V1
             var uploadedIcons = Directory.GetFiles(uploadedDir)
                 .Select(file => new IconsModel
                 {
-                    Name = Path.GetFileName(file),
+                    Id = file.GetGuidFromFileName(),
+                    Name = file.GetOriginalNameFromFile(),
                     Url = $"/icons/uploaded/{Path.GetFileName(file)}",
                     Source = IconSource.Uploaded
                 });

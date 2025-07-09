@@ -1,6 +1,7 @@
 ﻿using Ardalis.GuardClauses;
 using Domain.Auditing;
 using Domain.Constants;
+using Domain.Entities.Metadata;
 using Domain.Enums;
 using Domain.Extentions;
 
@@ -32,7 +33,7 @@ public class Tag : EntityAudit
     /// <exception cref="ArgumentException">
     /// Thrown if <paramref name="backgroundColorHexCode"/> or <paramref name="textColorCode"/> are not valid hex color codes (must match format <c>#RRGGBB</c>).
     /// </exception>
-    public Tag(string name, string backgroundColorHexCode, string textColorCode = null) 
+    public Tag(string name, string backgroundColorHexCode, string textColorCode = null, string iconPath = null, string iconColorCode = null) 
     {
         var textColor = textColorCode ?? ColorsConsts.White;
 
@@ -46,6 +47,12 @@ public class Tag : EntityAudit
 
         if (!TextColorCode.IsHexColor())
             throw new ArgumentException("Invalid hex color for text", nameof(textColorCode));
+
+        if (iconPath != null)
+        {
+            var iconColor = iconColorCode ?? ColorsConsts.White;
+            Icon = new IconMetadata(iconPath.GetOriginalNameFromFile(),iconPath, iconColor);
+        }
 
         BackgroundColorGroup = BackgroundColorCode.GetColorGroup();
         TextColorGroup = TextColorCode.GetColorGroup();
@@ -131,4 +138,8 @@ public class Tag : EntityAudit
     /// Gets the color category group derived from the text color.
     /// </summary>
     public ColorCategory TextColorGroup { get; private set; }
+    /// <summary>
+    /// 
+    /// </summary>
+    public IconMetadata? Icon { get; set; }
 }

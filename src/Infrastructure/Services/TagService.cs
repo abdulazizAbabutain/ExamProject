@@ -1,5 +1,6 @@
 ﻿using Application.Commons.Extensions;
 using Application.Commons.Managers;
+using Application.Commons.Models.Icons;
 using Application.Commons.Models.Results;
 using Application.Commons.Services;
 using Domain.Constants;
@@ -21,7 +22,7 @@ namespace Infrastructure.Services
 
 
         #region Tag services
-        public Result<Tag> AddTag(string name, string? backgroundColorCode = null, string testColorCode = null)
+        public Result<Tag> AddTag(string name, string? backgroundColorCode = null, string testColorCode = null, IconCommand icon = null)
         {
             if (_repositoryManager.TagRepository.IsExist(name))
             {
@@ -30,7 +31,14 @@ namespace Infrastructure.Services
 
             if (backgroundColorCode.IsNull())
                 backgroundColorCode = ColorExtension.GenerateRandomHexColor();
-            var tag = new Tag(name, backgroundColorCode, testColorCode);
+
+            Tag tag;
+
+            if (icon.IsNotNull())
+                tag = new Tag(name, backgroundColorCode!, testColorCode, icon.IconUrl!, icon.IconColor!);
+            else
+                tag = new Tag(name, backgroundColorCode!, testColorCode);
+            
             _repositoryManager.TagRepository.Insert(tag);
             _auditManager.AuditTrailService.AddNewEntity(EntityName.Tag, tag.Id, ActionBy.User, tag, tag.VersionNumber);
             return Result<Tag>.Success(tag);
