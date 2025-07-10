@@ -1,4 +1,5 @@
 ﻿using Application.Commons.Attributes;
+using Application.Commons.Models.Icons;
 using Application.Commons.Models.Results;
 using MediatR;
 using Swashbuckle.AspNetCore.Annotations;
@@ -17,5 +18,6 @@ namespace Application.Tags.Commands.AddTag
         [SwaggerSchema(Description = "Hexcode color format should start with #", Nullable = true, Title = "Tag Color")]
         [SwaggerExample("#1756a7")]
         public string? TextColorCode { get; set; }
+        public IconCommand? IconCommand { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Domain.Enums;
+﻿using Application.Commons.SharedModelResult.Icons;
+using Domain.Enums;
 
 namespace Application.Tags.Commands.AddTag
 {
@@ -12,5 +13,6 @@ namespace Application.Tags.Commands.AddTag
         public ColorCategory TextColorGroup { get; set; }
         public DateTimeOffset CreationDate { get; set; }
         public int VersionNumber { get; set; }
+        public IconMetadataResult? Icon { get; set; }
     }
 }

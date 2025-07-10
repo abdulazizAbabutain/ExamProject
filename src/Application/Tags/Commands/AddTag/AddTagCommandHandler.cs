@@ -14,7 +14,7 @@ namespace Application.Tags.Commands.AddTag
 
         public async Task<Result<AddTagCommandResult>> Handle(AddTagCommand request, CancellationToken cancellationToken)
         {
-            var serviceResult = _serviceManager.TagService.AddTag(request.Name, request.BackgroundColorCode,request.TextColorCode);
+            var serviceResult = _serviceManager.TagService.AddTag(request.Name, request.BackgroundColorCode,request.TextColorCode,request.IconCommand);
 
             if (serviceResult.IsSuccess)
                 return Result<AddTagCommandResult>.CreatedSuccess(_mapper.Map<AddTagCommandResult>(serviceResult.Value));

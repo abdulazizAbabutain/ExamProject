@@ -41,6 +41,7 @@
 
   <ItemGroup>
     <Folder Include="Attributes\" />
+    <Folder Include="wwwroot\Icons\uploaded\" />
   </ItemGroup>
 
   <ItemGroup>
