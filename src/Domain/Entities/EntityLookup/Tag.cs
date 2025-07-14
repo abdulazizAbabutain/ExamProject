@@ -16,6 +16,9 @@ namespace Domain.Entities.EntityLookup;
 /// </remarks>
 public class Tag : EntityAudit
 {
+
+    private Tag() { }
+
     /// <summary>
     /// Initializes a new instance of the <see cref="Tag"/> class with the specified name and color codes.
     /// </summary>
@@ -47,16 +50,13 @@ public class Tag : EntityAudit
 
         if (!TextColorCode.IsHexColor())
             throw new ArgumentException("Invalid hex color for text", nameof(textColorCode));
-
+        Language = TextNormalizer.DetectLanguageByUnicode(name);
+        NormalizedName = TextNormalizer.Normalize(name);
         if (iconPath != null)
         {
             var iconColor = iconColorCode ?? ColorsConsts.White;
             Icon = new IconMetadata(iconPath.GetOriginalNameFromFile(),iconPath, iconColor);
         }
-
-        BackgroundColorGroup = BackgroundColorCode.GetColorGroup();
-        TextColorGroup = TextColorCode.GetColorGroup();
-
         Created();
     }
 
@@ -87,9 +87,6 @@ public class Tag : EntityAudit
 
         if (!TextColorCode.IsHexColor())
             throw new ArgumentException("Invalid hex color for text", nameof(textColorCode));
-
-        BackgroundColorGroup = BackgroundColorCode.GetColorGroup();
-        TextColorGroup = TextColorCode.GetColorGroup();
         Updated();
     }
     
@@ -119,6 +116,11 @@ public class Tag : EntityAudit
     /// </summary>
     public string Name { get; private set; }
 
+    public string? Description { get; set; }
+
+    public string NormalizedName { get; set; }
+    public EntityLanguage Language { get; set; }
+
     /// <summary>
     /// Gets the background color code of the tag in hexadecimal format.
     /// </summary>
@@ -128,18 +130,5 @@ public class Tag : EntityAudit
     /// Gets the text color code of the tag in hexadecimal format.
     /// </summary>
     public string TextColorCode { get; private set; }
-
-    /// <summary>
-    /// Gets the color category group derived from the background color.
-    /// </summary>
-    public ColorCategory BackgroundColorGroup { get; private set; }
-
-    /// <summary>
-    /// Gets the color category group derived from the text color.
-    /// </summary>
-    public ColorCategory TextColorGroup { get; private set; }
-    /// <summary>
-    /// 
-    /// </summary>
     public IconMetadata? Icon { get; set; }
 }

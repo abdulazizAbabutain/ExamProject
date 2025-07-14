@@ -1,4 +1,5 @@
 ﻿using Domain.Constants;
+using Domain.Entities.EntityLookup;
 using Domain.Enums;
 using System.Text.RegularExpressions;
 
@@ -60,7 +61,6 @@ public static class StringExtension
         {
             return segments[1]; // returns "predefined" or "uploaded"
         }
-
         return null;
     }
 }

@@ -21,7 +21,6 @@ public class ExportTagsQueryHandler(IRepositoryManager repositoryManager) : IReq
               Id = tag.Id,
               Name = tag.Name,
               ColorHexCode = tag.BackgroundColorCode,
-              ColorGroup = tag.BackgroundColorGroup,
               IsArchived = tag.IsArchived
           })
           .ToList();
