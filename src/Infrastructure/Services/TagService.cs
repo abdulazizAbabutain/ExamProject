@@ -3,6 +3,7 @@ using Application.Commons.Managers;
 using Application.Commons.Models.Icons;
 using Application.Commons.Models.Results;
 using Application.Commons.Services;
+using Domain.Auditing;
 using Domain.Constants;
 using Domain.Entities.EntityLookup;
 using Domain.Entities.Sources;
@@ -24,20 +25,27 @@ namespace Infrastructure.Services
         #region Tag services
         public Result<Tag> AddTag(string name, string? backgroundColorCode = null, string testColorCode = null, IconCommand icon = null)
         {
-            if (_repositoryManager.TagRepository.IsExist(name))
-            {
-                return Result<Tag>.ConflictFailure(nameof(name), _localizer[ErrorMessage.TAG_WITH_SAME_NAME_EXISTS, name]);
-            }
+            string normalizedName = TextNormalizer.Normalize(name);
+
+            var duplicates = _repositoryManager.TagRepository.GetDuplication(normalizedName);
 
             if (backgroundColorCode.IsNull())
                 backgroundColorCode = ColorExtension.GenerateRandomHexColor();
 
+            DuplicationReviewMetadata? duplicationReview = null;
+
+            if (duplicates.Any())
+                duplicationReview = DuplicationReviewMetadata.CreateDetected(duplicates.ToList());
+            
+
             Tag tag;
 
             if (icon.IsNotNull())
-                tag = new Tag(name, backgroundColorCode!, testColorCode, icon.IconUrl!, icon.IconColor!);
+                tag = new Tag(name, backgroundColorCode!, duplicationReview, testColorCode, icon.IconUrl!, icon.IconColor!);
             else
-                tag = new Tag(name, backgroundColorCode!, testColorCode);
+                tag = new Tag(name, backgroundColorCode!, duplicationReview ,testColorCode);
+
+
             
             _repositoryManager.TagRepository.Insert(tag);
             _auditManager.AuditTrailService.AddNewEntity(EntityName.Tag, tag.Id, ActionBy.User, tag, tag.VersionNumber);

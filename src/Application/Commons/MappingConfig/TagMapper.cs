@@ -4,6 +4,7 @@ using Application.Tags.Commands.AddTag;
 using Application.Tags.Queries.AutoCompleteTags;
 using Application.Tags.Queries.GetTagDetails;
 using Domain.Entities.EntityLookup;
+using Domain.Extentions;
 using Mapster;
 
 namespace Application.Commons.MappingConfig
@@ -20,7 +21,8 @@ namespace Application.Commons.MappingConfig
             config.NewConfig<Tag, GetTagDetailsQueryResult>();
 
 
-            config.NewConfig<Tag, GetAllTagsQueryResult>();
+            config.NewConfig<Tag, GetAllTagsQueryResult>()
+                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull());
 
 
             config.NewConfig<Tag, AutoCompleteTagsQueryResult>();

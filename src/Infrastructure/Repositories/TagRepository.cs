@@ -67,5 +67,10 @@ namespace Infrastructure.Repositories
             return _collection.Find(e => tags.Contains(e.Name)).Select(t => t.Name).ToList();
         }
 
+        public IEnumerable<Guid> GetDuplication(string normalizedName)
+        {
+            return _collection.Find(e => e.NormalizedName.Equals(normalizedName)).Select(e=> e.Id);
+        }
+
     }
 }

@@ -9,5 +9,7 @@ namespace Application.Lookups.Queries.Tags.GetAllTags
     {
         public string? Search { get; set; }
         public bool? IsArchived { get; set; }
+        public bool? NeedReview { get; set; }
+        public EntityLanguage? Language { get; set; }
     }
 }
