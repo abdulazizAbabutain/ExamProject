@@ -13,13 +13,16 @@ namespace Application.Commons.MappingConfig
     {
         public void Register(TypeAdapterConfig config)
         {
-            config.NewConfig<Tag, AddTagCommandResult>();
+            config.NewConfig<Tag, AddTagCommandResult>()
+                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull() && dest.DuplicationReview.IsDuplicated);
 
             config.NewConfig<Tag, TagResult>()
                 .Map(src => src.ColorCode, dest => dest.BackgroundColorCode);
 
             config.NewConfig<Tag, GetTagDetailsQueryResult>()
-                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull() && dest.DuplicationReview.IsDuplicated);
+                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull() && dest.DuplicationReview.IsDuplicated)
+                .Map(src => src.ReviewResult, dest => dest.DuplicationReview);
+
 
 
             config.NewConfig<Tag, GetAllTagsQueryResult>()

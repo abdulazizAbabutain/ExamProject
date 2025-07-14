@@ -13,6 +13,7 @@ namespace Application.Tags.Commands.AddTag
         public string TextColorCode { get; set; }
         public DateTimeOffset CreationDate { get; set; }
         public int VersionNumber { get; set; }
+        public bool NeedReview { get; set; }
         public IconMetadataResult? Icon { get; set; }
 
     }

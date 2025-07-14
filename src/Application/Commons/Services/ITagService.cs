@@ -1,6 +1,7 @@
 ﻿using Application.Commons.Models.Icons;
 using Application.Commons.Models.Results;
 using Domain.Entities.EntityLookup;
+using Domain.Enums;
 
 namespace Application.Commons.Services
 {
@@ -13,5 +14,6 @@ namespace Application.Commons.Services
         Result ArchiveTag(Guid id);
         Result ArchiveAllTag();
         Result UnArchiveTag(Guid id);
+        Result ResolveDuplication(Guid id, ReviewDuplicationStatus reviewStatus);
     }
 }

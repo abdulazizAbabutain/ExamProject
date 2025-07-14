@@ -36,7 +36,7 @@ public class Tag : EntityAudit
     /// <exception cref="ArgumentException">
     /// Thrown if <paramref name="backgroundColorHexCode"/> or <paramref name="textColorCode"/> are not valid hex color codes (must match format <c>#RRGGBB</c>).
     /// </exception>
-    public Tag(string name, string backgroundColorHexCode, DuplicationReviewMetadata? duplicationReview, string textColorCode = null, string iconPath = null, string iconColorCode = null) 
+    public Tag(string name, string backgroundColorHexCode, DuplicationReviewMetadata? duplicationReview, string textColorCode = null, string iconPath = null, string iconColorCode = null)
     {
         var textColor = textColorCode ?? ColorsConsts.White;
 
@@ -56,7 +56,7 @@ public class Tag : EntityAudit
         if (iconPath != null)
         {
             var iconColor = iconColorCode ?? ColorsConsts.White;
-            Icon = new IconMetadata(iconPath.GetOriginalNameFromFile(),iconPath, iconColor);
+            Icon = new IconMetadata(iconPath.GetOriginalNameFromFile(), iconPath, iconColor);
         }
         Created();
     }
@@ -86,11 +86,14 @@ public class Tag : EntityAudit
         if (!BackgroundColorCode.IsHexColor())
             throw new ArgumentException("Invalid hex color for background", nameof(backgroundColorHexCode));
 
+        Language = TextNormalizer.DetectLanguageByUnicode(name);
+        NormalizedName = TextNormalizer.Normalize(name);
+
         if (!TextColorCode.IsHexColor())
             throw new ArgumentException("Invalid hex color for text", nameof(textColorCode));
         Updated();
     }
-    
+
     /// <summary>
     /// Archives the tag by marking it as no longer active.
     /// </summary>
@@ -98,7 +101,7 @@ public class Tag : EntityAudit
     /// This method sets <see cref="EntityAudit.IsArchived"/> to <c>true</c> and records the archive timestamp.
     /// </remarks>
     public void ArchiveTag() => Archive();
-    
+
     /// <summary>
     /// Restores the tag from an archived state.
     /// </summary>
@@ -116,6 +119,12 @@ public class Tag : EntityAudit
     public void ResolveDuplicate(ReviewDuplicationStatus status)
     {
         DuplicationReview?.MarkReviewed(status);
+        Updated();
+    }
+
+    public void ResolveDuplicateFromUpdate()
+    {
+        DuplicationReview?.MarkReviewed(ReviewDuplicationStatus.ResolvedByUpdate);
     }
 
 
@@ -123,13 +132,13 @@ public class Tag : EntityAudit
     /// Gets the unique identifier of the tag.
     /// </summary>
     public Guid Id { get; private set; }
-    
+
     /// <summary>
     /// Gets the name of the tag.
     /// </summary>
     public string Name { get; private set; }
     public string? Description { get; private set; }
-    public string NormalizedName { get; private  set; }
+    public string NormalizedName { get; private set; }
     public EntityLanguage Language { get; private set; }
     public DuplicationReviewMetadata? DuplicationReview { get; private set; }
     /// <summary>   

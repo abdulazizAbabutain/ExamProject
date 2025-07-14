@@ -83,9 +83,9 @@ namespace Infrastructure.Services
 
             if (duplicates.Any())
                 tag.MarkAsDuplicate(duplicates.ToList());
-            
+
             else if (tag.DuplicationReview.IsNotNull())
-                tag.ResolveDuplicate(ReviewDuplicationStatus.ResolvedByUpdate);
+                tag.ResolveDuplicateFromUpdate();
 
 
             tag.UpdateTag(name, backgroundColorCode, textColorCode);
@@ -211,6 +211,23 @@ namespace Infrastructure.Services
             tag.UnArchiveTag();
             _repositoryManager.TagRepository.Update(tag);
             _auditManager.AuditTrailService.UpdateEntity(EntityName.Tag, id, ActionType.UnArchived, ActionBy.User, tagClone, tag, tag.VersionNumber);
+            return Result.NoContentSuccess();
+        }
+
+
+        public Result ResolveDuplication(Guid id, ReviewDuplicationStatus reviewStatus)
+        {
+            var tag = _repositoryManager.TagRepository.GetById(id);
+            if (tag.IsNull())
+                return Result.NotFoundFailure(nameof(id), _localizer[ErrorMessage.NOT_FOUND_ENTITY,id]);
+
+            var tagClone = FastDeepCloner.DeepCloner.Clone(tag);
+
+            tag.ResolveDuplicate(reviewStatus);
+            _repositoryManager.TagRepository.Update(tag);
+            _auditManager.AuditTrailService.UpdateEntity(EntityName.Tag, id, ActionType.DuplicationReviewed, ActionBy.User, tagClone, tag, tag.VersionNumber);
+
+
             return Result.NoContentSuccess();
         }
         #endregion
