@@ -26,7 +26,7 @@ public class GetAllTagsQueryHandler(IRepositoryManager repositoryManager, IMappe
             query = query.And(e => e.Name.ToLower().Contains(request.Search.ToLower()));
 
         if (request.NeedReview.HasValue)
-            query = query.And(e => e.DuplicationReview.IsNotNull());
+            query = query.And(e => e.DuplicationReview.IsNotNull() && e.DuplicationReview.IsDuplicated);
 
 
         if (request.IsArchived.HasValue)

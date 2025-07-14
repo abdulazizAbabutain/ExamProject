@@ -18,11 +18,12 @@ namespace Application.Commons.MappingConfig
             config.NewConfig<Tag, TagResult>()
                 .Map(src => src.ColorCode, dest => dest.BackgroundColorCode);
 
-            config.NewConfig<Tag, GetTagDetailsQueryResult>();
+            config.NewConfig<Tag, GetTagDetailsQueryResult>()
+                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull() && dest.DuplicationReview.IsDuplicated);
 
 
             config.NewConfig<Tag, GetAllTagsQueryResult>()
-                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull());
+                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull() && dest.DuplicationReview.IsDuplicated);
 
 
             config.NewConfig<Tag, AutoCompleteTagsQueryResult>();

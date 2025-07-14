@@ -132,7 +132,7 @@ public class Tag : EntityAudit
     public string NormalizedName { get; private  set; }
     public EntityLanguage Language { get; private set; }
     public DuplicationReviewMetadata? DuplicationReview { get; private set; }
-    /// <summary>
+    /// <summary>   
     /// Gets the background color code of the tag in hexadecimal format.
     /// </summary>
     public string BackgroundColorCode { get; private set; }

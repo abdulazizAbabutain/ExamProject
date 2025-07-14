@@ -69,7 +69,12 @@ namespace Infrastructure.Repositories
 
         public IEnumerable<Guid> GetDuplication(string normalizedName)
         {
-            return _collection.Find(e => e.NormalizedName.Equals(normalizedName)).Select(e=> e.Id);
+            return _collection.Find(t => t.NormalizedName== normalizedName && !t.IsArchived).Select(e=> e.Id);
+        }
+
+        public IEnumerable<Guid> GetDuplication(string normalizedName, Guid excludeId)
+        {
+            return _collection.Find(t => t.NormalizedName == normalizedName && t.Id != excludeId && !t.IsArchived).Select(e => e.Id);
         }
 
     }

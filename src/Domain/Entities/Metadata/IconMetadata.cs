@@ -1,6 +1,4 @@
-﻿using Domain.Enums;
-
-namespace Domain.Entities.Metadata;
+﻿namespace Domain.Entities.Metadata;
 
 public class IconMetadata
 {
