@@ -1,10 +1,17 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Diagnosers;
+using BenchmarkDotNet.Exporters;
 using Domain.Enums;
 using Domain.Extentions;
 
 namespace Benchmarks.Extentions;
 
-[MemoryDiagnoser]
+[MemoryDiagnoser]                 // Tracks allocations and GC
+[ThreadingDiagnoser]             // Tracks thread usage
+[DisassemblyDiagnoser]           // Generates assembly instructions
+[HardwareCounters(HardwareCounter.BranchInstructions, HardwareCounter.CacheMisses, HardwareCounter.TotalCycles, HardwareCounter.InstructionRetired)] // Low-level CPU metrics
+[HtmlExporter]
+[CsvExporter]
 [ShortRunJob]
 public class TextNormalizerBenchmark
 {
