@@ -17,13 +17,6 @@ namespace Application.Tags.Queries.GetAllTags
                 RuleFor(e => e.Search)
                     .MaximumLength(MaxLength.TAG_NAME_MAX_LENGTH);
             });
-
-
-            When(e => e.BackgroundColorGroup.IsNotNull(), () =>
-            {
-                RuleFor(e => e.BackgroundColorGroup)
-                    .IsInEnum();
-            });
         }
     }
 }

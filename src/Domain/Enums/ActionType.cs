@@ -9,5 +9,6 @@
         UnArchived = 5, 
         AddNewTag = 6,
         RemoveTag = 7,
+        DuplicationReviewed= 8,
     }
 }

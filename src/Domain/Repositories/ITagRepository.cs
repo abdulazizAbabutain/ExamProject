@@ -17,5 +17,7 @@ namespace Domain.Repositories
         IEnumerable<Guid> GetTagsReference(IEnumerable<string> tags);
         Guid GetTagReference(string tag);
         IEnumerable<string> GetAllAvailableTags(IEnumerable<string> tags);
+        IEnumerable<Guid> GetDuplication(string normalizedName);
+        IEnumerable<Guid> GetDuplication(string normalizedName, Guid excludeId);
     }
 }

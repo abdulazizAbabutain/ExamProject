@@ -7,6 +7,7 @@ using Application.Lookups.Queries.Tags.GetAllTags;
 using Application.Tags.Commands.AddTag;
 using Application.Tags.Commands.ArchiveTag;
 using Application.Tags.Commands.DeleteTag;
+using Application.Tags.Commands.ResolveDuplication;
 using Application.Tags.Commands.UnArchiveTag;
 using Application.Tags.Commands.UpdateTag;
 using Application.Tags.Queries.AutoCompleteTags;
@@ -125,6 +126,14 @@ public class TagController(IMediator mediator, IHttpResultResponder resultRespon
         };
         return Ok(await _mediator.Send(query));
     }
+
+    [HttpPatch("{tagId:guid}/duplication-review")]
+    public async  Task<IActionResult> ResolveDuplication([FromRoute] Guid tagId, [FromBody] ResolveDuplicationCommand command)
+    {
+        command.Id = tagId;
+        return _resultResponder.FromResult(HttpContext, await _mediator.Send(command));
+    }
+
     [HttpGet("export")]
     public async Task<IActionResult> ExportTags([FromQuery] ExportTagsQuery query)
     {

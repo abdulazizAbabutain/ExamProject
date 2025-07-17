@@ -16,6 +16,9 @@ namespace Domain.Entities.EntityLookup;
 /// </remarks>
 public class Tag : EntityAudit
 {
+
+    private Tag() { }
+
     /// <summary>
     /// Initializes a new instance of the <see cref="Tag"/> class with the specified name and color codes.
     /// </summary>
@@ -33,7 +36,7 @@ public class Tag : EntityAudit
     /// <exception cref="ArgumentException">
     /// Thrown if <paramref name="backgroundColorHexCode"/> or <paramref name="textColorCode"/> are not valid hex color codes (must match format <c>#RRGGBB</c>).
     /// </exception>
-    public Tag(string name, string backgroundColorHexCode, string textColorCode = null, string iconPath = null, string iconColorCode = null) 
+    public Tag(string name, string backgroundColorHexCode, DuplicationReviewMetadata? duplicationReview, string textColorCode = null, string iconPath = null, string iconColorCode = null)
     {
         var textColor = textColorCode ?? ColorsConsts.White;
 
@@ -47,16 +50,14 @@ public class Tag : EntityAudit
 
         if (!TextColorCode.IsHexColor())
             throw new ArgumentException("Invalid hex color for text", nameof(textColorCode));
-
+        Language = TextNormalizer.DetectLanguageByUnicode(name);
+        NormalizedName = TextNormalizer.Normalize(name);
+        DuplicationReview = duplicationReview;
         if (iconPath != null)
         {
             var iconColor = iconColorCode ?? ColorsConsts.White;
-            Icon = new IconMetadata(iconPath.GetOriginalNameFromFile(),iconPath, iconColor);
+            Icon = new IconMetadata(iconPath.GetOriginalNameFromFile(), iconPath, iconColor);
         }
-
-        BackgroundColorGroup = BackgroundColorCode.GetColorGroup();
-        TextColorGroup = TextColorCode.GetColorGroup();
-
         Created();
     }
 
@@ -85,14 +86,14 @@ public class Tag : EntityAudit
         if (!BackgroundColorCode.IsHexColor())
             throw new ArgumentException("Invalid hex color for background", nameof(backgroundColorHexCode));
 
+        Language = TextNormalizer.DetectLanguageByUnicode(name);
+        NormalizedName = TextNormalizer.Normalize(name);
+
         if (!TextColorCode.IsHexColor())
             throw new ArgumentException("Invalid hex color for text", nameof(textColorCode));
-
-        BackgroundColorGroup = BackgroundColorCode.GetColorGroup();
-        TextColorGroup = TextColorCode.GetColorGroup();
         Updated();
     }
-    
+
     /// <summary>
     /// Archives the tag by marking it as no longer active.
     /// </summary>
@@ -100,7 +101,7 @@ public class Tag : EntityAudit
     /// This method sets <see cref="EntityAudit.IsArchived"/> to <c>true</c> and records the archive timestamp.
     /// </remarks>
     public void ArchiveTag() => Archive();
-    
+
     /// <summary>
     /// Restores the tag from an archived state.
     /// </summary>
@@ -109,17 +110,38 @@ public class Tag : EntityAudit
     /// </remarks>
     public void UnArchiveTag() => UnArchive();
 
+
+    public void MarkAsDuplicate(List<Guid> duplicates)
+    {
+        DuplicationReview = DuplicationReviewMetadata.CreateDetected(duplicates);
+    }
+
+    public void ResolveDuplicate(ReviewDuplicationStatus status)
+    {
+        DuplicationReview?.MarkReviewed(status);
+        Updated();
+    }
+
+    public void ResolveDuplicateFromUpdate()
+    {
+        DuplicationReview?.MarkReviewed(ReviewDuplicationStatus.ResolvedByUpdate);
+    }
+
+
     /// <summary>
     /// Gets the unique identifier of the tag.
     /// </summary>
     public Guid Id { get; private set; }
-    
+
     /// <summary>
     /// Gets the name of the tag.
     /// </summary>
     public string Name { get; private set; }
-
-    /// <summary>
+    public string? Description { get; private set; }
+    public string NormalizedName { get; private set; }
+    public EntityLanguage Language { get; private set; }
+    public DuplicationReviewMetadata? DuplicationReview { get; private set; }
+    /// <summary>   
     /// Gets the background color code of the tag in hexadecimal format.
     /// </summary>
     public string BackgroundColorCode { get; private set; }
@@ -128,18 +150,5 @@ public class Tag : EntityAudit
     /// Gets the text color code of the tag in hexadecimal format.
     /// </summary>
     public string TextColorCode { get; private set; }
-
-    /// <summary>
-    /// Gets the color category group derived from the background color.
-    /// </summary>
-    public ColorCategory BackgroundColorGroup { get; private set; }
-
-    /// <summary>
-    /// Gets the color category group derived from the text color.
-    /// </summary>
-    public ColorCategory TextColorGroup { get; private set; }
-    /// <summary>
-    /// 
-    /// </summary>
     public IconMetadata? Icon { get; set; }
 }
