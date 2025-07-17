@@ -14,19 +14,19 @@ namespace Application.Commons.MappingConfig
         public void Register(TypeAdapterConfig config)
         {
             config.NewConfig<Tag, AddTagCommandResult>()
-                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull() && dest.DuplicationReview.IsDuplicated);
+                .Map(dest => dest.NeedReview, src => src.DuplicationReview.IsNotNull() && src.DuplicationReview.IsDuplicated);
 
             config.NewConfig<Tag, TagResult>()
-                .Map(src => src.ColorCode, dest => dest.BackgroundColorCode);
+                .Map(dest => dest.ColorCode, src => src.BackgroundColorCode);
 
             config.NewConfig<Tag, GetTagDetailsQueryResult>()
-                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull() && dest.DuplicationReview.IsDuplicated)
-                .Map(src => src.ReviewResult, dest => dest.DuplicationReview);
+                .Map(dest => dest.NeedReview, src => src.DuplicationReview.IsNotNull() && src.DuplicationReview.IsDuplicated)
+                .Map(dest => dest.ReviewResult, src => src.DuplicationReview);
 
 
 
             config.NewConfig<Tag, GetAllTagsQueryResult>()
-                .Map(src => src.NeedReview, dest => dest.DuplicationReview.IsNotNull() && dest.DuplicationReview.IsDuplicated);
+                .Map(dest => dest.NeedReview, src => src.DuplicationReview.IsNotNull() && src.DuplicationReview.IsDuplicated);
 
 
             config.NewConfig<Tag, AutoCompleteTagsQueryResult>();
